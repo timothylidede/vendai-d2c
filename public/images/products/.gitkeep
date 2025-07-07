@@ -1,0 +1,20 @@
+{
+  "note": "This file ensures the products image directory is created in git. Replace with actual product images.",
+  "image_naming_convention": {
+    "format": "[brand-]product-name-size.[extension]",
+    "examples": [
+      "rina-cooking-oil-1l.jpg",
+      "softcare-diapers-small-48pcs.jpg",
+      "red-bull-250ml.jpg",
+      "eggs-crate-30pcs.jpg"
+    ],
+    "guidelines": [
+      "Use lowercase letters only",
+      "Replace spaces with hyphens",
+      "Include brand name if applicable",
+      "Include size/quantity information",
+      "Use .jpg, .png, or .webp formats",
+      "Keep filenames under 50 characters"
+    ]
+  }
+}

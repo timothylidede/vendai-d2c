@@ -1,0 +1,104 @@
+{
+  "firestore_collections": {
+    "users": {
+      "document_id": "user_uid",
+      "fields": {
+        "uid": "string",
+        "name": "string",
+        "email": "string",
+        "phone": "string",
+        "photoURL": "string",
+        "provider": "string (email|google)",
+        "address": "string",
+        "city": "string",
+        "area": "string",
+        "createdAt": "timestamp",
+        "updatedAt": "timestamp"
+      }
+    },
+    "products": {
+      "document_id": "auto_generated",
+      "fields": {
+        "name": "string",
+        "price": "number",
+        "category": "string",
+        "description": "string",
+        "image": "string",
+        "stock": "number",
+        "isActive": "boolean",
+        "createdAt": "timestamp",
+        "updatedAt": "timestamp"
+      }
+    },
+    "orders": {
+      "document_id": "auto_generated",
+      "fields": {
+        "userId": "string",
+        "items": "array of objects",
+        "total": "number",
+        "status": "string (pending|processing|shipped|completed|cancelled)",
+        "paymentStatus": "string (pending|paid|failed)",
+        "paymentMethod": "string (mpesa|card|cash)",
+        "deliveryAddress": "object",
+        "deliveryDate": "timestamp",
+        "createdAt": "timestamp",
+        "updatedAt": "timestamp"
+      }
+    },
+    "chatSessions": {
+      "document_id": "auto_generated",
+      "fields": {
+        "userId": "string",
+        "title": "string",
+        "messages": "array of objects",
+        "isActive": "boolean",
+        "createdAt": "timestamp",
+        "updatedAt": "timestamp"
+      }
+    },
+    "payments": {
+      "document_id": "auto_generated",
+      "fields": {
+        "orderId": "string",
+        "userId": "string",
+        "amount": "number",
+        "phoneNumber": "string",
+        "provider": "string (mpesa|card)",
+        "status": "string (pending|completed|failed)",
+        "checkoutRequestId": "string",
+        "transactionId": "string",
+        "transactionData": "object",
+        "description": "string",
+        "createdAt": "timestamp",
+        "updatedAt": "timestamp"
+      }
+    }
+  },
+  "firestore_indexes": [
+    {
+      "collection": "orders",
+      "fields": [{ "field": "userId", "order": "ascending" }, { "field": "createdAt", "order": "descending" }]
+    },
+    {
+      "collection": "chatSessions",
+      "fields": [{ "field": "userId", "order": "ascending" }, { "field": "updatedAt", "order": "descending" }]
+    },
+    {
+      "collection": "payments",
+      "fields": [{ "field": "userId", "order": "ascending" }, { "field": "createdAt", "order": "descending" }]
+    }
+  ],
+  "environment_variables": {
+    "NEXT_PUBLIC_FIREBASE_API_KEY": "your_firebase_api_key",
+    "NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN": "your_project.firebaseapp.com",
+    "NEXT_PUBLIC_FIREBASE_PROJECT_ID": "your_project_id",
+    "NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET": "your_project.appspot.com",
+    "NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID": "your_sender_id",
+    "NEXT_PUBLIC_FIREBASE_APP_ID": "your_app_id",
+    "MPESA_CONSUMER_KEY": "your_mpesa_consumer_key",
+    "MPESA_CONSUMER_SECRET": "your_mpesa_consumer_secret",
+    "MPESA_SHORTCODE": "your_mpesa_shortcode",
+    "MPESA_PASSKEY": "your_mpesa_passkey",
+    "MPESA_CALLBACK_URL": "https://yourdomain.com/api/mpesa/callback"
+  }
+}
