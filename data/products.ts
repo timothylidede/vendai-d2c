@@ -10,6 +10,8 @@ export interface Product {
   unit: string
   brand?: string
   size?: string
+  bulkPrice?: number
+  bulkQuantity?: number
 }
 
 export const PRODUCT_CATEGORIES = {
@@ -83,108 +85,126 @@ export const PRODUCTS: Product[] = [
   {
     id: 5,
     name: "RINSUN Sunflower Oil",
-    price: 4205, // 4200 + 5 (this is the actual price for the 20L container)
+    price: 215, // (4200/20) + 5 = 210 + 5 (per litre)
     category: PRODUCT_CATEGORIES.COOKING_OILS,
-    description: "Pure sunflower vegetable oil - 20 Litres",
+    description: "Pure sunflower vegetable oil - per litre",
     image: "/images/products/rinsun-sunflower-oil-20l.jpg",
-    stock: 25,
-    unit: "20L",
+    stock: 500, // 25 containers × 20L each
+    unit: "1L",
     brand: "RINSUN",
-    size: "20 Litres",
+    size: "1 Litre",
+    bulkPrice: 4200,
+    bulkQuantity: 20,
   },
   {
     id: 6,
     name: "SOMO Solid Cooking Fat",
-    price: 1255, // 1250 + 5 (this is the actual price for the 10kg carton)
+    price: 130, // (1250/10) + 5 = 125 + 5 (per kg)
     category: PRODUCT_CATEGORIES.COOKING_OILS,
-    description: "Solid cooking fat - 10kgs carton",
+    description: "Solid cooking fat - per kilogram",
     image: "/images/products/somo-cooking-fat-10kg.jpg",
-    stock: 30,
-    unit: "10kg",
+    stock: 300, // 30 cartons × 10kg each
+    unit: "1kg",
     brand: "SOMO",
-    size: "10 Kilograms",
+    size: "1 Kilogram",
+    bulkPrice: 1250,
+    bulkQuantity: 10,
   },
   {
     id: 7,
     name: "FRY MATE Cooking Fat",
-    price: 1255, // 1250 + 5 (this is the actual price for the 10kg carton)
+    price: 130, // (1250/10) + 5 = 125 + 5 (per kg)
     category: PRODUCT_CATEGORIES.COOKING_OILS,
-    description: "Premium cooking fat - 10kgs carton",
+    description: "Premium cooking fat - per kilogram",
     image: "/images/products/frymate-cooking-fat-10kg.jpg",
-    stock: 35,
-    unit: "10kg",
+    stock: 350, // 35 cartons × 10kg each
+    unit: "1kg",
     brand: "FRY MATE",
-    size: "10 Kilograms",
+    size: "1 Kilogram",
+    bulkPrice: 1250,
+    bulkQuantity: 10,
   },
 
   // RICE & GRAINS
   {
     id: 8,
     name: "BIRIYANI Rice",
-    price: 2105, // 2100 + 5 (this is the actual price for the 25kg bag)
+    price: 89, // (2100/25) + 5 = 84 + 5 (per kg)
     category: PRODUCT_CATEGORIES.RICE_GRAINS,
-    description: "Premium Biriyani rice - 25kgs",
+    description: "Premium Biriyani rice - per kilogram",
     image: "/images/products/biriyani-rice-25kg.jpg",
-    stock: 20,
-    unit: "25kg",
-    size: "25 Kilograms",
+    stock: 500, // 20 bags × 25kg each
+    unit: "1kg",
+    size: "1 Kilogram",
+    bulkPrice: 2100,
+    bulkQuantity: 25,
   },
   {
     id: 9,
     name: "BASMATI Rice",
-    price: 2805, // 2800 + 5 (this is the actual price for the 25kg bag)
+    price: 117, // (2800/25) + 5 = 112 + 5 (per kg)
     category: PRODUCT_CATEGORIES.RICE_GRAINS,
-    description: "Premium Basmati rice - 25kgs",
+    description: "Premium Basmati rice - per kilogram",
     image: "/images/products/basmati-rice-25kg.jpg",
-    stock: 15,
-    unit: "25kg",
-    size: "25 Kilograms",
+    stock: 375, // 15 bags × 25kg each
+    unit: "1kg",
+    size: "1 Kilogram",
+    bulkPrice: 2800,
+    bulkQuantity: 25,
   },
   {
     id: 10,
     name: "PISHORI Rice",
-    price: 4005, // 4000 + 5 (this is the actual price for the 25kg bag)
+    price: 165, // (4000/25) + 5 = 160 + 5 (per kg)
     category: PRODUCT_CATEGORIES.RICE_GRAINS,
-    description: "Premium Pishori rice - 25kgs",
+    description: "Premium Pishori rice - per kilogram",
     image: "/images/products/pishori-rice-25kg.jpg",
-    stock: 12,
-    unit: "25kg",
-    size: "25 Kilograms",
+    stock: 300, // 12 bags × 25kg each
+    unit: "1kg",
+    size: "1 Kilogram",
+    bulkPrice: 4000,
+    bulkQuantity: 25,
   },
   {
     id: 11,
     name: "SINDANO Rice",
-    price: 2005, // 2000 + 5 (this is the actual price for the 25kg bag)
+    price: 85, // (2000/25) + 5 = 80 + 5 (per kg)
     category: PRODUCT_CATEGORIES.RICE_GRAINS,
-    description: "Quality Sindano rice - 25kgs",
+    description: "Quality Sindano rice - per kilogram",
     image: "/images/products/sindano-rice-25kg.jpg",
-    stock: 18,
-    unit: "25kg",
-    size: "25 Kilograms",
+    stock: 450, // 18 bags × 25kg each
+    unit: "1kg",
+    size: "1 Kilogram",
+    bulkPrice: 2000,
+    bulkQuantity: 25,
   },
 
   // SUGAR & SWEETENERS
   {
     id: 12,
     name: "Brown Sugar",
-    price: 6405, // 6400 + 5
+    price: 133, // (6400/50) + 5 = 128 + 5 (per kg)
     category: PRODUCT_CATEGORIES.SUGAR_SWEETENERS,
-    description: "Pure brown sugar - 50kgs",
+    description: "Pure brown sugar - per kilogram",
     image: "/images/products/brown-sugar-50kg.jpg",
-    stock: 10,
-    unit: "50kg",
-    size: "50 Kilograms",
+    stock: 500, // 10 bags × 50kg each
+    unit: "1kg",
+    size: "1 Kilogram",
+    bulkPrice: 6400,
+    bulkQuantity: 50,
   },
   {
     id: 13,
     name: "White Sugar",
-    price: 6505, // 6500 + 5
+    price: 135, // (6500/50) + 5 = 130 + 5 (per kg)
     category: PRODUCT_CATEGORIES.SUGAR_SWEETENERS,
-    description: "Pure white sugar - 50kgs",
+    description: "Pure white sugar - per kilogram",
     image: "/images/products/white-sugar-50kg.jpg",
-    stock: 8,
-    unit: "50kg",
-    size: "50 Kilograms",
+    stock: 400, // 8 bags × 50kg each
+    unit: "1kg",
+    size: "1 Kilogram",
+    bulkPrice: 6500,
+    bulkQuantity: 50,
   },
 
   // FLOUR
@@ -291,13 +311,15 @@ export const PRODUCTS: Product[] = [
   {
     id: 22,
     name: "Milk Powder",
-    price: 7805, // 7800 + 5
+    price: 317, // (7800/25) + 5 = 312 + 5 (per kg)
     category: PRODUCT_CATEGORIES.DAIRY,
-    description: "Pure milk powder - 25kg pack",
+    description: "Pure milk powder - per kilogram",
     image: "/images/products/milk-powder-25kg.jpg",
-    stock: 15,
-    unit: "25kg",
-    size: "25 Kilograms",
+    stock: 375, // 15 packs × 25kg each
+    unit: "1kg",
+    size: "1 Kilogram",
+    bulkPrice: 7800,
+    bulkQuantity: 25,
   },
   {
     id: 23,
@@ -589,35 +611,41 @@ export const PRODUCTS: Product[] = [
   {
     id: 46,
     name: "Makueni Ndengu",
-    price: 7505, // 7500 + 5
+    price: 88, // (7500/90) + 5 = 83 + 5 (per kg)
     category: PRODUCT_CATEGORIES.CEREALS_LEGUMES,
-    description: "Premium green grams - 90kg sack",
+    description: "Premium green grams - per kilogram",
     image: "/images/products/makueni-ndengu-90kg.jpg",
-    stock: 8,
-    unit: "90kg",
-    size: "90 Kilograms",
+    stock: 720, // 8 sacks × 90kg each
+    unit: "1kg",
+    size: "1 Kilogram",
+    bulkPrice: 7500,
+    bulkQuantity: 90,
   },
   {
     id: 47,
     name: "Nylon Ndengu",
-    price: 6505, // 6500 + 5
+    price: 77, // (6500/90) + 5 = 72 + 5 (per kg)
     category: PRODUCT_CATEGORIES.CEREALS_LEGUMES,
-    description: "Quality green grams - 90kg sack",
+    description: "Quality green grams - per kilogram",
     image: "/images/products/nylon-ndengu-90kg.jpg",
-    stock: 10,
-    unit: "90kg",
-    size: "90 Kilograms",
+    stock: 900, // 10 sacks × 90kg each
+    unit: "1kg",
+    size: "1 Kilogram",
+    bulkPrice: 6500,
+    bulkQuantity: 90,
   },
   {
     id: 48,
     name: "Kamande Beans",
-    price: 5505, // 5500 + 5
+    price: 115, // (5500/50) + 5 = 110 + 5 (per kg)
     category: PRODUCT_CATEGORIES.CEREALS_LEGUMES,
-    description: "Premium beans - 50kg sack",
+    description: "Premium beans - per kilogram",
     image: "/images/products/kamande-beans-50kg.jpg",
-    stock: 12,
-    unit: "50kg",
-    size: "50 Kilograms",
+    stock: 600, // 12 sacks × 50kg each
+    unit: "1kg",
+    size: "1 Kilogram",
+    bulkPrice: 5500,
+    bulkQuantity: 50,
   },
 
   // HOUSEHOLD ITEMS

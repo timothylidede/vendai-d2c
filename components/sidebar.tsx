@@ -78,7 +78,7 @@ export function Sidebar({ sidebarOpen, setSidebarOpen, orders }: SidebarProps) {
 
               <div className="space-y-2 mb-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium">Order #{order.id.split("-").pop()}</span>
+                  <span className="text-sm font-medium">Order #{order.orderNumber || order.id.split("-").pop()}</span>
                   <span className="text-sm font-bold">KES {order.total.toLocaleString()}</span>
                 </div>
 

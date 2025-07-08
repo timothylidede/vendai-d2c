@@ -48,7 +48,7 @@ export function OrderTracking({ order, onBack }: OrderTrackingProps) {
       <div className="glass-effect rounded-lg p-6">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h3 className="text-lg font-bold">Order #{order.id.split("-").pop()}</h3>
+            <h3 className="text-lg font-bold">Order #{order.orderNumber || order.id.split("-").pop()}</h3>
             <p className="text-sm text-gray-400">
               Placed on{" "}
               {new Date(order.date).toLocaleDateString("en-KE", {

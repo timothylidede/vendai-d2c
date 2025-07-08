@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Grid3X3, Zap, Send, ArrowLeft } from "lucide-react"
+import { Grid3X3, Zap, Send, Home } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ProductShortcuts } from "./product-shortcuts"
@@ -18,6 +18,7 @@ interface ChatViewProps {
   setCurrentView: (view: string) => void
   onBackToMain: () => void
   showBackButton?: boolean
+  isInSubView?: boolean
 }
 
 export function ChatView({
@@ -32,15 +33,17 @@ export function ChatView({
   setCurrentView,
   onBackToMain,
   showBackButton = false,
+  isInSubView = false,
 }: ChatViewProps) {
   return (
     <>
       {/* Chat Area */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
-        {showBackButton && (
+        {/* Back to Main Button - Always show when in chat but not main view */}
+        {(showBackButton || isInSubView) && (
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="mb-4">
-            <Button variant="ghost" size="sm" onClick={onBackToMain} className="hover:bg-white/10">
-              <ArrowLeft className="h-4 w-4 mr-2" />
+            <Button variant="ghost" size="sm" onClick={onBackToMain} className="hover:bg-white/10 rounded-xl">
+              <Home className="h-4 w-4 mr-2" />
               Back to Main
             </Button>
           </motion.div>

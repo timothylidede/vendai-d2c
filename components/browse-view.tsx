@@ -2,14 +2,27 @@
 
 import { useState, useMemo } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { ArrowLeft, ShoppingBag, Plus, Search, Filter, X } from "lucide-react"
+import { ArrowLeft, ShoppingBag, Plus, Search, Filter, X, Package } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { QuantityInput } from "./quantity-input"
 
+interface Product {
+  id: number
+  name: string
+  price: number
+  category: string
+  description: string
+  image: string
+  stock: number
+  unit: string
+  brand?: string
+  size?: string
+}
+
 interface BrowseViewProps {
-  products: any[]
-  onAddToCart: (product: any, quantity?: number) => void
+  products: Product[]
+  onAddToCart: (product: Product, quantity?: number) => void
   onBack: () => void
 }
 
@@ -260,7 +273,7 @@ export function BrowseView({ products, onAddToCart, onBack }: BrowseViewProps) {
                 className="glass-effect rounded-xl p-4 hover:bg-white/5 transition-all duration-300 group"
               >
                 <div className="aspect-square bg-gradient-to-br from-white/10 to-white/5 rounded-xl mb-3 flex items-center justify-center group-hover:from-white/15 group-hover:to-white/10 transition-all duration-300">
-                  <ShoppingBag className="h-12 w-12 text-gray-400 group-hover:text-gray-300 transition-colors" />
+                  <Package className="h-12 w-12 text-gray-400 group-hover:text-gray-300 transition-colors" />
                 </div>
 
                 <div className="space-y-2">
