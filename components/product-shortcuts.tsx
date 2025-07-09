@@ -37,51 +37,52 @@ export function ProductShortcuts({ products, onQuickAdd, onViewAll }: ProductSho
     .slice(0, 3)
 
   return (
-    <div className="pb-3 border-b border-white/5">
-      <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-2">
+    <div className="border-t border-white/5 pt-3">
+      <p className="text-xs text-gray-500 mb-2 text-center">Quick add:</p>
+      <div className="flex gap-2 justify-center overflow-x-auto scrollbar-hide">
         {essentialProducts.map((product, index) => (
           <motion.div
             key={product.id}
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: index * 0.05 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
             className="flex-shrink-0"
           >
             <Button
               variant="ghost"
               size="sm"
               onClick={() => onQuickAdd(product)}
-              className="text-xs bg-gradient-to-r from-white/5 to-white/10 hover:from-white/15 hover:to-white/20 border border-white/10 hover:border-white/20 rounded-xl px-4 py-2 h-auto transition-all duration-300 whitespace-nowrap shadow-lg"
+              className="text-xs bg-white/5 hover:bg-white/10 border border-white/10 hover:border-purple-500/30 rounded-lg px-3 py-2 h-auto transition-all duration-300 whitespace-nowrap"
             >
-              <Plus className="h-3 w-3 mr-2" />
+              <Plus className="h-3 w-3 mr-1" />
               <div className="text-left">
-                <div className="font-medium">{product.name}</div>
-                <div className="text-green-400 font-bold">KES {product.price.toLocaleString()}</div>
+                <div className="font-medium text-xs">{product.name.split(" ").slice(0, 2).join(" ")}</div>
+                <div className="text-green-400 font-bold text-xs">KES {product.price.toLocaleString()}</div>
               </div>
             </Button>
           </motion.div>
         ))}
 
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.15 }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
           className="flex-shrink-0"
         >
           <Button
             variant="ghost"
             size="sm"
             onClick={onViewAll}
-            className="text-xs bg-gradient-to-r from-blue-500/20 to-purple-500/20 hover:from-blue-500/30 hover:to-purple-500/30 border border-blue-500/30 hover:border-blue-500/50 rounded-xl px-4 py-2 h-auto text-blue-300 transition-all duration-300 whitespace-nowrap shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40"
+            className="text-xs bg-gradient-to-r from-purple-500/20 to-pink-500/20 hover:from-purple-500/30 hover:to-pink-500/30 border border-purple-500/30 hover:border-purple-500/50 rounded-lg px-3 py-2 h-auto text-purple-300 transition-all duration-300 whitespace-nowrap"
           >
-            <Sparkles className="h-3 w-3 mr-2" />
+            <Sparkles className="h-3 w-3 mr-1" />
             <div className="text-left">
-              <div className="font-medium">View All Products</div>
-              <div className="text-blue-400">50+ items available</div>
+              <div className="font-medium text-xs">View All</div>
+              <div className="text-purple-400 text-xs">120+ items</div>
             </div>
           </Button>
         </motion.div>

@@ -2,15 +2,16 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { ArrowLeft, Bell, MapPin, CreditCard, Shield, User, Phone, Save } from "lucide-react"
+import { ArrowLeft, Bell, MapPin, CreditCard, Shield, User, Phone, Save, Package } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
 interface SettingsViewProps {
   onBack: () => void
+  onProductManagement?: () => void
 }
 
-export function SettingsView({ onBack }: SettingsViewProps) {
+export function SettingsView({ onBack, onProductManagement }: SettingsViewProps) {
   const [notifications, setNotifications] = useState({
     orderUpdates: true,
     promotions: false,
@@ -234,6 +235,38 @@ export function SettingsView({ onBack }: SettingsViewProps) {
             </Button>
             <Button variant="ghost" className="w-full justify-start hover:bg-white/10">
               Login History
+            </Button>
+          </div>
+        </motion.div>
+
+        {/* Product Management */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="glass-effect rounded-lg p-6"
+        >
+          <div className="flex items-center space-x-3 mb-4">
+            <Package className="h-5 w-5 text-orange-400" />
+            <h3 className="text-lg font-medium">Product Management</h3>
+          </div>
+
+          <div className="space-y-3">
+            <Button
+              variant="ghost"
+              className="w-full justify-start hover:bg-white/10"
+              onClick={() => {
+                // You'll need to pass this as a prop from the parent
+                onProductManagement?.()
+              }}
+            >
+              Manage Products
+            </Button>
+            <Button variant="ghost" className="w-full justify-start hover:bg-white/10">
+              Import Products
+            </Button>
+            <Button variant="ghost" className="w-full justify-start hover:bg-white/10">
+              Export Catalog
             </Button>
           </div>
         </motion.div>

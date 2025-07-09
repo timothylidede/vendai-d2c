@@ -1,10 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Grid3X3, Zap, Send, Home } from "lucide-react"
+import { Grid3X3, Zap, Send, Home, User, Bot } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ProductShortcuts } from "./product-shortcuts"
+import { ProductCardResponse } from "./product-card-response"
 
 interface ChatViewProps {
   messages: any[]
@@ -19,6 +20,7 @@ interface ChatViewProps {
   onBackToMain: () => void
   showBackButton?: boolean
   isInSubView?: boolean
+  chatHistoryMinimized: boolean
 }
 
 export function ChatView({
@@ -34,172 +36,256 @@ export function ChatView({
   onBackToMain,
   showBackButton = false,
   isInSubView = false,
+  chatHistoryMinimized,
 }: ChatViewProps) {
-  return (
-    <>
-      {/* Chat Area */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
-        {/* Back to Main Button - Always show when in chat but not main view */}
-        {(showBackButton || isInSubView) && (
-          <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="mb-4">
-            <Button variant="ghost" size="sm" onClick={onBackToMain} className="hover:bg-white/10 rounded-xl">
-              <Home className="h-4 w-4 mr-2" />
-              Back to Main
-            </Button>
-          </motion.div>
-        )}
+  const renderMessage = (message: any, index: number) => {
+    if (message.role === "user") {
+      return (
+        <motion.div
+          key={message.id}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: index * 0.1 }}
+          className="flex justify-end mb-8"
+        >
+          <div className="flex items-start space-x-3 max-w-2xl">
+            <motion.div
+              whileHover={{ scale: 1.01 }}
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-4 rounded-2xl shadow-lg"
+            >
+              <p className="leading-relaxed">{message.content}</p>
+            </motion.div>
+            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0">
+              <User className="h-4 w-4 text-white" />
+            </div>
+          </div>
+        </motion.div>
+      )
+    }
 
-        {messages.length === 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-center py-8 md:py-12"
-          >
-            <div className="max-w-lg mx-auto">
+    // AI Response
+    return (
+      <motion.div
+        key={message.id}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: index * 0.1 }}
+        className="flex justify-start mb-8"
+      >
+        <div className="flex items-start space-x-3 max-w-4xl w-full">
+          <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center flex-shrink-0 mt-1">
+            <Bot className="h-4 w-4 text-white" />
+          </div>
+          <div className="flex-1 space-y-4">
+            {message.products && message.products.length > 0 ? (
+              <ProductCardResponse products={message.products} onAddToCart={onQuickAdd} explanation={message.content} />
+            ) : (
+              <div className="text-gray-300 leading-relaxed text-base">
+                <p>{message.content}</p>
+              </div>
+            )}
+          </div>
+        </div>
+      </motion.div>
+    )
+  }
+
+  return (
+    <div className="flex-1 flex flex-col h-full">
+      {/* Main Content Area - Scrollable */}
+      <div className="flex-1 overflow-y-auto scrollbar-hide chat-scroll">
+        <div
+          className={`max-w-5xl mx-auto px-4 py-8 transition-all duration-300 ${
+            chatHistoryMinimized ? "lg:pl-20" : "lg:pl-4"
+          }`}
+        >
+          {/* Back to Main Button - Only show when needed */}
+          {(showBackButton || isInSubView) && (
+            <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="mb-6">
+              <Button variant="ghost" size="sm" onClick={onBackToMain} className="hover:bg-white/5 rounded-lg">
+                <Home className="h-4 w-4 mr-2" />
+                Back to Main
+              </Button>
+            </motion.div>
+          )}
+
+          {/* Welcome Screen */}
+          {messages.length === 0 && (
+            <div className="flex flex-col items-center justify-center min-h-[60vh] px-4">
               <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.4 }}
-                className="mb-6"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="text-center mb-8"
               >
-                <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  vend<span className="text-white">ai</span>
-                </h2>
-                <p className="text-gray-400 text-sm md:text-base">
-                  AI shopping assistant for premium FMCG at manufacturing prices
+                {/* Greeting */}
+                <h1 className="text-3xl md:text-4xl font-bold mb-4">
+                  <span className="text-white">Niaje?</span>
+                </h1>
+                <p className="text-gray-400 text-sm md:text-base max-w-md mx-auto leading-relaxed">
+                  AI shopping assistant for premium FMCG at wholesale prices in Kenya
                 </p>
               </motion.div>
 
+              {/* Centered Chat Input */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className="w-full max-w-2xl mb-8"
+              >
+                <form onSubmit={handleSubmit} className="flex space-x-3">
+                  <Input
+                    value={input}
+                    onChange={handleInputChange}
+                    placeholder="Ask me about products..."
+                    className="flex-1 bg-white/5 border-white/10 text-white placeholder-gray-400 focus:border-purple-500/50 focus:bg-white/10 transition-all duration-300 rounded-xl h-12 text-sm md:text-base"
+                    disabled={isLoading}
+                  />
+                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                    <Button
+                      type="submit"
+                      disabled={isLoading || !input.trim()}
+                      className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 transition-all duration-300 disabled:opacity-50 rounded-xl h-12 px-4 md:px-6"
+                    >
+                      <Send className="h-4 w-4" />
+                    </Button>
+                  </motion.div>
+                </form>
+              </motion.div>
+
+              {/* Miniaturized Product Shortcuts */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5 }}
+                className="w-full max-w-2xl mb-8"
+              >
+                <ProductShortcuts products={products} onQuickAdd={onQuickAdd} onViewAll={onViewAll} />
+              </motion.div>
+
+              {/* Enhanced Action Cards - Mobile Responsive */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
-                className="grid grid-cols-2 gap-3 mb-6"
+                className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-md mx-auto"
               >
-                <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
+                <motion.button
+                  whileHover={{ scale: 1.05, y: -4 }}
+                  whileTap={{ scale: 0.95 }}
                   onClick={() => setCurrentView("browse")}
-                  className="glass-effect rounded-lg p-4 cursor-pointer transition-all duration-300 border border-blue-500/20 hover:border-blue-500/30"
+                  className="group relative bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl border border-purple-500/20 rounded-2xl p-6 h-32 flex flex-col items-center justify-center overflow-hidden hover:border-purple-400/40 transition-all duration-300"
                 >
-                  <Grid3X3 className="h-5 w-5 text-blue-400 mx-auto mb-2" />
-                  <p className="text-sm font-medium">Browse</p>
-                </motion.div>
+                  {/* Subtle glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  <div className="relative z-10 flex flex-col items-center">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                      <Grid3X3 className="h-6 w-6 text-white" />
+                    </div>
+                    <p className="font-semibold text-white text-sm group-hover:text-purple-200 transition-colors duration-300">
+                      Browse Products
+                    </p>
+                    <p className="text-xs text-gray-400 mt-1 text-center group-hover:text-gray-300 transition-colors duration-300">
+                      Explore our catalog
+                    </p>
+                  </div>
+                </motion.button>
 
-                <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
+                <motion.button
+                  whileHover={{ scale: 1.05, y: -4 }}
+                  whileTap={{ scale: 0.95 }}
                   onClick={() => setCurrentView("quickOrders")}
-                  className="glass-effect rounded-lg p-4 cursor-pointer transition-all duration-300 border border-green-500/20 hover:border-green-500/30"
+                  className="group relative bg-gradient-to-br from-green-500/10 to-teal-500/10 backdrop-blur-xl border border-green-500/20 rounded-2xl p-6 h-32 flex flex-col items-center justify-center overflow-hidden hover:border-green-400/40 transition-all duration-300"
                 >
-                  <Zap className="h-5 w-5 text-green-400 mx-auto mb-2" />
-                  <p className="text-sm font-medium">Quick Orders</p>
-                </motion.div>
+                  {/* Subtle glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  <div className="relative z-10 flex flex-col items-center">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-green-500 to-teal-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                      <Zap className="h-6 w-6 text-white" />
+                    </div>
+                    <p className="font-semibold text-white text-sm group-hover:text-green-200 transition-colors duration-300">
+                      Quick Orders
+                    </p>
+                    <p className="text-xs text-gray-400 mt-1 text-center group-hover:text-gray-300 transition-colors duration-300">
+                      Fast reordering
+                    </p>
+                  </div>
+                </motion.button>
               </motion.div>
+            </div>
+          )}
 
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8 }}
-                className="text-center"
-              >
-                <p className="text-xs text-gray-500 mb-3">Try asking:</p>
-                <div className="flex flex-wrap justify-center gap-2">
-                  {["Show cooking essentials", "Household items", "What's available?"].map((suggestion, index) => (
-                    <motion.button
-                      key={index}
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      className="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-300"
-                      onClick={() => {
-                        handleInputChange({ target: { value: suggestion } })
-                      }}
-                    >
-                      {suggestion}
-                    </motion.button>
-                  ))}
+          {/* Chat Messages with Better Spacing */}
+          <div className="space-y-8 pb-24">{messages.map((message, index) => renderMessage(message, index))}</div>
+
+          {/* Loading Animation */}
+          {isLoading && (
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start mb-8 pb-24">
+              <div className="flex items-start space-x-3">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center flex-shrink-0 mt-1">
+                  <Bot className="h-4 w-4 text-white" />
                 </div>
-              </motion.div>
-            </div>
-          </motion.div>
-        )}
-
-        {messages.map((message, index) => (
-          <motion.div
-            key={message.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
-          >
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className={`max-w-xs lg:max-w-md px-4 py-3 rounded-2xl transition-all duration-300 ${
-                message.role === "user" ? "bg-white text-black shadow-lg" : "glass-effect hover:bg-white/10"
-              }`}
-            >
-              <p className="text-sm leading-relaxed">
-                {message.content.replace(/ADD_TO_CART:.*|VIEW_CART|CHECKOUT/g, "").trim()}
-              </p>
-            </motion.div>
-          </motion.div>
-        ))}
-
-        {isLoading && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start">
-            <div className="glass-effect px-4 py-3 rounded-2xl">
-              <div className="flex space-x-2">
-                <motion.div
-                  className="w-2 h-2 bg-white rounded-full"
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, delay: 0 }}
-                />
-                <motion.div
-                  className="w-2 h-2 bg-white rounded-full"
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, delay: 0.1 }}
-                />
-                <motion.div
-                  className="w-2 h-2 bg-white rounded-full"
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, delay: 0.2 }}
-                />
+                <div className="flex space-x-2 mt-2">
+                  <motion.div
+                    className="w-2 h-2 bg-purple-400 rounded-full"
+                    animate={{ y: [0, -8, 0] }}
+                    transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, delay: 0 }}
+                  />
+                  <motion.div
+                    className="w-2 h-2 bg-purple-400 rounded-full"
+                    animate={{ y: [0, -8, 0] }}
+                    transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, delay: 0.1 }}
+                  />
+                  <motion.div
+                    className="w-2 h-2 bg-purple-400 rounded-full"
+                    animate={{ y: [0, -8, 0] }}
+                    transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, delay: 0.2 }}
+                  />
+                </div>
               </div>
-            </div>
-          </motion.div>
-        )}
+            </motion.div>
+          )}
+        </div>
       </div>
 
-      {/* Input Area with Product Shortcuts */}
-      <motion.div
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        className="glass-effect border-t border-white/10 p-4 space-y-4"
-      >
-        {/* Quick Product Access - Only 3 items + View All */}
-        <ProductShortcuts products={products} onQuickAdd={onQuickAdd} onViewAll={onViewAll} />
+      {/* Input Area - Sticky Bottom */}
+      {messages.length > 0 && (
+        <div className="border-t border-white/5 bg-black/50 backdrop-blur-xl sticky bottom-0">
+          <div
+            className={`max-w-5xl mx-auto p-4 space-y-3 transition-all duration-300 ${
+              chatHistoryMinimized ? "lg:pl-20" : "lg:pl-4"
+            }`}
+          >
+            {/* Chat Input */}
+            <form onSubmit={handleSubmit} className="flex space-x-3">
+              <Input
+                value={input}
+                onChange={handleInputChange}
+                placeholder="Ask me about products or tell me what you need..."
+                className="flex-1 bg-white/5 border-white/10 text-white placeholder-gray-400 focus:border-purple-500/50 focus:bg-white/10 transition-all duration-300 rounded-xl text-sm md:text-base"
+                disabled={isLoading}
+              />
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Button
+                  type="submit"
+                  disabled={isLoading || !input.trim()}
+                  className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 transition-all duration-300 disabled:opacity-50 rounded-xl px-4 md:px-6"
+                >
+                  <Send className="h-4 w-4" />
+                </Button>
+              </motion.div>
+            </form>
 
-        {/* Chat Input */}
-        <form onSubmit={handleSubmit} className="flex space-x-3">
-          <Input
-            value={input}
-            onChange={handleInputChange}
-            placeholder="Ask me about products or tell me what you need..."
-            className="flex-1 bg-white/5 border-white/10 text-white placeholder-gray-400 focus:border-white/20 focus:bg-white/10 transition-all duration-300"
-            disabled={isLoading}
-          />
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button
-              type="submit"
-              disabled={isLoading || !input.trim()}
-              className="bg-white text-black hover:bg-gray-200 transition-all duration-300 disabled:opacity-50"
-            >
-              <Send className="h-4 w-4" />
-            </Button>
-          </motion.div>
-        </form>
-      </motion.div>
-    </>
+            {/* Miniaturized Quick Product Access - Hidden on mobile */}
+            <div className="hidden sm:block">
+              <ProductShortcuts products={products} onQuickAdd={onQuickAdd} onViewAll={onViewAll} />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   )
 }

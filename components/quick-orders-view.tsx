@@ -4,14 +4,6 @@ import { motion } from "framer-motion"
 import { ArrowLeft, Zap, RotateCcw, Star, TrendingUp, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-interface OrderItem {
-  id: string
-  name: string
-  quantity: number
-  price: number
-  [key: string]: any
-}
-
 interface QuickOrdersViewProps {
   products: any[]
   orders: any[]
@@ -210,7 +202,7 @@ export function QuickOrdersView({ products, orders, onAddToCart, onReorder, onBa
                       <div className="text-xs text-gray-500 mt-1">
                         {order.items
                           .slice(0, 2)
-                          .map((item: OrderItem) => item.name)
+                          .map((item) => item.name)
                           .join(", ")}
                         {order.items.length > 2 && ` +${order.items.length - 2} more`}
                       </div>

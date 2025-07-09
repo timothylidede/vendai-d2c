@@ -78,7 +78,7 @@ export function Signup({ onSignup, onSwitchToLogin, onClose }: SignupProps) {
             transition={{ delay: 0.4 }}
             className="text-gray-400 text-sm"
           >
-            AI shopping assistant for premium FMCG at manufacturing prices
+            AI shopping assistant for premium FMCG at wholesale prices
           </motion.p>
         </div>
 

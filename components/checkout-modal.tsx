@@ -1,10 +1,12 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { X, CreditCard, Phone, MapPin, Check, Loader2, ArrowLeft } from "lucide-react"
+import { X, MapPin, Navigation, CreditCard, Smartphone, Banknote } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
 
 interface CartItem {
   id: number
@@ -24,76 +26,354 @@ interface CheckoutModalProps {
   user: any
 }
 
+declare global {
+  interface Window {
+    google: any
+  }
+}
+
 export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }: CheckoutModalProps) {
-  const [step, setStep] = useState(1) // 1: Details, 2: Payment, 3: Processing, 4: Success
+  const [step, setStep] = useState(1)
   const [paymentMethod, setPaymentMethod] = useState("mpesa")
-  const [isProcessing, setIsProcessing] = useState(false)
-  const [deliveryInfo, setDeliveryInfo] = useState({
-    phone: user?.phone || "",
-    location: user?.location || "",
-    city: user?.city || "",
-    instructions: "",
-  })
-  const [mpesaPhone, setMpesaPhone] = useState(user?.phone || "")
-  const [orderNumber, setOrderNumber] = useState("")
+  const [phoneNumber, setPhoneNumber] = useState("")
+  const [deliveryAddress, setDeliveryAddress] = useState("")
+  const [deliveryNotes, setDeliveryNotes] = useState("")
+  const [selectedLocation, setSelectedLocation] = useState<{ lat: number; lng: number } | null>(null)
+  const [isLoadingLocation, setIsLoadingLocation] = useState(false)
 
-  // Generate 4-digit order number
-  const generateOrderNumber = () => {
-    const existingOrders = JSON.parse(localStorage.getItem("vendai-orders") || "[]")
-    const nextNumber = existingOrders.length + 1
-    return nextNumber.toString().padStart(4, "0")
+  const mapRef = useRef<HTMLDivElement>(null)
+  const mapInstanceRef = useRef<any>(null)
+  const markerRef = useRef<any>(null)
+
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
+
+  // Initialize Google Maps
+  useEffect(() => {
+    if (show && step === 1 && mapRef.current && window.google) {
+      initializeMap()
+    }
+  }, [show, step])
+
+  const initializeMap = () => {
+    if (!mapRef.current || !window.google) return
+
+    // Default to Nairobi center
+    const defaultLocation = { lat: -1.2921, lng: 36.8219 }
+
+    const map = new window.google.maps.Map(mapRef.current, {
+      zoom: 12,
+      center: selectedLocation || defaultLocation,
+      styles: [
+        {
+          featureType: "all",
+          elementType: "geometry.fill",
+          stylers: [{ color: "#1a1a1a" }],
+        },
+        {
+          featureType: "all",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#ffffff" }],
+        },
+        {
+          featureType: "water",
+          elementType: "geometry.fill",
+          stylers: [{ color: "#2563eb" }],
+        },
+      ],
+    })
+
+    mapInstanceRef.current = map
+
+    // Add click listener to place marker
+    map.addListener("click", (event: any) => {
+      placeMarker(event.latLng)
+    })
+
+    // Add existing marker if location is selected
+    if (selectedLocation) {
+      placeMarker(new window.google.maps.LatLng(selectedLocation.lat, selectedLocation.lng))
+    }
   }
 
-  const getTotalPrice = () => {
-    return cart.reduce((total, item) => total + item.price * item.quantity, 0)
+  const placeMarker = (location: any) => {
+    // Remove existing marker
+    if (markerRef.current) {
+      markerRef.current.setMap(null)
+    }
+
+    // Create new marker
+    const marker = new window.google.maps.Marker({
+      position: location,
+      map: mapInstanceRef.current,
+      draggable: true,
+      animation: window.google.maps.Animation.DROP,
+    })
+
+    markerRef.current = marker
+
+    // Update selected location
+    setSelectedLocation({
+      lat: location.lat(),
+      lng: location.lng(),
+    })
+
+    // Reverse geocode to get address
+    const geocoder = new window.google.maps.Geocoder()
+    geocoder.geocode({ location }, (results: any, status: any) => {
+      if (status === "OK" && results[0]) {
+        setDeliveryAddress(results[0].formatted_address)
+      }
+    })
+
+    // Add drag listener
+    marker.addListener("dragend", (event: any) => {
+      const newLocation = {
+        lat: event.latLng.lat(),
+        lng: event.latLng.lng(),
+      }
+      setSelectedLocation(newLocation)
+
+      // Update address
+      geocoder.geocode({ location: event.latLng }, (results: any, status: any) => {
+        if (status === "OK" && results[0]) {
+          setDeliveryAddress(results[0].formatted_address)
+        }
+      })
+    })
   }
 
-  const getTotalItems = () => {
-    return cart.reduce((total, item) => total + item.quantity, 0)
+  const getCurrentLocation = () => {
+    setIsLoadingLocation(true)
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const location = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          }
+
+          setSelectedLocation(location)
+
+          if (mapInstanceRef.current) {
+            mapInstanceRef.current.setCenter(location)
+            placeMarker(new window.google.maps.LatLng(location.lat, location.lng))
+          }
+
+          setIsLoadingLocation(false)
+        },
+        (error) => {
+          console.error("Error getting location:", error)
+          setIsLoadingLocation(false)
+        },
+      )
+    } else {
+      setIsLoadingLocation(false)
+    }
   }
 
-  const handleDeliverySubmit = () => {
-    if (!deliveryInfo.phone || !deliveryInfo.location) {
-      alert("Please fill in all required fields")
+  const handleCheckout = () => {
+    if (!selectedLocation || !deliveryAddress) {
+      alert("Please select a delivery location on the map")
       return
     }
-    setStep(2)
-  }
-
-  const handlePayment = async () => {
-    setIsProcessing(true)
-    setStep(3)
-
-    const orderNum = generateOrderNumber()
-    setOrderNumber(orderNum)
-
-    // Simulate payment processing
-    await new Promise((resolve) => setTimeout(resolve, 3000))
 
     const orderData = {
-      id: `order-${orderNum}`,
-      orderNumber: orderNum,
-      items: [...cart],
-      total: getTotalPrice(),
-      status: "processing",
-      paymentMethod,
-      paymentStatus: "paid",
-      deliveryInfo,
+      id: `ORDER-${Date.now()}`,
+      items: cart,
+      total,
+      status: "pending" as const,
       date: new Date().toISOString(),
       deliveryDate: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(),
+      paymentMethod,
+      phoneNumber,
+      deliveryAddress,
+      deliveryNotes,
+      deliveryLocation: selectedLocation,
+      user: user?.name || "Guest",
     }
 
     onCheckoutComplete(orderData)
-    setStep(4)
-    setIsProcessing(false)
+    setStep(1)
+    setSelectedLocation(null)
+    setDeliveryAddress("")
+    setDeliveryNotes("")
+    setPhoneNumber("")
   }
 
-  const resetCheckout = () => {
-    setStep(1)
-    setIsProcessing(false)
-    setPaymentMethod("mpesa")
-    setOrderNumber("")
-  }
+  const renderStep1 = () => (
+    <div className="space-y-6">
+      <div>
+        <h3 className="text-lg font-semibold text-white mb-4 flex items-center">
+          <MapPin className="h-5 w-5 mr-2 text-purple-400" />
+          Delivery Location
+        </h3>
+
+        {/* Map Container */}
+        <div className="relative">
+          <div ref={mapRef} className="w-full h-64 rounded-lg border border-white/10 bg-gray-900" />
+
+          {/* Use Current Location Button */}
+          <Button
+            onClick={getCurrentLocation}
+            disabled={isLoadingLocation}
+            className="absolute top-3 right-3 bg-purple-500 hover:bg-purple-600 text-white text-xs px-3 py-1 h-8"
+          >
+            <Navigation className="h-3 w-3 mr-1" />
+            {isLoadingLocation ? "Getting..." : "Use Current"}
+          </Button>
+        </div>
+
+        <p className="text-sm text-gray-400 mt-2">
+          Click on the map to place a delivery pin, or use your current location
+        </p>
+      </div>
+
+      {/* Address Display */}
+      {deliveryAddress && (
+        <div>
+          <Label htmlFor="address" className="text-white">
+            Delivery Address
+          </Label>
+          <Textarea
+            id="address"
+            value={deliveryAddress}
+            onChange={(e) => setDeliveryAddress(e.target.value)}
+            className="mt-1 bg-white/5 border-white/10 text-white"
+            rows={2}
+          />
+        </div>
+      )}
+
+      {/* Delivery Notes */}
+      <div>
+        <Label htmlFor="notes" className="text-white">
+          Delivery Notes (Optional)
+        </Label>
+        <Textarea
+          id="notes"
+          value={deliveryNotes}
+          onChange={(e) => setDeliveryNotes(e.target.value)}
+          placeholder="Building name, floor, apartment number, etc."
+          className="mt-1 bg-white/5 border-white/10 text-white placeholder-gray-400"
+          rows={2}
+        />
+      </div>
+    </div>
+  )
+
+  const renderStep2 = () => (
+    <div className="space-y-6">
+      <div>
+        <h3 className="text-lg font-semibold text-white mb-4">Payment Method</h3>
+        <div className="grid grid-cols-1 gap-3">
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={() => setPaymentMethod("mpesa")}
+            className={`p-4 rounded-lg border-2 transition-all duration-300 ${
+              paymentMethod === "mpesa"
+                ? "border-green-500 bg-green-500/10"
+                : "border-white/10 bg-white/5 hover:border-green-500/50"
+            }`}
+          >
+            <div className="flex items-center space-x-3">
+              <Smartphone className="h-6 w-6 text-green-400" />
+              <div className="text-left">
+                <p className="font-medium text-white">M-Pesa</p>
+                <p className="text-sm text-gray-400">Pay with your mobile money</p>
+              </div>
+            </div>
+          </motion.button>
+
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={() => setPaymentMethod("card")}
+            className={`p-4 rounded-lg border-2 transition-all duration-300 ${
+              paymentMethod === "card"
+                ? "border-blue-500 bg-blue-500/10"
+                : "border-white/10 bg-white/5 hover:border-blue-500/50"
+            }`}
+          >
+            <div className="flex items-center space-x-3">
+              <CreditCard className="h-6 w-6 text-blue-400" />
+              <div className="text-left">
+                <p className="font-medium text-white">Card Payment</p>
+                <p className="text-sm text-gray-400">Visa, Mastercard</p>
+              </div>
+            </div>
+          </motion.button>
+
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={() => setPaymentMethod("cash")}
+            className={`p-4 rounded-lg border-2 transition-all duration-300 ${
+              paymentMethod === "cash"
+                ? "border-yellow-500 bg-yellow-500/10"
+                : "border-white/10 bg-white/5 hover:border-yellow-500/50"
+            }`}
+          >
+            <div className="flex items-center space-x-3">
+              <Banknote className="h-6 w-6 text-yellow-400" />
+              <div className="text-left">
+                <p className="font-medium text-white">Cash on Delivery</p>
+                <p className="text-sm text-gray-400">Pay when you receive</p>
+              </div>
+            </div>
+          </motion.button>
+        </div>
+      </div>
+
+      {paymentMethod === "mpesa" && (
+        <div>
+          <Label htmlFor="phone" className="text-white">
+            M-Pesa Phone Number
+          </Label>
+          <Input
+            id="phone"
+            type="tel"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+            placeholder="254712345678"
+            className="mt-1 bg-white/5 border-white/10 text-white placeholder-gray-400"
+          />
+        </div>
+      )}
+    </div>
+  )
+
+  const renderOrderSummary = () => (
+    <div className="bg-white/5 rounded-lg p-4 space-y-3">
+      <h4 className="font-medium text-white">Order Summary</h4>
+      {cart.map((item) => (
+        <div key={item.id} className="flex justify-between text-sm">
+          <span className="text-gray-300">
+            {item.name} × {item.quantity}
+          </span>
+          <span className="text-white">KES {(item.price * item.quantity).toLocaleString()}</span>
+        </div>
+      ))}
+      <div className="border-t border-white/10 pt-3">
+        <div className="flex justify-between font-medium">
+          <span className="text-white">Total</span>
+          <span className="text-white">KES {total.toLocaleString()}</span>
+        </div>
+      </div>
+    </div>
+  )
+
+  // Load Google Maps script
+  useEffect(() => {
+    if (show && !window.google) {
+      const script = document.createElement("script")
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places`
+      script.async = true
+      script.defer = true
+      document.head.appendChild(script)
+    }
+  }, [show])
 
   return (
     <AnimatePresence>
@@ -102,316 +382,74 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
           onClick={onClose}
         >
           <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.9, opacity: 0 }}
-            className="glass-effect rounded-2xl p-6 w-full max-w-lg max-h-[90vh] overflow-y-auto"
+            initial={{ scale: 0.9, opacity: 0, y: 20 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            exit={{ scale: 0.9, opacity: 0, y: 20 }}
+            transition={{ type: "spring", duration: 0.5 }}
+            className="bg-gray-900 rounded-2xl p-6 w-full max-w-2xl max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center space-x-3">
-                {step > 1 && step < 4 && (
-                  <Button variant="ghost" size="sm" onClick={() => setStep(step - 1)} className="hover:bg-white/10">
-                    <ArrowLeft className="h-4 w-4" />
-                  </Button>
-                )}
-                <h2 className="text-xl font-bold text-gradient">
-                  {step === 1 && "Delivery Details"}
-                  {step === 2 && "Payment Method"}
-                  {step === 3 && "Processing Payment"}
-                  {step === 4 && "Order Confirmed"}
-                </h2>
-              </div>
-              <Button variant="ghost" size="sm" onClick={onClose} className="hover:bg-white/10">
-                <X className="h-4 w-4" />
+              <h2 className="text-2xl font-bold text-white">{step === 1 ? "Delivery Details" : "Payment & Review"}</h2>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={onClose}
+                className="text-gray-400 hover:text-white hover:bg-white/10 rounded-full p-2"
+              >
+                <X className="h-5 w-5" />
               </Button>
             </div>
 
             {/* Progress Indicator */}
-            <div className="flex items-center justify-center mb-6">
-              <div className="flex items-center space-x-2">
-                {[1, 2, 3, 4].map((stepNum) => (
-                  <div key={stepNum} className="flex items-center">
-                    <div
-                      className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-all duration-300 ${
-                        stepNum <= step
-                          ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white"
-                          : "bg-white/10 text-gray-400"
-                      }`}
-                    >
-                      {stepNum < step ? <Check className="h-4 w-4" /> : stepNum}
-                    </div>
-                    {stepNum < 4 && (
-                      <div
-                        className={`w-8 h-0.5 transition-all duration-300 ${
-                          stepNum < step ? "bg-gradient-to-r from-blue-500 to-purple-500" : "bg-white/10"
-                        }`}
-                      />
-                    )}
-                  </div>
-                ))}
+            <div className="flex items-center mb-8">
+              <div
+                className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
+                  step >= 1 ? "bg-purple-500 text-white" : "bg-white/10 text-gray-400"
+                }`}
+              >
+                1
+              </div>
+              <div className={`flex-1 h-1 mx-3 ${step >= 2 ? "bg-purple-500" : "bg-white/10"}`} />
+              <div
+                className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
+                  step >= 2 ? "bg-purple-500 text-white" : "bg-white/10 text-gray-400"
+                }`}
+              >
+                2
               </div>
             </div>
 
-            {/* Step 1: Delivery Details */}
-            {step === 1 && (
-              <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="space-y-4">
-                <div className="glass-effect rounded-lg p-4 mb-4">
-                  <h3 className="font-medium mb-2">Order Summary</h3>
-                  <div className="text-sm text-gray-400 space-y-1">
-                    <div className="flex justify-between">
-                      <span>{getTotalItems()} items</span>
-                      <span>KES {getTotalPrice().toLocaleString()}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Delivery</span>
-                      <span>Free</span>
-                    </div>
-                    <div className="border-t border-white/10 pt-1 mt-2">
-                      <div className="flex justify-between font-medium text-white">
-                        <span>Total</span>
-                        <span>KES {getTotalPrice().toLocaleString()}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            {/* Step Content */}
+            {step === 1 ? renderStep1() : renderStep2()}
 
-                <div className="space-y-4">
-                  <div>
-                    <label className="block text-sm text-gray-400 mb-2">Phone Number *</label>
-                    <div className="relative">
-                      <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                      <Input
-                        value={deliveryInfo.phone}
-                        onChange={(e) => setDeliveryInfo({ ...deliveryInfo, phone: e.target.value })}
-                        className="pl-10 bg-white/5 border-white/10 text-white"
-                        placeholder="+254 712 345 678"
-                      />
-                    </div>
-                  </div>
+            {/* Order Summary */}
+            <div className="mt-8">{renderOrderSummary()}</div>
 
-                  <div className="grid grid-cols-2 gap-3">
-                    <div>
-                      <label className="block text-sm text-gray-400 mb-2">Location *</label>
-                      <div className="relative">
-                        <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                        <Input
-                          value={deliveryInfo.location}
-                          onChange={(e) => setDeliveryInfo({ ...deliveryInfo, location: e.target.value })}
-                          className="pl-10 bg-white/5 border-white/10 text-white"
-                          placeholder="Westlands"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <label className="block text-sm text-gray-400 mb-2">City *</label>
-                      <Input
-                        value={deliveryInfo.city}
-                        onChange={(e) => setDeliveryInfo({ ...deliveryInfo, city: e.target.value })}
-                        className="bg-white/5 border-white/10 text-white"
-                        placeholder="Nairobi"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm text-gray-400 mb-2">Delivery Instructions</label>
-                    <textarea
-                      value={deliveryInfo.instructions}
-                      onChange={(e) => setDeliveryInfo({ ...deliveryInfo, instructions: e.target.value })}
-                      className="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-white h-20 resize-none"
-                      placeholder="e.g., Leave at gate, Call before delivery..."
-                    />
-                  </div>
-                </div>
-
-                <Button onClick={handleDeliverySubmit} className="w-full bg-white text-black hover:bg-gray-200">
-                  Continue to Payment
-                </Button>
-              </motion.div>
-            )}
-
-            {/* Step 2: Payment Method */}
-            {step === 2 && (
-              <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="space-y-4">
-                <div className="space-y-3">
-                  {/* M-Pesa Option */}
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className={`glass-effect rounded-lg p-4 cursor-pointer transition-all duration-300 ${
-                      paymentMethod === "mpesa" ? "border-2 border-green-500 bg-green-500/10" : "border border-white/10"
-                    }`}
-                    onClick={() => setPaymentMethod("mpesa")}
-                  >
-                    <div className="flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
-                        <Phone className="h-6 w-6 text-white" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="font-medium">M-Pesa</h3>
-                        <p className="text-sm text-gray-400">Pay with your mobile money</p>
-                      </div>
-                      <div
-                        className={`w-5 h-5 rounded-full border-2 transition-all duration-300 ${
-                          paymentMethod === "mpesa" ? "border-green-500 bg-green-500" : "border-gray-400"
-                        }`}
-                      >
-                        {paymentMethod === "mpesa" && <Check className="h-3 w-3 text-white m-0.5" />}
-                      </div>
-                    </div>
-                  </motion.div>
-
-                  {/* Card Option */}
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className={`glass-effect rounded-lg p-4 cursor-pointer transition-all duration-300 opacity-50 ${
-                      paymentMethod === "card" ? "border-2 border-blue-500 bg-blue-500/10" : "border border-white/10"
-                    }`}
-                    onClick={() => setPaymentMethod("card")}
-                  >
-                    <div className="flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
-                        <CreditCard className="h-6 w-6 text-white" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="font-medium">Credit/Debit Card</h3>
-                        <p className="text-sm text-gray-400">Coming soon</p>
-                      </div>
-                      <div
-                        className={`w-5 h-5 rounded-full border-2 transition-all duration-300 ${
-                          paymentMethod === "card" ? "border-blue-500 bg-blue-500" : "border-gray-400"
-                        }`}
-                      >
-                        {paymentMethod === "card" && <Check className="h-3 w-3 text-white m-0.5" />}
-                      </div>
-                    </div>
-                  </motion.div>
-                </div>
-
-                {/* M-Pesa Phone Input */}
-                {paymentMethod === "mpesa" && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    className="space-y-3"
-                  >
-                    <div>
-                      <label className="block text-sm text-gray-400 mb-2">M-Pesa Phone Number</label>
-                      <div className="relative">
-                        <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                        <Input
-                          value={mpesaPhone}
-                          onChange={(e) => setMpesaPhone(e.target.value)}
-                          className="pl-10 bg-white/5 border-white/10 text-white"
-                          placeholder="+254 712 345 678"
-                        />
-                      </div>
-                      <p className="text-xs text-gray-500 mt-1">You'll receive an M-Pesa prompt on this number</p>
-                    </div>
-                  </motion.div>
-                )}
-
-                <div className="glass-effect rounded-lg p-4">
-                  <div className="flex justify-between items-center">
-                    <span className="font-medium">Total Amount</span>
-                    <span className="text-xl font-bold text-green-400">KES {getTotalPrice().toLocaleString()}</span>
-                  </div>
-                </div>
-
+            {/* Actions */}
+            <div className="flex space-x-3 mt-8">
+              {step === 2 && (
                 <Button
-                  onClick={handlePayment}
-                  disabled={paymentMethod === "card" || (paymentMethod === "mpesa" && !mpesaPhone)}
-                  className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white disabled:opacity-50"
+                  variant="outline"
+                  onClick={() => setStep(1)}
+                  className="flex-1 border-white/20 text-white hover:bg-white/10"
                 >
-                  {paymentMethod === "mpesa" ? "Pay with M-Pesa" : "Pay with Card"}
+                  Back
                 </Button>
-              </motion.div>
-            )}
-
-            {/* Step 3: Processing */}
-            {step === 3 && (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="text-center py-8"
+              )}
+              <Button
+                onClick={step === 1 ? () => setStep(2) : handleCheckout}
+                disabled={step === 1 && (!selectedLocation || !deliveryAddress)}
+                className="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 disabled:opacity-50"
               >
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-                  className="w-16 h-16 mx-auto mb-4"
-                >
-                  <Loader2 className="w-16 h-16 text-green-500" />
-                </motion.div>
-                <h3 className="text-lg font-medium mb-2">Processing Payment</h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  {paymentMethod === "mpesa"
-                    ? "Please check your phone for the M-Pesa prompt and enter your PIN"
-                    : "Processing your payment..."}
-                </p>
-                <div className="glass-effect rounded-lg p-4">
-                  <div className="flex justify-between text-sm">
-                    <span>Amount</span>
-                    <span>KES {getTotalPrice().toLocaleString()}</span>
-                  </div>
-                  <div className="flex justify-between text-sm mt-1">
-                    <span>Method</span>
-                    <span>{paymentMethod === "mpesa" ? "M-Pesa" : "Card"}</span>
-                  </div>
-                </div>
-              </motion.div>
-            )}
-
-            {/* Step 4: Success */}
-            {step === 4 && (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="text-center py-8"
-              >
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ delay: 0.2, type: "spring", damping: 15 }}
-                  className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4"
-                >
-                  <Check className="h-8 w-8 text-white" />
-                </motion.div>
-                <h3 className="text-lg font-medium mb-2">Order Confirmed!</h3>
-                <p className="text-gray-400 text-sm mb-6">
-                  Your order has been placed successfully. You'll receive updates via SMS.
-                </p>
-                <div className="glass-effect rounded-lg p-4 mb-6">
-                  <div className="text-sm space-y-2">
-                    <div className="flex justify-between">
-                      <span>Order ID</span>
-                      <span className="font-mono">#{orderNumber}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Delivery</span>
-                      <span>Within 24 hours</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Total Paid</span>
-                      <span className="font-bold text-green-400">KES {getTotalPrice().toLocaleString()}</span>
-                    </div>
-                  </div>
-                </div>
-                <Button
-                  onClick={() => {
-                    onClose()
-                    resetCheckout()
-                  }}
-                  className="w-full bg-white text-black hover:bg-gray-200"
-                >
-                  Continue Shopping
-                </Button>
-              </motion.div>
-            )}
+                {step === 1 ? "Continue to Payment" : `Pay KES ${total.toLocaleString()}`}
+              </Button>
+            </div>
           </motion.div>
         </motion.div>
       )}
