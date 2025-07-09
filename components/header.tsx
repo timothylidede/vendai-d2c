@@ -1,28 +1,28 @@
-"use client"
+"use client";
 
-import { motion, AnimatePresence } from "framer-motion"
-import { ShoppingCart, User, Settings, LogOut, Package } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { motion, AnimatePresence } from "framer-motion";
+import { ShoppingCart, User, Settings, LogOut, Package } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface HeaderProps {
-  sidebarOpen: boolean
-  setSidebarOpen: (open: boolean) => void
-  chatHistoryOpen: boolean
-  setChatHistoryOpen: (open: boolean) => void
-  cart: any[]
-  setShowCart: (show: boolean) => void
-  showProfile: boolean
-  setShowProfile: (show: boolean) => void
-  showOrderHistory: boolean
-  setShowOrderHistory: (show: boolean) => void
-  orders: any[]
-  onSettings: () => void
-  onLogout: () => void
-  onLogin: () => void
-  onSignup: () => void
-  onBackToChat: () => void
-  user: any
-  isAuthenticated: boolean
+  sidebarOpen: boolean;
+  setSidebarOpen: (open: boolean) => void;
+  chatHistoryOpen: boolean;
+  setChatHistoryOpen: (open: boolean) => void;
+  cart: any[];
+  setShowCart: (show: boolean) => void;
+  showProfile: boolean;
+  setShowProfile: (show: boolean) => void;
+  showOrderHistory: boolean;
+  setShowOrderHistory: (show: boolean) => void;
+  orders: any[];
+  onSettings: () => void;
+  onLogout: () => void;
+  onLogin: () => void;
+  onSignup: () => void;
+  onBackToChat: () => void;
+  user: any; // userData from Firestore (via useAuth)
+  isAuthenticated: boolean;
 }
 
 export function Header({
@@ -45,6 +45,13 @@ export function Header({
   user,
   isAuthenticated,
 }: HeaderProps) {
+  // Safely extract user data from Firestore userData
+  const userName = user?.name || "User";
+  const userEmail = user?.email || "";
+  const memberSince = user?.createdAt
+    ? new Date(user.createdAt).toLocaleDateString("en-KE", { month: "short", year: "numeric" })
+    : "Jan 2024";
+
   return (
     <motion.header
       initial={{ y: -20, opacity: 0 }}
@@ -155,8 +162,8 @@ export function Header({
                               <User className="h-5 w-5" />
                             </div>
                             <div>
-                              <p className="font-medium">{user?.name || "John Doe"}</p>
-                              <p className="text-xs text-gray-400">{user?.email || "john.doe@email.com"}</p>
+                              <p className="font-medium">{userName}</p>
+                              <p className="text-xs text-gray-400">{userEmail}</p>
                             </div>
                           </div>
                         </div>
@@ -174,7 +181,7 @@ export function Header({
                           </div>
                           <div className="flex items-center justify-between text-sm">
                             <span className="text-gray-400">Member Since</span>
-                            <span className="font-medium">Jan 2024</span>
+                            <span className="font-medium">{memberSince}</span>
                           </div>
                         </div>
 
@@ -250,5 +257,5 @@ export function Header({
         </div>
       </div>
     </motion.header>
-  )
+  );
 }

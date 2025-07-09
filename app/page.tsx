@@ -1,350 +1,357 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { PRODUCTS } from "@/data/products"
+import { useState, useEffect } from "react";
+import { PRODUCTS } from "@/data/products";
+import { useAuth } from "@/lib/auth-context";
+import { db } from "@/lib/firebase";
+import { collection, getDocs, query, where, orderBy } from "firebase/firestore";
 
 // Components
-import { Header } from "@/components/header"
-import { Sidebar } from "@/components/sidebar"
-import { ChatView } from "@/components/chat-view"
-import { BrowseView } from "@/components/browse-view"
-import { QuickOrdersView } from "@/components/quick-orders-view"
-import { SettingsView } from "@/components/settings-view"
-import { CartModal } from "@/components/cart-modal"
-import { AllProductsModal } from "@/components/all-products-modal"
-import { ChatHistorySidebar } from "@/components/chat-history-sidebar"
-import { Login } from "@/components/auth/login"
-import { Signup } from "@/components/auth/signup"
-import { LoginPromptModal } from "@/components/login-prompt-modal"
-import { CheckoutModal } from "@/components/checkout-modal"
-import { ProductManagementModal } from "@/components/product-management-modal"
+import { Header } from "@/components/header";
+import { Sidebar } from "@/components/sidebar";
+import { ChatView } from "@/components/chat-view";
+import { BrowseView } from "@/components/browse-view";
+import { QuickOrdersView } from "@/components/quick-orders-view";
+import { SettingsView } from "@/components/settings-view";
+import { CartModal } from "@/components/cart-modal";
+import { AllProductsModal } from "@/components/all-products-modal";
+import { ChatHistorySidebar } from "@/components/chat-history-sidebar";
+import { Login } from "@/components/auth/login";
+import { Signup } from "@/components/auth/signup";
+import { LoginPromptModal } from "@/components/login-prompt-modal";
+import { CheckoutModal } from "@/components/checkout-modal";
+import { ProductManagementModal } from "@/components/product-management-modal";
 
 interface CartItem {
-  id: number
-  name: string
-  price: number
-  quantity: number
-  category: string
-  description: string
-  image: string
+  id: number;
+  name: string;
+  price: number;
+  quantity: number;
+  category: string;
+  description: string;
+  image: string;
 }
 
 interface Order {
-  id: string
-  items: CartItem[]
-  total: number
-  status: "pending" | "processing" | "shipped" | "completed"
-  date: string
-  deliveryDate: string
+  id: string;
+  userId: string;
+  items: CartItem[];
+  total: number;
+  status: "pending" | "processing" | "shipped" | "completed" | "cancelled";
+  paymentStatus: "pending" | "paid" | "failed";
+  paymentMethod: "mpesa" | "card" | "cash";
+  deliveryAddress: { address: string; location: { lat: number; lng: number }; notes: string };
+  deliveryDate: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 interface ChatSession {
-  id: string
-  title: string
-  messages: any[]
-  date: string
+  id: string;
+  userId: string;
+  title: string;
+  messages: any[];
+  isActive: boolean;
+  createdAt: string;
+  updatedAt: string;
+  date: string; // Added: For compatibility with ChatHistorySidebar
 }
 
 interface Message {
-  id: string
-  role: "user" | "assistant"
-  content: string
-  products?: any[]
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  products?: any[];
 }
 
 export default function Home() {
-  // Authentication state
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
-  const [user, setUser] = useState<any>(null)
-  const [showLogin, setShowLogin] = useState(false)
-  const [showSignup, setShowSignup] = useState(false)
-  const [showLoginPrompt, setShowLoginPrompt] = useState(false)
+  const { user, userData, loading } = useAuth();
 
   // UI state
-  const [currentView, setCurrentView] = useState("chat")
-  const [sidebarOpen, setSidebarOpen] = useState(false)
-  const [chatHistoryMinimized, setChatHistoryMinimized] = useState(false)
-  const [showCart, setShowCart] = useState(false)
-  const [showCheckout, setShowCheckout] = useState(false)
-  const [showAllProducts, setShowAllProducts] = useState(false)
-  const [showProfile, setShowProfile] = useState(false)
-  const [showOrderHistory, setShowOrderHistory] = useState(false)
-  const [showProductManagement, setShowProductManagement] = useState(false)
+  const [currentView, setCurrentView] = useState("chat");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [chatHistoryMinimized, setChatHistoryMinimized] = useState(true);
+  const [showCart, setShowCart] = useState(false);
+  const [showCheckout, setShowCheckout] = useState(false);
+  const [showAllProducts, setShowAllProducts] = useState(false);
+  const [showProfile, setShowProfile] = useState(false);
+  const [showOrderHistory, setShowOrderHistory] = useState(false);
+  const [showProductManagement, setShowProductManagement] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
+  const [showSignup, setShowSignup] = useState(false);
+  const [showLoginPrompt, setShowLoginPrompt] = useState(false);
 
   // Data state
-  const [cart, setCart] = useState<CartItem[]>([])
-  const [orders, setOrders] = useState<Order[]>([])
-  const [chatSessions, setChatSessions] = useState<ChatSession[]>([])
-  const [currentSessionId, setCurrentSessionId] = useState("default")
-  const [products, setProducts] = useState(PRODUCTS)
+  const [cart, setCart] = useState<CartItem[]>([]);
+  const [orders, setOrders] = useState<Order[]>([]);
+  const [chatSessions, setChatSessions] = useState<ChatSession[]>([]);
+  const [currentSessionId, setCurrentSessionId] = useState("default");
+  const [products, setProducts] = useState(PRODUCTS);
 
   // Chat state
-  const [messages, setMessages] = useState<Message[]>([])
-  const [input, setInput] = useState("")
-  const [isLoading, setIsLoading] = useState(false)
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  // Load data from localStorage on mount
+  // Load data from localStorage and Firestore
   useEffect(() => {
-    const savedCart = localStorage.getItem("vendai-cart")
-    const savedOrders = localStorage.getItem("vendai-orders")
-    const savedUser = localStorage.getItem("vendai-user")
-    const savedSessions = localStorage.getItem("vendai-chat-sessions")
-    const savedMinimized = localStorage.getItem("vendai-chat-minimized")
+    const savedCart = JSON.parse(localStorage.getItem("vendai-cart") || "[]");
+    const savedSessions = JSON.parse(localStorage.getItem("vendai-chat-sessions") || "[]");
+    const savedMinimized = JSON.parse(localStorage.getItem("vendai-chat-minimized") || "false");
 
-    if (savedCart) setCart(JSON.parse(savedCart))
-    if (savedOrders) setOrders(JSON.parse(savedOrders))
-    if (savedSessions) setChatSessions(JSON.parse(savedSessions))
-    if (savedMinimized) setChatHistoryMinimized(JSON.parse(savedMinimized))
+    setCart(savedCart);
+    setChatSessions(savedSessions);
+    setChatHistoryMinimized(savedMinimized);
 
-    if (savedUser) {
-      setUser(JSON.parse(savedUser))
-      setIsAuthenticated(true)
+    const fetchOrders = async () => {
+      if (!user) return;
+      try {
+        const q = query(
+          collection(db, "orders"),
+          where("userId", "==", user.uid),
+          orderBy("createdAt", "desc")
+        );
+        const querySnapshot = await getDocs(q);
+        setOrders(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() } as Order)));
+      } catch (err) {
+        console.error("Error fetching orders:", err);
+      }
+    };
+
+    const fetchChatSessions = async () => {
+      if (!user) return;
+      try {
+        const q = query(
+          collection(db, "chatSessions"),
+          where("userId", "==", user.uid),
+          orderBy("updatedAt", "desc")
+        );
+        const querySnapshot = await getDocs(q);
+        setChatSessions(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() } as ChatSession)));
+      } catch (err) {
+        console.error("Error fetching chat sessions:", err);
+      }
+    };
+
+    if (!loading) {
+      fetchOrders();
+      fetchChatSessions();
     }
-  }, [])
-
-  // Save to localStorage when data changes
-  useEffect(() => {
-    localStorage.setItem("vendai-cart", JSON.stringify(cart))
-  }, [cart])
+  }, [user, loading]);
 
   useEffect(() => {
-    localStorage.setItem("vendai-orders", JSON.stringify(orders))
-  }, [orders])
+    localStorage.setItem("vendai-cart", JSON.stringify(cart));
+  }, [cart]);
 
   useEffect(() => {
-    localStorage.setItem("vendai-chat-sessions", JSON.stringify(chatSessions))
-  }, [chatSessions])
+    localStorage.setItem("vendai-chat-sessions", JSON.stringify(chatSessions));
+  }, [chatSessions]);
 
   useEffect(() => {
-    localStorage.setItem("vendai-chat-minimized", JSON.stringify(chatHistoryMinimized))
-  }, [chatHistoryMinimized])
+    localStorage.setItem("vendai-chat-minimized", JSON.stringify(chatHistoryMinimized));
+  }, [chatHistoryMinimized]);
 
   // Chat functions
   const handleInputChange = (e: any) => {
-    setInput(e.target.value)
-  }
+    setInput(e.target.value);
+  };
 
   const handleSubmit = async (e: any) => {
-    e.preventDefault()
-    if (!input.trim() || isLoading) return
+    e.preventDefault();
+    if (!input.trim() || isLoading) return;
 
     const userMessage: Message = {
       id: Date.now().toString(),
       role: "user",
       content: input,
-    }
+    };
 
-    setMessages((prev) => [...prev, userMessage])
-    setInput("")
-    setIsLoading(true)
+    setMessages((prev) => [...prev, userMessage]);
+    setInput("");
+    setIsLoading(true);
 
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: [...messages, userMessage] }),
-      })
+      });
 
-      const data = await response.json()
+      const data = await response.json();
 
       const assistantMessage: Message = {
         id: data.id,
         role: "assistant",
         content: data.content,
         products: data.products || [],
-      }
+      };
 
-      setMessages((prev) => [...prev, assistantMessage])
+      setMessages((prev) => [...prev, assistantMessage]);
 
       // Update chat session
-      updateChatSession([...messages, userMessage, assistantMessage])
+      updateChatSession([...messages, userMessage, assistantMessage]);
     } catch (error) {
-      console.error("Chat error:", error)
+      console.error("Chat error:", error);
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: "assistant",
         content: "Sorry, I'm having trouble connecting. Please try again.",
-      }
-      setMessages((prev) => [...prev, errorMessage])
+      };
+      setMessages((prev) => [...prev, errorMessage]);
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
-  }
+  };
 
   const updateChatSession = (newMessages: Message[]) => {
-    const sessionTitle = newMessages[0]?.content.slice(0, 30) + "..." || "New Chat"
+    const sessionTitle = newMessages[0]?.content.slice(0, 30) + "..." || "New Chat";
+    const now = new Date().toISOString(); // Added: For date compatibility
     const session: ChatSession = {
       id: currentSessionId,
+      userId: user?.uid || "",
       title: sessionTitle,
       messages: newMessages,
-      date: new Date().toISOString(),
-    }
+      isActive: true,
+      createdAt: now,
+      updatedAt: now,
+      date: now, // Added: Set date to match createdAt for ChatHistorySidebar
+    };
 
     setChatSessions((prev) => {
-      const existing = prev.find((s) => s.id === currentSessionId)
+      const existing = prev.find((s) => s.id === currentSessionId);
       if (existing) {
-        return prev.map((s) => (s.id === currentSessionId ? session : s))
+        return prev.map((s) => (s.id === currentSessionId ? session : s));
       } else {
-        return [session, ...prev]
+        return [session, ...prev];
       }
-    })
-  }
+    });
+  };
 
   // Cart functions with animation
   const handleAddToCart = (product: any, quantity = 1) => {
-    if (!isAuthenticated) {
-      setShowLoginPrompt(true)
-      return
+    if (!user) {
+      setShowLoginPrompt(true);
+      return;
     }
 
-    // Cool animation trigger
-    const cartButton = document.querySelector("[data-cart-button]")
+    const cartButton = document.querySelector("[data-cart-button]");
     if (cartButton) {
-      cartButton.classList.add("animate-bounce")
-      setTimeout(() => cartButton.classList.remove("animate-bounce"), 600)
+      cartButton.classList.add("animate-bounce");
+      setTimeout(() => cartButton.classList.remove("animate-bounce"), 600);
     }
 
     setCart((prevCart) => {
-      const existingItem = prevCart.find((item) => item.id === product.id)
+      const existingItem = prevCart.find((item) => item.id === product.id);
       if (existingItem) {
-        return prevCart.map((item) => (item.id === product.id ? { ...item, quantity: item.quantity + quantity } : item))
+        return prevCart.map((item) => (item.id === product.id ? { ...item, quantity: item.quantity + quantity } : item));
       }
-      return [...prevCart, { ...product, quantity }]
-    })
-  }
+      return [...prevCart, { ...product, quantity }];
+    });
+  };
 
   const handleRemoveFromCart = (productId: number) => {
-    setCart((prevCart) => prevCart.filter((item) => item.id !== productId))
-  }
+    setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
+  };
 
   const handleUpdateQuantity = (productId: number, quantity: number) => {
     if (quantity <= 0) {
-      handleRemoveFromCart(productId)
+      handleRemoveFromCart(productId);
     } else {
-      setCart((prevCart) => prevCart.map((item) => (item.id === productId ? { ...item, quantity } : item)))
+      setCart((prevCart) => prevCart.map((item) => (item.id === productId ? { ...item, quantity } : item)));
     }
-  }
+  };
 
   const handleCheckout = () => {
-    if (cart.length === 0) return
-    setShowCart(false)
-    setShowCheckout(true)
-  }
+    if (cart.length === 0) return;
+    setShowCart(false);
+    setShowCheckout(true);
+  };
 
   const handleCheckoutComplete = (orderData: any) => {
-    setOrders((prev) => [orderData, ...prev])
-    setCart([])
-    setShowCheckout(false)
-  }
+    setOrders((prev) => [orderData, ...prev]);
+    setCart([]);
+    setShowCheckout(false);
+  };
 
   const handleReorder = (items: CartItem[]) => {
-    if (!isAuthenticated) {
-      setShowLoginPrompt(true)
-      return
+    if (!user) {
+      setShowLoginPrompt(true);
+      return;
     }
 
     items.forEach((item) => {
-      handleAddToCart(item, item.quantity)
-    })
-  }
+      handleAddToCart(item, item.quantity);
+    });
+  };
 
-  // Auth functions
-  const handleLogin = (email: string, password: string) => {
-    const userData = {
-      id: "user-1",
-      name: "John Doe",
-      email: email,
-      phone: "+254 712 345 678",
-      location: "Westlands",
-      city: "Nairobi",
-    }
+  const handleLogin = () => {
+    setShowLogin(false);
+    setShowLoginPrompt(false);
+  };
 
-    setUser(userData)
-    setIsAuthenticated(true)
-    setShowLogin(false)
-    setShowLoginPrompt(false)
-    localStorage.setItem("vendai-user", JSON.stringify(userData))
-  }
-
-  const handleSignup = (userData: any) => {
-    const newUser = {
-      id: `user-${Date.now()}`,
-      ...userData,
-      location: "Westlands",
-      city: "Nairobi",
-    }
-
-    setUser(newUser)
-    setIsAuthenticated(true)
-    setShowSignup(false)
-    setShowLoginPrompt(false)
-    localStorage.setItem("vendai-user", JSON.stringify(newUser))
-  }
+  const handleSignup = () => {
+    setShowSignup(false);
+    setShowLoginPrompt(false);
+  };
 
   const handleLogout = () => {
-    setUser(null)
-    setIsAuthenticated(false)
-    setShowProfile(false)
-    localStorage.removeItem("vendai-user")
-    localStorage.removeItem("vendai-cart")
-    localStorage.removeItem("vendai-orders")
-    setCart([])
-    setOrders([])
-  }
+    setShowProfile(false);
+    setCart([]);
+    setOrders([]);
+    localStorage.removeItem("vendai-cart");
+    localStorage.removeItem("vendai-orders");
+  };
 
-  // Chat functions
   const handleNewChat = () => {
-    const newSessionId = `session-${Date.now()}`
-    setCurrentSessionId(newSessionId)
-    setMessages([])
-    setCurrentView("chat")
-  }
+    const newSessionId = `session-${Date.now()}`;
+    setCurrentSessionId(newSessionId);
+    setMessages([]);
+    setCurrentView("chat");
+  };
 
   const handleLoadSession = (sessionId: string) => {
-    const session = chatSessions.find((s) => s.id === sessionId)
+    const session = chatSessions.find((s) => s.id === sessionId);
     if (session) {
-      setCurrentSessionId(sessionId)
-      setMessages(session.messages)
-      setCurrentView("chat")
+      setCurrentSessionId(sessionId);
+      setMessages(session.messages);
+      setCurrentView("chat");
     }
-  }
+  };
 
   const handleBackToChat = () => {
-    setCurrentView("chat")
-    setShowProfile(false)
-    setShowOrderHistory(false)
-  }
+    setCurrentView("chat");
+    setShowProfile(false);
+    setShowOrderHistory(false);
+  };
 
-  // Product Management functions
   const handleProductRemove = (productId: number) => {
-    setProducts((prev) => prev.filter((p) => p.id !== productId))
-    setCart((prev) => prev.filter((item) => item.id !== productId))
-  }
+    setProducts((prev) => prev.filter((p) => p.id !== productId));
+    setCart((prev) => prev.filter((item) => item.id !== productId));
+  };
 
   const handleProductUpdate = (productId: number, updates: any) => {
-    setProducts((prev) => prev.map((p) => (p.id === productId ? { ...p, ...updates } : p)))
-    setCart((prev) => prev.map((item) => (item.id === productId ? { ...item, ...updates } : item)))
-  }
+    setProducts((prev) => prev.map((p) => (p.id === productId ? { ...p, ...updates } : p)));
+    setCart((prev) => prev.map((item) => (item.id === productId ? { ...item, ...updates } : item)));
+  };
 
   const handleBackToMain = () => {
-    setCurrentView("chat")
-  }
+    setCurrentView("chat");
+  };
 
   const handleSettings = () => {
-    setCurrentView("settings")
-    setShowProfile(false)
-  }
+    setCurrentView("settings");
+    setShowProfile(false);
+  };
 
   const handleCloseAuth = () => {
-    setShowLogin(false)
-    setShowSignup(false)
-  }
+    setShowLogin(false);
+    setShowSignup(false);
+  };
 
-  // Render main content
   const renderMainContent = () => {
     switch (currentView) {
       case "browse":
-        return <BrowseView products={products} onAddToCart={handleAddToCart} onBack={handleBackToMain} />
+        return <BrowseView products={products} onAddToCart={handleAddToCart} onBack={handleBackToMain} />;
       case "quickOrders":
         return (
           <QuickOrdersView
@@ -354,9 +361,9 @@ export default function Home() {
             onReorder={handleReorder}
             onBack={handleBackToMain}
           />
-        )
+        );
       case "settings":
-        return <SettingsView onBack={handleBackToMain} onProductManagement={() => setShowProductManagement(true)} />
+        return <SettingsView onBack={handleBackToMain} onProductManagement={() => setShowProductManagement(true)} />;
       default:
         return (
           <ChatView
@@ -373,30 +380,38 @@ export default function Home() {
             isInSubView={currentView !== "chat"}
             chatHistoryMinimized={chatHistoryMinimized}
           />
-        )
+        );
     }
+  };
+
+  if (loading) {
+    return (
+      <div className="flex h-screen bg-black text-white items-center justify-center">
+        Loading...
+      </div>
+    );
   }
 
   return (
     <div className="flex h-screen bg-black text-white overflow-hidden">
       {/* Authentication Modals */}
-      {!isAuthenticated && showLogin && (
+      {showLogin && (
         <Login
           onLogin={handleLogin}
           onSwitchToSignup={() => {
-            setShowLogin(false)
-            setShowSignup(true)
+            setShowLogin(false);
+            setShowSignup(true);
           }}
           onClose={handleCloseAuth}
         />
       )}
 
-      {!isAuthenticated && showSignup && (
+      {showSignup && (
         <Signup
           onSignup={handleSignup}
           onSwitchToLogin={() => {
-            setShowSignup(false)
-            setShowLogin(true)
+            setShowSignup(false);
+            setShowLogin(true);
           }}
           onClose={handleCloseAuth}
         />
@@ -406,17 +421,17 @@ export default function Home() {
         show={showLoginPrompt}
         onClose={() => setShowLoginPrompt(false)}
         onLogin={() => {
-          setShowLoginPrompt(false)
-          setShowLogin(true)
+          setShowLoginPrompt(false);
+          setShowLogin(true);
         }}
         onSignup={() => {
-          setShowLoginPrompt(false)
-          setShowSignup(true)
+          setShowLoginPrompt(false);
+          setShowSignup(true);
         }}
       />
 
       {/* Chat History Sidebar - Left */}
-      {isAuthenticated && (
+      {user && (
         <ChatHistorySidebar
           chatSessions={chatSessions}
           currentSessionId={currentSessionId}
@@ -430,7 +445,7 @@ export default function Home() {
       {/* Main Content */}
       <div
         className={`flex-1 flex flex-col min-w-0 transition-all duration-300 ${
-          isAuthenticated ? (chatHistoryMinimized ? "ml-16" : "ml-80") : ""
+          user ? (chatHistoryMinimized ? "ml-16" : "ml-80") : ""
         }`}
       >
         <Header
@@ -450,15 +465,15 @@ export default function Home() {
           onLogin={() => setShowLogin(true)}
           onSignup={() => setShowSignup(true)}
           onBackToChat={handleBackToChat}
-          user={user}
-          isAuthenticated={isAuthenticated}
+          user={userData}
+          isAuthenticated={!!user}
         />
 
         {renderMainContent()}
       </div>
 
-      {/* Order History Sidebar - if needed */}
-      {isAuthenticated && <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} orders={orders} />}
+      {/* Order History Sidebar */}
+      {user && <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} orders={orders} />}
 
       {/* Modals */}
       <CartModal
@@ -475,7 +490,7 @@ export default function Home() {
         onClose={() => setShowCheckout(false)}
         cart={cart}
         onCheckoutComplete={handleCheckoutComplete}
-        user={user}
+        user={userData}
       />
 
       <AllProductsModal
@@ -492,5 +507,5 @@ export default function Home() {
         onProductUpdate={handleProductUpdate}
       />
     </div>
-  )
+  );
 }

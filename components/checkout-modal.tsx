@@ -1,64 +1,67 @@
-"use client"
+"use client";
 
-import { useState, useEffect, useRef } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { X, MapPin, Navigation, CreditCard, Smartphone, Banknote } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
+import { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X, MapPin, Navigation, CreditCard, Smartphone, Banknote } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { db } from "@/lib/firebase";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 interface CartItem {
-  id: number
-  name: string
-  price: number
-  quantity: number
-  category: string
-  description: string
-  image: string
+  id: number;
+  name: string;
+  price: number;
+  quantity: number;
+  category: string;
+  description: string;
+  image: string;
 }
 
 interface CheckoutModalProps {
-  show: boolean
-  onClose: () => void
-  cart: CartItem[]
-  onCheckoutComplete: (orderData: any) => void
-  user: any
+  show: boolean;
+  onClose: () => void;
+  cart: CartItem[];
+  onCheckoutComplete: (orderData: any) => void;
+  user: any; // Will update to match Firestore users schema
 }
 
 declare global {
   interface Window {
-    google: any
+    google: any;
   }
 }
 
 export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }: CheckoutModalProps) {
-  const [step, setStep] = useState(1)
-  const [paymentMethod, setPaymentMethod] = useState("mpesa")
-  const [phoneNumber, setPhoneNumber] = useState("")
-  const [deliveryAddress, setDeliveryAddress] = useState("")
-  const [deliveryNotes, setDeliveryNotes] = useState("")
-  const [selectedLocation, setSelectedLocation] = useState<{ lat: number; lng: number } | null>(null)
-  const [isLoadingLocation, setIsLoadingLocation] = useState(false)
+  const [step, setStep] = useState(1);
+  const [paymentMethod, setPaymentMethod] = useState("mpesa");
+  const [phoneNumber, setPhoneNumber] = useState(user?.phone || "");
+  const [deliveryAddress, setDeliveryAddress] = useState(user?.address || "");
+  const [deliveryNotes, setDeliveryNotes] = useState("");
+  const [selectedLocation, setSelectedLocation] = useState<{ lat: number; lng: number } | null>(null);
+  const [isLoadingLocation, setIsLoadingLocation] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const mapRef = useRef<HTMLDivElement>(null)
-  const mapInstanceRef = useRef<any>(null)
-  const markerRef = useRef<any>(null)
+  const mapRef = useRef<HTMLDivElement>(null);
+  const mapInstanceRef = useRef<any>(null);
+  const markerRef = useRef<any>(null);
 
-  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   // Initialize Google Maps
   useEffect(() => {
     if (show && step === 1 && mapRef.current && window.google) {
-      initializeMap()
+      initializeMap();
     }
-  }, [show, step])
+  }, [show, step]);
 
   const initializeMap = () => {
-    if (!mapRef.current || !window.google) return
+    if (!mapRef.current || !window.google) return;
 
     // Default to Nairobi center
-    const defaultLocation = { lat: -1.2921, lng: 36.8219 }
+    const defaultLocation = { lat: -1.2921, lng: 36.8219 };
 
     const map = new window.google.maps.Map(mapRef.current, {
       zoom: 12,
@@ -80,25 +83,25 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
           stylers: [{ color: "#2563eb" }],
         },
       ],
-    })
+    });
 
-    mapInstanceRef.current = map
+    mapInstanceRef.current = map;
 
     // Add click listener to place marker
     map.addListener("click", (event: any) => {
-      placeMarker(event.latLng)
-    })
+      placeMarker(event.latLng);
+    });
 
     // Add existing marker if location is selected
     if (selectedLocation) {
-      placeMarker(new window.google.maps.LatLng(selectedLocation.lat, selectedLocation.lng))
+      placeMarker(new window.google.maps.LatLng(selectedLocation.lat, selectedLocation.lng));
     }
-  }
+  };
 
   const placeMarker = (location: any) => {
     // Remove existing marker
     if (markerRef.current) {
-      markerRef.current.setMap(null)
+      markerRef.current.setMap(null);
     }
 
     // Create new marker
@@ -107,43 +110,43 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
       map: mapInstanceRef.current,
       draggable: true,
       animation: window.google.maps.Animation.DROP,
-    })
+    });
 
-    markerRef.current = marker
+    markerRef.current = marker;
 
     // Update selected location
     setSelectedLocation({
       lat: location.lat(),
       lng: location.lng(),
-    })
+    });
 
     // Reverse geocode to get address
-    const geocoder = new window.google.maps.Geocoder()
+    const geocoder = new window.google.maps.Geocoder();
     geocoder.geocode({ location }, (results: any, status: any) => {
       if (status === "OK" && results[0]) {
-        setDeliveryAddress(results[0].formatted_address)
+        setDeliveryAddress(results[0].formatted_address);
       }
-    })
+    });
 
     // Add drag listener
     marker.addListener("dragend", (event: any) => {
       const newLocation = {
         lat: event.latLng.lat(),
         lng: event.latLng.lng(),
-      }
-      setSelectedLocation(newLocation)
+      };
+      setSelectedLocation(newLocation);
 
       // Update address
       geocoder.geocode({ location: event.latLng }, (results: any, status: any) => {
         if (status === "OK" && results[0]) {
-          setDeliveryAddress(results[0].formatted_address)
+          setDeliveryAddress(results[0].formatted_address);
         }
-      })
-    })
-  }
+      });
+    });
+  };
 
   const getCurrentLocation = () => {
-    setIsLoadingLocation(true)
+    setIsLoadingLocation(true);
 
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -151,55 +154,120 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
           const location = {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
-          }
+          };
 
-          setSelectedLocation(location)
+          setSelectedLocation(location);
 
           if (mapInstanceRef.current) {
-            mapInstanceRef.current.setCenter(location)
-            placeMarker(new window.google.maps.LatLng(location.lat, location.lng))
+            mapInstanceRef.current.setCenter(location);
+            placeMarker(new window.google.maps.LatLng(location.lat, location.lng));
           }
 
-          setIsLoadingLocation(false)
+          setIsLoadingLocation(false);
         },
         (error) => {
-          console.error("Error getting location:", error)
-          setIsLoadingLocation(false)
-        },
-      )
+          console.error("Error getting location:", error);
+          setIsLoadingLocation(false);
+        }
+      );
     } else {
-      setIsLoadingLocation(false)
+      setIsLoadingLocation(false);
     }
-  }
+  };
 
-  const handleCheckout = () => {
+  const handleCheckout = async () => {
+    if (!user) {
+      alert("Please log in to complete the checkout.");
+      return;
+    }
+
     if (!selectedLocation || !deliveryAddress) {
-      alert("Please select a delivery location on the map")
-      return
+      alert("Please select a delivery location on the map.");
+      return;
     }
 
-    const orderData = {
-      id: `ORDER-${Date.now()}`,
-      items: cart,
-      total,
-      status: "pending" as const,
-      date: new Date().toISOString(),
-      deliveryDate: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(),
-      paymentMethod,
-      phoneNumber,
-      deliveryAddress,
-      deliveryNotes,
-      deliveryLocation: selectedLocation,
-      user: user?.name || "Guest",
-    }
+    setIsSubmitting(true);
 
-    onCheckoutComplete(orderData)
-    setStep(1)
-    setSelectedLocation(null)
-    setDeliveryAddress("")
-    setDeliveryNotes("")
-    setPhoneNumber("")
-  }
+    try {
+      // Prepare order data matching Firestore schema
+      const orderData = {
+        userId: user.uid,
+        items: cart.map((item) => ({
+          id: item.id,
+          name: item.name,
+          price: item.price,
+          quantity: item.quantity,
+          category: item.category,
+          description: item.description,
+          image: item.image,
+        })),
+        total,
+        status: "pending",
+        paymentStatus: "pending",
+        paymentMethod,
+        deliveryAddress: {
+          address: deliveryAddress,
+          location: selectedLocation,
+          notes: deliveryNotes,
+        },
+        deliveryDate: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(),
+        createdAt: serverTimestamp(),
+        updatedAt: serverTimestamp(),
+      };
+
+      // Save order to Firestore
+      const orderRef = await addDoc(collection(db, "orders"), orderData);
+
+      // Initiate M-Pesa payment if selected
+      if (paymentMethod === "mpesa") {
+        const paymentResponse = await fetch("/api/payments", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            orderId: orderRef.id,
+            userId: user.uid,
+            amount: total,
+            phoneNumber,
+          }),
+        });
+
+        const paymentData = await paymentResponse.json();
+
+        if (!paymentData.success) {
+          throw new Error(paymentData.error || "Failed to initiate M-Pesa payment");
+        }
+
+        // Save payment to Firestore
+        await addDoc(collection(db, "payments"), {
+          orderId: orderRef.id,
+          userId: user.uid,
+          amount: total,
+          phoneNumber,
+          provider: "mpesa",
+          status: "pending",
+          checkoutRequestId: paymentData.checkoutRequestId,
+          transactionId: "",
+          transactionData: {},
+          description: `Payment for order ${orderRef.id}`,
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp(),
+        });
+      }
+
+      onCheckoutComplete({ id: orderRef.id, ...orderData });
+      setStep(1);
+      setSelectedLocation(null);
+      setDeliveryAddress("");
+      setDeliveryNotes("");
+      setPhoneNumber("");
+      onClose();
+    } catch (error: any) {
+      console.error("Checkout error:", error);
+      alert(`Checkout failed: ${error.message}`);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const renderStep1 = () => (
     <div className="space-y-6">
@@ -212,8 +280,6 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
         {/* Map Container */}
         <div className="relative">
           <div ref={mapRef} className="w-full h-64 rounded-lg border border-white/10 bg-gray-900" />
-
-          {/* Use Current Location Button */}
           <Button
             onClick={getCurrentLocation}
             disabled={isLoadingLocation}
@@ -230,20 +296,18 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
       </div>
 
       {/* Address Display */}
-      {deliveryAddress && (
-        <div>
-          <Label htmlFor="address" className="text-white">
-            Delivery Address
-          </Label>
-          <Textarea
-            id="address"
-            value={deliveryAddress}
-            onChange={(e) => setDeliveryAddress(e.target.value)}
-            className="mt-1 bg-white/5 border-white/10 text-white"
-            rows={2}
-          />
-        </div>
-      )}
+      <div>
+        <Label htmlFor="address" className="text-white">
+          Delivery Address
+        </Label>
+        <Textarea
+          id="address"
+          value={deliveryAddress}
+          onChange={(e) => setDeliveryAddress(e.target.value)}
+          className="mt-1 bg-white/5 border-white/10 text-white"
+          rows={2}
+        />
+      </div>
 
       {/* Delivery Notes */}
       <div>
@@ -260,7 +324,7 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
         />
       </div>
     </div>
-  )
+  );
 
   const renderStep2 = () => (
     <div className="space-y-6">
@@ -342,7 +406,7 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
         </div>
       )}
     </div>
-  )
+  );
 
   const renderOrderSummary = () => (
     <div className="bg-white/5 rounded-lg p-4 space-y-3">
@@ -362,18 +426,18 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
         </div>
       </div>
     </div>
-  )
+  );
 
   // Load Google Maps script
   useEffect(() => {
     if (show && !window.google) {
-      const script = document.createElement("script")
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places`
-      script.async = true
-      script.defer = true
-      document.head.appendChild(script)
+      const script = document.createElement("script");
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places`;
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
     }
-  }, [show])
+  }, [show]);
 
   return (
     <AnimatePresence>
@@ -444,15 +508,15 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
               )}
               <Button
                 onClick={step === 1 ? () => setStep(2) : handleCheckout}
-                disabled={step === 1 && (!selectedLocation || !deliveryAddress)}
+                disabled={step === 1 ? !selectedLocation || !deliveryAddress : isSubmitting}
                 className="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 disabled:opacity-50"
               >
-                {step === 1 ? "Continue to Payment" : `Pay KES ${total.toLocaleString()}`}
+                {step === 1 ? "Continue to Payment" : isSubmitting ? "Processing..." : `Pay KES ${total.toLocaleString()}`}
               </Button>
             </div>
           </motion.div>
         </motion.div>
       )}
     </AnimatePresence>
-  )
+  );
 }
