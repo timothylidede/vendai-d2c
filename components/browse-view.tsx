@@ -272,8 +272,22 @@ export function BrowseView({ products, onAddToCart, onBack }: BrowseViewProps) {
                 transition={{ delay: index * 0.05 }}
                 className="glass-effect rounded-xl p-4 hover:bg-white/5 transition-all duration-300 group"
               >
-                <div className="aspect-square bg-gradient-to-br from-white/10 to-white/5 rounded-xl mb-3 flex items-center justify-center group-hover:from-white/15 group-hover:to-white/10 transition-all duration-300">
-                  <Package className="h-12 w-12 text-gray-400 group-hover:text-gray-300 transition-colors" />
+                <div className="aspect-square bg-gradient-to-br from-white/10 to-white/5 rounded-xl mb-3 flex items-center justify-center group-hover:from-white/15 group-hover:to-white/10 transition-all duration-300 overflow-hidden">
+                  {product.image && !product.image.includes("placeholder") ? (
+                    <img
+                      src={product.image || "/placeholder.svg"}
+                      alt={product.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement
+                        target.style.display = "none"
+                        target.nextElementSibling?.classList.remove("hidden")
+                      }}
+                    />
+                  ) : null}
+                  <Package
+                    className={`h-12 w-12 text-gray-400 group-hover:text-gray-300 transition-colors ${product.image && !product.image.includes("placeholder") ? "hidden" : ""}`}
+                  />
                 </div>
 
                 <div className="space-y-2">

@@ -29,9 +29,11 @@ export const PRODUCT_CATEGORIES = {
   CEREALS_LEGUMES: "Cereals & Legumes",
   HOUSEHOLD: "Household Items",
   HEALTH: "Health & Medicine",
+  JUICES: "Juices & Drinks",
+  BISCUITS: "Biscuits & Cookies",
 } as const
 
-// All Products Database
+// All Products Database - Complete with all items from your list
 export const PRODUCTS: Product[] = [
   // COOKING OILS & FATS
   {
@@ -41,22 +43,12 @@ export const PRODUCTS: Product[] = [
     category: PRODUCT_CATEGORIES.COOKING_OILS,
     description: "Premium quality cooking oil - 1 Litre",
     image: "/images/products/rina-cooking-oil-1l.jpg",
-    stock: 100,
+    stock: 400, // 20L × 20 containers
     unit: "1L",
     brand: "RINA",
     size: "1 Litre",
-  },
-  {
-    id: 2,
-    name: "RINA Cooking Oil",
-    price: 105, // (2000/20) + 5
-    category: PRODUCT_CATEGORIES.COOKING_OILS,
-    description: "Premium quality cooking oil - 500ml",
-    image: "/images/products/rina-cooking-oil-500ml.jpg",
-    stock: 150,
-    unit: "500ml",
-    brand: "RINA",
-    size: "500ml",
+    bulkPrice: 4000,
+    bulkQuantity: 20,
   },
   {
     id: 3,
@@ -65,31 +57,49 @@ export const PRODUCTS: Product[] = [
     category: PRODUCT_CATEGORIES.COOKING_OILS,
     description: "Quality cooking oil - 1 Litre",
     image: "/images/products/salit-cooking-oil-1l.jpg",
-    stock: 80,
+    stock: 400,
     unit: "1L",
     brand: "SALIT",
     size: "1 Litre",
+    bulkPrice: 4000,
+    bulkQuantity: 20,
   },
   {
     id: 4,
     name: "BAHARI Cooking Oil",
-    price: 105, // (2000/20) + 5
+    price: 205, // (4000/20) + 5 - Same as SALIT
     category: PRODUCT_CATEGORIES.COOKING_OILS,
-    description: "Quality cooking oil - 500ml",
-    image: "/images/products/bahari-cooking-oil-500ml.jpg",
-    stock: 120,
-    unit: "500ml",
+    description: "Quality cooking oil - 1 Litre",
+    image: "/images/products/bahari-cooking-oil-1l.jpg",
+    stock: 400,
+    unit: "1L",
     brand: "BAHARI",
-    size: "500ml",
+    size: "1 Litre",
+    bulkPrice: 4000,
+    bulkQuantity: 20,
   },
   {
-    id: 5,
+    id: 6,
+    name: "PIKA Cooking Oil",
+    price: 205, // (4000/20) + 5 - Same as SALIT/BAHARI/POSTMAN
+    category: PRODUCT_CATEGORIES.COOKING_OILS,
+    description: "Quality cooking oil - 1 Litre",
+    image: "/images/products/pika-cooking-oil-1l.jpg",
+    stock: 400,
+    unit: "1L",
+    brand: "PIKA",
+    size: "1 Litre",
+    bulkPrice: 4000,
+    bulkQuantity: 20,
+  },
+  {
+    id: 7,
     name: "RINSUN Sunflower Oil",
-    price: 215, // (4200/20) + 5 = 210 + 5 (per litre)
+    price: 215, // (4200/20) + 5
     category: PRODUCT_CATEGORIES.COOKING_OILS,
     description: "Pure sunflower vegetable oil - per litre",
-    image: "/images/products/rinsun-sunflower-oil-20l.jpg",
-    stock: 500, // 25 containers × 20L each
+    image: "/images/products/rinsun-sunflower-oil-1l.png",
+    stock: 400, // 20L × 20 containers
     unit: "1L",
     brand: "RINSUN",
     size: "1 Litre",
@@ -97,12 +107,12 @@ export const PRODUCTS: Product[] = [
     bulkQuantity: 20,
   },
   {
-    id: 6,
+    id: 8,
     name: "SOMO Solid Cooking Fat",
-    price: 130, // (1250/10) + 5 = 125 + 5 (per kg)
+    price: 130, // (1250/10) + 5
     category: PRODUCT_CATEGORIES.COOKING_OILS,
     description: "Solid cooking fat - per kilogram",
-    image: "/images/products/somo-cooking-fat-10kg.jpg",
+    image: "/images/products/somo-cooking-fat-1kg.jpg",
     stock: 300, // 30 cartons × 10kg each
     unit: "1kg",
     brand: "SOMO",
@@ -111,12 +121,12 @@ export const PRODUCTS: Product[] = [
     bulkQuantity: 10,
   },
   {
-    id: 7,
+    id: 9,
     name: "FRY MATE Cooking Fat",
-    price: 130, // (1250/10) + 5 = 125 + 5 (per kg)
+    price: 130, // (1250/10) + 5 - Same as SOMO
     category: PRODUCT_CATEGORIES.COOKING_OILS,
     description: "Premium cooking fat - per kilogram",
-    image: "/images/products/frymate-cooking-fat-10kg.jpg",
+    image: "/images/products/frymate-cooking-fat-1kg.jpg",
     stock: 350, // 35 cartons × 10kg each
     unit: "1kg",
     brand: "FRY MATE",
@@ -127,12 +137,12 @@ export const PRODUCTS: Product[] = [
 
   // RICE & GRAINS
   {
-    id: 8,
+    id: 10,
     name: "BIRIYANI Rice",
-    price: 89, // (2100/25) + 5 = 84 + 5 (per kg)
+    price: 89, // (2100/25) + 5
     category: PRODUCT_CATEGORIES.RICE_GRAINS,
     description: "Premium Biriyani rice - per kilogram",
-    image: "/images/products/biriyani-rice-25kg.jpg",
+    image: "/images/products/biriyani-rice-1kg.jpg",
     stock: 500, // 20 bags × 25kg each
     unit: "1kg",
     size: "1 Kilogram",
@@ -140,12 +150,12 @@ export const PRODUCTS: Product[] = [
     bulkQuantity: 25,
   },
   {
-    id: 9,
+    id: 11,
     name: "BASMATI Rice",
-    price: 117, // (2800/25) + 5 = 112 + 5 (per kg)
+    price: 117, // (2800/25) + 5
     category: PRODUCT_CATEGORIES.RICE_GRAINS,
     description: "Premium Basmati rice - per kilogram",
-    image: "/images/products/basmati-rice-25kg.jpg",
+    image: "/images/products/basmati-rice-1kg.jpg",
     stock: 375, // 15 bags × 25kg each
     unit: "1kg",
     size: "1 Kilogram",
@@ -153,12 +163,12 @@ export const PRODUCTS: Product[] = [
     bulkQuantity: 25,
   },
   {
-    id: 10,
+    id: 12,
     name: "PISHORI Rice",
-    price: 165, // (4000/25) + 5 = 160 + 5 (per kg)
+    price: 165, // (4000/25) + 5
     category: PRODUCT_CATEGORIES.RICE_GRAINS,
     description: "Premium Pishori rice - per kilogram",
-    image: "/images/products/pishori-rice-25kg.jpg",
+    image: "/images/products/pishori-rice-1kg.jpg",
     stock: 300, // 12 bags × 25kg each
     unit: "1kg",
     size: "1 Kilogram",
@@ -166,12 +176,12 @@ export const PRODUCTS: Product[] = [
     bulkQuantity: 25,
   },
   {
-    id: 11,
+    id: 13,
     name: "SINDANO Rice",
-    price: 85, // (2000/25) + 5 = 80 + 5 (per kg)
+    price: 85, // (2000/25) + 5
     category: PRODUCT_CATEGORIES.RICE_GRAINS,
     description: "Quality Sindano rice - per kilogram",
-    image: "/images/products/sindano-rice-25kg.jpg",
+    image: "/images/products/sindano-rice-1kg.jpg",
     stock: 450, // 18 bags × 25kg each
     unit: "1kg",
     size: "1 Kilogram",
@@ -181,12 +191,12 @@ export const PRODUCTS: Product[] = [
 
   // SUGAR & SWEETENERS
   {
-    id: 12,
+    id: 14,
     name: "Brown Sugar",
-    price: 133, // (6400/50) + 5 = 128 + 5 (per kg)
+    price: 133, // (6400/50) + 5
     category: PRODUCT_CATEGORIES.SUGAR_SWEETENERS,
     description: "Pure brown sugar - per kilogram",
-    image: "/images/products/brown-sugar-50kg.jpg",
+    image: "/images/products/brown-sugar-1kg.jpg",
     stock: 500, // 10 bags × 50kg each
     unit: "1kg",
     size: "1 Kilogram",
@@ -194,12 +204,12 @@ export const PRODUCTS: Product[] = [
     bulkQuantity: 50,
   },
   {
-    id: 13,
+    id: 15,
     name: "White Sugar",
-    price: 135, // (6500/50) + 5 = 130 + 5 (per kg)
+    price: 135, // (6500/50) + 5
     category: PRODUCT_CATEGORIES.SUGAR_SWEETENERS,
     description: "Pure white sugar - per kilogram",
-    image: "/images/products/white-sugar-50kg.jpg",
+    image: "/images/products/white-sugar-1kg.jpg",
     stock: 400, // 8 bags × 50kg each
     unit: "1kg",
     size: "1 Kilogram",
@@ -209,9 +219,9 @@ export const PRODUCTS: Product[] = [
 
   // FLOUR
   {
-    id: 14,
+    id: 16,
     name: "AJAB Wheat Flour",
-    price: 77, // (1800/24) + 5 = 75 + 5
+    price: 80, // (1800/24) + 5 = 75 + 5
     category: PRODUCT_CATEGORIES.FLOUR,
     description: "Premium wheat flour - 2kg pack",
     image: "/images/products/ajab-wheat-flour-2kg.jpg",
@@ -219,9 +229,11 @@ export const PRODUCTS: Product[] = [
     unit: "2kg",
     brand: "AJAB",
     size: "2 Kilograms",
+    bulkPrice: 1800,
+    bulkQuantity: 24,
   },
   {
-    id: 15,
+    id: 17,
     name: "PEMBE Wheat Flour",
     price: 78, // (1750/24) + 5 = 73 + 5
     category: PRODUCT_CATEGORIES.FLOUR,
@@ -231,11 +243,69 @@ export const PRODUCTS: Product[] = [
     unit: "1kg",
     brand: "PEMBE",
     size: "1 Kilogram",
+    bulkPrice: 1750,
+    bulkQuantity: 24,
   },
   {
-    id: 16,
-    name: "DOLA Maize Flour",
+    id: 18,
+    name: "DOLA Wheat Flour",
+    price: 80, // (1800/24) + 5 - Same as AJAB
+    category: PRODUCT_CATEGORIES.FLOUR,
+    description: "Quality wheat flour - 2kg pack",
+    image: "/images/products/dola-wheat-flour-2kg.jpg",
+    stock: 180,
+    unit: "2kg",
+    brand: "DOLA",
+    size: "2 Kilograms",
+    bulkPrice: 1800,
+    bulkQuantity: 24,
+  },
+  {
+    id: 19,
+    name: "NDOVU Wheat Flour",
+    price: 78, // (1750/24) + 5 - Same as PEMBE
+    category: PRODUCT_CATEGORIES.FLOUR,
+    description: "Quality wheat flour - 1kg pack",
+    image: "/images/products/ndovu-wheat-flour-1kg.jpg",
+    stock: 220,
+    unit: "1kg",
+    brand: "NDOVU",
+    size: "1 Kilogram",
+    bulkPrice: 1750,
+    bulkQuantity: 24,
+  },
+  {
+    id: 20,
+    name: "SOKO Wheat Flour",
+    price: 80, // (1800/24) + 5 - Same as AJAB/DOLA
+    category: PRODUCT_CATEGORIES.FLOUR,
+    description: "Quality wheat flour - 2kg pack",
+    image: "/images/products/soko-wheat-flour-2kg.jpg",
+    stock: 200,
+    unit: "2kg",
+    brand: "SOKO",
+    size: "2 Kilograms",
+    bulkPrice: 1800,
+    bulkQuantity: 24,
+  },
+  {
+    id: 21,
+    name: "PEMBE Maize Flour",
     price: 72, // (1600/24) + 5 = 67 + 5
+    category: PRODUCT_CATEGORIES.FLOUR,
+    description: "Pure maize flour - 2kg pack",
+    image: "/images/products/pembe-maize-flour-2kg.jpg",
+    stock: 180,
+    unit: "2kg",
+    brand: "PEMBE",
+    size: "2 Kilograms",
+    bulkPrice: 1600,
+    bulkQuantity: 24,
+  },
+  {
+    id: 22,
+    name: "DOLA Maize Flour",
+    price: 72, // (1600/24) + 5 - Same as PEMBE
     category: PRODUCT_CATEGORIES.FLOUR,
     description: "Pure maize flour - 2kg pack",
     image: "/images/products/dola-maize-flour-2kg.jpg",
@@ -243,9 +313,11 @@ export const PRODUCTS: Product[] = [
     unit: "2kg",
     brand: "DOLA",
     size: "2 Kilograms",
+    bulkPrice: 1600,
+    bulkQuantity: 24,
   },
   {
-    id: 17,
+    id: 23,
     name: "NDOVU Maize Flour",
     price: 70, // (1550/24) + 5 = 65 + 5
     category: PRODUCT_CATEGORIES.FLOUR,
@@ -255,11 +327,27 @@ export const PRODUCTS: Product[] = [
     unit: "1kg",
     brand: "NDOVU",
     size: "1 Kilogram",
+    bulkPrice: 1550,
+    bulkQuantity: 24,
+  },
+  {
+    id: 24,
+    name: "SOKO Maize Flour",
+    price: 72, // (1600/24) + 5 - Same as PEMBE/DOLA
+    category: PRODUCT_CATEGORIES.FLOUR,
+    description: "Pure maize flour - 2kg pack",
+    image: "/images/products/soko-maize-flour-2kg.jpg",
+    stock: 180,
+    unit: "2kg",
+    brand: "SOKO",
+    size: "2 Kilograms",
+    bulkPrice: 1600,
+    bulkQuantity: 24,
   },
 
   // BEVERAGES
   {
-    id: 18,
+    id: 25,
     name: "RED BULL Energy Drink",
     price: 105, // (2400/24) + 5
     category: PRODUCT_CATEGORIES.BEVERAGES,
@@ -269,9 +357,11 @@ export const PRODUCTS: Product[] = [
     unit: "250ml",
     brand: "RED BULL",
     size: "250ml",
+    bulkPrice: 2400,
+    bulkQuantity: 24,
   },
   {
-    id: 19,
+    id: 26,
     name: "AZAM Energy Drink",
     price: 41, // (860/24) + 5 = 36 + 5
     category: PRODUCT_CATEGORIES.BEVERAGES,
@@ -281,9 +371,11 @@ export const PRODUCTS: Product[] = [
     unit: "300ml",
     brand: "AZAM",
     size: "300ml",
+    bulkPrice: 860,
+    bulkQuantity: 24,
   },
   {
-    id: 20,
+    id: 27,
     name: "PREDATOR Energy Drink",
     price: 45, // (480/12) + 5
     category: PRODUCT_CATEGORIES.BEVERAGES,
@@ -293,9 +385,11 @@ export const PRODUCTS: Product[] = [
     unit: "500ml",
     brand: "PREDATOR",
     size: "500ml",
+    bulkPrice: 480,
+    bulkQuantity: 12,
   },
   {
-    id: 21,
+    id: 28,
     name: "POWER PLAY Energy Drink",
     price: 47, // (500/12) + 5 = 42 + 5
     category: PRODUCT_CATEGORIES.BEVERAGES,
@@ -305,16 +399,118 @@ export const PRODUCTS: Product[] = [
     unit: "500ml",
     brand: "POWER PLAY",
     size: "500ml",
+    bulkPrice: 500,
+    bulkQuantity: 12,
+  },
+
+  // JUICES & DRINKS
+  {
+    id: 29,
+    name: "Pick N Peel Tropical Mix Juice",
+    price: 255, // (3000/12) + 5
+    category: PRODUCT_CATEGORIES.JUICES,
+    description: "Pure fruit juice tropical mix - 1L",
+    image: "/images/products/pick-n-peel-tropical-1l.jpg",
+    stock: 120,
+    unit: "1L",
+    brand: "Pick N Peel",
+    size: "1 Litre",
+    bulkPrice: 3000,
+    bulkQuantity: 12,
+  },
+  {
+    id: 30,
+    name: "Pick N Peel Pineapple Juice",
+    price: 255, // (3000/12) + 5 - Same as Tropical
+    category: PRODUCT_CATEGORIES.JUICES,
+    description: "Pure pineapple juice - 1L",
+    image: "/images/products/pick-n-peel-pineapple-1l.jpg",
+    stock: 120,
+    unit: "1L",
+    brand: "Pick N Peel",
+    size: "1 Litre",
+    bulkPrice: 3000,
+    bulkQuantity: 12,
+  },
+  {
+    id: 31,
+    name: "Pick N Peel Mango Juice",
+    price: 247, // (2900/12) + 5
+    category: PRODUCT_CATEGORIES.JUICES,
+    description: "Pure mango juice - 1L",
+    image: "/images/products/pick-n-peel-mango-1l.jpg",
+    stock: 120,
+    unit: "1L",
+    brand: "Pick N Peel",
+    size: "1 Litre",
+    bulkPrice: 2900,
+    bulkQuantity: 12,
+  },
+  {
+    id: 32,
+    name: "Pick N Peel Orange Juice",
+    price: 322, // (3800/12) + 5
+    category: PRODUCT_CATEGORIES.JUICES,
+    description: "Pure orange juice - 1L",
+    image: "/images/products/pick-n-peel-orange-1l.jpg",
+    stock: 120,
+    unit: "1L",
+    brand: "Pick N Peel",
+    size: "1 Litre",
+    bulkPrice: 3800,
+    bulkQuantity: 12,
+  },
+  {
+    id: 33,
+    name: "Pick N Peel Mango Juice",
+    price: 47, // (500/12) + 5
+    category: PRODUCT_CATEGORIES.JUICES,
+    description: "Pure mango juice - 250ml",
+    image: "/images/products/pick-n-peel-mango-250ml.jpg",
+    stock: 120,
+    unit: "250ml",
+    brand: "Pick N Peel",
+    size: "250ml",
+    bulkPrice: 500,
+    bulkQuantity: 12,
+  },
+  {
+    id: 34,
+    name: "Minute Maid Mango Juice",
+    price: 55, // (600/12) + 5
+    category: PRODUCT_CATEGORIES.JUICES,
+    description: "Mango juice - 400ml",
+    image: "/images/products/minute-maid-mango-400ml.jpg",
+    stock: 120,
+    unit: "400ml",
+    brand: "Minute Maid",
+    size: "400ml",
+    bulkPrice: 600,
+    bulkQuantity: 12,
+  },
+  {
+    id: 35,
+    name: "Minute Maid Apple Juice",
+    price: 55, // (600/12) + 5 - Same as Mango
+    category: PRODUCT_CATEGORIES.JUICES,
+    description: "Apple juice - 400ml",
+    image: "/images/products/minute-maid-apple-400ml.jpg",
+    stock: 120,
+    unit: "400ml",
+    brand: "Minute Maid",
+    size: "400ml",
+    bulkPrice: 600,
+    bulkQuantity: 12,
   },
 
   // DAIRY PRODUCTS
   {
-    id: 22,
+    id: 36,
     name: "Milk Powder",
-    price: 317, // (7800/25) + 5 = 312 + 5 (per kg)
+    price: 317, // (7800/25) + 5
     category: PRODUCT_CATEGORIES.DAIRY,
     description: "Pure milk powder - per kilogram",
-    image: "/images/products/milk-powder-25kg.jpg",
+    image: "/images/products/milk-powder-1kg.jpg",
     stock: 375, // 15 packs × 25kg each
     unit: "1kg",
     size: "1 Kilogram",
@@ -322,9 +518,9 @@ export const PRODUCTS: Product[] = [
     bulkQuantity: 25,
   },
   {
-    id: 23,
+    id: 37,
     name: "Lato UHT Whole Milk",
-    price: 48, // (520/12) + 5 = 43 + 5
+    price: 48, // (520/12) + 5
     category: PRODUCT_CATEGORIES.DAIRY,
     description: "Fresh whole milk - 500ml pack",
     image: "/images/products/lato-milk-500ml.jpg",
@@ -332,9 +528,11 @@ export const PRODUCTS: Product[] = [
     unit: "500ml",
     brand: "Lato",
     size: "500ml",
+    bulkPrice: 520,
+    bulkQuantity: 12,
   },
   {
-    id: 24,
+    id: 38,
     name: "Lato Pure Ghee",
     price: 405, // (4800/12) + 5
     category: PRODUCT_CATEGORIES.DAIRY,
@@ -344,9 +542,11 @@ export const PRODUCTS: Product[] = [
     unit: "1kg",
     brand: "Lato",
     size: "1 Kilogram",
+    bulkPrice: 4800,
+    bulkQuantity: 12,
   },
   {
-    id: 25,
+    id: 39,
     name: "Lato Butter",
     price: 495, // (5880/12) + 5
     category: PRODUCT_CATEGORIES.DAIRY,
@@ -356,9 +556,11 @@ export const PRODUCTS: Product[] = [
     unit: "500g",
     brand: "Lato",
     size: "500 Grams",
+    bulkPrice: 5880,
+    bulkQuantity: 12,
   },
   {
-    id: 26,
+    id: 40,
     name: "Cheese",
     price: 305, // (3600/12) + 5
     category: PRODUCT_CATEGORIES.DAIRY,
@@ -367,13 +569,15 @@ export const PRODUCTS: Product[] = [
     stock: 80,
     unit: "250g",
     size: "250 Grams",
+    bulkPrice: 3600,
+    bulkQuantity: 12,
   },
 
   // PERSONAL CARE & HYGIENE
   {
-    id: 27,
+    id: 41,
     name: "MENENGAI Bar Soap",
-    price: 125, // (3000/25) + 5 = 120 + 5
+    price: 125, // (3000/25) + 5
     category: PRODUCT_CATEGORIES.PERSONAL_CARE,
     description: "Quality bar soap - 1kg",
     image: "/images/products/menengai-soap-1kg.jpg",
@@ -381,11 +585,13 @@ export const PRODUCTS: Product[] = [
     unit: "1kg",
     brand: "MENENGAI",
     size: "1 Kilogram",
+    bulkPrice: 3000,
+    bulkQuantity: 25,
   },
   {
-    id: 28,
+    id: 42,
     name: "MSAFI Bar Soap",
-    price: 120, // (1150/10) + 5 = 115 + 5
+    price: 120, // (1150/10) + 5
     category: PRODUCT_CATEGORIES.PERSONAL_CARE,
     description: "Premium bar soap - 1kg",
     image: "/images/products/msafi-soap-1kg.jpg",
@@ -393,11 +599,13 @@ export const PRODUCTS: Product[] = [
     unit: "1kg",
     brand: "MSAFI",
     size: "1 Kilogram",
+    bulkPrice: 1150,
+    bulkQuantity: 10,
   },
   {
-    id: 29,
+    id: 43,
     name: "BIDCO Cream Bar Soap",
-    price: 97, // (2300/25) + 5 = 92 + 5
+    price: 97, // (2300/25) + 5
     category: PRODUCT_CATEGORIES.PERSONAL_CARE,
     description: "Cream bar soap - 800g",
     image: "/images/products/bidco-cream-soap-800g.jpg",
@@ -405,13 +613,129 @@ export const PRODUCTS: Product[] = [
     unit: "800g",
     brand: "BIDCO",
     size: "800 Grams",
+    bulkPrice: 2300,
+    bulkQuantity: 25,
+  },
+  {
+    id: 44,
+    name: "MSAFI White Bar Soap",
+    price: 130, // (1500/12) + 5
+    category: PRODUCT_CATEGORIES.PERSONAL_CARE,
+    description: "White bar soap - 700g",
+    image: "/images/products/msafi-white-soap-700g.jpg",
+    stock: 120,
+    unit: "700g",
+    brand: "MSAFI",
+    size: "700 Grams",
+    bulkPrice: 1500,
+    bulkQuantity: 12,
+  },
+
+  // HEALTH & MEDICINE
+  {
+    id: 45,
+    name: "Mara Moja Painkiller Tablets",
+    price: 530, // (2100/4) + 5
+    category: PRODUCT_CATEGORIES.HEALTH,
+    description: "Painkiller tablets - 100 tablets",
+    image: "/images/products/mara-moja-painkiller-100tabs.jpg",
+    stock: 40,
+    unit: "100 tablets",
+    brand: "Mara Moja",
+    size: "100 Tablets",
+    bulkPrice: 2100,
+    bulkQuantity: 4,
+  },
+  {
+    id: 46,
+    name: "Kotex Ultrathin Sanitary Pads Super",
+    price: 117, // (1800/16) + 5
+    category: PRODUCT_CATEGORIES.HEALTH,
+    description: "Ultrathin sanitary pads - 8 pieces",
+    image: "/images/products/kotex-ultrathin-super-8pcs.jpg",
+    stock: 160,
+    unit: "8 pcs",
+    brand: "Kotex",
+    size: "8 Pieces",
+    bulkPrice: 1800,
+    bulkQuantity: 16,
+  },
+  {
+    id: 47,
+    name: "Kotex Tampons Regular",
+    price: 297, // (3500/12) + 5
+    category: PRODUCT_CATEGORIES.HEALTH,
+    description: "Regular tampons - 16 pieces",
+    image: "/images/products/kotex-tampons-regular-16pcs.jpg",
+    stock: 120,
+    unit: "16 pcs",
+    brand: "Kotex",
+    size: "16 Pieces",
+    bulkPrice: 3500,
+    bulkQuantity: 12,
+  },
+  {
+    id: 48,
+    name: "Kotex Panty Liners",
+    price: 192, // (3000/16) + 5
+    category: PRODUCT_CATEGORIES.HEALTH,
+    description: "Panty liners - 20 pieces",
+    image: "/images/products/kotex-panty-liners-20pcs.jpg",
+    stock: 160,
+    unit: "20 pcs",
+    brand: "Kotex",
+    size: "20 Pieces",
+    bulkPrice: 3000,
+    bulkQuantity: 16,
+  },
+  {
+    id: 49,
+    name: "Kotex Tampons Super",
+    price: 272, // (3200/12) + 5
+    category: PRODUCT_CATEGORIES.HEALTH,
+    description: "Super tampons - 16 pieces",
+    image: "/images/products/kotex-tampons-super-16pcs.jpg",
+    stock: 120,
+    unit: "16 pcs",
+    brand: "Kotex",
+    size: "16 Pieces",
+    bulkPrice: 3200,
+    bulkQuantity: 12,
+  },
+  {
+    id: 50,
+    name: "Kotex Ultrathin Sanitary Pads Super Duos",
+    price: 199, // (3100/16) + 5
+    category: PRODUCT_CATEGORIES.HEALTH,
+    description: "Ultrathin sanitary pads duos - 16 pieces",
+    image: "/images/products/kotex-ultrathin-duos-16pcs.jpg",
+    stock: 160,
+    unit: "16 pcs",
+    brand: "Kotex",
+    size: "16 Pieces",
+    bulkPrice: 3100,
+    bulkQuantity: 16,
+  },
+  {
+    id: 51,
+    name: "Clincleer Sanitary Pads",
+    price: 47, // (2000/48) + 5 = 42 + 5
+    category: PRODUCT_CATEGORIES.HEALTH,
+    description: "Sanitary pads - 10 pieces",
+    image: "/images/products/clincleer-sanitary-pads-10pcs.jpg",
+    stock: 480,
+    unit: "10 pcs",
+    brand: "Clincleer",
+    size: "10 Pieces",
+    bulkPrice: 2000,
+    bulkQuantity: 48,
   },
 
   // CLEANING PRODUCTS
   {
-    id: 30,
+    id: 52,
     name: "Livelle Toilet Tissue",
-    price: 40, // (1500/40) + 5 = 37.5 + 5
+    price: 42, // (1500/40) + 5 = 37.5 + 5
     category: PRODUCT_CATEGORIES.CLEANING,
     description: "Soft toilet tissue - 4 rolls",
     image: "/images/products/livelle-toilet-tissue-4rolls.jpg",
@@ -419,23 +743,111 @@ export const PRODUCTS: Product[] = [
     unit: "4 rolls",
     brand: "Livelle",
     size: "4 Rolls",
+    bulkPrice: 1500,
+    bulkQuantity: 40,
   },
   {
-    id: 31,
-    name: "Poshy Roll Toilet Tissue",
-    price: 27, // (1000/40) + 5 = 25 + 5
+    id: 53,
+    name: "Poshy Roll Xtra Toilet Tissue",
+    price: 30, // (1000/40) + 5 = 25 + 5
     category: PRODUCT_CATEGORIES.CLEANING,
-    description: "Extra toilet tissue - 4 rolls",
+    description: "Extra toilet tissue unwrapped - 4 rolls",
     image: "/images/products/poshy-toilet-tissue-4rolls.jpg",
     stock: 120,
     unit: "4 rolls",
     brand: "Poshy",
     size: "4 Rolls",
+    bulkPrice: 1000,
+    bulkQuantity: 40,
   },
   {
-    id: 32,
+    id: 54,
+    name: "Poshy Mega Tissue Jumbo Roll",
+    price: 180, // (2100/12) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Jumbo roll wrapped tissue - 1 roll",
+    image: "/images/products/poshy-mega-tissue-jumbo.jpg",
+    stock: 120,
+    unit: "1 roll",
+    brand: "Poshy",
+    size: "1 Roll",
+    bulkPrice: 2100,
+    bulkQuantity: 12,
+  },
+  {
+    id: 55,
+    name: "Bella Tissue",
+    price: 26, // (1020/48) + 5 = 21 + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Quality tissue - per pack",
+    image: "/images/products/bella-tissue-pack.jpg",
+    stock: 480,
+    unit: "1 pack",
+    brand: "Bella",
+    size: "1 Pack",
+    bulkPrice: 1020,
+    bulkQuantity: 48,
+  },
+  {
+    id: 56,
+    name: "Hanan Tissue",
+    price: 26, // (1020/48) + 5 - Same as Bella
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Quality tissue - per pack",
+    image: "/images/products/hanan-tissue-pack.jpg",
+    stock: 480,
+    unit: "1 pack",
+    brand: "Hanan",
+    size: "1 Pack",
+    bulkPrice: 1020,
+    bulkQuantity: 48,
+  },
+  {
+    id: 57,
+    name: "Celine Premium Serviettes",
+    price: 99, // (850/9) + 5 = 94 + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Premium serviettes - 100 sheets",
+    image: "/images/products/celine-serviettes-100sheets.jpg",
+    stock: 90,
+    unit: "100 sheets",
+    brand: "Celine",
+    size: "100 Sheets",
+    bulkPrice: 850,
+    bulkQuantity: 9,
+  },
+  {
+    id: 58,
+    name: "Poshy Serviettes",
+    price: 61, // (500/9) + 5 = 56 + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Quality serviettes - 100 sheets",
+    image: "/images/products/poshy-serviettes-100sheets.jpg",
+    stock: 90,
+    unit: "100 sheets",
+    brand: "Poshy",
+    size: "100 Sheets",
+    bulkPrice: 500,
+    bulkQuantity: 9,
+  },
+  {
+    id: 59,
+    name: "Velvex White Plain Serviettes",
+    price: 80, // (900/12) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "White plain serviettes - 100 sheets",
+    image: "/images/products/velvex-serviettes-100sheets.jpg",
+    stock: 120,
+    unit: "100 sheets",
+    brand: "Velvex",
+    size: "100 Sheets",
+    bulkPrice: 900,
+    bulkQuantity: 12,
+  },
+  {
+    id: 60,
     name: "Nuru Scouring Powder",
-    price: 55, // (1200/24) + 5 = 50 + 5
+    price: 55, // (1200/24) + 5
     category: PRODUCT_CATEGORIES.CLEANING,
     description: "Lemon fresh scouring powder - 500g",
     image: "/images/products/nuru-scouring-powder-500g.jpg",
@@ -443,21 +855,67 @@ export const PRODUCTS: Product[] = [
     unit: "500g",
     brand: "Nuru",
     size: "500 Grams",
+    bulkPrice: 1200,
+    bulkQuantity: 24,
   },
   {
-    id: 33,
-    name: "Sunlight Washing Powder",
-    price: 122, // (2800/24) + 5 = 117 + 5
+    id: 61,
+    name: "Nuru Dish Washing Paste",
+    price: 255, // (1500/6) + 5
     category: PRODUCT_CATEGORIES.CLEANING,
-    description: "Premium washing powder - 500g",
-    image: "/images/products/sunlight-washing-powder-500g.jpg",
-    stock: 90,
-    unit: "500g",
-    brand: "Sunlight",
-    size: "500 Grams",
+    description: "Lemon spark dish washing paste - 800g",
+    image: "/images/products/nuru-dish-paste-800g.jpg",
+    stock: 60,
+    unit: "800g",
+    brand: "Nuru",
+    size: "800 Grams",
+    bulkPrice: 1500,
+    bulkQuantity: 6,
   },
   {
-    id: 34,
+    id: 62,
+    name: "Velvex Dishwashing Liquid",
+    price: 455, // (450/1) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Lemon burst dishwashing liquid - 5L",
+    image: "/images/products/velvex-dishwashing-liquid-5l.jpg",
+    stock: 20,
+    unit: "5L",
+    brand: "Velvex",
+    size: "5 Litres",
+    bulkPrice: 450,
+    bulkQuantity: 1,
+  },
+  {
+    id: 63,
+    name: "Sunlight Hand Washing Powder",
+    price: 338, // (2000/6) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Eden yellow hand washing powder - 1kg",
+    image: "/images/products/sunlight-washing-powder-1kg.jpg",
+    stock: 60,
+    unit: "1kg",
+    brand: "Sunlight",
+    size: "1 Kilogram",
+    bulkPrice: 2000,
+    bulkQuantity: 6,
+  },
+  {
+    id: 64,
+    name: "Vim Powder",
+    price: 172, // (1000/6) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Lemon fresh cleaning powder - 1kg",
+    image: "/images/products/vim-powder-1kg.jpg",
+    stock: 60,
+    unit: "1kg",
+    brand: "Vim",
+    size: "1 Kilogram",
+    bulkPrice: 1000,
+    bulkQuantity: 6,
+  },
+  {
+    id: 65,
     name: "Jik Bleach Regular",
     price: 755, // (3000/4) + 5
     category: PRODUCT_CATEGORIES.CLEANING,
@@ -467,11 +925,83 @@ export const PRODUCTS: Product[] = [
     unit: "1.5L",
     brand: "Jik",
     size: "1.5 Litres",
+    bulkPrice: 3000,
+    bulkQuantity: 4,
   },
   {
-    id: 35,
-    name: "Harpic Power Plus",
-    price: 1047, // (12500/12) + 5 = 1042 + 5
+    id: 66,
+    name: "Nuru Dish Washing Liquid",
+    price: 630, // (2500/4) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Lemon spark dish washing liquid - 5L",
+    image: "/images/products/nuru-dish-liquid-5l.jpg",
+    stock: 40,
+    unit: "5L",
+    brand: "Nuru",
+    size: "5 Litres",
+    bulkPrice: 2500,
+    bulkQuantity: 4,
+  },
+  {
+    id: 67,
+    name: "Jik Bleach Colours",
+    price: 1130, // (4500/4) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Colour safe bleach - 1.5L bottle",
+    image: "/images/products/jik-bleach-colours-1.5l.jpg",
+    stock: 40,
+    unit: "1.5L",
+    brand: "Jik",
+    size: "1.5 Litres",
+    bulkPrice: 4500,
+    bulkQuantity: 4,
+  },
+  {
+    id: 68,
+    name: "Kleen Kat Scouring Pad",
+    price: 274, // (4300/16) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Value pack scouring pads - 12 pack",
+    image: "/images/products/kleen-kat-scouring-pad-12pack.jpg",
+    stock: 160,
+    unit: "12 pack",
+    brand: "Kleen Kat",
+    size: "12 Pack",
+    bulkPrice: 4300,
+    bulkQuantity: 16,
+  },
+  {
+    id: 69,
+    name: "Velvex Air Freshener After Rain",
+    price: 238, // (2800/12) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "After rain freshness air freshener - 300ml",
+    image: "/images/products/velvex-air-freshener-rain-300ml.jpg",
+    stock: 120,
+    unit: "300ml",
+    brand: "Velvex",
+    size: "300ml",
+    bulkPrice: 2800,
+    bulkQuantity: 12,
+  },
+  {
+    id: 70,
+    name: "Kleen Kat Sponge Scourer",
+    price: 183, // (2500/14) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Sponge scourer - 5 pack",
+    image: "/images/products/kleen-kat-sponge-scourer-5pack.jpg",
+    stock: 140,
+    unit: "5 pack",
+    brand: "Kleen Kat",
+    size: "5 Pack",
+    bulkPrice: 2500,
+    bulkQuantity: 14,
+  },
+  {
+    id: 71,
+    name: "Harpic Power Plus Original",
+    price: 1047, // (12500/12) + 5
     category: PRODUCT_CATEGORIES.CLEANING,
     description: "Toilet cleaner - 1L bottle",
     image: "/images/products/harpic-power-plus-1l.jpg",
@@ -479,11 +1009,195 @@ export const PRODUCTS: Product[] = [
     unit: "1L",
     brand: "Harpic",
     size: "1 Litre",
+    bulkPrice: 12500,
+    bulkQuantity: 12,
+  },
+  {
+    id: 72,
+    name: "Harpic Power Plus Original",
+    price: 513, // (12200/24) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Toilet cleaner - 500ml bottle",
+    image: "/images/products/harpic-power-plus-500ml.jpg",
+    stock: 240,
+    unit: "500ml",
+    brand: "Harpic",
+    size: "500ml",
+    bulkPrice: 12200,
+    bulkQuantity: 24,
+  },
+  {
+    id: 73,
+    name: "Softleaf Tissue Rolls",
+    price: 42, // (1500/40) + 5 = 37.5 + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Tissue rolls - 4 pack",
+    image: "/images/products/softleaf-tissue-4pack.jpg",
+    stock: 400,
+    unit: "4 pack",
+    brand: "Softleaf",
+    size: "4 Pack",
+    bulkPrice: 1500,
+    bulkQuantity: 40,
+  },
+  {
+    id: 74,
+    name: "Velvex Disinfectant Balls",
+    price: 105, // (1200/12) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "5 colored disinfectant balls",
+    image: "/images/products/velvex-disinfectant-balls-5pcs.jpg",
+    stock: 120,
+    unit: "5 balls",
+    brand: "Velvex",
+    size: "5 Balls",
+    bulkPrice: 1200,
+    bulkQuantity: 12,
+  },
+  {
+    id: 75,
+    name: "Velvex Liquid Hand Wash Nature",
+    price: 188, // (1100/6) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Nature liquid hand wash - 400ml",
+    image: "/images/products/velvex-hand-wash-nature-400ml.jpg",
+    stock: 60,
+    unit: "400ml",
+    brand: "Velvex",
+    size: "400ml",
+    bulkPrice: 1100,
+    bulkQuantity: 6,
+  },
+  {
+    id: 76,
+    name: "Velvex Liquid Hand Wash Coral",
+    price: 188, // (1100/6) + 5 - Same as Nature
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Coral liquid hand wash - 400ml",
+    image: "/images/products/velvex-hand-wash-coral-400ml.jpg",
+    stock: 60,
+    unit: "400ml",
+    brand: "Velvex",
+    size: "400ml",
+    bulkPrice: 1100,
+    bulkQuantity: 6,
+  },
+  {
+    id: 77,
+    name: "Velvex Multipurpose Liquid Detergent",
+    price: 405, // (400/1) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Green multipurpose liquid detergent - 5L",
+    image: "/images/products/velvex-multipurpose-detergent-5l.jpg",
+    stock: 20,
+    unit: "5L",
+    brand: "Velvex",
+    size: "5 Litres",
+    bulkPrice: 400,
+    bulkQuantity: 1,
+  },
+  {
+    id: 78,
+    name: "Cleanrol Kitchen Towel",
+    price: 213, // (5000/24) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Kitchen towel - 2 pack",
+    image: "/images/products/cleanrol-kitchen-towel-2pack.jpg",
+    stock: 240,
+    unit: "2 pack",
+    brand: "Cleanrol",
+    size: "2 Pack",
+    bulkPrice: 5000,
+    bulkQuantity: 24,
+  },
+  {
+    id: 79,
+    name: "Velvex Air Freshener Lavender",
+    price: 213, // (1250/6) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Lavender & camomile air freshener - 300ml",
+    image: "/images/products/velvex-air-freshener-lavender-300ml.jpg",
+    stock: 60,
+    unit: "300ml",
+    brand: "Velvex",
+    size: "300ml",
+    bulkPrice: 1250,
+    bulkQuantity: 6,
+  },
+  {
+    id: 80,
+    name: "Velvex Toilet Cleaner Citrus",
+    price: 372, // (2200/6) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Citrus burst toilet cleaner - 1L",
+    image: "/images/products/velvex-toilet-cleaner-citrus-1l.jpg",
+    stock: 60,
+    unit: "1L",
+    brand: "Velvex",
+    size: "1 Litre",
+    bulkPrice: 2200,
+    bulkQuantity: 6,
+  },
+  {
+    id: 81,
+    name: "Velvex Toilet Cleaner Ocean",
+    price: 388, // (2300/6) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Ocean breeze toilet cleaner - 1L",
+    image: "/images/products/velvex-toilet-cleaner-ocean-1l.jpg",
+    stock: 60,
+    unit: "1L",
+    brand: "Velvex",
+    size: "1 Litre",
+    bulkPrice: 2300,
+    bulkQuantity: 6,
+  },
+  {
+    id: 82,
+    name: "Glassy Liquid Glass Cleaner",
+    price: 130, // (1500/12) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Ocean scent glass and window cleaner - 600ml",
+    image: "/images/products/glassy-glass-cleaner-600ml.jpg",
+    stock: 120,
+    unit: "600ml",
+    brand: "Glassy",
+    size: "600ml",
+    bulkPrice: 1500,
+    bulkQuantity: 12,
+  },
+  {
+    id: 83,
+    name: "Rosy Clear Hand Sanitizing Gel",
+    price: 1505, // (1500/1) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Hand sanitizing gel - 5L",
+    image: "/images/products/rosy-clear-sanitizer-5l.jpg",
+    stock: 20,
+    unit: "5L",
+    brand: "Rosy Clear",
+    size: "5 Litres",
+    bulkPrice: 1500,
+    bulkQuantity: 1,
+  },
+  {
+    id: 84,
+    name: "Msafi Bleach Colour",
+    price: 172, // (2000/12) + 5
+    category: PRODUCT_CATEGORIES.CLEANING,
+    description: "Colour safe bleach (750ml + 250ml free) - 1L",
+    image: "/images/products/msafi-bleach-colour-1l.jpg",
+    stock: 120,
+    unit: "1L",
+    brand: "Msafi",
+    size: "1 Litre",
+    bulkPrice: 2000,
+    bulkQuantity: 12,
   },
 
   // BABY CARE
   {
-    id: 36,
+    id: 85,
     name: "Softcare Gold Baby Diapers Small",
     price: 555, // 550 + 5
     category: PRODUCT_CATEGORIES.BABY_CARE,
@@ -495,7 +1209,7 @@ export const PRODUCTS: Product[] = [
     size: "Small (3-6kg)",
   },
   {
-    id: 37,
+    id: 86,
     name: "Softcare Gold Baby Diapers Medium",
     price: 555, // 550 + 5
     category: PRODUCT_CATEGORIES.BABY_CARE,
@@ -507,7 +1221,19 @@ export const PRODUCTS: Product[] = [
     size: "Medium (6.1-9kg)",
   },
   {
-    id: 38,
+    id: 87,
+    name: "Softcare Gold Baby Diapers Large",
+    price: 555, // 550 + 5
+    category: PRODUCT_CATEGORIES.BABY_CARE,
+    description: "Premium baby diapers - Large (9.1-15kg) 40 pieces",
+    image: "/images/products/softcare-diapers-large-40pcs.jpg",
+    stock: 40,
+    unit: "40 pcs",
+    brand: "Softcare",
+    size: "Large (9.1-15kg)",
+  },
+  {
+    id: 88,
     name: "Cuettie Baby Diapers Small",
     price: 505, // 500 + 5
     category: PRODUCT_CATEGORIES.BABY_CARE,
@@ -519,33 +1245,167 @@ export const PRODUCTS: Product[] = [
     size: "Small (3-6kg)",
   },
   {
-    id: 39,
+    id: 89,
+    name: "Cuettie Baby Diapers Medium",
+    price: 505, // 500 + 5
+    category: PRODUCT_CATEGORIES.BABY_CARE,
+    description: "Quality baby diapers - Medium (6.1-9kg) 44 pieces",
+    image: "/images/products/cuettie-diapers-medium-44pcs.jpg",
+    stock: 55,
+    unit: "44 pcs",
+    brand: "Cuettie",
+    size: "Medium (6.1-9kg)",
+  },
+  {
+    id: 90,
+    name: "Cuettie Baby Diapers Large",
+    price: 505, // 500 + 5
+    category: PRODUCT_CATEGORIES.BABY_CARE,
+    description: "Quality baby diapers - Large (9.1-15kg) 40 pieces",
+    image: "/images/products/cuettie-diapers-large-40pcs.jpg",
+    stock: 50,
+    unit: "40 pcs",
+    brand: "Cuettie",
+    size: "Large (9.1-15kg)",
+  },
+  {
+    id: 91,
+    name: "Hopebaby Pull-up Diapers Large",
+    price: 555, // 550 + 5
+    category: PRODUCT_CATEGORIES.BABY_CARE,
+    description: "Pull-up baby diapers - Large (9-14kg) 22 pieces",
+    image: "/images/products/hopebaby-pullup-large-22pcs.jpg",
+    stock: 40,
+    unit: "22 pcs",
+    brand: "Hopebaby",
+    size: "Large (9-14kg)",
+  },
+  {
+    id: 92,
+    name: "Hopebaby Pull-up Diapers Extra Large",
+    price: 555, // 550 + 5
+    category: PRODUCT_CATEGORIES.BABY_CARE,
+    description: "Pull-up baby diapers - Extra Large (>12kg) 20 pieces",
+    image: "/images/products/hopebaby-pullup-xl-20pcs.jpg",
+    stock: 35,
+    unit: "20 pcs",
+    brand: "Hopebaby",
+    size: "Extra Large (>12kg)",
+  },
+  {
+    id: 93,
     name: "Sunny Adult Diapers Medium",
     price: 755, // 750 + 5
     category: PRODUCT_CATEGORIES.BABY_CARE,
-    description: "Adult diapers - Medium size, 10 pieces",
+    description: "Adult diapers - Medium (30-45 inches) 10 pieces",
     image: "/images/products/sunny-adult-diapers-medium-10pcs.jpg",
     stock: 30,
     unit: "10 pcs",
     brand: "Sunny",
     size: "Medium",
   },
+  {
+    id: 94,
+    name: "Sunny Adult Diapers Large",
+    price: 755, // 750 + 5
+    category: PRODUCT_CATEGORIES.BABY_CARE,
+    description: "Adult diapers - Large (40-55 inches) 10 pieces",
+    image: "/images/products/sunny-adult-diapers-large-10pcs.jpg",
+    stock: 30,
+    unit: "10 pcs",
+    brand: "Sunny",
+    size: "Large",
+  },
+  {
+    id: 95,
+    name: "Sunny Adult Diapers Extra Large",
+    price: 755, // 750 + 5
+    category: PRODUCT_CATEGORIES.BABY_CARE,
+    description: "Adult diapers - Extra Large (50-65 inches) 10 pieces",
+    image: "/images/products/sunny-adult-diapers-xl-10pcs.jpg",
+    stock: 30,
+    unit: "10 pcs",
+    brand: "Sunny",
+    size: "Extra Large",
+  },
+  {
+    id: 96,
+    name: "Bluecare Adult Diapers Medium",
+    price: 755, // 750 + 5 - Same as Sunny
+    category: PRODUCT_CATEGORIES.BABY_CARE,
+    description: "Adult diapers - Medium (30-45 inches) 10 pieces",
+    image: "/images/products/bluecare-adult-diapers-medium-10pcs.jpg",
+    stock: 30,
+    unit: "10 pcs",
+    brand: "Bluecare",
+    size: "Medium",
+  },
+  {
+    id: 97,
+    name: "Bluecare Adult Diapers Large",
+    price: 755, // 750 + 5 - Same as Sunny
+    category: PRODUCT_CATEGORIES.BABY_CARE,
+    description: "Adult diapers - Large (40-55 inches) 10 pieces",
+    image: "/images/products/bluecare-adult-diapers-large-10pcs.jpg",
+    stock: 30,
+    unit: "10 pcs",
+    brand: "Bluecare",
+    size: "Large",
+  },
+  {
+    id: 98,
+    name: "Bluecare Adult Diapers Extra Large",
+    price: 755, // 750 + 5 - Same as Sunny
+    category: PRODUCT_CATEGORIES.BABY_CARE,
+    description: "Adult diapers - Extra Large (50-65 inches) 10 pieces",
+    image: "/images/products/bluecare-adult-diapers-xl-10pcs.jpg",
+    stock: 30,
+    unit: "10 pcs",
+    brand: "Bluecare",
+    size: "Extra Large",
+  },
+  {
+    id: 99,
+    name: "Bluecare Pull-up Adult Diapers Large",
+    price: 955, // 950 + 5
+    category: PRODUCT_CATEGORIES.BABY_CARE,
+    description: "Pull-up adult diapers - Large (75-100cm) 10 pieces",
+    image: "/images/products/bluecare-pullup-large-10pcs.jpg",
+    stock: 30,
+    unit: "10 pcs",
+    brand: "Bluecare",
+    size: "Large",
+  },
+  {
+    id: 100,
+    name: "Bluecare Pull-up Adult Diapers Extra Large",
+    price: 955, // 950 + 5
+    category: PRODUCT_CATEGORIES.BABY_CARE,
+    description: "Pull-up adult diapers - Extra Large (90-120cm) 10 pieces",
+    image: "/images/products/bluecare-pullup-xl-10pcs.jpg",
+    stock: 30,
+    unit: "10 pcs",
+    brand: "Bluecare",
+    size: "Extra Large",
+  },
 
   // SNACKS & CONFECTIONERY
   {
-    id: 40,
-    name: "Krackles Potato Crisps",
-    price: 51, // (2200/48) + 5 = 46 + 5
+    id: 101,
+    name: "Krackles Potato Crisps Assorted",
+    price: 51, // (2200/48) + 5
     category: PRODUCT_CATEGORIES.SNACKS,
     description: "Assorted potato crisps - 30g pack",
-    image: "/images/products/krackles-crisps-30g.jpg",
+    image: "/images/products/krackles-crisps-assorted-30g.jpg",
     stock: 200,
     unit: "30g",
     brand: "Krackles",
     size: "30 Grams",
+    bulkPrice: 2200,
+    bulkQuantity: 48,
   },
   {
-    id: 41,
+    id: 102,
     name: "M&M's Chocolate",
     price: 605, // (1800/3) + 5
     category: PRODUCT_CATEGORIES.SNACKS,
@@ -555,11 +1415,41 @@ export const PRODUCTS: Product[] = [
     unit: "200g",
     brand: "M&M's",
     size: "200 Grams",
+    bulkPrice: 1800,
+    bulkQuantity: 3,
   },
   {
-    id: 42,
+    id: 103,
+    name: "Tropical Heat Kenyan Chevda",
+    price: 338, // (2000/6) + 5
+    category: PRODUCT_CATEGORIES.SNACKS,
+    description: "Hot Kenyan chevda - 340g",
+    image: "/images/products/tropical-heat-chevda-340g.jpg",
+    stock: 60,
+    unit: "340g",
+    brand: "Tropical Heat",
+    size: "340 Grams",
+    bulkPrice: 2000,
+    bulkQuantity: 6,
+  },
+  {
+    id: 104,
+    name: "Krackles Potato Crisps Bar-B-Que",
+    price: 180, // (2100/12) + 5
+    category: PRODUCT_CATEGORIES.SNACKS,
+    description: "Bar-B-Que potato crisps - 125g",
+    image: "/images/products/krackles-bbq-crisps-125g.jpg",
+    stock: 120,
+    unit: "125g",
+    brand: "Krackles",
+    size: "125 Grams",
+    bulkPrice: 2100,
+    bulkQuantity: 12,
+  },
+  {
+    id: 105,
     name: "Haribo Happy Cherries",
-    price: 172, // (2500/15) + 5 = 167 + 5
+    price: 172, // (2500/15) + 5
     category: PRODUCT_CATEGORIES.SNACKS,
     description: "Gummy cherries - 80g pack",
     image: "/images/products/haribo-cherries-80g.jpg",
@@ -567,11 +1457,55 @@ export const PRODUCTS: Product[] = [
     unit: "80g",
     brand: "Haribo",
     size: "80 Grams",
+    bulkPrice: 2500,
+    bulkQuantity: 15,
   },
   {
-    id: 43,
+    id: 106,
+    name: "Haribo Starmix",
+    price: 152, // (2200/15) + 5
+    category: PRODUCT_CATEGORIES.SNACKS,
+    description: "Mixed gummy candies - 80g pack",
+    image: "/images/products/haribo-starmix-80g.jpg",
+    stock: 100,
+    unit: "80g",
+    brand: "Haribo",
+    size: "80 Grams",
+    bulkPrice: 2200,
+    bulkQuantity: 15,
+  },
+  {
+    id: 107,
+    name: "Maryland Choc Chip Cookies",
+    price: 265, // (2600/10) + 5
+    category: PRODUCT_CATEGORIES.SNACKS,
+    description: "Chocolate chip cookies - 136g",
+    image: "/images/products/maryland-choc-chip-136g.jpg",
+    stock: 100,
+    unit: "136g",
+    brand: "Maryland",
+    size: "136 Grams",
+    bulkPrice: 2600,
+    bulkQuantity: 10,
+  },
+  {
+    id: 108,
+    name: "Mentos Monos Mint",
+    price: 165, // (3200/20) + 5
+    category: PRODUCT_CATEGORIES.SNACKS,
+    description: "Mint candies - 135g",
+    image: "/images/products/mentos-mint-135g.jpg",
+    stock: 200,
+    unit: "135g",
+    brand: "Mentos",
+    size: "135 Grams",
+    bulkPrice: 3200,
+    bulkQuantity: 20,
+  },
+  {
+    id: 109,
     name: "Nestle KitKat White",
-    price: 172, // (4000/24) + 5 = 167 + 5
+    price: 172, // (4000/24) + 5
     category: PRODUCT_CATEGORIES.SNACKS,
     description: "White chocolate KitKat - 41.5g",
     image: "/images/products/kitkat-white-41.5g.jpg",
@@ -579,11 +1513,85 @@ export const PRODUCTS: Product[] = [
     unit: "41.5g",
     brand: "Nestle",
     size: "41.5 Grams",
+    bulkPrice: 4000,
+    bulkQuantity: 24,
+  },
+
+  // BISCUITS & COOKIES
+  {
+    id: 110,
+    name: "McVities Digestive Biscuit",
+    price: 405, // (2000/5) + 5
+    category: PRODUCT_CATEGORIES.BISCUITS,
+    description: "Digestive biscuits - 400g",
+    image: "/images/products/mcvities-digestive-400g.jpg",
+    stock: 50,
+    unit: "400g",
+    brand: "McVities",
+    size: "400 Grams",
+    bulkPrice: 2000,
+    bulkQuantity: 5,
+  },
+  {
+    id: 111,
+    name: "Oreo Original Biscuit",
+    price: 63, // (700/12) + 5
+    category: PRODUCT_CATEGORIES.BISCUITS,
+    description: "Original Oreo biscuits - 55.2g",
+    image: "/images/products/oreo-original-55.2g.jpg",
+    stock: 120,
+    unit: "55.2g",
+    brand: "Oreo",
+    size: "55.2 Grams",
+    bulkPrice: 700,
+    bulkQuantity: 12,
+  },
+  {
+    id: 112,
+    name: "Maryland Choc Chip & Hazelnut Cookies",
+    price: 255, // (2500/10) + 5
+    category: PRODUCT_CATEGORIES.BISCUITS,
+    description: "Chocolate chip & hazelnut cookies - 136g",
+    image: "/images/products/maryland-hazelnut-136g.jpg",
+    stock: 100,
+    unit: "136g",
+    brand: "Maryland",
+    size: "136 Grams",
+    bulkPrice: 2500,
+    bulkQuantity: 10,
+  },
+  {
+    id: 113,
+    name: "Oreo Original Biscuit",
+    price: 38, // (400/12) + 5
+    category: PRODUCT_CATEGORIES.BISCUITS,
+    description: "Original Oreo biscuits - 27.6g",
+    image: "/images/products/oreo-original-27.6g.jpg",
+    stock: 120,
+    unit: "27.6g",
+    brand: "Oreo",
+    size: "27.6 Grams",
+    bulkPrice: 400,
+    bulkQuantity: 12,
+  },
+  {
+    id: 114,
+    name: "Oreo Original Biscuit",
+    price: 34, // (350/12) + 5
+    category: PRODUCT_CATEGORIES.BISCUITS,
+    description: "Original Oreo biscuits - 18.4g",
+    image: "/images/products/oreo-original-18.4g.jpg",
+    stock: 120,
+    unit: "18.4g",
+    brand: "Oreo",
+    size: "18.4 Grams",
+    bulkPrice: 350,
+    bulkQuantity: 12,
   },
 
   // CANNED FOODS
   {
-    id: 44,
+    id: 115,
     name: "Domee Peach Halves",
     price: 255, // (3000/12) + 5
     category: PRODUCT_CATEGORIES.CANNED_FOODS,
@@ -593,11 +1601,13 @@ export const PRODUCTS: Product[] = [
     unit: "425g",
     brand: "Domee",
     size: "425 Grams",
+    bulkPrice: 3000,
+    bulkQuantity: 12,
   },
   {
-    id: 45,
+    id: 116,
     name: "Domee Lychees",
-    price: 422, // (2500/6) + 5 = 417 + 5
+    price: 422, // (2500/6) + 5
     category: PRODUCT_CATEGORIES.CANNED_FOODS,
     description: "Lychees in syrup - 567g can",
     image: "/images/products/domee-lychees-567g.jpg",
@@ -605,16 +1615,32 @@ export const PRODUCTS: Product[] = [
     unit: "567g",
     brand: "Domee",
     size: "567 Grams",
+    bulkPrice: 2500,
+    bulkQuantity: 6,
+  },
+  {
+    id: 117,
+    name: "Domee Pear Halves",
+    price: 255, // (1500/6) + 5
+    category: PRODUCT_CATEGORIES.CANNED_FOODS,
+    description: "Pear halves in syrup - 425g can",
+    image: "/images/products/domee-pear-425g.jpg",
+    stock: 60,
+    unit: "425g",
+    brand: "Domee",
+    size: "425 Grams",
+    bulkPrice: 1500,
+    bulkQuantity: 6,
   },
 
   // CEREALS & LEGUMES
   {
-    id: 46,
+    id: 118,
     name: "Makueni Ndengu",
-    price: 88, // (7500/90) + 5 = 83 + 5 (per kg)
+    price: 88, // (7500/90) + 5
     category: PRODUCT_CATEGORIES.CEREALS_LEGUMES,
     description: "Premium green grams - per kilogram",
-    image: "/images/products/makueni-ndengu-90kg.jpg",
+    image: "/images/products/makueni-ndengu-1kg.jpg",
     stock: 720, // 8 sacks × 90kg each
     unit: "1kg",
     size: "1 Kilogram",
@@ -622,12 +1648,12 @@ export const PRODUCTS: Product[] = [
     bulkQuantity: 90,
   },
   {
-    id: 47,
+    id: 119,
     name: "Nylon Ndengu",
-    price: 77, // (6500/90) + 5 = 72 + 5 (per kg)
+    price: 77, // (6500/90) + 5
     category: PRODUCT_CATEGORIES.CEREALS_LEGUMES,
     description: "Quality green grams - per kilogram",
-    image: "/images/products/nylon-ndengu-90kg.jpg",
+    image: "/images/products/nylon-ndengu-1kg.jpg",
     stock: 900, // 10 sacks × 90kg each
     unit: "1kg",
     size: "1 Kilogram",
@@ -635,22 +1661,35 @@ export const PRODUCTS: Product[] = [
     bulkQuantity: 90,
   },
   {
-    id: 48,
+    id: 120,
     name: "Kamande Beans",
-    price: 115, // (5500/50) + 5 = 110 + 5 (per kg)
+    price: 115, // (5500/50) + 5
     category: PRODUCT_CATEGORIES.CEREALS_LEGUMES,
     description: "Premium beans - per kilogram",
-    image: "/images/products/kamande-beans-50kg.jpg",
+    image: "/images/products/kamande-beans-1kg.jpg",
     stock: 600, // 12 sacks × 50kg each
     unit: "1kg",
     size: "1 Kilogram",
     bulkPrice: 5500,
     bulkQuantity: 50,
   },
+  {
+    id: 121,
+    name: "Sorghum",
+    price: 44, // (3500/90) + 5
+    category: PRODUCT_CATEGORIES.CEREALS_LEGUMES,
+    description: "Quality sorghum - per kilogram",
+    image: "/images/products/sorghum-1kg.jpg",
+    stock: 720, // 8 sacks × 90kg each
+    unit: "1kg",
+    size: "1 Kilogram",
+    bulkPrice: 3500,
+    bulkQuantity: 90,
+  },
 
   // HOUSEHOLD ITEMS
   {
-    id: 49,
+    id: 122,
     name: "Eggs Crate",
     price: 385, // 380 + 5
     category: PRODUCT_CATEGORIES.HOUSEHOLD,
@@ -661,9 +1700,9 @@ export const PRODUCTS: Product[] = [
     size: "30 Pieces",
   },
   {
-    id: 50,
+    id: 123,
     name: "Daawat Spaghetti",
-    price: 39, // (820/24) + 5 = 34 + 5
+    price: 39, // (820/24) + 5
     category: PRODUCT_CATEGORIES.HOUSEHOLD,
     description: "Premium spaghetti - 400g pack",
     image: "/images/products/daawat-spaghetti-400g.jpg",
@@ -671,6 +1710,92 @@ export const PRODUCTS: Product[] = [
     unit: "400g",
     brand: "Daawat",
     size: "400 Grams",
+    bulkPrice: 820,
+    bulkQuantity: 24,
+  },
+  {
+    id: 124,
+    name: "Weetabix",
+    price: 64, // (1420/24) + 5
+    category: PRODUCT_CATEGORIES.HOUSEHOLD,
+    description: "Wheat biscuits - 45g pack",
+    image: "/images/products/weetabix-45g.jpg",
+    stock: 240,
+    unit: "45g",
+    brand: "Weetabix",
+    size: "45 Grams",
+    bulkPrice: 1420,
+    bulkQuantity: 24,
+  },
+  {
+    id: 125,
+    name: "Indomie Instant Noodles",
+    price: 26, // (500/24) + 5
+    category: PRODUCT_CATEGORIES.HOUSEHOLD,
+    description: "Instant noodles - 70g pack",
+    image: "/images/products/indomie-noodles-70g.jpg",
+    stock: 240,
+    unit: "70g",
+    brand: "Indomie",
+    size: "70 Grams",
+    bulkPrice: 500,
+    bulkQuantity: 24,
+  },
+  {
+    id: 126,
+    name: "Velvex Aluminium Foil",
+    price: 945, // (940/1) + 5
+    category: PRODUCT_CATEGORIES.HOUSEHOLD,
+    description: "Catering aluminium foil - 30cm x 60m",
+    image: "/images/products/velvex-foil-30cm-60m.jpg",
+    stock: 20,
+    unit: "1 roll",
+    brand: "Velvex",
+    size: "30cm x 60m",
+    bulkPrice: 940,
+    bulkQuantity: 1,
+  },
+  {
+    id: 127,
+    name: "Velvex Cling Film",
+    price: 905, // (900/1) + 5
+    category: PRODUCT_CATEGORIES.HOUSEHOLD,
+    description: "Catering cling film - 30cm x 300m",
+    image: "/images/products/velvex-cling-film-30cm-300m.jpg",
+    stock: 20,
+    unit: "1 roll",
+    brand: "Velvex",
+    size: "30cm x 300m",
+    bulkPrice: 900,
+    bulkQuantity: 1,
+  },
+  {
+    id: 128,
+    name: "Velvex Cling Film Large",
+    price: 4005, // (4000/1) + 5
+    category: PRODUCT_CATEGORIES.HOUSEHOLD,
+    description: "Catering cling film - 30cm x 1500m",
+    image: "/images/products/velvex-cling-film-30cm-1500m.jpg",
+    stock: 10,
+    unit: "1 roll",
+    brand: "Velvex",
+    size: "30cm x 1500m",
+    bulkPrice: 4000,
+    bulkQuantity: 1,
+  },
+  {
+    id: 129,
+    name: "Velvex Aluminium Foil Large",
+    price: 1305, // (1300/1) + 5
+    category: PRODUCT_CATEGORIES.HOUSEHOLD,
+    description: "Catering aluminium foil - 30cm x 90m",
+    image: "/images/products/velvex-foil-30cm-90m.jpg",
+    stock: 15,
+    unit: "1 roll",
+    brand: "Velvex",
+    size: "30cm x 90m",
+    bulkPrice: 1300,
+    bulkQuantity: 1,
   },
 ]
 

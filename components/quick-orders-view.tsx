@@ -1,8 +1,16 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowLeft, Zap, ShoppingBag, RotateCcw, Star, TrendingUp, Clock } from "lucide-react"
+import { ArrowLeft, Zap, RotateCcw, Star, TrendingUp, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
+
+interface OrderItem {
+  id: string
+  name: string
+  quantity: number
+  price: number
+  [key: string]: any
+}
 
 interface QuickOrdersViewProps {
   products: any[]
@@ -78,8 +86,16 @@ export function QuickOrdersView({ products, orders, onAddToCart, onReorder, onBa
                 className="glass-effect rounded-xl p-4 cursor-pointer hover:bg-white/5 transition-all duration-300 group"
               >
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-white/20 to-white/10 rounded-xl flex items-center justify-center group-hover:from-white/30 group-hover:to-white/20 transition-all">
-                    <ShoppingBag className="h-6 w-6 text-gray-300" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-white/20 to-white/10 rounded-xl overflow-hidden group-hover:from-white/30 group-hover:to-white/20 transition-all">
+                    <img
+                      src={product.image || `/placeholder.svg?height=48&width=48`}
+                      alt={product.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement
+                        target.src = `/placeholder.svg?height=48&width=48`
+                      }}
+                    />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-sm truncate">{product.name}</p>
@@ -123,8 +139,16 @@ export function QuickOrdersView({ products, orders, onAddToCart, onReorder, onBa
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-green-500/20 to-teal-500/20 rounded-lg flex items-center justify-center">
-                      <ShoppingBag className="h-5 w-5 text-green-400" />
+                    <div className="w-10 h-10 bg-gradient-to-br from-green-500/20 to-teal-500/20 rounded-lg overflow-hidden">
+                      <img
+                        src={product.image || `/placeholder.svg?height=40&width=40`}
+                        alt={product.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement
+                          target.src = `/placeholder.svg?height=40&width=40`
+                        }}
+                      />
                     </div>
                     <div>
                       <p className="font-medium text-sm">{product.name}</p>
@@ -186,7 +210,7 @@ export function QuickOrdersView({ products, orders, onAddToCart, onReorder, onBa
                       <div className="text-xs text-gray-500 mt-1">
                         {order.items
                           .slice(0, 2)
-                          .map((item) => item.name)
+                          .map((item: OrderItem) => item.name)
                           .join(", ")}
                         {order.items.length > 2 && ` +${order.items.length - 2} more`}
                       </div>

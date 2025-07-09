@@ -1,7 +1,7 @@
 "use client"
 
 import { motion, AnimatePresence } from "framer-motion"
-import { X, Package, Plus } from "lucide-react"
+import { X, Plus } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 interface AllProductsModalProps {
@@ -48,8 +48,16 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                   transition={{ delay: index * 0.05 }}
                   className="glass-effect rounded-lg p-4 hover:bg-white/5 transition-all duration-300"
                 >
-                  <div className="aspect-square bg-white/10 rounded-lg mb-3 flex items-center justify-center">
-                    <Package className="h-12 w-12 text-gray-400" />
+                  <div className="aspect-square bg-white/10 rounded-lg mb-3 overflow-hidden">
+                    <img
+                      src={product.image || `/placeholder.svg?height=200&width=200`}
+                      alt={product.name}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement
+                        target.src = `/placeholder.svg?height=200&width=200`
+                      }}
+                    />
                   </div>
                   <h3 className="font-medium mb-2">{product.name}</h3>
                   <p className="text-xs text-gray-400 mb-3">{product.description}</p>
