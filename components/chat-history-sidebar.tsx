@@ -165,8 +165,8 @@ export function ChatHistorySidebar({
             className="fixed inset-y-0 left-0 z-30 w-64 sm:w-72 md:w-80 glass-effect border-r border-white/10"
           >
             <div className="flex h-full flex-col">
-              <div className="flex items-center justify-between p-3 sm:p-4 border-b border-white/10">
-                <h2 className="text-base sm:text-lg font-semibold text-gradient">Chat History</h2>
+              <div className="flex items-center justify-between p-3 sm:p-3.5 border-b border-white/10">
+                <h2 className="text-xl sm:text-lg font-semibold text-gradient">Chat History</h2>
                 <div className="flex items-center space-x-1 sm:space-x-2">
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                     <Button 
@@ -196,7 +196,7 @@ export function ChatHistorySidebar({
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="text-center text-gray-400 mt-8"
+                    className="text-center text-gray-400 h-full flex flex-col items-center justify-center space-y-3"
                   >
                     <MessageSquare className="h-10 w-10 sm:h-12 sm:w-12 mx-auto mb-3 opacity-50" />
                     <p className="text-sm">No chat history yet</p>

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ProductShortcuts } from "./product-shortcuts"
 import { ProductCardResponse } from "./product-card-response"
+import { useState, useEffect } from "react"
 
 interface ChatViewProps {
   messages: any[]
@@ -38,6 +39,21 @@ export function ChatView({
   isInSubView = false,
   chatHistoryMinimized,
 }: ChatViewProps) {
+  const welcomeMessages = [
+    "Niaje?",
+    "Twende.",
+    "#Wantam",
+    "What do you want to get?",
+  ]
+  const [randomMessage, setRandomMessage] = useState("")
+
+  useEffect(() => {
+    if (messages.length === 0) {
+      const randomIndex = Math.floor(Math.random() * welcomeMessages.length)
+      setRandomMessage(welcomeMessages[randomIndex])
+    }
+  }, [messages.length])
+
   const renderMessage = (message: any, index: number) => {
     if (message.role === "user") {
       return (
@@ -91,14 +107,10 @@ export function ChatView({
   }
 
   return (
-    <div className="flex-1 flex flex-col h-full">
+    <div className="flex-1 flex flex-col min-h-[calc(100vh-64px)]">
       {/* Main Content Area - Scrollable */}
-      <div className="flex-1 overflow-y-auto scrollbar-hide chat-scroll">
-        <div
-          className={`max-w-5xl mx-auto px-4 py-8 transition-all duration-300 ${
-            chatHistoryMinimized ? "lg:pl-20" : "lg:pl-4"
-          }`}
-        >
+      <div className="flex-1 flex flex-col items-center justify-center overflow-y-auto scrollbar-hide chat-scroll">
+        <div className="max-w-5xl w-full px-4 py-8 transition-all duration-300">
           {/* Back to Main Button - Only show when needed */}
           {(showBackButton || isInSubView) && (
             <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="mb-6">
@@ -116,15 +128,12 @@ export function ChatView({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="text-center mb-8"
+                className="text-center mb-5"
               >
                 {/* Greeting */}
-                <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                  <span className="text-white">Niaje?</span>
+                <h1 className="text-2xl md:text-3xl font-light mb-4">
+                  <span className="text-white">{randomMessage}</span>
                 </h1>
-                <p className="text-gray-400 text-sm md:text-base max-w-md mx-auto leading-relaxed">
-                  AI shopping assistant for premium FMCG at wholesale prices in Kenya
-                </p>
               </motion.div>
 
               {/* Centered Chat Input */}
@@ -132,7 +141,7 @@ export function ChatView({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="w-full max-w-2xl mb-8"
+                className="w-full max-w-3xl mb-8"
               >
                 <form onSubmit={handleSubmit} className="flex space-x-3">
                   <Input
@@ -159,67 +168,21 @@ export function ChatView({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
-                className="w-full max-w-2xl mb-8"
+                className="w-full max-w-3xl mb-8"
               >
                 <ProductShortcuts products={products} onQuickAdd={onQuickAdd} onViewAll={onViewAll} />
-              </motion.div>
-
-              {/* Enhanced Action Cards - Mobile Responsive */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
-                className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-md mx-auto"
-              >
-                <motion.button
-                  whileHover={{ scale: 1.05, y: -4 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => setCurrentView("browse")}
-                  className="group relative bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl border border-purple-500/20 rounded-2xl p-6 h-32 flex flex-col items-center justify-center overflow-hidden hover:border-purple-400/40 transition-all duration-300"
-                >
-                  {/* Subtle glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  
-                  <div className="relative z-10 flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
-                      <Grid3X3 className="h-6 w-6 text-white" />
-                    </div>
-                    <p className="font-semibold text-white text-sm group-hover:text-purple-200 transition-colors duration-300">
-                      Browse Products
-                    </p>
-                    <p className="text-xs text-gray-400 mt-1 text-center group-hover:text-gray-300 transition-colors duration-300">
-                      Explore our catalog
-                    </p>
-                  </div>
-                </motion.button>
-
-                <motion.button
-                  whileHover={{ scale: 1.05, y: -4 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => setCurrentView("quickOrders")}
-                  className="group relative bg-gradient-to-br from-green-500/10 to-teal-500/10 backdrop-blur-xl border border-green-500/20 rounded-2xl p-6 h-32 flex flex-col items-center justify-center overflow-hidden hover:border-green-400/40 transition-all duration-300"
-                >
-                  {/* Subtle glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  
-                  <div className="relative z-10 flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-green-500 to-teal-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
-                      <Zap className="h-6 w-6 text-white" />
-                    </div>
-                    <p className="font-semibold text-white text-sm group-hover:text-green-200 transition-colors duration-300">
-                      Quick Orders
-                    </p>
-                    <p className="text-xs text-gray-400 mt-1 text-center group-hover:text-gray-300 transition-colors duration-300">
-                      Fast reordering
-                    </p>
-                  </div>
-                </motion.button>
               </motion.div>
             </div>
           )}
 
           {/* Chat Messages with Better Spacing */}
-          <div className="space-y-8 pb-24">{messages.map((message, index) => renderMessage(message, index))}</div>
+          {messages.length > 0 && (
+            <div className="flex flex-col items-center justify-center min-h-[60vh]">
+              <div className="w-full max-w-5xl space-y-8 pb-24">
+                {messages.map((message, index) => renderMessage(message, index))}
+              </div>
+            </div>
+          )}
 
           {/* Loading Animation */}
           {isLoading && (
@@ -254,11 +217,7 @@ export function ChatView({
       {/* Input Area - Sticky Bottom */}
       {messages.length > 0 && (
         <div className="border-t border-white/5 bg-black/50 backdrop-blur-xl sticky bottom-0">
-          <div
-            className={`max-w-5xl mx-auto p-4 space-y-3 transition-all duration-300 ${
-              chatHistoryMinimized ? "lg:pl-20" : "lg:pl-4"
-            }`}
-          >
+          <div className="max-w-3xl mx-auto p-4 space-y-3 transition-all duration-300">
             {/* Chat Input */}
             <form onSubmit={handleSubmit} className="flex space-x-3">
               <Input

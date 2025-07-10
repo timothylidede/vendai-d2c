@@ -68,7 +68,7 @@ export function Header({
             className="flex items-center hover:opacity-80 transition-opacity"
           >
             <h1 className="text-xl font-bold">
-              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">vend</span>
+              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-light">vend</span>
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-black">
                 ai
               </span>
