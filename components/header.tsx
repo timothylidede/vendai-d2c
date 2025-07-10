@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { ShoppingCart, User, Settings, LogOut, Package } from "lucide-react";
+import { ShoppingCart, Package, MessageSquare, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface HeaderProps {
@@ -11,8 +11,6 @@ interface HeaderProps {
   setChatHistoryOpen: (open: boolean) => void;
   cart: any[];
   setShowCart: (show: boolean) => void;
-  showProfile: boolean;
-  setShowProfile: (show: boolean) => void;
   showOrderHistory: boolean;
   setShowOrderHistory: (show: boolean) => void;
   orders: any[];
@@ -21,7 +19,7 @@ interface HeaderProps {
   onLogin: () => void;
   onSignup: () => void;
   onBackToChat: () => void;
-  user: any; // userData from Firestore (via useAuth)
+  user: any;
   isAuthenticated: boolean;
 }
 
@@ -32,8 +30,6 @@ export function Header({
   setChatHistoryOpen,
   cart,
   setShowCart,
-  showProfile,
-  setShowProfile,
   showOrderHistory,
   setShowOrderHistory,
   orders,
@@ -45,12 +41,7 @@ export function Header({
   user,
   isAuthenticated,
 }: HeaderProps) {
-  // Safely extract user data from Firestore userData
-  const userName = user?.name || "User";
-  const userEmail = user?.email || "";
-  const memberSince = user?.createdAt
-    ? new Date(user.createdAt).toLocaleDateString("en-KE", { month: "short", year: "numeric" })
-    : "Jan 2024";
+  const recentOrder = orders.length > 0 ? orders[0] : null;
 
   return (
     <motion.header
@@ -60,15 +51,49 @@ export function Header({
     >
       <div className="flex items-center justify-between max-w-6xl mx-auto">
         <div className="flex items-center space-x-4">
-          {/* VendAI Clickable Logo */}
+          {/* Mobile Chat History Toggle */}
+          <motion.div 
+            whileHover={{ scale: 1.05 }} 
+            whileTap={{ scale: 0.95 }}
+            className="md:hidden"
+          >
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setChatHistoryOpen(!chatHistoryOpen)}
+              className="hover:bg-white/5 transition-colors rounded-lg h-10 w-10"
+            >
+              <MessageSquare className="h-4 w-4" />
+            </Button>
+          </motion.div>
+
+          {/* Desktop Chat History Toggle */}
+          <motion.div 
+            whileHover={{ scale: 1.05 }} 
+            whileTap={{ scale: 0.95 }}
+            className="hidden md:block"
+          >
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setChatHistoryOpen(!chatHistoryOpen)}
+              className="hover:bg-white/5 transition-colors rounded-lg h-10 w-10"
+            >
+              <Menu className="h-4 w-4" />
+            </Button>
+          </motion.div>
+
+          {/* VendAI Clickable Logo (visible only on large screens) */}
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={onBackToChat}
-            className="flex items-center hover:opacity-80 transition-opacity"
+            className="hidden lg:flex items-center hover:opacity-80 transition-opacity"
           >
             <h1 className="text-xl font-bold">
-              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-light">vend</span>
+              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-light">
+                vend
+              </span>
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-black">
                 ai
               </span>
@@ -134,119 +159,38 @@ export function Header({
                 </Button>
               </motion.div>
 
-              {/* Profile */}
-              <div className="relative">
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => setShowProfile(!showProfile)}
-                    className="hover:bg-white/5 transition-colors rounded-lg"
-                  >
-                    <User className="h-4 w-4" />
-                  </Button>
-                </motion.div>
-
-                <AnimatePresence>
-                  {showProfile && (
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.95, y: -10 }}
-                      animate={{ opacity: 1, scale: 1, y: 0 }}
-                      exit={{ opacity: 0, scale: 0.95, y: -10 }}
-                      className="absolute right-0 top-12 w-64 bg-black/90 backdrop-blur-xl rounded-xl border border-white/10 p-4 z-50"
-                    >
-                      <div className="space-y-4">
-                        <div className="border-b border-white/10 pb-3">
-                          <div className="flex items-center space-x-3">
-                            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
-                              <User className="h-5 w-5" />
-                            </div>
-                            <div>
-                              <p className="font-medium">{userName}</p>
-                              <p className="text-xs text-gray-400">{userEmail}</p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="space-y-2">
-                          <div className="flex items-center justify-between text-sm">
-                            <span className="text-gray-400">Total Orders</span>
-                            <span className="font-medium">{orders.length}</span>
-                          </div>
-                          <div className="flex items-center justify-between text-sm">
-                            <span className="text-gray-400">Total Spent</span>
-                            <span className="font-medium">
-                              KES {orders.reduce((sum, order) => sum + order.total, 0).toLocaleString()}
-                            </span>
-                          </div>
-                          <div className="flex items-center justify-between text-sm">
-                            <span className="text-gray-400">Member Since</span>
-                            <span className="font-medium">{memberSince}</span>
-                          </div>
-                        </div>
-
-                        <div className="border-t border-white/10 pt-3 space-y-2">
-                          <Button
-                            variant="ghost"
-                            size="sm"
-                            className="w-full justify-start hover:bg-white/5 rounded-lg"
-                            onClick={onSettings}
-                          >
-                            <Settings className="h-4 w-4 mr-2" />
-                            Settings
-                          </Button>
-                          <Button
-                            variant="ghost"
-                            size="sm"
-                            className="w-full justify-start hover:bg-white/5 text-red-400 rounded-lg"
-                            onClick={onLogout}
-                          >
-                            <LogOut className="h-4 w-4 mr-2" />
-                            Logout
-                          </Button>
-                        </div>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-
-              {/* Order History Dropdown */}
+              {/* Order History Modal */}
               <AnimatePresence>
-                {showOrderHistory && (
+                {showOrderHistory && recentOrder && (
                   <motion.div
                     initial={{ opacity: 0, scale: 0.95, y: -10 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.95, y: -10 }}
-                    className="absolute right-20 top-16 w-80 bg-black/90 backdrop-blur-xl rounded-xl border border-white/10 p-4 z-50"
+                    className="fixed right-4 top-16 w-80 bg-black/90 backdrop-blur-xl rounded-xl border border-white/10 p-4 z-50"
                   >
                     <div className="space-y-4">
-                      <h3 className="font-medium text-lg">Recent Orders</h3>
-                      {orders.length === 0 ? (
-                        <p className="text-gray-400 text-sm text-center py-4">No orders yet</p>
-                      ) : (
-                        <div className="space-y-3 max-h-64 overflow-y-auto">
-                          {orders.slice(0, 5).map((order, index) => (
-                            <motion.div
-                              key={order.id}
-                              initial={{ opacity: 0, x: -20 }}
-                              animate={{ opacity: 1, x: 0 }}
-                              transition={{ delay: index * 0.1 }}
-                              className="glass-effect rounded-lg p-3"
-                            >
-                              <div className="flex items-center justify-between mb-2">
-                                <span className="font-medium text-sm">Order #{order.id.split("-").pop()}</span>
-                                <span className="text-xs text-gray-400">
-                                  {new Date(order.date).toLocaleDateString("en-KE", { month: "short", day: "numeric" })}
-                                </span>
-                              </div>
-                              <div className="flex items-center justify-between">
-                                <span className="text-xs text-gray-400">{order.items.length} items</span>
-                                <span className="font-bold text-green-400">KES {order.total.toLocaleString()}</span>
-                              </div>
-                            </motion.div>
+                      <h3 className="font-medium text-lg text-white">Recent Order</h3>
+                      {recentOrder ? (
+                        <div className="space-y-3">
+                          <div className="flex items-center justify-between">
+                            <span className="font-medium text-sm text-gray-200">Order #{recentOrder.id.split("-").pop()}</span>
+                            <span className="text-xs text-gray-400">
+                              {new Date(recentOrder.date).toLocaleDateString("en-KE", { month: "short", day: "numeric" })}
+                            </span>
+                          </div>
+                          <div className="flex items-center justify-between">
+                            <span className="text-xs text-gray-400">{recentOrder.items.length} items</span>
+                            <span className="font-bold text-green-400">KES {recentOrder.total.toLocaleString()}</span>
+                          </div>
+                          {recentOrder.items.map((item: any, index: number) => (
+                            <div key={index} className="flex items-center justify-between text-sm">
+                              <span className="text-gray-300">{item.name}</span>
+                              <span className="text-gray-400">x{item.quantity}</span>
+                            </div>
                           ))}
                         </div>
+                      ) : (
+                        <p className="text-gray-400 text-sm text-center py-4">No recent order</p>
                       )}
                     </div>
                   </motion.div>

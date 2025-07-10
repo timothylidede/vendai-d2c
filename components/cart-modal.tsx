@@ -52,7 +52,7 @@ export function CartModal({ show, onClose, cart, onUpdateQuantity, onRemoveItem,
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-2">
                 <ShoppingCart className="h-5 w-5 text-blue-400" />
-                <h2 className="text-xl font-bold text-gradient">Shopping Cart</h2>
+                <h2 className="text-xl font-bold text-gradient">Cart</h2>
               </div>
               <Button variant="ghost" size="sm" onClick={onClose} className="hover:bg-white/10">
                 <X className="h-4 w-4" />
@@ -62,7 +62,7 @@ export function CartModal({ show, onClose, cart, onUpdateQuantity, onRemoveItem,
             {cart.length === 0 ? (
               <div className="text-center py-8">
                 <ShoppingCart className="h-16 w-16 mx-auto mb-4 text-gray-600" />
-                <h3 className="text-lg font-medium mb-2">Your cart is empty</h3>
+                <h3 className="text-lg font-medium mb-2">Desolate</h3>
                 <p className="text-gray-400">Add some products to get started</p>
               </div>
             ) : (

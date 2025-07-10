@@ -21,6 +21,7 @@ import { Signup } from "@/components/auth/signup";
 import { LoginPromptModal } from "@/components/login-prompt-modal";
 import { CheckoutModal } from "@/components/checkout-modal";
 import { ProductManagementModal } from "@/components/product-management-modal";
+import { OrderHistoryModal } from "@/components/order-history-modal";
 
 interface CartItem {
   id: number;
@@ -32,10 +33,20 @@ interface CartItem {
   image: string;
 }
 
+
+interface OrderItem {
+  id: number;
+  name: string;
+  price: number;
+  quantity: number;
+  category: string;
+  image?: string;
+}
+
 interface Order {
   id: string;
   userId: string;
-  items: CartItem[];
+  items: OrderItem[];
   total: number;
   status: "pending" | "processing" | "shipped" | "completed" | "cancelled";
   paymentStatus: "pending" | "paid" | "failed";
@@ -44,6 +55,8 @@ interface Order {
   deliveryDate: string;
   createdAt: string;
   updatedAt: string;
+  orderNumber?: string; // Optional to match order-history-modal
+  date?: string; // Optional to match order-history-modal
 }
 
 interface ChatSession {
@@ -70,11 +83,10 @@ export default function Home() {
   // UI state
   const [currentView, setCurrentView] = useState("chat");
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [chatHistoryMinimized, setChatHistoryMinimized] = useState(true);
+  const [chatHistoryOpen, setChatHistoryOpen] = useState(false); // Matches new Header and ChatHistorySidebar
   const [showCart, setShowCart] = useState(false);
   const [showCheckout, setShowCheckout] = useState(false);
   const [showAllProducts, setShowAllProducts] = useState(false);
-  const [showProfile, setShowProfile] = useState(false);
   const [showOrderHistory, setShowOrderHistory] = useState(false);
   const [showProductManagement, setShowProductManagement] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
@@ -97,11 +109,9 @@ export default function Home() {
   useEffect(() => {
     const savedCart = JSON.parse(localStorage.getItem("vendai-cart") || "[]");
     const savedSessions = JSON.parse(localStorage.getItem("vendai-chat-sessions") || "[]");
-    const savedMinimized = JSON.parse(localStorage.getItem("vendai-chat-minimized") || "false");
 
     setCart(savedCart);
     setChatSessions(savedSessions);
-    setChatHistoryMinimized(savedMinimized);
 
     const fetchOrders = async () => {
       if (!user) return;
@@ -146,10 +156,6 @@ export default function Home() {
   useEffect(() => {
     localStorage.setItem("vendai-chat-sessions", JSON.stringify(chatSessions));
   }, [chatSessions]);
-
-  useEffect(() => {
-    localStorage.setItem("vendai-chat-minimized", JSON.stringify(chatHistoryMinimized));
-  }, [chatHistoryMinimized]);
 
   // Chat functions
   const handleInputChange = (e: any) => {
@@ -205,7 +211,7 @@ export default function Home() {
 
   const updateChatSession = (newMessages: Message[]) => {
     const sessionTitle = newMessages[0]?.content.slice(0, 30) + "..." || "New Chat";
-    const now = new Date().toISOString(); // Added: For date compatibility
+    const now = new Date().toISOString();
     const session: ChatSession = {
       id: currentSessionId,
       userId: user?.uid || "",
@@ -214,7 +220,7 @@ export default function Home() {
       isActive: true,
       createdAt: now,
       updatedAt: now,
-      date: now, // Added: Set date to match createdAt for ChatHistorySidebar
+      date: now,
     };
 
     setChatSessions((prev) => {
@@ -295,7 +301,6 @@ export default function Home() {
   };
 
   const handleLogout = () => {
-    setShowProfile(false);
     setCart([]);
     setOrders([]);
     localStorage.removeItem("vendai-cart");
@@ -320,7 +325,6 @@ export default function Home() {
 
   const handleBackToChat = () => {
     setCurrentView("chat");
-    setShowProfile(false);
     setShowOrderHistory(false);
   };
 
@@ -340,7 +344,6 @@ export default function Home() {
 
   const handleSettings = () => {
     setCurrentView("settings");
-    setShowProfile(false);
   };
 
   const handleCloseAuth = () => {
@@ -378,7 +381,7 @@ export default function Home() {
             setCurrentView={setCurrentView}
             onBackToMain={handleBackToMain}
             isInSubView={currentView !== "chat"}
-            chatHistoryMinimized={chatHistoryMinimized}
+            chatHistoryMinimized={!chatHistoryOpen} // Updated to match new sidebar behavior
           />
         );
     }
@@ -437,36 +440,39 @@ export default function Home() {
           currentSessionId={currentSessionId}
           onLoadSession={handleLoadSession}
           onNewChat={handleNewChat}
-          isMinimized={chatHistoryMinimized}
-          setIsMinimized={setChatHistoryMinimized}
+          isOpen={chatHistoryOpen} // Updated to use chatHistoryOpen
+          setIsOpen={setChatHistoryOpen} // Updated to use setChatHistoryOpen
+          user={userData}
+          orders={orders}
+          onSettings={handleSettings}
+          onLogout={handleLogout}
+          isAuthenticated={!!user}
         />
       )}
 
       {/* Main Content */}
       <div
         className={`flex-1 flex flex-col min-w-0 transition-all duration-300 ${
-          user ? (chatHistoryMinimized ? "ml-16" : "ml-80") : ""
+          user ? (chatHistoryOpen ? "ml-80" : "ml-0") : ""
         }`}
       >
         <Header
           sidebarOpen={sidebarOpen}
           setSidebarOpen={setSidebarOpen}
-          chatHistoryOpen={false}
-          setChatHistoryOpen={() => {}}
+          chatHistoryOpen={chatHistoryOpen}
+          setChatHistoryOpen={setChatHistoryOpen}
           cart={cart}
           setShowCart={setShowCart}
-          showProfile={showProfile}
-          setShowProfile={setShowProfile}
           showOrderHistory={showOrderHistory}
           setShowOrderHistory={setShowOrderHistory}
           orders={orders}
-          onSettings={handleSettings}
           onLogout={handleLogout}
           onLogin={() => setShowLogin(true)}
           onSignup={() => setShowSignup(true)}
           onBackToChat={handleBackToChat}
           user={userData}
           isAuthenticated={!!user}
+          onSettings={handleSettings}
         />
 
         {renderMainContent()}
@@ -505,6 +511,12 @@ export default function Home() {
         onClose={() => setShowProductManagement(false)}
         onProductRemove={handleProductRemove}
         onProductUpdate={handleProductUpdate}
+      />
+
+      <OrderHistoryModal
+        show={showOrderHistory}
+        onClose={() => setShowOrderHistory(false)}
+        orders={orders}
       />
     </div>
   );
