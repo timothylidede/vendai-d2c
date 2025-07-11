@@ -234,20 +234,6 @@ export function Login({ onLogin, onSwitchToSignup, onClose }: LoginProps) {
               </Button>
             </motion.div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.0 }}
-            className="mt-8 text-center"
-          >
-            <p className="text-gray-400 text-sm">
-              Don't have an account?{" "}
-              <button onClick={onSwitchToSignup} className="text-white hover:text-gray-300 underline transition-colors">
-                Sign up
-              </button>
-            </p>
-          </motion.div>
         </div>
       </div>
     </div>

@@ -66,6 +66,16 @@ export function ChatView({
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
+  // Handle Enter key press
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      if (input.trim() && !isLoading) {
+        handleSubmit(e);
+      }
+    }
+  };
+
   const renderMessage = (message: any, index: number) => {
     if (message.role === "user") {
       return (
@@ -100,13 +110,19 @@ export function ChatView({
         transition={{ delay: index * 0.1 }}
         className="flex justify-start mb-4 md:mb-8"
       >
-        <div className="flex items-start space-x-2 md:space-x-3 max-w-full md:max-w-4xl w-full">
+        <div className="flex items-start space-x-2 md:space-x-3 max-w-full w-full">
           <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center flex-shrink-0 mt-1">
             <Bot className="h-3 w-3 md:h-4 md:w-4 text-white" />
           </div>
-          <div className="flex-1 space-y-4">
+          <div className="flex-1 space-y-4 min-w-0">
             {message.products && message.products.length > 0 ? (
-              <ProductCardResponse products={message.products} onAddToCart={onQuickAdd} explanation={message.content} />
+              <div className="w-full overflow-hidden">
+                <ProductCardResponse 
+                  products={message.products} 
+                  onAddToCart={onQuickAdd} 
+                  explanation={message.content} 
+                />
+              </div>
             ) : (
               <div className="text-gray-300 leading-relaxed text-sm md:text-base">
                 <p>{message.content}</p>
@@ -120,11 +136,34 @@ export function ChatView({
 
   const shouldShowChatInput = messages.length > 0 || !isLargeScreen;
 
+  // Calculate proper margins based on sidebar state
+  const getSidebarMargin = () => {
+    if (!isLargeScreen) return "0";
+    return chatHistoryMinimized ? "64px" : "280px";
+  };
+
   return (
     <div className="flex-1 flex flex-col min-h-[calc(100vh-64px)] relative transition-all duration-300">
       {/* Main Content Area - Scrollable */}
-      <div className="flex-1 flex flex-col items-center justify-center overflow-y-auto scrollbar-hide chat-scroll pb-4 md:pb-0">
-        <div className="max-w-5xl w-full px-3 md:px-4 py-4 md:py-8 transition-all duration-300">
+      <div 
+        className="flex-1 flex flex-col items-center justify-center overflow-y-auto pb-4 md:pb-0"
+        style={{
+          scrollbarWidth: 'none',
+          msOverflowStyle: 'none',
+        }}
+      >
+        <style jsx>{`
+          div::-webkit-scrollbar {
+            display: none;
+          }
+        `}</style>
+        
+        <div 
+          className="max-w-4xl w-full px-3 md:px-4 py-4 md:py-8 transition-all duration-300"
+          style={{
+            marginLeft: isLargeScreen ? getSidebarMargin() : "0",
+          }}
+        >
           {/* Back to Main Button - Only show when needed */}
           {(showBackButton || isInSubView) && (
             <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="mb-4 md:mb-6">
@@ -197,14 +236,17 @@ export function ChatView({
                             <textarea
                               value={input}
                               onChange={handleInputChange}
-                              placeholder="Ask anything"
+                              onKeyPress={handleKeyPress}
+                              placeholder="Ask me about products..."
                               className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto"
                               disabled={isLoading}
                               rows={1}
                               style={{
                                 height: 'auto',
                                 minHeight: '1.5rem',
-                                maxHeight: '9rem'
+                                maxHeight: '9rem',
+                                scrollbarWidth: 'none',
+                                msOverflowStyle: 'none',
                               }}
                               onInput={(e) => {
                                 const target = e.target as HTMLTextAreaElement;
@@ -233,7 +275,7 @@ export function ChatView({
                 </motion.div>
               )}
 
-              {/* Product Shortcuts */}
+              {/* Product Shortcuts - Only show when no messages */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -248,7 +290,7 @@ export function ChatView({
           {/* Chat Messages with Better Spacing */}
           {messages.length > 0 && (
             <div className="flex flex-col items-center justify-center min-h-[50vh] md:min-h-[60vh]">
-              <div className="w-full max-w-5xl space-y-4 md:space-y-8 pb-4 md:pb-24">
+              <div className="w-full max-w-4xl space-y-4 md:space-y-8 pb-4 md:pb-24">
                 {messages.map((message, index) => renderMessage(message, index))}
               </div>
             </div>
@@ -284,12 +326,12 @@ export function ChatView({
         </div>
       </div>
 
-      {/* Chat Input Area - Grok-style Sticky Bottom */}
+      {/* Chat Input Area - Fixed at bottom with transparent background */}
       {shouldShowChatInput && (
         <div
-          className="border-t border-gray-700/50 bg-gray-900/80 backdrop-blur-xl sticky bottom-0 z-30 transition-all duration-300"
+          className="sticky bottom-0 z-30 transition-all duration-300 bg-transparent"
           style={{
-            marginLeft: isLargeScreen ? (chatHistoryMinimized ? "64px" : "320px") : "0",
+            marginLeft: isLargeScreen ? getSidebarMargin() : "0",
           }}
         >
           <div className="max-w-4xl mx-auto p-3 md:p-4">
@@ -316,14 +358,17 @@ export function ChatView({
                       <textarea
                         value={input}
                         onChange={handleInputChange}
-                        placeholder={messages.length === 0 ? "Ask anything" : "Ask me about products or tell me what you need..."}
+                        onKeyPress={handleKeyPress}
+                        placeholder={messages.length === 0 ? "Ask anything" : "Ask me about products..."}
                         className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-sm md:text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto"
                         disabled={isLoading}
                         rows={1}
                         style={{
                           height: 'auto',
                           minHeight: '1.5rem',
-                          maxHeight: '9rem'
+                          maxHeight: '9rem',
+                          scrollbarWidth: 'none',
+                          msOverflowStyle: 'none',
                         }}
                         onInput={(e) => {
                           const target = e.target as HTMLTextAreaElement;
@@ -349,17 +394,6 @@ export function ChatView({
                 </motion.div>
               </form>
             </div>
-
-            {/* Miniaturized Quick Product Access - Only when there are messages and on larger screens */}
-            {messages.length > 0 && isLargeScreen && (
-              <div className="mt-3">
-                <div className="flex justify-center">
-                  <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl p-2 border border-gray-700/30">
-                    <ProductShortcuts products={products} onQuickAdd={onQuickAdd} onViewAll={onViewAll} />
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
         </div>
       )}

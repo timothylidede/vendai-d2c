@@ -132,16 +132,6 @@ export function LoginPromptModal({ show, onClose, onLogin, onSignup }: LoginProm
 
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   <Button
-                    onClick={onSignup}
-                    variant="ghost"
-                    className="w-full border border-white/20 hover:bg-white/10 text-white rounded-xl py-3 font-medium transition-all duration-300"
-                  >
-                    Create Account
-                  </Button>
-                </motion.div>
-
-                <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                  <Button
                     onClick={onClose}
                     variant="ghost"
                     className="w-full text-gray-400 hover:text-white text-sm transition-colors"
