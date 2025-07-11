@@ -1,69 +1,101 @@
-// lib/auth-context.tsx
 "use client";
 
 import { createContext, useContext, useEffect, useState } from "react";
 import { auth, db } from "@/lib/firebase";
-import { onAuthStateChanged } from "firebase/auth";
+import {
+  onAuthStateChanged,
+  signOut as firebaseSignOut,
+} from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
+import { User as FirebaseUser } from "firebase/auth"; // Import Firebase User type
 
 interface UserData {
   uid: string;
-  name: string;
-  email: string;
-  phone: string;
-  photoURL?: string;
+  name: string | null;
+  email: string | null;
+  phone: string | null;
+  photoURL?: string | null;
   provider: string;
-  address: string;
-  city: string;
+  address?: string;
+  city?: string;
   area?: string;
   createdAt: string;
   updatedAt: string;
 }
 
 interface AuthContextType {
-  user: any; // Firebase User
+  user: FirebaseUser | null;
   userData: UserData | null;
   loading: boolean;
+  logout: () => Promise<void>;
 }
 
-const AuthContext = createContext<AuthContextType>({ user: null, userData: null, loading: true });
+const AuthContext = createContext<AuthContextType>({
+  user: null,
+  userData: null,
+  loading: true,
+  logout: async () => {}, // Default empty logout function
+});
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const [user, setUser] = useState<any | null>(null);
+  const [user, setUser] = useState<FirebaseUser | null>(null);
   const [userData, setUserData] = useState<UserData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
-      setUser(firebaseUser);
-      if (firebaseUser) {
-        const userDoc = await getDoc(doc(db, "users", firebaseUser.uid));
-        setUserData(
-          userDoc.exists()
-            ? {
-                uid: firebaseUser.uid,
-                name: userDoc.data().name || firebaseUser.displayName || "User",
-                email: userDoc.data().email || firebaseUser.email || "",
-                phone: userDoc.data().phone || "",
-                photoURL: userDoc.data().photoURL || firebaseUser.photoURL || "",
-                provider: userDoc.data().provider || "google",
-                address: userDoc.data().address || "Westlands",
-                city: userDoc.data().city || "Nairobi",
-                area: userDoc.data().area || "",
-                createdAt: userDoc.data().createdAt || new Date().toISOString(),
-                updatedAt: userDoc.data().updatedAt || new Date().toISOString(),
-              }
-            : null
-        );
-      } else {
-        setUserData(null);
-      }
+    let unsubscribe: () => void;
+
+    try {
+      unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+        setUser(firebaseUser);
+        if (firebaseUser) {
+          const userDoc = await getDoc(doc(db, "users", firebaseUser.uid));
+          if (userDoc.exists()) {
+            setUserData({
+              uid: firebaseUser.uid,
+              name: userDoc.data().name || firebaseUser.displayName || null,
+              email: userDoc.data().email || firebaseUser.email || null,
+              phone: userDoc.data().phone || null,
+              photoURL: userDoc.data().photoURL || firebaseUser.photoURL || null,
+              provider: userDoc.data().provider || "email",
+              address: userDoc.data().address,
+              city: userDoc.data().city,
+              area: userDoc.data().area,
+              createdAt: userDoc.data().createdAt || firebaseUser.metadata.creationTime || new Date().toISOString(),
+              updatedAt: userDoc.data().updatedAt || firebaseUser.metadata.lastSignInTime || new Date().toISOString(),
+            });
+          } else {
+            setUserData(null); // Handle case where user doc doesn't exist
+          }
+        } else {
+          setUserData(null);
+        }
+        setLoading(false);
+      });
+    } catch (error) {
+      console.error("Auth state change error:", error);
+      setUser(null);
+      setUserData(null);
       setLoading(false);
-    });
-    return () => unsubscribe();
+    }
+
+    return () => unsubscribe && unsubscribe();
   }, []);
 
-  return <AuthContext.Provider value={{ user, userData, loading }}>{children}</AuthContext.Provider>;
+  const logout = async () => {
+    try {
+      await firebaseSignOut(auth);
+      setUser(null);
+      setUserData(null);
+      // Additional cleanup can be added here if needed
+      console.log("Logged out successfully at", new Date().toLocaleString("en-KE", { timeZone: "Africa/Nairobi" }));
+    } catch (error) {
+      console.error("Logout error:", error);
+      throw error; // Re-throw to allow calling component to handle
+    }
+  };
+
+  return <AuthContext.Provider value={{ user, userData, loading, logout }}>{children}</AuthContext.Provider>;
 }
 
 export const useAuth = () => useContext(AuthContext);

@@ -33,7 +33,6 @@ interface CartItem {
   image: string;
 }
 
-
 interface OrderItem {
   id: number;
   name: string;
@@ -55,8 +54,8 @@ interface Order {
   deliveryDate: string;
   createdAt: string;
   updatedAt: string;
-  orderNumber?: string; // Optional to match order-history-modal
-  date?: string; // Optional to match order-history-modal
+  orderNumber?: string;
+  date?: string;
 }
 
 interface ChatSession {
@@ -67,7 +66,7 @@ interface ChatSession {
   isActive: boolean;
   createdAt: string;
   updatedAt: string;
-  date: string; // Added: For compatibility with ChatHistorySidebar
+  date: string;
 }
 
 interface Message {
@@ -78,12 +77,12 @@ interface Message {
 }
 
 export default function Home() {
-  const { user, userData, loading } = useAuth();
+  const { user, userData, loading, logout } = useAuth();
 
   // UI state
   const [currentView, setCurrentView] = useState("chat");
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [chatHistoryOpen, setChatHistoryOpen] = useState(false); // Matches new Header and ChatHistorySidebar
+  const [chatHistoryOpen, setChatHistoryOpen] = useState(false);
   const [showCart, setShowCart] = useState(false);
   const [showCheckout, setShowCheckout] = useState(false);
   const [showAllProducts, setShowAllProducts] = useState(false);
@@ -114,7 +113,7 @@ export default function Home() {
     setChatSessions(savedSessions);
 
     const fetchOrders = async () => {
-      if (!user) return;
+      if (!user?.uid) return;
       try {
         const q = query(
           collection(db, "orders"),
@@ -129,7 +128,7 @@ export default function Home() {
     };
 
     const fetchChatSessions = async () => {
-      if (!user) return;
+      if (!user?.uid) return;
       try {
         const q = query(
           collection(db, "chatSessions"),
@@ -143,7 +142,7 @@ export default function Home() {
       }
     };
 
-    if (!loading) {
+    if (!loading && user) {
       fetchOrders();
       fetchChatSessions();
     }
@@ -158,11 +157,11 @@ export default function Home() {
   }, [chatSessions]);
 
   // Chat functions
-  const handleInputChange = (e: any) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
   };
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
 
@@ -249,7 +248,9 @@ export default function Home() {
     setCart((prevCart) => {
       const existingItem = prevCart.find((item) => item.id === product.id);
       if (existingItem) {
-        return prevCart.map((item) => (item.id === product.id ? { ...item, quantity: item.quantity + quantity } : item));
+        return prevCart.map((item) =>
+          item.id === product.id ? { ...item, quantity: item.quantity + quantity } : item
+        );
       }
       return [...prevCart, { ...product, quantity }];
     });
@@ -263,7 +264,9 @@ export default function Home() {
     if (quantity <= 0) {
       handleRemoveFromCart(productId);
     } else {
-      setCart((prevCart) => prevCart.map((item) => (item.id === productId ? { ...item, quantity } : item)));
+      setCart((prevCart) =>
+        prevCart.map((item) => (item.id === productId ? { ...item, quantity } : item))
+      );
     }
   };
 
@@ -300,11 +303,22 @@ export default function Home() {
     setShowLoginPrompt(false);
   };
 
-  const handleLogout = () => {
-    setCart([]);
-    setOrders([]);
-    localStorage.removeItem("vendai-cart");
-    localStorage.removeItem("vendai-orders");
+  const handleLogout = async () => {
+    try {
+      await logout(); // Call the logout function from useAuth
+      setCart([]);
+      setOrders([]);
+      setChatSessions([]);
+      setMessages([]);
+      setCurrentSessionId("default");
+      localStorage.removeItem("vendai-cart");
+      localStorage.removeItem("vendai-chat-sessions");
+      localStorage.removeItem("vendai-orders");
+      setChatHistoryOpen(false); // Close chat history sidebar on logout
+      console.log("Logged out successfully at", new Date().toLocaleString("en-KE", { timeZone: "Africa/Nairobi" }));
+    } catch (error) {
+      console.error("Logout error:", error);
+    }
   };
 
   const handleNewChat = () => {
@@ -335,7 +349,9 @@ export default function Home() {
 
   const handleProductUpdate = (productId: number, updates: any) => {
     setProducts((prev) => prev.map((p) => (p.id === productId ? { ...p, ...updates } : p)));
-    setCart((prev) => prev.map((item) => (item.id === productId ? { ...item, ...updates } : item)));
+    setCart((prev) =>
+      prev.map((item) => (item.id === productId ? { ...item, ...updates } : item))
+    );
   };
 
   const handleBackToMain = () => {
@@ -353,8 +369,6 @@ export default function Home() {
 
   const renderMainContent = () => {
     switch (currentView) {
-      case "browse":
-        return <BrowseView products={products} onAddToCart={handleAddToCart} onBack={handleBackToMain} />;
       case "quickOrders":
         return (
           <QuickOrdersView
@@ -366,7 +380,12 @@ export default function Home() {
           />
         );
       case "settings":
-        return <SettingsView onBack={handleBackToMain} onProductManagement={() => setShowProductManagement(true)} />;
+        return (
+          <SettingsView
+            onBack={handleBackToMain}
+            onProductManagement={() => setShowProductManagement(true)}
+          />
+        );
       default:
         return (
           <ChatView
@@ -381,7 +400,7 @@ export default function Home() {
             setCurrentView={setCurrentView}
             onBackToMain={handleBackToMain}
             isInSubView={currentView !== "chat"}
-            chatHistoryMinimized={!chatHistoryOpen} // Updated to match new sidebar behavior
+            chatHistoryMinimized={!chatHistoryOpen}
           />
         );
     }
@@ -396,7 +415,8 @@ export default function Home() {
   }
 
   return (
-    <div className="flex h-screen bg-black text-white overflow-hidden">
+    <div className="flex h-screen overflow-hidden">
+      <div className="shooting-star"></div>
       {/* Authentication Modals */}
       {showLogin && (
         <Login
@@ -440,8 +460,8 @@ export default function Home() {
           currentSessionId={currentSessionId}
           onLoadSession={handleLoadSession}
           onNewChat={handleNewChat}
-          isOpen={chatHistoryOpen} // Updated to use chatHistoryOpen
-          setIsOpen={setChatHistoryOpen} // Updated to use setChatHistoryOpen
+          isOpen={chatHistoryOpen}
+          setIsOpen={setChatHistoryOpen}
           user={userData}
           orders={orders}
           onSettings={handleSettings}
@@ -450,9 +470,9 @@ export default function Home() {
         />
       )}
 
-      {/* Main Content */}
+      {/* Main Content with Overlay */}
       <div
-        className={`flex-1 flex flex-col min-w-0 transition-all duration-300 ${
+        className={`flex-1 flex flex-col min-w-0 transition-all duration-300 content-overlay ${
           user ? (chatHistoryOpen ? "ml-80" : "ml-0") : ""
         }`}
       >

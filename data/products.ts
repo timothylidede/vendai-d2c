@@ -718,16 +718,31 @@ export const PRODUCTS: Product[] = [
     wholesaleQuantity: 1,
   },
   {
-    id: 35,
-    name: "Bella/Hanan Tissue (Bale of 48 pieces)",
-    wholesalePrice: 1030, // 1020 + 10
+    id: 169,
+    name: "Bella Tissue (Bale of 48 pieces)",
+    price: 1040, // 1030 + 10
     category: PRODUCT_CATEGORIES.HOUSEHOLD,
-    description: "Quality tissue - Bale of 48 pieces",
-    image: "/images/products/bella-hanan-tissue-48pcs.jpg",
+    description: "Quality Bella tissue - Bale of 48 pieces",
+    image: "/images/products/bella-tissue-48pcs.jpg",
     stock: 50,
     unit: "48 pieces",
+    brand: "Bella",
     size: "Bale of 48",
-    price: 1020,
+    wholesalePrice: 1030,
+    wholesaleQuantity: 1,
+  },
+  {
+    id: 170,
+    name: "Hanan Tissue (Bale of 48 pieces)",
+    price: 1040, // 1030 + 10
+    category: PRODUCT_CATEGORIES.HOUSEHOLD,
+    description: "Quality Hanan tissue - Bale of 48 pieces",
+    image: "/images/products/hanan-tissue-48pcs.jpg",
+    stock: 50,
+    unit: "48 pieces",
+    brand: "Hanan",
+    size: "Bale of 48",
+    wholesalePrice: 1030,
     wholesaleQuantity: 1,
   },
   {

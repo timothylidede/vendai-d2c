@@ -40,16 +40,16 @@
     --popover-foreground: 210 40% 98%;
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 230 30% 12%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
+    --muted: 230 30% 12%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 230 30% 12%;
     --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
+    --border: 230 30% 12%;
+    --input: 230 30% 12%;
     --ring: 212.7 26.8% 83.9%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
@@ -57,179 +57,327 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(circle at 25% 35%, #0a0015, #000000 75%);
   }
-}
 
-/* Custom scrollbar styles */
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-/* Chat scroll with smooth behavior */
-.chat-scroll {
-  scroll-behavior: smooth;
-}
-
-.chat-scroll::-webkit-scrollbar {
-  width: 4px;
-}
-
-.chat-scroll::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 2px;
-}
-
-.chat-scroll::-webkit-scrollbar-thumb {
-  background: rgba(147, 51, 234, 0.5);
-  border-radius: 2px;
-}
-
-.chat-scroll::-webkit-scrollbar-thumb:hover {
-  background: rgba(147, 51, 234, 0.7);
-}
-
-/* Glass button effect */
-.glass-button {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.glass-button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(147, 51, 234, 0.3);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-/* Smooth slide animations */
-.slide-enter {
-  transform: translateX(100%);
-  opacity: 0;
-}
-
-.slide-enter-active {
-  transform: translateX(0);
-  opacity: 1;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.slide-exit {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.slide-exit-active {
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Modal backdrop animations */
-.modal-backdrop {
-  backdrop-filter: blur(8px);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Enhanced focus states */
-.focus-ring:focus {
-  outline: 2px solid rgba(147, 51, 234, 0.5);
-  outline-offset: 2px;
-}
-
-/* Improved button animations */
-.btn-animate {
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-animate:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.3);
-}
-
-.btn-animate:active {
-  transform: translateY(0);
-}
-
-/* Product card hover effects */
-.product-card {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.product-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Loading animation improvements */
-@keyframes pulse-glow {
-  0%,
-  100% {
-    opacity: 0.4;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-}
-
-.pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
-}
-
-/* Chat message animations */
-.message-enter {
-  opacity: 0;
-  transform: translateY(20px) scale(0.95);
-}
-
-.message-enter-active {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Responsive improvements */
-@media (max-width: 640px) {
-  .glass-button {
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin-bottom: 0.5rem;
+    height: 100%;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNkYGD4z8DAwMgABXgABx4iLMAAAAABJRU5ErkJggg==") repeat;
+    opacity: 0.03;
+    z-index: -1;
+  }
+
+  /* Desktop and large screens - Full star field */
+  @media (min-width: 1024px) {
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        /* Center region stars (brighter and more numerous) */
+        radial-gradient(2px 2px at 45% 40%, rgba(255, 255, 255, 1), transparent),
+        radial-gradient(1px 1px at 52% 48%, rgba(255, 255, 255, 0.9), transparent),
+        radial-gradient(1px 1px at 38% 55%, rgba(255, 255, 255, 0.8), transparent),
+        radial-gradient(2px 2px at 58% 35%, rgba(255, 255, 255, 1), transparent),
+        radial-gradient(1px 1px at 35% 42%, rgba(255, 255, 255, 0.7), transparent),
+        radial-gradient(1px 1px at 65% 52%, rgba(255, 255, 255, 0.9), transparent),
+        radial-gradient(1px 1px at 42% 62%, rgba(255, 255, 255, 0.8), transparent),
+        radial-gradient(2px 2px at 55% 58%, rgba(255, 255, 255, 1), transparent),
+        radial-gradient(1px 1px at 47% 32%, rgba(255, 255, 255, 0.8), transparent),
+        radial-gradient(1px 1px at 61% 47%, rgba(255, 255, 255, 0.7), transparent),
+        radial-gradient(1px 1px at 32% 51%, rgba(255, 255, 255, 0.9), transparent),
+        radial-gradient(2px 2px at 68% 44%, rgba(255, 255, 255, 1), transparent),
+        radial-gradient(1px 1px at 41% 38%, rgba(255, 255, 255, 0.8), transparent),
+        radial-gradient(1px 1px at 56% 63%, rgba(255, 255, 255, 0.7), transparent),
+        radial-gradient(1px 1px at 49% 46%, rgba(255, 255, 255, 0.9), transparent),
+        
+        /* Outer region stars (fewer and dimmer) */
+        radial-gradient(1px 1px at 15% 20%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 85% 25%, rgba(255, 255, 255, 0.4), transparent),
+        radial-gradient(1px 1px at 12% 75%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 88% 78%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 22% 88%, rgba(255, 255, 255, 0.4), transparent),
+        radial-gradient(1px 1px at 78% 15%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 8% 45%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 92% 55%, rgba(255, 255, 255, 0.4), transparent),
+        radial-gradient(1px 1px at 25% 12%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 75% 88%, rgba(255, 255, 255, 0.6), transparent),
+        
+        /* Corner stars (very few and subtle) */
+        radial-gradient(1px 1px at 5% 8%, rgba(255, 255, 255, 0.3), transparent),
+        radial-gradient(1px 1px at 95% 7%, rgba(255, 255, 255, 0.3), transparent),
+        radial-gradient(1px 1px at 3% 92%, rgba(255, 255, 255, 0.3), transparent),
+        radial-gradient(1px 1px at 97% 95%, rgba(255, 255, 255, 0.3), transparent);
+      background-size: 100% 100%;
+      animation: star-twinkle 3s ease-in-out infinite;
+      z-index: -2;
+    }
+  }
+
+  /* Tablets - Medium star field */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        /* Center region stars (reduced) */
+        radial-gradient(2px 2px at 45% 40%, rgba(255, 255, 255, 1), transparent),
+        radial-gradient(1px 1px at 52% 48%, rgba(255, 255, 255, 0.9), transparent),
+        radial-gradient(1px 1px at 38% 55%, rgba(255, 255, 255, 0.8), transparent),
+        radial-gradient(2px 2px at 58% 35%, rgba(255, 255, 255, 1), transparent),
+        radial-gradient(1px 1px at 35% 42%, rgba(255, 255, 255, 0.7), transparent),
+        radial-gradient(1px 1px at 65% 52%, rgba(255, 255, 255, 0.9), transparent),
+        radial-gradient(1px 1px at 42% 62%, rgba(255, 255, 255, 0.8), transparent),
+        radial-gradient(2px 2px at 55% 58%, rgba(255, 255, 255, 1), transparent),
+        
+        /* Outer region stars (significantly reduced) */
+        radial-gradient(1px 1px at 15% 20%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 85% 25%, rgba(255, 255, 255, 0.4), transparent),
+        radial-gradient(1px 1px at 12% 75%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 88% 78%, rgba(255, 255, 255, 0.5), transparent);
+      background-size: 100% 100%;
+      animation: star-twinkle 3s ease-in-out infinite;
+      z-index: -2;
+    }
+  }
+
+  /* Mobile phones - Minimal star field */
+  @media (max-width: 767px) {
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        /* Only key center stars */
+        radial-gradient(2px 2px at 45% 40%, rgba(255, 255, 255, 1), transparent),
+        radial-gradient(1px 1px at 52% 48%, rgba(255, 255, 255, 0.9), transparent),
+        radial-gradient(2px 2px at 58% 35%, rgba(255, 255, 255, 1), transparent),
+        radial-gradient(1px 1px at 35% 42%, rgba(255, 255, 255, 0.7), transparent),
+        radial-gradient(1px 1px at 65% 52%, rgba(255, 255, 255, 0.9), transparent);
+      background-size: 100% 100%;
+      animation: star-twinkle 3s ease-in-out infinite;
+      z-index: -2;
+    }
+  }
+
+  /* Shooting star container */
+  .shooting-star {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  /* Shooting stars - visible on all screens but reduced on mobile */
+  .shooting-star::before {
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: -5%;
+    width: 3px;
+    height: 1px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1), transparent);
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.8), 0 0 24px rgba(255, 255, 255, 0.4);
+    animation: shooting-star-1 7.3s linear infinite;
+  }
+
+  .shooting-star::after {
+    content: "";
+    position: absolute;
+    top: 73%;
+    left: -8%;
+    width: 2px;
+    height: 1px;
+    background: linear-gradient(35deg, rgba(255, 255, 255, 1), transparent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.5);
+    animation: shooting-star-2 11.7s linear infinite;
+  }
+
+  /* Additional shooting stars - only on larger screens */
+  @media (min-width: 768px) {
+    .shooting-star-extra {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -4;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .shooting-star-extra::before {
+      content: "";
+      position: absolute;
+      top: 45%;
+      left: -6%;
+      width: 2px;
+      height: 1px;
+      background: linear-gradient(60deg, rgba(255, 255, 255, 1), transparent);
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+      animation: shooting-star-3 13.2s linear infinite;
+    }
+
+    .shooting-star-extra::after {
+      content: "";
+      position: absolute;
+      top: 28%;
+      left: -4%;
+      width: 1px;
+      height: 1px;
+      background: linear-gradient(25deg, rgba(255, 255, 255, 1), transparent);
+      border-radius: 50%;
+      box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+      animation: shooting-star-4 9.8s linear infinite;
+    }
+  }
+
+  /* Hide extra shooting stars on mobile */
+  @media (max-width: 767px) {
+    .shooting-star-extra {
+      display: none;
+    }
+  }
+
+  @keyframes star-twinkle {
+    0%, 100% {
+      opacity: 0.6;
+    }
+    17% {
+      opacity: 0.8;
+    }
+    33% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 1;
+    }
+    67% {
+      opacity: 0.7;
+    }
+    83% {
+      opacity: 0.9;
+    }
+  }
+
+  @keyframes shooting-star-1 {
+    0% {
+      transform: translateX(-150px) translateY(-50px) rotate(45deg);
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    15% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(calc(100vw + 250px)) translateY(300px) rotate(45deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes shooting-star-2 {
+    0% {
+      transform: translateX(-120px) translateY(30px) rotate(35deg);
+      opacity: 0;
+    }
+    8% {
+      opacity: 1;
+    }
+    18% {
+      opacity: 1;
+    }
+    28% {
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateX(calc(100vw + 200px)) translateY(-180px) rotate(35deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes shooting-star-3 {
+    0% {
+      transform: translateX(-100px) translateY(80px) rotate(60deg);
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+    }
+    22% {
+      opacity: 0.9;
+    }
+    100% {
+      transform: translateX(calc(100vw + 180px)) translateY(-250px) rotate(60deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes shooting-star-4 {
+    0% {
+      transform: translateX(-80px) translateY(-30px) rotate(25deg);
+      opacity: 0;
+    }
+    6% {
+      opacity: 1;
+    }
+    16% {
+      opacity: 1;
+    }
+    26% {
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(calc(100vw + 220px)) translateY(220px) rotate(25deg);
+      opacity: 0;
+    }
   }
 }
 
-/* Enhanced accessibility */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-  .glass-button {
-    border-width: 2px;
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-
-  .glass-button:hover {
-    border-color: rgba(147, 51, 234, 0.8);
-  }
+/* Add these elements to your HTML body */
+body .shooting-star-extra {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -4;
+  overflow: hidden;
+  pointer-events: none;
 }

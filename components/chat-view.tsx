@@ -46,6 +46,7 @@ export function ChatView({
     "What do you want to get?",
   ];
   const [randomMessage, setRandomMessage] = useState("");
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
     if (messages.length === 0) {
@@ -53,6 +54,17 @@ export function ChatView({
       setRandomMessage(welcomeMessages[randomIndex]);
     }
   }, [messages.length]);
+
+  // Handle screen size changes
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
 
   const renderMessage = (message: any, index: number) => {
     if (message.role === "user") {
@@ -106,6 +118,8 @@ export function ChatView({
     );
   };
 
+  const shouldShowChatInput = messages.length > 0 || !isLargeScreen;
+
   return (
     <div className="flex-1 flex flex-col min-h-[calc(100vh-64px)] relative transition-all duration-300">
       {/* Main Content Area - Scrollable */}
@@ -130,38 +144,94 @@ export function ChatView({
                 transition={{ delay: 0.2 }}
                 className="text-center mb-6 md:mb-8"
               >
-                {/* Greeting */}
-                <h1 className="text-xl md:text-2xl lg:text-3xl font-light mb-4">
-                  <span className="text-white">{randomMessage}</span>
-                </h1>
+                {/* Greeting with Glow Effect */}
+                <motion.h1 
+                  className="text-xl md:text-2xl lg:text-3xl font-extralight mb-4 relative"
+                  animate={{
+                    textShadow: [
+                      "0 0 10px rgba(168, 85, 247, 0.5)",
+                      "0 0 20px rgba(168, 85, 247, 0.8)",
+                      "0 0 10px rgba(168, 85, 247, 0.5)"
+                    ]
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    repeatType: "reverse"
+                  }}
+                >
+                  <span className="text-white bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    {randomMessage}
+                  </span>
+                </motion.h1>
               </motion.div>
 
               {/* Desktop Chat Input - Hidden on mobile */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
-                className="hidden md:block w-full max-w-3xl mb-8"
-              >
-                <form onSubmit={handleSubmit} className="flex space-x-3">
-                  <Input
-                    value={input}
-                    onChange={handleInputChange}
-                    placeholder="Ask me about products..."
-                    className="flex-1 bg-white/5 border-white/10 text-white placeholder-gray-400 focus:border-purple-500/50 focus:bg-white/10 transition-all duration-300 rounded-xl h-12 text-sm md:text-base"
-                    disabled={isLoading}
-                  />
-                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                    <Button
-                      type="submit"
-                      disabled={isLoading || !input.trim()}
-                      className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 transition-all duration-300 disabled:opacity-50 rounded-xl h-12 px-4 md:px-6"
-                    >
-                      <Send className="h-4 w-4" />
-                    </Button>
-                  </motion.div>
-                </form>
-              </motion.div>
+              {isLargeScreen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                  className="w-full max-w-4xl mb-8"
+                >
+                  {/* Grok-style Chat Input */}
+                  <div className="relative">
+                    <form onSubmit={handleSubmit} className="relative">
+                      <motion.div 
+                        className="bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-gray-700/50 py-3 px-4 shadow-2xl relative"
+                        animate={{
+                          boxShadow: [
+                            "0 0 0 1px rgba(168, 85, 247, 0.2)",
+                            "0 0 0 2px rgba(168, 85, 247, 0.4)",
+                            "0 0 0 1px rgba(168, 85, 247, 0.2)"
+                          ]
+                        }}
+                        transition={{
+                          duration: 2,
+                          repeat: Infinity,
+                          repeatType: "reverse"
+                        }}
+                      >
+                        <div className="flex flex-col space-y-3">
+                          <div className="flex-1">
+                            <textarea
+                              value={input}
+                              onChange={handleInputChange}
+                              placeholder="Ask anything"
+                              className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto"
+                              disabled={isLoading}
+                              rows={1}
+                              style={{
+                                height: 'auto',
+                                minHeight: '1.5rem',
+                                maxHeight: '9rem'
+                              }}
+                              onInput={(e) => {
+                                const target = e.target as HTMLTextAreaElement;
+                                target.style.height = 'auto';
+                                target.style.height = Math.min(target.scrollHeight, 144) + 'px';
+                              }}
+                              maxLength={1000}
+                            />
+                          </div>
+                          <div className="flex justify-end">
+                            {/* Submit Button */}
+                            <motion.button
+                              type="submit"
+                              disabled={isLoading || !input.trim()}
+                              whileHover={{ scale: 1.05 }}
+                              whileTap={{ scale: 0.95 }}
+                              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 disabled:opacity-50 rounded-xl px-4 py-2 transition-all duration-200 flex items-center justify-center min-w-[40px]"
+                            >
+                              <Send className="h-4 w-4" />
+                            </motion.button>
+                          </div>
+                        </div>
+                      </motion.div>
+                    </form>
+                  </div>
+                </motion.div>
+              )}
 
               {/* Product Shortcuts */}
               <motion.div
@@ -214,39 +284,80 @@ export function ChatView({
         </div>
       </div>
 
-      {/* Chat Input Area - Sticky Bottom for all screens, hidden on desktop when no messages */}
-      {(messages.length > 0 || window.innerWidth < 768) && (
+      {/* Chat Input Area - Grok-style Sticky Bottom */}
+      {shouldShowChatInput && (
         <div
-          className="border-t border-white/5 bg-black/50 backdrop-blur-xl sticky bottom-0 z-30 transition-all duration-300"
+          className="border-t border-gray-700/50 bg-gray-900/80 backdrop-blur-xl sticky bottom-0 z-30 transition-all duration-300"
           style={{
-            marginLeft: window.innerWidth >= 768 ? (chatHistoryMinimized ? "64px" : "320px") : "0",
+            marginLeft: isLargeScreen ? (chatHistoryMinimized ? "64px" : "320px") : "0",
           }}
         >
-          <div className="max-w-3xl mx-auto p-3 md:p-4 space-y-3">
-            {/* Chat Input - Always visible when messages exist or on mobile */}
-            <form onSubmit={handleSubmit} className="flex space-x-2 md:space-x-3">
-              <Input
-                value={input}
-                onChange={handleInputChange}
-                placeholder={messages.length === 0 ? "Ask me about products..." : "Ask me about products or tell me what you need..."}
-                className="flex-1 bg-white/5 border-white/10 text-white placeholder-gray-400 focus:border-purple-500/50 focus:bg-white/10 transition-all duration-300 rounded-xl text-sm md:text-base h-11 md:h-12"
-                disabled={isLoading}
-              />
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button
-                  type="submit"
-                  disabled={isLoading || !input.trim()}
-                  className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 transition-all duration-300 disabled:opacity-50 rounded-xl px-3 md:px-4 lg:px-6 h-11 md:h-12"
+          <div className="max-w-4xl mx-auto p-3 md:p-4">
+            {/* Grok-style Chat Input */}
+            <div className="relative">
+              <form onSubmit={handleSubmit} className="relative">
+                <motion.div 
+                  className="bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-gray-700/50 py-3 px-4 shadow-2xl relative"
+                  animate={{
+                    boxShadow: [
+                      "0 0 0 1px rgba(168, 85, 247, 0.2)",
+                      "0 0 0 2px rgba(168, 85, 247, 0.4)",
+                      "0 0 0 1px rgba(168, 85, 247, 0.2)"
+                    ]
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    repeatType: "reverse"
+                  }}
                 >
-                  <Send className="h-4 w-4" />
-                </Button>
-              </motion.div>
-            </form>
+                  <div className="flex flex-col space-y-3">
+                    <div className="flex-1">
+                      <textarea
+                        value={input}
+                        onChange={handleInputChange}
+                        placeholder={messages.length === 0 ? "Ask anything" : "Ask me about products or tell me what you need..."}
+                        className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-sm md:text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto"
+                        disabled={isLoading}
+                        rows={1}
+                        style={{
+                          height: 'auto',
+                          minHeight: '1.5rem',
+                          maxHeight: '9rem'
+                        }}
+                        onInput={(e) => {
+                          const target = e.target as HTMLTextAreaElement;
+                          target.style.height = 'auto';
+                          target.style.height = Math.min(target.scrollHeight, 144) + 'px';
+                        }}
+                        maxLength={1000}
+                      />
+                    </div>
+                    <div className="flex justify-end">
+                      {/* Submit Button */}
+                      <motion.button
+                        type="submit"
+                        disabled={isLoading || !input.trim()}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 disabled:opacity-50 rounded-xl px-3 md:px-4 py-1.5 md:py-2 transition-all duration-200 flex items-center justify-center min-w-[36px] md:min-w-[40px]"
+                      >
+                        <Send className="h-3 w-3 md:h-4 md:w-4" />
+                      </motion.button>
+                    </div>
+                  </div>
+                </motion.div>
+              </form>
+            </div>
 
-            {/* Miniaturized Quick Product Access - Only when there are messages and hidden on mobile */}
-            {messages.length > 0 && (
-              <div className="hidden sm:block">
-                <ProductShortcuts products={products} onQuickAdd={onQuickAdd} onViewAll={onViewAll} />
+            {/* Miniaturized Quick Product Access - Only when there are messages and on larger screens */}
+            {messages.length > 0 && isLargeScreen && (
+              <div className="mt-3">
+                <div className="flex justify-center">
+                  <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl p-2 border border-gray-700/30">
+                    <ProductShortcuts products={products} onQuickAdd={onQuickAdd} onViewAll={onViewAll} />
+                  </div>
+                </div>
               </div>
             )}
           </div>
