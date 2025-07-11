@@ -136,10 +136,16 @@ export function ChatView({
 
   const shouldShowChatInput = messages.length > 0 || !isLargeScreen;
 
-  // Calculate proper margins based on sidebar state
-  const getSidebarMargin = () => {
-    if (!isLargeScreen) return "0";
-    return chatHistoryMinimized ? "64px" : "280px";
+  // Calculate proper container styles based on sidebar state
+  const getContainerStyle = () => {
+    if (!isLargeScreen) return {};
+    
+    const sidebarWidth = chatHistoryMinimized ? 64 : 280;
+    return {
+      paddingLeft: `${sidebarWidth}px`,
+      maxWidth: '100vw',
+      boxSizing: 'border-box' as const,
+    };
   };
 
   return (
@@ -150,6 +156,7 @@ export function ChatView({
         style={{
           scrollbarWidth: 'none',
           msOverflowStyle: 'none',
+          ...getContainerStyle(),
         }}
       >
         <style jsx>{`
@@ -158,12 +165,7 @@ export function ChatView({
           }
         `}</style>
         
-        <div 
-          className="max-w-4xl w-full px-3 md:px-4 py-4 md:py-8 transition-all duration-300"
-          style={{
-            marginLeft: isLargeScreen ? getSidebarMargin() : "0",
-          }}
-        >
+        <div className="max-w-4xl w-full px-3 md:px-4 py-4 md:py-8 transition-all duration-300">
           {/* Back to Main Button - Only show when needed */}
           {(showBackButton || isInSubView) && (
             <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="mb-4 md:mb-6">
@@ -211,7 +213,7 @@ export function ChatView({
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="w-full max-w-4xl mb-8"
+                  className="w-full max-w-2xl mb-8"
                 >
                   {/* Grok-style Chat Input */}
                   <div className="relative">
@@ -330,11 +332,9 @@ export function ChatView({
       {shouldShowChatInput && (
         <div
           className="sticky bottom-0 z-30 transition-all duration-300 bg-transparent"
-          style={{
-            marginLeft: isLargeScreen ? getSidebarMargin() : "0",
-          }}
+          style={getContainerStyle()}
         >
-          <div className="max-w-4xl mx-auto p-3 md:p-4">
+          <div className="max-w-2xl mx-auto p-3 md:p-4">
             {/* Grok-style Chat Input */}
             <div className="relative">
               <form onSubmit={handleSubmit} className="relative">

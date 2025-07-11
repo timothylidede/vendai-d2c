@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, MapPin, Navigation, CreditCard, Smartphone, Banknote } from "lucide-react";
+import { X, MapPin, Navigation, CreditCard, Smartphone, Banknote, AlertCircle, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -25,7 +25,14 @@ interface CheckoutModalProps {
   onClose: () => void;
   cart: CartItem[];
   onCheckoutComplete: (orderData: any) => void;
-  user: any; // Will update to match Firestore users schema
+  user: any;
+}
+
+interface PlaceSuggestion {
+  place_id: string;
+  description: string;
+  main_text: string;
+  secondary_text: string;
 }
 
 declare global {
@@ -43,136 +50,345 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
   const [selectedLocation, setSelectedLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [isLoadingLocation, setIsLoadingLocation] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [mapError, setMapError] = useState<string | null>(null);
+  const [isMapLoaded, setIsMapLoaded] = useState(false);
+  
+  // New states for autocomplete
+  const [searchQuery, setSearchQuery] = useState("");
+  const [suggestions, setSuggestions] = useState<PlaceSuggestion[]>([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [isLoadingSuggestions, setIsLoadingSuggestions] = useState(false);
 
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<any>(null);
   const markerRef = useRef<any>(null);
+  const autocompleteServiceRef = useRef<any>(null);
+  const placesServiceRef = useRef<any>(null);
 
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
+  // Check if Google Maps API key is available
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+
+  // Load Google Maps script with error handling
+  useEffect(() => {
+    if (show && !window.google && !isMapLoaded) {
+      if (!apiKey) {
+        setMapError("Google Maps API key is not configured. Please add NEXT_PUBLIC_GOOGLE_MAPS_API_KEY to your environment variables.");
+        return;
+      }
+
+      const script = document.createElement("script");
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
+      script.async = true;
+      script.defer = true;
+      
+      script.onload = () => {
+        setIsMapLoaded(true);
+        setMapError(null);
+      };
+      
+      script.onerror = () => {
+        setMapError("Failed to load Google Maps. Please check your API key and internet connection.");
+      };
+
+      document.head.appendChild(script);
+    }
+  }, [show, apiKey, isMapLoaded]);
+
   // Initialize Google Maps
   useEffect(() => {
-    if (show && step === 1 && mapRef.current && window.google) {
+    if (show && step === 1 && mapRef.current && window.google && isMapLoaded && !mapError) {
       initializeMap();
     }
-  }, [show, step]);
+  }, [show, step, isMapLoaded, mapError]);
 
   const initializeMap = () => {
     if (!mapRef.current || !window.google) return;
 
-    // Default to Nairobi center
-    const defaultLocation = { lat: -1.2921, lng: 36.8219 };
+    try {
+      // Default to Nairobi center
+      const defaultLocation = { lat: -1.2921, lng: 36.8219 };
 
-    const map = new window.google.maps.Map(mapRef.current, {
-      zoom: 12,
-      center: selectedLocation || defaultLocation,
-      styles: [
-        {
-          featureType: "all",
-          elementType: "geometry.fill",
-          stylers: [{ color: "#1a1a1a" }],
-        },
-        {
-          featureType: "all",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#ffffff" }],
-        },
-        {
-          featureType: "water",
-          elementType: "geometry.fill",
-          stylers: [{ color: "#2563eb" }],
-        },
-      ],
-    });
+      const map = new window.google.maps.Map(mapRef.current, {
+        zoom: 13,
+        center: selectedLocation || defaultLocation,
+        mapTypeControl: false,
+        fullscreenControl: false,
+        streetViewControl: false,
+        zoomControl: true,
+        styles: [
+          {
+            "featureType": "all",
+            "elementType": "labels.text.fill",
+            "stylers": [{ "color": "#ffffff" }]
+          },
+          {
+            "featureType": "all",
+            "elementType": "labels.text.stroke",
+            "stylers": [{ "color": "#000000" }, { "lightness": 13 }]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{ "color": "#000000" }]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{ "color": "#144b53" }, { "lightness": 14 }, { "weight": 1.4 }]
+          },
+          {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [{ "color": "#08304b" }]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{ "color": "#0c4152" }, { "lightness": 5 }]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [{ "color": "#000000" }]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{ "color": "#0b434f" }, { "lightness": 25 }]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "geometry.fill",
+            "stylers": [{ "color": "#000000" }]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "geometry.stroke",
+            "stylers": [{ "color": "#0b3d51" }, { "lightness": 16 }]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [{ "color": "#000000" }]
+          },
+          {
+            "featureType": "transit",
+            "elementType": "all",
+            "stylers": [{ "color": "#146474" }]
+          },
+          {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [{ "color": "#021019" }]
+          }
+        ],
+      });
 
-    mapInstanceRef.current = map;
+      mapInstanceRef.current = map;
 
-    // Add click listener to place marker
-    map.addListener("click", (event: any) => {
-      placeMarker(event.latLng);
-    });
+      // Initialize Places services
+      autocompleteServiceRef.current = new window.google.maps.places.AutocompleteService();
+      placesServiceRef.current = new window.google.maps.places.PlacesService(map);
 
-    // Add existing marker if location is selected
-    if (selectedLocation) {
-      placeMarker(new window.google.maps.LatLng(selectedLocation.lat, selectedLocation.lng));
+      // Add click listener to place marker
+      map.addListener("click", (event: any) => {
+        placeMarker(event.latLng);
+      });
+
+      // Add existing marker if location is selected
+      if (selectedLocation) {
+        placeMarker(new window.google.maps.LatLng(selectedLocation.lat, selectedLocation.lng));
+      }
+    } catch (error) {
+      console.error("Error initializing map:", error);
+      setMapError("Failed to initialize the map. Please refresh the page and try again.");
     }
   };
 
   const placeMarker = (location: any) => {
-    // Remove existing marker
-    if (markerRef.current) {
-      markerRef.current.setMap(null);
-    }
+    if (!window.google || !mapInstanceRef.current) return;
 
-    // Create new marker
-    const marker = new window.google.maps.Marker({
-      position: location,
-      map: mapInstanceRef.current,
-      draggable: true,
-      animation: window.google.maps.Animation.DROP,
-    });
-
-    markerRef.current = marker;
-
-    // Update selected location
-    setSelectedLocation({
-      lat: location.lat(),
-      lng: location.lng(),
-    });
-
-    // Reverse geocode to get address
-    const geocoder = new window.google.maps.Geocoder();
-    geocoder.geocode({ location }, (results: any, status: any) => {
-      if (status === "OK" && results[0]) {
-        setDeliveryAddress(results[0].formatted_address);
+    try {
+      // Remove existing marker
+      if (markerRef.current) {
+        markerRef.current.setMap(null);
       }
-    });
 
-    // Add drag listener
-    marker.addListener("dragend", (event: any) => {
-      const newLocation = {
-        lat: event.latLng.lat(),
-        lng: event.latLng.lng(),
-      };
-      setSelectedLocation(newLocation);
+      // Create new marker with custom icon
+      const marker = new window.google.maps.Marker({
+        position: location,
+        map: mapInstanceRef.current,
+        draggable: true,
+        animation: window.google.maps.Animation.DROP,
+        icon: {
+          path: window.google.maps.SymbolPath.CIRCLE,
+          scale: 8,
+          fillColor: "#8B5CF6",
+          fillOpacity: 1,
+          strokeColor: "#ffffff",
+          strokeWeight: 2,
+        },
+      });
 
-      // Update address
-      geocoder.geocode({ location: event.latLng }, (results: any, status: any) => {
+      markerRef.current = marker;
+
+      // Update selected location
+      setSelectedLocation({
+        lat: location.lat(),
+        lng: location.lng(),
+      });
+
+      // Reverse geocode to get address
+      const geocoder = new window.google.maps.Geocoder();
+      geocoder.geocode({ location }, (results: any, status: any) => {
         if (status === "OK" && results[0]) {
           setDeliveryAddress(results[0].formatted_address);
+          setSearchQuery(results[0].formatted_address);
         }
       });
-    });
+
+      // Add drag listener
+      marker.addListener("dragend", (event: any) => {
+        const newLocation = {
+          lat: event.latLng.lat(),
+          lng: event.latLng.lng(),
+        };
+        setSelectedLocation(newLocation);
+
+        // Update address
+        geocoder.geocode({ location: event.latLng }, (results: any, status: any) => {
+          if (status === "OK" && results[0]) {
+            setDeliveryAddress(results[0].formatted_address);
+            setSearchQuery(results[0].formatted_address);
+          }
+        });
+      });
+    } catch (error) {
+      console.error("Error placing marker:", error);
+      setMapError("Failed to place marker. Please try again.");
+    }
   };
 
-  const getCurrentLocation = () => {
-    setIsLoadingLocation(true);
-
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const location = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-          };
-
-          setSelectedLocation(location);
-
-          if (mapInstanceRef.current) {
-            mapInstanceRef.current.setCenter(location);
-            placeMarker(new window.google.maps.LatLng(location.lat, location.lng));
-          }
-
-          setIsLoadingLocation(false);
+  const handleSearchChange = (value: string) => {
+    setSearchQuery(value);
+    
+    if (value.length > 2 && autocompleteServiceRef.current) {
+      setIsLoadingSuggestions(true);
+      
+      autocompleteServiceRef.current.getPlacePredictions(
+        {
+          input: value,
+          componentRestrictions: { country: 'ke' }, // Restrict to Kenya
+          types: ['establishment', 'geocode'],
         },
-        (error) => {
-          console.error("Error getting location:", error);
-          setIsLoadingLocation(false);
+        (predictions: any, status: any) => {
+          setIsLoadingSuggestions(false);
+          
+          if (status === window.google.maps.places.PlacesServiceStatus.OK && predictions) {
+            const formattedSuggestions = predictions.map((prediction: any) => ({
+              place_id: prediction.place_id,
+              description: prediction.description,
+              main_text: prediction.structured_formatting.main_text,
+              secondary_text: prediction.structured_formatting.secondary_text,
+            }));
+            setSuggestions(formattedSuggestions);
+            setShowSuggestions(true);
+          } else {
+            setSuggestions([]);
+            setShowSuggestions(false);
+          }
         }
       );
     } else {
-      setIsLoadingLocation(false);
+      setSuggestions([]);
+      setShowSuggestions(false);
     }
+  };
+
+  const handleSuggestionClick = (suggestion: PlaceSuggestion) => {
+    if (!placesServiceRef.current) return;
+
+    placesServiceRef.current.getDetails(
+      { placeId: suggestion.place_id },
+      (place: any, status: any) => {
+        if (status === window.google.maps.places.PlacesServiceStatus.OK && place.geometry) {
+          const location = place.geometry.location;
+          
+          setSelectedLocation({
+            lat: location.lat(),
+            lng: location.lng(),
+          });
+          
+          setDeliveryAddress(place.formatted_address);
+          setSearchQuery(place.formatted_address);
+          setShowSuggestions(false);
+          
+          // Update map center and place marker
+          if (mapInstanceRef.current) {
+            mapInstanceRef.current.setCenter(location);
+            mapInstanceRef.current.setZoom(15);
+            placeMarker(location);
+          }
+        }
+      }
+    );
+  };
+
+  const getCurrentLocation = () => {
+    if (!navigator.geolocation) {
+      alert("Geolocation is not supported by your browser");
+      return;
+    }
+
+    setIsLoadingLocation(true);
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const location = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
+
+        setSelectedLocation(location);
+
+        if (mapInstanceRef.current && window.google) {
+          mapInstanceRef.current.setCenter(location);
+          mapInstanceRef.current.setZoom(15);
+          placeMarker(new window.google.maps.LatLng(location.lat, location.lng));
+        }
+
+        setIsLoadingLocation(false);
+      },
+      (error) => {
+        console.error("Geolocation error:", error);
+        let errorMessage = "Unable to get your location. ";
+        
+        switch (error.code) {
+          case error.PERMISSION_DENIED:
+            errorMessage += "Please enable location permissions and try again.";
+            break;
+          case error.POSITION_UNAVAILABLE:
+            errorMessage += "Location information is unavailable.";
+            break;
+          case error.TIMEOUT:
+            errorMessage += "Location request timed out.";
+            break;
+          default:
+            errorMessage += "An unknown error occurred.";
+            break;
+        }
+        
+        alert(errorMessage);
+        setIsLoadingLocation(false);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 300000 // 5 minutes
+      }
+    );
   };
 
   const handleCheckout = async () => {
@@ -260,6 +476,7 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
       setDeliveryAddress("");
       setDeliveryNotes("");
       setPhoneNumber("");
+      setSearchQuery("");
       onClose();
     } catch (error: any) {
       console.error("Checkout error:", error);
@@ -277,22 +494,77 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
           Delivery Location
         </h3>
 
-        {/* Map Container */}
-        <div className="relative">
-          <div ref={mapRef} className="w-full h-64 rounded-lg border border-white/10 bg-gray-900" />
-          <Button
-            onClick={getCurrentLocation}
-            disabled={isLoadingLocation}
-            className="absolute top-3 right-3 bg-purple-500 hover:bg-purple-600 text-white text-xs px-3 py-1 h-8"
-          >
-            <Navigation className="h-3 w-3 mr-1" />
-            {isLoadingLocation ? "Getting..." : "Use Current"}
-          </Button>
+        {/* Search Box */}
+        <div className="relative mb-4">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
+            <Input
+              value={searchQuery}
+              onChange={(e) => handleSearchChange(e.target.value)}
+              onFocus={() => suggestions.length > 0 && setShowSuggestions(true)}
+              placeholder="Search for places, restaurants, landmarks..."
+              className="pl-10 bg-white/10 border-white/20 text-white placeholder-gray-400 focus:border-purple-500"
+            />
+            {isLoadingSuggestions && (
+              <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
+                <div className="w-4 h-4 border-2 border-purple-500 border-t-transparent rounded-full animate-spin" />
+              </div>
+            )}
+          </div>
+          
+          {/* Suggestions Dropdown */}
+          {showSuggestions && suggestions.length > 0 && (
+            <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-white/20 rounded-lg shadow-xl max-h-60 overflow-y-auto">
+              {suggestions.map((suggestion) => (
+                <button
+                  key={suggestion.place_id}
+                  onClick={() => handleSuggestionClick(suggestion)}
+                  className="w-full px-4 py-3 text-left hover:bg-white/10 border-b border-white/10 last:border-b-0 focus:outline-none focus:bg-white/10"
+                >
+                  <div className="text-white font-medium">{suggestion.main_text}</div>
+                  <div className="text-gray-400 text-sm">{suggestion.secondary_text}</div>
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
-        <p className="text-sm text-gray-400 mt-2">
-          Click on the map to place a delivery pin, or use your current location
-        </p>
+        {/* Map Container */}
+        <div className="relative">
+          {mapError ? (
+            <div className="w-full h-64 rounded-lg border border-red-500/20 bg-red-900/20 flex items-center justify-center">
+              <div className="text-center text-red-400 p-4">
+                <AlertCircle className="h-8 w-8 mx-auto mb-2" />
+                <p className="text-sm">{mapError}</p>
+                <p className="text-xs mt-2 text-red-300">
+                  You can still enter your address manually below
+                </p>
+              </div>
+            </div>
+          ) : (
+            <>
+              <div 
+                ref={mapRef} 
+                className="w-full h-64 rounded-lg border border-white/20 bg-gray-900 shadow-lg" 
+                style={{ minHeight: '300px' }}
+              />
+              <Button
+                onClick={getCurrentLocation}
+                disabled={isLoadingLocation || !isMapLoaded}
+                className="absolute top-3 right-3 bg-purple-600 hover:bg-purple-700 text-white text-xs px-3 py-2 h-auto shadow-lg"
+              >
+                <Navigation className="h-3 w-3 mr-1" />
+                {isLoadingLocation ? "Getting..." : "Current Location"}
+              </Button>
+            </>
+          )}
+        </div>
+
+        {!mapError && (
+          <p className="text-sm text-gray-400 mt-2">
+            🔍 Search for places above, click on the map to place a pin, or use your current location
+          </p>
+        )}
       </div>
 
       {/* Address Display */}
@@ -304,8 +576,9 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
           id="address"
           value={deliveryAddress}
           onChange={(e) => setDeliveryAddress(e.target.value)}
-          className="mt-1 bg-white/5 border-white/10 text-white"
+          className="mt-1 bg-white/10 border-white/20 text-white placeholder-gray-400 focus:border-purple-500"
           rows={2}
+          placeholder="Enter your delivery address"
         />
       </div>
 
@@ -319,7 +592,7 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
           value={deliveryNotes}
           onChange={(e) => setDeliveryNotes(e.target.value)}
           placeholder="Building name, floor, apartment number, etc."
-          className="mt-1 bg-white/5 border-white/10 text-white placeholder-gray-400"
+          className="mt-1 bg-white/10 border-white/20 text-white placeholder-gray-400 focus:border-purple-500"
           rows={2}
         />
       </div>
@@ -401,7 +674,7 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
             placeholder="254712345678"
-            className="mt-1 bg-white/5 border-white/10 text-white placeholder-gray-400"
+            className="mt-1 bg-white/10 border-white/20 text-white placeholder-gray-400 focus:border-purple-500"
           />
         </div>
       )}
@@ -427,17 +700,6 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
       </div>
     </div>
   );
-
-  // Load Google Maps script
-  useEffect(() => {
-    if (show && !window.google) {
-      const script = document.createElement("script");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places`;
-      script.async = true;
-      script.defer = true;
-      document.head.appendChild(script);
-    }
-  }, [show]);
 
   return (
     <AnimatePresence>
@@ -508,7 +770,7 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
               )}
               <Button
                 onClick={step === 1 ? () => setStep(2) : handleCheckout}
-                disabled={step === 1 ? !selectedLocation || !deliveryAddress : isSubmitting}
+                disabled={step === 1 ? !deliveryAddress : isSubmitting}
                 className="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 disabled:opacity-50"
               >
                 {step === 1 ? "Continue to Payment" : isSubmitting ? "Processing..." : `Pay KES ${total.toLocaleString()}`}
