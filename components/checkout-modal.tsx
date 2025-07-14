@@ -1,14 +1,14 @@
 "use client";
 
+declare global {
+  interface Window {
+    google?: any;
+  }
+}
+
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, MapPin, Navigation, CreditCard, Smartphone, Banknote, AlertCircle, Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { db } from "@/lib/firebase";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { X, MapPin, Navigation, Smartphone, AlertCircle, Search, CheckCircle, Loader2, Phone } from "lucide-react";
 
 interface CartItem {
   id: number;
@@ -35,15 +35,8 @@ interface PlaceSuggestion {
   secondary_text: string;
 }
 
-declare global {
-  interface Window {
-    google: any;
-  }
-}
-
 export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }: CheckoutModalProps) {
   const [step, setStep] = useState(1);
-  const [paymentMethod, setPaymentMethod] = useState("mpesa");
   const [phoneNumber, setPhoneNumber] = useState(user?.phone || "");
   const [deliveryAddress, setDeliveryAddress] = useState(user?.address || "");
   const [deliveryNotes, setDeliveryNotes] = useState("");
@@ -53,7 +46,12 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
   const [mapError, setMapError] = useState<string | null>(null);
   const [isMapLoaded, setIsMapLoaded] = useState(false);
   
-  // New states for autocomplete
+  // Payment states
+  const [paymentStatus, setPaymentStatus] = useState<'idle' | 'processing' | 'success' | 'failed'>('idle');
+  const [paymentMessage, setPaymentMessage] = useState('');
+  const [checkoutRequestId, setCheckoutRequestId] = useState('');
+  
+  // Search states
   const [searchQuery, setSearchQuery] = useState("");
   const [suggestions, setSuggestions] = useState<PlaceSuggestion[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -391,6 +389,83 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
     );
   };
 
+  // Dummy M-Pesa C2B Integration
+  const initiateMpesaPayment = async () => {
+    setPaymentStatus('processing');
+    setPaymentMessage('Initiating M-Pesa payment...');
+    
+    try {
+      // Simulate API call to initiate STK push
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      // Generate dummy checkout request ID
+      const requestId = `CHK${Date.now()}${Math.random().toString(36).substr(2, 9)}`;
+      setCheckoutRequestId(requestId);
+      
+      setPaymentMessage('STK push sent to your phone. Please enter your M-Pesa PIN to complete payment.');
+      
+      // Simulate payment processing
+      setTimeout(async () => {
+        setPaymentMessage('Processing payment...');
+        
+        // Simulate random success/failure (80% success rate)
+        const success = Math.random() > 0.2;
+        
+        if (success) {
+          setPaymentStatus('success');
+          setPaymentMessage('Payment successful! Your order has been confirmed.');
+          
+          // Create order data
+          const orderData = {
+            id: `ORDER${Date.now()}`,
+            userId: user?.uid || 'demo_user',
+            items: cart,
+            total,
+            status: "confirmed",
+            paymentStatus: "completed",
+            paymentMethod: "mpesa",
+            deliveryAddress: {
+              address: deliveryAddress,
+              location: selectedLocation,
+              notes: deliveryNotes,
+            },
+            deliveryDate: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(),
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString(),
+            mpesaTransactionId: `TXN${Date.now()}`,
+            checkoutRequestId: requestId,
+          };
+          
+          // Complete checkout after 2 seconds
+          setTimeout(() => {
+            onCheckoutComplete(orderData);
+            resetModal();
+            onClose();
+          }, 2000);
+          
+        } else {
+          setPaymentStatus('failed');
+          setPaymentMessage('Payment failed. Please try again or check your M-Pesa balance.');
+        }
+      }, 5000);
+      
+    } catch (error) {
+      setPaymentStatus('failed');
+      setPaymentMessage('Payment failed. Please try again.');
+    }
+  };
+
+  const resetModal = () => {
+    setStep(1);
+    setPaymentStatus('idle');
+    setPaymentMessage('');
+    setCheckoutRequestId('');
+    setSelectedLocation(null);
+    setDeliveryAddress("");
+    setDeliveryNotes("");
+    setSearchQuery("");
+  };
+
   const handleCheckout = async () => {
     if (!user) {
       alert("Please log in to complete the checkout.");
@@ -402,88 +477,35 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
       return;
     }
 
-    setIsSubmitting(true);
-
-    try {
-      // Prepare order data matching Firestore schema
-      const orderData = {
-        userId: user.uid,
-        items: cart.map((item) => ({
-          id: item.id,
-          name: item.name,
-          price: item.price,
-          quantity: item.quantity,
-          category: item.category,
-          description: item.description,
-          image: item.image,
-        })),
-        total,
-        status: "pending",
-        paymentStatus: "pending",
-        paymentMethod,
-        deliveryAddress: {
-          address: deliveryAddress,
-          location: selectedLocation,
-          notes: deliveryNotes,
-        },
-        deliveryDate: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(),
-        createdAt: serverTimestamp(),
-        updatedAt: serverTimestamp(),
-      };
-
-      // Save order to Firestore
-      const orderRef = await addDoc(collection(db, "orders"), orderData);
-
-      // Initiate M-Pesa payment if selected
-      if (paymentMethod === "mpesa") {
-        const paymentResponse = await fetch("/api/payments", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            orderId: orderRef.id,
-            userId: user.uid,
-            amount: total,
-            phoneNumber,
-          }),
-        });
-
-        const paymentData = await paymentResponse.json();
-
-        if (!paymentData.success) {
-          throw new Error(paymentData.error || "Failed to initiate M-Pesa payment");
-        }
-
-        // Save payment to Firestore
-        await addDoc(collection(db, "payments"), {
-          orderId: orderRef.id,
-          userId: user.uid,
-          amount: total,
-          phoneNumber,
-          provider: "mpesa",
-          status: "pending",
-          checkoutRequestId: paymentData.checkoutRequestId,
-          transactionId: "",
-          transactionData: {},
-          description: `Payment for order ${orderRef.id}`,
-          createdAt: serverTimestamp(),
-          updatedAt: serverTimestamp(),
-        });
-      }
-
-      onCheckoutComplete({ id: orderRef.id, ...orderData });
-      setStep(1);
-      setSelectedLocation(null);
-      setDeliveryAddress("");
-      setDeliveryNotes("");
-      setPhoneNumber("");
-      setSearchQuery("");
-      onClose();
-    } catch (error: any) {
-      console.error("Checkout error:", error);
-      alert(`Checkout failed: ${error.message}`);
-    } finally {
-      setIsSubmitting(false);
+    if (!phoneNumber || phoneNumber.length < 10) {
+      alert("Please enter a valid phone number.");
+      return;
     }
+
+    setIsSubmitting(true);
+    await initiateMpesaPayment();
+    setIsSubmitting(false);
+  };
+
+  const formatPhoneNumber = (phone: string) => {
+    // Remove all non-digits
+    const cleaned = phone.replace(/\D/g, '');
+    
+    // Format for Kenya numbers
+    if (cleaned.startsWith('0')) {
+      return '254' + cleaned.substring(1);
+    } else if (cleaned.startsWith('254')) {
+      return cleaned;
+    } else if (cleaned.length === 9) {
+      return '254' + cleaned;
+    }
+    
+    return cleaned;
+  };
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setPhoneNumber(value);
   };
 
   const renderStep1 = () => (
@@ -498,12 +520,12 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
         <div className="relative mb-4">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-            <Input
+            <input
               value={searchQuery}
               onChange={(e) => handleSearchChange(e.target.value)}
               onFocus={() => suggestions.length > 0 && setShowSuggestions(true)}
               placeholder="Search for places, restaurants, landmarks..."
-              className="pl-10 bg-white/10 border-white/20 text-white placeholder-gray-400 focus:border-purple-500"
+              className="w-full pl-10 pr-4 py-2 bg-white/10 border border-white/20 text-white placeholder-gray-400 rounded-lg focus:border-purple-500 focus:outline-none"
             />
             {isLoadingSuggestions && (
               <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
@@ -548,14 +570,14 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
                 className="w-full h-64 rounded-lg border border-white/20 bg-gray-900 shadow-lg" 
                 style={{ minHeight: '300px' }}
               />
-              <Button
+              <button
                 onClick={getCurrentLocation}
                 disabled={isLoadingLocation || !isMapLoaded}
-                className="absolute top-3 right-3 bg-purple-600 hover:bg-purple-700 text-white text-xs px-3 py-2 h-auto shadow-lg"
+                className="absolute top-3 right-3 bg-purple-600 hover:bg-purple-700 text-white text-xs px-3 py-2 h-auto shadow-lg rounded-lg flex items-center gap-1 disabled:opacity-50"
               >
-                <Navigation className="h-3 w-3 mr-1" />
+                <Navigation className="h-3 w-3" />
                 {isLoadingLocation ? "Getting..." : "Current Location"}
-              </Button>
+              </button>
             </>
           )}
         </div>
@@ -567,117 +589,118 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
         )}
       </div>
 
-      {/* Address Display */}
-      <div>
-        <Label htmlFor="address" className="text-white">
-          Delivery Address
-        </Label>
-        <Textarea
-          id="address"
-          value={deliveryAddress}
-          onChange={(e) => setDeliveryAddress(e.target.value)}
-          className="mt-1 bg-white/10 border-white/20 text-white placeholder-gray-400 focus:border-purple-500"
-          rows={2}
-          placeholder="Enter your delivery address"
-        />
-      </div>
+        {/* Address Display */}
+        <div>
+          <label className="block text-sm font-medium text-white mb-2">
+            Delivery Address
+          </label>
+          <textarea
+            value={deliveryAddress}
+            onChange={(e) => setDeliveryAddress(e.target.value)}
+            className="w-full bg-white/10 border border-white/20 text-white placeholder-gray-400 rounded-lg p-3 focus:border-purple-500 focus:outline-none"
+            rows={2}
+            placeholder="Enter your delivery address"
+          />
+        </div>
 
-      {/* Delivery Notes */}
-      <div>
-        <Label htmlFor="notes" className="text-white">
-          Delivery Notes (Optional)
-        </Label>
-        <Textarea
-          id="notes"
-          value={deliveryNotes}
-          onChange={(e) => setDeliveryNotes(e.target.value)}
-          placeholder="Building name, floor, apartment number, etc."
-          className="mt-1 bg-white/10 border-white/20 text-white placeholder-gray-400 focus:border-purple-500"
-          rows={2}
-        />
-      </div>
+        {/* Delivery Notes */}
+        <div>
+          <label className="block text-sm font-medium text-white mb-2">
+            Delivery Notes (Optional)
+          </label>
+          <textarea
+            value={deliveryNotes}
+            onChange={(e) => setDeliveryNotes(e.target.value)}
+            placeholder="Building name, floor, apartment number, etc."
+            className="w-full bg-white/10 border border-white/20 text-white placeholder-gray-400 rounded-lg p-3 focus:border-purple-500 focus:outline-none"
+            rows={2}
+          />
+        </div>
     </div>
   );
 
   const renderStep2 = () => (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-white mb-4">Payment Method</h3>
-        <div className="grid grid-cols-1 gap-3">
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={() => setPaymentMethod("mpesa")}
-            className={`p-4 rounded-lg border-2 transition-all duration-300 ${
-              paymentMethod === "mpesa"
-                ? "border-green-500 bg-green-500/10"
-                : "border-white/10 bg-white/5 hover:border-green-500/50"
-            }`}
-          >
-            <div className="flex items-center space-x-3">
-              <Smartphone className="h-6 w-6 text-green-400" />
-              <div className="text-left">
-                <p className="font-medium text-white">M-Pesa</p>
-                <p className="text-sm text-gray-400">Pay with your mobile money</p>
-              </div>
-            </div>
-          </motion.button>
+        <h3 className="text-lg font-semibold text-white mb-4 flex items-center">
+          <Smartphone className="h-5 w-5 mr-2 text-green-400" />
+          M-Pesa Payment
+        </h3>
 
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={() => setPaymentMethod("card")}
-            className={`p-4 rounded-lg border-2 transition-all duration-300 ${
-              paymentMethod === "card"
-                ? "border-blue-500 bg-blue-500/10"
-                : "border-white/10 bg-white/5 hover:border-blue-500/50"
-            }`}
-          >
-            <div className="flex items-center space-x-3">
-              <CreditCard className="h-6 w-6 text-blue-400" />
-              <div className="text-left">
-                <p className="font-medium text-white">Card Payment</p>
-                <p className="text-sm text-gray-400">Visa, Mastercard</p>
-              </div>
+        {/* M-Pesa Info */}
+        <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4 mb-6">
+          <div className="flex items-center space-x-3">
+            <Smartphone className="h-8 w-8 text-green-400" />
+            <div>
+              <p className="font-medium text-white">Pay with M-Pesa</p>
+              <p className="text-sm text-gray-400">Secure mobile money payment</p>
             </div>
-          </motion.button>
+          </div>
+        </div>
 
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={() => setPaymentMethod("cash")}
-            className={`p-4 rounded-lg border-2 transition-all duration-300 ${
-              paymentMethod === "cash"
-                ? "border-yellow-500 bg-yellow-500/10"
-                : "border-white/10 bg-white/5 hover:border-yellow-500/50"
-            }`}
-          >
+        {/* Phone Number Input */}
+        <div>
+          <label className="block text-sm font-medium text-white mb-2">
+            M-Pesa Phone Number
+          </label>
+          <div className="relative">
+            <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
+            <input
+              type="tel"
+              value={phoneNumber}
+              onChange={handlePhoneChange}
+              placeholder="0712345678 or 254712345678"
+              className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 text-white placeholder-gray-400 rounded-lg focus:border-purple-500 focus:outline-none"
+            />
+          </div>
+          <p className="text-xs text-gray-400 mt-1">
+            Enter the phone number registered with M-Pesa
+          </p>
+        </div>
+
+        {/* Payment Status */}
+        {paymentStatus !== 'idle' && (
+          <div className={`p-4 rounded-lg border ${
+            paymentStatus === 'processing' ? 'bg-blue-500/10 border-blue-500/20' :
+            paymentStatus === 'success' ? 'bg-green-500/10 border-green-500/20' :
+            'bg-red-500/10 border-red-500/20'
+          }`}>
             <div className="flex items-center space-x-3">
-              <Banknote className="h-6 w-6 text-yellow-400" />
-              <div className="text-left">
-                <p className="font-medium text-white">Cash on Delivery</p>
-                <p className="text-sm text-gray-400">Pay when you receive</p>
+              {paymentStatus === 'processing' && <Loader2 className="h-5 w-5 text-blue-400 animate-spin" />}
+              {paymentStatus === 'success' && <CheckCircle className="h-5 w-5 text-green-400" />}
+              {paymentStatus === 'failed' && <AlertCircle className="h-5 w-5 text-red-400" />}
+              <div>
+                <p className={`font-medium ${
+                  paymentStatus === 'processing' ? 'text-blue-400' :
+                  paymentStatus === 'success' ? 'text-green-400' :
+                  'text-red-400'
+                }`}>
+                  {paymentStatus === 'processing' ? 'Processing Payment' :
+                   paymentStatus === 'success' ? 'Payment Successful' :
+                   'Payment Failed'}
+                </p>
+                <p className="text-sm text-gray-300">{paymentMessage}</p>
+                {checkoutRequestId && (
+                  <p className="text-xs text-gray-400 mt-1">
+                    Request ID: {checkoutRequestId}
+                  </p>
+                )}
               </div>
             </div>
-          </motion.button>
+          </div>
+        )}
+
+        {/* Payment Instructions */}
+        <div className="bg-white/5 rounded-lg p-4">
+          <h4 className="font-medium text-white mb-2">Payment Instructions:</h4>
+          <ol className="text-sm text-gray-300 space-y-1">
+            <li>1. Click "Pay with M-Pesa" below</li>
+            <li>2. Check your phone for the M-Pesa STK push</li>
+            <li>3. Enter your M-Pesa PIN to complete payment</li>
+            <li>4. You'll receive a confirmation SMS</li>
+          </ol>
         </div>
       </div>
-
-      {paymentMethod === "mpesa" && (
-        <div>
-          <Label htmlFor="phone" className="text-white">
-            M-Pesa Phone Number
-          </Label>
-          <Input
-            id="phone"
-            type="tel"
-            value={phoneNumber}
-            onChange={(e) => setPhoneNumber(e.target.value)}
-            placeholder="254712345678"
-            className="mt-1 bg-white/10 border-white/20 text-white placeholder-gray-400 focus:border-purple-500"
-          />
-        </div>
-      )}
     </div>
   );
 
@@ -721,32 +744,28 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
           >
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-white">{step === 1 ? "Delivery Details" : "Payment & Review"}</h2>
-              <Button
-                variant="ghost"
-                size="sm"
+              <h2 className="text-2xl font-bold text-white">
+                {step === 1 ? "Delivery Details" : "M-Pesa Payment"}
+              </h2>
+              <button
                 onClick={onClose}
-                className="text-gray-400 hover:text-white hover:bg-white/10 rounded-full p-2"
+                className="text-gray-400 hover:text-white hover:bg-white/10 rounded-full p-2 transition-colors"
               >
                 <X className="h-5 w-5" />
-              </Button>
+              </button>
             </div>
 
             {/* Progress Indicator */}
             <div className="flex items-center mb-8">
-              <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
-                  step >= 1 ? "bg-purple-500 text-white" : "bg-white/10 text-gray-400"
-                }`}
-              >
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
+                step >= 1 ? "bg-purple-500 text-white" : "bg-white/10 text-gray-400"
+              }`}>
                 1
               </div>
               <div className={`flex-1 h-1 mx-3 ${step >= 2 ? "bg-purple-500" : "bg-white/10"}`} />
-              <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
-                  step >= 2 ? "bg-purple-500 text-white" : "bg-white/10 text-gray-400"
-                }`}
-              >
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
+                step >= 2 ? "bg-purple-500 text-white" : "bg-white/10 text-gray-400"
+              }`}>
                 2
               </div>
             </div>
@@ -759,22 +778,44 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
 
             {/* Actions */}
             <div className="flex space-x-3 mt-8">
-              {step === 2 && (
-                <Button
-                  variant="outline"
+              {step === 2 && paymentStatus === 'idle' && (
+                <button
                   onClick={() => setStep(1)}
-                  className="flex-1 border-white/20 text-white hover:bg-white/10"
+                  className="flex-1 px-4 py-2 border border-white/20 text-white rounded-lg hover:bg-white/10 transition-colors"
                 >
                   Back
-                </Button>
+                </button>
               )}
-              <Button
-                onClick={step === 1 ? () => setStep(2) : handleCheckout}
-                disabled={step === 1 ? !deliveryAddress : isSubmitting}
-                className="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 disabled:opacity-50"
-              >
-                {step === 1 ? "Continue to Payment" : isSubmitting ? "Processing..." : `Pay KES ${total.toLocaleString()}`}
-              </Button>
+              
+              {step === 1 && (
+                <button
+                  onClick={() => setStep(2)}
+                  disabled={!deliveryAddress}
+                  className="flex-1 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                >
+                  Continue to Payment
+                </button>
+              )}
+              
+              {step === 2 && paymentStatus === 'idle' && (
+                <button
+                  onClick={handleCheckout}
+                  disabled={!phoneNumber || phoneNumber.length < 10}
+                  className="flex-1 px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
+                >
+                  <Smartphone className="h-4 w-4" />
+                  Pay KES {total.toLocaleString()} with M-Pesa
+                </button>
+              )}
+              
+              {step === 2 && paymentStatus === 'failed' && (
+                <button
+                  onClick={() => setPaymentStatus('idle')}
+                  className="flex-1 px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 transition-all"
+                >
+                  Try Again
+                </button>
+              )}
             </div>
           </motion.div>
         </motion.div>

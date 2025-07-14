@@ -165,8 +165,12 @@ export function Login({ onLogin, onSwitchToSignup, onClose }: LoginProps) {
               transition={{ delay: 0.2 }}
               className="text-3xl font-bold mb-2"
             >
-              <span className="text-white">vend</span>
-              <span className="text-white font-black">ai</span>
+              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-light">
+                vend
+              </span>
+              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-black">
+                ai
+              </span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: -10 }}

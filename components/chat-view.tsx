@@ -142,7 +142,7 @@ export function ChatView({
     
     const sidebarWidth = chatHistoryMinimized ? 64 : 280;
     return {
-      paddingLeft: `${sidebarWidth}px`,
+      paddingLeft: `0px`,
       maxWidth: '100vw',
       boxSizing: 'border-box' as const,
     };
@@ -245,8 +245,8 @@ export function ChatView({
                               rows={1}
                               style={{
                                 height: 'auto',
-                                minHeight: '1.5rem',
-                                maxHeight: '9rem',
+                                minHeight: '2.5rem',
+                                maxHeight: '12rem',
                                 scrollbarWidth: 'none',
                                 msOverflowStyle: 'none',
                               }}
@@ -365,8 +365,8 @@ export function ChatView({
                         rows={1}
                         style={{
                           height: 'auto',
-                          minHeight: '1.5rem',
-                          maxHeight: '9rem',
+                          minHeight: '2.5rem',
+                          maxHeight: '12rem',
                           scrollbarWidth: 'none',
                           msOverflowStyle: 'none',
                         }}

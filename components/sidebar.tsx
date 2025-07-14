@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import { X, Package, Check, Clock, Eye } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { OrderTracking } from "./order-tracking"
 
 interface SidebarProps {
   sidebarOpen: boolean
@@ -162,7 +161,6 @@ export function Sidebar({ sidebarOpen, setSidebarOpen, orders }: SidebarProps) {
                 </div>
               </div>
 
-              <OrderTracking order={selectedOrder} onBack={() => setSelectedOrder(null)} />
             </div>
           </motion.div>
         )}
