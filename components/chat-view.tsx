@@ -42,7 +42,7 @@ export function ChatView({
   const welcomeMessages = [
     "Niaje.",
     "Twende.",
-    "#Wantam",
+    //"#Wantam",
     "What do you want to get?",
   ];
   const [randomMessage, setRandomMessage] = useState("");
