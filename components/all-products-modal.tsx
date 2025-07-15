@@ -1,28 +1,29 @@
-"use client"
+"use client";
 
-import { motion, AnimatePresence } from "framer-motion"
-import { X, Plus, Search } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion";
+import { X, Plus, Search } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import Image from "next/image"; // Import Image component
 
 interface AllProductsModalProps {
-  show: boolean
-  onClose: () => void
-  products: any[]
-  onAddToCart: (product: any) => void
+  show: boolean;
+  onClose: () => void;
+  products: any[];
+  onAddToCart: (product: any) => void;
 }
 
 export function AllProductsModal({ show, onClose, products, onAddToCart }: AllProductsModalProps) {
-  const [searchQuery, setSearchQuery] = useState("")
-  
+  const [searchQuery, setSearchQuery] = useState("");
+
   // Safety check to ensure products is an array
-  const safeProducts = Array.isArray(products) ? products : []
-  
+  const safeProducts = Array.isArray(products) ? products : [];
+
   // Filter products based on search query
-  const filteredProducts = safeProducts.filter(product => 
+  const filteredProducts = safeProducts.filter((product) =>
     product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
     product.description.toLowerCase().includes(searchQuery.toLowerCase())
-  )
+  );
 
   return (
     <AnimatePresence>
@@ -49,7 +50,7 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                   <X className="h-4 w-4" />
                 </Button>
               </div>
-              
+
               {/* Search Bar */}
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
@@ -75,14 +76,15 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                     className="glass-effect rounded-lg p-4 hover:bg-white/5 transition-all duration-300"
                   >
                     <div className="aspect-square bg-white/10 rounded-lg mb-3 overflow-hidden">
-                      <img
-                        src={product.image || `/placeholder.svg?height=200&width=200`}
+                      <Image
+                        src={product.image || "/placeholder.webp"} // Use WebP placeholder
                         alt={product.name}
+                        width={200} // Match display size
+                        height={200}
+                        quality={75} // Balance quality and size
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement
-                          target.src = `/placeholder.svg?height=200&width=200`
-                        }}
+                        placeholder="blur" // Optional: Add blur effect
+                        blurDataURL="/placeholder.webp" // Low-res placeholder
                       />
                     </div>
                     <h3 className="font-medium mb-2">{product.name}</h3>
@@ -93,8 +95,8 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                         <Button
                           size="sm"
                           onClick={() => {
-                            onAddToCart(product)
-                            onClose()
+                            onAddToCart(product);
+                            onClose();
                           }}
                           className="bg-white text-black hover:bg-gray-200"
                         >
@@ -106,7 +108,7 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                   </motion.div>
                 ))}
               </div>
-              
+
               {/* No results message */}
               {filteredProducts.length === 0 && searchQuery && (
                 <div className="text-center py-8">
@@ -118,5 +120,5 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
         </motion.div>
       )}
     </AnimatePresence>
-  )
+  );
 }
