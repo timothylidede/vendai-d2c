@@ -92,7 +92,6 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
               <div className="text-center py-8">
                 <Package className="h-16 w-16 mx-auto mb-4 text-gray-600" />
                 <h3 className="text-lg font-medium mb-2">No Orders Yet</h3>
-                <p className="text-gray-400">Your order history will appear here</p>
               </div>
             ) : (
               <div className="space-y-4">

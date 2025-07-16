@@ -132,6 +132,36 @@ export function ChatHistorySidebar({
 
   return (
     <>
+      <style jsx global>{`
+        .custom-scrollbar {
+          scrollbar-width: thin;
+          scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 6px;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+          border-radius: 3px;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 3px;
+          transition: background 0.2s ease;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar-corner {
+          background: transparent;
+        }
+      `}</style>
+
       {/* Mobile/Tablet Backdrop */}
       <AnimatePresence>
         {isOpen && (
@@ -177,7 +207,7 @@ export function ChatHistorySidebar({
             </div>
           </div>
 
-          <div className="flex-1 overflow-y-auto p-4 overscroll-contain">
+          <div className="flex-1 overflow-y-auto p-4 overscroll-contain custom-scrollbar">
             {chatSessions.length === 0 ? (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -234,7 +264,7 @@ export function ChatHistorySidebar({
                     initial={{ opacity: 0, scale: 0.95, y: 10 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.95, y: 10 }}
-                    className="absolute bottom-full left-0 right-0 mb-2 bg-black/90 backdrop-blur-xl rounded-xl border border-white/10 p-4 z-50"
+                    className="absolute bottom-full left-0 right-0 mb-2 bg-black/90 backdrop-blur-xl rounded-xl border border-white/10 p-4 z-50 custom-scrollbar"
                   >
                     <div className="space-y-4">
                       <div className="border-b border-white/10 pb-3">
@@ -344,7 +374,7 @@ export function ChatHistorySidebar({
                 </div>
               </div>
 
-              <div className="flex-1 overflow-y-auto p-4 overscroll-contain">
+              <div className="flex-1 overflow-y-auto p-4 overscroll-contain custom-scrollbar">
                 {chatSessions.length === 0 ? (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -401,7 +431,7 @@ export function ChatHistorySidebar({
                         initial={{ opacity: 0, scale: 0.95, y: 10 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 10 }}
-                        className="absolute bottom-full left-0 right-0 mb-2 bg-black/90 backdrop-blur-xl rounded-xl border border-white/10 p-4 z-50"
+                        className="absolute bottom-full left-0 right-0 mb-2 bg-black/90 backdrop-blur-xl rounded-xl border border-white/10 p-4 z-50 custom-scrollbar"
                       >
                         <div className="space-y-4">
                           <div className="border-b border-white/10 pb-3">

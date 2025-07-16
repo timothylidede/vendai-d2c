@@ -149,10 +149,10 @@ export function ChatView({
   };
 
   return (
-    <div className="flex-1 flex flex-col min-h-[calc(100vh-64px)] relative transition-all duration-300">
+    <div className="flex-1 flex flex-col h-full relative transition-all duration-300 overflow-hidden">
       {/* Main Content Area - Scrollable */}
       <div 
-        className="flex-1 flex flex-col items-center justify-center overflow-y-auto pb-4 md:pb-0"
+        className="flex-1 overflow-y-auto"
         style={{
           scrollbarWidth: 'none',
           msOverflowStyle: 'none',
@@ -165,7 +165,7 @@ export function ChatView({
           }
         `}</style>
         
-        <div className="max-w-4xl w-full px-3 md:px-4 py-4 md:py-8 transition-all duration-300">
+        <div className="w-full justify-center px-3 md:px-4 py-4 md:py-8 transition-all duration-300">
           {/* Back to Main Button - Only show when needed */}
           {(showBackButton || isInSubView) && (
             <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="mb-4 md:mb-6">
@@ -176,123 +176,125 @@ export function ChatView({
             </motion.div>
           )}
 
-          {/* Welcome Screen */}
-          {messages.length === 0 && (
-            <div className="flex flex-col items-center justify-center min-h-[50vh] md:min-h-[60vh] px-4">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="text-center mb-6 md:mb-8"
-              >
-                {/* Greeting with Glow Effect */}
-                <motion.h1 
-                  className="text-xl md:text-2xl lg:text-3xl font-extralight mb-4 relative"
-                  animate={{
-                    textShadow: [
-                      "0 0 10px rgba(168, 85, 247, 0.5)",
-                      "0 0 20px rgba(168, 85, 247, 0.8)",
-                      "0 0 10px rgba(168, 85, 247, 0.5)"
-                    ]
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    repeatType: "reverse"
-                  }}
-                >
-                  <span className="text-white bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    {randomMessage}
-                  </span>
-                </motion.h1>
-              </motion.div>
-
-              {/* Desktop Chat Input - Hidden on mobile */}
-              {isLargeScreen && (
+          <div className="mt-10">
+            {/* Welcome Screen */}
+            {messages.length === 0 && (
+              <div className="flex flex-col items-center justify-center px-4">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
-                  className="w-full max-w-2xl mb-8"
+                  transition={{ delay: 0.2 }}
+                  className="text-center mb-6 md:mb-8"
                 >
-                  {/* Grok-style Chat Input */}
-                  <div className="relative">
-                    <form onSubmit={handleSubmit} className="relative">
-                      <motion.div 
-                        className="bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-gray-700/50 py-3 px-4 shadow-2xl relative"
-                        animate={{
-                          boxShadow: [
-                            "0 0 0 1px rgba(168, 85, 247, 0.2)",
-                            "0 0 0 2px rgba(168, 85, 247, 0.4)",
-                            "0 0 0 1px rgba(168, 85, 247, 0.2)"
-                          ]
-                        }}
-                        transition={{
-                          duration: 2,
-                          repeat: Infinity,
-                          repeatType: "reverse"
-                        }}
-                      >
-                        <div className="flex flex-col space-y-3">
-                          <div className="flex-1">
-                            <textarea
-                              value={input}
-                              onChange={handleInputChange}
-                              onKeyPress={handleKeyPress}
-                              placeholder="Ask me about products..."
-                              className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto"
-                              disabled={isLoading}
-                              rows={1}
-                              style={{
-                                height: 'auto',
-                                minHeight: '2.5rem',
-                                maxHeight: '12rem',
-                                scrollbarWidth: 'none',
-                                msOverflowStyle: 'none',
-                              }}
-                              onInput={(e) => {
-                                const target = e.target as HTMLTextAreaElement;
-                                target.style.height = 'auto';
-                                target.style.height = Math.min(target.scrollHeight, 144) + 'px';
-                              }}
-                              maxLength={1000}
-                            />
-                          </div>
-                          <div className="flex justify-end">
-                            {/* Submit Button */}
-                            <motion.button
-                              type="submit"
-                              disabled={isLoading || !input.trim()}
-                              whileHover={{ scale: 1.05 }}
-                              whileTap={{ scale: 0.95 }}
-                              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 disabled:opacity-50 rounded-xl px-4 py-2 transition-all duration-200 flex items-center justify-center min-w-[40px]"
-                            >
-                              <Send className="h-4 w-4" />
-                            </motion.button>
-                          </div>
-                        </div>
-                      </motion.div>
-                    </form>
-                  </div>
+                  {/* Greeting with Glow Effect */}
+                  <motion.h1 
+                    className="text-xl md:text-2xl lg:text-3xl font-extralight mb-4 relative"
+                    animate={{
+                      textShadow: [
+                        "0 0 10px rgba(168, 85, 247, 0.5)",
+                        "0 0 20px rgba(168, 85, 247, 0.8)",
+                        "0 0 10px rgba(168, 85, 247, 0.5)"
+                      ]
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      repeatType: "reverse"
+                    }}
+                  >
+                    <span className="text-white bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                      {randomMessage}
+                    </span>
+                  </motion.h1>
                 </motion.div>
-              )}
 
-              {/* Product Shortcuts - Only show when no messages */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-                className="w-full max-w-3xl mb-8"
-              >
-                <ProductShortcuts products={products} onQuickAdd={onQuickAdd} onViewAll={onViewAll} />
-              </motion.div>
-            </div>
-          )}
+                {/* Desktop Chat Input - Hidden on mobile */}
+                {isLargeScreen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                    className="w-full max-w-2xl mb-8"
+                  >
+                    {/* Grok-style Chat Input */}
+                    <div className="relative">
+                      <form onSubmit={handleSubmit} className="relative">
+                        <motion.div 
+                          className="bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-gray-700/50 py-3 px-4 shadow-2xl relative"
+                          animate={{
+                            boxShadow: [
+                              "0 0 0 1px rgba(168, 85, 247, 0.2)",
+                              "0 0 0 2px rgba(168, 85, 247, 0.4)",
+                              "0 0 0 1px rgba(168, 85, 247, 0.2)"
+                            ]
+                          }}
+                          transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                            repeatType: "reverse"
+                          }}
+                        >
+                          <div className="flex flex-col space-y-3">
+                            <div className="flex-1">
+                              <textarea
+                                value={input}
+                                onChange={handleInputChange}
+                                onKeyPress={handleKeyPress}
+                                placeholder="Ask me about products..."
+                                className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto"
+                                disabled={isLoading}
+                                rows={1}
+                                style={{
+                                  height: 'auto',
+                                  minHeight: '2.5rem',
+                                  maxHeight: '12rem',
+                                  scrollbarWidth: 'none',
+                                  msOverflowStyle: 'none',
+                                }}
+                                onInput={(e) => {
+                                  const target = e.target as HTMLTextAreaElement;
+                                  target.style.height = 'auto';
+                                  target.style.height = Math.min(target.scrollHeight, 144) + 'px';
+                                }}
+                                maxLength={1000}
+                              />
+                            </div>
+                            <div className="flex justify-end">
+                              {/* Submit Button */}
+                              <motion.button
+                                type="submit"
+                                disabled={isLoading || !input.trim()}
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 disabled:opacity-50 rounded-xl px-4 py-2 transition-all duration-200 flex items-center justify-center min-w-[40px]"
+                              >
+                                <Send className="h-4 w-4" />
+                              </motion.button>
+                            </div>
+                          </div>
+                        </motion.div>
+                      </form>
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* Product Shortcuts - Only show when no messages */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                  className="w-full max-w-3xl mb-8 overflow-hidden"
+                >
+                  <ProductShortcuts products={products} onQuickAdd={onQuickAdd} onViewAll={onViewAll} />
+                </motion.div>
+              </div>
+            )}
+          </div>
 
           {/* Chat Messages with Better Spacing */}
           {messages.length > 0 && (
-            <div className="flex flex-col items-center justify-center min-h-[50vh] md:min-h-[60vh]">
-              <div className="w-full max-w-4xl space-y-4 md:space-y-8 pb-4 md:pb-24">
+            <div className="flex flex-col items-center justify-center">
+              <div className="max-w-3xl mx-auto space-y-4 md:space-y-8 pb-4 md:pb-24">
                 {messages.map((message, index) => renderMessage(message, index))}
               </div>
             </div>
@@ -331,10 +333,10 @@ export function ChatView({
       {/* Chat Input Area - Fixed at bottom with transparent background */}
       {shouldShowChatInput && (
         <div
-          className="sticky bottom-0 z-30 transition-all duration-300 bg-transparent"
+          className="flex-shrink-0 z-30 transition-all duration-300 bg-transparent"
           style={getContainerStyle()}
         >
-          <div className="max-w-2xl mx-auto p-3 md:p-4">
+          <div className="max-w-3xl mx-auto p-3 md:p-4">
             {/* Grok-style Chat Input */}
             <div className="relative">
               <form onSubmit={handleSubmit} className="relative">
