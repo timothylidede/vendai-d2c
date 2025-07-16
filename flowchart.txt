@@ -1,0 +1,23 @@
+[Start]
+   ↓ (App mounts)
+[Loading Screen] ←→ [Authentication Check]
+   ↓ (loading false)       ↓ (user exists)       ↓ (user null)
+[Fetch Data] --------→ [Main UI] ←------------- [Limited UI]
+   ↓                      ↓
+   |                      | (User actions)
+   |                      |
+   |→ [Chat View] ←→ [Cart Management] ←→ [Checkout]
+   |                      |                      |
+   |                      |→ [Product Browsing]  |→ [Main UI]
+   |                      |                      |
+   |                      |→ [Order History] ----|→ [Main UI]
+   |                      |                      |
+   |                      |→ [Settings View] ----|→ [Main UI]
+   |                      |                      |
+   |                      |→ [Login Prompt] -----|→ [Authentication Actions]
+   |                      |
+   |                      |→ [Main UI]
+   |
+   |→ [Login Prompt] → [Authentication Actions] → [Main UI]
+   |
+   |→ [Main UI] (Loop back)
