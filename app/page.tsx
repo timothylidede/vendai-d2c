@@ -12,7 +12,7 @@ import {
   userPreferencesService,
   realtimeService,
 } from "@/lib/firebase-services"
-import type { CartItem, Order, ChatSession, Message, Product } from "@/lib/types" // Import Product and UserData type
+import type { CartItem, Order, ChatSession, Message, Product } from "@/lib/types"
 
 // Components
 import { Header } from "@/components/header"
@@ -30,7 +30,7 @@ import { CheckoutModal } from "@/components/checkout-modal"
 import { ProductManagementModal } from "@/components/product-management-modal"
 import { OrderHistoryModal } from "@/components/order-history-modal"
 
-// Example of a simple debounce function (can be placed in lib/utils.ts)
+// Simple debounce function
 function useDebounce(callback: (...args: any[]) => void, delay: number) {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
   return useCallback(
@@ -47,7 +47,7 @@ function useDebounce(callback: (...args: any[]) => void, delay: number) {
 }
 
 export default function Home() {
-  const { user, userData, loading, logout } = useAuth() // Removed onLogin, onSignup from useAuth destructuring
+  const { user, userData, loading, logout } = useAuth()
 
   // UI state
   const [currentView, setCurrentView] = useState("chat")
@@ -67,39 +67,48 @@ export default function Home() {
   const [showSignup, setShowSignup] = useState(false)
   const [showLoginPrompt, setShowLoginPrompt] = useState(false)
   const [showCartAdded, setShowCartAdded] = useState(false)
-  const [isOnline, setIsOnline] = useState(true) // New state for online status
-  const [chatHistoryMinimized, setChatHistoryMinimized] = useState(false) // Declare chatHistoryMinimized variable
+  const [isOnline, setIsOnline] = useState(true)
+  const [chatHistoryMinimized, setChatHistoryMinimized] = useState(false)
 
   // Data state
   const [cart, setCart] = useState<CartItem[]>([])
   const [orders, setOrders] = useState<Order[]>([])
   const [chatSessions, setChatSessions] = useState<ChatSession[]>([])
   const [currentSessionId, setCurrentSessionId] = useState("default")
-  const [products, setProducts] = useState<Product[]>(PRODUCTS) // Explicitly type products
+  const [products, setProducts] = useState<Product[]>(PRODUCTS)
+
+  // Pagination state
+  const [/* lastOrderDoc */ , setLastOrderDoc] = useState<any>(undefined)
+  const [/* loadingMoreOrders */ , setLoadingMoreOrders] = useState(false)
 
   // Chat state
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState("")
   const [isLoading, setIsLoading] = useState(false)
 
+  // Active chat session listener
+  const [activeChatUnsubscribe, setActiveChatUnsubscribe] = useState<(() => void) | null>(null)
+
+  // Debounced functions - WRITE ONLY, NO READ CHECKS
+  const debouncedUpdateCart = useDebounce((uid: string, items: CartItem[]) => {
+    cartService.updateUserCart(uid, items, true)
+  }, 1500) // Increased debounce time
+
+  const debouncedSaveChatSession = useDebounce((session: ChatSession) => {
+    chatService.saveChatSession(session, true)
+  }, 2000) // Increased debounce time
+
   // Function to handle viewing all products
   const onViewAll = () => {
     setShowAllProducts(true)
   }
-
-  // Debounced functions
-  const debouncedUpdateCart = useDebounce(
-    (uid: string, items: CartItem[]) => cartService.updateUserCart(uid, items),
-    500,
-  )
-  const debouncedSaveChatSession = useDebounce((session: ChatSession) => chatService.saveChatSession(session), 500)
 
   // Check network status
   useEffect(() => {
     const handleOnline = () => setIsOnline(true)
     const handleOffline = () => setIsOnline(false)
 
-    setIsOnline(navigator.onLine) // Set initial status
+    setIsOnline(navigator.onLine)
 
     window.addEventListener("online", handleOnline)
     window.addEventListener("offline", handleOffline)
@@ -110,89 +119,117 @@ export default function Home() {
     }
   }, [])
 
-  // Real-time subscriptions
-  useEffect(() => {
-    if (!user?.uid || !isOnline) return // Only subscribe if online
-
-    const unsubscribeCart = realtimeService.subscribeToUserCart(user.uid, (cartData: CartItem[]) => {
-      setCart(cartData)
-    })
-
-    const unsubscribeOrders = realtimeService.subscribeToUserOrders(user.uid, (ordersData: Order[]) => {
-      setOrders(ordersData)
-    })
-
-    const unsubscribeChatSessions = realtimeService.subscribeToUserChatSessions(
-      user.uid,
-      (sessionsData: ChatSession[]) => {
-        setChatSessions(sessionsData)
-      },
-    )
-
-    return () => {
-      unsubscribeCart()
-      unsubscribeOrders()
-      unsubscribeChatSessions()
-    }
-  }, [user?.uid, isOnline]) // Re-run when online status changes
-
-  // Load initial data from Firebase
+  // SMART CACHING - Load from cache first, then sync if needed
   useEffect(() => {
     const loadUserData = async () => {
       if (!user?.uid) return
 
       try {
-        // Load cart from Firebase
-        const cartData: CartItem[] = await cartService.getUserCart(user.uid)
-        setCart(cartData)
+        // ALWAYS load from cache first
+        const cachedCart = JSON.parse(localStorage.getItem("vendai-cart") || "[]") as CartItem[]
+        const cachedOrders = JSON.parse(localStorage.getItem("vendai-orders") || "[]") as Order[]
+        const cachedSessions = JSON.parse(localStorage.getItem("vendai-chat-sessions") || "[]") as ChatSession[]
 
-        // Load orders from Firebase
-        const ordersData: Order[] = await orderService.getUserOrders(user.uid)
-        setOrders(ordersData)
+        // Set cached data immediately
+        setCart(cachedCart)
+        setOrders(cachedOrders)
+        setChatSessions(cachedSessions)
 
-        // Load chat sessions from Firebase
-        const sessionsData: ChatSession[] = await chatService.getUserChatSessions(user.uid)
-        setChatSessions(sessionsData)
+        // Only sync with Firestore if online and cache might be stale
+        if (isOnline) {
+          const lastSync = localStorage.getItem("vendai-last-sync")
+          const now = Date.now()
+          const fiveMinutes = 5 * 60 * 1000
+
+          // Only sync if last sync was more than 5 minutes ago
+          if (!lastSync || now - Number.parseInt(lastSync) > fiveMinutes) {
+            console.log("[Cache] Syncing with Firestore...")
+
+            // Sync cart only if different
+            const cartData = await cartService.getUserCart(user.uid)
+            if (JSON.stringify(cartData) !== JSON.stringify(cachedCart)) {
+              setCart(cartData)
+              localStorage.setItem("vendai-cart", JSON.stringify(cartData))
+            }
+
+            // Sync orders only if different
+            const { orders: ordersData } = await realtimeService.getUserOrdersOnce(user.uid)
+            if (JSON.stringify(ordersData) !== JSON.stringify(cachedOrders)) {
+              setOrders(ordersData)
+              localStorage.setItem("vendai-orders", JSON.stringify(ordersData))
+            }
+
+            // Sync chat sessions only if different
+            const sessionsData = await realtimeService.getUserChatSessionsOnce(user.uid)
+            if (JSON.stringify(sessionsData) !== JSON.stringify(cachedSessions)) {
+              setChatSessions(sessionsData)
+              localStorage.setItem("vendai-chat-sessions", JSON.stringify(sessionsData))
+            }
+
+            localStorage.setItem("vendai-last-sync", now.toString())
+          } else {
+            console.log("[Cache] Using cached data, sync not needed")
+          }
+        }
       } catch (error) {
-        console.error("Error loading user data from Firebase:", error)
-        // Fallback to localStorage if Firebase fails or offline
-        const savedCart = JSON.parse(localStorage.getItem("vendai-cart") || "[]") as CartItem[]
-        const savedSessions = JSON.parse(localStorage.getItem("vendai-chat-sessions") || "[]") as ChatSession[]
-        setCart(savedCart)
-        setChatSessions(savedSessions)
+        console.error("Error loading user data:", error)
       }
     }
 
-    if (!loading && user && isOnline) {
+    if (!loading && user) {
       loadUserData()
-    } else if (!loading && !isOnline) {
-      // If offline, load from localStorage immediately
-      const savedCart = JSON.parse(localStorage.getItem("vendai-cart") || "[]") as CartItem[]
-      const savedSessions = JSON.parse(localStorage.getItem("vendai-chat-sessions") || "[]") as ChatSession[]
-      setCart(savedCart)
-      setChatSessions(savedSessions)
+    } else if (!loading && !user) {
+      // Clear data when logged out
+      setCart([])
+      setOrders([])
+      setChatSessions([])
     }
-  }, [user, loading, isOnline]) // Re-run when online status changes
+  }, [user, loading, isOnline])
 
-  // Sync cart with Firebase when it changes
+  // WRITE-ONLY cart sync - no read checks
   useEffect(() => {
-    if (user?.uid && cart.length >= 0 && isOnline) {
+    if (user?.uid && isOnline && cart.length > 0) {
       debouncedUpdateCart(user.uid, cart)
     }
     localStorage.setItem("vendai-cart", JSON.stringify(cart))
   }, [cart, user?.uid, debouncedUpdateCart, isOnline])
 
-  // Sync chat sessions with Firebase when they change
+  // WRITE-ONLY chat session sync - no read checks
   useEffect(() => {
-    if (user?.uid && chatSessions.length >= 0 && isOnline) {
-      chatSessions.forEach((session) => {
-        if (session.userId === user.uid) {
-          debouncedSaveChatSession(session)
-        }
-      })
+    if (user?.uid && isOnline) {
+      const sessionToSave = chatSessions.find((s) => s.id === currentSessionId)
+      if (sessionToSave && sessionToSave.messages.length > 0) {
+        debouncedSaveChatSession(sessionToSave)
+      }
     }
     localStorage.setItem("vendai-chat-sessions", JSON.stringify(chatSessions))
-  }, [chatSessions, user?.uid, debouncedSaveChatSession, isOnline])
+  }, [chatSessions, user?.uid, debouncedSaveChatSession, isOnline, currentSessionId])
+
+  // Set up active chat session listener only when actively chatting
+  useEffect(() => {
+    if (user?.uid && currentView === "chat" && messages.length > 0) {
+      // Clean up previous listener
+      if (activeChatUnsubscribe) {
+        activeChatUnsubscribe()
+      }
+
+      // Set up new listener for active session
+      const unsubscribe = realtimeService.subscribeToActiveChatSession(currentSessionId, (session) => {
+        if (session && session.messages.length !== messages.length) {
+          setMessages(session.messages)
+        }
+      })
+
+      setActiveChatUnsubscribe(() => unsubscribe)
+    }
+
+    return () => {
+      if (activeChatUnsubscribe) {
+        activeChatUnsubscribe()
+        setActiveChatUnsubscribe(null)
+      }
+    }
+  }, [user?.uid, currentView, messages.length, currentSessionId])
 
   useEffect(() => {
     if (!loading && user && typeof window !== "undefined") {
@@ -203,6 +240,60 @@ export default function Home() {
       setChatHistoryOpen(false)
     }
   }, [user, loading])
+
+  // MANUAL REFRESH FUNCTIONS
+  /*
+  const handleRefreshCart = async () => {
+    if (!user?.uid || !isOnline) return
+    try {
+      const cartData = await realtimeService.getUserCartOnce(user.uid)
+      setCart(cartData)
+      localStorage.setItem("vendai-cart", JSON.stringify(cartData))
+    } catch (error) {
+      console.error("Error refreshing cart:", error)
+    }
+  }
+
+  const handleRefreshOrders = async () => {
+    if (!user?.uid || !isOnline) return
+    try {
+      const { orders: ordersData } = await realtimeService.getUserOrdersOnce(user.uid)
+      setOrders(ordersData)
+      setLastOrderDoc(undefined) // Reset pagination
+      localStorage.setItem("vendai-orders", JSON.stringify(ordersData))
+    } catch (error) {
+      console.error("Error refreshing orders:", error)
+    }
+  }
+
+  const handleLoadMoreOrders = async () => {
+    if (!user?.uid || !isOnline || loadingMoreOrders) return
+    try {
+      setLoadingMoreOrders(true)
+      const { orders: newOrders, lastDoc } = await realtimeService.getUserOrdersOnce(user.uid, lastOrderDoc)
+      if (newOrders.length > 0) {
+        setOrders((prev) => [...prev, ...newOrders])
+        setLastOrderDoc(lastDoc)
+        localStorage.setItem("vendai-orders", JSON.stringify([...orders, ...newOrders]))
+      }
+    } catch (error) {
+      console.error("Error loading more orders:", error)
+    } finally {
+      setLoadingMoreOrders(false)
+    }
+  }
+
+  const handleRefreshChatSessions = async () => {
+    if (!user?.uid || !isOnline) return
+    try {
+      const sessionsData = await realtimeService.getUserChatSessionsOnce(user.uid)
+      setChatSessions(sessionsData)
+      localStorage.setItem("vendai-chat-sessions", JSON.stringify(sessionsData))
+    } catch (error) {
+      console.error("Error refreshing chat sessions:", error)
+    }
+  }
+  */
 
   // Chat functions
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -221,9 +312,9 @@ export default function Home() {
 
     setMessages((prev) => [...prev, userMessage])
 
-    // Save search to user preferences
+    // Save search to user preferences (but don't wait for it)
     if (user?.uid) {
-      userPreferencesService.addToSearchHistory(user.uid, input.trim())
+      userPreferencesService.addToSearchHistory(user.uid, input.trim()).catch(console.error)
     }
 
     setInput("")
@@ -281,19 +372,21 @@ export default function Home() {
         return [session, ...prev]
       }
     })
-
-    // Save to Firebase
-    if (user?.uid && isOnline) {
-      chatService.saveChatSession(session)
-    }
   }
 
-  // Cart functions with Firebase sync
+  // Cart functions - LOAD CART ONLY WHEN NEEDED
   const handleAddToCart = async (product: Product, quantity = 1) => {
     if (!user) {
       setShowLoginPrompt(true)
       return
     }
+
+    // Load fresh cart data when adding items
+    /*
+    if (isOnline) {
+      await handleRefreshCart()
+    }
+    */
 
     const cartButton = document.querySelector("[data-cart-button]")
     if (cartButton) {
@@ -306,14 +399,12 @@ export default function Home() {
       if (existingItem) {
         return prevCart.map((item) => (item.id === product.id ? { ...item, quantity: item.quantity + quantity } : item))
       }
-      // Ensure price is a number, provide default if undefined
       const itemPrice = product.price ?? 0
       return [...prevCart, { ...product, price: itemPrice, quantity }] as CartItem[]
     })
 
-    // Trigger the fancy animation
     setShowCartAdded(true)
-    setTimeout(() => setShowCartAdded(false), 1500) // Show for 1.5 seconds
+    setTimeout(() => setShowCartAdded(false), 1500)
   }
 
   const handleRemoveFromCart = (productId: number) => {
@@ -335,24 +426,30 @@ export default function Home() {
   }
 
   const handleCheckoutComplete = async (orderData: any) => {
-    // Save order to Firebase
-    if (user?.uid && isOnline) {
-      const orderId = await orderService.createOrder({
+    if (!user?.uid || !isOnline) {
+      console.error("User not authenticated or offline, cannot complete checkout.")
+      return
+    }
+
+    try {
+      const newOrderId = await orderService.createOrderAndClearCartBatch(user.uid, {
         ...orderData,
         userId: user.uid,
       })
-      if (orderId) {
-        orderData.id = orderId
+
+      if (newOrderId) {
+        orderData.id = newOrderId
+        setOrders((prev) => [orderData, ...prev])
+        setCart([])
+        setShowCheckout(false)
+        // Update cache
+        localStorage.setItem("vendai-orders", JSON.stringify([orderData, ...orders]))
+        localStorage.setItem("vendai-cart", JSON.stringify([]))
+      } else {
+        console.error("Failed to create order and clear cart.")
       }
-    }
-
-    setOrders((prev) => [orderData, ...prev])
-    setCart([])
-    setShowCheckout(false)
-
-    // Clear cart in Firebase
-    if (user?.uid && isOnline) {
-      cartService.clearUserCart(user.uid)
+    } catch (error) {
+      console.error("Error during batched checkout complete:", error)
     }
   }
 
@@ -362,7 +459,6 @@ export default function Home() {
       return
     }
     items.forEach((item) => {
-      // item is CartItem, which now extends Product, so it's compatible
       handleAddToCart(item, item.quantity)
     })
   }
@@ -379,6 +475,12 @@ export default function Home() {
 
   const handleLogout = async () => {
     try {
+      // Clean up active chat listener
+      if (activeChatUnsubscribe) {
+        activeChatUnsubscribe()
+        setActiveChatUnsubscribe(null)
+      }
+
       await logout()
       setCart([])
       setOrders([])
@@ -388,6 +490,7 @@ export default function Home() {
       localStorage.removeItem("vendai-cart")
       localStorage.removeItem("vendai-chat-sessions")
       localStorage.removeItem("vendai-orders")
+      localStorage.removeItem("vendai-last-sync")
       setChatHistoryOpen(false)
       console.log("Logged out successfully at", new Date().toLocaleString("en-KE", { timeZone: "Africa/Nairobi" }))
     } catch (error) {
@@ -498,7 +601,7 @@ export default function Home() {
       {/* Authentication Modals */}
       {showLogin && (
         <Login
-          onLogin={handleLogin} // Re-added
+          onLogin={handleLogin}
           onSwitchToSignup={() => {
             setShowLogin(false)
             setShowSignup(true)
@@ -509,7 +612,7 @@ export default function Home() {
 
       {showSignup && (
         <Signup
-          onSignup={handleSignup} // Re-added
+          onSignup={handleSignup}
           onSwitchToLogin={() => {
             setShowSignup(false)
             setShowLogin(true)
@@ -565,8 +668,8 @@ export default function Home() {
           setShowOrderHistory={setShowOrderHistory}
           orders={orders}
           onLogout={handleLogout}
-          onLogin={() => setShowLogin(true)} // Re-added
-          onSignup={() => setShowSignup(true)} // Re-added
+          onLogin={() => setShowLogin(true)}
+          onSignup={() => setShowSignup(true)}
           onBackToChat={handleBackToChat}
           user={userData}
           isAuthenticated={!!user}

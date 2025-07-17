@@ -16,13 +16,13 @@ interface HeaderProps {
   setShowOrderHistory: (show: boolean) => void
   orders: Order[]
   onLogout: () => void
-  onLogin: () => void // Re-added
-  onSignup: () => void // Re-added
+  onLogin: () => void
+  onSignup: () => void
   onBackToChat: () => void
   user: any
   isAuthenticated: boolean
   onSettings: () => void
-  showCartAdded: boolean // NEW PROP - Re-added
+  showCartAdded: boolean
 }
 
 export function Header({
@@ -36,13 +36,13 @@ export function Header({
   setShowOrderHistory,
   orders,
   onLogout,
-  onLogin, // Re-added
-  onSignup, // Re-added
+  onLogin,
+  onSignup,
   onBackToChat,
   user,
   isAuthenticated,
   onSettings,
-  showCartAdded, // NEW PROP - Re-added
+  showCartAdded,
 }: HeaderProps) {
   const totalCartItems = cart.reduce((sum, item) => sum + item.quantity, 0)
   const userName = user?.name || "Guest"
@@ -156,9 +156,12 @@ export function Header({
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => setShowCart(true)}
+                  onClick={() => {
+                    setShowCart(true)
+                  }}
                   className="relative hover:bg-white/5 transition-colors rounded-lg"
-                  data-cart-button // Added data attribute for animation
+                  data-cart-button
+                  title="View Cart (Auto-refresh)"
                 >
                   <ShoppingCart className="h-4 w-4" />
                   {totalCartItems > 0 && (

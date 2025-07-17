@@ -282,13 +282,11 @@ export function ChatView({
           )}
         </div>
         {/* Chat Messages with Better Spacing */}
-        {messages.length > 0 && (
-          <div className="w-full space-y-4 md:space-y-8 pb-4 md:pb-24">
-            {" "}
-            {/* Removed max-w-3xl mx-auto */}
-            {messages.map((message, index) => renderMessage(message, index))}
-          </div>
-        )}
+        <div className="w-full max-w-3xl mx-auto space-y-4 md:space-y-8 pb-4 md:pb-24">
+          {" "}
+          {/* Removed max-w-3xl mx-auto */}
+          {messages.map((message, index) => renderMessage(message, index))}
+        </div>
         {/* Loading Animation */}
         {isLoading && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start mb-4 md:mb-8">

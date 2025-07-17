@@ -94,7 +94,7 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-3">
                 <Package className="h-5 w-5 text-blue-400" />
                 <h2 className="text-xl font-bold text-gradient">Orders</h2>
               </div>
