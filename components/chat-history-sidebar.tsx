@@ -42,11 +42,11 @@ export function ChatHistorySidebar({
   const [showProfile, setShowProfile] = useState(false)
 
   // Safely extract user data from Firestore userData
-  const userName = user?.name || "User";
-  const userEmail = user?.email || "";
+  const userName = user?.name || "User"
+  const userEmail = user?.email || ""
   const memberSince = user?.createdAt
     ? new Date(user.createdAt).toLocaleDateString("en-KE", { month: "short", year: "numeric" })
-    : "Jan 2024";
+    : "Jan 2024"
 
   const categorizeChats = (sessions: ChatSession[]) => {
     const now = new Date()
@@ -86,19 +86,15 @@ export function ChatHistorySidebar({
     }
   }
 
-  const renderChatSection = (sectionChats: ChatSession[], title: string, startIndex: number) => {
+  const renderChatSection = (sectionChats: ChatSession[], title: string) => {
     if (sectionChats.length === 0) return null
-
     return (
       <div className="mb-6">
         <h3 className="text-sm font-medium text-gray-400 mb-3 px-2">{title}</h3>
         <div className="space-y-2">
-          {sectionChats.map((session, index) => (
-            <motion.div
+          {sectionChats.map((session) => (
+            <div // Removed motion.div and its animation props
               key={session.id}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: (startIndex + index) * 0.05 }}
               className={`glass-effect rounded-xl p-3 hover-glow cursor-pointer hover:bg-white/5 transition-all duration-300 ${
                 currentSessionId === session.id ? "border border-purple-500/30 bg-purple-500/10" : ""
               }`}
@@ -123,7 +119,7 @@ export function ChatHistorySidebar({
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
@@ -157,10 +153,10 @@ export function ChatHistorySidebar({
             <h2 className="text-xl font-semibold text-gradient">Chat History</h2>
             <div className="flex items-center space-x-2">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
-                  onClick={handleNewChat} 
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={handleNewChat}
                   className="hover:bg-white/10 rounded-xl h-10 w-10"
                 >
                   <Plus className="h-4 w-4" />
@@ -176,7 +172,6 @@ export function ChatHistorySidebar({
               </Button>
             </div>
           </div>
-
           <div className="flex-1 overflow-y-auto p-4 overscroll-contain">
             {chatSessions.length === 0 ? (
               <motion.div
@@ -190,26 +185,21 @@ export function ChatHistorySidebar({
               </motion.div>
             ) : (
               <>
-                {renderChatSection(todayChats, "Today", 0)}
-                {renderChatSection(yesterdayChats, "Yesterday", todayChats.length)}
-                {renderChatSection(last7DaysChats, "Last 7 Days", todayChats.length + yesterdayChats.length)}
-                {renderChatSection(
-                  olderChats,
-                  "Earlier",
-                  todayChats.length + yesterdayChats.length + last7DaysChats.length,
-                )}
+                {renderChatSection(todayChats, "Today")}
+                {renderChatSection(yesterdayChats, "Yesterday")}
+                {renderChatSection(last7DaysChats, "Last 7 Days")}
+                {renderChatSection(olderChats, "Earlier")}
               </>
             )}
           </div>
-
           <div className="border-t border-white/10 p-4">
             <div className="relative">
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <Button
                   onClick={isAuthenticated ? () => setShowProfile(!showProfile) : handleNewChat}
                   className={`w-full ${
-                    isAuthenticated 
-                      ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600" 
+                    isAuthenticated
+                      ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600"
                       : "bg-white text-black hover:bg-gray-200"
                   } transition-all duration-300 rounded-xl h-12 text-base`}
                 >
@@ -226,7 +216,6 @@ export function ChatHistorySidebar({
                   )}
                 </Button>
               </motion.div>
-
               {/* Profile Dropdown */}
               <AnimatePresence>
                 {showProfile && isAuthenticated && (
@@ -248,7 +237,6 @@ export function ChatHistorySidebar({
                           </div>
                         </div>
                       </div>
-
                       <div className="space-y-2">
                         <div className="flex items-center justify-between text-sm">
                           <span className="text-gray-400">Total Orders</span>
@@ -265,7 +253,6 @@ export function ChatHistorySidebar({
                           <span className="font-medium">{memberSince}</span>
                         </div>
                       </div>
-
                       <div className="border-t border-white/10 pt-3 space-y-2">
                         <Button
                           variant="ghost"
@@ -321,13 +308,12 @@ export function ChatHistorySidebar({
                     </span>
                   </h1>
                 </motion.button>
-
                 <div className="flex items-center space-x-2">
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                    <Button 
-                      variant="ghost" 
-                      size="sm" 
-                      onClick={handleNewChat} 
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={handleNewChat}
                       className="hover:bg-white/10 rounded-xl h-10 w-10"
                     >
                       <Plus className="h-4 w-4" />
@@ -343,7 +329,6 @@ export function ChatHistorySidebar({
                   </Button>
                 </div>
               </div>
-
               <div className="flex-1 overflow-y-auto p-4 overscroll-contain">
                 {chatSessions.length === 0 ? (
                   <motion.div
@@ -357,26 +342,21 @@ export function ChatHistorySidebar({
                   </motion.div>
                 ) : (
                   <>
-                    {renderChatSection(todayChats, "Today", 0)}
-                    {renderChatSection(yesterdayChats, "Yesterday", todayChats.length)}
-                    {renderChatSection(last7DaysChats, "Last 7 Days", todayChats.length + yesterdayChats.length)}
-                    {renderChatSection(
-                      olderChats,
-                      "Earlier",
-                      todayChats.length + yesterdayChats.length + last7DaysChats.length,
-                    )}
+                    {renderChatSection(todayChats, "Today")}
+                    {renderChatSection(yesterdayChats, "Yesterday")}
+                    {renderChatSection(last7DaysChats, "Last 7 Days")}
+                    {renderChatSection(olderChats, "Earlier")}
                   </>
                 )}
               </div>
-
               <div className="border-t border-white/10 p-4">
                 <div className="relative">
                   <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                     <Button
                       onClick={isAuthenticated ? () => setShowProfile(!showProfile) : handleNewChat}
                       className={`w-full ${
-                        isAuthenticated 
-                          ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600" 
+                        isAuthenticated
+                          ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600"
                           : "bg-white text-black hover:bg-gray-200"
                       } transition-all duration-300 rounded-xl h-12 text-base`}
                     >
@@ -393,7 +373,6 @@ export function ChatHistorySidebar({
                       )}
                     </Button>
                   </motion.div>
-
                   {/* Profile Dropdown */}
                   <AnimatePresence>
                     {showProfile && isAuthenticated && (
@@ -415,7 +394,6 @@ export function ChatHistorySidebar({
                               </div>
                             </div>
                           </div>
-
                           <div className="space-y-2">
                             <div className="flex items-center justify-between text-sm">
                               <span className="text-gray-400">Total Orders</span>
@@ -432,7 +410,6 @@ export function ChatHistorySidebar({
                               <span className="font-medium">{memberSince}</span>
                             </div>
                           </div>
-
                           <div className="border-t border-white/10 pt-3 space-y-2">
                             <Button
                               variant="ghost"

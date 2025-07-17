@@ -1,51 +1,66 @@
-"use client";
+"use client"
 
-import { motion, AnimatePresence } from "framer-motion";
-import { X, Package, Clock, CheckCircle, Truck, MapPin, ChevronDown, ChevronUp, Calendar } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion"
+import { X, Package, Clock, CheckCircle, Truck, MapPin, ChevronDown, Calendar } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { useState } from "react"
 
 // Shared Types
-import { Order, OrderItem } from "@/lib/types";
+import type { Order } from "@/lib/types"
 
 interface OrderHistoryModalProps {
-  show: boolean;
-  onClose: () => void;
-  orders: Order[];
+  show: boolean
+  onClose: () => void
+  orders: Order[]
 }
 
 export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalProps) {
-  const [expandedOrder, setExpandedOrder] = useState<string | null>(null);
+  const [expandedOrder, setExpandedOrder] = useState<string | null>(null)
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case "processing": return "text-yellow-400 bg-yellow-400/10";
-      case "shipped": return "text-blue-400 bg-blue-400/10";
-      case "completed": return "text-green-400 bg-green-400/10";
-      case "cancelled": return "text-red-400 bg-red-400/10";
-      default: return "text-gray-400 bg-gray-400/10";
+      case "processing":
+        return "text-yellow-400 bg-yellow-400/10"
+      case "shipped":
+        return "text-blue-400 bg-blue-400/10"
+      case "completed":
+        return "text-green-400 bg-green-400/10"
+      case "cancelled":
+        return "text-red-400 bg-red-400/10"
+      default:
+        return "text-gray-400 bg-gray-400/10"
     }
-  };
+  }
 
   const getStatusIcon = (status: string) => {
     switch (status) {
-      case "processing": return Clock;
-      case "shipped": return Truck;
-      case "completed": return CheckCircle;
-      case "cancelled": return X;
-      default: return Package;
+      case "processing":
+        return Clock
+      case "shipped":
+        return Truck
+      case "completed":
+        return CheckCircle
+      case "cancelled":
+        return X
+      default:
+        return Package
     }
-  };
+  }
 
   const getStatusText = (status: string) => {
     switch (status) {
-      case "processing": return "Processing";
-      case "shipped": return "Shipped";
-      case "completed": return "Delivered";
-      case "cancelled": return "Cancelled";
-      default: return "Unknown";
+      case "processing":
+        return "Processing"
+      case "shipped":
+        return "Shipped"
+      case "completed":
+        return "Delivered"
+      case "cancelled":
+        return "Cancelled"
+      default:
+        return "Unknown"
     }
-  };
+  }
 
   const getTrackingSteps = (status: string) => {
     const steps = [
@@ -53,13 +68,13 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
       { id: "preparing", label: "Preparing", completed: status !== "cancelled" },
       { id: "shipped", label: "Shipped", completed: status === "shipped" || status === "completed" },
       { id: "delivered", label: "Delivered", completed: status === "completed" },
-    ];
-    return steps;
-  };
+    ]
+    return steps
+  }
 
   const toggleOrderExpansion = (orderId: string) => {
-    setExpandedOrder(expandedOrder === orderId ? null : orderId);
-  };
+    setExpandedOrder(expandedOrder === orderId ? null : orderId)
+  }
 
   return (
     <AnimatePresence>
@@ -92,20 +107,17 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
               <div className="text-center py-8">
                 <Package className="h-16 w-16 mx-auto mb-4 text-gray-600" />
                 <h3 className="text-lg font-medium mb-2">No Orders Yet</h3>
+                <p className="text-gray-400 text-sm">Start shopping to see your order history here!</p>
               </div>
             ) : (
               <div className="space-y-4">
-                {orders.map((order, index) => {
-                  const StatusIcon = getStatusIcon(order.status);
-                  const isExpanded = expandedOrder === order.id;
-                  const trackingSteps = getTrackingSteps(order.status);
-
+                {orders.map((order) => {
+                  const StatusIcon = getStatusIcon(order.status)
+                  const isExpanded = expandedOrder === order.id
+                  const trackingSteps = getTrackingSteps(order.status)
                   return (
-                    <motion.div
+                    <div // Removed motion.div and its animation props to prevent "dancing"
                       key={order.id}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.1 }}
                       className="glass-effect rounded-lg overflow-hidden"
                     >
                       {/* Order Header */}
@@ -138,16 +150,12 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                             <div className="text-right">
                               <p className="font-bold">KES {order.total.toLocaleString()}</p>
                             </div>
-                            <motion.div
-                              animate={{ rotate: isExpanded ? 180 : 0 }}
-                              transition={{ duration: 0.2 }}
-                            >
+                            <motion.div animate={{ rotate: isExpanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
                               <ChevronDown className="h-4 w-4 text-gray-400" />
                             </motion.div>
                           </div>
                         </div>
                       </div>
-
                       {/* Expanded Order Details */}
                       <AnimatePresence>
                         {isExpanded && (
@@ -175,9 +183,7 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                                       />
                                       {stepIndex < trackingSteps.length - 1 && (
                                         <div
-                                          className={`w-8 h-0.5 ${
-                                            step.completed ? "bg-green-500" : "bg-gray-600"
-                                          }`}
+                                          className={`w-8 h-0.5 ${step.completed ? "bg-green-500" : "bg-gray-600"}`}
                                         />
                                       )}
                                     </div>
@@ -185,16 +191,12 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                                 </div>
                                 <div className="flex justify-between text-xs text-gray-400 mt-2">
                                   {trackingSteps.map((step) => (
-                                    <span
-                                      key={step.id}
-                                      className={step.completed ? "text-green-400" : ""}
-                                    >
+                                    <span key={step.id} className={step.completed ? "text-green-400" : ""}>
                                       {step.label}
                                     </span>
                                   ))}
                                 </div>
                               </div>
-
                               {/* Order Items */}
                               <div>
                                 <h4 className="font-medium mb-3">Items Ordered</h4>
@@ -223,7 +225,6 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                                   ))}
                                 </div>
                               </div>
-
                               {/* Delivery & Payment Info */}
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div className="glass-effect rounded-lg p-4">
@@ -242,7 +243,6 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                                   <p className="text-xs text-green-400 mt-1">Payment Confirmed</p>
                                 </div>
                               </div>
-
                               {/* Order Summary */}
                               <div className="glass-effect rounded-lg p-4 bg-blue-500/5 border border-blue-500/20">
                                 <div className="flex items-center justify-between">
@@ -256,8 +256,8 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                           </motion.div>
                         )}
                       </AnimatePresence>
-                    </motion.div>
-                  );
+                    </div>
+                  )
                 })}
               </div>
             )}
@@ -265,5 +265,5 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
         </motion.div>
       )}
     </AnimatePresence>
-  );
+  )
 }

@@ -1,26 +1,28 @@
-"use client";
+"use client"
 
-import { motion, AnimatePresence } from "framer-motion";
-import { ShoppingCart, Package, MessageSquare, Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { motion, AnimatePresence } from "framer-motion"
+import { ShoppingCart, Package, MessageSquare, Menu } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import type { CartItem, Order } from "@/lib/types"
 
 interface HeaderProps {
-  sidebarOpen: boolean;
-  setSidebarOpen: (open: boolean) => void;
-  chatHistoryOpen: boolean;
-  setChatHistoryOpen: (open: boolean) => void;
-  cart: any[];
-  setShowCart: (show: boolean) => void;
-  showOrderHistory: boolean;
-  setShowOrderHistory: (show: boolean) => void;
-  orders: any[];
-  onSettings: () => void;
-  onLogout: () => void;
-  onLogin: () => void;
-  onSignup: () => void;
-  onBackToChat: () => void;
-  user: any;
-  isAuthenticated: boolean;
+  sidebarOpen: boolean
+  setSidebarOpen: (open: boolean) => void
+  chatHistoryOpen: boolean
+  setChatHistoryOpen: (open: boolean) => void
+  cart: CartItem[]
+  setShowCart: (show: boolean) => void
+  showOrderHistory: boolean
+  setShowOrderHistory: (show: boolean) => void
+  orders: Order[]
+  onLogout: () => void
+  onLogin: () => void // Re-added
+  onSignup: () => void // Re-added
+  onBackToChat: () => void
+  user: any
+  isAuthenticated: boolean
+  onSettings: () => void
+  showCartAdded: boolean // NEW PROP - Re-added
 }
 
 export function Header({
@@ -33,15 +35,18 @@ export function Header({
   showOrderHistory,
   setShowOrderHistory,
   orders,
-  onSettings,
   onLogout,
-  onLogin,
-  onSignup,
+  onLogin, // Re-added
+  onSignup, // Re-added
   onBackToChat,
   user,
   isAuthenticated,
+  onSettings,
+  showCartAdded, // NEW PROP - Re-added
 }: HeaderProps) {
-  const recentOrder = orders.length > 0 ? orders[0] : null;
+  const totalCartItems = cart.reduce((sum, item) => sum + item.quantity, 0)
+  const userName = user?.name || "Guest"
+  const recentOrder = orders.length > 0 ? orders[0] : null // Re-added recentOrder
 
   return (
     <motion.header
@@ -53,11 +58,7 @@ export function Header({
         <div className="flex items-center space-x-4">
           {/* Mobile Chat History Toggle - Only show when authenticated */}
           {isAuthenticated && (
-            <motion.div 
-              whileHover={{ scale: 1.05 }} 
-              whileTap={{ scale: 0.95 }}
-              className="md:hidden"
-            >
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="md:hidden">
               <Button
                 variant="ghost"
                 size="sm"
@@ -68,14 +69,9 @@ export function Header({
               </Button>
             </motion.div>
           )}
-
           {/* Desktop Chat History Toggle - Only show when authenticated */}
           {isAuthenticated && (
-            <motion.div 
-              whileHover={{ scale: 1.05 }} 
-              whileTap={{ scale: 0.95 }}
-              className="hidden md:block"
-            >
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="hidden md:block">
               <Button
                 variant="ghost"
                 size="sm"
@@ -86,7 +82,6 @@ export function Header({
               </Button>
             </motion.div>
           )}
-
           {/* VendAI Clickable Logo (visible only on large screens) */}
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -104,21 +99,16 @@ export function Header({
             </h1>
           </motion.button>
         </div>
-
         <div className="flex items-center space-x-2">
           {!isAuthenticated ? (
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <Button
                 size="sm"
-                onClick={onLogin}
+                onClick={onLogin} // Restored onClick
                 className="bg-white text-gray-700 hover:bg-gray-50 border border-gray-300 shadow-sm transition-all duration-200 rounded-lg px-4 py-2 flex items-center space-x-2 font-medium"
               >
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  className="flex-shrink-0"
-                >
+                {/* Google icon SVG */}
+                <svg width="18" height="18" viewBox="0 0 24 24">
                   <path
                     fill="#4285F4"
                     d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
@@ -161,7 +151,6 @@ export function Header({
                   )}
                 </Button>
               </motion.div>
-
               {/* Cart */}
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
@@ -169,20 +158,29 @@ export function Header({
                   size="sm"
                   onClick={() => setShowCart(true)}
                   className="relative hover:bg-white/5 transition-colors rounded-lg"
+                  data-cart-button // Added data attribute for animation
                 >
                   <ShoppingCart className="h-4 w-4" />
-                  {cart.length > 0 && (
-                    <motion.div
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white flex items-center justify-center text-xs font-bold"
-                    >
-                      {cart.reduce((sum, item) => sum + item.quantity, 0)}
-                    </motion.div>
+                  {totalCartItems > 0 && (
+                    <span className="absolute -top-1 -right-1 bg-purple-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                      {totalCartItems}
+                    </span>
                   )}
                 </Button>
+                <AnimatePresence>
+                  {showCartAdded && ( // Animation for cart added
+                    <motion.span
+                      initial={{ opacity: 0, y: 10, x: -5 }}
+                      animate={{ opacity: 1, y: 0, x: 0 }}
+                      exit={{ opacity: 0, y: -10, x: 5 }}
+                      transition={{ duration: 0.3 }}
+                      className="absolute -top-4 left-1/2 -translate-x-1/2 text-xs font-bold text-green-400 whitespace-nowrap"
+                    >
+                      +1 Added!
+                    </motion.span>
+                  )}
+                </AnimatePresence>
               </motion.div>
-
               {/* Order History Modal */}
               <AnimatePresence>
                 {showOrderHistory && recentOrder && (
@@ -197,9 +195,16 @@ export function Header({
                       {recentOrder ? (
                         <div className="space-y-3">
                           <div className="flex items-center justify-between">
-                            <span className="font-medium text-sm text-gray-200">Order #{recentOrder.id.split("-").pop()}</span>
+                            <span className="font-medium text-sm text-gray-200">
+                              Order #{recentOrder.id.split("-").pop()}
+                            </span>
                             <span className="text-xs text-gray-400">
-                              {new Date(recentOrder.date).toLocaleDateString("en-KE", { month: "short", day: "numeric" })}
+                              {recentOrder.date
+                                ? new Date(recentOrder.date).toLocaleDateString("en-KE", {
+                                    month: "short",
+                                    day: "numeric",
+                                  })
+                                : "N/A"}
                             </span>
                           </div>
                           <div className="flex items-center justify-between">
@@ -225,5 +230,5 @@ export function Header({
         </div>
       </div>
     </motion.header>
-  );
+  )
 }

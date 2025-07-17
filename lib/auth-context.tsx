@@ -1,33 +1,19 @@
-"use client";
+"use client"
 
-import { createContext, useContext, useEffect, useState } from "react";
-import { auth, db } from "@/lib/firebase";
-import {
-  onAuthStateChanged,
-  signOut as firebaseSignOut,
-} from "firebase/auth";
-import { doc, getDoc } from "firebase/firestore";
-import { User as FirebaseUser } from "firebase/auth"; // Import Firebase User type
+import type React from "react"
 
-interface UserData {
-  uid: string;
-  name: string | null;
-  email: string | null;
-  phone: string | null;
-  photoURL?: string | null;
-  provider: string;
-  address?: string;
-  city?: string;
-  area?: string;
-  createdAt: string;
-  updatedAt: string;
-}
+import { createContext, useContext, useEffect, useState } from "react"
+import { auth, db } from "@/lib/firebase"
+import { onAuthStateChanged, signOut as firebaseSignOut } from "firebase/auth"
+import { doc, getDoc } from "firebase/firestore"
+import type { User as FirebaseUser } from "firebase/auth" // Import Firebase User type
+import type { UserData } from "@/lib/types" // Import UserData from lib/types
 
 interface AuthContextType {
-  user: FirebaseUser | null;
-  userData: UserData | null;
-  loading: boolean;
-  logout: () => Promise<void>;
+  user: FirebaseUser | null
+  userData: UserData | null
+  loading: boolean
+  logout: () => Promise<void>
 }
 
 const AuthContext = createContext<AuthContextType>({
@@ -35,25 +21,25 @@ const AuthContext = createContext<AuthContextType>({
   userData: null,
   loading: true,
   logout: async () => {}, // Default empty logout function
-});
+})
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const [user, setUser] = useState<FirebaseUser | null>(null);
-  const [userData, setUserData] = useState<UserData | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState<FirebaseUser | null>(null)
+  const [userData, setUserData] = useState<UserData | null>(null)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    let unsubscribe: () => void;
-
+    let unsubscribe: () => void
     try {
       unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
-        setUser(firebaseUser);
+        setUser(firebaseUser)
         if (firebaseUser) {
-          const userDoc = await getDoc(doc(db, "users", firebaseUser.uid));
+          const userDoc = await getDoc(doc(db, "users", firebaseUser.uid))
           if (userDoc.exists()) {
             setUserData({
               uid: firebaseUser.uid,
               name: userDoc.data().name || firebaseUser.displayName || null,
+              displayName: userDoc.data().displayName || firebaseUser.displayName || null,
               email: userDoc.data().email || firebaseUser.email || null,
               phone: userDoc.data().phone || null,
               photoURL: userDoc.data().photoURL || firebaseUser.photoURL || null,
@@ -63,39 +49,38 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
               area: userDoc.data().area,
               createdAt: userDoc.data().createdAt || firebaseUser.metadata.creationTime || new Date().toISOString(),
               updatedAt: userDoc.data().updatedAt || firebaseUser.metadata.lastSignInTime || new Date().toISOString(),
-            });
+            })
           } else {
-            setUserData(null); // Handle case where user doc doesn't exist
+            setUserData(null) // Handle case where user doc doesn't exist
           }
         } else {
-          setUserData(null);
+          setUserData(null)
         }
-        setLoading(false);
-      });
+        setLoading(false)
+      })
     } catch (error) {
-      console.error("Auth state change error:", error);
-      setUser(null);
-      setUserData(null);
-      setLoading(false);
+      console.error("Auth state change error:", error)
+      setUser(null)
+      setUserData(null)
+      setLoading(false)
     }
-
-    return () => unsubscribe && unsubscribe();
-  }, []);
+    return () => unsubscribe && unsubscribe()
+  }, [])
 
   const logout = async () => {
     try {
-      await firebaseSignOut(auth);
-      setUser(null);
-      setUserData(null);
+      await firebaseSignOut(auth)
+      setUser(null)
+      setUserData(null)
       // Additional cleanup can be added here if needed
-      console.log("Logged out successfully at", new Date().toLocaleString("en-KE", { timeZone: "Africa/Nairobi" }));
+      console.log("Logged out successfully at", new Date().toLocaleString("en-KE", { timeZone: "Africa/Nairobi" }))
     } catch (error) {
-      console.error("Logout error:", error);
-      throw error; // Re-throw to allow calling component to handle
+      console.error("Logout error:", error)
+      throw error // Re-throw to allow calling component to handle
     }
-  };
+  }
 
-  return <AuthContext.Provider value={{ user, userData, loading, logout }}>{children}</AuthContext.Provider>;
+  return <AuthContext.Provider value={{ user, userData, loading, logout }}>{children}</AuthContext.Provider>
 }
 
-export const useAuth = () => useContext(AuthContext);
+export const useAuth = () => useContext(AuthContext)

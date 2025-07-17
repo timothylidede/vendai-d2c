@@ -3,17 +3,7 @@
 import { motion } from "framer-motion"
 import { Plus, Star, Package } from "lucide-react"
 import { Button } from "@/components/ui/button"
-
-interface Product {
-  id: number
-  name: string
-  price: number
-  category: string
-  description: string
-  image: string
-  brand?: string
-  unit?: string
-}
+import type { Product } from "@/lib/types" // Import Product from lib/types
 
 interface ProductCardResponseProps {
   products: Product[]
@@ -25,7 +15,6 @@ export function ProductCardResponse({ products, onAddToCart, explanation }: Prod
   return (
     <div className="space-y-4">
       {explanation && <p className="text-gray-300 leading-relaxed mb-4">{explanation}</p>}
-
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {products.map((product, index) => (
           <motion.div
@@ -54,7 +43,6 @@ export function ProductCardResponse({ products, onAddToCart, explanation }: Prod
                 }`}
               />
             </div>
-
             <div className="space-y-2">
               <div className="flex items-start justify-between">
                 <h3 className="font-medium text-sm leading-tight">{product.name}</h3>
@@ -62,12 +50,10 @@ export function ProductCardResponse({ products, onAddToCart, explanation }: Prod
                   <span className="text-xs text-blue-400 bg-blue-500/20 px-2 py-1 rounded-full">{product.brand}</span>
                 )}
               </div>
-
               <p className="text-xs text-gray-400 line-clamp-2">{product.description}</p>
-
               <div className="flex items-center justify-between">
                 <div>
-                  <span className="font-bold text-green-400">KES {product.price.toLocaleString()}</span>
+                  <span className="font-bold text-green-400">KES {product.price?.toLocaleString() ?? "N/A"}</span>
                   {product.unit && <span className="text-xs text-gray-400 ml-1">/{product.unit}</span>}
                 </div>
                 <div className="flex items-center space-x-1">
@@ -75,7 +61,6 @@ export function ProductCardResponse({ products, onAddToCart, explanation }: Prod
                   <span className="text-xs text-gray-400">4.5</span>
                 </div>
               </div>
-
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <Button
                   size="sm"

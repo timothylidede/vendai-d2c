@@ -3,15 +3,7 @@
 import { motion } from "framer-motion"
 import { Plus, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
-
-interface Product {
-  id: number
-  name: string
-  price: number
-  category: string
-  description: string
-  image: string
-}
+import type { Product } from "@/lib/types" // Import Product from lib/types
 
 interface ProductShortcutsProps {
   products: Product[]
@@ -22,20 +14,18 @@ interface ProductShortcutsProps {
 export function ProductShortcuts({ products, onQuickAdd, onViewAll }: ProductShortcutsProps) {
   // Safety check to ensure products is an array
   const safeProducts = Array.isArray(products) ? products : []
-
   // Get essential products for shortcuts
   const essentialProducts = safeProducts
     .filter(
       (product) =>
         // Show smaller unit cooking oils, flour, and other daily essentials
-        (product.category.includes("Cooking Oils") && product.price < 300) ||
-        (product.category.includes("Flour") && product.price < 100) ||
-        (product.category.includes("Personal Care") && product.price < 200) ||
-        (product.category.includes("Cleaning") && product.price < 200) ||
-        (product.category.includes("Dairy") && product.price < 400),
+        (product.category.includes("Cooking Oils") && (product.price ?? 0) < 300) || // Use nullish coalescing
+        (product.category.includes("Flour") && (product.price ?? 0) < 100) || // Use nullish coalescing
+        (product.category.includes("Personal Care") && (product.price ?? 0) < 200) || // Use nullish coalescing
+        (product.category.includes("Cleaning") && (product.price ?? 0) < 200) || // Use nullish coalescing
+        (product.category.includes("Dairy") && (product.price ?? 0) < 400), // Use nullish coalescing
     )
     .slice(0, 3)
-
   return (
     <div className="border-t border-white/5 pt-3">
       <p className="text-xs text-gray-500 mb-2 text-center">Quick add:</p>
@@ -59,12 +49,12 @@ export function ProductShortcuts({ products, onQuickAdd, onViewAll }: ProductSho
               <Plus className="h-3 w-3 mr-1" />
               <div className="text-left">
                 <div className="font-medium text-xs">{product.name.split(" ").slice(0, 2).join(" ")}</div>
-                <div className="text-green-400 font-bold text-xs">KES {product.price.toLocaleString()}</div>
+                <div className="text-green-400 font-bold text-xs">KES {product.price?.toLocaleString() ?? "N/A"}</div>{" "}
+                {/* Safely access price */}
               </div>
             </Button>
           </motion.div>
         ))}
-
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
