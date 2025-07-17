@@ -1,6 +1,7 @@
-// pages/api/mpesa/callback.js
+// app/api/mpesa/callback/route.js
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { NextResponse } from 'next/server';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -14,14 +15,15 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
-
-  const callbackData = req.body.Body?.stkCallback;
-
+export async function POST(req) {
   try {
+    const body = await req.json();
+    const callbackData = body.Body?.stkCallback;
+
+    if (!callbackData) {
+      return NextResponse.json({ error: 'Invalid callback data' }, { status: 400 });
+    }
+
     await addDoc(collection(db, 'transactions'), {
       checkoutRequestID: callbackData.CheckoutRequestID,
       resultCode: callbackData.ResultCode,
@@ -29,13 +31,12 @@ export default async function handler(req, res) {
       amount: callbackData.CallbackMetadata?.Item.find(item => item.Name === 'Amount')?.Value,
       mpesaReceiptNumber: callbackData.CallbackMetadata?.Item.find(item => item.Name === 'MpesaReceiptNumber')?.Value,
       phoneNumber: callbackData.CallbackMetadata?.Item.find(item => item.Name === 'PhoneNumber')?.Value,
-      transactionDate: callbackData.CallbackMetadata?.Item.find(item => item.Name === 'TransactionDate')?.Value,
-      createdAt: new Date(),
+      transactionDate: new Date(),
     });
 
-    res.status(200).json({ status: 'success' });
+    return NextResponse.json({ status: 'success' }, { status: 200 });
   } catch (error) {
     console.error('Error processing callback:', error);
-    res.status(500).json({ error: 'Failed to process callback' });
+    return NextResponse.json({ error: 'Failed to process callback' }, { status: 500 });
   }
 }
