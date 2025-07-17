@@ -1,3 +1,4 @@
+/*
 // Product Management Utilities
 import { type Product, PRODUCTS } from "@/data/products"
 import { type ProductImage, PRODUCT_IMAGES } from "@/data/product-images"
@@ -203,3 +204,4 @@ export const exportProductsToCSV = (): string => {
 
   return csvContent
 }
+*/

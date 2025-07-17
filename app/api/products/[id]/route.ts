@@ -1,3 +1,4 @@
+/*
 import { NextResponse } from "next/server"
 import { getProductWithImages, updateProduct, deleteProduct } from "@/utils/product-management"
 
@@ -60,3 +61,4 @@ export async function DELETE(request: Request, { params }: { params: { id: strin
     return NextResponse.json({ success: false, message: "Failed to delete product" }, { status: 500 })
   }
 }
+*/
