@@ -112,10 +112,14 @@ export const cartService = {
   async updateUserCart(userId: string, cartItems: any[]) {
     try {
       const docRef = doc(db, "userCarts", userId)
-      await setDoc(docRef, {
-        items: cartItems,
-        updatedAt: serverTimestamp(),
-      })
+      // Removed updatedAt: serverTimestamp() from here to prevent listener loops
+      await setDoc(
+        docRef,
+        {
+          items: cartItems,
+        },
+        { merge: true },
+      ) // Keep merge: true to only update specified fields
       return true
     } catch (error) {
       console.error("Error updating user cart:", error)
@@ -128,7 +132,7 @@ export const cartService = {
       const docRef = doc(db, "userCarts", userId)
       await setDoc(docRef, {
         items: [],
-        updatedAt: serverTimestamp(),
+        updatedAt: serverTimestamp(), // Keep timestamp here as it's an explicit action
       })
       return true
     } catch (error) {
@@ -140,9 +144,15 @@ export const cartService = {
 
 // Product Management Services
 export const productService = {
-  async getUserProducts(userId: string) {
+  async getUserProducts(userId: string, limitCount = 50) {
+    // Added limitCount parameter
     try {
-      const q = query(collection(db, "userProducts"), where("userId", "==", userId), orderBy("createdAt", "desc"))
+      const q = query(
+        collection(db, "userProducts"),
+        where("userId", "==", userId),
+        orderBy("createdAt", "desc"),
+        limit(limitCount), // Apply limit here
+      )
       const querySnapshot = await getDocs(q)
       return querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
     } catch (error) {
@@ -225,10 +235,16 @@ export const chatService = {
   async saveChatSession(sessionData: ChatSession): Promise<boolean> {
     try {
       const docRef = doc(db, "chatSessions", sessionData.id)
-      await setDoc(docRef, {
-        ...sessionData,
-        updatedAt: serverTimestamp(),
-      })
+      // Removed updatedAt: serverTimestamp() from here to prevent listener loops
+      await setDoc(
+        docRef,
+        {
+          ...sessionData,
+          // Only update updatedAt if it's a new session or explicitly changed by user action
+          // For debounced saves from listeners, we rely on the data itself changing
+        },
+        { merge: true },
+      )
       return true
     } catch (error) {
       console.error("Error saving chat session:", error)
@@ -410,7 +426,7 @@ export const realtimeService = {
           createdAt: data.createdAt?.toDate?.()?.toISOString() || data.createdAt || new Date().toISOString(),
           updatedAt: data.updatedAt?.toDate?.()?.toISOString() || data.updatedAt || new Date().toISOString(),
           orderNumber: data.orderNumber,
-          date: data.date || data.createdAt?.toDate?.()?.toISOString() || data.createdAt || new Date().toISOString(),
+          date: data.date || data.createdAt?.toDate?.()?.toISOString() || data.updatedAt || new Date().toISOString(),
         } as Order
       })
       callback(orders)
