@@ -82,7 +82,13 @@ export default function Home() {
   // UI state
   const [currentView, setCurrentView] = useState("chat");
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [chatHistoryOpen, setChatHistoryOpen] = useState(false);
+  const [chatHistoryOpen, setChatHistoryOpen] = useState(() => {
+    // Check if we're on client side and screen is large enough
+    if (typeof window !== 'undefined') {
+      return window.innerWidth >= 1024; // lg breakpoint (1024px)
+    }
+    return false;
+  });
   const [showCart, setShowCart] = useState(false);
   const [showCheckout, setShowCheckout] = useState(false);
   const [showAllProducts, setShowAllProducts] = useState(false);
@@ -155,6 +161,18 @@ export default function Home() {
   useEffect(() => {
     localStorage.setItem("vendai-chat-sessions", JSON.stringify(chatSessions));
   }, [chatSessions]);
+
+  useEffect(() => {
+    if (!loading && user && typeof window !== 'undefined') {
+      // Only auto-open on large screens when user logs in
+      if (window.innerWidth >= 1024) {
+        setChatHistoryOpen(true);
+      }
+    } else if (!user) {
+      // Close sidebar when user logs out
+      setChatHistoryOpen(false);
+    }
+  }, [user, loading]);
 
   // Chat functions
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {

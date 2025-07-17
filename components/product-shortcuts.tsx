@@ -39,7 +39,7 @@ export function ProductShortcuts({ products, onQuickAdd, onViewAll }: ProductSho
   return (
     <div className="border-t border-white/5 pt-3">
       <p className="text-xs text-gray-500 mb-2 text-center">Quick add:</p>
-      <div className="flex gap-2 justify-center overflow-x-auto scrollbar-hide">
+      <div className="flex flex-wrap justify-center gap-2 overflow-hidden w-full">
         {essentialProducts.map((product, index) => (
           <motion.div
             key={product.id}
