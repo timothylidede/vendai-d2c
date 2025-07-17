@@ -19,7 +19,7 @@ function productsToCSV(products) {
 // Main function to generate CSV files
 async function generateCategoryCSVs() {
   try {
-    const outputDir = path.join(__dirname, './data');
+    const outputDir = path.join(__dirname, 'data');
     
     // Ensure output directory exists
     await fs.mkdir(outputDir, { recursive: true });
@@ -54,3 +54,4 @@ async function generateCategoryCSVs() {
 
 // Run the script
 generateCategoryCSVs();
+

@@ -68,7 +68,7 @@ export const getContext = async (query: string): Promise<string> => {
 // Run the function and handle the Promise
 (async (): Promise<void> => {
     try {
-        const result: string = await getContext("tea");
+        const result: string = await getContext("hello ");
         console.log(result);
     } catch (error: unknown) {
         console.error("Error:", error);
