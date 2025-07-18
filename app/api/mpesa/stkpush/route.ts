@@ -1,24 +1,44 @@
-// app/api/mpesa/stkpush/route.ts
-import { NextResponse } from "next/server"
-import { initiateSTKPush } from "@/lib/mpesa"
+import { type NextRequest, NextResponse } from "next/server"
+import { mpesaService } from "@/lib/mpesa"
 
-export async function POST(req: Request) {
+export async function POST(request: NextRequest) {
   try {
-    const { phoneNumber, amount, accountReference, transactionDesc } = await req.json()
+    const body = await request.json()
+    const { phoneNumber, amount, accountReference } = body
 
-    if (!phoneNumber || !amount || !accountReference || !transactionDesc) {
-      return NextResponse.json({ error: "Missing required parameters" }, { status: 400 })
+    if (!phoneNumber || !amount || !accountReference) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Missing required fields",
+        },
+        { status: 400 },
+      )
     }
 
-    const result = await initiateSTKPush(phoneNumber, amount, accountReference, transactionDesc)
-
-    if (result.success) {
-      return NextResponse.json(result.data)
-    } else {
-      return NextResponse.json({ error: result.message }, { status: 500 })
+    // Format phone number (ensure it starts with 254)
+    let formattedPhone = phoneNumber.replace(/\D/g, "")
+    if (formattedPhone.startsWith("0")) {
+      formattedPhone = "254" + formattedPhone.substring(1)
+    } else if (!formattedPhone.startsWith("254")) {
+      formattedPhone = "254" + formattedPhone
     }
+
+    const response = await mpesaService.initiateStkPush(formattedPhone, Math.round(amount), accountReference)
+
+    return NextResponse.json({
+      success: true,
+      data: response,
+    })
   } catch (error) {
-    console.error("Error in M-Pesa STK Push API:", error)
-    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 })
+    console.error("STK Push error:", error)
+
+    return NextResponse.json(
+      {
+        success: false,
+        error: "Failed to initiate payment",
+      },
+      { status: 500 },
+    )
   }
 }

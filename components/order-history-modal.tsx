@@ -1,7 +1,7 @@
 "use client"
 
 import { motion, AnimatePresence } from "framer-motion"
-import { X, Package, Clock, CheckCircle, Truck, MapPin, ChevronDown, Calendar } from "lucide-react"
+import { X, Package, Clock, CheckCircle, Truck, MapPin, ChevronDown, Calendar, CircleCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 
@@ -64,10 +64,30 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
 
   const getTrackingSteps = (status: string) => {
     const steps = [
-      { id: "confirmed", label: "Order Confirmed", completed: true },
-      { id: "preparing", label: "Preparing", completed: status !== "cancelled" },
-      { id: "shipped", label: "Shipped", completed: status === "shipped" || status === "completed" },
-      { id: "delivered", label: "Delivered", completed: status === "completed" },
+      { 
+        id: "confirmed", 
+        label: "Order Confirmed", 
+        completed: true,
+        icon: CircleCheck
+      },
+      { 
+        id: "preparing", 
+        label: "Preparing", 
+        completed: status !== "cancelled",
+        icon: Package
+      },
+      { 
+        id: "shipped", 
+        label: "Shipped", 
+        completed: status === "shipped" || status === "completed",
+        icon: Truck
+      },
+      { 
+        id: "delivered", 
+        label: "Delivered", 
+        completed: status === "completed",
+        icon: CheckCircle
+      },
     ]
     return steps
   }
@@ -116,7 +136,7 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                   const isExpanded = expandedOrder === order.id
                   const trackingSteps = getTrackingSteps(order.status)
                   return (
-                    <div // Removed motion.div and its animation props to prevent "dancing"
+                    <div
                       key={order.id}
                       className="glass-effect rounded-lg overflow-hidden"
                     >
@@ -156,6 +176,7 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                           </div>
                         </div>
                       </div>
+                      
                       {/* Expanded Order Details */}
                       <AnimatePresence>
                         {isExpanded && (
@@ -167,36 +188,53 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                             className="border-t border-white/10"
                           >
                             <div className="p-4 space-y-6">
-                              {/* Order Progress */}
+                              {/* Order Progress - Improved Design */}
                               <div>
                                 <h4 className="font-medium mb-4 flex items-center space-x-2">
-                                  <Truck className="h-4 w-4" />
+                                  <Truck className="h-4 w-4 text-blue-400" />
                                   <span>Order Progress</span>
                                 </h4>
-                                <div className="flex items-center space-x-2">
-                                  {trackingSteps.map((step, stepIndex) => (
-                                    <div key={step.id} className="flex items-center">
-                                      <div
-                                        className={`w-3 h-3 rounded-full ${
-                                          step.completed ? "bg-green-500" : "bg-gray-600"
-                                        }`}
-                                      />
-                                      {stepIndex < trackingSteps.length - 1 && (
-                                        <div
-                                          className={`w-8 h-0.5 ${step.completed ? "bg-green-500" : "bg-gray-600"}`}
-                                        />
-                                      )}
-                                    </div>
-                                  ))}
-                                </div>
-                                <div className="flex justify-between text-xs text-gray-400 mt-2">
-                                  {trackingSteps.map((step) => (
-                                    <span key={step.id} className={step.completed ? "text-green-400" : ""}>
-                                      {step.label}
-                                    </span>
-                                  ))}
+                                <div className="relative">
+                                  <div className="flex justify-between items-center mb-2">
+                                    {trackingSteps.map((step, stepIndex) => {
+                                      const StepIcon = step.icon
+                                      return (
+                                        <div key={step.id} className="flex flex-col items-center relative">
+                                          <div
+                                            className={`w-10 h-10 rounded-full flex items-center justify-center border-2 transition-all ${
+                                              step.completed 
+                                                ? "bg-green-500 border-green-500 text-white" 
+                                                : "bg-gray-700 border-gray-600 text-gray-400"
+                                            }`}
+                                          >
+                                            <StepIcon className="h-4 w-4" />
+                                          </div>
+                                          {stepIndex < trackingSteps.length - 1 && (
+                                            <div
+                                              className={`absolute top-5 left-5 w-full h-0.5 transition-all ${
+                                                step.completed ? "bg-green-500" : "bg-gray-600"
+                                              }`}
+                                              style={{ width: 'calc(100vw / 4)' }}
+                                            />
+                                          )}
+                                        </div>
+                                      )
+                                    })}
+                                  </div>
+                                  <div className="flex justify-between mt-3">
+                                    {trackingSteps.map((step) => (
+                                      <div key={step.id} className="flex-1 text-center">
+                                        <span className={`text-xs font-medium ${
+                                          step.completed ? "text-green-400" : "text-gray-400"
+                                        }`}>
+                                          {step.label}
+                                        </span>
+                                      </div>
+                                    ))}
+                                  </div>
                                 </div>
                               </div>
+
                               {/* Order Items */}
                               <div>
                                 <h4 className="font-medium mb-3">Items Ordered</h4>
@@ -225,11 +263,12 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                                   ))}
                                 </div>
                               </div>
+
                               {/* Delivery & Payment Info */}
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div className="glass-effect rounded-lg p-4">
                                   <h5 className="font-medium mb-2 flex items-center space-x-2">
-                                    <MapPin className="h-4 w-4" />
+                                    <MapPin className="h-4 w-4 text-green-400" />
                                     <span>Delivery Address</span>
                                   </h5>
                                   <p className="text-sm text-gray-400">{order.deliveryAddress.address}</p>
@@ -243,6 +282,7 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                                   <p className="text-xs text-green-400 mt-1">Payment Confirmed</p>
                                 </div>
                               </div>
+
                               {/* Order Summary */}
                               <div className="glass-effect rounded-lg p-4 bg-blue-500/5 border border-blue-500/20">
                                 <div className="flex items-center justify-between">
