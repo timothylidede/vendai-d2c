@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import { OpenAI } from 'openai';
-import { getContext } from './context.js'; // Assuming getContext is defined in context.ts
-import { systemPrompt } from './systemPrompt.js';// Assuming getContext is defined in context.ts
+import { getContext } from './context'; // Assuming getContext is defined in context.ts
+import { systemPrompt } from './systemPrompt';// Assuming getContext is defined in context.ts
 
 console.log('DEEPSEEK_API_KEY:', process.env.DEEPSEEK_API_KEY?.substring(0, 7) + '...'); // Log only the first 7 characters for security
 const DEEPSEEK_API_KEY: string | undefined = process.env.DEEPSEEK_API_KEY;
@@ -9,6 +9,7 @@ const openai = new OpenAI({
     baseURL: 'https://api.deepseek.com/v1',
     apiKey: DEEPSEEK_API_KEY
 });
+console.log('OpenAI client initialized with DeepSeek API');
 
 // interface CommunicationHistory {
 //     contact: string;
@@ -40,19 +41,27 @@ async function getResponseFromDeepSeek(userQuery: string): Promise<string> {
 //     reply: (response: string) => Promise<void>;
 // }
 
-export async function handle_NewMessage(userId: string, userQuery: string, commsHistoryString: string): Promise<void|{ vendaiResponse: string, productsIds: number[] }> {
+export async function handle_NewMessage(userId: string, userQuery: string, commsHistoryString: string): Promise<void|{ vendaiResponse: string, productsIds: string[] }> {
     const userNumber: string = userId;
     // const userMessagesContext: CommunicationHistory[] = communicationhistoryList.filter(item => item.contact === userNumber);
     const userInput: string = userQuery.trim();
     let context: string = await getContext(userInput);
+    console.log('\n\nContext for user input is : ', context);
 
     try {
         // communicationhistoryList.push({ contact: userNumber, role: "user", content: userInput });
         const query: string = `chatHistory: ${commsHistoryString} question: ${userInput} context: ${context}`;
+        console.log('\nBefore calling Deepseek:');
         const response: string = await getResponseFromDeepSeek(query);
-        const responseJson: { vendaiResponse: string, productsIds: number[] } = JSON.parse(response);
-        // communicationhistoryList.push({ contact: userNumber, role: "system", content: response });
-        // console.log('Response from DeepSeek:', response);
+        const cleanedResponse = response
+        .replace(/^```json\n/, '') // Remove starting ```json
+        .replace(/\n```$/, '')      // Remove ending ```
+        .trim();
+
+        console.log('\nCleaned response:', cleanedResponse);
+
+        const responseJson: { vendaiResponse: string, productsIds: string[] } = JSON.parse(cleanedResponse);
+        console.log('Parsed response from DeepSeek:', responseJson);
         return responseJson;
 
     } catch (error: unknown) {
@@ -62,10 +71,10 @@ export async function handle_NewMessage(userId: string, userQuery: string, comms
     }
 }
 
-handle_NewMessage('1234567890','Hello, I need help with my kamande.', 'hello')
-    .then(response => {
-        console.log('Response:', response);
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+// handle_NewMessage('1234567890','Hello, I need help with my kamande.', 'hello')
+//     .then(response => {
+//         console.log('Response:', response);
+//     })
+//     .catch(error => {
+//         console.error('Error:', error);
+//     });
