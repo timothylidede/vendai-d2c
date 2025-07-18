@@ -362,72 +362,80 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
   }
 
   const handleMpesaSTKPush = async () => {
+    console.log('Input data:', { phoneNumber, deliveryAddress, cart, selectedLocation });
     if (!phoneNumber || !deliveryAddress || cart.length === 0 || !selectedLocation) {
-      setMpesaStatus("failed")
-      setMpesaMessage("Please fill in all required fields and select a delivery location.")
-      return
+      setMpesaStatus('failed');
+      setMpesaMessage('Please fill in all required fields and select a delivery location.');
+      return;
     }
 
-    setIsSubmitting(true)
-    setMpesaStatus("pending")
-    setMpesaMessage("Initiating M-Pesa STK Push...")
-    setMpesaCheckoutRequestId("")
+    setIsSubmitting(true);
+    setMpesaStatus('pending');
+    setMpesaMessage('Initiating M-Pesa STK Push...');
+    setMpesaCheckoutRequestId('');
 
     try {
-      const formattedPhone = formatPhoneNumber(phoneNumber)
+      const formattedPhone = formatPhoneNumber(phoneNumber);
+      console.log('Formatted phone:', formattedPhone);
       if (!formattedPhone) {
-        setMpesaStatus("failed")
-        setMpesaMessage("Invalid phone number format. Please use 07... or 2547...")
-        setIsSubmitting(false)
-        return
+        setMpesaStatus('failed');
+        setMpesaMessage('Invalid phone number format. Please use 07... or 2547...');
+        setIsSubmitting(false);
+        return;
       }
 
-      const response = await fetch("/api/mpesa/stkpush", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          phoneNumber: formattedPhone,
-          amount: Math.ceil(total), // M-Pesa typically requires integer amounts
-          accountReference: `VendAI-Order-${Date.now()}`,
-          transactionDesc: `Payment for VendAI Order`,
-        }),
-      })
+      const requestBody = {
+        phoneNumber: formattedPhone,
+        amount: Math.ceil(total),
+        accountReference: `VendAI-Order-${Date.now()}`,
+        transactionDesc: 'Payment for VendAI Order',
+      };
+      console.log('STK Push request:', requestBody);
 
-      const data = await response.json()
+      const response = await fetch('/api/mpesa/stkpush', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(requestBody),
+      });
 
-      if (response.ok && data.ResponseCode === "0") {
-        setMpesaStatus("pending") // Still pending until callback confirms
-        setMpesaMessage("STK Push sent to your phone. Please enter your M-Pesa PIN to complete payment.")
-        setMpesaCheckoutRequestId(data.CheckoutRequestID)
+      const data = await response.json();
+      console.log('STK Push response:', data);
 
-        // Create a pending order in Firebase immediately
+      if (response.ok && data.ResponseCode === '0') {
+        setMpesaStatus('pending');
+        setMpesaMessage('STK Push sent to your phone. Please enter your M-Pesa PIN to complete payment.');
+        setMpesaCheckoutRequestId(data.CheckoutRequestID);
+
         const orderData = {
-          userId: user?.uid || "guest",
+          userId: user?.uid || 'guest',
           items: cart,
           total: total,
-          status: "pending", // Initial status
-          paymentStatus: "pending", // Will be updated by M-Pesa callback
-          paymentMethod: "mpesa",
+          status: 'pending',
+          paymentStatus: 'pending',
+          paymentMethod: 'mpesa',
           deliveryAddress: { address: deliveryAddress, location: selectedLocation, notes: deliveryNotes },
-          deliveryDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString(), // 2 days from now
-          orderNumber: data.CheckoutRequestID, // Use M-Pesa CheckoutRequestID as order number
-        }
-        onCheckoutComplete(orderData) // This will save the order to Firebase
-
-        // Optionally, you can set a timeout to check for payment status if no callback is received
-        // This is more advanced and would require a polling mechanism or a Cloud Function
+          deliveryDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString(),
+          orderNumber: data.CheckoutRequestID,
+        };
+        console.log('Order data:', orderData);
+        onCheckoutComplete(orderData);
       } else {
-        setMpesaStatus("failed")
-        setMpesaMessage(data.CustomerMessage || data.errorMessage || "M-Pesa STK Push failed. Please try again.")
+        console.error('STK Push failed:', data);
+        setMpesaStatus('failed');
+        setMpesaMessage(data.error || data.CustomerMessage || 'M-Pesa STK Push failed. Please try again.');
       }
     } catch (error) {
-      console.error("Checkout error:", error)
-      setMpesaStatus("failed")
-      setMpesaMessage("An unexpected error occurred during checkout. Please try again.")
+      if (error instanceof Error) {
+        console.error('Checkout error:', error.message, { stack: error.stack });
+      } else {
+        console.error('Checkout error:', error);
+      }
+      setMpesaStatus('failed');
+      setMpesaMessage('An unexpected error occurred during checkout. Please try again.');
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
-  }
+  };
 
   const resetModal = () => {
     setStep(1)

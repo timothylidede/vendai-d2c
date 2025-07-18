@@ -1,115 +1,124 @@
-interface MpesaAuthResponse {
-  access_token: string
-  expires_in: string
-}
-
-interface MpesaStkPushResponse {
-  MerchantRequestID: string
-  CheckoutRequestID: string
-  ResponseCode: string
-  ResponseDescription: string
-  CustomerMessage: string
-}
-
-interface MpesaStkPushRequest {
-  BusinessShortCode: string
-  Password: string
-  Timestamp: string
-  TransactionType: string
-  Amount: string
-  PartyA: string
-  PartyB: string
-  PhoneNumber: string
-  CallBackURL: string
-  AccountReference: string
-  TransactionDesc: string
-}
-
 export class MpesaService {
-  private consumerKey: string
-  private consumerSecret: string
-  private environment: "sandbox" | "production"
-  private baseUrl: string
+  private baseUrl: string;
 
   constructor() {
-    this.consumerKey = process.env.MPESA_CONSUMER_KEY || ""
-    this.consumerSecret = process.env.MPESA_CONSUMER_SECRET || ""
-    this.environment = (process.env.MPESA_ENVIRONMENT as "sandbox" | "production") || "sandbox"
-    this.baseUrl = this.environment === "sandbox" ? "https://sandbox.safaricom.co.ke" : "https://api.safaricom.co.ke"
+    this.baseUrl = process.env.MPESA_ENVIRONMENT === 'live' ? 'https://api.safaricom.co.ke' : 'https://sandbox.safaricom.co.ke';
+    console.log('MpesaService initialized with baseUrl:', this.baseUrl);
   }
 
   async getAccessToken(): Promise<string> {
-    const auth = Buffer.from(`${this.consumerKey}:${this.consumerSecret}`).toString("base64")
-
-    const response = await fetch(`${this.baseUrl}/oauth/v1/generate?grant_type=client_credentials`, {
-      method: "GET",
-      headers: {
-        Authorization: `Basic ${auth}`,
-        "Content-Type": "application/json",
-      },
-    })
-
-    if (!response.ok) {
-      throw new Error("Failed to get access token")
+    const consumerKey = process.env.MPESA_CONSUMER_KEY;
+    const consumerSecret = process.env.MPESA_CONSUMER_SECRET;
+    if (!consumerKey || !consumerSecret) {
+      console.error('Missing MPESA_CONSUMER_KEY or MPESA_CONSUMER_SECRET');
+      throw new Error('Missing M-Pesa credentials');
     }
 
-    const data: MpesaAuthResponse = await response.json()
-    return data.access_token
-  }
+    const auth = Buffer.from(`${consumerKey}:${consumerSecret}`).toString('base64');
+    try {
+      const response = await fetch(`${this.baseUrl}/oauth/v1/generate?grant_type=client_credentials`, {
+        method: 'GET',
+        headers: {
+          Authorization: `Basic ${auth}`,
+        },
+      });
 
-  generatePassword(shortcode: string, passkey: string, timestamp: string): string {
-    const data = shortcode + passkey + timestamp
-    return Buffer.from(data).toString("base64")
+      const data = await response.json();
+      console.log('Access token response:', { status: response.status, data });
+
+      if (!response.ok || !data.access_token) {
+        console.error('Failed to get access token:', { status: response.status, data });
+        throw new Error(`Failed to obtain access token: ${data.error || 'Unknown error'}`);
+      }
+
+      return data.access_token;
+    } catch (error) {
+      if (error instanceof Error) {
+        console.error('getAccessToken error:', error.message, { stack: error.stack });
+      } else {
+        console.error('getAccessToken error:', error);
+      }
+      throw error;
+    }
   }
 
   generateTimestamp(): string {
-    const now = new Date()
-    const year = now.getFullYear()
-    const month = String(now.getMonth() + 1).padStart(2, "0")
-    const day = String(now.getDate()).padStart(2, "0")
-    const hour = String(now.getHours()).padStart(2, "0")
-    const minute = String(now.getMinutes()).padStart(2, "0")
-    const second = String(now.getSeconds()).padStart(2, "0")
-
-    return `${year}${month}${day}${hour}${minute}${second}`
+    const now = new Date();
+    return now.toISOString().replace(/[-:T.]/g, '').slice(0, 14);
   }
 
-  async initiateStkPush(phoneNumber: string, amount: number, accountReference: string): Promise<MpesaStkPushResponse> {
-    const accessToken = await this.getAccessToken()
-    const timestamp = this.generateTimestamp()
-    const shortcode = process.env.MPESA_SHORTCODE || "174379"
-    const passkey = process.env.MPESA_PASSKEY || "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919"
-    const password = this.generatePassword(shortcode, passkey, timestamp)
+  generatePassword(shortcode: string, passkey: string, timestamp: string): string {
+    return Buffer.from(`${shortcode}${passkey}${timestamp}`).toString('base64');
+  }
 
-    const requestBody: MpesaStkPushRequest = {
-      BusinessShortCode: shortcode,
-      Password: password,
-      Timestamp: timestamp,
-      TransactionType: "CustomerPayBillOnline",
-      Amount: amount.toString(),
-      PartyA: phoneNumber,
-      PartyB: shortcode,
-      PhoneNumber: phoneNumber,
-      CallBackURL: `${process.env.NEXT_PUBLIC_BASE_URL}/api/mpesa/callback`,
-      AccountReference: accountReference,
-      TransactionDesc: `Payment for ${accountReference}`,
+  async initiateStkPush(phoneNumber: string, amount: number, accountReference: string, transactionDesc: string): Promise<any> {
+    try {
+      const accessToken = await this.getAccessToken();
+      console.log('Access token obtained:', accessToken);
+
+      const timestamp = this.generateTimestamp();
+      const shortcode = process.env.MPESA_SHORTCODE || '174379';
+      const passkey = process.env.MPESA_PASSKEY || 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';
+      const password = this.generatePassword(shortcode, passkey, timestamp);
+
+      if (!phoneNumber.startsWith('254') || phoneNumber.length !== 12) {
+        console.error('Invalid phone number format:', phoneNumber);
+        throw new Error('Phone number must be in 2547XXXXXXXXX format');
+      }
+
+      if (!Number.isInteger(amount) || amount <= 0) {
+        console.error('Invalid amount:', amount);
+        throw new Error('Amount must be a positive integer');
+      }
+
+      const requestBody = {
+        BusinessShortCode: shortcode,
+        Password: password,
+        Timestamp: timestamp,
+        TransactionType: 'CustomerPayBillOnline',
+        Amount: amount.toString(),
+        PartyA: phoneNumber,
+        PartyB: shortcode,
+        PhoneNumber: phoneNumber,
+        CallBackURL: process.env.MPESA_CALLBACK_URL || 'https://www.vendai.digital/api/mpesa/callback',
+        AccountReference: accountReference,
+        TransactionDesc: transactionDesc,
+      };
+
+      console.log('STK Push request:', requestBody);
+
+      const response = await fetch(`${this.baseUrl}/mpesa/stkpush/v1/processrequest`, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestBody),
+      });
+
+      const data = await response.json();
+      console.log('STK Push response:', { status: response.status, data });
+
+      if (!response.ok) {
+        console.error('STK Push failed:', { status: response.status, data });
+        throw new Error(`STK Push failed: ${data.errorMessage || data.error || 'Unknown error'}`);
+      }
+
+      if (data.ResponseCode !== '0') {
+        console.error('STK Push unsuccessful:', { responseCode: data.ResponseCode, customerMessage: data.CustomerMessage });
+        throw new Error(`STK Push unsuccessful: ${data.CustomerMessage || 'Unknown error'}`);
+      }
+
+      return data;
+    } catch (error) {
+      if (error instanceof Error) {
+        console.error('initiateStkPush error:', error.message, { stack: error.stack });
+      } else {
+        console.error('initiateStkPush error:', error);
+      }
+      throw error;
     }
-
-    const response = await fetch(`${this.baseUrl}/mpesa/stkpush/v1/processrequest`, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(requestBody),
-    })
-
-    if (!response.ok) {
-      throw new Error("Failed to initiate STK push")
-    }
-
-    return await response.json()
   }
 }
 
-export const mpesaService = new MpesaService()
+export const mpesaService = new MpesaService();
