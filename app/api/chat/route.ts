@@ -221,7 +221,7 @@ export async function POST(req: Request) {
     const query = lastMessage.content
 
     // Simulate processing delay
-    await new Promise((resolve) => setTimeout(resolve, 600))
+    // await new Promise((resolve) => setTimeout(resolve, 600))
 
     // Handle greetings and help first
     const greetingResponse = handleGreetingOrHelp(query)

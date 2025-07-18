@@ -2410,3 +2410,7 @@ export const getCategoriesWithCounts = () => {
     products: getProductsByCategory(category),
   }))
 }
+
+export function getProductsByIds(ids: number[]): Product[] {
+  return PRODUCTS.filter(product => ids.includes(product.id));
+}
