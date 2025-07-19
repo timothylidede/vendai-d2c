@@ -362,80 +362,161 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
   }
 
   const handleMpesaSTKPush = async () => {
-    console.log('Input data:', { phoneNumber, deliveryAddress, cart, selectedLocation });
+    console.log("Starting M-Pesa STK Push...", { phoneNumber, deliveryAddress, cart, selectedLocation })
+
+    // Validate inputs
     if (!phoneNumber || !deliveryAddress || cart.length === 0 || !selectedLocation) {
-      setMpesaStatus('failed');
-      setMpesaMessage('Please fill in all required fields and select a delivery location.');
-      return;
+      setMpesaStatus("failed")
+      setMpesaMessage("Please fill in all required fields and select a delivery location.")
+      return
     }
 
-    setIsSubmitting(true);
-    setMpesaStatus('pending');
-    setMpesaMessage('Initiating M-Pesa STK Push...');
-    setMpesaCheckoutRequestId('');
+    setIsSubmitting(true)
+    setMpesaStatus("pending")
+    setMpesaMessage("Initiating M-Pesa payment...")
+    setMpesaCheckoutRequestId("")
 
     try {
-      const formattedPhone = formatPhoneNumber(phoneNumber);
-      console.log('Formatted phone:', formattedPhone);
+      // Validate and format phone number
+      const formattedPhone = formatPhoneNumber(phoneNumber)
+      console.log("Formatted phone number:", formattedPhone)
+
       if (!formattedPhone) {
-        setMpesaStatus('failed');
-        setMpesaMessage('Invalid phone number format. Please use 07... or 2547...');
-        setIsSubmitting(false);
-        return;
+        throw new Error("Invalid phone number format. Please use 07XXXXXXXX or 254XXXXXXXXX")
       }
 
-      const requestBody = {
+      // Ensure amount is an integer
+      const totalAmount = Math.ceil(total)
+      console.log("Payment amount:", totalAmount)
+
+      const requestPayload = {
         phoneNumber: formattedPhone,
-        amount: Math.ceil(total),
-        accountReference: `VendAI-Order-${Date.now()}`,
-        transactionDesc: 'Payment for VendAI Order',
-      };
-      console.log('STK Push request:', requestBody);
+        amount: totalAmount,
+        accountReference: `VendAI-${Date.now()}`,
+        transactionDesc: `VendAI Order`,
+      }
 
-      const response = await fetch('/api/mpesa/stkpush', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(requestBody),
-      });
+      console.log("Sending STK Push request:", requestPayload)
 
-      const data = await response.json();
-      console.log('STK Push response:', data);
+      const response = await fetch("/api/mpesa/stkpush", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestPayload),
+      })
 
-      if (response.ok && data.ResponseCode === '0') {
-        setMpesaStatus('pending');
-        setMpesaMessage('STK Push sent to your phone. Please enter your M-Pesa PIN to complete payment.');
-        setMpesaCheckoutRequestId(data.CheckoutRequestID);
+      const responseData = await response.json()
+      console.log("STK Push response received:", {
+        status: response.status,
+        statusText: response.statusText,
+        data: responseData,
+      })
 
-        const orderData = {
-          userId: user?.uid || 'guest',
-          items: cart,
-          total: total,
-          status: 'pending',
-          paymentStatus: 'pending',
-          paymentMethod: 'mpesa',
-          deliveryAddress: { address: deliveryAddress, location: selectedLocation, notes: deliveryNotes },
-          deliveryDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString(),
-          orderNumber: data.CheckoutRequestID,
-        };
-        console.log('Order data:', orderData);
-        onCheckoutComplete(orderData);
+      if (!response.ok) {
+        throw new Error(responseData.error || `Server error: ${response.status} ${response.statusText}`)
+      }
+
+      if (responseData.success && responseData.data) {
+        const stkData = responseData.data
+
+        if (stkData.ResponseCode === "0" && stkData.CheckoutRequestID) {
+          setMpesaStatus("pending")
+          setMpesaMessage(
+            `STK Push sent to ${responseData.validatedPhone}! ` +
+              "Please check your phone and enter your M-Pesa PIN to complete payment. " +
+              "This may take up to 2 minutes.",
+          )
+          setMpesaCheckoutRequestId(stkData.CheckoutRequestID)
+
+          // Create order data
+          const orderData = {
+            userId: user?.uid || "guest",
+            items: cart,
+            total: totalAmount,
+            status: "pending",
+            paymentStatus: "pending",
+            paymentMethod: "mpesa",
+            deliveryAddress: {
+              address: deliveryAddress,
+              location: selectedLocation,
+              notes: deliveryNotes,
+            },
+            deliveryDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString(),
+            orderNumber: stkData.CheckoutRequestID,
+            mpesaRequestId: stkData.CheckoutRequestID,
+            createdAt: new Date().toISOString(),
+          }
+
+          console.log("Order data created:", orderData)
+          onCheckoutComplete(orderData)
+
+          // Enhanced timeout handling
+          let timeoutCount = 0
+          const checkInterval = setInterval(() => {
+            timeoutCount++
+            if (timeoutCount === 6) {
+              // After 30 seconds
+              setMpesaMessage(
+                `Still waiting for payment confirmation... ` +
+                  "Please check your phone for the M-Pesa prompt. " +
+                  "If you don't see it, try restarting your phone or check with your network provider.",
+              )
+            } else if (timeoutCount === 24) {
+              // After 2 minutes
+              clearInterval(checkInterval)
+              if (mpesaStatus === "pending") {
+                setMpesaStatus("failed")
+                setMpesaMessage(
+                  "Payment request timed out. This can happen if:\n" +
+                    "• Your phone is off or out of network coverage\n" +
+                    "• You have insufficient M-Pesa balance\n" +
+                    "• There are network issues\n\n" +
+                    "Please try again or contact M-Pesa customer service.",
+                )
+              }
+            }
+          }, 5000) // Check every 5 seconds
+
+          // Clean up interval when component unmounts or status changes
+          const originalStatus = mpesaStatus
+          setTimeout(() => {
+            if (mpesaStatus === originalStatus) {
+              clearInterval(checkInterval)
+            }
+          }, 120000) // 2 minutes max
+        } else {
+          throw new Error(
+            stkData.ResponseDescription || stkData.CustomerMessage || "STK Push failed with invalid response",
+          )
+        }
       } else {
-        console.error('STK Push failed:', data);
-        setMpesaStatus('failed');
-        setMpesaMessage(data.error || data.CustomerMessage || 'M-Pesa STK Push failed. Please try again.');
+        throw new Error(responseData.error || "Invalid response from payment service")
       }
     } catch (error) {
+      console.error("STK Push error:", error)
+      setMpesaStatus("failed")
+
+      let errorMessage = "Payment initiation failed. Please try again."
       if (error instanceof Error) {
-        console.error('Checkout error:', error.message, { stack: error.stack });
-      } else {
-        console.error('Checkout error:', error);
+        if (error.message.includes("phone number")) {
+          errorMessage = "Invalid phone number format. Please use 07XXXXXXXX or 254XXXXXXXXX"
+        } else if (error.message.includes("network") || error.message.includes("fetch")) {
+          errorMessage = "Network error. Please check your internet connection and try again."
+        } else if (error.message.includes("insufficient funds")) {
+          errorMessage = "Insufficient M-Pesa balance. Please top up your account and try again."
+        } else if (error.message.includes("timeout")) {
+          errorMessage = "Request timed out. Please try again."
+        } else {
+          errorMessage = error.message
+        }
       }
-      setMpesaStatus('failed');
-      setMpesaMessage('An unexpected error occurred during checkout. Please try again.');
+
+      setMpesaMessage(errorMessage)
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
-  };
+  }
 
   const resetModal = () => {
     setStep(1)
@@ -483,20 +564,52 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
     await handleMpesaSTKPush()
   }
 
-  const formatPhoneNumber = (phone: string) => {
-    // Remove all non-digits
-    const cleaned = phone.replace(/\D/g, "")
+  const formatPhoneNumber = (phone: string): string | null => {
+    // Remove all non-digit characters
+    const cleaned = phone.replace(/[^\d]/g, "")
+    console.log("Cleaning phone number:", phone, "->", cleaned)
 
-    // Format for Kenya numbers (e.g., 07... to 2547...)
-    if (cleaned.startsWith("0") && cleaned.length === 10) {
-      return "254" + cleaned.substring(1)
-    } else if (cleaned.startsWith("254") && cleaned.length === 12) {
-      return cleaned
-    } else if (cleaned.length === 9 && (cleaned.startsWith("7") || cleaned.startsWith("1"))) {
-      // Assume 9-digit number starting with 7 or 1 is missing 254 prefix
-      return "254" + cleaned
+    // Check if the cleaned number is empty or invalid length
+    if (!cleaned || cleaned.length < 9 || cleaned.length > 12) {
+      console.error("Invalid phone number length:", cleaned)
+      return null
     }
-    return null // Invalid format
+
+    // Handle different input cases
+    let formattedNumber: string
+
+    if (cleaned.startsWith("0")) {
+      // Handle Kenyan numbers starting with 0 (e.g., 0712345678)
+      if (cleaned.length === 10 && (cleaned.startsWith("07") || cleaned.startsWith("01"))) {
+        formattedNumber = "254" + cleaned.substring(1)
+      } else {
+        console.error("Invalid 0-prefixed number format:", cleaned)
+        return null
+      }
+    } else if (cleaned.startsWith("254")) {
+      // Handle numbers starting with 254 (e.g., 254712345678)
+      if (cleaned.length === 12) {
+        formattedNumber = cleaned
+      } else {
+        console.error("Invalid 254-prefixed number format:", cleaned)
+        return null
+      }
+    } else if (cleaned.length === 9 && (cleaned.startsWith("7") || cleaned.startsWith("1"))) {
+      // Handle 9-digit numbers (e.g., 712345678)
+      formattedNumber = "254" + cleaned
+    } else {
+      console.error("Unsupported phone number format:", cleaned)
+      return null
+    }
+
+    // Final validation: Ensure the number is a valid Kenyan mobile number
+    if (!formattedNumber.match(/^254[17]\d{8}$/)) {
+      console.error("Invalid Kenyan mobile number format:", formattedNumber)
+      return null
+    }
+
+    console.log("Formatted phone number:", formattedNumber)
+    return formattedNumber
   }
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -647,11 +760,11 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
                   : "bg-red-500/10 border-red-500/20"
             }`}
           >
-            <div className="flex items-center space-x-3">
-              {mpesaStatus === "pending" && <Loader2 className="h-5 w-5 text-blue-400 animate-spin" />}
-              {mpesaStatus === "success" && <CheckCircle className="h-5 w-5 text-green-400" />}
-              {mpesaStatus === "failed" && <AlertCircle className="h-5 w-5 text-red-400" />}
-              <div>
+            <div className="flex items-start space-x-3">
+              {mpesaStatus === "pending" && <Loader2 className="h-5 w-5 text-blue-400 animate-spin mt-1" />}
+              {mpesaStatus === "success" && <CheckCircle className="h-5 w-5 text-green-400 mt-1" />}
+              {mpesaStatus === "failed" && <AlertCircle className="h-5 w-5 text-red-400 mt-1" />}
+              <div className="flex-1">
                 <p
                   className={`font-medium ${
                     mpesaStatus === "pending"
@@ -662,14 +775,25 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
                   }`}
                 >
                   {mpesaStatus === "pending"
-                    ? "Processing Payment"
+                    ? "Waiting for Payment"
                     : mpesaStatus === "success"
                       ? "Payment Successful"
                       : "Payment Failed"}
                 </p>
-                <p className="text-sm text-gray-300">{mpesaMessage}</p>
+                <p className="text-sm text-gray-300 whitespace-pre-line mt-1">{mpesaMessage}</p>
                 {mpesaCheckoutRequestId && (
-                  <p className="text-xs text-gray-400 mt-1">Request ID: {mpesaCheckoutRequestId}</p>
+                  <p className="text-xs text-gray-400 mt-2">Request ID: {mpesaCheckoutRequestId}</p>
+                )}
+                {mpesaStatus === "pending" && (
+                  <div className="mt-3 p-2 bg-blue-500/5 rounded border border-blue-500/10">
+                    <p className="text-xs text-blue-300 font-medium">What to expect:</p>
+                    <ul className="text-xs text-blue-200 mt-1 space-y-1">
+                      <li>• Check for "Lipa na M-Pesa" notification on your phone</li>
+                      <li>• Enter your M-Pesa PIN when prompted</li>
+                      <li>• You'll receive an SMS confirmation</li>
+                      <li>• If no prompt appears, try restarting your phone</li>
+                    </ul>
+                  </div>
                 )}
               </div>
             </div>

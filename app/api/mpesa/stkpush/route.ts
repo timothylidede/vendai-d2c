@@ -1,39 +1,124 @@
-import { type NextRequest, NextResponse } from 'next/server';
-import { mpesaService } from '@/lib/mpesa';
+import { mpesaService } from "@/lib/mpesa"
+import { type NextRequest, NextResponse } from "next/server"
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
-    console.log('STK Push endpoint received:', body);
+    const body = await request.json()
+    const { phoneNumber, amount, accountReference, transactionDesc } = body
 
-    const { phoneNumber, amount, accountReference, transactionDesc } = body;
+    console.log("STK Push API endpoint received:", {
+      phoneNumber,
+      amount,
+      accountReference,
+      transactionDesc,
+    })
 
+    // Validate required fields
     if (!phoneNumber || !amount || !accountReference || !transactionDesc) {
-      console.error('Missing required fields:', { phoneNumber, amount, accountReference, transactionDesc });
-      return NextResponse.json({ success: false, error: 'Missing required fields' }, { status: 400 });
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Missing required fields: phoneNumber, amount, accountReference, transactionDesc",
+        },
+        { status: 400 },
+      )
     }
 
-    if (!phoneNumber.startsWith('254') || phoneNumber.length !== 12) {
-      console.error('Invalid phone number:', phoneNumber);
-      return NextResponse.json({ success: false, error: 'Invalid phone number format' }, { status: 400 });
-    }
+    // Enhanced phone number validation for Kenya
+    const cleanPhone = phoneNumber.replace(/\s+/g, "").replace(/[^\d]/g, "")
+    let validatedPhone = ""
 
-    if (!Number.isInteger(amount) || amount <= 0) {
-      console.error('Invalid amount:', amount);
-      return NextResponse.json({ success: false, error: 'Invalid amount' }, { status: 400 });
-    }
-
-    const response = await mpesaService.initiateStkPush(phoneNumber, amount, accountReference, transactionDesc);
-    console.log('STK Push service response:', response);
-
-    return NextResponse.json({ success: true, data: response }, { status: 200 });
-  } catch (error) {
-    if (error instanceof Error) {
-      console.error('STK Push endpoint error:', error.message, { stack: error.stack });
-      return NextResponse.json({ success: false, error: error.message || 'Failed to initiate STK push' }, { status: 500 });
+    if (cleanPhone.startsWith("0") && cleanPhone.length === 10) {
+      // Convert 07XXXXXXXX to 2547XXXXXXXX
+      validatedPhone = "254" + cleanPhone.substring(1)
+    } else if (cleanPhone.startsWith("254") && cleanPhone.length === 12) {
+      validatedPhone = cleanPhone
+    } else if (cleanPhone.length === 9 && (cleanPhone.startsWith("7") || cleanPhone.startsWith("1"))) {
+      validatedPhone = "254" + cleanPhone
     } else {
-      console.error('STK Push endpoint error:', error);
-      return NextResponse.json({ success: false, error: 'Failed to initiate STK push' }, { status: 500 });
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Invalid phone number format. Use formats: 0712345678, 254712345678, or 712345678",
+        },
+        { status: 400 },
+      )
     }
+
+    // Additional validation for Kenyan mobile numbers
+    if (!validatedPhone.match(/^254[17]\d{8}$/)) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Phone number must be a valid Kenyan mobile number (Safaricom, Airtel, or Telkom)",
+        },
+        { status: 400 },
+      )
+    }
+
+    // Validate amount
+    const numericAmount = Number(amount)
+    if (isNaN(numericAmount) || numericAmount < 1 || numericAmount > 70000) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Amount must be between KES 1 and KES 70,000",
+        },
+        { status: 400 },
+      )
+    }
+
+    console.log("Validated inputs:", {
+      phoneNumber: validatedPhone,
+      amount: numericAmount,
+      accountReference: accountReference.substring(0, 12),
+      transactionDesc: transactionDesc.substring(0, 13),
+    })
+
+    // Initiate STK Push with validated data
+    const stkResponse = await mpesaService.initiateStkPush(
+      validatedPhone,
+      numericAmount,
+      accountReference,
+      transactionDesc,
+    )
+
+    console.log("STK Push successful:", {
+      CheckoutRequestID: stkResponse.CheckoutRequestID,
+      ResponseCode: stkResponse.ResponseCode,
+      ResponseDescription: stkResponse.ResponseDescription,
+    })
+
+    return NextResponse.json({
+      success: true,
+      data: stkResponse,
+      message: "STK Push initiated successfully. Check your phone for the M-Pesa prompt.",
+      validatedPhone: validatedPhone, // Return for confirmation
+    })
+  } catch (error) {
+    console.error("STK Push endpoint error:", error)
+
+    const errorMessage = error instanceof Error ? error.message : "Unknown error occurred"
+
+    // Provide user-friendly error messages
+    let userMessage = errorMessage
+    if (errorMessage.includes("insufficient funds")) {
+      userMessage = "Insufficient funds in your M-Pesa account"
+    } else if (errorMessage.includes("invalid phone")) {
+      userMessage = "Invalid phone number. Please check and try again."
+    } else if (errorMessage.includes("timeout")) {
+      userMessage = "Request timeout. Please try again."
+    } else if (errorMessage.includes("network")) {
+      userMessage = "Network error. Please check your connection and try again."
+    }
+
+    return NextResponse.json(
+      {
+        success: false,
+        error: userMessage,
+        details: process.env.NODE_ENV === "development" ? errorMessage : undefined,
+      },
+      { status: 500 },
+    )
   }
 }
