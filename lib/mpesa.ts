@@ -91,50 +91,35 @@ export class MpesaService {
       const timestamp = this.generateTimestamp()
 
       const passkey = process.env.MPESA_PASSKEY
+      const businessShortCode = process.env.MPESA_HO_NUMBER!
+      const partyB = process.env.MPESA_TILL_NUMBER!
 
-      if (!passkey) {
-        throw new Error("MPESA_PASSKEY is required")
-      }
-
-      // For Till Numbers: BusinessShortCode is H.O Number, PartyB is Till Number
-      let businessShortCode: string
-      let partyB: string
-      let transactionType: string
-
-      if (process.env.MPESA_TILL_NUMBER) {
-        // Till Number configuration
-        businessShortCode = process.env.MPESA_HO_NUMBER || "3542565"
-        partyB = process.env.MPESA_TILL_NUMBER
-        transactionType = "CustomerBuyGoodsOnline"
-      } else {
-        // Paybill configuration
-        businessShortCode = process.env.MPESA_HO_NUMBER || "3542565"
-        partyB = businessShortCode
-        transactionType = "CustomerPayBillOnline"
+      if (!passkey || !businessShortCode || !partyB) {
+        throw new Error("MPESA_PASSKEY, MPESA_HO_NUMBER, and MPESA_TILL_NUMBER are required")
       }
 
       const password = this.generatePassword(businessShortCode, passkey, timestamp)
-      const callbackUrl = process.env.MPESA_CALLBACK_URL || "https://vendai.digital/api/mpesa/callback"
+      const callbackUrl = process.env.MPESA_CALLBACK_URL || "https://www.vendai.digital/api/mpesa/callback/"
 
       const stkPushData = {
         BusinessShortCode: businessShortCode,
         Password: password,
         Timestamp: timestamp,
-        TransactionType: transactionType,
-        Amount: Math.floor(amount), // Ensure integer
+        TransactionType: "CustomerBuyGoodsOnline",
+        Amount: Math.floor(amount),
         PartyA: phoneNumber,
         PartyB: partyB,
         PhoneNumber: phoneNumber,
         CallBackURL: callbackUrl,
-        AccountReference: accountReference.substring(0, 12), // M-Pesa has character limits
-        TransactionDesc: transactionDesc.substring(0, 13), // M-Pesa has character limits
+        AccountReference: accountReference.substring(0, 12),
+        TransactionDesc: transactionDesc.substring(0, 13),
       }
 
       console.log("STK Push request:", {
         ...stkPushData,
         Password: "[HIDDEN]",
-        TransactionType: transactionType,
-        Note: `Using ${process.env.MPESA_TILL_NUMBER ? "Till Number" : "Paybill"} configuration`,
+        BusinessShortCode: businessShortCode,
+        PartyB: partyB,
       })
 
       const response = await fetch(`${this.baseUrl}/mpesa/stkpush/v1/processrequest`, {
@@ -166,7 +151,6 @@ export class MpesaService {
         throw new Error(`STK Push failed: ${data.errorMessage || data.ResponseDescription || response.statusText}`)
       }
 
-      // Check if the response indicates success
       if (data.ResponseCode !== "0") {
         throw new Error(`STK Push error: ${data.ResponseDescription || data.CustomerMessage || "Unknown error"}`)
       }
@@ -178,16 +162,15 @@ export class MpesaService {
     }
   }
 
-  // Add method to query STK Push status
   async queryStkPushStatus(checkoutRequestId: string): Promise<any> {
     try {
       const accessToken = await this.getAccessToken()
       const timestamp = this.generateTimestamp()
-      const businessShortCode = process.env.MPESA_HO_NUMBER || "3542565"
       const passkey = process.env.MPESA_PASSKEY
+      const businessShortCode = process.env.MPESA_HO_NUMBER!
 
-      if (!passkey) {
-        throw new Error("MPESA_PASSKEY is required")
+      if (!passkey || !businessShortCode) {
+        throw new Error("MPESA_PASSKEY and MPESA_HO_NUMBER are required")
       }
 
       const password = this.generatePassword(businessShortCode, passkey, timestamp)
@@ -199,7 +182,7 @@ export class MpesaService {
         CheckoutRequestID: checkoutRequestId,
       }
 
-      console.log("Querying STK Push status for:", checkoutRequestId)
+      console.log("Querying STK Push status for:", checkoutRequestId, "with BusinessShortCode:", businessShortCode)
 
       const response = await fetch(`${this.baseUrl}/mpesa/stkpushquery/v1/query`, {
         method: "POST",

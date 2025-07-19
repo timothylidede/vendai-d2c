@@ -15,9 +15,29 @@ const firebaseConfig = {
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0]
 const db = getFirestore(app)
 
+interface CallbackMetadataItem {
+  Name: string
+  Value: string | number
+}
+
+interface StkCallback {
+  CheckoutRequestID: string
+  ResultCode: number
+  ResultDesc: string
+  CallbackMetadata?: {
+    Item: CallbackMetadataItem[]
+  }
+}
+
+interface CallbackBody {
+  Body?: {
+    stkCallback: StkCallback
+  }
+}
+
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json()
+    const body: CallbackBody = await req.json()
     console.log("M-Pesa callback received:", JSON.stringify(body, null, 2))
 
     const callbackData = body.Body?.stkCallback
@@ -45,25 +65,29 @@ export async function POST(req: NextRequest) {
       resultCode: ResultCode,
       resultDesc: ResultDesc,
       timestamp: new Date(),
-      amount: null,
-      mpesaReceiptNumber: null,
-      phoneNumber: null,
-      transactionDate: null,
+      amount: null as number | null,
+      mpesaReceiptNumber: null as string | null,
+      phoneNumber: null as string | null,
+      transactionDate: null as Date | null,
       processed: false,
     }
 
     if (ResultCode === 0 && CallbackMetadata?.Item) {
       // Payment successful - extract transaction details
-      const items = CallbackMetadata.Item
+      const items: CallbackMetadataItem[] = CallbackMetadata.Item
 
-      transactionData.amount = items.find((item) => item.Name === "Amount")?.Value
-      transactionData.mpesaReceiptNumber = items.find((item) => item.Name === "MpesaReceiptNumber")?.Value
-      transactionData.phoneNumber = items.find((item) => item.Name === "PhoneNumber")?.Value
+      const amountItem = items.find((item: CallbackMetadataItem) => item.Name === "Amount")
+      const receiptItem = items.find((item: CallbackMetadataItem) => item.Name === "MpesaReceiptNumber")
+      const phoneItem = items.find((item: CallbackMetadataItem) => item.Name === "PhoneNumber")
+      const dateItem = items.find((item: CallbackMetadataItem) => item.Name === "TransactionDate")
 
-      const transactionDateValue = items.find((item) => item.Name === "TransactionDate")?.Value
-      if (transactionDateValue) {
+      transactionData.amount = amountItem ? Number(amountItem.Value) : null
+      transactionData.mpesaReceiptNumber = receiptItem ? String(receiptItem.Value) : null
+      transactionData.phoneNumber = phoneItem ? String(phoneItem.Value) : null
+
+      if (dateItem) {
         // Convert M-Pesa date format (YYYYMMDDHHMMSS) to Date
-        const dateStr = transactionDateValue.toString()
+        const dateStr = dateItem.Value.toString()
         const year = Number.parseInt(dateStr.substring(0, 4))
         const month = Number.parseInt(dateStr.substring(4, 6)) - 1 // JavaScript months are 0-indexed
         const day = Number.parseInt(dateStr.substring(6, 8))

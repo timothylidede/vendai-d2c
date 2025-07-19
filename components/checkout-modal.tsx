@@ -424,13 +424,12 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
           setMpesaStatus("pending")
           setMpesaMessage(
             `STK Push sent to ${responseData.validatedPhone}! ` +
-              "Please check your phone and enter your M-Pesa PIN to complete payment. " +
-              "This may take up to 2 minutes.",
+              "Please check your phone and enter your M-Pesa PIN to complete payment.",
           )
           setMpesaCheckoutRequestId(stkData.CheckoutRequestID)
 
-          // Create order data
-          const orderData = {
+          // Store order data for later creation after payment confirmation
+          const pendingOrderData = {
             userId: user?.uid || "guest",
             items: cart,
             total: totalAmount,
@@ -448,43 +447,8 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
             createdAt: new Date().toISOString(),
           }
 
-          console.log("Order data created:", orderData)
-          onCheckoutComplete(orderData)
-
-          // Enhanced timeout handling
-          let timeoutCount = 0
-          const checkInterval = setInterval(() => {
-            timeoutCount++
-            if (timeoutCount === 6) {
-              // After 30 seconds
-              setMpesaMessage(
-                `Still waiting for payment confirmation... ` +
-                  "Please check your phone for the M-Pesa prompt. " +
-                  "If you don't see it, try restarting your phone or check with your network provider.",
-              )
-            } else if (timeoutCount === 24) {
-              // After 2 minutes
-              clearInterval(checkInterval)
-              if (mpesaStatus === "pending") {
-                setMpesaStatus("failed")
-                setMpesaMessage(
-                  "Payment request timed out. This can happen if:\n" +
-                    "• Your phone is off or out of network coverage\n" +
-                    "• You have insufficient M-Pesa balance\n" +
-                    "• There are network issues\n\n" +
-                    "Please try again or contact M-Pesa customer service.",
-                )
-              }
-            }
-          }, 5000) // Check every 5 seconds
-
-          // Clean up interval when component unmounts or status changes
-          const originalStatus = mpesaStatus
-          setTimeout(() => {
-            if (mpesaStatus === originalStatus) {
-              clearInterval(checkInterval)
-            }
-          }, 120000) // 2 minutes max
+          // Set up payment status polling
+          pollPaymentStatus(stkData.CheckoutRequestID, pendingOrderData)
         } else {
           throw new Error(
             stkData.ResponseDescription || stkData.CustomerMessage || "STK Push failed with invalid response",
@@ -516,6 +480,59 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
     } finally {
       setIsSubmitting(false)
     }
+  }
+
+  const pollPaymentStatus = async (checkoutRequestId: string, orderData: any) => {
+    let attempts = 0
+    const maxAttempts = 24 // 2 minutes with 5-second intervals
+
+    const checkPayment = async () => {
+      attempts++
+
+      try {
+        const response = await fetch("/api/mpesa/status", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ checkoutRequestId }),
+        })
+
+        const result = await response.json()
+
+        if (result.success && result.data.ResultCode === "0") {
+          // Payment successful
+          setMpesaStatus("success")
+          setMpesaMessage("Payment confirmed! Your order has been placed successfully.")
+
+          // Now create the order
+          onCheckoutComplete(orderData)
+          return
+        } else if (result.success && result.data.ResultCode !== "1032") {
+          // Payment failed (but not timeout)
+          setMpesaStatus("failed")
+          setMpesaMessage(`Payment failed: ${result.data.ResultDesc || "Unknown error"}`)
+          return
+        }
+
+        // Continue polling if still pending or timeout
+        if (attempts < maxAttempts) {
+          setTimeout(checkPayment, 5000) // Check every 5 seconds
+        } else {
+          setMpesaStatus("failed")
+          setMpesaMessage("Payment request timed out. Please try again or contact support if money was deducted.")
+        }
+      } catch (error) {
+        console.error("Error checking payment status:", error)
+        if (attempts < maxAttempts) {
+          setTimeout(checkPayment, 5000)
+        } else {
+          setMpesaStatus("failed")
+          setMpesaMessage("Unable to verify payment status. Please contact support.")
+        }
+      }
+    }
+
+    // Start checking after 10 seconds
+    setTimeout(checkPayment, 10000)
   }
 
   const resetModal = () => {
