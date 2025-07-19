@@ -34,6 +34,7 @@ export const PRODUCT_CATEGORIES = {
   CANNED_FOODS: "Canned Foods",
 } as const;
 
+
 export const PRODUCTS: Product[] = [
   // EGGS
   {
@@ -2410,3 +2411,5 @@ export const getCategoriesWithCounts = () => {
     products: getProductsByCategory(category),
   }))
 }
+
+
