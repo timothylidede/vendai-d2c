@@ -6,7 +6,7 @@ import { Send, User, Bot, Home } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ProductShortcuts } from "./product-shortcuts"
 import { ProductCardResponse } from "./product-card-response"
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 import type { Product, Message } from "@/lib/types"
 
 interface ChatViewProps {
@@ -25,23 +25,58 @@ interface ChatViewProps {
   chatHistoryMinimized: boolean
 }
 
-// Typing animation component
-function TypingText({ text, onComplete }: { text: string; onComplete?: () => void }) {
+// Typing animation component with better state management
+function TypingText({ text, messageId, onComplete }: { text: string; messageId: string; onComplete?: () => void }) {
   const [displayedText, setDisplayedText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isCompleted, setIsCompleted] = useState(false)
+  const intervalRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
-    if (currentIndex < text.length) {
-      const timer = setTimeout(() => {
-        setDisplayedText((prev) => prev + text[currentIndex])
-        setCurrentIndex((prev) => prev + 1)
-      }, 20) // Adjust speed here (lower = faster)
+    // Reset state when messageId changes (new message)
+    setDisplayedText("")
+    setCurrentIndex(0)
+    setIsCompleted(false)
 
-      return () => clearTimeout(timer)
-    } else if (onComplete) {
+    // Clear any existing interval
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current)
+    }
+
+    // Start typing animation
+    intervalRef.current = setInterval(() => {
+      setCurrentIndex((prevIndex) => {
+        if (prevIndex < text.length) {
+          setDisplayedText(text.slice(0, prevIndex + 1))
+          return prevIndex + 1
+        } else {
+          // Animation complete
+          if (intervalRef.current) {
+            clearInterval(intervalRef.current)
+            intervalRef.current = null
+          }
+          if (!isCompleted) {
+            setIsCompleted(true)
+            onComplete?.()
+          }
+          return prevIndex
+        }
+      })
+    }, 20)
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current)
+      }
+    }
+  }, [messageId, text]) // Only depend on messageId and text
+
+  // Don't depend on onComplete or isCompleted to avoid infinite loops
+  useEffect(() => {
+    if (isCompleted && onComplete) {
       onComplete()
     }
-  }, [currentIndex, text, onComplete])
+  }, [isCompleted, onComplete])
 
   return <span>{displayedText}</span>
 }
@@ -61,24 +96,19 @@ export function ChatView({
   isInSubView = false,
   chatHistoryMinimized,
 }: ChatViewProps) {
-  // Updated welcome messages to be English by default
-  const welcomeMessages = [
-    "Hello! What can I help you find today?",
-    "Hi there! Looking for something specific?",
-    "Welcome! What products are you interested in?",
-    "Hey! How can I assist you with your shopping?",
-  ]
+  // Original welcome messages restored
+  const welcomeMessages = ["Niaje.", "Twende.", "What do you want to get?", "#Wantam."]
 
   const [randomMessage, setRandomMessage] = useState("")
   const [isLargeScreen, setIsLargeScreen] = useState(false)
   const [typingMessageId, setTypingMessageId] = useState<string | null>(null)
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const chatContainerRef = useRef<HTMLDivElement>(null)
+  const processedMessagesRef = useRef<Set<string>>(new Set())
 
   // Enhanced auto-scroll function
-  const scrollToBottom = () => {
+  const scrollToBottom = useCallback(() => {
     if (messagesEndRef.current) {
-      // Use requestAnimationFrame for better timing
       requestAnimationFrame(() => {
         messagesEndRef.current?.scrollIntoView({
           behavior: "smooth",
@@ -86,33 +116,37 @@ export function ChatView({
         })
       })
     }
-  }
+  }, [])
 
   // Auto-scroll when messages change or loading state changes
   useEffect(() => {
     scrollToBottom()
-  }, [messages, isLoading])
+  }, [messages, isLoading, scrollToBottom])
 
-  // Track when new AI messages arrive to trigger typing animation
+  // Track when new AI messages arrive to trigger typing animation - FIXED
   useEffect(() => {
     if (messages.length > 0) {
       const lastMessage = messages[messages.length - 1]
-      if (lastMessage.role === "assistant" && !typingMessageId) {
+      if (
+        lastMessage.role === "assistant" &&
+        !processedMessagesRef.current.has(lastMessage.id) &&
+        !isLoading // Only start typing when not loading
+      ) {
+        processedMessagesRef.current.add(lastMessage.id)
         setTypingMessageId(lastMessage.id)
       }
     }
-  }, [messages, typingMessageId])
+  }, [messages, isLoading]) // Removed typingMessageId from dependencies
 
   // Additional scroll trigger for immediate user message display
   useEffect(() => {
     if (messages.length > 0) {
       const lastMessage = messages[messages.length - 1]
       if (lastMessage.role === "user") {
-        // Immediate scroll for user messages
         setTimeout(scrollToBottom, 50)
       }
     }
-  }, [messages])
+  }, [messages, scrollToBottom])
 
   // Welcome message management
   useEffect(() => {
@@ -152,7 +186,6 @@ export function ChatView({
       e.preventDefault()
       if (input.trim() && !isLoading) {
         handleSubmit(e)
-        // Trigger scroll after form submission
         setTimeout(scrollToBottom, 100)
       }
     }
@@ -161,9 +194,13 @@ export function ChatView({
   // Enhanced form submit handler
   const handleFormSubmit = (e: React.FormEvent) => {
     handleSubmit(e)
-    // Immediate scroll after submission
     setTimeout(scrollToBottom, 50)
   }
+
+  // Callback to handle typing completion
+  const handleTypingComplete = useCallback(() => {
+    setTypingMessageId(null)
+  }, [])
 
   const renderMessage = (message: Message, index: number) => {
     if (message.role === "user") {
@@ -209,7 +246,7 @@ export function ChatView({
             <div className="text-gray-300 leading-relaxed text-sm md:text-base">
               <p className="break-words">
                 {isTyping ? (
-                  <TypingText text={message.content} onComplete={() => setTypingMessageId(null)} />
+                  <TypingText text={message.content} messageId={message.id} onComplete={handleTypingComplete} />
                 ) : (
                   message.content
                 )}
@@ -308,7 +345,7 @@ export function ChatView({
                               value={input}
                               onChange={handleInputChange}
                               onKeyPress={handleKeyPress}
-                              placeholder="Ask me about products, prices, or anything else..."
+                              placeholder="Ask me about products..."
                               className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto custom-scrollbar"
                               disabled={isLoading}
                               rows={1}
@@ -420,7 +457,11 @@ export function ChatView({
                         value={input}
                         onChange={handleInputChange}
                         onKeyPress={handleKeyPress}
-                        placeholder="Ask me about products, prices, or anything else..."
+                        placeholder={
+                          messages.length === 0
+                            ? "Ask me about products..."
+                            : "Ask me about products..."
+                        }
                         className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-sm md:text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto custom-scrollbar"
                         disabled={isLoading}
                         rows={1}
