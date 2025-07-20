@@ -149,6 +149,46 @@ export default function Home() {
     }
   }, [])
 
+  // Load data from localStorage on initial mount
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      try {
+        // Load cart
+        const savedCart = localStorage.getItem("vendai-cart")
+        if (savedCart) {
+          setCart(JSON.parse(savedCart))
+        }
+
+        // Load orders
+        const savedOrders = localStorage.getItem("vendai-orders")
+        if (savedOrders) {
+          setOrders(JSON.parse(savedOrders))
+        }
+
+        // Load chat sessions
+        const savedSessions = localStorage.getItem("vendai-chat-sessions")
+        if (savedSessions) {
+          setChatSessions(JSON.parse(savedSessions))
+        }
+
+        // Load current messages and session ID
+        const savedMessages = localStorage.getItem("vendai-current-messages")
+        if (savedMessages) {
+          setMessages(JSON.parse(savedMessages))
+        }
+
+        const savedSessionId = localStorage.getItem("vendai-current-session-id")
+        if (savedSessionId) {
+          setCurrentSessionId(savedSessionId)
+        }
+
+        console.log("[LocalStorage] Data restored from localStorage")
+      } catch (error) {
+        console.error("Error loading data from localStorage:", error)
+      }
+    }
+  }, [])
+
   // Load user data with smart caching
   useEffect(() => {
     const loadUserData = async () => {
@@ -207,12 +247,37 @@ export default function Home() {
     }
   }, [user, loading, isOnline])
 
+  // Save data to localStorage whenever it changes
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("vendai-cart", JSON.stringify(cart))
+    }
+  }, [cart])
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("vendai-orders", JSON.stringify(orders))
+    }
+  }, [orders])
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("vendai-chat-sessions", JSON.stringify(chatSessions))
+    }
+  }, [chatSessions])
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("vendai-current-messages", JSON.stringify(messages))
+      localStorage.setItem("vendai-current-session-id", currentSessionId)
+    }
+  }, [messages, currentSessionId])
+
   // Cart sync
   useEffect(() => {
     if (user?.uid && isOnline && cart.length > 0) {
       debouncedUpdateCart(user.uid, cart)
     }
-    localStorage.setItem("vendai-cart", JSON.stringify(cart))
   }, [cart, user?.uid, debouncedUpdateCart, isOnline])
 
   // Chat session sync
@@ -223,7 +288,6 @@ export default function Home() {
         debouncedSaveChatSession(sessionToSave)
       }
     }
-    localStorage.setItem("vendai-chat-sessions", JSON.stringify(chatSessions))
   }, [chatSessions, user?.uid, debouncedSaveChatSession, isOnline, currentSessionId])
 
   // Active chat session listener
@@ -451,6 +515,8 @@ export default function Home() {
       localStorage.removeItem("vendai-cart")
       localStorage.removeItem("vendai-chat-sessions")
       localStorage.removeItem("vendai-orders")
+      localStorage.removeItem("vendai-current-messages")
+      localStorage.removeItem("vendai-current-session-id")
       localStorage.removeItem("vendai-last-sync")
       setChatHistoryOpen(false)
       console.log("Logged out successfully at", new Date().toLocaleString("en-KE", { timeZone: "Africa/Nairobi" }))

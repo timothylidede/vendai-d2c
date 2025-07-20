@@ -6,7 +6,7 @@ import { Send, User, Bot, Home } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ProductShortcuts } from "./product-shortcuts"
 import { ProductCardResponse } from "./product-card-response"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import type { Product, Message } from "@/lib/types"
 
 interface ChatViewProps {
@@ -25,6 +25,27 @@ interface ChatViewProps {
   chatHistoryMinimized: boolean
 }
 
+// Typing animation component
+function TypingText({ text, onComplete }: { text: string; onComplete?: () => void }) {
+  const [displayedText, setDisplayedText] = useState("")
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  useEffect(() => {
+    if (currentIndex < text.length) {
+      const timer = setTimeout(() => {
+        setDisplayedText((prev) => prev + text[currentIndex])
+        setCurrentIndex((prev) => prev + 1)
+      }, 20) // Adjust speed here (lower = faster)
+
+      return () => clearTimeout(timer)
+    } else if (onComplete) {
+      onComplete()
+    }
+  }, [currentIndex, text, onComplete])
+
+  return <span>{displayedText}</span>
+}
+
 export function ChatView({
   messages,
   input,
@@ -40,10 +61,60 @@ export function ChatView({
   isInSubView = false,
   chatHistoryMinimized,
 }: ChatViewProps) {
-  const welcomeMessages = ["Niaje.", "Twende.", "What do you want to get?", "#Wantam."]
+  // Updated welcome messages to be English by default
+  const welcomeMessages = [
+    "Hello! What can I help you find today?",
+    "Hi there! Looking for something specific?",
+    "Welcome! What products are you interested in?",
+    "Hey! How can I assist you with your shopping?",
+  ]
+
   const [randomMessage, setRandomMessage] = useState("")
   const [isLargeScreen, setIsLargeScreen] = useState(false)
+  const [typingMessageId, setTypingMessageId] = useState<string | null>(null)
+  const messagesEndRef = useRef<HTMLDivElement>(null)
+  const chatContainerRef = useRef<HTMLDivElement>(null)
 
+  // Enhanced auto-scroll function
+  const scrollToBottom = () => {
+    if (messagesEndRef.current) {
+      // Use requestAnimationFrame for better timing
+      requestAnimationFrame(() => {
+        messagesEndRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+        })
+      })
+    }
+  }
+
+  // Auto-scroll when messages change or loading state changes
+  useEffect(() => {
+    scrollToBottom()
+  }, [messages, isLoading])
+
+  // Track when new AI messages arrive to trigger typing animation
+  useEffect(() => {
+    if (messages.length > 0) {
+      const lastMessage = messages[messages.length - 1]
+      if (lastMessage.role === "assistant" && !typingMessageId) {
+        setTypingMessageId(lastMessage.id)
+      }
+    }
+  }, [messages, typingMessageId])
+
+  // Additional scroll trigger for immediate user message display
+  useEffect(() => {
+    if (messages.length > 0) {
+      const lastMessage = messages[messages.length - 1]
+      if (lastMessage.role === "user") {
+        // Immediate scroll for user messages
+        setTimeout(scrollToBottom, 50)
+      }
+    }
+  }, [messages])
+
+  // Welcome message management
   useEffect(() => {
     const storedMessage = localStorage.getItem("vendai_welcome_message")
     const storedTimestamp = localStorage.getItem("vendai_welcome_message_timestamp")
@@ -66,6 +137,7 @@ export function ChatView({
     }
   }, [messages.length, welcomeMessages])
 
+  // Screen size detection
   useEffect(() => {
     const checkScreenSize = () => {
       setIsLargeScreen(window.innerWidth >= 768)
@@ -80,8 +152,17 @@ export function ChatView({
       e.preventDefault()
       if (input.trim() && !isLoading) {
         handleSubmit(e)
+        // Trigger scroll after form submission
+        setTimeout(scrollToBottom, 100)
       }
     }
+  }
+
+  // Enhanced form submit handler
+  const handleFormSubmit = (e: React.FormEvent) => {
+    handleSubmit(e)
+    // Immediate scroll after submission
+    setTimeout(scrollToBottom, 50)
   }
 
   const renderMessage = (message: Message, index: number) => {
@@ -91,8 +172,8 @@ export function ChatView({
           key={message.id}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: index * 0.1 }}
-          className="flex justify-end mb-4 md:mb-8 w-full"
+          transition={{ delay: index * 0.05 }}
+          className="flex justify-end mb-4 md:mb-6 w-full"
         >
           <div className="flex items-start space-x-2 md:space-x-3 max-w-[85%] md:max-w-[75%]">
             <motion.div
@@ -109,14 +190,16 @@ export function ChatView({
       )
     }
 
-    // AI Response
+    // AI Response with typing animation
+    const isTyping = typingMessageId === message.id
+
     return (
       <motion.div
         key={message.id}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: index * 0.1 }}
-        className="flex justify-start mb-4 md:mb-8 w-full"
+        transition={{ delay: index * 0.05 }}
+        className="flex justify-start mb-4 md:mb-6 w-full"
       >
         <div className="flex items-start space-x-2 md:space-x-3 max-w-[85%] md:max-w-[75%]">
           <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center flex-shrink-0 mt-1">
@@ -124,11 +207,17 @@ export function ChatView({
           </div>
           <div className="flex-1 space-y-4 min-w-0">
             <div className="text-gray-300 leading-relaxed text-sm md:text-base">
-              <p className="break-words">{message.content}</p>
+              <p className="break-words">
+                {isTyping ? (
+                  <TypingText text={message.content} onComplete={() => setTypingMessageId(null)} />
+                ) : (
+                  message.content
+                )}
+              </p>
             </div>
-            {message.products && message.products.length > 0 && (
+            {message.products && message.products.length > 0 && !isTyping && (
               <div className="w-full overflow-hidden">
-                <ProductCardResponse products={message.products} onAddToCart={onQuickAdd} explanation="" />
+                <ProductCardResponse products={message.products} onAddToCart={onQuickAdd} />
               </div>
             )}
           </div>
@@ -142,7 +231,11 @@ export function ChatView({
   return (
     <div className="flex-1 flex flex-col h-full relative transition-all duration-300 overflow-hidden">
       {/* Main Content Area - Scrollable */}
-      <div className="flex-1 overflow-y-auto px-3 md:px-4 py-4 md:py-8 custom-scrollbar">
+      <div
+        ref={chatContainerRef}
+        className="flex-1 overflow-y-auto px-3 md:px-4 py-4 md:py-8 custom-scrollbar"
+        style={{ scrollBehavior: "smooth" }}
+      >
         {/* Back to Main Button - Only show when needed */}
         {(showBackButton || isInSubView) && (
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="mb-4 md:mb-6">
@@ -183,6 +276,7 @@ export function ChatView({
                   </span>
                 </motion.h1>
               </motion.div>
+
               {/* Desktop Chat Input - Hidden on mobile */}
               {isLargeScreen && (
                 <motion.div
@@ -192,7 +286,7 @@ export function ChatView({
                   className="w-full max-w-2xl mb-8"
                 >
                   <div className="relative">
-                    <form onSubmit={handleSubmit} className="relative">
+                    <form onSubmit={handleFormSubmit} className="relative">
                       <motion.div
                         className="bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-gray-700/50 py-3 px-4 shadow-2xl relative"
                         animate={{
@@ -214,7 +308,7 @@ export function ChatView({
                               value={input}
                               onChange={handleInputChange}
                               onKeyPress={handleKeyPress}
-                              placeholder="Ask me about products..."
+                              placeholder="Ask me about products, prices, or anything else..."
                               className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto custom-scrollbar"
                               disabled={isLoading}
                               rows={1}
@@ -248,6 +342,7 @@ export function ChatView({
                   </div>
                 </motion.div>
               )}
+
               {/* Product Shortcuts */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -262,41 +357,40 @@ export function ChatView({
         </div>
 
         {/* Chat Messages */}
-        <div className="w-full max-w-4xl mx-auto space-y-4 md:space-y-6 pb-4 md:pb-24">
+        <div className="w-full max-w-4xl mx-auto space-y-2 md:space-y-4 pb-4 md:pb-24">
           {messages.map((message, index) => renderMessage(message, index))}
-        </div>
 
-        {/* Loading Animation */}
-        {isLoading && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="flex justify-start mb-4 md:mb-8 max-w-4xl mx-auto"
-          >
-            <div className="flex items-start space-x-2 md:space-x-3">
-              <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center flex-shrink-0 mt-1">
-                <Bot className="h-3 w-3 md:h-4 md:w-4 text-white" />
+          {/* Loading Animation */}
+          {isLoading && (
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start mb-4 md:mb-6">
+              <div className="flex items-start space-x-2 md:space-x-3">
+                <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center flex-shrink-0 mt-1">
+                  <Bot className="h-3 w-3 md:h-4 md:w-4 text-white" />
+                </div>
+                <div className="flex space-x-2 mt-2">
+                  <motion.div
+                    className="w-2 h-2 bg-purple-400 rounded-full"
+                    animate={{ y: [0, -8, 0] }}
+                    transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, delay: 0 }}
+                  />
+                  <motion.div
+                    className="w-2 h-2 bg-purple-400 rounded-full"
+                    animate={{ y: [0, -8, 0] }}
+                    transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, delay: 0.1 }}
+                  />
+                  <motion.div
+                    className="w-2 h-2 bg-purple-400 rounded-full"
+                    animate={{ y: [0, -8, 0] }}
+                    transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, delay: 0.2 }}
+                  />
+                </div>
               </div>
-              <div className="flex space-x-2 mt-2">
-                <motion.div
-                  className="w-2 h-2 bg-purple-400 rounded-full"
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, delay: 0 }}
-                />
-                <motion.div
-                  className="w-2 h-2 bg-purple-400 rounded-full"
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, delay: 0.1 }}
-                />
-                <motion.div
-                  className="w-2 h-2 bg-purple-400 rounded-full"
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, delay: 0.2 }}
-                />
-              </div>
-            </div>
-          </motion.div>
-        )}
+            </motion.div>
+          )}
+
+          {/* Invisible div for scrolling */}
+          <div ref={messagesEndRef} style={{ height: "1px" }} />
+        </div>
       </div>
 
       {/* Chat Input Area - Fixed at bottom */}
@@ -304,7 +398,7 @@ export function ChatView({
         <div className="flex-shrink-0 z-30 transition-all duration-300 bg-transparent px-3 md:px-4">
           <div className="max-w-4xl mx-auto p-3 md:p-4">
             <div className="relative">
-              <form onSubmit={handleSubmit} className="relative">
+              <form onSubmit={handleFormSubmit} className="relative">
                 <motion.div
                   className="bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-gray-700/50 py-3 px-4 shadow-2xl relative"
                   animate={{
@@ -326,7 +420,7 @@ export function ChatView({
                         value={input}
                         onChange={handleInputChange}
                         onKeyPress={handleKeyPress}
-                        placeholder={messages.length === 0 ? "Ask anything" : "Ask me about products..."}
+                        placeholder="Ask me about products, prices, or anything else..."
                         className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-sm md:text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto custom-scrollbar"
                         disabled={isLoading}
                         rows={1}

@@ -49,10 +49,49 @@ export async function POST(req: Request) {
       recommendedProducts.map((p) => ({ id: p.id, name: p.name })),
     )
 
+    // Clean the response text - remove JSON formatting if present
+    let cleanResponse =
+      response?.vendaiResponse || "I'm here to help you find products! What are you looking for today?"
+
+    // Check if the response is JSON formatted and extract the actual message
+    if (cleanResponse.includes("```json") || cleanResponse.startsWith("{")) {
+      try {
+        // Remove markdown code blocks
+        cleanResponse = cleanResponse.replace(/```json\s*/, "").replace(/```\s*$/, "")
+
+        // Try to parse as JSON
+        const jsonResponse = JSON.parse(cleanResponse)
+        if (jsonResponse.vendaiResponse) {
+          cleanResponse = jsonResponse.vendaiResponse
+        }
+      } catch (parseError) {
+        // If parsing fails, try to extract text between quotes
+        const match = cleanResponse.match(/"vendaiResponse":\s*"([^"]*)"/)
+        if (match && match[1]) {
+          cleanResponse = match[1]
+        } else {
+          // Fallback: remove common JSON artifacts
+          cleanResponse = cleanResponse
+            .replace(/```json\s*/, "")
+            .replace(/```\s*$/, "")
+            .replace(/^\s*{\s*/, "")
+            .replace(/\s*}\s*$/, "")
+            .replace(/"vendaiResponse":\s*"/, "")
+            .replace(/"productsIds".*$/, "")
+            .replace(/",\s*$/, "")
+            .replace(/^"/, "")
+            .replace(/"$/, "")
+            .trim()
+        }
+      }
+    }
+
+    console.log("\n\nCleaned response:", cleanResponse)
+
     return NextResponse.json({
       id: Date.now().toString(),
       role: "assistant",
-      content: response?.vendaiResponse || "I'm here to help you find products! What are you looking for today?",
+      content: cleanResponse,
       products: recommendedProducts,
     })
   } catch (error) {
