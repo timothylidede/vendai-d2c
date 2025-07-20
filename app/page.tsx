@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState, useEffect, useCallback, useRef } from "react"
 import { PRODUCTS } from "@/data/products"
 import { useAuth } from "@/lib/auth-context"
@@ -46,6 +45,40 @@ function useDebounce(callback: (...args: any[]) => void, delay: number) {
   )
 }
 
+// Helper function to generate meaningful chat titles
+function generateChatTitle(userMessage: string, aiResponse: string): string {
+  const cleanUserMessage = userMessage.trim().toLowerCase()
+
+  // Skip generic/unclear messages
+  const skipPatterns = [/^(hi|hello|hey|yo|sup)$/, /^(ok|okay|yes|no|sure)$/, /^[.!?]*$/, /^.{1,2}$/]
+
+  if (skipPatterns.some((pattern) => pattern.test(cleanUserMessage))) {
+    return ""
+  }
+
+  // Generate title based on content
+  if (cleanUserMessage.includes("phone") || cleanUserMessage.includes("mobile")) {
+    return "Looking for phones"
+  } else if (cleanUserMessage.includes("coffee") || cleanUserMessage.includes("drink")) {
+    return "Coffee & beverages"
+  } else if (cleanUserMessage.includes("fitness") || cleanUserMessage.includes("exercise")) {
+    return "Fitness products"
+  } else if (cleanUserMessage.includes("cheap") || cleanUserMessage.includes("budget")) {
+    return "Budget-friendly options"
+  } else if (cleanUserMessage.includes("expensive") || cleanUserMessage.includes("premium")) {
+    return "Premium products"
+  } else if (cleanUserMessage.includes("recommend") || cleanUserMessage.includes("suggest")) {
+    return "Product recommendations"
+  } else if (cleanUserMessage.length > 20) {
+    // For longer messages, take first meaningful words
+    const words = cleanUserMessage.split(" ").slice(0, 4)
+    return words.join(" ").charAt(0).toUpperCase() + words.join(" ").slice(1)
+  } else {
+    // For shorter messages, capitalize first letter
+    return cleanUserMessage.charAt(0).toUpperCase() + cleanUserMessage.slice(1)
+  }
+}
+
 export default function Home() {
   const { user, userData, loading, logout } = useAuth()
 
@@ -78,8 +111,8 @@ export default function Home() {
   const [products, setProducts] = useState<Product[]>(PRODUCTS)
 
   // Pagination state
-  const [/* lastOrderDoc */ , setLastOrderDoc] = useState<any>(undefined)
-  const [/* loadingMoreOrders */ , setLoadingMoreOrders] = useState(false)
+  const [, setLastOrderDoc] = useState<any>(undefined)
+  const [, setLoadingMoreOrders] = useState(false)
 
   // Chat state
   const [messages, setMessages] = useState<Message[]>([])
@@ -89,14 +122,14 @@ export default function Home() {
   // Active chat session listener
   const [activeChatUnsubscribe, setActiveChatUnsubscribe] = useState<(() => void) | null>(null)
 
-  // Debounced functions - WRITE ONLY, NO READ CHECKS
+  // Debounced functions
   const debouncedUpdateCart = useDebounce((uid: string, items: CartItem[]) => {
     cartService.updateUserCart(uid, items, true)
-  }, 1500) // Increased debounce time
+  }, 1500)
 
   const debouncedSaveChatSession = useDebounce((session: ChatSession) => {
     chatService.saveChatSession(session, true)
-  }, 2000) // Increased debounce time
+  }, 2000)
 
   // Function to handle viewing all products
   const onViewAll = () => {
@@ -107,59 +140,48 @@ export default function Home() {
   useEffect(() => {
     const handleOnline = () => setIsOnline(true)
     const handleOffline = () => setIsOnline(false)
-
     setIsOnline(navigator.onLine)
-
     window.addEventListener("online", handleOnline)
     window.addEventListener("offline", handleOffline)
-
     return () => {
       window.removeEventListener("online", handleOnline)
       window.removeEventListener("offline", handleOffline)
     }
   }, [])
 
-  // SMART CACHING - Load from cache first, then sync if needed
+  // Load user data with smart caching
   useEffect(() => {
     const loadUserData = async () => {
       if (!user?.uid) return
-
       try {
-        // ALWAYS load from cache first
         const cachedCart = JSON.parse(localStorage.getItem("vendai-cart") || "[]") as CartItem[]
         const cachedOrders = JSON.parse(localStorage.getItem("vendai-orders") || "[]") as Order[]
         const cachedSessions = JSON.parse(localStorage.getItem("vendai-chat-sessions") || "[]") as ChatSession[]
 
-        // Set cached data immediately
         setCart(cachedCart)
         setOrders(cachedOrders)
         setChatSessions(cachedSessions)
 
-        // Only sync with Firestore if online and cache might be stale
         if (isOnline) {
           const lastSync = localStorage.getItem("vendai-last-sync")
           const now = Date.now()
           const fiveMinutes = 5 * 60 * 1000
 
-          // Only sync if last sync was more than 5 minutes ago
           if (!lastSync || now - Number.parseInt(lastSync) > fiveMinutes) {
             console.log("[Cache] Syncing with Firestore...")
 
-            // Sync cart only if different
             const cartData = await cartService.getUserCart(user.uid)
             if (JSON.stringify(cartData) !== JSON.stringify(cachedCart)) {
               setCart(cartData)
               localStorage.setItem("vendai-cart", JSON.stringify(cartData))
             }
 
-            // Sync orders only if different
             const { orders: ordersData } = await realtimeService.getUserOrdersOnce(user.uid)
             if (JSON.stringify(ordersData) !== JSON.stringify(cachedOrders)) {
               setOrders(ordersData)
               localStorage.setItem("vendai-orders", JSON.stringify(ordersData))
             }
 
-            // Sync chat sessions only if different
             const sessionsData = await realtimeService.getUserChatSessionsOnce(user.uid)
             if (JSON.stringify(sessionsData) !== JSON.stringify(cachedSessions)) {
               setChatSessions(sessionsData)
@@ -179,14 +201,13 @@ export default function Home() {
     if (!loading && user) {
       loadUserData()
     } else if (!loading && !user) {
-      // Clear data when logged out
       setCart([])
       setOrders([])
       setChatSessions([])
     }
   }, [user, loading, isOnline])
 
-  // WRITE-ONLY cart sync - no read checks
+  // Cart sync
   useEffect(() => {
     if (user?.uid && isOnline && cart.length > 0) {
       debouncedUpdateCart(user.uid, cart)
@@ -194,7 +215,7 @@ export default function Home() {
     localStorage.setItem("vendai-cart", JSON.stringify(cart))
   }, [cart, user?.uid, debouncedUpdateCart, isOnline])
 
-  // WRITE-ONLY chat session sync - no read checks
+  // Chat session sync
   useEffect(() => {
     if (user?.uid && isOnline) {
       const sessionToSave = chatSessions.find((s) => s.id === currentSessionId)
@@ -205,24 +226,20 @@ export default function Home() {
     localStorage.setItem("vendai-chat-sessions", JSON.stringify(chatSessions))
   }, [chatSessions, user?.uid, debouncedSaveChatSession, isOnline, currentSessionId])
 
-  // Set up active chat session listener only when actively chatting
+  // Active chat session listener
   useEffect(() => {
     if (user?.uid && currentView === "chat" && messages.length > 0) {
-      // Clean up previous listener
       if (activeChatUnsubscribe) {
         activeChatUnsubscribe()
       }
 
-      // Set up new listener for active session
       const unsubscribe = realtimeService.subscribeToActiveChatSession(currentSessionId, (session) => {
         if (session && session.messages.length !== messages.length) {
           setMessages(session.messages)
         }
       })
-
       setActiveChatUnsubscribe(() => unsubscribe)
     }
-
     return () => {
       if (activeChatUnsubscribe) {
         activeChatUnsubscribe()
@@ -241,60 +258,6 @@ export default function Home() {
     }
   }, [user, loading])
 
-  // MANUAL REFRESH FUNCTIONS
-  /*
-  const handleRefreshCart = async () => {
-    if (!user?.uid || !isOnline) return
-    try {
-      const cartData = await realtimeService.getUserCartOnce(user.uid)
-      setCart(cartData)
-      localStorage.setItem("vendai-cart", JSON.stringify(cartData))
-    } catch (error) {
-      console.error("Error refreshing cart:", error)
-    }
-  }
-
-  const handleRefreshOrders = async () => {
-    if (!user?.uid || !isOnline) return
-    try {
-      const { orders: ordersData } = await realtimeService.getUserOrdersOnce(user.uid)
-      setOrders(ordersData)
-      setLastOrderDoc(undefined) // Reset pagination
-      localStorage.setItem("vendai-orders", JSON.stringify(ordersData))
-    } catch (error) {
-      console.error("Error refreshing orders:", error)
-    }
-  }
-
-  const handleLoadMoreOrders = async () => {
-    if (!user?.uid || !isOnline || loadingMoreOrders) return
-    try {
-      setLoadingMoreOrders(true)
-      const { orders: newOrders, lastDoc } = await realtimeService.getUserOrdersOnce(user.uid, lastOrderDoc)
-      if (newOrders.length > 0) {
-        setOrders((prev) => [...prev, ...newOrders])
-        setLastOrderDoc(lastDoc)
-        localStorage.setItem("vendai-orders", JSON.stringify([...orders, ...newOrders]))
-      }
-    } catch (error) {
-      console.error("Error loading more orders:", error)
-    } finally {
-      setLoadingMoreOrders(false)
-    }
-  }
-
-  const handleRefreshChatSessions = async () => {
-    if (!user?.uid || !isOnline) return
-    try {
-      const sessionsData = await realtimeService.getUserChatSessionsOnce(user.uid)
-      setChatSessions(sessionsData)
-      localStorage.setItem("vendai-chat-sessions", JSON.stringify(sessionsData))
-    } catch (error) {
-      console.error("Error refreshing chat sessions:", error)
-    }
-  }
-  */
-
   // Chat functions
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInput(e.target.value)
@@ -312,7 +275,6 @@ export default function Home() {
 
     setMessages((prev) => [...prev, userMessage])
 
-    // Save search to user preferences (but don't wait for it)
     if (user?.uid) {
       userPreferencesService.addToSearchHistory(user.uid, input.trim()).catch(console.error)
     }
@@ -351,7 +313,16 @@ export default function Home() {
   }
 
   const updateChatSession = (newMessages: Message[]) => {
-    const sessionTitle = newMessages[0]?.content.slice(0, 30) + "..." || "New Chat"
+    if (newMessages.length < 2) return
+
+    const userMsg = newMessages[newMessages.length - 2]
+    const aiMsg = newMessages[newMessages.length - 1]
+
+    const sessionTitle = generateChatTitle(userMsg.content, aiMsg.content)
+
+    // Skip saving if title is empty (generic message)
+    if (!sessionTitle) return
+
     const now = new Date().toISOString()
     const session: ChatSession = {
       id: currentSessionId,
@@ -374,19 +345,12 @@ export default function Home() {
     })
   }
 
-  // Cart functions - LOAD CART ONLY WHEN NEEDED
+  // Cart functions
   const handleAddToCart = async (product: Product, quantity = 1) => {
     if (!user) {
       setShowLoginPrompt(true)
       return
     }
-
-    // Load fresh cart data when adding items
-    /*
-    if (isOnline) {
-      await handleRefreshCart()
-    }
-    */
 
     const cartButton = document.querySelector("[data-cart-button]")
     if (cartButton) {
@@ -442,7 +406,6 @@ export default function Home() {
         setOrders((prev) => [orderData, ...prev])
         setCart([])
         setShowCheckout(false)
-        // Update cache
         localStorage.setItem("vendai-orders", JSON.stringify([orderData, ...orders]))
         localStorage.setItem("vendai-cart", JSON.stringify([]))
       } else {
@@ -475,12 +438,10 @@ export default function Home() {
 
   const handleLogout = async () => {
     try {
-      // Clean up active chat listener
       if (activeChatUnsubscribe) {
         activeChatUnsubscribe()
         setActiveChatUnsubscribe(null)
       }
-
       await logout()
       setCart([])
       setOrders([])
@@ -609,7 +570,6 @@ export default function Home() {
           onClose={handleCloseAuth}
         />
       )}
-
       {showSignup && (
         <Signup
           onSignup={handleSignup}
@@ -620,7 +580,6 @@ export default function Home() {
           onClose={handleCloseAuth}
         />
       )}
-
       <LoginPromptModal
         show={showLoginPrompt}
         onClose={() => setShowLoginPrompt(false)}
@@ -676,7 +635,6 @@ export default function Home() {
           onSettings={handleSettings}
           showCartAdded={showCartAdded}
         />
-
         {renderMainContent()}
       </div>
 
@@ -692,7 +650,6 @@ export default function Home() {
         onRemoveItem={handleRemoveFromCart}
         onCheckout={handleCheckout}
       />
-
       <CheckoutModal
         show={showCheckout}
         onClose={() => setShowCheckout(false)}
@@ -700,21 +657,18 @@ export default function Home() {
         onCheckoutComplete={handleCheckoutComplete}
         user={userData}
       />
-
       <AllProductsModal
         show={showAllProducts}
         onClose={() => setShowAllProducts(false)}
         products={products}
         onAddToCart={handleAddToCart}
       />
-
       <ProductManagementModal
         show={showProductManagement}
         onClose={() => setShowProductManagement(false)}
         onProductRemove={handleProductRemove}
         onProductUpdate={handleProductUpdate}
       />
-
       <OrderHistoryModal show={showOrderHistory} onClose={() => setShowOrderHistory(false)} orders={orders} />
     </div>
   )

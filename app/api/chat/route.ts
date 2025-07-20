@@ -5,23 +5,6 @@ import { handle_NewMessage } from "./communicate"
 
 export const maxDuration = 30
 
-// Store for unavailable product requests and user learning
-const unavailableRequests: {
-  query: string
-  timestamp: string
-  userId?: string
-  location?: string
-}[] = []
-
-const userPreferences: {
-  [userId: string]: {
-    preferredBrands: string[]
-    commonPurchases: string[]
-    priceRange: string
-    location: string
-  }
-} = {}
-
 export function getProductsByIds(ids: number[]): Product[] {
   return PRODUCTS.filter((product) => ids.includes(product.id))
 }
@@ -38,6 +21,15 @@ export async function POST(req: Request) {
 
     // Get response from DeepSeek with embedded context
     const response = await handle_NewMessage("123", query, commsHistoryString)
+
+    if (!response) {
+      return NextResponse.json({
+        id: Date.now().toString(),
+        role: "assistant",
+        content: "I'm here to help you find products! What are you looking for today?",
+        products: [],
+      })
+    }
 
     // Extract product IDs from response
     const products = response?.productsIds ? response.productsIds : []
@@ -60,28 +52,26 @@ export async function POST(req: Request) {
     return NextResponse.json({
       id: Date.now().toString(),
       role: "assistant",
-      content: response?.vendaiResponse ? response.vendaiResponse : "Sorry, I couldn't process your request.",
+      content: response?.vendaiResponse || "I'm here to help you find products! What are you looking for today?",
       products: recommendedProducts,
     })
   } catch (error) {
     console.error("Chat API error:", error)
-    return NextResponse.json(
-      {
-        id: Date.now().toString(),
-        role: "assistant",
-        content: "Sorry, I'm experiencing some technical difficulties. Please try again.",
-        products: [],
-      },
-      { status: 200 },
-    ) // Return 200 to avoid breaking the chat
+
+    // Return a helpful fallback response instead of an error
+    return NextResponse.json({
+      id: Date.now().toString(),
+      role: "assistant",
+      content: "I'm here to help you find products! What are you looking for today?",
+      products: [],
+    })
   }
 }
 
 // Endpoint to get unavailable product requests for learning
 export async function GET() {
   return NextResponse.json({
-    unavailableRequests,
-    totalRequests: unavailableRequests.length,
-    userPreferences,
+    message: "Chat API is working",
+    timestamp: new Date().toISOString(),
   })
 }

@@ -48,14 +48,12 @@ export function ChatView({
     const storedMessage = localStorage.getItem("vendai_welcome_message")
     const storedTimestamp = localStorage.getItem("vendai_welcome_message_timestamp")
     const now = Date.now()
-    const fiveMinutes = 5 * 60 * 1000 // 5 minutes in milliseconds
+    const fiveMinutes = 5 * 60 * 1000
 
     if (messages.length === 0) {
       if (storedMessage && storedTimestamp && now - Number.parseInt(storedTimestamp, 10) < fiveMinutes) {
-        // Use stored message if it's recent
         setRandomMessage(storedMessage)
       } else {
-        // Generate new message if no stored message or it's old
         const randomIndex = Math.floor(Math.random() * welcomeMessages.length)
         const newMessage = welcomeMessages[randomIndex]
         setRandomMessage(newMessage)
@@ -63,13 +61,11 @@ export function ChatView({
         localStorage.setItem("vendai_welcome_message_timestamp", now.toString())
       }
     } else {
-      // Clear stored message if chat is active
       localStorage.removeItem("vendai_welcome_message")
       localStorage.removeItem("vendai_welcome_message_timestamp")
     }
   }, [messages.length, welcomeMessages])
 
-  // Handle screen size changes
   useEffect(() => {
     const checkScreenSize = () => {
       setIsLargeScreen(window.innerWidth >= 768)
@@ -79,7 +75,6 @@ export function ChatView({
     return () => window.removeEventListener("resize", checkScreenSize)
   }, [])
 
-  // Handle Enter key press
   const handleKeyPress = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault()
@@ -99,14 +94,14 @@ export function ChatView({
           transition={{ delay: index * 0.1 }}
           className="flex justify-end mb-4 md:mb-8 w-full"
         >
-          <div className="flex items-start space-x-2 md:space-x-3 max-w-[80%] md:max-w-[70%]">
+          <div className="flex items-start space-x-2 md:space-x-3 max-w-[85%] md:max-w-[75%]">
             <motion.div
               whileHover={{ scale: 1.01 }}
-              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-3 md:px-6 md:py-4 rounded-2xl shadow-lg"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-3 md:px-6 md:py-4 rounded-2xl shadow-lg order-1"
             >
-              <p className="leading-relaxed text-sm md:text-base">{message.content}</p>
+              <p className="leading-relaxed text-sm md:text-base break-words">{message.content}</p>
             </motion.div>
-            <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0">
+            <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0 order-2">
               <User className="h-3 w-3 md:h-4 md:w-4 text-white" />
             </div>
           </div>
@@ -123,22 +118,17 @@ export function ChatView({
         transition={{ delay: index * 0.1 }}
         className="flex justify-start mb-4 md:mb-8 w-full"
       >
-        <div className="flex items-start space-x-2 md:space-x-3 max-w-[80%] md:max-w-[70%]">
+        <div className="flex items-start space-x-2 md:space-x-3 max-w-[85%] md:max-w-[75%]">
           <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center flex-shrink-0 mt-1">
             <Bot className="h-3 w-3 md:h-4 md:w-4 text-white" />
           </div>
           <div className="flex-1 space-y-4 min-w-0">
-            {message.products && message.products.length > 0 ? (
+            <div className="text-gray-300 leading-relaxed text-sm md:text-base">
+              <p className="break-words">{message.content}</p>
+            </div>
+            {message.products && message.products.length > 0 && (
               <div className="w-full overflow-hidden">
-                <ProductCardResponse
-                  products={message.products}
-                  onAddToCart={onQuickAdd}
-                  explanation={message.content}
-                />
-              </div>
-            ) : (
-              <div className="text-gray-300 leading-relaxed text-sm md:text-base">
-                <p>{message.content}</p>
+                <ProductCardResponse products={message.products} onAddToCart={onQuickAdd} explanation="" />
               </div>
             )}
           </div>
@@ -173,7 +163,6 @@ export function ChatView({
                 transition={{ delay: 0.2 }}
                 className="text-center mb-6 md:mb-8"
               >
-                {/* Greeting with Glow Effect */}
                 <motion.h1
                   className="text-xl md:text-2xl lg:text-3xl font-extralight mb-4 relative"
                   animate={{
@@ -202,7 +191,6 @@ export function ChatView({
                   transition={{ delay: 0.4 }}
                   className="w-full max-w-2xl mb-8"
                 >
-                  {/* Grok-style Chat Input */}
                   <div className="relative">
                     <form onSubmit={handleSubmit} className="relative">
                       <motion.div
@@ -244,7 +232,6 @@ export function ChatView({
                             />
                           </div>
                           <div className="flex justify-end">
-                            {/* Submit Button */}
                             <motion.button
                               type="submit"
                               disabled={isLoading || !input.trim()}
@@ -261,7 +248,7 @@ export function ChatView({
                   </div>
                 </motion.div>
               )}
-              {/* Product Shortcuts - Only show when no messages */}
+              {/* Product Shortcuts */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -273,13 +260,19 @@ export function ChatView({
             </div>
           )}
         </div>
-        {/* Chat Messages with Better Spacing */}
-        <div className="w-full max-w-3xl mx-auto space-y-4 md:space-y-8 pb-4 md:pb-24">
+
+        {/* Chat Messages */}
+        <div className="w-full max-w-4xl mx-auto space-y-4 md:space-y-6 pb-4 md:pb-24">
           {messages.map((message, index) => renderMessage(message, index))}
         </div>
+
         {/* Loading Animation */}
         {isLoading && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start mb-4 md:mb-8">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="flex justify-start mb-4 md:mb-8 max-w-4xl mx-auto"
+          >
             <div className="flex items-start space-x-2 md:space-x-3">
               <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center flex-shrink-0 mt-1">
                 <Bot className="h-3 w-3 md:h-4 md:w-4 text-white" />
@@ -305,11 +298,11 @@ export function ChatView({
           </motion.div>
         )}
       </div>
-      {/* Chat Input Area - Fixed at bottom with transparent background */}
+
+      {/* Chat Input Area - Fixed at bottom */}
       {shouldShowChatInput && (
         <div className="flex-shrink-0 z-30 transition-all duration-300 bg-transparent px-3 md:px-4">
-          <div className="max-w-3xl mx-auto p-3 md:p-4">
-            {/* Grok-style Chat Input */}
+          <div className="max-w-4xl mx-auto p-3 md:p-4">
             <div className="relative">
               <form onSubmit={handleSubmit} className="relative">
                 <motion.div
@@ -351,7 +344,6 @@ export function ChatView({
                       />
                     </div>
                     <div className="flex justify-end">
-                      {/* Submit Button */}
                       <motion.button
                         type="submit"
                         disabled={isLoading || !input.trim()}
