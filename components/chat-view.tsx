@@ -1,19 +1,18 @@
 "use client"
 
 import type React from "react"
-
 import { motion } from "framer-motion"
-import { Send, User, Bot, Home } from "lucide-react" // Import Home icon
+import { Send, User, Bot, Home } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ProductShortcuts } from "./product-shortcuts"
 import { ProductCardResponse } from "./product-card-response"
 import { useState, useEffect } from "react"
-import type { Product, Message } from "@/lib/types" // Import Product and Message type from lib/types
+import type { Product, Message } from "@/lib/types"
 
 interface ChatViewProps {
-  messages: Message[] // Corrected type to Message[]
+  messages: Message[]
   input: string
-  handleInputChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void // Corrected type to HTMLTextAreaElement
+  handleInputChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
   handleSubmit: (e: React.FormEvent) => void
   isLoading: boolean
   products: Product[]
@@ -41,7 +40,7 @@ export function ChatView({
   isInSubView = false,
   chatHistoryMinimized,
 }: ChatViewProps) {
-  const welcomeMessages = ["Niaje.", "Twende.", "What do you want to get?"]
+  const welcomeMessages = ["Niaje.", "Twende.", "What do you want to get?", "#Wantam."]
   const [randomMessage, setRandomMessage] = useState("")
   const [isLargeScreen, setIsLargeScreen] = useState(false)
 
@@ -91,7 +90,6 @@ export function ChatView({
   }
 
   const renderMessage = (message: Message, index: number) => {
-    // Corrected type to Message
     if (message.role === "user") {
       return (
         <motion.div
@@ -99,11 +97,9 @@ export function ChatView({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.1 }}
-          className="flex justify-end mb-4 md:mb-8 w-full" // Added w-full
+          className="flex justify-end mb-4 md:mb-8 w-full"
         >
           <div className="flex items-start space-x-2 md:space-x-3 max-w-[80%] md:max-w-[70%]">
-            {" "}
-            {/* Adjusted max-w */}
             <motion.div
               whileHover={{ scale: 1.01 }}
               className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-3 md:px-6 md:py-4 rounded-2xl shadow-lg"
@@ -125,11 +121,9 @@ export function ChatView({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: index * 0.1 }}
-        className="flex justify-start mb-4 md:mb-8 w-full" // Added w-full
+        className="flex justify-start mb-4 md:mb-8 w-full"
       >
         <div className="flex items-start space-x-2 md:space-x-3 max-w-[80%] md:max-w-[70%]">
-          {" "}
-          {/* Adjusted max-w */}
           <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center flex-shrink-0 mt-1">
             <Bot className="h-3 w-3 md:h-4 md:w-4 text-white" />
           </div>
@@ -158,9 +152,7 @@ export function ChatView({
   return (
     <div className="flex-1 flex flex-col h-full relative transition-all duration-300 overflow-hidden">
       {/* Main Content Area - Scrollable */}
-      <div
-        className="flex-1 overflow-y-auto px-3 md:px-4 py-4 md:py-8 custom-scrollbar" // Added custom-scrollbar class
-      >
+      <div className="flex-1 overflow-y-auto px-3 md:px-4 py-4 md:py-8 custom-scrollbar">
         {/* Back to Main Button - Only show when needed */}
         {(showBackButton || isInSubView) && (
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="mb-4 md:mb-6">
@@ -235,7 +227,7 @@ export function ChatView({
                               onChange={handleInputChange}
                               onKeyPress={handleKeyPress}
                               placeholder="Ask me about products..."
-                              className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto custom-scrollbar" // Added custom-scrollbar
+                              className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto custom-scrollbar"
                               disabled={isLoading}
                               rows={1}
                               style={{
@@ -283,8 +275,6 @@ export function ChatView({
         </div>
         {/* Chat Messages with Better Spacing */}
         <div className="w-full max-w-3xl mx-auto space-y-4 md:space-y-8 pb-4 md:pb-24">
-          {" "}
-          {/* Removed max-w-3xl mx-auto */}
           {messages.map((message, index) => renderMessage(message, index))}
         </div>
         {/* Loading Animation */}
@@ -317,9 +307,7 @@ export function ChatView({
       </div>
       {/* Chat Input Area - Fixed at bottom with transparent background */}
       {shouldShowChatInput && (
-        <div
-          className="flex-shrink-0 z-30 transition-all duration-300 bg-transparent px-3 md:px-4" // Added padding here
-        >
+        <div className="flex-shrink-0 z-30 transition-all duration-300 bg-transparent px-3 md:px-4">
           <div className="max-w-3xl mx-auto p-3 md:p-4">
             {/* Grok-style Chat Input */}
             <div className="relative">
@@ -346,7 +334,7 @@ export function ChatView({
                         onChange={handleInputChange}
                         onKeyPress={handleKeyPress}
                         placeholder={messages.length === 0 ? "Ask anything" : "Ask me about products..."}
-                        className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-sm md:text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto custom-scrollbar" // Added custom-scrollbar
+                        className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-sm md:text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto custom-scrollbar"
                         disabled={isLoading}
                         rows={1}
                         style={{

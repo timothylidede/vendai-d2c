@@ -1,4 +1,3 @@
-import 'dotenv/config';
 import { OpenAI } from 'openai';
 import { getContext } from './context'; // Assuming getContext is defined in context.ts
 import { systemPrompt } from './systemPrompt';// Assuming getContext is defined in context.ts
