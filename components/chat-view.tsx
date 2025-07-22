@@ -97,7 +97,7 @@ export function ChatView({
   chatHistoryMinimized,
 }: ChatViewProps) {
   // Original welcome messages restored
-  const welcomeMessages = ["Niaje.", "Twende.", "What do you want to get?", "#Wantam."]
+  const welcomeMessages = ["Niaje.", "Twende.", "What do you want to get?"]
 
   const [randomMessage, setRandomMessage] = useState("")
   const [isLargeScreen, setIsLargeScreen] = useState(false)
