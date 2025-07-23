@@ -1,8 +1,8 @@
 import { downloadProductImages } from './downloadProductImages';
 
 const products = [
-  'Fanta Orange 500ml',
-  'CocaCola 1L',
+  'MOLO MILK 500ML',
+  'ARIMIS 90ml milking jelly',
   'Sprite 330ml'
 ] as const;
 
