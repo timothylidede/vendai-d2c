@@ -10,73 +10,137 @@ export interface OrderItem {
 export interface Order {
   id: string
   userId: string
-  items: OrderItem[]
+  items: CartItem[]
   total: number
   status: "pending" | "processing" | "shipped" | "completed" | "cancelled"
-  paymentStatus: "pending" | "paid" | "failed"
-  paymentMethod: "mpesa" | "card" | "cash"
-  deliveryAddress: { address: string; location: { lat: number; lng: number }; notes: string }
+  paymentStatus: "pending" | "completed" | "failed" | "paid"
+  paymentMethod: string
+  deliveryAddress: {
+    address: string
+    location: { lat: number; lng: number }
+    notes: string
+  }
   deliveryDate: string
   createdAt: string
   updatedAt: string
-  orderNumber?: string // Optional to match order-history-modal
-  date?: string // Optional to match order-history-modal
+  orderNumber?: string
+  date: string
+  assignedDistributor?: string
+  distributorStatus?: "pending" | "assigned" | "accepted" | "preparing" | "shipped" | "delivered"
 }
 
-// Updated Product interface to match data/products.ts
 export interface Product {
   id: number
   name: string
-  wholesalePrice: number // Required as per data/products.ts
+  wholesalePrice: number
   category: string
   description: string
   image: string
-  stock: number // Required as per data/products.ts
-  unit: string // Corrected from 'units' and required as per data/products.ts
+  stock: number
+  unit: string
   brand?: string
   size?: string
-  price?: number // Optional as per data/products.ts
+  price?: number
   wholesaleQuantity?: number
 }
 
-// CartItem now extends Product, inheriting its properties, and ensures price is a number
-export interface CartItem extends Product {
+export interface CartItem {
+  id: string
+  name: string
+  price: number
   quantity: number
-  price: number // Ensure price is always a number for CartItem
+  category: string
+  image?: string
 }
 
 export interface Message {
   id: string
   role: "user" | "assistant"
   content: string
-  products?: Product[] // Using the updated Product type
+  products?: Product[]
+  timestamp?: string
+}
+
+export interface ChatMessage {
+  id: string
+  role: "user" | "assistant"
+  content: string
+  timestamp: string
 }
 
 export interface ChatSession {
   id: string
   userId: string
   title: string
-  messages: Message[]
+  messages: ChatMessage[]
   isActive: boolean
   createdAt: string
   updatedAt: string
   date: string
 }
 
-// New UserData interface with displayName, photoURL, provider, area, and updatedAt
 export interface UserData {
   uid: string
+  name: string | null
+  displayName?: string | null
   email: string | null
-  displayName: string | null // Added displayName
-  name?: string
-  phone?: string
+  phone: string | null
+  photoURL: string | null
+  provider: string
   address?: string
   city?: string
-  area?: string // Added area
-  postalCode?: string
-  createdAt?: string
-  updatedAt?: string // Added updatedAt
-  photoURL?: string | null // Added photoURL
-  provider?: string // Added provider
-  // Add other user-related fields as needed
+  area?: string
+  role?: "admin" | "distributor" | "customer"
+  createdAt: string
+  updatedAt: string
+}
+
+export interface Distributor {
+  id: string
+  name: string
+  email: string
+  phone: string
+  address: string
+  area: string
+  isActive: boolean
+  assignedOrders: string[]
+  completedOrders: number
+  rating: number
+  createdAt: string
+  updatedAt: string
+}
+
+export interface OrderAssignment {
+  id: string
+  orderId: string
+  distributorId: string
+  assignedAt: string
+  status: "pending" | "accepted" | "rejected" | "completed"
+  notes?: string
+}
+
+export interface Analytics {
+  id: string
+  date: string
+  totalOrders: number
+  totalRevenue: number
+  newUsers: number
+  activeUsers: number
+  completedOrders: number
+  cancelledOrders: number
+  averageOrderValue: number
+  topProducts: { productId: number; name: string; quantity: number }[]
+  createdAt: string
+}
+
+export interface DashboardMetrics {
+  totalUsers: number
+  totalOrders: number
+  totalRevenue: number
+  pendingOrders: number
+  completedOrders: number
+  activeDistributors: number
+  revenueGrowth: number
+  orderGrowth: number
+  userGrowth: number
 }

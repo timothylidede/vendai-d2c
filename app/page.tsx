@@ -11,7 +11,7 @@ import {
   userPreferencesService,
   realtimeService,
 } from "@/lib/firebase-services"
-import type { CartItem, Order, ChatSession, Message, Product } from "@/lib/types"
+import type { CartItem, Order, ChatSession, Message, Product, ChatMessage } from "@/lib/types"
 
 // Components
 import { Header } from "@/components/header"
@@ -335,6 +335,7 @@ export default function Home() {
       id: Date.now().toString(),
       role: "user",
       content: input,
+      timestamp: new Date().toISOString(),
     }
 
     setMessages((prev) => [...prev, userMessage])
@@ -359,6 +360,7 @@ export default function Home() {
         role: "assistant",
         content: data.content,
         products: data.products || [],
+        timestamp: new Date().toISOString(),
       }
 
       setMessages((prev) => [...prev, assistantMessage])
@@ -369,6 +371,7 @@ export default function Home() {
         id: (Date.now() + 1).toString(),
         role: "assistant",
         content: "Sorry, I'm having trouble connecting. Please try again.",
+        timestamp: new Date().toISOString(),
       }
       setMessages((prev) => [...prev, errorMessage])
     } finally {
@@ -388,11 +391,20 @@ export default function Home() {
     if (!sessionTitle) return
 
     const now = new Date().toISOString()
+
+    // Convert Messages to ChatMessages
+    const chatMessages: ChatMessage[] = newMessages.map((msg) => ({
+      id: msg.id,
+      role: msg.role,
+      content: msg.content,
+      timestamp: msg.timestamp || now,
+    }))
+
     const session: ChatSession = {
       id: currentSessionId,
       userId: user?.uid || "",
       title: sessionTitle,
-      messages: newMessages,
+      messages: chatMessages,
       isActive: true,
       createdAt: now,
       updatedAt: now,
@@ -423,23 +435,36 @@ export default function Home() {
     }
 
     setCart((prevCart) => {
-      const existingItem = prevCart.find((item) => item.id === product.id)
+      const productIdStr = product.id.toString()
+      const existingItem = prevCart.find((item) => item.id === productIdStr)
       if (existingItem) {
-        return prevCart.map((item) => (item.id === product.id ? { ...item, quantity: item.quantity + quantity } : item))
+        return prevCart.map((item) =>
+          item.id === productIdStr ? { ...item, quantity: item.quantity + quantity } : item,
+        )
       }
       const itemPrice = product.price ?? 0
-      return [...prevCart, { ...product, price: itemPrice, quantity }] as CartItem[]
+      return [
+        ...prevCart,
+        {
+          id: productIdStr,
+          name: product.name,
+          price: itemPrice,
+          quantity,
+          category: product.category,
+          image: product.image,
+        },
+      ] as CartItem[]
     })
 
     setShowCartAdded(true)
     setTimeout(() => setShowCartAdded(false), 1500)
   }
 
-  const handleRemoveFromCart = (productId: number) => {
+  const handleRemoveFromCart = (productId: string) => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== productId))
   }
 
-  const handleUpdateQuantity = (productId: number, quantity: number) => {
+  const handleUpdateQuantity = (productId: string, quantity: number) => {
     if (quantity <= 0) {
       handleRemoveFromCart(productId)
     } else {
@@ -486,7 +511,19 @@ export default function Home() {
       return
     }
     items.forEach((item) => {
-      handleAddToCart(item, item.quantity)
+      // Convert CartItem back to Product for handleAddToCart
+      const product: Product = {
+        id: Number.parseInt(item.id),
+        name: item.name,
+        price: item.price,
+        category: item.category,
+        image: item.image || "",
+        wholesalePrice: item.price,
+        description: "",
+        stock: 100,
+        unit: "piece",
+      }
+      handleAddToCart(product, item.quantity)
     })
   }
 
@@ -536,7 +573,14 @@ export default function Home() {
     const session = chatSessions.find((s) => s.id === sessionId)
     if (session) {
       setCurrentSessionId(sessionId)
-      setMessages(session.messages)
+      // Convert ChatMessages back to Messages
+      const messages: Message[] = session.messages.map((msg) => ({
+        id: msg.id,
+        role: msg.role,
+        content: msg.content,
+        timestamp: msg.timestamp,
+      }))
+      setMessages(messages)
       setCurrentView("chat")
     }
   }
@@ -548,12 +592,12 @@ export default function Home() {
 
   const handleProductRemove = (productId: number) => {
     setProducts((prev) => prev.filter((p) => p.id !== productId))
-    setCart((prev) => prev.filter((item) => item.id !== productId))
+    setCart((prev) => prev.filter((item) => item.id !== productId.toString()))
   }
 
   const handleProductUpdate = (productId: number, updates: any) => {
     setProducts((prev) => prev.map((p) => (p.id === productId ? { ...p, ...updates } : p)))
-    setCart((prev) => prev.map((item) => (item.id === productId ? { ...item, ...updates } : item)))
+    setCart((prev) => prev.map((item) => (item.id === productId.toString() ? { ...item, ...updates } : item)))
   }
 
   const handleBackToMain = () => {

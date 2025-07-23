@@ -29,14 +29,12 @@ interface ChatViewProps {
 function TypingText({ text, messageId, onComplete }: { text: string; messageId: string; onComplete?: () => void }) {
   const [displayedText, setDisplayedText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [isCompleted, setIsCompleted] = useState(false)
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
     // Reset state when messageId changes (new message)
     setDisplayedText("")
     setCurrentIndex(0)
-    setIsCompleted(false)
 
     // Clear any existing interval
     if (intervalRef.current) {
@@ -55,10 +53,7 @@ function TypingText({ text, messageId, onComplete }: { text: string; messageId: 
             clearInterval(intervalRef.current)
             intervalRef.current = null
           }
-          if (!isCompleted) {
-            setIsCompleted(true)
-            onComplete?.()
-          }
+          onComplete?.()
           return prevIndex
         }
       })
@@ -69,14 +64,7 @@ function TypingText({ text, messageId, onComplete }: { text: string; messageId: 
         clearInterval(intervalRef.current)
       }
     }
-  }, [messageId, text]) // Only depend on messageId and text
-
-  // Don't depend on onComplete or isCompleted to avoid infinite loops
-  useEffect(() => {
-    if (isCompleted && onComplete) {
-      onComplete()
-    }
-  }, [isCompleted, onComplete])
+  }, [messageId, text, onComplete])
 
   return <span>{displayedText}</span>
 }
@@ -102,9 +90,10 @@ export function ChatView({
   const [randomMessage, setRandomMessage] = useState("")
   const [isLargeScreen, setIsLargeScreen] = useState(false)
   const [typingMessageId, setTypingMessageId] = useState<string | null>(null)
+  const [typedMessages, setTypedMessages] = useState<Set<string>>(new Set())
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const chatContainerRef = useRef<HTMLDivElement>(null)
-  const processedMessagesRef = useRef<Set<string>>(new Set())
+  const lastProcessedMessageCountRef = useRef(0)
 
   // Enhanced auto-scroll function
   const scrollToBottom = useCallback(() => {
@@ -123,30 +112,24 @@ export function ChatView({
     scrollToBottom()
   }, [messages, isLoading, scrollToBottom])
 
-  // Track when new AI messages arrive to trigger typing animation - FIXED
+  // Track new AI messages for typing animation - FIXED LOGIC
   useEffect(() => {
-    if (messages.length > 0) {
-      const lastMessage = messages[messages.length - 1]
-      if (
-        lastMessage.role === "assistant" &&
-        !processedMessagesRef.current.has(lastMessage.id) &&
-        !isLoading // Only start typing when not loading
-      ) {
-        processedMessagesRef.current.add(lastMessage.id)
-        setTypingMessageId(lastMessage.id)
+    // Only trigger typing for truly new messages, not on component re-renders
+    if (messages.length > lastProcessedMessageCountRef.current) {
+      const newMessages = messages.slice(lastProcessedMessageCountRef.current)
+      
+      // Find the last new AI message
+      for (let i = newMessages.length - 1; i >= 0; i--) {
+        const message = newMessages[i]
+        if (message.role === "assistant" && !typedMessages.has(message.id)) {
+          setTypingMessageId(message.id)
+          break
+        }
       }
+      
+      lastProcessedMessageCountRef.current = messages.length
     }
-  }, [messages, isLoading]) // Removed typingMessageId from dependencies
-
-  // Additional scroll trigger for immediate user message display
-  useEffect(() => {
-    if (messages.length > 0) {
-      const lastMessage = messages[messages.length - 1]
-      if (lastMessage.role === "user") {
-        setTimeout(scrollToBottom, 50)
-      }
-    }
-  }, [messages, scrollToBottom])
+  }, [messages.length]) // Only depend on message count, not the messages array itself
 
   // Welcome message management
   useEffect(() => {
@@ -198,7 +181,8 @@ export function ChatView({
   }
 
   // Callback to handle typing completion
-  const handleTypingComplete = useCallback(() => {
+  const handleTypingComplete = useCallback((messageId: string) => {
+    setTypedMessages(prev => new Set([...prev, messageId]))
     setTypingMessageId(null)
   }, [])
 
@@ -209,7 +193,7 @@ export function ChatView({
           key={message.id}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: index * 0.05 }}
+          transition={{ delay: 0 }} // Immediate for user messages
           className="flex justify-end mb-4 md:mb-6 w-full"
         >
           <div className="flex items-start space-x-2 md:space-x-3 max-w-[85%] md:max-w-[75%]">
@@ -227,15 +211,16 @@ export function ChatView({
       )
     }
 
-    // AI Response with typing animation
-    const isTyping = typingMessageId === message.id
+    // AI Response with conditional typing animation
+    const isTyping = typingMessageId === message.id && !typedMessages.has(message.id)
+    const hasBeenTyped = typedMessages.has(message.id)
 
     return (
       <motion.div
         key={message.id}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: index * 0.05 }}
+        transition={{ delay: 0 }} // Immediate for AI messages too
         className="flex justify-start mb-4 md:mb-6 w-full"
       >
         <div className="flex items-start space-x-2 md:space-x-3 max-w-[85%] md:max-w-[75%]">
@@ -246,7 +231,11 @@ export function ChatView({
             <div className="text-gray-300 leading-relaxed text-sm md:text-base">
               <p className="break-words">
                 {isTyping ? (
-                  <TypingText text={message.content} messageId={message.id} onComplete={handleTypingComplete} />
+                  <TypingText 
+                    text={message.content} 
+                    messageId={message.id} 
+                    onComplete={() => handleTypingComplete(message.id)} 
+                  />
                 ) : (
                   message.content
                 )}
