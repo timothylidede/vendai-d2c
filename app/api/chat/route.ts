@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 import { PRODUCTS } from "@/data/products"
-import type { Product } from "@/data/products"
+import type { Product } from "@/lib/types"
 import { handle_NewMessage } from "./communicate"
 
 export const maxDuration = 30
@@ -15,11 +15,11 @@ export async function POST(req: Request) {
     const lastMessage = messages[messages.length - 1]
     const query = lastMessage.content
 
-    console.log("\n\nReceived query from user:", query)
+    console.log("Query:", query)
 
     const commsHistoryString: string = JSON.stringify(messages)
 
-    // Get response from DeepSeek with embedded context
+    // Start processing immediately - no delays
     const response = await handle_NewMessage("123", query, commsHistoryString)
 
     if (!response) {
@@ -39,15 +39,9 @@ export async function POST(req: Request) {
       productIds = products.map((id: string) => Number.parseInt(id, 10)).filter((id: number) => !isNaN(id))
     }
 
-    console.log("\n\nProduct IDs extracted:", productIds)
-
-    // Get products by IDs
-    const recommendedProducts = getProductsByIds(productIds)
-
-    console.log(
-      "\n\nRecommended products:",
-      recommendedProducts.map((p) => ({ id: p.id, name: p.name })),
-    )
+    // Get products by IDs and filter only in-stock products
+    const allRecommendedProducts = getProductsByIds(productIds)
+    const recommendedProducts = allRecommendedProducts.filter((product) => product.inStock)
 
     // Clean the response text - remove JSON formatting if present
     let cleanResponse =
@@ -86,7 +80,11 @@ export async function POST(req: Request) {
       }
     }
 
-    console.log("\n\nCleaned response:", cleanResponse)
+    // Add note about out-of-stock products if any were filtered out
+    if (allRecommendedProducts.length > recommendedProducts.length) {
+      const outOfStockCount = allRecommendedProducts.length - recommendedProducts.length
+      cleanResponse += ` (Note: ${outOfStockCount} product${outOfStockCount > 1 ? "s are" : " is"} currently out of stock)`
+    }
 
     return NextResponse.json({
       id: Date.now().toString(),

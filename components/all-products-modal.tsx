@@ -1,29 +1,55 @@
-"use client";
+"use client"
 
-import { motion, AnimatePresence } from "framer-motion";
-import { X, Plus, Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
-import Image from "next/image"; // Import Image component
+import type React from "react"
+
+import { motion, AnimatePresence } from "framer-motion"
+import { X, Plus, Search, ChevronLeft, ChevronRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { useState, useMemo } from "react"
 
 interface AllProductsModalProps {
-  show: boolean;
-  onClose: () => void;
-  products: any[];
-  onAddToCart: (product: any) => void;
+  show: boolean
+  onClose: () => void
+  products: any[]
+  onAddToCart: (product: any) => void
 }
 
 export function AllProductsModal({ show, onClose, products, onAddToCart }: AllProductsModalProps) {
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState("")
+  const [currentPage, setCurrentPage] = useState(1)
 
   // Safety check to ensure products is an array
-  const safeProducts = Array.isArray(products) ? products : [];
+  const safeProducts = Array.isArray(products) ? products : []
 
   // Filter products based on search query
-  const filteredProducts = safeProducts.filter((product) =>
-    product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    product.description.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredProducts = safeProducts.filter(
+    (product) =>
+      product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      product.description.toLowerCase().includes(searchQuery.toLowerCase()),
+  )
+
+  // Pagination logic
+  const itemsPerPage = useMemo(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth >= 1024 ? 30 : 10 // lg screens: 30, smaller: 10
+    }
+    return 30 // default for SSR
+  }, [])
+
+  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage)
+  const startIndex = (currentPage - 1) * itemsPerPage
+  const endIndex = startIndex + itemsPerPage
+  const currentProducts = filteredProducts.slice(startIndex, endIndex)
+
+  // Reset to first page when search changes
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value)
+    setCurrentPage(1)
+  }
+
+  const goToPage = (page: number) => {
+    setCurrentPage(Math.max(1, Math.min(page, totalPages)))
+  }
 
   return (
     <AnimatePresence>
@@ -58,16 +84,29 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                   type="text"
                   placeholder="Search products..."
                   value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onChange={handleSearchChange}
                   className="w-full bg-black border border-white/20 rounded-lg pl-10 pr-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-white/40 transition-all duration-200"
                 />
               </div>
+
+              {/* Pagination Info */}
+              {filteredProducts.length > 0 && (
+                <div className="flex items-center justify-between mt-4 text-sm text-gray-400">
+                  <span>
+                    Showing {startIndex + 1}-{Math.min(endIndex, filteredProducts.length)} of {filteredProducts.length}{" "}
+                    products
+                  </span>
+                  <span>
+                    Page {currentPage} of {totalPages}
+                  </span>
+                </div>
+              )}
             </div>
 
             {/* Scrollable Content */}
-            <div className="p-6 overflow-y-auto max-h-[calc(80vh-140px)]">
+            <div className="p-6 overflow-y-auto max-h-[calc(80vh-200px)]">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {filteredProducts.map((product, index) => (
+                {currentProducts.map((product, index) => (
                   <motion.div
                     key={product.id}
                     initial={{ opacity: 0, y: 20 }}
@@ -76,15 +115,14 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                     className="glass-effect rounded-lg p-4 hover:bg-white/5 transition-all duration-300"
                   >
                     <div className="aspect-square bg-white/10 rounded-lg mb-3 overflow-hidden">
-                      <Image
-                        src={product.image || "/placeholder.webp"} // Use WebP placeholder
+                      <img
+                        src={product.image || `/placeholder.svg?height=200&width=200`}
                         alt={product.name}
-                        width={200} // Match display size
-                        height={200}
-                        quality={75} // Balance quality and size
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        placeholder="blur" // Optional: Add blur effect
-                        blurDataURL="/placeholder.webp" // Low-res placeholder
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement
+                          target.src = `/placeholder.svg?height=200&width=200`
+                        }}
                       />
                     </div>
                     <h3 className="font-medium mb-2">{product.name}</h3>
@@ -95,8 +133,8 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                         <Button
                           size="sm"
                           onClick={() => {
-                            onAddToCart(product);
-                            onClose();
+                            onAddToCart(product)
+                            onClose()
                           }}
                           className="bg-white text-black hover:bg-gray-200"
                         >
@@ -116,9 +154,62 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                 </div>
               )}
             </div>
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="sticky bottom-0 bg-black/80 backdrop-blur-sm border-t border-white/10 p-4">
+                <div className="flex items-center justify-center gap-2">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => goToPage(currentPage - 1)}
+                    disabled={currentPage === 1}
+                    className="hover:bg-white/10"
+                  >
+                    <ChevronLeft className="h-4 w-4" />
+                  </Button>
+
+                  {/* Page numbers */}
+                  {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
+                    let pageNum
+                    if (totalPages <= 5) {
+                      pageNum = i + 1
+                    } else if (currentPage <= 3) {
+                      pageNum = i + 1
+                    } else if (currentPage >= totalPages - 2) {
+                      pageNum = totalPages - 4 + i
+                    } else {
+                      pageNum = currentPage - 2 + i
+                    }
+
+                    return (
+                      <Button
+                        key={pageNum}
+                        variant={currentPage === pageNum ? "default" : "ghost"}
+                        size="sm"
+                        onClick={() => goToPage(pageNum)}
+                        className={currentPage === pageNum ? "bg-white text-black" : "hover:bg-white/10"}
+                      >
+                        {pageNum}
+                      </Button>
+                    )
+                  })}
+
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => goToPage(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                    className="hover:bg-white/10"
+                  >
+                    <ChevronRight className="h-4 w-4" />
+                  </Button>
+                </div>
+              </div>
+            )}
           </motion.div>
         </motion.div>
       )}
     </AnimatePresence>
-  );
+  )
 }

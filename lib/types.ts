@@ -12,35 +12,44 @@ export interface Order {
   userId: string
   items: CartItem[]
   total: number
-  status: "pending" | "processing" | "shipped" | "completed" | "cancelled"
-  paymentStatus: "pending" | "completed" | "failed" | "paid"
-  paymentMethod: string
-  deliveryAddress: {
-    address: string
-    location: { lat: number; lng: number }
-    notes: string
+  status: "pending" | "processing" | "shipped" | "delivered" | "cancelled"
+  createdAt: Date
+  updatedAt: Date
+  shippingAddress?: {
+    street: string
+    city: string
+    state: string
+    zipCode: string
+    country: string
   }
-  deliveryDate: string
-  createdAt: string
-  updatedAt: string
+  paymentMethod?: string
+  paymentStatus?: "pending" | "paid" | "failed"
   orderNumber?: string
   date: string
   assignedDistributor?: string
   distributorStatus?: "pending" | "assigned" | "accepted" | "preparing" | "shipped" | "delivered"
+  deliveryAddress?: {
+    address: string
+    location: { lat: number; lng: number }
+    notes: string
+  }
+  deliveryDate?: string
 }
 
 export interface Product {
   id: number
   name: string
+  description: string
+  price: number
   wholesalePrice: number
   category: string
-  description: string
-  image: string
-  stock: number
-  unit: string
   brand?: string
+  image?: string
+  inStock: boolean
+  stock?: number
+  unit: string
+  code?: string
   size?: string
-  price?: number
   wholesaleQuantity?: number
 }
 
@@ -49,8 +58,8 @@ export interface CartItem {
   name: string
   price: number
   quantity: number
-  category: string
   image?: string
+  category: string
 }
 
 export interface Message {
@@ -93,6 +102,14 @@ export interface UserData {
   role?: "admin" | "distributor" | "customer"
   createdAt: string
   updatedAt: string
+  isNew?: boolean
+}
+
+export interface User {
+  uid: string
+  email: string
+  displayName?: string
+  role: "customer" | "admin" | "distributor"
 }
 
 export interface Distributor {
@@ -120,17 +137,15 @@ export interface OrderAssignment {
 }
 
 export interface Analytics {
-  id: string
-  date: string
   totalOrders: number
   totalRevenue: number
-  newUsers: number
-  activeUsers: number
-  completedOrders: number
-  cancelledOrders: number
-  averageOrderValue: number
-  topProducts: { productId: number; name: string; quantity: number }[]
-  createdAt: string
+  totalUsers: number
+  topProducts: Array<{
+    id: number
+    name: string
+    sales: number
+  }>
+  recentOrders: Order[]
 }
 
 export interface DashboardMetrics {
@@ -143,4 +158,13 @@ export interface DashboardMetrics {
   revenueGrowth: number
   orderGrowth: number
   userGrowth: number
+}
+
+export interface ChatHistory {
+  id: string
+  userId: string
+  title: string
+  messages: Message[]
+  createdAt: Date
+  updatedAt: Date
 }

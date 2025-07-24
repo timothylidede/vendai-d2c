@@ -7,7 +7,7 @@ import { auth, db } from "@/lib/firebase"
 import { onAuthStateChanged, signOut as firebaseSignOut } from "firebase/auth"
 import { doc, getDoc } from "firebase/firestore"
 import type { User as FirebaseUser } from "firebase/auth" // Import Firebase User type
-import type { UserData } from "@/lib/types" // Import UserData from lib/types
+import type { UserData } from "./types" // Import UserData from lib/types
 
 interface AuthContextType {
   user: FirebaseUser | null

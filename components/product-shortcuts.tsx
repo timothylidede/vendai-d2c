@@ -72,7 +72,7 @@ export function ProductShortcuts({ products, onQuickAdd, onViewAll }: ProductSho
             <Sparkles className="h-3 w-3 mr-1" />
             <div className="text-left">
               <div className="font-medium text-xs">View All</div>
-              <div className="text-purple-400 text-xs">120+ items</div>
+              <div className="text-purple-400 text-xs">1,000+ items</div>
             </div>
           </Button>
         </motion.div>

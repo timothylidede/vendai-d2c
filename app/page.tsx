@@ -2,7 +2,6 @@
 
 import type React from "react"
 import { useState, useEffect, useCallback, useRef } from "react"
-import { PRODUCTS } from "@/data/products"
 import { useAuth } from "@/lib/auth-context"
 import {
   cartService,
@@ -26,8 +25,17 @@ import { Login } from "@/components/auth/login"
 import { Signup } from "@/components/auth/signup"
 import { LoginPromptModal } from "@/components/login-prompt-modal"
 import { CheckoutModal } from "@/components/checkout-modal"
-import { ProductManagementModal } from "@/components/product-management-modal"
 import { OrderHistoryModal } from "@/components/order-history-modal"
+
+// Import products with error handling
+let PRODUCTS: Product[] = []
+try {
+  const productsModule = require("@/data/products")
+  PRODUCTS = productsModule.PRODUCTS || []
+} catch (error) {
+  console.error("Failed to load products:", error)
+  PRODUCTS = []
+}
 
 // Simple debounce function
 function useDebounce(callback: (...args: any[]) => void, delay: number) {
@@ -95,7 +103,6 @@ export default function Home() {
   const [showCheckout, setShowCheckout] = useState(false)
   const [showAllProducts, setShowAllProducts] = useState(false)
   const [showOrderHistory, setShowOrderHistory] = useState(false)
-  const [showProductManagement, setShowProductManagement] = useState(false)
   const [showLogin, setShowLogin] = useState(false)
   const [showSignup, setShowSignup] = useState(false)
   const [showLoginPrompt, setShowLoginPrompt] = useState(false)
@@ -103,12 +110,12 @@ export default function Home() {
   const [isOnline, setIsOnline] = useState(true)
   const [chatHistoryMinimized, setChatHistoryMinimized] = useState(false)
 
-  // Data state
+  // Data state - Initialize products with fallback
   const [cart, setCart] = useState<CartItem[]>([])
   const [orders, setOrders] = useState<Order[]>([])
   const [chatSessions, setChatSessions] = useState<ChatSession[]>([])
   const [currentSessionId, setCurrentSessionId] = useState("default")
-  const [products, setProducts] = useState<Product[]>(PRODUCTS)
+  const [products] = useState<Product[]>(PRODUCTS || [])
 
   // Pagination state
   const [, setLastOrderDoc] = useState<any>(undefined)
@@ -122,6 +129,9 @@ export default function Home() {
   // Active chat session listener
   const [activeChatUnsubscribe, setActiveChatUnsubscribe] = useState<(() => void) | null>(null)
 
+  // Debug log to verify products are loaded
+  console.log("App products loaded:", products?.length || 0)
+
   // Debounced functions
   const debouncedUpdateCart = useDebounce((uid: string, items: CartItem[]) => {
     cartService.updateUserCart(uid, items, true)
@@ -131,10 +141,15 @@ export default function Home() {
     chatService.saveChatSession(session, true)
   }, 2000)
 
-  // Function to handle viewing all products
-  const onViewAll = () => {
+  // Function to handle viewing all products with error handling
+  const onViewAll = useCallback(() => {
+    console.log("Opening AllProductsModal with products:", products?.length || 0)
+    if (!products || products.length === 0) {
+      console.warn("No products available to display")
+      return
+    }
     setShowAllProducts(true)
-  }
+  }, [products])
 
   // Check network status
   useEffect(() => {
@@ -295,6 +310,7 @@ export default function Home() {
     if (user?.uid && currentView === "chat" && messages.length > 0) {
       if (activeChatUnsubscribe) {
         activeChatUnsubscribe()
+        setActiveChatUnsubscribe(null)
       }
 
       const unsubscribe = realtimeService.subscribeToActiveChatSession(currentSessionId, (session) => {
@@ -520,7 +536,7 @@ export default function Home() {
         image: item.image || "",
         wholesalePrice: item.price,
         description: "",
-        stock: 100,
+        inStock: true,
         unit: "piece",
       }
       handleAddToCart(product, item.quantity)
@@ -590,16 +606,6 @@ export default function Home() {
     setShowOrderHistory(false)
   }
 
-  const handleProductRemove = (productId: number) => {
-    setProducts((prev) => prev.filter((p) => p.id !== productId))
-    setCart((prev) => prev.filter((item) => item.id !== productId.toString()))
-  }
-
-  const handleProductUpdate = (productId: number, updates: any) => {
-    setProducts((prev) => prev.map((p) => (p.id === productId ? { ...p, ...updates } : p)))
-    setCart((prev) => prev.map((item) => (item.id === productId.toString() ? { ...item, ...updates } : item)))
-  }
-
   const handleBackToMain = () => {
     setCurrentView("chat")
   }
@@ -626,7 +632,7 @@ export default function Home() {
           />
         )
       case "settings":
-        return <SettingsView onBack={handleBackToMain} onProductManagement={() => setShowProductManagement(true)} />
+        return <SettingsView onBack={handleBackToMain} />
       default:
         return (
           <ChatView
@@ -772,12 +778,6 @@ export default function Home() {
         onClose={() => setShowAllProducts(false)}
         products={products}
         onAddToCart={handleAddToCart}
-      />
-      <ProductManagementModal
-        show={showProductManagement}
-        onClose={() => setShowProductManagement(false)}
-        onProductRemove={handleProductRemove}
-        onProductUpdate={handleProductUpdate}
       />
       <OrderHistoryModal show={showOrderHistory} onClose={() => setShowOrderHistory(false)} orders={orders} />
     </div>
