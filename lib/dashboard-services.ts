@@ -18,37 +18,69 @@ import type { Order, UserData, Distributor } from "./types"
 export const dashboardService = {
   // Get all orders from Firebase
   async getAllOrders(limitCount = 50): Promise<Order[]> {
-    try {
-      console.log("[Dashboard] Fetching orders from Firebase...")
-      const q = query(collection(db, "orders"), orderBy("createdAt", "desc"), limit(limitCount))
-      const querySnapshot = await getDocs(q)
-      const orders = querySnapshot.docs.map((doc) => {
-        const data = doc.data()
-        return {
-          id: doc.id,
-          userId: data.userId || "",
-          items: data.items || [],
-          total: data.total || 0,
-          status: data.status || "pending",
-          paymentStatus: data.paymentStatus || "pending",
-          paymentMethod: data.paymentMethod || "mpesa",
-          deliveryAddress: data.deliveryAddress || { address: "", location: { lat: 0, lng: 0 }, notes: "" },
-          deliveryDate: data.deliveryDate || new Date().toISOString(),
-          createdAt: data.createdAt?.toDate?.()?.toISOString() || data.createdAt || new Date().toISOString(),
-          updatedAt: data.updatedAt?.toDate?.()?.toISOString() || data.updatedAt || new Date().toISOString(),
-          orderNumber: data.orderNumber,
-          date: data.date || data.createdAt?.toDate?.()?.toISOString() || data.createdAt || new Date().toISOString(),
-          assignedDistributor: data.assignedDistributor,
-          distributorStatus: data.distributorStatus,
-        } as Order
-      })
-      console.log(`[Dashboard] Fetched ${orders.length} orders from Firebase`)
-      return orders
-    } catch (error) {
-      console.error("Error getting all orders:", error)
-      return []
+  try {
+    console.log("[Dashboard] Fetching orders from Firebase...")
+    const q = query(collection(db, "orders"), orderBy("createdAt", "desc"), limit(limitCount))
+    const querySnapshot = await getDocs(q)
+    const orders: Order[] = []
+
+    for (const orderDoc of querySnapshot.docs) {
+      const data = orderDoc.data() // Fix: Use orderDoc.data() to access document data
+      let customerName = data.customerName
+      let customerPhone = data.customerPhone
+
+      // Fetch user data from users collection only if customerName is missing
+      if (!customerName) {
+        const userRef = doc(db, "users", data.userId)
+        const userDoc = await getDoc(userRef)
+        if (userDoc.exists()) {
+          const userData = userDoc.data()
+          customerName = userData.name || "N/A"
+        } else {
+          customerName = "N/A"
+        }
+      }
+
+      // Use customerPhone from order (M-Pesa input) if available, otherwise fetch from users
+      if (!customerPhone) {
+        const userRef = doc(db, "users", data.userId)
+        const userDoc = await getDoc(userRef)
+        if (userDoc.exists()) {
+          const userData = userDoc.data()
+          customerPhone = userData.phone || "N/A"
+        } else {
+          customerPhone = "N/A"
+        }
+      }
+
+      orders.push({
+        id: orderDoc.id,
+        userId: data.userId || "",
+        items: data.items || [],
+        total: data.total || 0,
+        status: data.status || "pending",
+        paymentStatus: data.paymentStatus || "pending",
+        paymentMethod: data.paymentMethod || "mpesa",
+        deliveryAddress: data.deliveryAddress || { address: "", location: { lat: 0, lng: 0 }, notes: "" },
+        deliveryDate: data.deliveryDate || new Date().toISOString(),
+        createdAt: data.createdAt?.toDate?.()?.toISOString() || data.createdAt || new Date().toISOString(),
+        updatedAt: data.updatedAt?.toDate?.()?.toISOString() || data.updatedAt || new Date().toISOString(),
+        orderNumber: data.orderNumber,
+        date: data.date || data.createdAt?.toDate?.()?.toISOString() || data.createdAt || new Date().toISOString(),
+        assignedDistributor: data.assignedDistributor,
+        distributorStatus: data.distributorStatus,
+        customerName,
+        customerPhone,
+      } as Order)
     }
-  },
+
+    console.log(`[Dashboard] Fetched ${orders.length} orders from Firebase`)
+    return orders
+  } catch (error) {
+    console.error("Error getting all orders:", error)
+    return []
+  }
+},
 
   // Get all users from Firebase userProfiles collection
   async getAllUsers(limitCount = 100): Promise<UserData[]> {
@@ -107,7 +139,7 @@ export const dashboardService = {
         todayOrders: todayOrders.length,
         thisMonthOrders: thisMonthOrders.length,
         pendingOrders: orders.filter((o) => o.status === "pending").length,
-        completedOrders: orders.filter((o) => o.status === "completed").length,
+        completedOrders: orders.filter((o) => o.status === "delivered").length,
         recentOrders: orders.slice(0, 10),
         recentUsers: users.slice(0, 10),
       }
@@ -398,7 +430,7 @@ export const distributorService = {
   async getDistributorAnalytics(distributorId: string) {
     try {
       const orders = await this.getAssignedOrders(distributorId)
-      const completedOrders = orders.filter((o) => o.status === "completed")
+      const completedOrders = orders.filter((o) => o.status === "delivered")
       const pendingOrders = orders.filter(
         (o) => o.distributorStatus === "assigned" || o.distributorStatus === "pending",
       )

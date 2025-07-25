@@ -11,13 +11,13 @@ declare global {
 import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { X, MapPin, Navigation, Smartphone, AlertCircle, Search, CheckCircle, Loader2, Phone, CreditCard } from "lucide-react"
-import type { CartItem, UserData } from "@/lib/types" // Import UserData and CartItem from lib/types
+import type { CartItem, UserData, Order } from "@/lib/types" // Import UserData and CartItem from lib/types
 
 interface CheckoutModalProps {
   show: boolean
   onClose: () => void
   cart: CartItem[]
-  onCheckoutComplete: (orderData: any) => void
+  onCheckoutComplete: (orderData: Order) => void
   user: UserData | null // Corrected type for user
 }
 
@@ -429,7 +429,7 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
           setMpesaCheckoutRequestId(stkData.CheckoutRequestID)
 
           // Store order data for later creation after payment confirmation
-          const pendingOrderData = {
+          const pendingOrderData: Order = {
             userId: user?.uid || "guest",
             items: cart,
             total: totalAmount,
@@ -443,8 +443,12 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
             },
             deliveryDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString(),
             orderNumber: stkData.CheckoutRequestID,
-            mpesaRequestId: stkData.CheckoutRequestID,
             createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString(),
+            date: new Date().toISOString(),
+            customerName: user?.name || user?.displayName || "Guest", // From Google login
+            customerPhone: formattedPhone, // From M-Pesa input
+            id: stkData.CheckoutRequestID,
           }
 
           // Set up payment status polling
@@ -481,7 +485,6 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
       setIsSubmitting(false)
     }
   }
-
   const pollPaymentStatus = async (checkoutRequestId: string, orderData: any) => {
     let attempts = 0
     const maxAttempts = 24 // 2 minutes with 5-second intervals

@@ -2,12 +2,11 @@
 
 import { useState, useEffect } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Search, Package, Clock, CheckCircle, Truck, Eye, TrendingUp } from "lucide-react"
-import { subscribeToOrdersByDistributor, updateOrder, markOrderAsSeen } from "@/lib/firebase-services"
+import { Search, Package, Clock, AlertCircle, CheckCircle, Truck, TrendingUp } from "lucide-react"
+import { distributorService } from "@/lib/dashboard-services"
 import { useAuth } from "@/lib/auth-context"
 import type { Order } from "@/lib/types"
 
@@ -26,28 +25,33 @@ export function DistributorDashboard() {
 
   useEffect(() => {
     if (!user?.uid) return
-
-    const unsubscribe = subscribeToOrdersByDistributor(user.uid, (ordersData) => {
-      setOrders(ordersData)
-      setLoading(false)
-    })
-
-    return () => unsubscribe()
+    loadData()
+    // Refresh data every 30 seconds
+    const interval = setInterval(loadData, 30000)
+    return () => clearInterval(interval)
   }, [user?.uid])
 
-  const handleStatusUpdate = async (orderId: string, status: Order["status"]) => {
+  const loadData = async () => {
+    if (!user?.uid) return
+
     try {
-      await updateOrder(orderId, { status })
+      const ordersData = await distributorService.getAssignedOrders(user.uid)
+      setOrders(ordersData)
+      setLoading(false)
     } catch (error) {
-      console.error("Error updating status:", error)
+      console.error("Error loading distributor data:", error)
+      setLoading(false)
     }
   }
 
-  const handleMarkAsSeen = async (orderId: string) => {
+  const handleStatusUpdate = async (orderId: string, status: Order["status"]) => {
     try {
-      await markOrderAsSeen(orderId)
+      await distributorService.updateOrderStatus(orderId, status, status)
+      // Refresh orders to show updated status
+      const updatedOrders = await distributorService.getAssignedOrders(user?.uid || "")
+      setOrders(updatedOrders)
     } catch (error) {
-      console.error("Error marking order as seen:", error)
+      console.error("Error updating status:", error)
     }
   }
 
@@ -59,19 +63,6 @@ export function DistributorDashboard() {
     return matchesSearch && matchesStatus
   })
 
-  const getStatusIcon = (status: Order["status"]) => {
-    switch (status) {
-      case "processing":
-        return <Package className="h-4 w-4" />
-      case "shipped":
-        return <Truck className="h-4 w-4" />
-      case "delivered":
-        return <CheckCircle className="h-4 w-4" />
-      default:
-        return <Clock className="h-4 w-4" />
-    }
-  }
-
   const getStatusColor = (status: Order["status"]) => {
     switch (status) {
       case "processing":
@@ -80,8 +71,29 @@ export function DistributorDashboard() {
         return "bg-purple-500/20 text-purple-300 border-purple-500/30"
       case "delivered":
         return "bg-green-500/20 text-green-300 border-green-500/30"
+      case "cancelled":
+        return "bg-red-500/20 text-red-300 border-red-500/30"
+      case "completed": // Added
+        return "bg-green-500/20 text-green-300 border-green-500/30" // Same as delivered
       default:
         return "bg-gray-500/20 text-gray-300 border-gray-500/30"
+    }
+  }
+
+  const getStatusIcon = (status: Order["status"]) => {
+    switch (status) {
+      case "processing":
+        return <Package className="h-4 w-4" />
+      case "shipped":
+        return <Truck className="h-4 w-4" />
+      case "delivered":
+        return <CheckCircle className="h-4 w-4" />
+      case "cancelled":
+        return <AlertCircle className="h-4 w-4" />
+      case "completed": // Added
+        return <CheckCircle className="h-4 w-4" /> // Same as delivered
+      default:
+        return <Clock className="h-4 w-4" />
     }
   }
 
@@ -197,26 +209,11 @@ export function DistributorDashboard() {
         {/* Orders List */}
         <div className="space-y-4">
           {filteredOrders.map((order) => (
-            <Card
-              key={order.id}
-              className={`bg-white/5 border-white/10 transition-all duration-200 ${
-                order.isNew ? "bg-white/10 border-white/20" : ""
-              }`}
-            >
+            <Card key={order.id} className="bg-white/5 border-white/10 transition-all duration-200">
               <CardContent className="p-4">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
                     <h3 className="text-lg font-semibold text-white">#{order.orderNumber || order.id.slice(-8)}</h3>
-                    {order.isNew && (
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        onClick={() => handleMarkAsSeen(order.id)}
-                        className="text-gray-400 hover:text-white"
-                      >
-                        <Eye className="h-4 w-4" />
-                      </Button>
-                    )}
                   </div>
                   <Badge className={`${getStatusColor(order.status)} border`}>
                     {getStatusIcon(order.status)}

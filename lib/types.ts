@@ -12,9 +12,9 @@ export interface Order {
   userId: string
   items: CartItem[]
   total: number
-  status: "pending" | "processing" | "shipped" | "delivered" | "cancelled"
-  createdAt: Date
-  updatedAt: Date
+  status: "pending" | "processing" | "shipped" | "delivered" | "cancelled" | "completed"
+  createdAt: string // Change from Date
+  updatedAt: string // Change from Date
   shippingAddress?: {
     street: string
     city: string
@@ -34,6 +34,8 @@ export interface Order {
     notes: string
   }
   deliveryDate?: string
+  customerName?: string // Add
+  customerPhone?: string // Add
 }
 
 export interface Product {

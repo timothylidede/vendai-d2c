@@ -38,6 +38,8 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
         return "bg-green-500/20 text-green-300 border-green-500/30"
       case "cancelled":
         return "bg-red-500/20 text-red-300 border-red-500/30"
+      case "completed": // Added
+        return "bg-green-500/20 text-green-300 border-green-500/30" // Same as delivered
       default:
         return "bg-gray-500/20 text-gray-300 border-gray-500/30"
     }
@@ -55,6 +57,8 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
         return CheckCircle
       case "cancelled":
         return AlertCircle
+      case "completed": // Added
+        return CheckCircle // Same as delivered
       default:
         return Clock
     }
@@ -77,13 +81,13 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
       {
         id: "shipped",
         label: "Shipped",
-        completed: status === "shipped" || status === "delivered",
+        completed: status === "shipped" || status === "delivered" || status === "completed", // Added completed
         icon: Truck,
       },
       {
         id: "delivered",
         label: "Delivered",
-        completed: status === "delivered",
+        completed: status === "delivered" || status === "completed", // Added completed
         icon: CheckCircle,
       },
     ]
