@@ -1,8 +1,9 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Plus, Package } from "lucide-react"
+import { Plus, Package, Eye } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useState } from "react"
 import type { Product } from "@/lib/types"
 
 interface ProductCardResponseProps {
@@ -12,11 +13,16 @@ interface ProductCardResponseProps {
 }
 
 export function ProductCardResponse({ products, onAddToCart, explanation }: ProductCardResponseProps) {
+  const [showAll, setShowAll] = useState(false)
+  const displayProducts = showAll ? products : products.slice(0, 5)
+  const hasMore = products.length > 5
+
   return (
     <div className="space-y-4">
       {explanation && <p className="text-gray-300 leading-relaxed mb-4">{explanation}</p>}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {products.map((product, index) => (
+        {displayProducts.map((product, index) => (
           <motion.div
             key={product.id}
             initial={{ opacity: 0, y: 20 }}
@@ -52,6 +58,7 @@ export function ProductCardResponse({ products, onAddToCart, explanation }: Prod
                 )}
               </div>
 
+              {/* Show product description */}
               <p className="text-xs text-gray-400 line-clamp-2">{product.description}</p>
 
               <div className="flex items-center justify-between">
@@ -77,6 +84,31 @@ export function ProductCardResponse({ products, onAddToCart, explanation }: Prod
           </motion.div>
         ))}
       </div>
+
+      {hasMore && !showAll && (
+        <div className="flex justify-center mt-4">
+          <Button
+            onClick={() => setShowAll(true)}
+            variant="outline"
+            className="border-purple-500/30 text-purple-300 hover:bg-purple-500/10 hover:border-purple-400 bg-transparent"
+          >
+            <Eye className="h-4 w-4 mr-2" />
+            Show {products.length - 5} more products
+          </Button>
+        </div>
+      )}
+
+      {showAll && hasMore && (
+        <div className="flex justify-center mt-4">
+          <Button
+            onClick={() => setShowAll(false)}
+            variant="outline"
+            className="border-gray-500/30 text-gray-300 hover:bg-gray-500/10 hover:border-gray-400 bg-transparent"
+          >
+            Show less
+          </Button>
+        </div>
+      )}
     </div>
   )
 }

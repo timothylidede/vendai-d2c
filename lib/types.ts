@@ -75,6 +75,7 @@ export interface ChatMessage {
   role: "user" | "assistant"
   content: string
   timestamp: string
+  products?: Product[] // Added to match Message
 }
 
 export interface ChatSession {

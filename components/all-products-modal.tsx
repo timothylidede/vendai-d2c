@@ -69,9 +69,9 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
             onClick={(e) => e.stopPropagation()}
           >
             {/* Sticky Header */}
-            <div className="sticky top-0 bg-black/80 backdrop-blur-sm border-b border-white/10 p-6 z-10">
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="text-xl font-bold text-gradient">Products</h2>
+            <div className="sticky top-0 bg-black/80 backdrop-blur-sm border-b border-white/10 p-4 z-10">
+              <div className="flex items-center justify-between mb-3">
+                <h2 className="text-lg font-bold text-gradient">Products</h2>
                 <Button variant="ghost" size="sm" onClick={onClose} className="hover:bg-white/10">
                   <X className="h-4 w-4" />
                 </Button>
@@ -85,50 +85,37 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                   placeholder="Search products..."
                   value={searchQuery}
                   onChange={handleSearchChange}
-                  className="w-full bg-black border border-white/20 rounded-lg pl-10 pr-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-white/40 transition-all duration-200"
+                  className="w-full bg-black border border-white/20 rounded-lg pl-10 pr-4 py-2 text-sm text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-white/40 transition-all duration-200"
                 />
               </div>
-
-              {/* Pagination Info */}
-              {filteredProducts.length > 0 && (
-                <div className="flex items-center justify-between mt-4 text-sm text-gray-400">
-                  <span>
-                    Showing {startIndex + 1}-{Math.min(endIndex, filteredProducts.length)} of {filteredProducts.length}{" "}
-                    products
-                  </span>
-                  <span>
-                    Page {currentPage} of {totalPages}
-                  </span>
-                </div>
-              )}
             </div>
 
             {/* Scrollable Content */}
-            <div className="p-6 overflow-y-auto max-h-[calc(80vh-200px)]">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="p-4 overflow-y-auto max-h-[calc(80vh-160px)]">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3">
                 {currentProducts.map((product, index) => (
                   <motion.div
                     key={product.id}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.05 }}
-                    className="glass-effect rounded-lg p-4 hover:bg-white/5 transition-all duration-300"
+                    className="glass-effect rounded-lg p-3 hover:bg-white/5 transition-all duration-300"
                   >
-                    <div className="aspect-square bg-white/10 rounded-lg mb-3 overflow-hidden">
+                    <div className="aspect-square bg-white/10 rounded-md mb-2 overflow-hidden">
                       <img
-                        src={product.image || `/placeholder.svg?height=200&width=200`}
+                        src={product.image || `/placeholder.svg?height=150&width=150`}
                         alt={product.name}
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement
-                          target.src = `/placeholder.svg?height=200&width=200`
+                          target.src = `/placeholder.svg?height=150&width=150`
                         }}
                       />
                     </div>
-                    <h3 className="font-medium mb-2">{product.name}</h3>
-                    <p className="text-xs text-gray-400 mb-3">{product.description}</p>
+                    <h3 className="font-medium text-sm mb-1 line-clamp-2">{product.name}</h3>
+                    <p className="text-xs text-gray-400 mb-2 line-clamp-2">{product.description}</p>
                     <div className="flex items-center justify-between">
-                      <span className="font-bold">KES {product.price.toLocaleString()}</span>
+                      <span className="font-bold text-sm">KES {product.price.toLocaleString()}</span>
                       <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                         <Button
                           size="sm"
@@ -136,7 +123,7 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                             onAddToCart(product)
                             onClose()
                           }}
-                          className="bg-white text-black hover:bg-gray-200"
+                          className="bg-white text-black hover:bg-gray-200 text-xs px-2 py-1 h-7"
                         >
                           <Plus className="h-3 w-3 mr-1" />
                           Add
@@ -150,21 +137,21 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
               {/* No results message */}
               {filteredProducts.length === 0 && searchQuery && (
                 <div className="text-center py-8">
-                  <p className="text-gray-400">No products found matching "{searchQuery}"</p>
+                  <p className="text-gray-400 text-sm">No products found matching "{searchQuery}"</p>
                 </div>
               )}
             </div>
 
             {/* Pagination Controls */}
             {totalPages > 1 && (
-              <div className="sticky bottom-0 bg-black/80 backdrop-blur-sm border-t border-white/10 p-4">
+              <div className="sticky bottom-0 bg-black/80 backdrop-blur-sm border-t border-white/10 p-3">
                 <div className="flex items-center justify-center gap-2">
                   <Button
                     variant="ghost"
                     size="sm"
                     onClick={() => goToPage(currentPage - 1)}
                     disabled={currentPage === 1}
-                    className="hover:bg-white/10"
+                    className="hover:bg-white/10 h-8"
                   >
                     <ChevronLeft className="h-4 w-4" />
                   </Button>
@@ -188,7 +175,7 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                         variant={currentPage === pageNum ? "default" : "ghost"}
                         size="sm"
                         onClick={() => goToPage(pageNum)}
-                        className={currentPage === pageNum ? "bg-white text-black" : "hover:bg-white/10"}
+                        className={`h-8 text-sm ${currentPage === pageNum ? "bg-white text-black" : "hover:bg-white/10"}`}
                       >
                         {pageNum}
                       </Button>
@@ -200,7 +187,7 @@ export function AllProductsModal({ show, onClose, products, onAddToCart }: AllPr
                     size="sm"
                     onClick={() => goToPage(currentPage + 1)}
                     disabled={currentPage === totalPages}
-                    className="hover:bg-white/10"
+                    className="hover:bg-white/10 h-8"
                   >
                     <ChevronRight className="h-4 w-4" />
                   </Button>

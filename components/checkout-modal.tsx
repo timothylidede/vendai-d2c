@@ -10,7 +10,7 @@ declare global {
 
 import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { X, MapPin, Navigation, Smartphone, AlertCircle, Search, CheckCircle, Loader2, Phone } from "lucide-react"
+import { X, MapPin, Navigation, Smartphone, AlertCircle, Search, CheckCircle, Loader2, Phone, CreditCard } from "lucide-react"
 import type { CartItem, UserData } from "@/lib/types" // Import UserData and CartItem from lib/types
 
 interface CheckoutModalProps {
@@ -423,7 +423,7 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
         if (stkData.ResponseCode === "0" && stkData.CheckoutRequestID) {
           setMpesaStatus("pending")
           setMpesaMessage(
-            `STK Push sent to ${responseData.validatedPhone}! ` +
+            `STK Push sent to ${responseData.validatedPhone}. ` +
               "Please check your phone and enter your M-Pesa PIN to complete payment.",
           )
           setMpesaCheckoutRequestId(stkData.CheckoutRequestID)
@@ -570,79 +570,85 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
 
   const handleFinalCheckout = async () => {
     if (!user) {
-      alert("Please log in to complete the checkout.")
-      return
+      alert("Please log in to complete the checkout.");
+      return;
     }
-    if (!phoneNumber || phoneNumber.length < 10) {
-      setMpesaStatus("failed")
-      setMpesaMessage("Please enter a valid M-Pesa phone number.")
-      return
+    // Validate phone number only when submitting
+    const formattedPhone = formatPhoneNumber(phoneNumber);
+    if (!formattedPhone || phoneNumber.length < 10) {
+      setMpesaStatus("failed");
+      setMpesaMessage("Please enter a valid M-Pesa phone number (e.g., 0712345678 or 254712345678).");
+      return;
     }
-    await handleMpesaSTKPush()
-  }
+    await handleMpesaSTKPush();
+  };
 
   const formatPhoneNumber = (phone: string): string | null => {
     // Remove all non-digit characters
-    const cleaned = phone.replace(/[^\d]/g, "")
-    console.log("Cleaning phone number:", phone, "->", cleaned)
+    const cleaned = phone.replace(/[^\d]/g, "");
+    console.log("Cleaning phone number:", phone, "->", cleaned);
 
-    // Check if the cleaned number is empty or invalid length
-    if (!cleaned || cleaned.length < 9 || cleaned.length > 12) {
-      console.error("Invalid phone number length:", cleaned)
-      return null
+    // Return null if the input is empty or too short to process
+    if (!cleaned) return null;
+
+    // Only proceed with validation if the number is long enough to be meaningful
+    if (cleaned.length < 9) {
+      console.log("Phone number too short for validation:", cleaned);
+      return cleaned; // Return cleaned partial number for display purposes
     }
 
     // Handle different input cases
-    let formattedNumber: string
+    let formattedNumber: string;
 
     if (cleaned.startsWith("0")) {
       // Handle Kenyan numbers starting with 0 (e.g., 0712345678)
       if (cleaned.length === 10 && (cleaned.startsWith("07") || cleaned.startsWith("01"))) {
-        formattedNumber = "254" + cleaned.substring(1)
+        formattedNumber = "254" + cleaned.substring(1);
       } else {
-        console.error("Invalid 0-prefixed number format:", cleaned)
-        return null
+        console.log("Invalid 0-prefixed number format:", cleaned);
+        return null;
       }
     } else if (cleaned.startsWith("254")) {
       // Handle numbers starting with 254 (e.g., 254712345678)
       if (cleaned.length === 12) {
-        formattedNumber = cleaned
+        formattedNumber = cleaned;
       } else {
-        console.error("Invalid 254-prefixed number format:", cleaned)
-        return null
+        console.log("Invalid 254-prefixed number format:", cleaned);
+        return null;
       }
     } else if (cleaned.length === 9 && (cleaned.startsWith("7") || cleaned.startsWith("1"))) {
       // Handle 9-digit numbers (e.g., 712345678)
-      formattedNumber = "254" + cleaned
+      formattedNumber = "254" + cleaned;
     } else {
-      console.error("Unsupported phone number format:", cleaned)
-      return null
+      console.log("Unsupported phone number format:", cleaned);
+      return null;
     }
 
     // Final validation: Ensure the number is a valid Kenyan mobile number
     if (!formattedNumber.match(/^254[17]\d{8}$/)) {
-      console.error("Invalid Kenyan mobile number format:", formattedNumber)
-      return null
+      console.log("Invalid Kenyan mobile number format:", formattedNumber);
+      return null;
     }
 
-    console.log("Formatted phone number:", formattedNumber)
-    return formattedNumber
-  }
+    console.log("Formatted phone number:", formattedNumber);
+    return formattedNumber;
+  };
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value
-    setPhoneNumber(value)
-  }
+    const value = e.target.value;
+    setPhoneNumber(value); // Allow partial input without immediate validation
+  };
 
   const renderStep1 = () => (
-    <div className="space-y-6">
+    <div className="space-y-4">
       <div>
-        <h3 className="text-lg font-semibold text-white mb-4 flex items-center">
-          <MapPin className="h-5 w-5 mr-2 text-purple-400" />
-          Delivery Location
+        <h3 className="text-base font-medium text-white mb-3 flex items-center">
+          <MapPin className="h-4 w-4 mr-2 text-purple-400" />
+          Location
         </h3>
+        
         {/* Search Box */}
-        <div className="relative mb-4">
+        <div className="relative mb-3">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
             <input
@@ -650,7 +656,7 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
               onChange={(e) => handleSearchChange(e.target.value)}
               onFocus={() => suggestions.length > 0 && setShowSuggestions(true)}
               placeholder="Search for places, restaurants, landmarks..."
-              className="w-full pl-10 pr-4 py-2 bg-white/10 border border-white/20 text-white placeholder-gray-400 rounded-lg focus:border-purple-500 focus:outline-none"
+              className="w-full pl-10 pr-4 py-2 bg-black/30 border border-white/10 text-white placeholder-gray-400 rounded-lg focus:border-purple-500 focus:outline-none text-sm"
             />
             {isLoadingSuggestions && (
               <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
@@ -661,24 +667,25 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
 
           {/* Suggestions Dropdown */}
           {showSuggestions && suggestions.length > 0 && (
-            <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-white/20 rounded-lg shadow-xl max-h-60 overflow-y-auto">
+            <div className="absolute z-10 w-full mt-1 glass-effect rounded-lg shadow-xl max-h-60 overflow-y-auto bg-black border border-white/10">
               {suggestions.map((suggestion) => (
                 <button
                   key={suggestion.place_id}
                   onClick={() => handleSuggestionClick(suggestion)}
                   className="w-full px-4 py-3 text-left hover:bg-white/10 border-b border-white/10 last:border-b-0 focus:outline-none focus:bg-white/10"
                 >
-                  <div className="text-white font-medium">{suggestion.main_text}</div>
-                  <div className="text-gray-400 text-sm">{suggestion.secondary_text}</div>
+                  <div className="text-white font-medium text-sm">{suggestion.main_text}</div>
+                  <div className="text-gray-400 text-xs">{suggestion.secondary_text}</div>
                 </button>
               ))}
             </div>
           )}
         </div>
+        
         {/* Map Container */}
         <div className="relative">
           {mapError ? (
-            <div className="w-full h-64 rounded-lg border border-red-500/20 bg-red-900/20 flex items-center justify-center">
+            <div className="w-full h-64 rounded-lg glass-effect bg-red-900/20 flex items-center justify-center border border-red-500/20">
               <div className="text-center text-red-400 p-4">
                 <AlertCircle className="h-8 w-8 mx-auto mb-2" />
                 <p className="text-sm">{mapError}</p>
@@ -689,13 +696,13 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
             <>
               <div
                 ref={mapRef}
-                className="w-full h-64 rounded-lg border border-white/20 bg-gray-900 shadow-lg"
+                className="w-full h-64 rounded-lg border border-white/10 bg-black shadow-lg"
                 style={{ minHeight: "300px" }}
               />
               <button
                 onClick={getCurrentLocation}
                 disabled={isLoadingLocation || !isMapLoaded}
-                className="absolute top-3 right-3 bg-purple-600 hover:bg-purple-700 text-white text-xs px-3 py-2 h-auto shadow-lg rounded-lg flex items-center gap-1 disabled:opacity-50"
+                className="absolute top-3 right-3 bg-purple-600 hover:bg-purple-700 text-white text-xs px-3 py-2 h-auto shadow-lg rounded-lg flex items-center gap-1 disabled:opacity-50 touch-manipulation"
               >
                 <Navigation className="h-3 w-3" />
                 {isLoadingLocation ? "Getting..." : "Current Location"}
@@ -703,148 +710,92 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
             </>
           )}
         </div>
-        {!mapError && (
-          <p className="text-sm text-gray-400 mt-2">
-            🔍 Search for places above, click on the map to place a pin, or use your current location
-          </p>
-        )}
-      </div>
-      {/* Address Display */}
-      <div>
-        <label className="block text-sm font-medium text-white mb-2">Delivery Address</label>
-        <textarea
-          value={deliveryAddress}
-          onChange={(e) => setDeliveryAddress(e.target.value)}
-          className="w-full bg-white/10 border border-white/20 text-white placeholder-gray-400 rounded-lg p-3 focus:border-purple-500 focus:outline-none"
-          rows={2}
-          placeholder="Enter your delivery address"
-        />
-      </div>
-      {/* Delivery Notes */}
-      <div>
-        <label className="block text-sm font-medium text-white mb-2">Delivery Notes (Optional)</label>
-        <textarea
-          value={deliveryNotes}
-          onChange={(e) => setDeliveryNotes(e.target.value)}
-          placeholder="Building name, floor, apartment number, etc."
-          className="w-full bg-white/10 border border-white/20 text-white placeholder-gray-400 rounded-lg p-3 focus:border-purple-500 focus:outline-none"
-          rows={2}
-        />
       </div>
     </div>
   )
 
   const renderStep2 = () => (
-    <div className="space-y-6">
-      <div>
-        <h3 className="text-lg font-semibold text-white mb-4 flex items-center">
-          <Smartphone className="h-5 w-5 mr-2 text-green-400" />
-          M-Pesa Payment
-        </h3>
-        {/* M-Pesa Info */}
-        <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4 mb-6">
-          <div className="flex items-center space-x-3">
-            <Smartphone className="h-8 w-8 text-green-400" />
-            <div>
-              <p className="font-medium text-white">Pay with M-Pesa</p>
-              <p className="text-sm text-gray-400">Secure mobile money payment</p>
-            </div>
+    <div className="space-y-4">
+      {/* M-Pesa Info */}
+      <div className="glass-effect rounded-lg p-4 bg-green-500/10 border border-green-500/20">
+        <div className="flex items-center space-x-3">
+          <Smartphone className="h-6 w-6 text-green-400" />
+          <div>
+            <p className="font-medium text-white text-sm">Pay with M-Pesa</p>
+            <p className="text-xs text-gray-400">Secure mobile money payment</p>
           </div>
-        </div>
-        {/* Phone Number Input */}
-        <div>
-          <label className="block text-sm font-medium text-white mb-2">M-Pesa Phone Number</label>
-          <div className="relative">
-            <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-            <input
-              type="tel"
-              value={phoneNumber}
-              onChange={handlePhoneChange}
-              placeholder="0712345678 or 254712345678"
-              className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 text-white placeholder-gray-400 rounded-lg focus:border-purple-500 focus:outline-none"
-            />
-          </div>
-          <p className="text-xs text-gray-400 mt-1">Enter the phone number registered with M-Pesa</p>
-        </div>
-        {/* Payment Status */}
-        {mpesaStatus !== "idle" && (
-          <div
-            className={`p-4 rounded-lg border ${
-              mpesaStatus === "pending"
-                ? "bg-blue-500/10 border-blue-500/20"
-                : mpesaStatus === "success"
-                  ? "bg-green-500/10 border-green-500/20"
-                  : "bg-red-500/10 border-red-500/20"
-            }`}
-          >
-            <div className="flex items-start space-x-3">
-              {mpesaStatus === "pending" && <Loader2 className="h-5 w-5 text-blue-400 animate-spin mt-1" />}
-              {mpesaStatus === "success" && <CheckCircle className="h-5 w-5 text-green-400 mt-1" />}
-              {mpesaStatus === "failed" && <AlertCircle className="h-5 w-5 text-red-400 mt-1" />}
-              <div className="flex-1">
-                <p
-                  className={`font-medium ${
-                    mpesaStatus === "pending"
-                      ? "text-blue-400"
-                      : mpesaStatus === "success"
-                        ? "text-green-400"
-                        : "text-red-400"
-                  }`}
-                >
-                  {mpesaStatus === "pending"
-                    ? "Waiting for Payment"
-                    : mpesaStatus === "success"
-                      ? "Payment Successful"
-                      : "Payment Failed"}
-                </p>
-                <p className="text-sm text-gray-300 whitespace-pre-line mt-1">{mpesaMessage}</p>
-                {mpesaCheckoutRequestId && (
-                  <p className="text-xs text-gray-400 mt-2">Request ID: {mpesaCheckoutRequestId}</p>
-                )}
-                {mpesaStatus === "pending" && (
-                  <div className="mt-3 p-2 bg-blue-500/5 rounded border border-blue-500/10">
-                    <p className="text-xs text-blue-300 font-medium">What to expect:</p>
-                    <ul className="text-xs text-blue-200 mt-1 space-y-1">
-                      <li>• Check for "Lipa na M-Pesa" notification on your phone</li>
-                      <li>• Enter your M-Pesa PIN when prompted</li>
-                      <li>• You'll receive an SMS confirmation</li>
-                      <li>• If no prompt appears, try restarting your phone</li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        )}
-        {/* Payment Instructions */}
-        <div className="bg-white/5 rounded-lg p-4">
-          <h4 className="font-medium text-white mb-2">Payment Instructions:</h4>
-          <ol className="text-sm text-gray-300 space-y-1">
-            <li>1. Click "Pay with M-Pesa" below</li>
-            <li>2. Check your phone for the M-Pesa STK push</li>
-            <li>3. Enter your M-Pesa PIN to complete payment</li>
-            <li>4. You'll receive a confirmation SMS</li>
-          </ol>
         </div>
       </div>
+      
+      {/* Phone Number Input */}
+      <div>
+        <label className="block text-sm font-medium text-white mb-2">M-Pesa Phone Number</label>
+        <div className="relative">
+          <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
+          <input
+            type="tel"
+            value={phoneNumber}
+            onChange={handlePhoneChange}
+            placeholder="0712345678 or 254712345678"
+            className="w-full pl-10 pr-4 py-3 bg-black/30 border border-white/10 text-white placeholder-gray-400 rounded-lg focus:border-purple-500 focus:outline-none text-sm"
+          />
+        </div>
+      </div>
+      
+      {/* Payment Status */}
+      {mpesaStatus !== "idle" && (
+        <div
+          className={`rounded-lg p-2 border ${
+            mpesaStatus === "pending"
+              ? "bg-blue-500/10 border-blue-500/20"
+              : mpesaStatus === "success"
+                ? "bg-green-500/10 border-green-500/20"
+                : "bg-red-500/10 border-red-500/20"
+          }`}
+        >
+          <div className="flex items-center space-x-2">
+            {mpesaStatus === "pending" && <Loader2 className="h-4 w-4 text-blue-400 animate-spin" />}
+            {mpesaStatus === "success" && <CheckCircle className="h-4 w-4 text-green-400" />}
+            {mpesaStatus === "failed" && <AlertCircle className="h-4 w-4 text-red-400" />}
+            <p
+              className={`font-medium text-xs ${
+                mpesaStatus === "pending"
+                  ? "text-blue-400"
+                  : mpesaStatus === "success"
+                    ? "text-green-400"
+                    : "text-red-400"
+              }`}
+            >
+              {mpesaStatus === "pending"
+                ? "Waiting..."
+                : mpesaStatus === "success"
+                  ? "Success"
+                  : "Failed"}
+            </p>
+            <p className="text-xs text-gray-300 ml-2">{mpesaMessage}</p>
+          </div>
+        </div>
+      )}
     </div>
   )
 
   const renderOrderSummary = () => (
-    <div className="bg-white/5 rounded-lg p-4 space-y-3">
-      <h4 className="font-medium text-white">Order Summary</h4>
-      {cart.map((item) => (
-        <div key={item.id} className="flex justify-between text-sm">
-          <span className="text-gray-300">
-            {item.name} × {item.quantity}
-          </span>
-          <span className="text-white">KES {(item.price * item.quantity).toLocaleString()}</span>
-        </div>
-      ))}
+    <div className="glass-effect rounded-lg p-4 space-y-3 bg-black">
+      <h4 className="font-medium text-white text-sm">Order Summary</h4>
+      <div className="space-y-2">
+        {cart.map((item) => (
+          <div key={item.id} className="flex justify-between text-xs">
+            <span className="text-gray-300">
+              {item.name} × {item.quantity}
+            </span>
+            <span className="text-white">KES {(item.price * item.quantity).toLocaleString()}</span>
+          </div>
+        ))}
+      </div>
       <div className="border-t border-white/10 pt-3">
-        <div className="flex justify-between font-medium">
-          <span className="text-white">Total</span>
-          <span className="text-white">KES {total.toLocaleString()}</span>
+        <div className="flex items-center justify-between">
+          <span className="text-sm font-medium text-white">Total Amount</span>
+          <span className="text-lg font-bold text-green-400">KES {total.toLocaleString()}</span>
         </div>
       </div>
     </div>
@@ -857,89 +808,123 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-end md:items-center justify-center p-0 md:p-4"
           onClick={handleClose}
         >
           <motion.div
-            initial={{ scale: 0.9, opacity: 0, y: 20 }}
-            animate={{ scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.9, opacity: 0, y: 20 }}
-            transition={{ type: "spring", duration: 0.5 }}
-            className="bg-gray-900 rounded-2xl p-6 w-full max-w-2xl max-h-[90vh] overflow-y-auto"
+            initial={{
+              y: "100%",
+              opacity: 0,
+              scale: 1,
+            }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              scale: 1,
+            }}
+            exit={{
+              y: "100%",
+              opacity: 0,
+              scale: 1,
+            }}
+            transition={{
+              type: "spring",
+              damping: 25,
+              stiffness: 300,
+            }}
+            className="glass-effect w-full h-[90vh] md:h-auto md:max-h-[80vh] md:w-full md:max-w-2xl md:rounded-2xl overflow-hidden flex flex-col bg-black"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Header */}
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-white">{step === 1 ? "Delivery Details" : "M-Pesa Payment"}</h2>
+            {/* Header - Sticky on mobile */}
+            <div className="flex items-center justify-between p-4 md:p-6 border-b border-white/10 bg-black sticky top-0 z-10">
+              <div className="flex items-center space-x-3">
+                <CreditCard className="h-5 w-5 text-purple-400" />
+                <h2 className="text-lg font-bold text-gradient">
+                  {step === 1 ? "Delivery Details" : "Payment"}
+                </h2>
+              </div>
               <button
                 onClick={handleClose}
                 className="text-gray-400 hover:text-white hover:bg-white/10 rounded-full p-2 transition-colors"
               >
-                <X className="h-5 w-5" />
+                <X className="h-4 w-4" />
               </button>
             </div>
+
             {/* Progress Indicator */}
-            <div className="flex items-center mb-8">
+            <div className="flex items-center px-12 md:px-14 py-3 bg-black border-b border-white/10">
               <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
+                className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-medium ${
                   step >= 1 ? "bg-purple-500 text-white" : "bg-white/10 text-gray-400"
                 }`}
               >
                 1
               </div>
-              <div className={`flex-1 h-1 mx-3 ${step >= 2 ? "bg-purple-500" : "bg-white/10"}`} />
+              <div className={`flex-1 h-0.5 mx-3 ${step >= 2 ? "bg-purple-500" : "bg-white/10"}`} />
               <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
+                className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-medium ${
                   step >= 2 ? "bg-purple-500 text-white" : "bg-white/10 text-gray-400"
                 }`}
               >
                 2
               </div>
             </div>
-            {/* Step Content */}
-            {step === 1 ? renderStep1() : renderStep2()}
-            {/* Order Summary */}
-            <div className="mt-8">{renderOrderSummary()}</div>
-            {/* Actions */}
-            <div className="flex space-x-3 mt-8">
-              {step === 2 && mpesaStatus === "idle" && (
-                <button
-                  onClick={() => setStep(1)}
-                  className="flex-1 px-4 py-2 border border-white/20 text-white rounded-lg hover:bg-white/10 transition-colors"
-                >
-                  Back
-                </button>
-              )}
 
-              {step === 1 && (
-                <button
-                  onClick={handleNextStep}
-                  disabled={!deliveryAddress || !selectedLocation}
-                  className="flex-1 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
-                >
-                  Continue to Payment
-                </button>
-              )}
+            {/* Content */}
+            <div className="flex-1 overflow-y-auto bg-black/80">
+              <div className="p-4 md:p-6 bg-black">
+                {/* Step Content */}
+                {step === 1 ? renderStep1() : renderStep2()}
+                
+                {/* Order Summary - Render only in step 2 */}
+                {step === 2 && (
+                  <div className="mt-6">{renderOrderSummary()}</div>
+                )}
+              </div>
+            </div>
 
-              {step === 2 && mpesaStatus === "idle" && (
-                <button
-                  onClick={handleFinalCheckout}
-                  disabled={!phoneNumber || formatPhoneNumber(phoneNumber) === null || isSubmitting}
-                  className="flex-1 px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
-                >
-                  <Smartphone className="h-4 w-4" />
-                  {isSubmitting ? "Processing..." : `Pay KES ${total.toLocaleString()} with M-Pesa`}
-                </button>
-              )}
+            {/* Footer - Sticky on mobile */}
+            <div className="border-t border-white/10 bg-black p-4 md:p-6 sticky bottom-0">
+              <div className="flex space-x-3">
+                {step === 2 && mpesaStatus === "idle" && (
+                  <button
+                    onClick={() => setStep(1)}
+                    className="flex-1 px-4 py-2 border border-white/20 text-white rounded-lg hover:bg-white/10 transition-colors text-sm font-medium touch-manipulation"
+                  >
+                    Back
+                  </button>
+                )}
 
-              {step === 2 && mpesaStatus === "failed" && (
-                <button
-                  onClick={() => setMpesaStatus("idle")}
-                  className="flex-1 px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 transition-all"
-                >
-                  Try Again
-                </button>
-              )}
+                {step === 1 && (
+                  <button
+                    onClick={handleNextStep}
+                    disabled={!deliveryAddress || !selectedLocation}
+                    className="flex-1 px-4 py-2 bg-gradient-to-r from-purple-500 to-black hover:from-purple-600 hover:to-gray-900 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all text-sm font-medium touch-manipulation"
+                  >
+                    Continue to Payment
+                  </button>
+                )}
+
+                {step === 2 && mpesaStatus === "idle" && (
+                  <button
+                    onClick={handleFinalCheckout}
+                    disabled={!phoneNumber || formatPhoneNumber(phoneNumber) === null || isSubmitting}
+                    className="flex-1 px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 text-sm font-medium touch-manipulation"
+                  >
+                    <Smartphone className="h-4 w-4" />
+                    {isSubmitting ? "Processing..." : `Pay KES ${total.toLocaleString()}`}
+                  </button>
+                )}
+
+                {step === 2 && mpesaStatus === "failed" && (
+                  <button
+                    onClick={() => setMpesaStatus("idle")}
+                    className="flex-1 px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 transition-all text-sm font-medium touch-manipulation"
+                  >
+                    Try Again
+                  </button>
+                )}
+              </div>
             </div>
           </motion.div>
         </motion.div>

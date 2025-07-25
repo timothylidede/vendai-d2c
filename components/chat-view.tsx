@@ -25,46 +25,29 @@ interface ChatViewProps {
   chatHistoryMinimized: boolean
 }
 
-// Typing animation component with better state management
+// Fixed Typing animation component
 function TypingText({ text, messageId, onComplete }: { text: string; messageId: string; onComplete?: () => void }) {
-  const [displayedText, setDisplayedText] = useState("")
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const intervalRef = useRef<NodeJS.Timeout | null>(null)
+  const [displayedText, setDisplayedText] = useState(text)
 
   useEffect(() => {
-    // Reset state when messageId changes (new message)
-    setDisplayedText("")
-    setCurrentIndex(0)
-
-    // Clear any existing interval
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current)
+    if (text.length > 200) {
+      setDisplayedText(text)
+      onComplete?.()
+      return
     }
 
-    // Start typing animation
-    intervalRef.current = setInterval(() => {
-      setCurrentIndex((prevIndex) => {
-        if (prevIndex < text.length) {
-          setDisplayedText(text.slice(0, prevIndex + 1))
-          return prevIndex + 1
-        } else {
-          // Animation complete
-          if (intervalRef.current) {
-            clearInterval(intervalRef.current)
-            intervalRef.current = null
-          }
-          onComplete?.()
-          return prevIndex
-        }
-      })
-    }, 20)
-
-    return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current)
+    let index = 0
+    const type = () => {
+      if (index < text.length) {
+        setDisplayedText(text.slice(0, index + 1))
+        index++
+        setTimeout(type, 15)
+      } else {
+        onComplete?.()
       }
     }
-  }, [messageId, text, onComplete])
+    type()
+  }, [text, messageId, onComplete])
 
   return <span>{displayedText}</span>
 }
@@ -85,8 +68,7 @@ export function ChatView({
   chatHistoryMinimized,
 }: ChatViewProps) {
   // Original welcome messages restored
-  const welcomeMessages = ["Niaje.", "Twende.", "What do you want to get?"]
-
+  const welcomeMessages = ["Niaje.", "Twende.", "What do you want to get?", "#Wantam."]
   const [randomMessage, setRandomMessage] = useState("")
   const [isLargeScreen, setIsLargeScreen] = useState(false)
   const [typingMessageId, setTypingMessageId] = useState<string | null>(null)
@@ -112,13 +94,11 @@ export function ChatView({
     scrollToBottom()
   }, [messages, isLoading, scrollToBottom])
 
-  // Track new AI messages for typing animation - FIXED LOGIC
+  // Track new AI messages for typing animation
   useEffect(() => {
-    // Only trigger typing for truly new messages, not on component re-renders
     if (messages.length > lastProcessedMessageCountRef.current) {
       const newMessages = messages.slice(lastProcessedMessageCountRef.current)
-      
-      // Find the last new AI message
+
       for (let i = newMessages.length - 1; i >= 0; i--) {
         const message = newMessages[i]
         if (message.role === "assistant" && !typedMessages.has(message.id)) {
@@ -126,10 +106,10 @@ export function ChatView({
           break
         }
       }
-      
+
       lastProcessedMessageCountRef.current = messages.length
     }
-  }, [messages.length]) // Only depend on message count, not the messages array itself
+  }, [messages.length])
 
   // Welcome message management
   useEffect(() => {
@@ -169,86 +149,77 @@ export function ChatView({
       e.preventDefault()
       if (input.trim() && !isLoading) {
         handleSubmit(e)
-        setTimeout(scrollToBottom, 100)
+        setTimeout(scrollToBottom, 50)
       }
     }
   }
 
   // Enhanced form submit handler
   const handleFormSubmit = (e: React.FormEvent) => {
-    handleSubmit(e)
-    setTimeout(scrollToBottom, 50)
+    e.preventDefault()
+    if (input.trim() && !isLoading) {
+      handleSubmit(e)
+      setTimeout(scrollToBottom, 50)
+    }
   }
 
   // Callback to handle typing completion
   const handleTypingComplete = useCallback((messageId: string) => {
-    setTypedMessages(prev => new Set([...prev, messageId]))
+    setTypedMessages((prev) => new Set([...prev, messageId]))
     setTypingMessageId(null)
   }, [])
 
   const renderMessage = (message: Message, index: number) => {
+    // Debug log to verify products field
+    console.log(`Message ${message.id} (${message.role}):`, { content: message.content, products: message.products })
+
+    const isTyping = typingMessageId === message.id && !typedMessages.has(message.id)
+    const shouldShowProducts = message.products && Array.isArray(message.products) && message.products.length > 0
+
     if (message.role === "user") {
       return (
-        <motion.div
-          key={message.id}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0 }} // Immediate for user messages
-          className="flex justify-end mb-4 md:mb-6 w-full"
-        >
+        <div key={message.id} className="flex justify-end mb-4 md:mb-6 w-full">
           <div className="flex items-start space-x-2 md:space-x-3 max-w-[85%] md:max-w-[75%]">
-            <motion.div
-              whileHover={{ scale: 1.01 }}
-              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-3 md:px-6 md:py-4 rounded-2xl shadow-lg order-1"
-            >
+            <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-3 md:px-6 md:py-4 rounded-2xl shadow-lg order-1">
               <p className="leading-relaxed text-sm md:text-base break-words">{message.content}</p>
-            </motion.div>
+            </div>
             <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0 order-2">
               <User className="h-3 w-3 md:h-4 md:w-4 text-white" />
             </div>
           </div>
-        </motion.div>
+        </div>
       )
     }
 
-    // AI Response with conditional typing animation
-    const isTyping = typingMessageId === message.id && !typedMessages.has(message.id)
-    const hasBeenTyped = typedMessages.has(message.id)
-
     return (
-      <motion.div
-        key={message.id}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0 }} // Immediate for AI messages too
-        className="flex justify-start mb-4 md:mb-6 w-full"
-      >
+      <div key={message.id} className="flex justify-start mb-4 md:mb-6 w-full">
         <div className="flex items-start space-x-2 md:space-x-3 max-w-[85%] md:max-w-[75%]">
           <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center flex-shrink-0 mt-1">
             <Bot className="h-3 w-3 md:h-4 md:w-4 text-white" />
           </div>
           <div className="flex-1 space-y-4 min-w-0">
             <div className="text-gray-300 leading-relaxed text-sm md:text-base">
-              <p className="break-words">
+              <p className="break-words whitespace-pre-wrap">
                 {isTyping ? (
-                  <TypingText 
-                    text={message.content} 
-                    messageId={message.id} 
-                    onComplete={() => handleTypingComplete(message.id)} 
+                  <TypingText
+                    text={message.content}
+                    messageId={message.id}
+                    onComplete={() => handleTypingComplete(message.id)}
                   />
                 ) : (
                   message.content
                 )}
               </p>
             </div>
-            {message.products && message.products.length > 0 && !isTyping && (
+            {/* Show products after typing completes OR immediately if not typing */}
+            {shouldShowProducts && (!isTyping || typedMessages.has(message.id)) && (
               <div className="w-full overflow-hidden">
-                <ProductCardResponse products={message.products} onAddToCart={onQuickAdd} />
+                <ProductCardResponse products={message.products ?? []} onAddToCart={onQuickAdd} />
               </div>
             )}
           </div>
         </div>
-      </motion.div>
+      </div>
     )
   }
 
@@ -388,7 +359,7 @@ export function ChatView({
 
           {/* Loading Animation */}
           {isLoading && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start mb-4 md:mb-6">
+            <div className="flex justify-start mb-4 md:mb-6">
               <div className="flex items-start space-x-2 md:space-x-3">
                 <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center flex-shrink-0 mt-1">
                   <Bot className="h-3 w-3 md:h-4 md:w-4 text-white" />
@@ -411,7 +382,7 @@ export function ChatView({
                   />
                 </div>
               </div>
-            </motion.div>
+            </div>
           )}
 
           {/* Invisible div for scrolling */}
@@ -446,11 +417,7 @@ export function ChatView({
                         value={input}
                         onChange={handleInputChange}
                         onKeyPress={handleKeyPress}
-                        placeholder={
-                          messages.length === 0
-                            ? "Ask me about products..."
-                            : "Ask me about products..."
-                        }
+                        placeholder={messages.length === 0 ? "Ask me about products..." : "Ask me about products..."}
                         className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-sm md:text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto custom-scrollbar"
                         disabled={isLoading}
                         rows={1}

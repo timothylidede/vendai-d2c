@@ -74,16 +74,16 @@ const CartModal: React.FC<CartModalProps> = ({ show, onClose, cart, onUpdateQuan
               damping: 25,
               stiffness: 300,
             }}
-            className="glass-effect w-full h-[90vh] md:h-auto md:max-h-[80vh] md:w-full md:max-w-2xl md:rounded-2xl overflow-hidden flex flex-col"
+            className="glass-effect w-full h-[90vh] md:h-auto md:max-h-[80vh] md:w-full md:max-w-2xl md:rounded-2xl overflow-hidden flex flex-col bg-black"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header - Sticky on mobile */}
-            <div className="flex items-center justify-between p-4 md:p-6 border-b border-white/10 bg-gray-900/90 backdrop-blur-sm sticky top-0 z-10">
+            <div className="flex items-center justify-between p-4 md:p-6 border-b border-white/10 bg-black sticky top-0 z-10">
               <div className="flex items-center space-x-3">
                 <ShoppingCart className="h-5 w-5 text-purple-400" />
-                <h2 className="text-xl font-bold text-gradient">Your Cart</h2>
+                <h2 className="text-lg font-bold text-gradient">Cart</h2>
                 {cart.length > 0 && (
-                  <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">
+                  <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30 text-xs">
                     {cart.reduce((acc, item) => acc + item.quantity, 0)} items
                   </Badge>
                 )}
@@ -94,81 +94,87 @@ const CartModal: React.FC<CartModalProps> = ({ show, onClose, cart, onUpdateQuan
             </div>
 
             {/* Content */}
-            <div className="flex-1 overflow-y-auto">
+            <div className="flex-1 overflow-y-auto bg-black/80">
               {cart.length === 0 ? (
-                <div className="flex flex-col items-center justify-center h-full py-12 px-6">
-                  <ShoppingCart className="h-16 w-16 mx-auto mb-4 text-gray-600" />
-                  <h3 className="text-lg font-medium mb-2">Your Cart is Empty</h3>
-                  <p className="text-gray-400 text-sm text-center">Add some items to get started!</p>
+                <div className="flex flex-col items-center justify-center h-full py-12 px-6 bg-black">
+                  <ShoppingCart className="h-14 w-14 mx-auto mb-3 text-gray-600" />
+                  <h3 className="text-base font-medium mb-1">Your Cart is Empty</h3>
+                  <p className="text-gray-400 text-xs text-center">Add some items to get started!</p>
                 </div>
               ) : (
-                <div className="p-4 md:p-6">
+                <div className="p-4 md:p-6 bg-black">
                   {/* Cart Items */}
-                  <div className="space-y-4 mb-6">
+                  <div className="space-y-3 mb-5 bg-black">
                     {cart.map((item) => (
-                      <div key={item.id} className="glass-effect rounded-lg p-4">
-                        <div className="flex items-start justify-between">
-                          <div className="flex items-start space-x-4 flex-1">
-                            <div className="relative h-16 w-16 md:h-12 md:w-12 rounded-lg overflow-hidden bg-white/10 flex-shrink-0">
-                              {item.image ? (
-                                <Image
-                                  src={item.image || "/placeholder.svg"}
-                                  alt={item.name}
-                                  fill
-                                  className="object-cover"
-                                />
-                              ) : (
-                                <div className="w-full h-full flex items-center justify-center">
-                                  <Package className="h-6 w-6 text-gray-400" />
-                                </div>
-                              )}
-                            </div>
-                            <div className="flex-1 min-w-0">
-                              <h3 className="font-medium text-sm md:text-base truncate">{item.name}</h3>
-                              <div className="flex flex-col md:flex-row md:items-center md:space-x-2 mt-1">
-                                <span className="text-xs text-gray-400">{formatPrice(item.price)} each</span>
-                                <span className="text-xs text-gray-500 hidden md:inline">•</span>
-                                <span className="text-xs text-green-400">
-                                  {formatPrice(item.price * item.quantity)} total
-                                </span>
+                      <div key={item.id} className="glass-effect rounded-lg p-3 bg-black">
+                        <div className="flex items-start gap-3">
+                          {/* Product Image */}
+                          <div className="relative h-18 w-18 md:h-14 md:w-14 rounded-lg overflow-hidden bg-white/10 flex-shrink-0">
+                            {item.image ? (
+                              <Image
+                                src={item.image || "/placeholder.svg"}
+                                alt={item.name}
+                                fill
+                                className="object-cover"
+                              />
+                            ) : (
+                              <div className="w-full h-full flex items-center justify-center">
+                                <Package className="h-5 w-5 text-gray-400" />
                               </div>
-                            </div>
+                            )}
                           </div>
 
-                          {/* Mobile-optimized controls */}
-                          <div className="flex flex-col md:flex-row items-end md:items-center space-y-2 md:space-y-0 md:space-x-3 ml-4">
-                            {/* Quantity Controls */}
-                            <div className="flex items-center space-x-2">
-                              <Button
-                                variant="ghost"
-                                size="sm"
-                                className="h-8 w-8 p-0 hover:bg-white/10 touch-manipulation"
-                                onClick={() => handleUpdateQuantity(item.id, item.quantity - 1)}
-                              >
-                                <Minus className="h-3 w-3" />
-                              </Button>
-                              <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30 px-3 py-1 min-w-[2.5rem] text-center">
-                                {item.quantity}
-                              </Badge>
-                              <Button
-                                variant="ghost"
-                                size="sm"
-                                className="h-8 w-8 p-0 hover:bg-white/10 touch-manipulation"
-                                onClick={() => handleUpdateQuantity(item.id, item.quantity + 1)}
-                              >
-                                <Plus className="h-3 w-3" />
-                              </Button>
-                            </div>
+                          {/* Product Info & Controls */}
+                          <div className="flex-1 min-w-0 bg-black">
+                            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
+                              {/* Product Details */}
+                              <div className="flex-1 min-w-0 bg-black">
+                                <h3 className="font-medium text-sm md:text-base leading-tight mb-1">{item.name}</h3>
+                                <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-xs">
+                                  <span className="text-gray-400">{formatPrice(item.price)} each</span>
+                                  <span className="text-gray-500 hidden sm:inline">•</span>
+                                  <span className="text-green-400 font-medium">
+                                    {formatPrice(item.price * item.quantity)} total
+                                  </span>
+                                </div>
+                              </div>
 
-                            {/* Remove Button */}
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              className="h-8 w-8 p-0 hover:bg-red-500/20 text-red-400 hover:text-red-300 touch-manipulation"
-                              onClick={() => handleRemoveItem(item.id)}
-                            >
-                              <Trash2 className="h-3 w-3" />
-                            </Button>
+                              {/* Controls Container */}
+                              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 bg-black">
+                                {/* Quantity Controls */}
+                                <div className="flex items-center bg-black/30 rounded-lg p-1 border border-white/10">
+                                  <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    className="h-7 w-7 p-0 hover:bg-white/10 rounded-md touch-manipulation"
+                                    onClick={() => handleUpdateQuantity(item.id, item.quantity - 1)}
+                                  >
+                                    <Minus className="h-3 w-3" />
+                                  </Button>
+                                  <div className="px-2 py-1 min-w-[2rem] text-center text-xs font-medium">
+                                    {item.quantity}
+                                  </div>
+                                  <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    className="h-7 w-7 p-0 hover:bg-white/10 rounded-md touch-manipulation"
+                                    onClick={() => handleUpdateQuantity(item.id, item.quantity + 1)}
+                                  >
+                                    <Plus className="h-3 w-3" />
+                                  </Button>
+                                </div>
+
+                                {/* Remove Button */}
+                                <Button
+                                  variant="ghost"
+                                  size="sm"
+                                  className="h-7 w-7 p-0 hover:bg-red-500/20 text-red-400 hover:text-red-300 touch-manipulation border border-red-500/30 rounded-md"
+                                  onClick={() => handleRemoveItem(item.id)}
+                                >
+                                  <Trash2 className="h-3 w-3" />
+                                </Button>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -180,20 +186,22 @@ const CartModal: React.FC<CartModalProps> = ({ show, onClose, cart, onUpdateQuan
 
             {/* Footer - Sticky on mobile */}
             {cart.length > 0 && (
-              <div className="border-t border-white/10 bg-gray-900/90 backdrop-blur-sm p-4 md:p-6 sticky bottom-0">
+              <div className="border-t border-white/10 bg-black p-4 md:p-6 sticky bottom-0">
                 {/* Order Summary */}
-                <div className="glass-effect rounded-lg p-4 mb-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-gray-400">Items in cart</span>
-                    <span className="text-sm font-medium">{cart.length}</span>
-                  </div>
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-gray-400">Total quantity</span>
-                    <span className="text-sm font-medium">{cart.reduce((acc, item) => acc + item.quantity, 0)}</span>
+                <div className="glass-effect rounded-lg p-3 mb-3 bg-black">
+                  <div className="grid grid-cols-2 gap-2 mb-2">
+                    <div className="flex justify-between">
+                      <span className="text-xs text-gray-400">Items:</span>
+                      <span className="text-xs font-medium">{cart.length}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-xs text-gray-400">Quantity:</span>
+                      <span className="text-xs font-medium">{cart.reduce((acc, item) => acc + item.quantity, 0)}</span>
+                    </div>
                   </div>
                   <div className="border-t border-white/10 pt-2">
                     <div className="flex items-center justify-between">
-                      <span className="font-medium">Total Amount</span>
+                      <span className="text-sm font-medium">Total Amount</span>
                       <span className="text-lg font-bold text-green-400">{formatPrice(totalPrice)}</span>
                     </div>
                   </div>
@@ -201,7 +209,7 @@ const CartModal: React.FC<CartModalProps> = ({ show, onClose, cart, onUpdateQuan
 
                 {/* Checkout Button */}
                 <Button
-                  className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-medium py-3 text-base touch-manipulation"
+                  className="w-full bg-gradient-to-r from-purple-500 to-black hover:from-purple-600 hover:to-gray-900 text-white font-medium py-2 text-sm touch-manipulation"
                   onClick={handleCheckout}
                 >
                   Proceed to Checkout

@@ -7,7 +7,7 @@ import { AuthProvider } from "@/lib/auth-context"; // Add AuthProvider import
 const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: "vendai - AI-Powered Shopping",
+  title: "Vendai",
   description: "Shop at wholesale prices with AI assistance. Simple, fast, and intuitive ecommerce.",
   generator: "v0.dev",
 };
