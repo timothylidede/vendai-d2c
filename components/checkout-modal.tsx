@@ -38,6 +38,7 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [mapError, setMapError] = useState<string | null>(null)
   const [isMapLoaded, setIsMapLoaded] = useState(false)
+  const [paymentMethod, setPaymentMethod] = useState<"payondelivery" | "mpesa">("payondelivery")
 
   // M-Pesa Payment states
   const [mpesaStatus, setMpesaStatus] = useState<"idle" | "pending" | "success" | "failed">("idle")
@@ -540,6 +541,7 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
 
   const resetModal = () => {
     setStep(1)
+    setPaymentMethod("payondelivery") // Add this line
     setMpesaStatus("idle")
     setMpesaMessage("")
     setMpesaCheckoutRequestId("")
@@ -547,7 +549,7 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
     setDeliveryAddress("")
     setDeliveryNotes("")
     setSearchQuery("")
-    setIsMapLoaded(false) // Reset map loaded state to force re-initialization
+    setIsMapLoaded(false)
     if (markerRef.current) {
       markerRef.current.setMap(null)
     }
@@ -572,19 +574,24 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
   }
 
   const handleFinalCheckout = async () => {
-    if (!user) {
-      alert("Please log in to complete the checkout.");
-      return;
+    if (paymentMethod === "payondelivery") {
+      await handlePayOnDelivery();
+    } else {
+      if (!user) {
+        alert("Please log in to complete the checkout.");
+        return;
+      }
+      // Validate phone number only when submitting M-Pesa
+      const formattedPhone = formatPhoneNumber(phoneNumber);
+      if (!formattedPhone || phoneNumber.length < 10) {
+        setMpesaStatus("failed");
+        setMpesaMessage("Please enter a valid M-Pesa phone number (e.g., 0712345678 or 254712345678).");
+        return;
+      }
+      await handleMpesaSTKPush();
     }
-    // Validate phone number only when submitting
-    const formattedPhone = formatPhoneNumber(phoneNumber);
-    if (!formattedPhone || phoneNumber.length < 10) {
-      setMpesaStatus("failed");
-      setMpesaMessage("Please enter a valid M-Pesa phone number (e.g., 0712345678 or 254712345678).");
-      return;
-    }
-    await handleMpesaSTKPush();
   };
+
 
   const formatPhoneNumber = (phone: string): string | null => {
     // Remove all non-digit characters
@@ -719,34 +726,81 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
 
   const renderStep2 = () => (
     <div className="space-y-4">
-      {/* M-Pesa Info */}
-      <div className="glass-effect rounded-lg p-4 bg-green-500/10 border border-green-500/20">
-        <div className="flex items-center space-x-3">
-          <Smartphone className="h-6 w-6 text-green-400" />
-          <div>
-            <p className="font-medium text-white text-sm">Pay with M-Pesa</p>
-            <p className="text-xs text-gray-400">Secure mobile money payment</p>
+      {/* Payment Method Selection */}
+      <div>
+        <label className="block text-sm font-medium text-white mb-3">Payment Method</label>
+        <div className="space-y-3">
+          {/* Pay on Delivery Option */}
+          <div 
+            className={`glass-effect rounded-lg p-4 cursor-pointer border-2 transition-all ${
+              paymentMethod === "payondelivery" 
+                ? "border-purple-500/50 bg-purple-500/10" 
+                : "border-white/10 hover:border-white/20"
+            }`}
+            onClick={() => setPaymentMethod("payondelivery")}
+          >
+            <div className="flex items-center space-x-3">
+              <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center ${
+                paymentMethod === "payondelivery" ? "border-purple-500" : "border-gray-400"
+              }`}>
+                {paymentMethod === "payondelivery" && (
+                  <div className="w-2 h-2 rounded-full bg-purple-500" />
+                )}
+              </div>
+              <CreditCard className="h-6 w-6 text-purple-400" />
+              <div>
+                <p className="font-medium text-white text-sm">Pay on Delivery</p>
+                <p className="text-xs text-gray-400">Pay cash when your order arrives</p>
+              </div>
+            </div>
+          </div>
+
+          {/* M-Pesa Option */}
+          <div 
+            className={`glass-effect rounded-lg p-4 cursor-pointer border-2 transition-all ${
+              paymentMethod === "mpesa" 
+                ? "border-green-500/50 bg-green-500/10" 
+                : "border-white/10 hover:border-white/20"
+            }`}
+            onClick={() => setPaymentMethod("mpesa")}
+          >
+            <div className="flex items-center space-x-3">
+              <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center ${
+                paymentMethod === "mpesa" ? "border-green-500" : "border-gray-400"
+              }`}>
+                {paymentMethod === "mpesa" && (
+                  <div className="w-2 h-2 rounded-full bg-green-500" />
+                )}
+              </div>
+              <Smartphone className="h-6 w-6 text-green-400" />
+              <div>
+                <p className="font-medium text-white text-sm">Pay with M-Pesa</p>
+                <p className="text-xs text-gray-400">Secure mobile money payment</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       
-      {/* Phone Number Input */}
-      <div>
-        <label className="block text-sm font-medium text-white mb-2">M-Pesa Phone Number</label>
-        <div className="relative">
-          <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-          <input
-            type="tel"
-            value={phoneNumber}
-            onChange={handlePhoneChange}
-            placeholder="0712345678 or 254712345678"
-            className="w-full pl-10 pr-4 py-3 bg-black/30 border border-white/10 text-white placeholder-gray-400 rounded-lg focus:border-purple-500 focus:outline-none text-sm"
-          />
+      {/* Phone Number Input - Only show for M-Pesa */}
+      {paymentMethod === "mpesa" && (
+        <div>
+          <label className="block text-sm font-medium text-white mb-2">M-Pesa Phone Number</label>
+          <div className="relative">
+            <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
+            <input
+              type="tel"
+              value={phoneNumber}
+              onChange={handlePhoneChange}
+              placeholder="0712345678 or 254712345678"
+              className="w-full pl-10 pr-4 py-3 bg-black/30 border border-white/10 text-white placeholder-gray-400 rounded-lg focus:border-purple-500 focus:outline-none text-sm"
+            />
+          </div>
         </div>
-      </div>
+      )}
       
-      {/* Payment Status */}
-      {mpesaStatus !== "idle" && (
+      {/* Payment Status - Only show for M-Pesa */}
+      {paymentMethod === "mpesa" && mpesaStatus !== "idle" && (
         <div
           className={`rounded-lg p-2 border ${
             mpesaStatus === "pending"
@@ -781,6 +835,51 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
       )}
     </div>
   )
+
+  const handlePayOnDelivery = async () => {
+    if (!user) {
+      alert("Please log in to complete the checkout.");
+      return;
+    }
+
+    if (!selectedLocation || !deliveryAddress) {
+      alert("Please select a delivery location and address.");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const orderData: Order = {
+        userId: user?.uid || "guest",
+        items: cart,
+        total: Math.ceil(total),
+        status: "pending",
+        paymentStatus: "pending",
+        paymentMethod: "payondelivery",
+        deliveryAddress: {
+          address: deliveryAddress,
+          location: selectedLocation, // Safe to use since we checked for null
+          notes: deliveryNotes,
+        },
+        deliveryDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString(),
+        orderNumber: `COD-${Date.now()}`,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+        date: new Date().toISOString(),
+        customerName: user?.name || user?.displayName || "Guest",
+        customerPhone: phoneNumber || user?.phone || "",
+        id: `COD-${Date.now()}`,
+      };
+
+      onCheckoutComplete(orderData);
+    } catch (error) {
+      console.error("Pay on delivery error:", error);
+      alert("Failed to place order. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const renderOrderSummary = () => (
     <div className="glass-effect rounded-lg p-4 space-y-3 bg-black">
@@ -911,20 +1010,23 @@ export function CheckoutModal({ show, onClose, cart, onCheckoutComplete, user }:
                 {step === 2 && mpesaStatus === "idle" && (
                   <button
                     onClick={handleFinalCheckout}
-                    disabled={!phoneNumber || formatPhoneNumber(phoneNumber) === null || isSubmitting}
+                    disabled={
+                      (paymentMethod === "mpesa" && (!phoneNumber || formatPhoneNumber(phoneNumber) === null)) || 
+                      isSubmitting
+                    }
                     className="flex-1 px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 text-sm font-medium touch-manipulation"
                   >
-                    <Smartphone className="h-4 w-4" />
-                    {isSubmitting ? "Processing..." : `Pay KES ${total.toLocaleString()}`}
-                  </button>
-                )}
-
-                {step === 2 && mpesaStatus === "failed" && (
-                  <button
-                    onClick={() => setMpesaStatus("idle")}
-                    className="flex-1 px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 transition-all text-sm font-medium touch-manipulation"
-                  >
-                    Try Again
+                    {paymentMethod === "payondelivery" ? (
+                      <>
+                        <CreditCard className="h-4 w-4" />
+                        {isSubmitting ? "Processing..." : "Place Order"}
+                      </>
+                    ) : (
+                      <>
+                        <Smartphone className="h-4 w-4" />
+                        {isSubmitting ? "Processing..." : `Pay KES ${total.toLocaleString()}`}
+                      </>
+                    )}
                   </button>
                 )}
               </div>
