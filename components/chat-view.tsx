@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { motion } from "framer-motion"
-import { Send, User, Bot, Home } from "lucide-react"
+import { Send, User, Bot, Home, Settings, Search, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ProductShortcuts } from "./product-shortcuts"
 import { ProductCardResponse } from "./product-card-response"
@@ -73,9 +73,12 @@ export function ChatView({
   const [isLargeScreen, setIsLargeScreen] = useState(false)
   const [typingMessageId, setTypingMessageId] = useState<string | null>(null)
   const [typedMessages, setTypedMessages] = useState<Set<string>>(new Set())
+  const [showTools, setShowTools] = useState(false)
+  const [searchMode, setSearchMode] = useState<'fast' | 'deep'>('fast')
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const chatContainerRef = useRef<HTMLDivElement>(null)
   const lastProcessedMessageCountRef = useRef(0)
+  const toolsRef = useRef<HTMLDivElement>(null)
 
   // Enhanced auto-scroll function
   const scrollToBottom = useCallback(() => {
@@ -142,6 +145,18 @@ export function ChatView({
     checkScreenSize()
     window.addEventListener("resize", checkScreenSize)
     return () => window.removeEventListener("resize", checkScreenSize)
+  }, [])
+
+  // Close tools dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (toolsRef.current && !toolsRef.current.contains(event.target as Node)) {
+        setShowTools(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
   }, [])
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -225,6 +240,156 @@ export function ChatView({
 
   const shouldShowChatInput = messages.length > 0 || !isLargeScreen
 
+  const renderChatInput = () => (
+    <div className="relative">
+      <form onSubmit={handleFormSubmit} className="relative">
+        <motion.div
+          className="bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-gray-700/50 py-3 px-4 shadow-2xl relative"
+          animate={{
+            boxShadow: [
+              "0 0 0 1px rgba(168, 85, 247, 0.2)",
+              "0 0 0 2px rgba(168, 85, 247, 0.4)",
+              "0 0 0 1px rgba(168, 85, 247, 0.2)",
+            ],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Number.POSITIVE_INFINITY,
+            repeatType: "reverse",
+          }}
+        >
+          <div className="flex flex-col space-y-3">
+            {/* Input Area */}
+            <div className="flex-1">
+              <textarea
+                value={input}
+                onChange={handleInputChange}
+                onKeyPress={handleKeyPress}
+                placeholder="Ask me about products..."
+                className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-sm md:text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto custom-scrollbar"
+                disabled={isLoading}
+                rows={1}
+                style={{
+                  height: "auto",
+                  minHeight: "2.5rem",
+                  maxHeight: "12rem",
+                }}
+                onInput={(e) => {
+                  const target = e.target as HTMLTextAreaElement
+                  target.style.height = "auto"
+                  target.style.height = Math.min(target.scrollHeight, 144) + "px"
+                }}
+                maxLength={1000}
+              />
+            </div>
+            
+            {/* Bottom Controls */}
+            <div className="flex justify-between items-center">
+              {/* Tools Section - Left */}
+              <div className="relative flex items-center space-x-2" ref={toolsRef}>
+                <motion.button
+                  type="button"
+                  onClick={() => setShowTools(!showTools)}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-gray-700/50 hover:bg-gray-700/70 text-gray-300 rounded-xl px-3 py-2 transition-all duration-200 flex items-center space-x-2 text-sm"
+                >
+                  <Settings className="h-4 w-4" />
+                  <span className="hidden sm:inline">Tools</span>
+                </motion.button>
+
+                {/* Search Mode Indicator */}
+                <div className="text-xs text-gray-500 bg-gradient-to-r from-purple-500/20 to-pink-500/20 px-2 py-1 rounded-lg border border-purple-500/30">
+                  {searchMode === 'fast' ? (
+                    <div className="flex items-center space-x-1">
+                      <Zap className="h-3 w-3" />
+                      <span>Fast</span>
+                    </div>
+                  ) : (
+                    <div className="flex items-center space-x-1">
+                      <Search className="h-3 w-3" />
+                      <span>Deep</span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Tools Dropdown */}
+                {showTools && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute bottom-full mb-2 left-0 bg-gray-800/95 backdrop-blur-xl rounded-xl border border-gray-700/50 shadow-2xl py-2 min-w-[200px] z-50"
+                  >
+                    <div className="px-3 py-2 text-xs text-gray-400 font-medium border-b border-gray-700/50">
+                      Search Mode
+                    </div>
+                    
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setSearchMode('fast')
+                        setShowTools(false)
+                      }}
+                      className={`w-full px-3 py-2 text-left hover:bg-gray-700/50 transition-colors flex items-center space-x-3 ${
+                        searchMode === 'fast' ? 'text-pink-400 bg-gray-700/30' : 'text-gray-300'
+                      }`}
+                    >
+                      <Zap className="h-4 w-4" />
+                      <div>
+                        <div className="text-sm">Fast search</div>
+                        <div className="text-xs text-gray-500">Quick responses</div>
+                      </div>
+                      {searchMode === 'fast' && (
+                        <div className="ml-auto">
+                          <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                        </div>
+                      )}
+                    </button>
+                    
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setSearchMode('deep')
+                        setShowTools(false)
+                      }}
+                      className={`w-full px-3 py-2 text-left hover:bg-gray-700/50 transition-colors flex items-center space-x-3 ${
+                        searchMode === 'deep' ? 'text-pink-400 bg-gray-700/30' : 'text-gray-300'
+                      }`}
+                    >
+                      <Search className="h-4 w-4" />
+                      <div>
+                        <div className="text-sm">Deep search</div>
+                        <div className="text-xs text-gray-500">Comprehensive analysis</div>
+                      </div>
+                      {searchMode === 'deep' && (
+                        <div className="ml-auto">
+                          <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                        </div>
+                      )}
+                    </button>
+                  </motion.div>
+                )}
+              </div>
+
+              {/* Send Button - Right */}
+              <motion.button
+                type="submit"
+                disabled={isLoading || !input.trim()}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 disabled:opacity-50 rounded-xl px-3 md:px-4 py-1.5 md:py-2 transition-all duration-200 flex items-center justify-center min-w-[36px] md:min-w-[40px]"
+              >
+                <Send className="h-3 w-3 md:h-4 md:w-4" />
+              </motion.button>
+            </div>
+          </div>
+        </motion.div>
+      </form>
+    </div>
+  )
+
   return (
     <div className="flex-1 flex flex-col h-full relative transition-all duration-300 overflow-hidden">
       {/* Main Content Area - Scrollable */}
@@ -282,61 +447,7 @@ export function ChatView({
                   transition={{ delay: 0.4 }}
                   className="w-full max-w-2xl mb-8"
                 >
-                  <div className="relative">
-                    <form onSubmit={handleFormSubmit} className="relative">
-                      <motion.div
-                        className="bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-gray-700/50 py-3 px-4 shadow-2xl relative"
-                        animate={{
-                          boxShadow: [
-                            "0 0 0 1px rgba(168, 85, 247, 0.2)",
-                            "0 0 0 2px rgba(168, 85, 247, 0.4)",
-                            "0 0 0 1px rgba(168, 85, 247, 0.2)",
-                          ],
-                        }}
-                        transition={{
-                          duration: 2,
-                          repeat: Number.POSITIVE_INFINITY,
-                          repeatType: "reverse",
-                        }}
-                      >
-                        <div className="flex flex-col space-y-3">
-                          <div className="flex-1">
-                            <textarea
-                              value={input}
-                              onChange={handleInputChange}
-                              onKeyPress={handleKeyPress}
-                              placeholder="Ask me about products..."
-                              className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto custom-scrollbar"
-                              disabled={isLoading}
-                              rows={1}
-                              style={{
-                                height: "auto",
-                                minHeight: "2.5rem",
-                                maxHeight: "12rem",
-                              }}
-                              onInput={(e) => {
-                                const target = e.target as HTMLTextAreaElement
-                                target.style.height = "auto"
-                                target.style.height = Math.min(target.scrollHeight, 144) + "px"
-                              }}
-                              maxLength={1000}
-                            />
-                          </div>
-                          <div className="flex justify-end">
-                            <motion.button
-                              type="submit"
-                              disabled={isLoading || !input.trim()}
-                              whileHover={{ scale: 1.05 }}
-                              whileTap={{ scale: 0.95 }}
-                              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 disabled:opacity-50 rounded-xl px-4 py-2 transition-all duration-200 flex items-center justify-center min-w-[40px]"
-                            >
-                              <Send className="h-4 w-4" />
-                            </motion.button>
-                          </div>
-                        </div>
-                      </motion.div>
-                    </form>
-                  </div>
+                  {renderChatInput()}
                 </motion.div>
               )}
 
@@ -394,61 +505,7 @@ export function ChatView({
       {shouldShowChatInput && (
         <div className="flex-shrink-0 z-30 transition-all duration-300 bg-transparent px-3 md:px-4">
           <div className="max-w-4xl mx-auto p-3 md:p-4">
-            <div className="relative">
-              <form onSubmit={handleFormSubmit} className="relative">
-                <motion.div
-                  className="bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-gray-700/50 py-3 px-4 shadow-2xl relative"
-                  animate={{
-                    boxShadow: [
-                      "0 0 0 1px rgba(168, 85, 247, 0.2)",
-                      "0 0 0 2px rgba(168, 85, 247, 0.4)",
-                      "0 0 0 1px rgba(168, 85, 247, 0.2)",
-                    ],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Number.POSITIVE_INFINITY,
-                    repeatType: "reverse",
-                  }}
-                >
-                  <div className="flex flex-col space-y-3">
-                    <div className="flex-1">
-                      <textarea
-                        value={input}
-                        onChange={handleInputChange}
-                        onKeyPress={handleKeyPress}
-                        placeholder={messages.length === 0 ? "Ask me about products..." : "Ask me about products..."}
-                        className="bg-transparent border-0 text-white placeholder-gray-400 focus:ring-0 focus:border-0 focus:outline-none resize-none text-sm md:text-base h-auto p-0 shadow-none w-full min-h-[1.5rem] max-h-[9rem] overflow-y-auto custom-scrollbar"
-                        disabled={isLoading}
-                        rows={1}
-                        style={{
-                          height: "auto",
-                          minHeight: "2.5rem",
-                          maxHeight: "12rem",
-                        }}
-                        onInput={(e) => {
-                          const target = e.target as HTMLTextAreaElement
-                          target.style.height = "auto"
-                          target.style.height = Math.min(target.scrollHeight, 144) + "px"
-                        }}
-                        maxLength={1000}
-                      />
-                    </div>
-                    <div className="flex justify-end">
-                      <motion.button
-                        type="submit"
-                        disabled={isLoading || !input.trim()}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 disabled:opacity-50 rounded-xl px-3 md:px-4 py-1.5 md:py-2 transition-all duration-200 flex items-center justify-center min-w-[36px] md:min-w-[40px]"
-                      >
-                        <Send className="h-3 w-3 md:h-4 md:w-4" />
-                      </motion.button>
-                    </div>
-                  </div>
-                </motion.div>
-              </form>
-            </div>
+            {renderChatInput()}
           </div>
         </div>
       )}
