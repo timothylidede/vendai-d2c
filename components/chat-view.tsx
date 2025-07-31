@@ -450,16 +450,6 @@ export function ChatView({
                   {renderChatInput()}
                 </motion.div>
               )}
-
-              {/* Product Shortcuts */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-                className="w-full max-w-3xl mb-8 overflow-hidden"
-              >
-                <ProductShortcuts products={products} onQuickAdd={onQuickAdd} onViewAll={onViewAll} />
-              </motion.div>
             </div>
           )}
         </div>
