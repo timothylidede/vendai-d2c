@@ -292,9 +292,9 @@ export function ChatView({
                   onClick={() => setShowTools(!showTools)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-gray-700/50 hover:bg-gray-700/70 text-gray-300 rounded-xl px-3 py-2 transition-all duration-200 flex items-center space-x-2 text-sm"
+                  className="bg-gray-700/50 hover:bg-gray-700/70 text-gray-300 rounded-xl px-2 py-1 transition-all duration-200 flex items-center space-x-1 text-xs border border-purple-500/30"
                 >
-                  <Settings className="h-4 w-4" />
+                  <Settings className="h-3 w-3" />
                   <span className="hidden sm:inline">Tools</span>
                 </motion.button>
 
