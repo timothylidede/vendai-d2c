@@ -69,6 +69,8 @@ function generateChatTitle(userMessage: string, aiResponse: string): string {
     return "Looking for phones";
   } else if (cleanUserMessage.includes("coffee") || cleanUserMessage.includes("drink")) {
     return "Coffee & beverages";
+  } else if (cleanUserMessage.includes("juice") || cleanUserMessage.includes("acacia")) {
+    return "Juice products";
   } else if (cleanUserMessage.includes("fitness") || cleanUserMessage.includes("exercise")) {
     return "Fitness products";
   } else if (cleanUserMessage.includes("cheap") || cleanUserMessage.includes("budget")) {
@@ -108,6 +110,7 @@ export default function Home() {
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
   const [showCartAdded, setShowCartAdded] = useState(false);
   const [isOnline, setIsOnline] = useState(true);
+  const [searchMode, setSearchMode] = useState<"fast" | "deep">("fast");
   const [chatHistoryMinimized, setChatHistoryMinimized] = useState(false);
 
   // Data state - Initialize products with fallback
@@ -163,6 +166,23 @@ export default function Home() {
       window.removeEventListener("offline", handleOffline);
     };
   }, []);
+
+  // Load searchMode from localStorage
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const savedSearchMode = localStorage.getItem("vendai-search-mode") as "fast" | "deep" | null;
+      if (savedSearchMode) {
+        setSearchMode(savedSearchMode);
+      }
+    }
+  }, []);
+
+  // Save searchMode to localStorage
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("vendai-search-mode", searchMode);
+    }
+  }, [searchMode]);
 
   // Load data from localStorage on initial mount
   useEffect(() => {
@@ -305,39 +325,43 @@ export default function Home() {
     }
   }, [chatSessions, user?.uid, debouncedSaveChatSession, isOnline, currentSessionId]);
 
-  // Active chat session listener
+  // Active chat session listener - FIXED
   useEffect(() => {
-    if (user?.uid && currentView === "chat" && messages.length > 0) {
+    if (user?.uid && currentView === "chat" && isOnline) {
       if (activeChatUnsubscribe) {
         activeChatUnsubscribe();
         setActiveChatUnsubscribe(null);
       }
 
-      const unsubscribe = realtimeService.subscribeToActiveChatSession(currentSessionId, (session) => {
-        if (session && session.messages.length !== messages.length) {
-          // Merge products from existing messages
-          const updatedMessages = session.messages.map((chatMsg) => {
-            const existingMsg = messages.find((m) => m.id === chatMsg.id);
-            return {
-              id: chatMsg.id,
-              role: chatMsg.role,
-              content: chatMsg.content,
-              timestamp: chatMsg.timestamp,
-              products: existingMsg?.products || chatMsg.products || [], // Preserve products
-            } as Message;
-          });
-          setMessages(updatedMessages);
-        }
-      });
-      setActiveChatUnsubscribe(() => unsubscribe);
+      // Only subscribe if we have messages to sync
+      if (messages.length > 0) {
+        const unsubscribe = realtimeService.subscribeToActiveChatSession(currentSessionId, (session) => {
+          if (session && session.messages.length !== messages.length) {
+            // Convert ChatMessages to Messages, preserving products
+            const updatedMessages: Message[] = session.messages.map((chatMsg) => {
+              const existingMsg = messages.find((m) => m.id === chatMsg.id);
+              return {
+                id: chatMsg.id,
+                role: chatMsg.role,
+                content: chatMsg.content,
+                timestamp: chatMsg.timestamp,
+                products: existingMsg?.products || chatMsg.products || [], // Preserve products
+              };
+            });
+            setMessages(updatedMessages);
+          }
+        });
+        setActiveChatUnsubscribe(() => unsubscribe);
+      }
     }
+
     return () => {
       if (activeChatUnsubscribe) {
         activeChatUnsubscribe();
         setActiveChatUnsubscribe(null);
       }
     };
-  }, [user?.uid, currentView, messages.length, currentSessionId, messages]);
+  }, [user?.uid, currentView, messages.length, currentSessionId, isOnline]);
 
   useEffect(() => {
     if (!loading && user && typeof window !== "undefined") {
@@ -349,7 +373,7 @@ export default function Home() {
     }
   }, [user, loading]);
 
-  // Chat functions
+  // Chat functions - IMPROVED ERROR HANDLING
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInput(e.target.value);
   };
@@ -361,34 +385,48 @@ export default function Home() {
     const userMessage: Message = {
       id: Date.now().toString(),
       role: "user",
-      content: input,
+      content: input.trim(),
       timestamp: new Date().toISOString(),
-      products: [], // Explicitly set to empty array for user messages
+      products: [],
     };
 
     setMessages((prev) => [...prev, userMessage]);
-
-    if (user?.uid) {
-      userPreferencesService.addToSearchHistory(user.uid, input.trim()).catch(console.error);
-    }
-
     setInput("");
     setIsLoading(true);
 
     try {
+      console.log("Sending chat request:", { messages: [...messages, userMessage], searchMode });
+
       const response = await fetch("/api/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: [...messages, userMessage] }),
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          messages: [...messages, userMessage],
+          searchMode,
+        }),
       });
 
+      if (!response.ok) {
+        console.error("API response error:", response.status, response.statusText);
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
       const data = await response.json();
+      console.log("Received API response:", data);
+
+      if (!data || typeof data.content !== "string") {
+        throw new Error("Invalid response format from chat API");
+      }
+
       const assistantMessage: Message = {
-        id: data.id,
+        id: data.id || (Date.now() + 1).toString(),
         role: "assistant",
         content: data.content,
-        products: data.products || [],
-        timestamp: new Date().toISOString(),
+        products: Array.isArray(data.products) ? data.products : [],
+        timestamp: data.timestamp || new Date().toISOString(),
       };
 
       setMessages((prev) => [...prev, assistantMessage]);
@@ -398,7 +436,9 @@ export default function Home() {
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: "assistant",
-        content: "Sorry, I'm having trouble connecting. Please try again.",
+        content: isOnline
+          ? "Sorry, something went wrong. Please try again."
+          : "You're currently offline. Please check your internet connection and try again.",
         timestamp: new Date().toISOString(),
         products: [],
       };
@@ -408,47 +448,67 @@ export default function Home() {
     }
   };
 
+  // IMPROVED updateChatSession function
   const updateChatSession = (newMessages: Message[]) => {
     if (newMessages.length < 2) return;
 
-    const userMsg = newMessages[newMessages.length - 2];
-    const aiMsg = newMessages[newMessages.length - 1];
+    try {
+      const userMsg = newMessages[newMessages.length - 2];
+      const aiMsg = newMessages[newMessages.length - 1];
 
-    const sessionTitle = generateChatTitle(userMsg.content, aiMsg.content);
-
-    // Skip saving if title is empty (generic message)
-    if (!sessionTitle) return;
-
-    const now = new Date().toISOString();
-
-    // Convert Messages to ChatMessages, preserving products
-    const chatMessages: ChatMessage[] = newMessages.map((msg) => ({
-      id: msg.id,
-      role: msg.role,
-      content: msg.content,
-      timestamp: msg.timestamp || now,
-      products: msg.products || [], // Preserve products
-    }));
-
-    const session: ChatSession = {
-      id: currentSessionId,
-      userId: user?.uid || "",
-      title: sessionTitle,
-      messages: chatMessages,
-      isActive: true,
-      createdAt: now,
-      updatedAt: now,
-      date: now,
-    };
-
-    setChatSessions((prev) => {
-      const existing = prev.find((s) => s.id === currentSessionId);
-      if (existing) {
-        return prev.map((s) => (s.id === currentSessionId ? session : s));
-      } else {
-        return [session, ...prev];
+      if (!userMsg || !aiMsg || userMsg.role !== "user" || aiMsg.role !== "assistant") {
+        console.warn("Invalid message structure for chat session update");
+        return;
       }
-    });
+
+      const sessionTitle = generateChatTitle(userMsg.content, aiMsg.content);
+
+      // Skip saving if title is empty (generic message)
+      if (!sessionTitle) {
+        console.log("Skipping chat session save - generic message");
+        return;
+      }
+
+      const now = new Date().toISOString();
+
+      // Convert Messages to ChatMessages, preserving products
+      const chatMessages: ChatMessage[] = newMessages.map((msg) => ({
+        id: msg.id,
+        role: msg.role,
+        content: msg.content,
+        timestamp: msg.timestamp || now,
+        products: Array.isArray(msg.products) ? msg.products : [], // Ensure products is always an array
+      }));
+
+      const session: ChatSession = {
+        id: currentSessionId,
+        userId: user?.uid || "",
+        title: sessionTitle,
+        messages: chatMessages,
+        isActive: true,
+        createdAt: now,
+        updatedAt: now,
+        date: now,
+      };
+
+      setChatSessions((prev) => {
+        const existing = prev.find((s) => s.id === currentSessionId);
+        if (existing) {
+          return prev.map((s) => (s.id === currentSessionId ? session : s));
+        } else {
+          return [session, ...prev];
+        }
+      });
+
+      console.log("Chat session updated:", {
+        sessionId: currentSessionId,
+        title: sessionTitle,
+        messageCount: chatMessages.length
+      });
+
+    } catch (error) {
+      console.error("Error updating chat session:", error);
+    }
   };
 
   // Cart functions
@@ -458,36 +518,40 @@ export default function Home() {
       return;
     }
 
-    const cartButton = document.querySelector("[data-cart-button]");
-    if (cartButton) {
-      cartButton.classList.add("animate-bounce");
-      setTimeout(() => cartButton.classList.remove("animate-bounce"), 600);
-    }
-
-    setCart((prevCart) => {
-      const productIdStr = product.id.toString();
-      const existingItem = prevCart.find((item) => item.id === productIdStr);
-      if (existingItem) {
-        return prevCart.map((item) =>
-          item.id === productIdStr ? { ...item, quantity: item.quantity + quantity } : item,
-        );
+    try {
+      const cartButton = document.querySelector("[data-cart-button]");
+      if (cartButton) {
+        cartButton.classList.add("animate-bounce");
+        setTimeout(() => cartButton.classList.remove("animate-bounce"), 600);
       }
-      const itemPrice = product.price ?? 0;
-      return [
-        ...prevCart,
-        {
-          id: productIdStr,
-          name: product.name,
-          price: itemPrice,
-          quantity,
-          category: product.category,
-          image: product.image,
-        },
-      ] as CartItem[];
-    });
 
-    setShowCartAdded(true);
-    setTimeout(() => setShowCartAdded(false), 1500);
+      setCart((prevCart) => {
+        const productIdStr = product.id.toString();
+        const existingItem = prevCart.find((item) => item.id === productIdStr);
+        if (existingItem) {
+          return prevCart.map((item) =>
+            item.id === productIdStr ? { ...item, quantity: item.quantity + quantity } : item,
+          );
+        }
+        const itemPrice = product.price ?? 0;
+        return [
+          ...prevCart,
+          {
+            id: productIdStr,
+            name: product.name,
+            price: itemPrice,
+            quantity,
+            category: product.category,
+            image: product.image,
+          },
+        ] as CartItem[];
+      });
+
+      setShowCartAdded(true);
+      setTimeout(() => setShowCartAdded(false), 1500);
+    } catch (error) {
+      console.error("Error adding to cart:", error);
+    }
   };
 
   const handleRemoveFromCart = (productId: string) => {
@@ -585,6 +649,7 @@ export default function Home() {
       localStorage.removeItem("vendai-current-messages");
       localStorage.removeItem("vendai-current-session-id");
       localStorage.removeItem("vendai-last-sync");
+      localStorage.removeItem("vendai-search-mode");
       setChatHistoryOpen(false);
       console.log("Logged out successfully at", new Date().toLocaleString("en-KE", { timeZone: "Africa/Nairobi" }));
     } catch (error) {
@@ -604,15 +669,20 @@ export default function Home() {
     if (session) {
       setCurrentSessionId(sessionId);
       // Convert ChatMessages back to Messages, preserving products
-      const messages: Message[] = session.messages.map((msg) => ({
+      const loadedMessages: Message[] = session.messages.map((msg) => ({
         id: msg.id,
         role: msg.role,
         content: msg.content,
         timestamp: msg.timestamp,
-        products: msg.products || [], // Preserve products
+        products: Array.isArray(msg.products) ? msg.products : [], // Ensure products is always an array
       }));
-      setMessages(messages);
+      setMessages(loadedMessages);
       setCurrentView("chat");
+      console.log("Loaded chat session:", {
+        sessionId,
+        messageCount: loadedMessages.length,
+        title: session.title
+      });
     }
   };
 
@@ -663,6 +733,8 @@ export default function Home() {
             onBackToMain={handleBackToMain}
             isInSubView={currentView !== "chat"}
             chatHistoryMinimized={chatHistoryMinimized}
+            searchMode={searchMode}
+            setSearchMode={setSearchMode}
           />
         );
     }
@@ -672,7 +744,10 @@ export default function Home() {
     return (
       <div className="flex h-screen bg-black text-white items-center justify-center">
         {isOnline ? (
-          "Loading..."
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-500 mx-auto mb-4"></div>
+            <p>Loading...</p>
+          </div>
         ) : (
           <div className="text-center p-4">
             <p className="text-lg font-bold mb-2">No Internet Connection</p>

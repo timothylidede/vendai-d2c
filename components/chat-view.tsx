@@ -4,7 +4,6 @@ import type React from "react"
 import { motion } from "framer-motion"
 import { Send, User, Bot, Home, Settings, Search, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { ProductShortcuts } from "./product-shortcuts"
 import { ProductCardResponse } from "./product-card-response"
 import { useState, useEffect, useRef, useCallback } from "react"
 import type { Product, Message } from "@/lib/types"
@@ -23,11 +22,13 @@ interface ChatViewProps {
   showBackButton?: boolean
   isInSubView?: boolean
   chatHistoryMinimized: boolean
+  searchMode: "fast" | "deep"
+  setSearchMode: (mode: "fast" | "deep") => void
 }
 
 // Fixed Typing animation component
 function TypingText({ text, messageId, onComplete }: { text: string; messageId: string; onComplete?: () => void }) {
-  const [displayedText, setDisplayedText] = useState(text)
+  const [displayedText, setDisplayedText] = useState("")
 
   useEffect(() => {
     if (text.length > 200) {
@@ -36,6 +37,7 @@ function TypingText({ text, messageId, onComplete }: { text: string; messageId: 
       return
     }
 
+    setDisplayedText("")
     let index = 0
     const type = () => {
       if (index < text.length) {
@@ -66,6 +68,8 @@ export function ChatView({
   showBackButton = false,
   isInSubView = false,
   chatHistoryMinimized,
+  searchMode,
+  setSearchMode,
 }: ChatViewProps) {
   // Original welcome messages restored
   const welcomeMessages = ["Niaje.", "Twende.", "What do you want to get?", "#Wantam."]
@@ -74,7 +78,6 @@ export function ChatView({
   const [typingMessageId, setTypingMessageId] = useState<string | null>(null)
   const [typedMessages, setTypedMessages] = useState<Set<string>>(new Set())
   const [showTools, setShowTools] = useState(false)
-  const [searchMode, setSearchMode] = useState<'fast' | 'deep'>('fast')
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const chatContainerRef = useRef<HTMLDivElement>(null)
   const lastProcessedMessageCountRef = useRef(0)
@@ -101,7 +104,6 @@ export function ChatView({
   useEffect(() => {
     if (messages.length > lastProcessedMessageCountRef.current) {
       const newMessages = messages.slice(lastProcessedMessageCountRef.current)
-
       for (let i = newMessages.length - 1; i >= 0; i--) {
         const message = newMessages[i]
         if (message.role === "assistant" && !typedMessages.has(message.id)) {
@@ -109,10 +111,9 @@ export function ChatView({
           break
         }
       }
-
       lastProcessedMessageCountRef.current = messages.length
     }
-  }, [messages.length])
+  }, [messages.length, typedMessages])
 
   // Welcome message management
   useEffect(() => {
@@ -154,7 +155,6 @@ export function ChatView({
         setShowTools(false)
       }
     }
-
     document.addEventListener("mousedown", handleClickOutside)
     return () => document.removeEventListener("mousedown", handleClickOutside)
   }, [])
@@ -185,9 +185,6 @@ export function ChatView({
   }, [])
 
   const renderMessage = (message: Message, index: number) => {
-    // Debug log to verify products field
-    console.log(`Message ${message.id} (${message.role}):`, { content: message.content, products: message.products })
-
     const isTyping = typingMessageId === message.id && !typedMessages.has(message.id)
     const shouldShowProducts = message.products && Array.isArray(message.products) && message.products.length > 0
 
@@ -282,7 +279,6 @@ export function ChatView({
                 maxLength={1000}
               />
             </div>
-            
             {/* Bottom Controls */}
             <div className="flex justify-between items-center">
               {/* Tools Section - Left */}
@@ -297,10 +293,9 @@ export function ChatView({
                   <Settings className="h-3 w-3" />
                   <span className="hidden sm:inline">Tools</span>
                 </motion.button>
-
                 {/* Search Mode Indicator */}
                 <div className="text-xs text-gray-500 bg-gradient-to-r from-purple-500/20 to-pink-500/20 px-2 py-1 rounded-lg border border-purple-500/30">
-                  {searchMode === 'fast' ? (
+                  {searchMode === "fast" ? (
                     <div className="flex items-center space-x-1">
                       <Zap className="h-3 w-3" />
                       <span>Fast</span>
@@ -312,7 +307,6 @@ export function ChatView({
                     </div>
                   )}
                 </div>
-
                 {/* Tools Dropdown */}
                 {showTools && (
                   <motion.div
@@ -325,15 +319,14 @@ export function ChatView({
                     <div className="px-3 py-2 text-xs text-gray-400 font-medium border-b border-gray-700/50">
                       Search Mode
                     </div>
-                    
                     <button
                       type="button"
                       onClick={() => {
-                        setSearchMode('fast')
+                        setSearchMode("fast")
                         setShowTools(false)
                       }}
                       className={`w-full px-3 py-2 text-left hover:bg-gray-700/50 transition-colors flex items-center space-x-3 ${
-                        searchMode === 'fast' ? 'text-pink-400 bg-gray-700/30' : 'text-gray-300'
+                        searchMode === "fast" ? "text-pink-400 bg-gray-700/30" : "text-gray-300"
                       }`}
                     >
                       <Zap className="h-4 w-4" />
@@ -341,29 +334,28 @@ export function ChatView({
                         <div className="text-sm">Fast search</div>
                         <div className="text-xs text-gray-500">Quick responses</div>
                       </div>
-                      {searchMode === 'fast' && (
+                      {searchMode === "fast" && (
                         <div className="ml-auto">
                           <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
                         </div>
                       )}
                     </button>
-                    
                     <button
                       type="button"
                       onClick={() => {
-                        setSearchMode('deep')
+                        setSearchMode("deep")
                         setShowTools(false)
                       }}
                       className={`w-full px-3 py-2 text-left hover:bg-gray-700/50 transition-colors flex items-center space-x-3 ${
-                        searchMode === 'deep' ? 'text-pink-400 bg-gray-700/30' : 'text-gray-300'
+                        searchMode === "deep" ? "text-pink-400 bg-gray-700/30" : "text-gray-300"
                       }`}
                     >
                       <Search className="h-4 w-4" />
                       <div>
                         <div className="text-sm">Deep search</div>
-                        <div className="text-xs text-gray-500">Comprehensive analysis</div>
+                        <div className="text-xs text-gray-500">AI-enhanced analysis</div>
                       </div>
-                      {searchMode === 'deep' && (
+                      {searchMode === "deep" && (
                         <div className="ml-auto">
                           <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
                         </div>
@@ -372,7 +364,6 @@ export function ChatView({
                   </motion.div>
                 )}
               </div>
-
               {/* Send Button - Right */}
               <motion.button
                 type="submit"
@@ -438,7 +429,6 @@ export function ChatView({
                   </span>
                 </motion.h1>
               </motion.div>
-
               {/* Desktop Chat Input - Hidden on mobile */}
               {isLargeScreen && (
                 <motion.div
@@ -457,7 +447,6 @@ export function ChatView({
         {/* Chat Messages */}
         <div className="w-full max-w-4xl mx-auto space-y-2 md:space-y-4 pb-4 md:pb-24">
           {messages.map((message, index) => renderMessage(message, index))}
-
           {/* Loading Animation */}
           {isLoading && (
             <div className="flex justify-start mb-4 md:mb-6">
@@ -485,7 +474,6 @@ export function ChatView({
               </div>
             </div>
           )}
-
           {/* Invisible div for scrolling */}
           <div ref={messagesEndRef} style={{ height: "1px" }} />
         </div>
@@ -494,9 +482,7 @@ export function ChatView({
       {/* Chat Input Area - Fixed at bottom */}
       {shouldShowChatInput && (
         <div className="flex-shrink-0 z-30 transition-all duration-300 bg-transparent px-3 md:px-4">
-          <div className="max-w-4xl mx-auto p-3 md:p-4">
-            {renderChatInput()}
-          </div>
+          <div className="max-w-4xl mx-auto p-3 md:p-4">{renderChatInput()}</div>
         </div>
       )}
     </div>

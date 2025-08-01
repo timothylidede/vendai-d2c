@@ -12,7 +12,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK061",
-    image: "/images/products/acacia-kids-apple-200mlx24.jpg"
+    image: "/images/products/acacia-kids-apple-200mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 2,
@@ -25,7 +26,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK062",
-    image: "/images/products/acacia-kids-blk-currnt-200mlx24.jpg"
+    image: "/images/products/acacia-kids-blk-currnt-200mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 3,
@@ -38,7 +40,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK063",
-    image: "/images/products/acacia-kids-blue-raspbry-200mlx24.jpg"
+    image: "/images/products/acacia-kids-blue-raspbry-200mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 4,
@@ -51,7 +54,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK065",
-    image: "/images/products/acacia-kids-s-bry-200mlx24.jpg"
+    image: "/images/products/acacia-kids-s-bry-200mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 5,
@@ -64,7 +68,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK066",
-    image: "/images/products/acacia-tetra-apple-250mlx24.jpg"
+    image: "/images/products/acacia-tetra-apple-250mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 6,
@@ -77,7 +82,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK049",
-    image: "/images/products/afia-rtd-1-5ltrx6-tropical.jpg"
+    image: "/images/products/afia-rtd-1-5ltrx6-tropical.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 7,
@@ -90,7 +96,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK010",
-    image: "/images/products/afia-rtd-300mlx12-multi-vitamin.jpg"
+    image: "/images/products/afia-rtd-300mlx12-multi-vitamin.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 8,
@@ -103,7 +110,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK006",
-    image: "/images/products/afia-rtd-apple-500mlx12.jpg"
+    image: "/images/products/afia-rtd-apple-500mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 9,
@@ -116,7 +124,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "5173",
-    image: "/images/products/afya-herbal-salt-200gx12.jpg"
+    image: "/images/products/afya-herbal-salt-200gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 10,
@@ -129,7 +138,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2120",
-    image: "/images/products/afya-pure-honey-bottle-500x12.jpg"
+    image: "/images/products/afya-pure-honey-bottle-500x12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 11,
@@ -142,7 +152,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "3225",
-    image: "/images/products/afya-pure-sea-salt-500gx12.jpg"
+    image: "/images/products/afya-pure-sea-salt-500gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 12,
@@ -155,7 +166,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3225",
-    image: "/images/products/afya-pure-sea-salt-500gx12.jpg"
+    image: "/images/products/afya-pure-sea-salt-500gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 13,
@@ -168,7 +180,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "1114",
-    image: "/images/products/afya-pure-honey-1kgx6-jar.jpg"
+    image: "/images/products/afya-pure-honey-1kgx6-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 14,
@@ -181,7 +194,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1114",
-    image: "/images/products/afya-pure-honey-1kgx6-jar.jpg"
+    image: "/images/products/afya-pure-honey-1kgx6-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 15,
@@ -194,7 +208,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "1110",
-    image: "/images/products/afya-pure-honey500gx12jar.jpg"
+    image: "/images/products/afya-pure-honey500gx12jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 16,
@@ -207,7 +222,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "JAR",
     code: "1110",
-    image: "/images/products/afya-pure-honey500gx12jar.jpg"
+    image: "/images/products/afya-pure-honey500gx12jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 17,
@@ -220,7 +236,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1110",
-    image: "/images/products/afya-pure-honey500gx12jar.jpg"
+    image: "/images/products/afya-pure-honey500gx12jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 18,
@@ -233,7 +250,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4999",
-    image: "/images/products/afya-sea-salt-200gx12.jpg"
+    image: "/images/products/afya-sea-salt-200gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 19,
@@ -246,7 +264,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1215",
-    image: "/images/products/afya-ugali-12x2kg.jpg"
+    image: "/images/products/afya-ugali-12x2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 20,
@@ -259,7 +278,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "1215",
-    image: "/images/products/afya-ugali-12x2kg.jpg"
+    image: "/images/products/afya-ugali-12x2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 21,
@@ -272,7 +292,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BUNDL",
     code: "1215",
-    image: "/images/products/afya-ugali-12x2kg.jpg"
+    image: "/images/products/afya-ugali-12x2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 22,
@@ -285,7 +306,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3233",
-    image: "/images/products/afya-ugali-1kgx12.jpg"
+    image: "/images/products/afya-ugali-1kgx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 23,
@@ -298,7 +320,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "1217",
-    image: "/images/products/afya-wimbi-1kgx12.jpg"
+    image: "/images/products/afya-wimbi-1kgx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 24,
@@ -311,7 +334,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "1217",
-    image: "/images/products/afya-wimbi-1kgx12.jpg"
+    image: "/images/products/afya-wimbi-1kgx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 25,
@@ -324,7 +348,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BUNDL",
     code: "1217",
-    image: "/images/products/afya-wimbi-1kgx12.jpg"
+    image: "/images/products/afya-wimbi-1kgx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 26,
@@ -337,7 +362,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3790",
-    image: "/images/products/ajab-atta-12x2kg-offer.jpg"
+    image: "/images/products/ajab-atta-12x2kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 27,
@@ -350,7 +376,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3782",
-    image: "/images/products/ajab-h-b-12x2kg-offer.jpg"
+    image: "/images/products/ajab-h-b-12x2kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 28,
@@ -363,7 +390,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3783",
-    image: "/images/products/ajab-h-b-24x1kg-offer.jpg"
+    image: "/images/products/ajab-h-b-24x1kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 29,
@@ -376,7 +404,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3781",
-    image: "/images/products/ajab-h-b-24x500g-offer.jpg"
+    image: "/images/products/ajab-h-b-24x500g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 30,
@@ -389,7 +418,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3794",
-    image: "/images/products/ajab-mandazi-12x2kg-offer.jpg"
+    image: "/images/products/ajab-mandazi-12x2kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 31,
@@ -402,7 +432,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "GIL008",
-    image: "/images/products/ajab-premium-m-m-12x2-kg.jpg"
+    image: "/images/products/ajab-premium-m-m-12x2-kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 32,
@@ -415,7 +446,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3792",
-    image: "/images/products/ajab-selfraising-12x2kg-offer.jpg"
+    image: "/images/products/ajab-selfraising-12x2kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 33,
@@ -428,7 +460,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP023",
-    image: "/images/products/alpa-fat-100x50gm-satchet-5kg.jpg"
+    image: "/images/products/alpa-fat-100x50gm-satchet-5kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 34,
@@ -441,7 +474,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP026",
-    image: "/images/products/alpa-fat-10x500gm-satchet-5kg.jpg"
+    image: "/images/products/alpa-fat-10x500gm-satchet-5kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 35,
@@ -454,7 +488,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP025",
-    image: "/images/products/alpa-fat-20x250gm-satchet-5kg.jpg"
+    image: "/images/products/alpa-fat-20x250gm-satchet-5kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 36,
@@ -467,7 +502,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP024",
-    image: "/images/products/alpa-fat-50x100gm-satchet-5kg.jpg"
+    image: "/images/products/alpa-fat-50x100gm-satchet-5kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 37,
@@ -480,7 +516,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP027",
-    image: "/images/products/alpa-fat-5kg-ctn.jpg"
+    image: "/images/products/alpa-fat-5kg-ctn.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 38,
@@ -493,7 +530,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2289",
-    image: "/images/products/amaize-m-meal-2kgx12.jpg"
+    image: "/images/products/amaize-m-meal-2kgx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 39,
@@ -506,7 +544,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "UL019",
-    image: "/images/products/amana-long-grain-rice-1kg-x-24.jpg"
+    image: "/images/products/amana-long-grain-rice-1kg-x-24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 40,
@@ -519,7 +558,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "UL018",
-    image: "/images/products/amana-long-grain-rice-2kg-x-12.jpg"
+    image: "/images/products/amana-long-grain-rice-2kg-x-12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 41,
@@ -532,7 +572,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1105",
-    image: "/images/products/amana-nyayo-beans-1kgx24.jpg"
+    image: "/images/products/amana-nyayo-beans-1kgx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 42,
@@ -545,7 +586,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "UL022",
-    image: "/images/products/amana-spaghetti-20-x-400gm.jpg"
+    image: "/images/products/amana-spaghetti-20-x-400gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 43,
@@ -558,7 +600,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "UL027",
-    image: "/images/products/amana-yellow-beans-12-x-1kgnew-pack.jpg"
+    image: "/images/products/amana-yellow-beans-12-x-1kgnew-pack.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 44,
@@ -571,7 +614,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "AI003",
-    image: "/images/products/aneek-coconut-cream-400mlx12.jpg"
+    image: "/images/products/aneek-coconut-cream-400mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 45,
@@ -584,7 +628,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "AI003",
-    image: "/images/products/aneek-coconut-cream-400mlx12.jpg"
+    image: "/images/products/aneek-coconut-cream-400mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 46,
@@ -597,7 +642,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "AI004",
-    image: "/images/products/aneek-coconut-milk-400mlx12.jpg"
+    image: "/images/products/aneek-coconut-milk-400mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 47,
@@ -610,7 +656,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "AI004",
-    image: "/images/products/aneek-coconut-milk-400mlx12.jpg"
+    image: "/images/products/aneek-coconut-milk-400mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 48,
@@ -623,7 +670,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2PC",
     code: "4579",
-    image: "/images/products/angel-super-2in1-yeast-500gx20.jpg"
+    image: "/images/products/angel-super-2in1-yeast-500gx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 49,
@@ -636,7 +684,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4579",
-    image: "/images/products/angel-super-2in1-yeast-500gx20.jpg"
+    image: "/images/products/angel-super-2in1-yeast-500gx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 50,
@@ -649,7 +698,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "4569",
-    image: "/images/products/angel-yeast-100gx60.jpg"
+    image: "/images/products/angel-yeast-100gx60.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 51,
@@ -662,7 +712,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "4569",
-    image: "/images/products/angel-yeast-100gx60.jpg"
+    image: "/images/products/angel-yeast-100gx60.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 52,
@@ -675,7 +726,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2PC",
     code: "4569",
-    image: "/images/products/angel-yeast-100gx60.jpg"
+    image: "/images/products/angel-yeast-100gx60.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 53,
@@ -688,7 +740,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4569",
-    image: "/images/products/angel-yeast-100gx60.jpg"
+    image: "/images/products/angel-yeast-100gx60.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 54,
@@ -701,7 +754,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4560",
-    image: "/images/products/angel-yeast-300x10g.jpg"
+    image: "/images/products/angel-yeast-300x10g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 55,
@@ -714,7 +768,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4560",
-    image: "/images/products/angel-yeast-300x10g.jpg"
+    image: "/images/products/angel-yeast-300x10g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 56,
@@ -727,7 +782,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "4576",
-    image: "/images/products/angel-yeast-500gx20.jpg"
+    image: "/images/products/angel-yeast-500gx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 57,
@@ -740,7 +796,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "4576",
-    image: "/images/products/angel-yeast-500gx20.jpg"
+    image: "/images/products/angel-yeast-500gx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 58,
@@ -753,7 +810,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2PC",
     code: "4576",
-    image: "/images/products/angel-yeast-500gx20.jpg"
+    image: "/images/products/angel-yeast-500gx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 59,
@@ -766,7 +824,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4576",
-    image: "/images/products/angel-yeast-500gx20.jpg"
+    image: "/images/products/angel-yeast-500gx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 60,
@@ -779,7 +838,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BOX",
     code: "2549",
-    image: "/images/products/aquatabs-12box-x180pc.jpg"
+    image: "/images/products/aquatabs-12box-x180pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 61,
@@ -792,7 +852,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2549",
-    image: "/images/products/aquatabs-12box-x180pc.jpg"
+    image: "/images/products/aquatabs-12box-x180pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 62,
@@ -805,7 +866,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "PLT001",
-    image: "/images/products/aquiteque-wooden-pallets.jpg"
+    image: "/images/products/aquiteque-wooden-pallets.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 63,
@@ -818,7 +880,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "4432",
-    image: "/images/products/arimis-200mlx72-milking-jelly.jpg"
+    image: "/images/products/arimis-200mlx72-milking-jelly.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 64,
@@ -831,7 +894,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4432",
-    image: "/images/products/arimis-200mlx72-milking-jelly.jpg"
+    image: "/images/products/arimis-200mlx72-milking-jelly.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 65,
@@ -844,7 +908,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "4429",
-    image: "/images/products/arimis-25mlx144-milking-jelly.jpg"
+    image: "/images/products/arimis-25mlx144-milking-jelly.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 66,
@@ -857,7 +922,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4429",
-    image: "/images/products/arimis-25mlx144-milking-jelly.jpg"
+    image: "/images/products/arimis-25mlx144-milking-jelly.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 67,
@@ -870,7 +936,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "4430",
-    image: "/images/products/arimis-50mlx144-milking-jelly.jpg"
+    image: "/images/products/arimis-50mlx144-milking-jelly.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 68,
@@ -883,7 +950,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4430",
-    image: "/images/products/arimis-50mlx144-milking-jelly.jpg"
+    image: "/images/products/arimis-50mlx144-milking-jelly.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 69,
@@ -896,7 +964,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "4431",
-    image: "/images/products/arimis-90mlx144-milking-jelly.jpg"
+    image: "/images/products/arimis-90mlx144-milking-jelly.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 70,
@@ -909,7 +978,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4431",
-    image: "/images/products/arimis-90mlx144-milking-jelly.jpg"
+    image: "/images/products/arimis-90mlx144-milking-jelly.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 71,
@@ -922,7 +992,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4582",
-    image: "/images/products/arix-sp-scour-5sno127514.jpg"
+    image: "/images/products/arix-sp-scour-5sno127514.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 72,
@@ -935,7 +1006,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "4582",
-    image: "/images/products/arix-sp-scour-5sno127514.jpg"
+    image: "/images/products/arix-sp-scour-5sno127514.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 73,
@@ -948,7 +1020,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4582",
-    image: "/images/products/arix-sp-scour-5sno127514.jpg"
+    image: "/images/products/arix-sp-scour-5sno127514.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 74,
@@ -961,7 +1034,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "TAK001",
-    image: "/images/products/arpo-625mlx12-dark-soy-sauce.jpg"
+    image: "/images/products/arpo-625mlx12-dark-soy-sauce.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 75,
@@ -974,7 +1048,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TAK001",
-    image: "/images/products/arpo-625mlx12-dark-soy-sauce.jpg"
+    image: "/images/products/arpo-625mlx12-dark-soy-sauce.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 76,
@@ -987,7 +1062,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "TAK010",
-    image: "/images/products/arpo-625mlx12-light-soy-sauce.jpg"
+    image: "/images/products/arpo-625mlx12-light-soy-sauce.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 77,
@@ -1000,7 +1076,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TAK010",
-    image: "/images/products/arpo-625mlx12-light-soy-sauce.jpg"
+    image: "/images/products/arpo-625mlx12-light-soy-sauce.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 78,
@@ -1013,7 +1090,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BAG",
     code: "SBH004",
-    image: "/images/products/arroz-biryani-rice-25kg.jpg"
+    image: "/images/products/arroz-biryani-rice-25kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 79,
@@ -1026,7 +1104,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PKT",
     code: "1294",
-    image: "/images/products/aryuv-baby-wipes-24pktx80s.jpg"
+    image: "/images/products/aryuv-baby-wipes-24pktx80s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 80,
@@ -1039,7 +1118,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1294",
-    image: "/images/products/aryuv-baby-wipes-24pktx80s.jpg"
+    image: "/images/products/aryuv-baby-wipes-24pktx80s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 81,
@@ -1052,7 +1132,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "AA002",
-    image: "/images/products/aryuv-d-soy-sauce-625mlx12.jpg"
+    image: "/images/products/aryuv-d-soy-sauce-625mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 82,
@@ -1065,7 +1146,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "AA003",
-    image: "/images/products/aryuva-d-soy-sauce-150mlx24.jpg"
+    image: "/images/products/aryuva-d-soy-sauce-150mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 83,
@@ -1078,7 +1160,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "AA003",
-    image: "/images/products/aryuva-d-soy-sauce-150mlx24.jpg"
+    image: "/images/products/aryuva-d-soy-sauce-150mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 84,
@@ -1091,7 +1174,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP190",
-    image: "/images/products/atilla-t-clnr-8x2sx500ml-apple-green.jpg"
+    image: "/images/products/atilla-t-clnr-8x2sx500ml-apple-green.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 85,
@@ -1104,7 +1188,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "KP190",
-    image: "/images/products/atilla-t-clnr-8x2sx500ml-apple-green.jpg"
+    image: "/images/products/atilla-t-clnr-8x2sx500ml-apple-green.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 86,
@@ -1117,7 +1202,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP190",
-    image: "/images/products/atilla-t-clnr-8x2sx500ml-apple-green.jpg"
+    image: "/images/products/atilla-t-clnr-8x2sx500ml-apple-green.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 87,
@@ -1130,7 +1216,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP189",
-    image: "/images/products/atilla-t-clnr-8x2sx500ml-blue-freshness.jpg"
+    image: "/images/products/atilla-t-clnr-8x2sx500ml-blue-freshness.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 88,
@@ -1143,7 +1230,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "KP189",
-    image: "/images/products/atilla-t-clnr-8x2sx500ml-blue-freshness.jpg"
+    image: "/images/products/atilla-t-clnr-8x2sx500ml-blue-freshness.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 89,
@@ -1156,7 +1244,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP191",
-    image: "/images/products/atilla-t-clnr-8x2sx500ml-violet-infusion.jpg"
+    image: "/images/products/atilla-t-clnr-8x2sx500ml-violet-infusion.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 90,
@@ -1169,7 +1258,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "KP191",
-    image: "/images/products/atilla-t-clnr-8x2sx500ml-violet-infusion.jpg"
+    image: "/images/products/atilla-t-clnr-8x2sx500ml-violet-infusion.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 91,
@@ -1182,7 +1272,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "2697",
-    image: "/images/products/axion-paste-350gx24-green-lime.jpg"
+    image: "/images/products/axion-paste-350gx24-green-lime.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 92,
@@ -1195,7 +1286,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2697",
-    image: "/images/products/axion-paste-350gx24-green-lime.jpg"
+    image: "/images/products/axion-paste-350gx24-green-lime.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 93,
@@ -1208,7 +1300,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "2696",
-    image: "/images/products/axion-paste-350gx24-yellow-lemon.jpg"
+    image: "/images/products/axion-paste-350gx24-yellow-lemon.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 94,
@@ -1221,7 +1314,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2696",
-    image: "/images/products/axion-paste-350gx24-yellow-lemon.jpg"
+    image: "/images/products/axion-paste-350gx24-yellow-lemon.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 95,
@@ -1234,7 +1328,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "3121",
-    image: "/images/products/axion-paste-750gmx12-green-lime.jpg"
+    image: "/images/products/axion-paste-750gmx12-green-lime.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 96,
@@ -1247,7 +1342,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3121",
-    image: "/images/products/axion-paste-750gmx12-green-lime.jpg"
+    image: "/images/products/axion-paste-750gmx12-green-lime.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 97,
@@ -1260,7 +1356,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "2082",
-    image: "/images/products/axion-paste-lemon-ylw-190gx24.jpg"
+    image: "/images/products/axion-paste-lemon-ylw-190gx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 98,
@@ -1273,7 +1370,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2082",
-    image: "/images/products/axion-paste-lemon-ylw-190gx24.jpg"
+    image: "/images/products/axion-paste-lemon-ylw-190gx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 99,
@@ -1286,7 +1384,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "1719",
-    image: "/images/products/axion-paste-lime-grn-190gx24.jpg"
+    image: "/images/products/axion-paste-lime-grn-190gx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 100,
@@ -1299,7 +1398,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1719",
-    image: "/images/products/axion-paste-lime-grn-190gx24.jpg"
+    image: "/images/products/axion-paste-lime-grn-190gx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 101,
@@ -1312,7 +1412,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "BM024",
-    image: "/images/products/bakematt-legacy-creams-100gmx24.jpg"
+    image: "/images/products/bakematt-legacy-creams-100gmx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 102,
@@ -1325,7 +1426,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP334",
-    image: "/images/products/balu-toilet-paper-100sheet-4x10s-wte-wrapped-offer.jpg"
+    image: "/images/products/balu-toilet-paper-100sheet-4x10s-wte-wrapped-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 103,
@@ -1338,7 +1440,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "3272",
-    image: "/images/products/brown-paper-bags-size-1x36kg.jpg"
+    image: "/images/products/brown-paper-bags-size-1x36kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 104,
@@ -1351,7 +1454,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "8509",
-    image: "/images/products/c-i-l-blended-12x2kg-rice.jpg"
+    image: "/images/products/c-i-l-blended-12x2kg-rice.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 105,
@@ -1364,7 +1468,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "CP010",
-    image: "/images/products/c-i-l-blended-rice-24x1kg.jpg"
+    image: "/images/products/c-i-l-blended-rice-24x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 106,
@@ -1377,7 +1482,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "8507",
-    image: "/images/products/c-i-l-brown-24x1kg-rice.jpg"
+    image: "/images/products/c-i-l-brown-24x1kg-rice.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 107,
@@ -1390,7 +1496,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "8523",
-    image: "/images/products/c-i-l-pishori-1kgx24-rice.jpg"
+    image: "/images/products/c-i-l-pishori-1kgx24-rice.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 108,
@@ -1403,7 +1510,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "8523",
-    image: "/images/products/c-i-l-pishori-1kgx24-rice.jpg"
+    image: "/images/products/c-i-l-pishori-1kgx24-rice.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 109,
@@ -1416,7 +1524,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "8522",
-    image: "/images/products/c-i-l-pishori-2kgx12-rice.jpg"
+    image: "/images/products/c-i-l-pishori-2kgx12-rice.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 110,
@@ -1429,7 +1538,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "8522",
-    image: "/images/products/c-i-l-pishori-2kgx12-rice.jpg"
+    image: "/images/products/c-i-l-pishori-2kgx12-rice.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 111,
@@ -1442,7 +1552,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "JER",
     code: "KP069",
-    image: "/images/products/captain-cook-corn-oil-20lit-platic-jerican.jpg"
+    image: "/images/products/captain-cook-corn-oil-20lit-platic-jerican.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 112,
@@ -1455,7 +1566,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP065",
-    image: "/images/products/captain-cook-corn-oil-6x2lit.jpg"
+    image: "/images/products/captain-cook-corn-oil-6x2lit.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 113,
@@ -1468,7 +1580,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "NA040",
-    image: "/images/products/cellulose-scou-pad-1sx2outrx72pc.jpg"
+    image: "/images/products/cellulose-scou-pad-1sx2outrx72pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 114,
@@ -1481,7 +1594,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "NA040",
-    image: "/images/products/cellulose-scou-pad-1sx2outrx72pc.jpg"
+    image: "/images/products/cellulose-scou-pad-1sx2outrx72pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 115,
@@ -1494,7 +1608,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2PC",
     code: "NA041",
-    image: "/images/products/cellulose-scou-pad-2sx2outrx36pc.jpg"
+    image: "/images/products/cellulose-scou-pad-2sx2outrx36pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 116,
@@ -1507,7 +1622,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "NA041",
-    image: "/images/products/cellulose-scou-pad-2sx2outrx36pc.jpg"
+    image: "/images/products/cellulose-scou-pad-2sx2outrx36pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 117,
@@ -1520,7 +1636,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "NA041",
-    image: "/images/products/cellulose-scou-pad-2sx2outrx36pc.jpg"
+    image: "/images/products/cellulose-scou-pad-2sx2outrx36pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 118,
@@ -1533,7 +1650,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "NA018",
-    image: "/images/products/cellulose-scou-pad-3sx72.jpg"
+    image: "/images/products/cellulose-scou-pad-3sx72.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 119,
@@ -1546,7 +1664,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "NA018",
-    image: "/images/products/cellulose-scou-pad-3sx72.jpg"
+    image: "/images/products/cellulose-scou-pad-3sx72.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 120,
@@ -1559,7 +1678,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "2128",
-    image: "/images/products/cerelac-whe-6x12x50g-sac.jpg"
+    image: "/images/products/cerelac-whe-6x12x50g-sac.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 121,
@@ -1572,7 +1692,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2128",
-    image: "/images/products/cerelac-whe-6x12x50g-sac.jpg"
+    image: "/images/products/cerelac-whe-6x12x50g-sac.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 122,
@@ -1585,7 +1706,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP080",
-    image: "/images/products/chapa-mandashi-6x4kg-bundle.jpg"
+    image: "/images/products/chapa-mandashi-6x4kg-bundle.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 123,
@@ -1598,7 +1720,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "KP079",
-    image: "/images/products/chapa-mandashi-72x100gm-carton.jpg"
+    image: "/images/products/chapa-mandashi-72x100gm-carton.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 124,
@@ -1611,7 +1734,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP079",
-    image: "/images/products/chapa-mandashi-72x100gm-carton.jpg"
+    image: "/images/products/chapa-mandashi-72x100gm-carton.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 125,
@@ -1624,7 +1748,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "1802",
-    image: "/images/products/chapati-afya-2kgx6-new-pack.jpg"
+    image: "/images/products/chapati-afya-2kgx6-new-pack.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 126,
@@ -1637,7 +1762,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1802",
-    image: "/images/products/chapati-afya-2kgx6-new-pack.jpg"
+    image: "/images/products/chapati-afya-2kgx6-new-pack.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 127,
@@ -1650,7 +1776,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1445",
-    image: "/images/products/choco-primo-12x100g-tin.jpg"
+    image: "/images/products/choco-primo-12x100g-tin.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 128,
@@ -1663,7 +1790,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1443",
-    image: "/images/products/choco-primo-12x200g-tins.jpg"
+    image: "/images/products/choco-primo-12x200g-tins.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 129,
@@ -1676,7 +1804,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "1990",
-    image: "/images/products/ck-dark-soy-sauce-623mlx12.jpg"
+    image: "/images/products/ck-dark-soy-sauce-623mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 130,
@@ -1689,7 +1818,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1990",
-    image: "/images/products/ck-dark-soy-sauce-623mlx12.jpg"
+    image: "/images/products/ck-dark-soy-sauce-623mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 131,
@@ -1702,7 +1832,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1995",
-    image: "/images/products/ck-light-soy-sauce-150mlx24.jpg"
+    image: "/images/products/ck-light-soy-sauce-150mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 132,
@@ -1715,7 +1846,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7607",
-    image: "/images/products/ck-light-soy-sauce-623mlx12.jpg"
+    image: "/images/products/ck-light-soy-sauce-623mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 133,
@@ -1728,7 +1860,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP315",
-    image: "/images/products/classic-detergent-1kgx6-blue-satch-6pcs-banded.jpg"
+    image: "/images/products/classic-detergent-1kgx6-blue-satch-6pcs-banded.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 134,
@@ -1741,7 +1874,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP314",
-    image: "/images/products/classic-detergent-500gmx12-blue-satch-doz-banded.jpg"
+    image: "/images/products/classic-detergent-500gmx12-blue-satch-doz-banded.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 135,
@@ -1754,7 +1888,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP317",
-    image: "/images/products/classic-natural-10x1kg-washing-bar-soap-offer.jpg"
+    image: "/images/products/classic-natural-10x1kg-washing-bar-soap-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 136,
@@ -1767,7 +1902,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP316",
-    image: "/images/products/classic-white-10x1kg-bar-soap-offer.jpg"
+    image: "/images/products/classic-white-10x1kg-bar-soap-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 137,
@@ -1780,7 +1916,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP243",
-    image: "/images/products/cleanrol-kitchen-towel-24-x-2s-pack.jpg"
+    image: "/images/products/cleanrol-kitchen-towel-24-x-2s-pack.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 138,
@@ -1793,7 +1930,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "KP243",
-    image: "/images/products/cleanrol-kitchen-towel-24-x-2s-pack.jpg"
+    image: "/images/products/cleanrol-kitchen-towel-24-x-2s-pack.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 139,
@@ -1806,7 +1944,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7376",
-    image: "/images/products/coca-cola-1-25ltr-x-12.jpg"
+    image: "/images/products/coca-cola-1-25ltr-x-12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 140,
@@ -1819,7 +1958,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7373",
-    image: "/images/products/coca-cola-500mlx-24.jpg"
+    image: "/images/products/coca-cola-500mlx-24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 141,
@@ -1832,7 +1972,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4806",
-    image: "/images/products/coca-cola-pet-350mlx24.jpg"
+    image: "/images/products/coca-cola-pet-350mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 142,
@@ -1845,7 +1986,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1120",
-    image: "/images/products/coca-cola-6x2l.jpg"
+    image: "/images/products/coca-cola-6x2l.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 143,
@@ -1858,7 +2000,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "TAK003",
-    image: "/images/products/coconut-cream-400mlx24-rasaku.jpg"
+    image: "/images/products/coconut-cream-400mlx24-rasaku.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 144,
@@ -1871,7 +2014,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TAK003",
-    image: "/images/products/coconut-cream-400mlx24-rasaku.jpg"
+    image: "/images/products/coconut-cream-400mlx24-rasaku.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 145,
@@ -1884,7 +2028,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "TAK002",
-    image: "/images/products/coconut-milk-400mlx24-rasaku.jpg"
+    image: "/images/products/coconut-milk-400mlx24-rasaku.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 146,
@@ -1897,7 +2042,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TAK002",
-    image: "/images/products/coconut-milk-400mlx24-rasaku.jpg"
+    image: "/images/products/coconut-milk-400mlx24-rasaku.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 147,
@@ -1910,7 +2056,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "TAK002",
-    image: "/images/products/coconut-milk-400mlx24-rasaku.jpg"
+    image: "/images/products/coconut-milk-400mlx24-rasaku.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 148,
@@ -1923,7 +2070,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7382",
-    image: "/images/products/coke-light-zero-6x2lit-pet.jpg"
+    image: "/images/products/coke-light-zero-6x2lit-pet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 149,
@@ -1936,7 +2084,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1628",
-    image: "/images/products/coke-power-play-400mlx12.jpg"
+    image: "/images/products/coke-power-play-400mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 150,
@@ -1949,7 +2098,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7381",
-    image: "/images/products/coke-zero-light-500mlx24.jpg"
+    image: "/images/products/coke-zero-light-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 151,
@@ -1962,7 +2112,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "1732",
-    image: "/images/products/colg-d-a-t-b-charcoal-10outx12pc.jpg"
+    image: "/images/products/colg-d-a-t-b-charcoal-10outx12pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 152,
@@ -1975,7 +2126,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1732",
-    image: "/images/products/colg-d-a-t-b-charcoal-10outx12pc.jpg"
+    image: "/images/products/colg-d-a-t-b-charcoal-10outx12pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 153,
@@ -1988,7 +2140,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2204",
-    image: "/images/products/dasani-12x500ml.jpg"
+    image: "/images/products/dasani-12x500ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 154,
@@ -2001,7 +2154,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2194",
-    image: "/images/products/dasani-water-12x1ltr.jpg"
+    image: "/images/products/dasani-water-12x1ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 155,
@@ -2014,7 +2168,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2029",
-    image: "/images/products/dawn-pekee-poa-wrap-10sx4-100sheet.jpg"
+    image: "/images/products/dawn-pekee-poa-wrap-10sx4-100sheet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 156,
@@ -2027,7 +2182,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "ALT005",
-    image: "/images/products/deemah-date-bar-a-12outer-x15x25gm.jpg"
+    image: "/images/products/deemah-date-bar-a-12outer-x15x25gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 157,
@@ -2040,7 +2196,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "ALT005",
-    image: "/images/products/deemah-date-bar-a-12outer-x15x25gm.jpg"
+    image: "/images/products/deemah-date-bar-a-12outer-x15x25gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 158,
@@ -2053,7 +2210,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "ALT006",
-    image: "/images/products/deemah-softi-date-roll-12outerx15x21gm.jpg"
+    image: "/images/products/deemah-softi-date-roll-12outerx15x21gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 159,
@@ -2066,7 +2224,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "ALT006",
-    image: "/images/products/deemah-softi-date-roll-12outerx15x21gm.jpg"
+    image: "/images/products/deemah-softi-date-roll-12outerx15x21gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 160,
@@ -2079,7 +2238,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1679",
-    image: "/images/products/delm-mango-blend-12x1ltr.jpg"
+    image: "/images/products/delm-mango-blend-12x1ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 161,
@@ -2092,7 +2252,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1864",
-    image: "/images/products/delm-mango-blend-250mlx24.jpg"
+    image: "/images/products/delm-mango-blend-250mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 162,
@@ -2105,7 +2266,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2091",
-    image: "/images/products/delm-mixed-berry-250mlx24.jpg"
+    image: "/images/products/delm-mixed-berry-250mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 163,
@@ -2118,7 +2280,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2090",
-    image: "/images/products/delm-mixed-berry-blend-12x1ltr.jpg"
+    image: "/images/products/delm-mixed-berry-blend-12x1ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 164,
@@ -2131,7 +2294,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2086",
-    image: "/images/products/delm-orange-blend-250mlx24.jpg"
+    image: "/images/products/delm-orange-blend-250mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 165,
@@ -2144,7 +2308,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1684",
-    image: "/images/products/delm-orange-blnd-1ltx12.jpg"
+    image: "/images/products/delm-orange-blnd-1ltx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 166,
@@ -2157,7 +2322,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1521",
-    image: "/images/products/delm-passion-blend-1ltx12.jpg"
+    image: "/images/products/delm-passion-blend-1ltx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 167,
@@ -2170,7 +2336,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1678",
-    image: "/images/products/delm-peach-juice-1ltrx12.jpg"
+    image: "/images/products/delm-peach-juice-1ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 168,
@@ -2183,7 +2350,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1677",
-    image: "/images/products/delm-pineapple-blend-1ltrx12.jpg"
+    image: "/images/products/delm-pineapple-blend-1ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 169,
@@ -2196,7 +2364,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1695",
-    image: "/images/products/delm-pineapple-mango-1ltrx12.jpg"
+    image: "/images/products/delm-pineapple-mango-1ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 170,
@@ -2209,7 +2378,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1693",
-    image: "/images/products/delm-pineapple-orange-1ltx12.jpg"
+    image: "/images/products/delm-pineapple-orange-1ltx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 171,
@@ -2222,7 +2392,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1689",
-    image: "/images/products/delm-pineapple-passion-1ltx12.jpg"
+    image: "/images/products/delm-pineapple-passion-1ltx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 172,
@@ -2235,7 +2406,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2096",
-    image: "/images/products/delm-pinemango-250mlx24.jpg"
+    image: "/images/products/delm-pinemango-250mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 173,
@@ -2248,7 +2420,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1670",
-    image: "/images/products/delm-pine-orang-250mlx24.jpg"
+    image: "/images/products/delm-pine-orang-250mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 174,
@@ -2261,7 +2434,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1694",
-    image: "/images/products/delm-pure-apple-1ltx12.jpg"
+    image: "/images/products/delm-pure-apple-1ltx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 175,
@@ -2274,7 +2448,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2098",
-    image: "/images/products/delm-pure-apple-250mlx24.jpg"
+    image: "/images/products/delm-pure-apple-250mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 176,
@@ -2287,7 +2462,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1682",
-    image: "/images/products/delm-pure-orange-1ltrx12.jpg"
+    image: "/images/products/delm-pure-orange-1ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 177,
@@ -2300,7 +2476,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2084",
-    image: "/images/products/delm-pure-orange-250mlx24.jpg"
+    image: "/images/products/delm-pure-orange-250mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 178,
@@ -2313,7 +2490,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2076",
-    image: "/images/products/delm-tropical-250mlx24.jpg"
+    image: "/images/products/delm-tropical-250mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 179,
@@ -2326,7 +2504,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1671",
-    image: "/images/products/delm-tropical-blend-1ltx12.jpg"
+    image: "/images/products/delm-tropical-blend-1ltx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 180,
@@ -2339,7 +2518,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "3839",
-    image: "/images/products/dormans-3in1-irish-cream-24box-x-18gx12.jpg"
+    image: "/images/products/dormans-3in1-irish-cream-24box-x-18gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 181,
@@ -2352,7 +2532,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3839",
-    image: "/images/products/dormans-3in1-irish-cream-24box-x-18gx12.jpg"
+    image: "/images/products/dormans-3in1-irish-cream-24box-x-18gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 182,
@@ -2365,7 +2546,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "3829",
-    image: "/images/products/dormans-3k-coffe-100gx24.jpg"
+    image: "/images/products/dormans-3k-coffe-100gx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 183,
@@ -2378,7 +2560,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3829",
-    image: "/images/products/dormans-3k-coffe-100gx24.jpg"
+    image: "/images/products/dormans-3k-coffe-100gx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 184,
@@ -2391,7 +2574,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3831",
-    image: "/images/products/dormans-3k-kahawa-25gx48.jpg"
+    image: "/images/products/dormans-3k-kahawa-25gx48.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 185,
@@ -2404,7 +2588,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "DOR003",
-    image: "/images/products/dormans-granulated-12-box-x-1-6g-x-36-sticks.jpg"
+    image: "/images/products/dormans-granulated-12-box-x-1-6g-x-36-sticks.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 186,
@@ -2417,7 +2602,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "DOR003",
-    image: "/images/products/dormans-granulated-12-box-x-1-6g-x-36-sticks.jpg"
+    image: "/images/products/dormans-granulated-12-box-x-1-6g-x-36-sticks.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 187,
@@ -2430,7 +2616,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "3835",
-    image: "/images/products/dormans-granulated-inst-50gmx24-tins.jpg"
+    image: "/images/products/dormans-granulated-inst-50gmx24-tins.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 188,
@@ -2443,7 +2630,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "3835",
-    image: "/images/products/dormans-granulated-inst-50gmx24-tins.jpg"
+    image: "/images/products/dormans-granulated-inst-50gmx24-tins.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 189,
@@ -2456,7 +2644,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3835",
-    image: "/images/products/dormans-granulated-inst-50gmx24-tins.jpg"
+    image: "/images/products/dormans-granulated-inst-50gmx24-tins.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 190,
@@ -2469,7 +2658,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "DOR002",
-    image: "/images/products/dormans-inst-1-6gx100x10tray-fine-stickpack.jpg"
+    image: "/images/products/dormans-inst-1-6gx100x10tray-fine-stickpack.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 191,
@@ -2482,7 +2672,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "DOR002",
-    image: "/images/products/dormans-inst-1-6gx100x10tray-fine-stickpack.jpg"
+    image: "/images/products/dormans-inst-1-6gx100x10tray-fine-stickpack.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 192,
@@ -2495,7 +2686,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "3826",
-    image: "/images/products/dormans-inst-100gmx12tins.jpg"
+    image: "/images/products/dormans-inst-100gmx12tins.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 193,
@@ -2508,7 +2700,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "3826",
-    image: "/images/products/dormans-inst-100gmx12tins.jpg"
+    image: "/images/products/dormans-inst-100gmx12tins.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 194,
@@ -2521,7 +2714,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3826",
-    image: "/images/products/dormans-inst-100gmx12tins.jpg"
+    image: "/images/products/dormans-inst-100gmx12tins.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 195,
@@ -2534,7 +2728,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "3825",
-    image: "/images/products/dormans-inst-50gmx24tins.jpg"
+    image: "/images/products/dormans-inst-50gmx24tins.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 196,
@@ -2547,7 +2742,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3825",
-    image: "/images/products/dormans-inst-50gmx24tins.jpg"
+    image: "/images/products/dormans-inst-50gmx24tins.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 197,
@@ -2560,7 +2756,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "DOR004",
-    image: "/images/products/dormans-inst-granule-200g-x-6-tins.jpg"
+    image: "/images/products/dormans-inst-granule-200g-x-6-tins.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 198,
@@ -2573,7 +2770,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "DOR004",
-    image: "/images/products/dormans-inst-granule-200g-x-6-tins.jpg"
+    image: "/images/products/dormans-inst-granule-200g-x-6-tins.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 199,
@@ -2586,7 +2784,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "3837",
-    image: "/images/products/dormans-instnt-12box-x-1-6gx36stick.jpg"
+    image: "/images/products/dormans-instnt-12box-x-1-6gx36stick.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 200,
@@ -2599,7 +2798,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3837",
-    image: "/images/products/dormans-instnt-12box-x-1-6gx36stick.jpg"
+    image: "/images/products/dormans-instnt-12box-x-1-6gx36stick.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 201,
@@ -2612,7 +2812,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "DOR005",
-    image: "/images/products/dormans-new-granulated-1-6gx-10-outer-x-100s.jpg"
+    image: "/images/products/dormans-new-granulated-1-6gx-10-outer-x-100s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 202,
@@ -2625,7 +2826,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "DOR005",
-    image: "/images/products/dormans-new-granulated-1-6gx-10-outer-x-100s.jpg"
+    image: "/images/products/dormans-new-granulated-1-6gx-10-outer-x-100s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 203,
@@ -2638,7 +2840,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "DOR001",
-    image: "/images/products/dormans-new-instant-fine-200g-x-6.jpg"
+    image: "/images/products/dormans-new-instant-fine-200g-x-6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 204,
@@ -2651,7 +2854,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "DOR001",
-    image: "/images/products/dormans-new-instant-fine-200g-x-6.jpg"
+    image: "/images/products/dormans-new-instant-fine-200g-x-6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 205,
@@ -2664,7 +2868,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "DOR001",
-    image: "/images/products/dormans-new-instant-fine-200g-x-6.jpg"
+    image: "/images/products/dormans-new-instant-fine-200g-x-6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 206,
@@ -2677,7 +2882,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1128",
-    image: "/images/products/dove-cotton-100gx60.jpg"
+    image: "/images/products/dove-cotton-100gx60.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 207,
@@ -2690,7 +2896,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "1128",
-    image: "/images/products/dove-cotton-100gx60.jpg"
+    image: "/images/products/dove-cotton-100gx60.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 208,
@@ -2703,7 +2910,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1128",
-    image: "/images/products/dove-cotton-100gx60.jpg"
+    image: "/images/products/dove-cotton-100gx60.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 209,
@@ -2716,7 +2924,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "1127",
-    image: "/images/products/dove-cotton-200gx30.jpg"
+    image: "/images/products/dove-cotton-200gx30.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 210,
@@ -2729,7 +2938,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1127",
-    image: "/images/products/dove-cotton-200gx30.jpg"
+    image: "/images/products/dove-cotton-200gx30.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 211,
@@ -2742,7 +2952,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "AC007",
-    image: "/images/products/dove-cotton-400g-x-15.jpg"
+    image: "/images/products/dove-cotton-400g-x-15.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 212,
@@ -2755,7 +2966,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "AC007",
-    image: "/images/products/dove-cotton-400g-x-15.jpg"
+    image: "/images/products/dove-cotton-400g-x-15.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 213,
@@ -2768,7 +2980,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "12PC",
     code: "1129",
-    image: "/images/products/dove-cotton-50gx120.jpg"
+    image: "/images/products/dove-cotton-50gx120.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 214,
@@ -2781,7 +2994,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "1129",
-    image: "/images/products/dove-cotton-50gx120.jpg"
+    image: "/images/products/dove-cotton-50gx120.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 215,
@@ -2794,7 +3008,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1129",
-    image: "/images/products/dove-cotton-50gx120.jpg"
+    image: "/images/products/dove-cotton-50gx120.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 216,
@@ -2807,7 +3022,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2485",
-    image: "/images/products/dove-cotton-wool-500gx12.jpg"
+    image: "/images/products/dove-cotton-wool-500gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 217,
@@ -2820,7 +3036,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "2485",
-    image: "/images/products/dove-cotton-wool-500gx12.jpg"
+    image: "/images/products/dove-cotton-wool-500gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 218,
@@ -2833,7 +3050,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2485",
-    image: "/images/products/dove-cotton-wool-500gx12.jpg"
+    image: "/images/products/dove-cotton-wool-500gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 219,
@@ -2846,7 +3064,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "WT012",
-    image: "/images/products/dr-johnsn-disinft-500mlx24.jpg"
+    image: "/images/products/dr-johnsn-disinft-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 220,
@@ -2859,7 +3078,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "WT012",
-    image: "/images/products/dr-johnsn-disinft-500mlx24.jpg"
+    image: "/images/products/dr-johnsn-disinft-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 221,
@@ -2872,7 +3092,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "WT012",
-    image: "/images/products/dr-johnsn-disinft-500mlx24.jpg"
+    image: "/images/products/dr-johnsn-disinft-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 222,
@@ -2885,7 +3106,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "DK01",
-    image: "/images/products/duke-1-paint-brush.jpg"
+    image: "/images/products/duke-1-paint-brush.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 223,
@@ -2898,7 +3120,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "DK02",
-    image: "/images/products/duke-2-paint-brush.jpg"
+    image: "/images/products/duke-2-paint-brush.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 224,
@@ -2911,7 +3134,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "DK04",
-    image: "/images/products/duke-4-x-12-5mm-paint-roller.jpg"
+    image: "/images/products/duke-4-x-12-5mm-paint-roller.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 225,
@@ -2924,7 +3148,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "DK03",
-    image: "/images/products/duke-6-paint-brush.jpg"
+    image: "/images/products/duke-6-paint-brush.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 226,
@@ -2937,7 +3162,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "4092",
-    image: "/images/products/dunia-m-m-brwn-12x2kg.jpg"
+    image: "/images/products/dunia-m-m-brwn-12x2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 227,
@@ -2950,7 +3176,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "PM006",
-    image: "/images/products/dunia-m-m-white-12-x-2kg.jpg"
+    image: "/images/products/dunia-m-m-white-12-x-2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 228,
@@ -2963,7 +3190,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4057",
-    image: "/images/products/dust-mask-50pcs.jpg"
+    image: "/images/products/dust-mask-50pcs.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 229,
@@ -2976,7 +3204,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "E006",
-    image: "/images/products/eden-ginger-tea-50gx200.jpg"
+    image: "/images/products/eden-ginger-tea-50gx200.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 230,
@@ -2989,7 +3218,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "E006",
-    image: "/images/products/eden-ginger-tea-50gx200.jpg"
+    image: "/images/products/eden-ginger-tea-50gx200.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 231,
@@ -3002,7 +3232,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "E001",
-    image: "/images/products/eden-tea-100gx100.jpg"
+    image: "/images/products/eden-tea-100gx100.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 232,
@@ -3015,7 +3246,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "E001",
-    image: "/images/products/eden-tea-100gx100.jpg"
+    image: "/images/products/eden-tea-100gx100.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 233,
@@ -3028,7 +3260,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "E003",
-    image: "/images/products/eden-tea-15grmx400.jpg"
+    image: "/images/products/eden-tea-15grmx400.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 234,
@@ -3041,7 +3274,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "E003",
-    image: "/images/products/eden-tea-15grmx400.jpg"
+    image: "/images/products/eden-tea-15grmx400.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 235,
@@ -3054,7 +3288,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "4PC",
     code: "E005",
-    image: "/images/products/eden-tea-500grm-x20.jpg"
+    image: "/images/products/eden-tea-500grm-x20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 236,
@@ -3067,7 +3302,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "E005",
-    image: "/images/products/eden-tea-500grm-x20.jpg"
+    image: "/images/products/eden-tea-500grm-x20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 237,
@@ -3080,7 +3316,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "E002",
-    image: "/images/products/eden-tea-50grmx200.jpg"
+    image: "/images/products/eden-tea-50grmx200.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 238,
@@ -3093,7 +3330,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "E002",
-    image: "/images/products/eden-tea-50grmx200.jpg"
+    image: "/images/products/eden-tea-50grmx200.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 239,
@@ -3106,7 +3344,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "E007",
-    image: "/images/products/eden-tea-tangawizi-100gx100pc.jpg"
+    image: "/images/products/eden-tea-tangawizi-100gx100pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 240,
@@ -3119,7 +3358,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "E007",
-    image: "/images/products/eden-tea-tangawizi-100gx100pc.jpg"
+    image: "/images/products/eden-tea-tangawizi-100gx100pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 241,
@@ -3132,7 +3372,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "5538",
-    image: "/images/products/everfresh-disinf-ball-200gx12-big.jpg"
+    image: "/images/products/everfresh-disinf-ball-200gx12-big.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 242,
@@ -3145,7 +3386,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "6407",
-    image: "/images/products/excel-asst-12x1-5ltr.jpg"
+    image: "/images/products/excel-asst-12x1-5ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 243,
@@ -3158,7 +3400,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "2432",
-    image: "/images/products/excel-glu-24x250g.jpg"
+    image: "/images/products/excel-glu-24x250g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 244,
@@ -3171,7 +3414,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2432",
-    image: "/images/products/excel-glu-24x250g.jpg"
+    image: "/images/products/excel-glu-24x250g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 245,
@@ -3184,7 +3428,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "2429",
-    image: "/images/products/excel-glucose-50gx72.jpg"
+    image: "/images/products/excel-glucose-50gx72.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 246,
@@ -3197,7 +3442,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "2429",
-    image: "/images/products/excel-glucose-50gx72.jpg"
+    image: "/images/products/excel-glucose-50gx72.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 247,
@@ -3210,7 +3456,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2429",
-    image: "/images/products/excel-glucose-50gx72.jpg"
+    image: "/images/products/excel-glucose-50gx72.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 248,
@@ -3223,7 +3470,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX010",
-    image: "/images/products/excel-gofrut-apple-12x250ml.jpg"
+    image: "/images/products/excel-gofrut-apple-12x250ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 249,
@@ -3236,7 +3484,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX026",
-    image: "/images/products/excel-gofrut-apple-12x500ml.jpg"
+    image: "/images/products/excel-gofrut-apple-12x500ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 250,
@@ -3249,7 +3498,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX001",
-    image: "/images/products/excel-gofrut-apple-6x1lit.jpg"
+    image: "/images/products/excel-gofrut-apple-6x1lit.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 251,
@@ -3262,7 +3512,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX015",
-    image: "/images/products/excel-gofrut-ass-12x250ml.jpg"
+    image: "/images/products/excel-gofrut-ass-12x250ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 252,
@@ -3275,7 +3526,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX006",
-    image: "/images/products/excel-gofrut-ass-6x1lit.jpg"
+    image: "/images/products/excel-gofrut-ass-6x1lit.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 253,
@@ -3288,7 +3540,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX011",
-    image: "/images/products/excel-gofrut-mango-12x250ml.jpg"
+    image: "/images/products/excel-gofrut-mango-12x250ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 254,
@@ -3301,7 +3554,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX027",
-    image: "/images/products/excel-gofrut-mango-12x500ml.jpg"
+    image: "/images/products/excel-gofrut-mango-12x500ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 255,
@@ -3314,7 +3568,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX002",
-    image: "/images/products/excel-gofrut-mango-6x1lit.jpg"
+    image: "/images/products/excel-gofrut-mango-6x1lit.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 256,
@@ -3327,7 +3582,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX013",
-    image: "/images/products/excel-gofrut-mojito-12x250ml.jpg"
+    image: "/images/products/excel-gofrut-mojito-12x250ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 257,
@@ -3340,7 +3596,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX029",
-    image: "/images/products/excel-gofrut-mojito-12x500ml.jpg"
+    image: "/images/products/excel-gofrut-mojito-12x500ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 258,
@@ -3353,7 +3610,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX004",
-    image: "/images/products/excel-gofrut-mojito-6x1lit.jpg"
+    image: "/images/products/excel-gofrut-mojito-6x1lit.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 259,
@@ -3366,7 +3624,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX005",
-    image: "/images/products/excel-gofrut-mulfrt-6x1lit.jpg"
+    image: "/images/products/excel-gofrut-mulfrt-6x1lit.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 260,
@@ -3379,7 +3638,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX014",
-    image: "/images/products/excel-gofrut-multfrt-12x250ml.jpg"
+    image: "/images/products/excel-gofrut-multfrt-12x250ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 261,
@@ -3392,7 +3652,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX028",
-    image: "/images/products/excel-gofrut-multfrt-12x500ml.jpg"
+    image: "/images/products/excel-gofrut-multfrt-12x500ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 262,
@@ -3405,7 +3666,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX030",
-    image: "/images/products/excel-gofrut-ora-12x500ml.jpg"
+    image: "/images/products/excel-gofrut-ora-12x500ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 263,
@@ -3418,7 +3680,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX012",
-    image: "/images/products/excel-gofrut-orang-12x250ml.jpg"
+    image: "/images/products/excel-gofrut-orang-12x250ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 264,
@@ -3431,7 +3694,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX003",
-    image: "/images/products/excel-gofrut-orang-6x1lit.jpg"
+    image: "/images/products/excel-gofrut-orang-6x1lit.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 265,
@@ -3444,7 +3708,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "EX040",
-    image: "/images/products/excel-lemon-treat-4-x-3litre.jpg"
+    image: "/images/products/excel-lemon-treat-4-x-3litre.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 266,
@@ -3457,7 +3722,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1610",
-    image: "/images/products/excel-lime-cordial-1-5ltrx6.jpg"
+    image: "/images/products/excel-lime-cordial-1-5ltrx6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 267,
@@ -3470,7 +3736,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1608",
-    image: "/images/products/excel-lime-cordial-12x700ml.jpg"
+    image: "/images/products/excel-lime-cordial-12x700ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 268,
@@ -3483,7 +3750,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2404",
-    image: "/images/products/excel-orange-1-5ltrx12.jpg"
+    image: "/images/products/excel-orange-1-5ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 269,
@@ -3496,7 +3764,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2403",
-    image: "/images/products/excel-orange-1ltrx12.jpg"
+    image: "/images/products/excel-orange-1ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 270,
@@ -3509,7 +3778,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2401",
-    image: "/images/products/excel-orange-24x500ml.jpg"
+    image: "/images/products/excel-orange-24x500ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 271,
@@ -3522,7 +3792,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2405",
-    image: "/images/products/excel-orange-2ltrx6.jpg"
+    image: "/images/products/excel-orange-2ltrx6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 272,
@@ -3535,7 +3806,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2406",
-    image: "/images/products/excel-orange-3ltrx4.jpg"
+    image: "/images/products/excel-orange-3ltrx4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 273,
@@ -3548,7 +3820,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2402",
-    image: "/images/products/excel-orange-700mlx12.jpg"
+    image: "/images/products/excel-orange-700mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 274,
@@ -3561,7 +3834,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2523",
-    image: "/images/products/excel-p-apple-12x1-5ltr.jpg"
+    image: "/images/products/excel-p-apple-12x1-5ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 275,
@@ -3574,7 +3848,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2522",
-    image: "/images/products/excel-p-apple-12x1ltr.jpg"
+    image: "/images/products/excel-p-apple-12x1ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 276,
@@ -3587,7 +3862,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2516",
-    image: "/images/products/excel-p-apple-12x700ml.jpg"
+    image: "/images/products/excel-p-apple-12x700ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 277,
@@ -3600,7 +3876,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2741",
-    image: "/images/products/excel-p-apple-24x500ml.jpg"
+    image: "/images/products/excel-p-apple-24x500ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 278,
@@ -3613,7 +3890,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2525",
-    image: "/images/products/excel-p-apple-4x3ltr.jpg"
+    image: "/images/products/excel-p-apple-4x3ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 279,
@@ -3626,7 +3904,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2527",
-    image: "/images/products/excel-p-apple-4x5ltr.jpg"
+    image: "/images/products/excel-p-apple-4x5ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 280,
@@ -3639,7 +3918,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2524",
-    image: "/images/products/excel-p-apple-6x2ltr.jpg"
+    image: "/images/products/excel-p-apple-6x2ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 281,
@@ -3652,7 +3932,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "2434",
-    image: "/images/products/excel-pure-glu-10gmx48x6.jpg"
+    image: "/images/products/excel-pure-glu-10gmx48x6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 282,
@@ -3665,7 +3946,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2434",
-    image: "/images/products/excel-pure-glu-10gmx48x6.jpg"
+    image: "/images/products/excel-pure-glu-10gmx48x6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 283,
@@ -3678,7 +3960,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "2433",
-    image: "/images/products/excel-pure-glu-24x500g.jpg"
+    image: "/images/products/excel-pure-glu-24x500g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 284,
@@ -3691,7 +3974,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2433",
-    image: "/images/products/excel-pure-glu-24x500g.jpg"
+    image: "/images/products/excel-pure-glu-24x500g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 285,
@@ -3704,7 +3988,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "2431",
-    image: "/images/products/excel-pure-glu-72x100g.jpg"
+    image: "/images/products/excel-pure-glu-72x100g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 286,
@@ -3717,7 +4002,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2431",
-    image: "/images/products/excel-pure-glu-72x100g.jpg"
+    image: "/images/products/excel-pure-glu-72x100g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 287,
@@ -3730,7 +4016,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1111",
-    image: "/images/products/excel-rtd-150mlx24-ass-jnr.jpg"
+    image: "/images/products/excel-rtd-150mlx24-ass-jnr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 288,
@@ -3743,7 +4030,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7570",
-    image: "/images/products/excel-tangerine-12-x1lt.jpg"
+    image: "/images/products/excel-tangerine-12-x1lt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 289,
@@ -3756,7 +4044,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2288",
-    image: "/images/products/excel-tangerine-12x1-5lt.jpg"
+    image: "/images/products/excel-tangerine-12x1-5lt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 290,
@@ -3769,7 +4058,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2453",
-    image: "/images/products/excel-tangerine-4x3lt.jpg"
+    image: "/images/products/excel-tangerine-4x3lt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 291,
@@ -3782,7 +4072,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2452",
-    image: "/images/products/excel-tangerine-6x2lt.jpg"
+    image: "/images/products/excel-tangerine-6x2lt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 292,
@@ -3795,7 +4086,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "2223",
-    image: "/images/products/excel-water-6-x-500ml-6pc-pack.jpg"
+    image: "/images/products/excel-water-6-x-500ml-6pc-pack.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 293,
@@ -3808,7 +4100,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "5653",
-    image: "/images/products/exe-a-p-12x2kg-offer.jpg"
+    image: "/images/products/exe-a-p-12x2kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 294,
@@ -3821,7 +4114,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "5653",
-    image: "/images/products/exe-a-p-12x2kg-offer.jpg"
+    image: "/images/products/exe-a-p-12x2kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 295,
@@ -3834,7 +4128,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "5652",
-    image: "/images/products/exe-a-p-24x1kg-offer.jpg"
+    image: "/images/products/exe-a-p-24x1kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 296,
@@ -3847,7 +4142,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "5652",
-    image: "/images/products/exe-a-p-24x1kg-offer.jpg"
+    image: "/images/products/exe-a-p-24x1kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 297,
@@ -3860,7 +4156,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3447",
-    image: "/images/products/exe-chapati-12x2kg-offer.jpg"
+    image: "/images/products/exe-chapati-12x2kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 298,
@@ -3873,7 +4170,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3448",
-    image: "/images/products/exe-mandazi-12x2kg-offer.jpg"
+    image: "/images/products/exe-mandazi-12x2kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 299,
@@ -3886,7 +4184,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "5701",
-    image: "/images/products/exe-self-rising-sun-12x2kg-offer.jpg"
+    image: "/images/products/exe-self-rising-sun-12x2kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 300,
@@ -3899,7 +4198,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "5701",
-    image: "/images/products/exe-self-rising-sun-12x2kg-offer.jpg"
+    image: "/images/products/exe-self-rising-sun-12x2kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
    {
     id: 301,
@@ -3912,7 +4212,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "5702",
-    image: "/images/products/exe-self-rising-sun-24x1kg-offer.jpg"
+    image: "/images/products/exe-self-rising-sun-24x1kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 302,
@@ -3925,7 +4226,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "5702",
-    image: "/images/products/exe-self-rising-sun-24x1kg-offer.jpg"
+    image: "/images/products/exe-self-rising-sun-24x1kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 303,
@@ -3938,7 +4240,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "2152",
-    image: "/images/products/ezee-250mlx12-t-cleaner-ocean-power.jpg"
+    image: "/images/products/ezee-250mlx12-t-cleaner-ocean-power.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 304,
@@ -3951,7 +4254,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2152",
-    image: "/images/products/ezee-250mlx12-t-cleaner-ocean-power.jpg"
+    image: "/images/products/ezee-250mlx12-t-cleaner-ocean-power.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 305,
@@ -3964,7 +4268,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "4862",
-    image: "/images/products/ezee-airfrshnr-300mlx12-ass-offer.jpg"
+    image: "/images/products/ezee-airfrshnr-300mlx12-ass-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 306,
@@ -3977,7 +4282,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4862",
-    image: "/images/products/ezee-airfrshnr-300mlx12-ass-offer.jpg"
+    image: "/images/products/ezee-airfrshnr-300mlx12-ass-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 307,
@@ -3990,7 +4296,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "2150",
-    image: "/images/products/ezee-bleach-250mlx12-regular.jpg"
+    image: "/images/products/ezee-bleach-250mlx12-regular.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 308,
@@ -4003,7 +4310,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2150",
-    image: "/images/products/ezee-bleach-250mlx12-regular.jpg"
+    image: "/images/products/ezee-bleach-250mlx12-regular.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 309,
@@ -4016,7 +4324,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2148",
-    image: "/images/products/ezee-bleach-70mlx24-regular.jpg"
+    image: "/images/products/ezee-bleach-70mlx24-regular.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 310,
@@ -4029,7 +4338,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "JER",
     code: "4209",
-    image: "/images/products/ezee-bleach-col-5ltx4.jpg"
+    image: "/images/products/ezee-bleach-col-5ltx4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 311,
@@ -4042,7 +4352,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4209",
-    image: "/images/products/ezee-bleach-col-5ltx4.jpg"
+    image: "/images/products/ezee-bleach-col-5ltx4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 312,
@@ -4055,7 +4366,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1371",
-    image: "/images/products/ezee-bleach-col500mlx12band.jpg"
+    image: "/images/products/ezee-bleach-col500mlx12band.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 313,
@@ -4068,7 +4380,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1296",
-    image: "/images/products/ezee-bleach-reg-5ltx4.jpg"
+    image: "/images/products/ezee-bleach-reg-5ltx4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 314,
@@ -4081,7 +4394,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "JER",
     code: "1296",
-    image: "/images/products/ezee-bleach-reg-5ltx4.jpg"
+    image: "/images/products/ezee-bleach-reg-5ltx4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 315,
@@ -4094,7 +4408,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "1398",
-    image: "/images/products/ezee-d-w-paste-500gx6-banded-free-250g.jpg"
+    image: "/images/products/ezee-d-w-paste-500gx6-banded-free-250g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 316,
@@ -4107,7 +4422,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "1398",
-    image: "/images/products/ezee-d-w-paste-500gx6-banded-free-250g.jpg"
+    image: "/images/products/ezee-d-w-paste-500gx6-banded-free-250g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 317,
@@ -4120,7 +4436,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1398",
-    image: "/images/products/ezee-d-w-paste-500gx6-banded-free-250g.jpg"
+    image: "/images/products/ezee-d-w-paste-500gx6-banded-free-250g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 318,
@@ -4133,7 +4450,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "1198",
-    image: "/images/products/ezee-d-w-paste-800gmx6-banded-free-500g.jpg"
+    image: "/images/products/ezee-d-w-paste-800gmx6-banded-free-500g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 319,
@@ -4146,7 +4464,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1198",
-    image: "/images/products/ezee-d-w-paste-800gmx6-banded-free-500g.jpg"
+    image: "/images/products/ezee-d-w-paste-800gmx6-banded-free-500g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 320,
@@ -4159,7 +4478,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "VI006",
-    image: "/images/products/ezee-new-bleach-regular-1l-x-12.jpg"
+    image: "/images/products/ezee-new-bleach-regular-1l-x-12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 321,
@@ -4172,7 +4492,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "4682",
-    image: "/images/products/ezee-scouring-powder-500gmx24.jpg"
+    image: "/images/products/ezee-scouring-powder-500gmx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 322,
@@ -4185,7 +4506,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4682",
-    image: "/images/products/ezee-scouring-powder-500gmx24.jpg"
+    image: "/images/products/ezee-scouring-powder-500gmx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 323,
@@ -4198,7 +4520,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4061",
-    image: "/images/products/face-mask-3ply-50pcs.jpg"
+    image: "/images/products/face-mask-3ply-50pcs.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 324,
@@ -4211,7 +4534,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "3359",
-    image: "/images/products/fahari-ya-kenya-100x100g-offer.jpg"
+    image: "/images/products/fahari-ya-kenya-100x100g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 325,
@@ -4224,7 +4548,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3359",
-    image: "/images/products/fahari-ya-kenya-100x100g-offer.jpg"
+    image: "/images/products/fahari-ya-kenya-100x100g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 326,
@@ -4237,7 +4562,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3607",
-    image: "/images/products/fahari-ya-kenya-15g-x8x50-offer.jpg"
+    image: "/images/products/fahari-ya-kenya-15g-x8x50-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 327,
@@ -4250,7 +4576,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "3606",
-    image: "/images/products/fahari-ya-kenya-15gx20x20pkt-offer.jpg"
+    image: "/images/products/fahari-ya-kenya-15gx20x20pkt-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 328,
@@ -4263,7 +4590,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3606",
-    image: "/images/products/fahari-ya-kenya-15gx20x20pkt-offer.jpg"
+    image: "/images/products/fahari-ya-kenya-15gx20x20pkt-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 329,
@@ -4276,7 +4604,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3356",
-    image: "/images/products/fahari-ya-kenya-20x500g-offer.jpg"
+    image: "/images/products/fahari-ya-kenya-20x500g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 330,
@@ -4289,7 +4618,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "3356",
-    image: "/images/products/fahari-ya-kenya-20x500g-offer.jpg"
+    image: "/images/products/fahari-ya-kenya-20x500g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 331,
@@ -4302,7 +4632,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "4PC",
     code: "3356",
-    image: "/images/products/fahari-ya-kenya-20x500g-offer.jpg"
+    image: "/images/products/fahari-ya-kenya-20x500g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 332,
@@ -4315,7 +4646,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3357",
-    image: "/images/products/fahari-ya-kenya-40x250g-offer.jpg"
+    image: "/images/products/fahari-ya-kenya-40x250g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 333,
@@ -4328,7 +4660,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "4PC",
     code: "3357",
-    image: "/images/products/fahari-ya-kenya-40x250g-offer.jpg"
+    image: "/images/products/fahari-ya-kenya-40x250g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 334,
@@ -4341,7 +4674,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "3425",
-    image: "/images/products/fahari-ya-kenya-5grmx500-offer.jpg"
+    image: "/images/products/fahari-ya-kenya-5grmx500-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 335,
@@ -4354,7 +4688,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3425",
-    image: "/images/products/fahari-ya-kenya-5grmx500-offer.jpg"
+    image: "/images/products/fahari-ya-kenya-5grmx500-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 336,
@@ -4367,7 +4702,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "UL001",
-    image: "/images/products/famila-bab-poridg-20x1kg.jpg"
+    image: "/images/products/famila-bab-poridg-20x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 337,
@@ -4380,7 +4716,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "2742",
-    image: "/images/products/famila-inf-wean-1kgx20.jpg"
+    image: "/images/products/famila-inf-wean-1kgx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 338,
@@ -4393,7 +4730,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2742",
-    image: "/images/products/famila-inf-wean-1kgx20.jpg"
+    image: "/images/products/famila-inf-wean-1kgx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 339,
@@ -4406,7 +4744,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2748",
-    image: "/images/products/famila-p-wimbi-20x500gm.jpg"
+    image: "/images/products/famila-p-wimbi-20x500gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 340,
@@ -4419,7 +4758,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "UL011",
-    image: "/images/products/famila-pure-wimbi-20x1kg.jpg"
+    image: "/images/products/famila-pure-wimbi-20x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 341,
@@ -4432,7 +4772,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "UL012",
-    image: "/images/products/famila-ujimix-20x1kg.jpg"
+    image: "/images/products/famila-ujimix-20x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 342,
@@ -4445,7 +4786,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2744",
-    image: "/images/products/famila-ujimix-20x500gm-offer.jpg"
+    image: "/images/products/famila-ujimix-20x500gm-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 343,
@@ -4458,7 +4800,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4809",
-    image: "/images/products/fanta-b-crnt-pet-350mlx24.jpg"
+    image: "/images/products/fanta-b-crnt-pet-350mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 344,
@@ -4471,7 +4814,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7374",
-    image: "/images/products/fanta-b-cur-24x500ml-pet.jpg"
+    image: "/images/products/fanta-b-cur-24x500ml-pet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 345,
@@ -4484,7 +4828,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7385",
-    image: "/images/products/fanta-black-currant-1-25ltr-x12.jpg"
+    image: "/images/products/fanta-black-currant-1-25ltr-x12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 346,
@@ -4497,7 +4842,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "5313",
-    image: "/images/products/fanta-black-currant-6x2l.jpg"
+    image: "/images/products/fanta-black-currant-6x2l.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 347,
@@ -4510,7 +4856,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7383",
-    image: "/images/products/fanta-orange-1-25ltr-x12.jpg"
+    image: "/images/products/fanta-orange-1-25ltr-x12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 348,
@@ -4523,7 +4870,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7375",
-    image: "/images/products/fanta-orange-500mlx24.jpg"
+    image: "/images/products/fanta-orange-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 349,
@@ -4536,7 +4884,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1122",
-    image: "/images/products/fanta-orange-6x2l.jpg"
+    image: "/images/products/fanta-orange-6x2l.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 350,
@@ -4549,7 +4898,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4808",
-    image: "/images/products/fanta-orange-pet-350mlx24.jpg"
+    image: "/images/products/fanta-orange-pet-350mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 351,
@@ -4562,7 +4912,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "5317",
-    image: "/images/products/fanta-passion-500mlx24.jpg"
+    image: "/images/products/fanta-passion-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 352,
@@ -4575,7 +4926,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "5317",
-    image: "/images/products/fanta-passion-500mlx24.jpg"
+    image: "/images/products/fanta-passion-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 353,
@@ -4588,7 +4940,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "5316",
-    image: "/images/products/fanta-passion-6x2ltr.jpg"
+    image: "/images/products/fanta-passion-6x2ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 354,
@@ -4601,7 +4954,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2530",
-    image: "/images/products/fizto-4x3ltr.jpg"
+    image: "/images/products/fizto-4x3ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 355,
@@ -4614,7 +4968,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2531",
-    image: "/images/products/fizto-4x5ltr.jpg"
+    image: "/images/products/fizto-4x5ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 356,
@@ -4627,7 +4982,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2427",
-    image: "/images/products/fizto-drink-12x1-5ltr.jpg"
+    image: "/images/products/fizto-drink-12x1-5ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 357,
@@ -4640,7 +4996,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2426",
-    image: "/images/products/fizto-drink-12x1ltr.jpg"
+    image: "/images/products/fizto-drink-12x1ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 358,
@@ -4653,7 +5010,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2425",
-    image: "/images/products/fizto-drink-12x700ml.jpg"
+    image: "/images/products/fizto-drink-12x700ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 359,
@@ -4666,7 +5024,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2428",
-    image: "/images/products/fizto-drink-6x2ltr.jpg"
+    image: "/images/products/fizto-drink-6x2ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 360,
@@ -4679,7 +5038,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1017",
-    image: "/images/products/flora-10sx48-ultra-super-offer.jpg"
+    image: "/images/products/flora-10sx48-ultra-super-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 361,
@@ -4692,7 +5052,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "1103",
-    image: "/images/products/flora-ear-buds200-stinx3doz.jpg"
+    image: "/images/products/flora-ear-buds200-stinx3doz.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 362,
@@ -4705,7 +5066,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "1103",
-    image: "/images/products/flora-ear-buds200-stinx3doz.jpg"
+    image: "/images/products/flora-ear-buds200-stinx3doz.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 363,
@@ -4718,7 +5080,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1103",
-    image: "/images/products/flora-ear-buds200-stinx3doz.jpg"
+    image: "/images/products/flora-ear-buds200-stinx3doz.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 364,
@@ -4731,7 +5094,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "1021",
-    image: "/images/products/flora-earbuds-100-spktx6doz.jpg"
+    image: "/images/products/flora-earbuds-100-spktx6doz.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 365,
@@ -4744,7 +5108,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1021",
-    image: "/images/products/flora-earbuds-100-spktx6doz.jpg"
+    image: "/images/products/flora-earbuds-100-spktx6doz.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 366,
@@ -4757,7 +5122,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "1041",
-    image: "/images/products/flora-earbuds-100-stinx6doz.jpg"
+    image: "/images/products/flora-earbuds-100-stinx6doz.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 367,
@@ -4770,7 +5136,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "1041",
-    image: "/images/products/flora-earbuds-100-stinx6doz.jpg"
+    image: "/images/products/flora-earbuds-100-stinx6doz.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 368,
@@ -4783,7 +5150,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1041",
-    image: "/images/products/flora-earbuds-100-stinx6doz.jpg"
+    image: "/images/products/flora-earbuds-100-stinx6doz.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 369,
@@ -4796,7 +5164,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "1022",
-    image: "/images/products/flora-earbuds-50-xpktx12doz.jpg"
+    image: "/images/products/flora-earbuds-50-xpktx12doz.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 370,
@@ -4809,7 +5178,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1022",
-    image: "/images/products/flora-earbuds-50-xpktx12doz.jpg"
+    image: "/images/products/flora-earbuds-50-xpktx12doz.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 371,
@@ -4822,7 +5192,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2360",
-    image: "/images/products/flora-jumbo-large-core-offer.jpg"
+    image: "/images/products/flora-jumbo-large-core-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 372,
@@ -4835,7 +5206,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1796",
-    image: "/images/products/flora-jumbo-small-core-offr.jpg"
+    image: "/images/products/flora-jumbo-small-core-offr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 373,
@@ -4848,7 +5220,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1798",
-    image: "/images/products/flora-serviettes-100-sx18.jpg"
+    image: "/images/products/flora-serviettes-100-sx18.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 374,
@@ -4861,7 +5234,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "AC003",
-    image: "/images/products/flora-t-p-10-sx4-150sheet-wrapped.jpg"
+    image: "/images/products/flora-t-p-10-sx4-150sheet-wrapped.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 375,
@@ -4874,7 +5248,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2974",
-    image: "/images/products/flora-t-p-wht-10-sx4-offer.jpg"
+    image: "/images/products/flora-t-p-wht-10-sx4-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 376,
@@ -4887,7 +5262,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1183",
-    image: "/images/products/flora-ultra-normal-10x48-offer.jpg"
+    image: "/images/products/flora-ultra-normal-10x48-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 377,
@@ -4900,7 +5276,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "1183",
-    image: "/images/products/flora-ultra-normal-10x48-offer.jpg"
+    image: "/images/products/flora-ultra-normal-10x48-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 378,
@@ -4913,7 +5290,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3056",
-    image: "/images/products/flora-wte-t-p-2-sx20-offer.jpg"
+    image: "/images/products/flora-wte-t-p-2-sx20-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 379,
@@ -4926,7 +5304,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2978",
-    image: "/images/products/flora-wte-t-p-40-s-offer.jpg"
+    image: "/images/products/flora-wte-t-p-40-s-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 380,
@@ -4939,7 +5318,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3055",
-    image: "/images/products/flora-wte-t-p-4-sx12-offer.jpg"
+    image: "/images/products/flora-wte-t-p-4-sx12-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 381,
@@ -4952,7 +5332,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3042",
-    image: "/images/products/flora-wte-t-p-8-sx6-offer.jpg"
+    image: "/images/products/flora-wte-t-p-8-sx6-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 382,
@@ -4965,7 +5346,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "GD003",
-    image: "/images/products/fresha-esl-milk-500mlx12-offer.jpg"
+    image: "/images/products/fresha-esl-milk-500mlx12-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 383,
@@ -4978,7 +5360,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "LAT009",
-    image: "/images/products/fresha-salted-butter-10kg.jpg"
+    image: "/images/products/fresha-salted-butter-10kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 384,
@@ -4991,7 +5374,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "LAT005",
-    image: "/images/products/fresha-salted-butter-500gx20.jpg"
+    image: "/images/products/fresha-salted-butter-500gx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 385,
@@ -5004,7 +5388,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "LAT005",
-    image: "/images/products/fresha-salted-butter-500gx20.jpg"
+    image: "/images/products/fresha-salted-butter-500gx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 386,
@@ -5017,7 +5402,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "DE004",
-    image: "/images/products/fusili-delicia-20-x-400gms.jpg"
+    image: "/images/products/fusili-delicia-20-x-400gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 387,
@@ -5030,7 +5416,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "2895",
-    image: "/images/products/general-tubes-4-feet.jpg"
+    image: "/images/products/general-tubes-4-feet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 388,
@@ -5043,7 +5430,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "TF061",
-    image: "/images/products/gilda-beans-in-t-sauce-24x400g.jpg"
+    image: "/images/products/gilda-beans-in-t-sauce-24x400g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 389,
@@ -5056,7 +5444,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF061",
-    image: "/images/products/gilda-beans-in-t-sauce-24x400g.jpg"
+    image: "/images/products/gilda-beans-in-t-sauce-24x400g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 390,
@@ -5069,7 +5458,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF062",
-    image: "/images/products/gilda-tomato-puree-50gx100.jpg"
+    image: "/images/products/gilda-tomato-puree-50gx100.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 391,
@@ -5082,7 +5472,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "UL024",
-    image: "/images/products/hodari-maize-meal-12x-2kg.jpg"
+    image: "/images/products/hodari-maize-meal-12x-2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 392,
@@ -5095,7 +5486,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "5630",
-    image: "/images/products/hostess-12x2kg-premium.jpg"
+    image: "/images/products/hostess-12x2kg-premium.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 393,
@@ -5108,7 +5500,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "5630",
-    image: "/images/products/hostess-12x2kg-premium.jpg"
+    image: "/images/products/hostess-12x2kg-premium.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 394,
@@ -5121,7 +5514,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1700",
-    image: "/images/products/indomie-beef-jumbo-20x120gr.jpg"
+    image: "/images/products/indomie-beef-jumbo-20x120gr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 395,
@@ -5134,7 +5528,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1702",
-    image: "/images/products/indomie-chicken-5in1-70gx1.jpg"
+    image: "/images/products/indomie-chicken-5in1-70gx1.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 396,
@@ -5147,7 +5542,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1799",
-    image: "/images/products/indomie-jumbo-chicken-120gx20-promo.jpg"
+    image: "/images/products/indomie-jumbo-chicken-120gx20-promo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 397,
@@ -5160,7 +5556,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "6461",
-    image: "/images/products/indomie-supa-mojo-5in1-70gmsx1.jpg"
+    image: "/images/products/indomie-supa-mojo-5in1-70gmsx1.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 398,
@@ -5173,7 +5570,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP193",
-    image: "/images/products/jamaa-cream-25x800g-bar-soap-offer.jpg"
+    image: "/images/products/jamaa-cream-25x800g-bar-soap-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 399,
@@ -5186,7 +5584,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP155",
-    image: "/images/products/jamaa-luxury-ivory-144x15gm.jpg"
+    image: "/images/products/jamaa-luxury-ivory-144x15gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 400,
@@ -5199,7 +5598,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP107",
-    image: "/images/products/jamaa-luxury-soap-18x250gm.jpg"
+    image: "/images/products/jamaa-luxury-soap-18x250gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 401,
@@ -5212,7 +5612,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP106",
-    image: "/images/products/jamaa-luxury-soap-36x125gm.jpg"
+    image: "/images/products/jamaa-luxury-soap-36x125gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 402,
@@ -5225,7 +5626,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP096",
-    image: "/images/products/jamaa-soap-12x800gm-white.jpg"
+    image: "/images/products/jamaa-soap-12x800gm-white.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 403,
@@ -5238,7 +5640,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP098",
-    image: "/images/products/jamaa-soap-25x800gm-medicated-antibact.jpg"
+    image: "/images/products/jamaa-soap-25x800gm-medicated-antibact.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 404,
@@ -5251,7 +5654,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP097",
-    image: "/images/products/jamaa-soap-25x800gm-white.jpg"
+    image: "/images/products/jamaa-soap-25x800gm-white.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 405,
@@ -5264,7 +5668,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP195",
-    image: "/images/products/jamaa-white-200gx48-tablet-soap.jpg"
+    image: "/images/products/jamaa-white-200gx48-tablet-soap.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 406,
@@ -5277,7 +5682,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "AC001",
-    image: "/images/products/jento-t-p-10-sx4-150sheet-wrapped.jpg"
+    image: "/images/products/jento-t-p-10-sx4-150sheet-wrapped.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 407,
@@ -5290,7 +5696,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "AC009",
-    image: "/images/products/jento-t-p-white-10-s-x100-sheeets.jpg"
+    image: "/images/products/jento-t-p-white-10-s-x100-sheeets.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 408,
@@ -5303,7 +5710,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "AC008",
-    image: "/images/products/jento-t-p-white-10-s-x-200-sheets.jpg"
+    image: "/images/products/jento-t-p-white-10-s-x-200-sheets.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 409,
@@ -5316,7 +5724,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "5626",
-    image: "/images/products/jogoo-m-m-12x2kg-grade1-offer.jpg"
+    image: "/images/products/jogoo-m-m-12x2kg-grade1-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 410,
@@ -5329,7 +5738,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP273",
-    image: "/images/products/jumbo-roll-neptune-12pc-col.jpg"
+    image: "/images/products/jumbo-roll-neptune-12pc-col.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 411,
@@ -5342,7 +5752,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP273",
-    image: "/images/products/jumbo-roll-neptune-12pc-col.jpg"
+    image: "/images/products/jumbo-roll-neptune-12pc-col.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 412,
@@ -5355,7 +5766,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP274",
-    image: "/images/products/jumbo-roll-neptune-12pc-white.jpg"
+    image: "/images/products/jumbo-roll-neptune-12pc-white.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 413,
@@ -5368,7 +5780,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP008",
-    image: "/images/products/kapa-ghee-4x4kg.jpg"
+    image: "/images/products/kapa-ghee-4x4kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 414,
@@ -5381,7 +5794,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP008",
-    image: "/images/products/kapa-ghee-4x4kg.jpg"
+    image: "/images/products/kapa-ghee-4x4kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 415,
@@ -5394,7 +5808,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP127",
-    image: "/images/products/kapa-glycerine-18x100ml.jpg"
+    image: "/images/products/kapa-glycerine-18x100ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 416,
@@ -5407,7 +5822,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "TRAY",
     code: "KP126",
-    image: "/images/products/kapa-glycerine-36x50ml.jpg"
+    image: "/images/products/kapa-glycerine-36x50ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 417,
@@ -5420,7 +5836,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP001",
-    image: "/images/products/kasuku-100x50gm-plastic-tub.jpg"
+    image: "/images/products/kasuku-100x50gm-plastic-tub.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 418,
@@ -5433,7 +5850,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP005",
-    image: "/images/products/kasuku-12x1kg-plastic-tub.jpg"
+    image: "/images/products/kasuku-12x1kg-plastic-tub.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 419,
@@ -5446,7 +5864,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP003",
-    image: "/images/products/kasuku-24x250gm-plastic-tub.jpg"
+    image: "/images/products/kasuku-24x250gm-plastic-tub.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 420,
@@ -5459,7 +5878,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP004",
-    image: "/images/products/kasuku-24x500gm-plastic-tub.jpg"
+    image: "/images/products/kasuku-24x500gm-plastic-tub.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 421,
@@ -5472,7 +5892,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP002",
-    image: "/images/products/kasuku-48x100gm-plastic-tub.jpg"
+    image: "/images/products/kasuku-48x100gm-plastic-tub.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 422,
@@ -5485,7 +5906,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP007",
-    image: "/images/products/kasuku-4x4kg-plastic-bucket.jpg"
+    image: "/images/products/kasuku-4x4kg-plastic-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 423,
@@ -5498,7 +5920,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP007",
-    image: "/images/products/kasuku-4x4kg-plastic-bucket.jpg"
+    image: "/images/products/kasuku-4x4kg-plastic-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 424,
@@ -5511,7 +5934,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP006",
-    image: "/images/products/kasuku-6x2kg-plastic-bucket.jpg"
+    image: "/images/products/kasuku-6x2kg-plastic-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 425,
@@ -5524,7 +5948,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "6216",
-    image: "/images/products/kasuku-sup-a4-64pg-slx162.jpg"
+    image: "/images/products/kasuku-sup-a4-64pg-slx162.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 426,
@@ -5537,7 +5962,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "7511",
-    image: "/images/products/ken-beans-in-t-sau-12-x-420g.jpg"
+    image: "/images/products/ken-beans-in-t-sau-12-x-420g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 427,
@@ -5550,7 +5976,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7511",
-    image: "/images/products/ken-beans-in-t-sau-12-x-420g.jpg"
+    image: "/images/products/ken-beans-in-t-sau-12-x-420g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 428,
@@ -5563,7 +5990,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1654",
-    image: "/images/products/kensalt-10x2kg.jpg"
+    image: "/images/products/kensalt-10x2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 429,
@@ -5576,7 +6004,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1653",
-    image: "/images/products/kensalt-20x1kg.jpg"
+    image: "/images/products/kensalt-20x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 430,
@@ -5589,7 +6018,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1651",
-    image: "/images/products/kensalt-30x200g.jpg"
+    image: "/images/products/kensalt-30x200g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 431,
@@ -5602,7 +6032,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1652",
-    image: "/images/products/kensalt-40x500g.jpg"
+    image: "/images/products/kensalt-40x500g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 432,
@@ -5615,7 +6046,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7503",
-    image: "/images/products/kenylon-900gx12-tomato-paste.jpg"
+    image: "/images/products/kenylon-900gx12-tomato-paste.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 433,
@@ -5628,7 +6060,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "7503",
-    image: "/images/products/kenylon-900gx12-tomato-paste.jpg"
+    image: "/images/products/kenylon-900gx12-tomato-paste.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 434,
@@ -5641,7 +6074,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "7506",
-    image: "/images/products/kenylon-corn-off-cob-400gx12.jpg"
+    image: "/images/products/kenylon-corn-off-cob-400gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 435,
@@ -5654,7 +6088,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7506",
-    image: "/images/products/kenylon-corn-off-cob-400gx12.jpg"
+    image: "/images/products/kenylon-corn-off-cob-400gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 436,
@@ -5667,7 +6102,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "7501",
-    image: "/images/products/kenylon-t-paste-275gx12.jpg"
+    image: "/images/products/kenylon-t-paste-275gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 437,
@@ -5680,7 +6116,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7501",
-    image: "/images/products/kenylon-t-paste-275gx12.jpg"
+    image: "/images/products/kenylon-t-paste-275gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 438,
@@ -5693,7 +6130,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "7502",
-    image: "/images/products/kenylon-t-paste-450gx12.jpg"
+    image: "/images/products/kenylon-t-paste-450gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 439,
@@ -5706,7 +6144,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7502",
-    image: "/images/products/kenylon-t-paste-450gx12.jpg"
+    image: "/images/products/kenylon-t-paste-450gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 440,
@@ -5719,7 +6158,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7510",
-    image: "/images/products/kenylon-t-paste-48x100g.jpg"
+    image: "/images/products/kenylon-t-paste-48x100g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 441,
@@ -5732,7 +6172,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "7508",
-    image: "/images/products/kenylon-tomato-paste-6x3-3kg.jpg"
+    image: "/images/products/kenylon-tomato-paste-6x3-3kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 442,
@@ -5745,7 +6186,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7508",
-    image: "/images/products/kenylon-tomato-paste-6x3-3kg.jpg"
+    image: "/images/products/kenylon-tomato-paste-6x3-3kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 443,
@@ -5758,7 +6200,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CCB013",
-    image: "/images/products/keringet-il-x-2-x-6pc-valuepack.jpg"
+    image: "/images/products/keringet-il-x-2-x-6pc-valuepack.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 444,
@@ -5771,7 +6214,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2176",
-    image: "/images/products/keringet-water-1ltx12.jpg"
+    image: "/images/products/keringet-water-1ltx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 445,
@@ -5784,7 +6228,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1921",
-    image: "/images/products/keringet-water-24x500ml.jpg"
+    image: "/images/products/keringet-water-24x500ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 446,
@@ -5797,7 +6242,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "PLY003",
-    image: "/images/products/kifaru-block-board-8-x4-s-x-3-4-18mm.jpg"
+    image: "/images/products/kifaru-block-board-8-x4-s-x-3-4-18mm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 447,
@@ -5810,7 +6256,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "PLY005",
-    image: "/images/products/kifaru-plywood-8-x4-x-6mm.jpg"
+    image: "/images/products/kifaru-plywood-8-x4-x-6mm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 448,
@@ -5823,7 +6270,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "PLY001",
-    image: "/images/products/kifaru-plywood-8x4x9mm.jpg"
+    image: "/images/products/kifaru-plywood-8x4x9mm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 449,
@@ -5836,7 +6284,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "1592",
-    image: "/images/products/klee-kat-pot-scrub-12pc-x-6.jpg"
+    image: "/images/products/klee-kat-pot-scrub-12pc-x-6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 450,
@@ -5849,7 +6298,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1592",
-    image: "/images/products/klee-kat-pot-scrub-12pc-x-6.jpg"
+    image: "/images/products/klee-kat-pot-scrub-12pc-x-6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 451,
@@ -5862,7 +6312,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "1598",
-    image: "/images/products/kleen-kat-scrubr-1-sx48pc.jpg"
+    image: "/images/products/kleen-kat-scrubr-1-sx48pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 452,
@@ -5875,7 +6326,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1598",
-    image: "/images/products/kleen-kat-scrubr-1-sx48pc.jpg"
+    image: "/images/products/kleen-kat-scrubr-1-sx48pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 453,
@@ -5888,7 +6340,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "3406",
-    image: "/images/products/ksl-emoji-20x80pc.jpg"
+    image: "/images/products/ksl-emoji-20x80pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 454,
@@ -5901,7 +6354,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2PC",
     code: "3406",
-    image: "/images/products/ksl-emoji-20x80pc.jpg"
+    image: "/images/products/ksl-emoji-20x80pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 455,
@@ -5914,7 +6368,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3406",
-    image: "/images/products/ksl-emoji-20x80pc.jpg"
+    image: "/images/products/ksl-emoji-20x80pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 456,
@@ -5927,7 +6382,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "3411",
-    image: "/images/products/ksl-ok-mix-75pcsx30pkt.jpg"
+    image: "/images/products/ksl-ok-mix-75pcsx30pkt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 457,
@@ -5940,7 +6396,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2PC",
     code: "3411",
-    image: "/images/products/ksl-ok-mix-75pcsx30pkt.jpg"
+    image: "/images/products/ksl-ok-mix-75pcsx30pkt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 458,
@@ -5953,7 +6410,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3411",
-    image: "/images/products/ksl-ok-mix-75pcsx30pkt.jpg"
+    image: "/images/products/ksl-ok-mix-75pcsx30pkt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 459,
@@ -5966,7 +6424,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "3410",
-    image: "/images/products/ksl-wte-mints-1kgx12pk.jpg"
+    image: "/images/products/ksl-wte-mints-1kgx12pk.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 460,
@@ -5979,7 +6438,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2PC",
     code: "3410",
-    image: "/images/products/ksl-wte-mints-1kgx12pk.jpg"
+    image: "/images/products/ksl-wte-mints-1kgx12pk.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 461,
@@ -5992,7 +6452,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3410",
-    image: "/images/products/ksl-wte-mints-1kgx12pk.jpg"
+    image: "/images/products/ksl-wte-mints-1kgx12pk.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 462,
@@ -6005,7 +6466,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP220",
-    image: "/images/products/lanzo-100gmx36-antibacterial.jpg"
+    image: "/images/products/lanzo-100gmx36-antibacterial.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 463,
@@ -6018,7 +6480,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP221",
-    image: "/images/products/lanzo-100gmx36-blueberry.jpg"
+    image: "/images/products/lanzo-100gmx36-blueberry.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 464,
@@ -6031,7 +6494,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP222",
-    image: "/images/products/lanzo-100gmx36-menthol.jpg"
+    image: "/images/products/lanzo-100gmx36-menthol.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 465,
@@ -6044,7 +6508,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP224",
-    image: "/images/products/lanzo-100gmx36-raspberry-vanilla.jpg"
+    image: "/images/products/lanzo-100gmx36-raspberry-vanilla.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 466,
@@ -6057,7 +6522,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP223",
-    image: "/images/products/lanzo-100gmx36-sheabutter.jpg"
+    image: "/images/products/lanzo-100gmx36-sheabutter.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 467,
@@ -6070,7 +6536,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP210",
-    image: "/images/products/lanzo-15gx144-antibacterial.jpg"
+    image: "/images/products/lanzo-15gx144-antibacterial.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 468,
@@ -6083,7 +6550,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP211",
-    image: "/images/products/lanzo-15gx144-blueberry.jpg"
+    image: "/images/products/lanzo-15gx144-blueberry.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 469,
@@ -6096,7 +6564,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP212",
-    image: "/images/products/lanzo-15gx144-menthol.jpg"
+    image: "/images/products/lanzo-15gx144-menthol.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 470,
@@ -6109,7 +6578,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP214",
-    image: "/images/products/lanzo-15gx144-raspberry-vanilla.jpg"
+    image: "/images/products/lanzo-15gx144-raspberry-vanilla.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 471,
@@ -6122,7 +6592,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP213",
-    image: "/images/products/lanzo-15gx144-sheabutter.jpg"
+    image: "/images/products/lanzo-15gx144-sheabutter.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 472,
@@ -6135,7 +6606,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP225",
-    image: "/images/products/lanzo-200gx18-antibacterial.jpg"
+    image: "/images/products/lanzo-200gx18-antibacterial.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 473,
@@ -6148,7 +6620,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP226",
-    image: "/images/products/lanzo-200gx18-blueberry.jpg"
+    image: "/images/products/lanzo-200gx18-blueberry.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 474,
@@ -6161,7 +6634,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP227",
-    image: "/images/products/lanzo-200gx18-menthol.jpg"
+    image: "/images/products/lanzo-200gx18-menthol.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 475,
@@ -6174,7 +6648,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP229",
-    image: "/images/products/lanzo-200gx18-raspberry-vanilla.jpg"
+    image: "/images/products/lanzo-200gx18-raspberry-vanilla.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 476,
@@ -6187,7 +6662,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP228",
-    image: "/images/products/lanzo-200gx18-sheabutter.jpg"
+    image: "/images/products/lanzo-200gx18-sheabutter.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 477,
@@ -6200,7 +6676,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "ST033",
-    image: "/images/products/large-mpo-refill-l9.jpg"
+    image: "/images/products/large-mpo-refill-l9.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 478,
@@ -6213,7 +6690,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "LP020",
-    image: "/images/products/linc-axo-blue-10pens-pkt-120.jpg"
+    image: "/images/products/linc-axo-blue-10pens-pkt-120.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 479,
@@ -6226,7 +6704,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "MAH240",
-    image: "/images/products/mahitaji-mwangaza-candles-12x8pc-white.jpg"
+    image: "/images/products/mahitaji-mwangaza-candles-12x8pc-white.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 480,
@@ -6239,7 +6718,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "2184",
-    image: "/images/products/medicot-p-o-20-sx2doz-4.jpg"
+    image: "/images/products/medicot-p-o-20-sx2doz-4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 481,
@@ -6252,7 +6732,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2184",
-    image: "/images/products/medicot-p-o-20-sx2doz-4.jpg"
+    image: "/images/products/medicot-p-o-20-sx2doz-4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 482,
@@ -6265,7 +6746,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "2185",
-    image: "/images/products/medicott-p-o-10-sx4doz-offer.jpg"
+    image: "/images/products/medicott-p-o-10-sx4doz-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 483,
@@ -6278,7 +6760,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "2185",
-    image: "/images/products/medicott-p-o-10-sx4doz-offer.jpg"
+    image: "/images/products/medicott-p-o-10-sx4doz-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 484,
@@ -6291,7 +6774,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2185",
-    image: "/images/products/medicott-p-o-10-sx4doz-offer.jpg"
+    image: "/images/products/medicott-p-o-10-sx4doz-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 485,
@@ -6304,7 +6788,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "1944",
-    image: "/images/products/milo-tin-100gx24.jpg"
+    image: "/images/products/milo-tin-100gx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 486,
@@ -6317,7 +6802,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "1944",
-    image: "/images/products/milo-tin-100gx24.jpg"
+    image: "/images/products/milo-tin-100gx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 487,
@@ -6330,7 +6816,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1944",
-    image: "/images/products/milo-tin-100gx24.jpg"
+    image: "/images/products/milo-tin-100gx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 488,
@@ -6343,7 +6830,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "5806",
-    image: "/images/products/minute-maid-1ltrx12-apple.jpg"
+    image: "/images/products/minute-maid-1ltrx12-apple.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 489,
@@ -6356,7 +6844,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2345",
-    image: "/images/products/minute-maid-1ltrx12-mango.jpg"
+    image: "/images/products/minute-maid-1ltrx12-mango.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 490,
@@ -6369,7 +6858,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7398",
-    image: "/images/products/minute-maid-1ltrx12-orange-pulpy.jpg"
+    image: "/images/products/minute-maid-1ltrx12-orange-pulpy.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 491,
@@ -6382,7 +6872,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "9258",
-    image: "/images/products/minute-maid-1ltrx12-tropical.jpg"
+    image: "/images/products/minute-maid-1ltrx12-tropical.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 492,
@@ -6395,7 +6886,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7377",
-    image: "/images/products/minute-maid-400mlx12-apple.jpg"
+    image: "/images/products/minute-maid-400mlx12-apple.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 493,
@@ -6408,7 +6900,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7379",
-    image: "/images/products/minute-maid-400mlx12-mango.jpg"
+    image: "/images/products/minute-maid-400mlx12-mango.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 494,
@@ -6421,7 +6914,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1434",
-    image: "/images/products/minute-maid-400mlx12-orange-pulpy.jpg"
+    image: "/images/products/minute-maid-400mlx12-orange-pulpy.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 495,
@@ -6434,7 +6928,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1430",
-    image: "/images/products/minute-maid-400mlx12-tropical.jpg"
+    image: "/images/products/minute-maid-400mlx12-tropical.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 496,
@@ -6447,7 +6942,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1380",
-    image: "/images/products/monster-original-enr-500mlx24.jpg"
+    image: "/images/products/monster-original-enr-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 497,
@@ -6460,7 +6956,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "ST029",
-    image: "/images/products/mophead-complte-l4c-lrge-stick-metal-furrel-stick.jpg"
+    image: "/images/products/mophead-complte-l4c-lrge-stick-metal-furrel-stick.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 498,
@@ -6473,7 +6970,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2PC",
     code: "4492",
-    image: "/images/products/moskill-aero-12x300ml-lge.jpg"
+    image: "/images/products/moskill-aero-12x300ml-lge.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 499,
@@ -6486,7 +6984,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4492",
-    image: "/images/products/moskill-aero-12x300ml-lge.jpg"
+    image: "/images/products/moskill-aero-12x300ml-lge.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 500,
@@ -6499,7 +6998,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "4PC",
     code: "2191",
-    image: "/images/products/moskill-aerosel-450mlx12.jpg"
+    image: "/images/products/moskill-aerosel-450mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 501,
@@ -6512,7 +7012,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2191",
-    image: "/images/products/moskill-aerosel-450mlx12.jpg"
+    image: "/images/products/moskill-aerosel-450mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 502,
@@ -6525,7 +7026,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "4PC",
     code: "2192",
-    image: "/images/products/moskill-aerosol-600mlx12.jpg"
+    image: "/images/products/moskill-aerosol-600mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 503,
@@ -6538,7 +7040,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2192",
-    image: "/images/products/moskill-aerosol-600mlx12.jpg"
+    image: "/images/products/moskill-aerosol-600mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 504,
@@ -6551,7 +7054,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "4508",
-    image: "/images/products/moskill-mat-vaporiserx12pc.jpg"
+    image: "/images/products/moskill-mat-vaporiserx12pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 505,
@@ -6564,7 +7068,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4508",
-    image: "/images/products/moskill-mat-vaporiserx12pc.jpg"
+    image: "/images/products/moskill-mat-vaporiserx12pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 506,
@@ -6577,7 +7082,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "4509",
-    image: "/images/products/moskill-mats-36pkt-x-30mat.jpg"
+    image: "/images/products/moskill-mats-36pkt-x-30mat.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 507,
@@ -6590,7 +7096,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "4509",
-    image: "/images/products/moskill-mats-36pkt-x-30mat.jpg"
+    image: "/images/products/moskill-mats-36pkt-x-30mat.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 508,
@@ -6603,7 +7110,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4509",
-    image: "/images/products/moskill-mats-36pkt-x-30mat.jpg"
+    image: "/images/products/moskill-mats-36pkt-x-30mat.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 509,
@@ -6616,7 +7124,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "4500",
-    image: "/images/products/moskill-spiral-liq-35mlx24-refil.jpg"
+    image: "/images/products/moskill-spiral-liq-35mlx24-refil.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 510,
@@ -6629,7 +7138,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4500",
-    image: "/images/products/moskill-spiral-liq-35mlx24-refil.jpg"
+    image: "/images/products/moskill-spiral-liq-35mlx24-refil.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 511,
@@ -6642,7 +7152,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "4500",
-    image: "/images/products/moskill-spiral-liq-35mlx24-refil.jpg"
+    image: "/images/products/moskill-spiral-liq-35mlx24-refil.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 512,
@@ -6655,7 +7166,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "4501",
-    image: "/images/products/moskill-spiral-liq-vaporizer-35mlx12.jpg"
+    image: "/images/products/moskill-spiral-liq-vaporizer-35mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 513,
@@ -6668,7 +7180,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4501",
-    image: "/images/products/moskill-spiral-liq-vaporizer-35mlx12.jpg"
+    image: "/images/products/moskill-spiral-liq-vaporizer-35mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 514,
@@ -6681,7 +7194,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "4512",
-    image: "/images/products/moskill-vermin-pwdr-10gx72.jpg"
+    image: "/images/products/moskill-vermin-pwdr-10gx72.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 515,
@@ -6694,7 +7208,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4512",
-    image: "/images/products/moskill-vermin-pwdr-10gx72.jpg"
+    image: "/images/products/moskill-vermin-pwdr-10gx72.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 516,
@@ -6707,7 +7222,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP149",
-    image: "/images/products/nala-chicken-noodles-20x120gm.jpg"
+    image: "/images/products/nala-chicken-noodles-20x120gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 517,
@@ -6720,7 +7236,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "2572",
-    image: "/images/products/ndhiwa-sugar-20x1kg.jpg"
+    image: "/images/products/ndhiwa-sugar-20x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 518,
@@ -6733,7 +7250,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2572",
-    image: "/images/products/ndhiwa-sugar-20x1kg.jpg"
+    image: "/images/products/ndhiwa-sugar-20x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 519,
@@ -6746,7 +7264,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "KP336",
-    image: "/images/products/neptune-serviette-18-s-pkt-x100.jpg"
+    image: "/images/products/neptune-serviette-18-s-pkt-x100.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 520,
@@ -6759,7 +7278,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP336",
-    image: "/images/products/neptune-serviette-18-s-pkt-x100.jpg"
+    image: "/images/products/neptune-serviette-18-s-pkt-x100.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 521,
@@ -6772,7 +7292,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "KP242",
-    image: "/images/products/neptune-t-paper-10pack-x4-colored.jpg"
+    image: "/images/products/neptune-t-paper-10pack-x4-colored.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 522,
@@ -6785,7 +7306,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP242",
-    image: "/images/products/neptune-t-paper-10pack-x4-colored.jpg"
+    image: "/images/products/neptune-t-paper-10pack-x4-colored.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 523,
@@ -6798,7 +7320,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP271",
-    image: "/images/products/neptune-t-paper-10pack-x4-white.jpg"
+    image: "/images/products/neptune-t-paper-10pack-x4-white.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 524,
@@ -6811,7 +7334,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP236",
-    image: "/images/products/neptune-t-paper-1pack-x40-colored.jpg"
+    image: "/images/products/neptune-t-paper-1pack-x40-colored.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 525,
@@ -6824,7 +7348,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP268",
-    image: "/images/products/neptune-t-paper-1pack-x40-white.jpg"
+    image: "/images/products/neptune-t-paper-1pack-x40-white.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 526,
@@ -6837,7 +7362,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP241",
-    image: "/images/products/neptune-t-paper-2pack-x20-colored.jpg"
+    image: "/images/products/neptune-t-paper-2pack-x20-colored.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 527,
@@ -6850,7 +7376,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP270",
-    image: "/images/products/neptune-t-paper-2pack-x20-white.jpg"
+    image: "/images/products/neptune-t-paper-2pack-x20-white.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 528,
@@ -6863,7 +7390,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP237",
-    image: "/images/products/neptune-t-paper-4pack-x10-colored.jpg"
+    image: "/images/products/neptune-t-paper-4pack-x10-colored.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 529,
@@ -6876,7 +7404,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP269",
-    image: "/images/products/neptune-t-paper-4pack-x10-white.jpg"
+    image: "/images/products/neptune-t-paper-4pack-x10-white.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 530,
@@ -6889,7 +7418,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "STRIP",
     code: "1776",
-    image: "/images/products/nescafe-sac-1-5gx84x6.jpg"
+    image: "/images/products/nescafe-sac-1-5gx84x6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 531,
@@ -6902,7 +7432,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "1776",
-    image: "/images/products/nescafe-sac-1-5gx84x6.jpg"
+    image: "/images/products/nescafe-sac-1-5gx84x6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 532,
@@ -6915,7 +7446,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1776",
-    image: "/images/products/nescafe-sac-1-5gx84x6.jpg"
+    image: "/images/products/nescafe-sac-1-5gx84x6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 533,
@@ -6928,7 +7460,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "SI005",
-    image: "/images/products/neta-jumbo-t-p-12pc.jpg"
+    image: "/images/products/neta-jumbo-t-p-12pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 534,
@@ -6941,7 +7474,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "DOR009",
-    image: "/images/products/new-3in1-classic-coffee-18gm-6pcs-x-12outers.jpg"
+    image: "/images/products/new-3in1-classic-coffee-18gm-6pcs-x-12outers.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 535,
@@ -6954,7 +7488,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "DOR009",
-    image: "/images/products/new-3in1-classic-coffee-18gm-6pcs-x-12outers.jpg"
+    image: "/images/products/new-3in1-classic-coffee-18gm-6pcs-x-12outers.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 536,
@@ -6967,7 +7502,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "NA008",
-    image: "/images/products/ngar-s-w-value-pack-40bagsx15gms.jpg"
+    image: "/images/products/ngar-s-w-value-pack-40bagsx15gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 537,
@@ -6980,7 +7516,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "NA008",
-    image: "/images/products/ngar-s-w-value-pack-40bagsx15gms.jpg"
+    image: "/images/products/ngar-s-w-value-pack-40bagsx15gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 538,
@@ -6993,7 +7530,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "NA008",
-    image: "/images/products/ngar-s-w-value-pack-40bagsx15gms.jpg"
+    image: "/images/products/ngar-s-w-value-pack-40bagsx15gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 539,
@@ -7006,7 +7544,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "NA010",
-    image: "/images/products/ngar-scou-pad-1pc-12x12pcs-standard.jpg"
+    image: "/images/products/ngar-scou-pad-1pc-12x12pcs-standard.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 540,
@@ -7019,7 +7558,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "NA010",
-    image: "/images/products/ngar-scou-pad-1pc-12x12pcs-standard.jpg"
+    image: "/images/products/ngar-scou-pad-1pc-12x12pcs-standard.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 541,
@@ -7032,7 +7572,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "NA031",
-    image: "/images/products/ngarisha-disinf-green-1ltrx12.jpg"
+    image: "/images/products/ngarisha-disinf-green-1ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 542,
@@ -7045,7 +7586,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "NA031",
-    image: "/images/products/ngarisha-disinf-green-1ltrx12.jpg"
+    image: "/images/products/ngarisha-disinf-green-1ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 543,
@@ -7058,7 +7600,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "NA031",
-    image: "/images/products/ngarisha-disinf-green-1ltrx12.jpg"
+    image: "/images/products/ngarisha-disinf-green-1ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 544,
@@ -7071,7 +7614,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "NA030",
-    image: "/images/products/ngarisha-disinf-grn-500mlx24.jpg"
+    image: "/images/products/ngarisha-disinf-grn-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 545,
@@ -7084,7 +7628,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "NA030",
-    image: "/images/products/ngarisha-disinf-grn-500mlx24.jpg"
+    image: "/images/products/ngarisha-disinf-grn-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 546,
@@ -7097,7 +7642,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "NA035",
-    image: "/images/products/ngarisha-disinf-pine-1ltrx12.jpg"
+    image: "/images/products/ngarisha-disinf-pine-1ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 547,
@@ -7110,7 +7656,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "NA035",
-    image: "/images/products/ngarisha-disinf-pine-1ltrx12.jpg"
+    image: "/images/products/ngarisha-disinf-pine-1ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 548,
@@ -7123,7 +7670,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "NA035",
-    image: "/images/products/ngarisha-disinf-pine-1ltrx12.jpg"
+    image: "/images/products/ngarisha-disinf-pine-1ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 549,
@@ -7136,7 +7684,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "NA034",
-    image: "/images/products/ngarisha-disinf-pine-500mlx24.jpg"
+    image: "/images/products/ngarisha-disinf-pine-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 550,
@@ -7149,7 +7698,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "NA034",
-    image: "/images/products/ngarisha-disinf-pine-500mlx24.jpg"
+    image: "/images/products/ngarisha-disinf-pine-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 551,
@@ -7162,7 +7712,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "NA015",
-    image: "/images/products/ngarisha-scou-pad-giant-12x6-6.jpg"
+    image: "/images/products/ngarisha-scou-pad-giant-12x6-6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 552,
@@ -7175,7 +7726,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "NA015",
-    image: "/images/products/ngarisha-scou-pad-giant-12x6-6.jpg"
+    image: "/images/products/ngarisha-scou-pad-giant-12x6-6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 553,
@@ -7188,7 +7740,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "NA011",
-    image: "/images/products/ngarisha-scou-pad-2pc-72x2pcs-standard.jpg"
+    image: "/images/products/ngarisha-scou-pad-2pc-72x2pcs-standard.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 554,
@@ -7201,7 +7754,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "NA048",
-    image: "/images/products/ngarisha-spiral-scrubber-50cardsx12pc.jpg"
+    image: "/images/products/ngarisha-spiral-scrubber-50cardsx12pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 555,
@@ -7214,7 +7768,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "NW001",
-    image: "/images/products/non-woven-15-50pcx40-outr.jpg"
+    image: "/images/products/non-woven-15-50pcx40-outr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 556,
@@ -7227,7 +7782,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "NW001",
-    image: "/images/products/non-woven-15-50pcx40-outr.jpg"
+    image: "/images/products/non-woven-15-50pcx40-outr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 557,
@@ -7240,7 +7796,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CCB012",
-    image: "/images/products/novida-new-p-a-pet-350mlx24.jpg"
+    image: "/images/products/novida-new-p-a-pet-350mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 558,
@@ -7253,7 +7810,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "9880",
-    image: "/images/products/nuvita-choc-cream-60x2-sandwitch-offer.jpg"
+    image: "/images/products/nuvita-choc-cream-60x2-sandwitch-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 559,
@@ -7266,7 +7824,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2693",
-    image: "/images/products/nuvita-crunchy-ginger-60x3pcx15g.jpg"
+    image: "/images/products/nuvita-crunchy-ginger-60x3pcx15g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 560,
@@ -7279,7 +7838,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2695",
-    image: "/images/products/nuvita-crunchy-lemon-60x3.jpg"
+    image: "/images/products/nuvita-crunchy-lemon-60x3.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 561,
@@ -7292,7 +7852,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "9899",
-    image: "/images/products/nuvita-lemon-cream-60x2-sandwitch-offer.jpg"
+    image: "/images/products/nuvita-lemon-cream-60x2-sandwitch-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 562,
@@ -7305,7 +7866,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2608",
-    image: "/images/products/nuvita-s-b-cream-60x2-sandwitch-offer.jpg"
+    image: "/images/products/nuvita-s-b-cream-60x2-sandwitch-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 563,
@@ -7318,7 +7880,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3585",
-    image: "/images/products/nuvita-vitamilk-300pcs-30pktx10pc.jpg"
+    image: "/images/products/nuvita-vitamilk-300pcs-30pktx10pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 564,
@@ -7331,7 +7894,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2601",
-    image: "/images/products/nuvita-vitamilk-60x5pc.jpg"
+    image: "/images/products/nuvita-vitamilk-60x5pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 565,
@@ -7344,7 +7908,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1934",
-    image: "/images/products/nuvita-wafers12x6x9g-offer.jpg"
+    image: "/images/products/nuvita-wafers12x6x9g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 566,
@@ -7357,7 +7922,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "WKS001",
-    image: "/images/products/olepito-sugar-1kg-x-20-brown.jpg"
+    image: "/images/products/olepito-sugar-1kg-x-20-brown.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 567,
@@ -7370,7 +7936,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "WKS001",
-    image: "/images/products/olepito-sugar-1kg-x-20-brown.jpg"
+    image: "/images/products/olepito-sugar-1kg-x-20-brown.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 568,
@@ -7383,7 +7950,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "PR003",
-    image: "/images/products/onga-7gx120-chicken-satchet.jpg"
+    image: "/images/products/onga-7gx120-chicken-satchet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 569,
@@ -7396,7 +7964,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "6076",
-    image: "/images/products/onga-7gx120-beef-satchet.jpg"
+    image: "/images/products/onga-7gx120-beef-satchet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 570,
@@ -7409,7 +7978,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "4499",
-    image: "/images/products/osefin-100gmx24-carbaryl-dust.jpg"
+    image: "/images/products/osefin-100gmx24-carbaryl-dust.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 571,
@@ -7422,7 +7992,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "4499",
-    image: "/images/products/osefin-100gmx24-carbaryl-dust.jpg"
+    image: "/images/products/osefin-100gmx24-carbaryl-dust.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 572,
@@ -7435,7 +8006,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4499",
-    image: "/images/products/osefin-100gmx24-carbaryl-dust.jpg"
+    image: "/images/products/osefin-100gmx24-carbaryl-dust.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 573,
@@ -7448,7 +8020,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "4498",
-    image: "/images/products/osefin-200gmx24-carbaryl-dudu-dust.jpg"
+    image: "/images/products/osefin-200gmx24-carbaryl-dudu-dust.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 574,
@@ -7461,7 +8034,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4498",
-    image: "/images/products/osefin-200gmx24-carbaryl-dudu-dust.jpg"
+    image: "/images/products/osefin-200gmx24-carbaryl-dudu-dust.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 575,
@@ -7474,7 +8048,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "2897",
-    image: "/images/products/osram-bulbs-40w-10pcsx10.jpg"
+    image: "/images/products/osram-bulbs-40w-10pcsx10.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 576,
@@ -7487,7 +8062,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2897",
-    image: "/images/products/osram-bulbs-40w-10pcsx10.jpg"
+    image: "/images/products/osram-bulbs-40w-10pcsx10.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 577,
@@ -7500,7 +8076,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "PLY002",
-    image: "/images/products/own-plywood-8x4x3mm.jpg"
+    image: "/images/products/own-plywood-8x4x3mm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 578,
@@ -7513,7 +8090,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1008",
-    image: "/images/products/p-nut-buter-125gx12-red-crunchy-offer.jpg"
+    image: "/images/products/p-nut-buter-125gx12-red-crunchy-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 579,
@@ -7526,7 +8104,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4900",
-    image: "/images/products/p-nut-butter-250gx6-blue-offer.jpg"
+    image: "/images/products/p-nut-butter-250gx6-blue-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 580,
@@ -7539,7 +8118,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4901",
-    image: "/images/products/p-nut-butter-250gx6-red-crunchy-offer.jpg"
+    image: "/images/products/p-nut-butter-250gx6-red-crunchy-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 581,
@@ -7552,7 +8132,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4931",
-    image: "/images/products/p-nut-butter-800gx6-blue-offer.jpg"
+    image: "/images/products/p-nut-butter-800gx6-blue-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 582,
@@ -7565,7 +8146,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4932",
-    image: "/images/products/p-nut-butter-800gx6-red-crunchy-offer.jpg"
+    image: "/images/products/p-nut-butter-800gx6-red-crunchy-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 583,
@@ -7578,7 +8160,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1006",
-    image: "/images/products/p-nut-butter-blue-125gx12-offer.jpg"
+    image: "/images/products/p-nut-butter-blue-125gx12-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 584,
@@ -7591,7 +8174,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "PLTTROLLEY",
-    image: "/images/products/pallet-trolley.jpg"
+    image: "/images/products/pallet-trolley.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 585,
@@ -7604,7 +8188,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4902",
-    image: "/images/products/peanut-butter-400gx6-blue-offer.jpg"
+    image: "/images/products/peanut-butter-400gx6-blue-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 586,
@@ -7617,7 +8202,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4903",
-    image: "/images/products/peanut-butter-400gx6-red-crunchy-offer.jpg"
+    image: "/images/products/peanut-butter-400gx6-red-crunchy-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 587,
@@ -7630,7 +8216,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1553",
-    image: "/images/products/pearl-green-gram-1kgx24.jpg"
+    image: "/images/products/pearl-green-gram-1kgx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 588,
@@ -7643,7 +8230,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1552",
-    image: "/images/products/pearl-green-gram-48x500g.jpg"
+    image: "/images/products/pearl-green-gram-48x500g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 589,
@@ -7656,7 +8244,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1282",
-    image: "/images/products/pearl-njahi-beans-24x1kg.jpg"
+    image: "/images/products/pearl-njahi-beans-24x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 590,
@@ -7669,7 +8258,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1282",
-    image: "/images/products/pearl-njahi-beans-24x1kg.jpg"
+    image: "/images/products/pearl-njahi-beans-24x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 591,
@@ -7682,7 +8272,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "7566",
-    image: "/images/products/pearl-pishori-1kgx24-rice.jpg"
+    image: "/images/products/pearl-pishori-1kgx24-rice.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 592,
@@ -7695,7 +8286,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "7552",
-    image: "/images/products/pearl-pishori-2kgx12-rice.jpg"
+    image: "/images/products/pearl-pishori-2kgx12-rice.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 593,
@@ -7708,7 +8300,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "7552",
-    image: "/images/products/pearl-pishori-2kgx12-rice.jpg"
+    image: "/images/products/pearl-pishori-2kgx12-rice.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 594,
@@ -7721,7 +8314,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "7560",
-    image: "/images/products/pearl-pishori-5kgx5-rice.jpg"
+    image: "/images/products/pearl-pishori-5kgx5-rice.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 595,
@@ -7734,7 +8328,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "7560",
-    image: "/images/products/pearl-pishori-5kgx5-rice.jpg"
+    image: "/images/products/pearl-pishori-5kgx5-rice.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 596,
@@ -7747,7 +8342,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1284",
-    image: "/images/products/pearl-popcorn-24x1kg.jpg"
+    image: "/images/products/pearl-popcorn-24x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 597,
@@ -7760,7 +8356,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1290",
-    image: "/images/products/pearl-popcorn-48x500g.jpg"
+    image: "/images/products/pearl-popcorn-48x500g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 598,
@@ -7773,7 +8370,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "4740",
-    image: "/images/products/pearl-super-basmati-1kgx24.jpg"
+    image: "/images/products/pearl-super-basmati-1kgx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 599,
@@ -7786,7 +8384,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "4042",
-    image: "/images/products/pearl-super-basmati-2kgx12.jpg"
+    image: "/images/products/pearl-super-basmati-2kgx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 600,
@@ -7799,7 +8398,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "3575",
-    image: "/images/products/pearl-super-basmati-5kgx5.jpg"
+    image: "/images/products/pearl-super-basmati-5kgx5.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 601,
@@ -7812,7 +8412,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3575",
-    image: "/images/products/pearl-super-basmati-5kgx5.jpg"
+    image: "/images/products/pearl-super-basmati-5kgx5.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 602,
@@ -7825,7 +8426,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "4078",
-    image: "/images/products/pembe-atta-12x2kg.jpg"
+    image: "/images/products/pembe-atta-12x2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 603,
@@ -7838,7 +8440,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "4076",
-    image: "/images/products/pembe-h-b-12x2kg.jpg"
+    image: "/images/products/pembe-h-b-12x2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 604,
@@ -7851,7 +8454,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "4081",
-    image: "/images/products/pembe-m-m-12x2kg.jpg"
+    image: "/images/products/pembe-m-m-12x2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 605,
@@ -7864,7 +8468,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "4087",
-    image: "/images/products/pembe-self-rising-12x2kg.jpg"
+    image: "/images/products/pembe-self-rising-12x2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 606,
@@ -7877,7 +8482,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "UL015",
-    image: "/images/products/pendo-h-b-2kg-x12-offer.jpg"
+    image: "/images/products/pendo-h-b-2kg-x12-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 607,
@@ -7890,7 +8496,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "DE003",
-    image: "/images/products/penne-delicia-20-x400gms.jpg"
+    image: "/images/products/penne-delicia-20-x400gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 608,
@@ -7903,7 +8510,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "10PC",
     code: "2903",
-    image: "/images/products/philips-bulb-40wx100pcs.jpg"
+    image: "/images/products/philips-bulb-40wx100pcs.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 609,
@@ -7916,7 +8524,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2903",
-    image: "/images/products/philips-bulb-40wx100pcs.jpg"
+    image: "/images/products/philips-bulb-40wx100pcs.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 610,
@@ -7929,7 +8538,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK019",
-    image: "/images/products/pick-n-peel-1ltx12-apple.jpg"
+    image: "/images/products/pick-n-peel-1ltx12-apple.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 611,
@@ -7942,7 +8552,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK027",
-    image: "/images/products/pick-n-peel-1ltx12-mango.jpg"
+    image: "/images/products/pick-n-peel-1ltx12-mango.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 612,
@@ -7955,7 +8566,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK028",
-    image: "/images/products/pick-n-peel-1ltx12-orange.jpg"
+    image: "/images/products/pick-n-peel-1ltx12-orange.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 613,
@@ -7968,7 +8580,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK030",
-    image: "/images/products/pick-n-peel-1ltx12-pineapple.jpg"
+    image: "/images/products/pick-n-peel-1ltx12-pineapple.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 614,
@@ -7981,7 +8594,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK032",
-    image: "/images/products/pick-n-peel-1ltx12-tropical-mix.jpg"
+    image: "/images/products/pick-n-peel-1ltx12-tropical-mix.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 615,
@@ -7994,7 +8608,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK033",
-    image: "/images/products/pick-n-peel-1ltx12-white-grape.jpg"
+    image: "/images/products/pick-n-peel-1ltx12-white-grape.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 616,
@@ -8007,7 +8622,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK021",
-    image: "/images/products/pick-n-peel-250mlx12-mango.jpg"
+    image: "/images/products/pick-n-peel-250mlx12-mango.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 617,
@@ -8020,7 +8636,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK016",
-    image: "/images/products/pick-n-peel-250mlx12-pineapple.jpg"
+    image: "/images/products/pick-n-peel-250mlx12-pineapple.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 618,
@@ -8033,7 +8650,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK025",
-    image: "/images/products/pick-n-peel-250mlx12-tropical-mix.jpg"
+    image: "/images/products/pick-n-peel-250mlx12-tropical-mix.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 619,
@@ -8046,7 +8664,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KK026",
-    image: "/images/products/pick-n-peel-250mlx12-white-grape.jpg"
+    image: "/images/products/pick-n-peel-250mlx12-white-grape.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 620,
@@ -8059,7 +8678,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "1131C",
-    image: "/images/products/plywood-8x4x3mm.jpg"
+    image: "/images/products/plywood-8x4x3mm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 621,
@@ -8072,7 +8692,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP234",
-    image: "/images/products/postman-veg-oil-10ltr.jpg"
+    image: "/images/products/postman-veg-oil-10ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 622,
@@ -8085,7 +8706,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "JER",
     code: "KP234",
-    image: "/images/products/postman-veg-oil-10ltr.jpg"
+    image: "/images/products/postman-veg-oil-10ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 623,
@@ -8098,7 +8720,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP276",
-    image: "/images/products/postman-veg-oil-12x1lit-offer.jpg"
+    image: "/images/products/postman-veg-oil-12x1lit-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 624,
@@ -8111,7 +8734,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP276",
-    image: "/images/products/postman-veg-oil-12x1lit-offer.jpg"
+    image: "/images/products/postman-veg-oil-12x1lit-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 625,
@@ -8124,7 +8748,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP275",
-    image: "/images/products/postman-veg-oil-12x500ml-offer.jpg"
+    image: "/images/products/postman-veg-oil-12x500ml-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 626,
@@ -8137,7 +8762,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DRUM",
     code: "KP235",
-    image: "/images/products/postman-veg-oil-20lit.jpg"
+    image: "/images/products/postman-veg-oil-20lit.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 627,
@@ -8150,7 +8776,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2PC",
     code: "KP248",
-    image: "/images/products/postman-veg-oil-4x5lit-special-offer.jpg"
+    image: "/images/products/postman-veg-oil-4x5lit-special-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 628,
@@ -8163,7 +8790,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP248",
-    image: "/images/products/postman-veg-oil-4x5lit-special-offer.jpg"
+    image: "/images/products/postman-veg-oil-4x5lit-special-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 629,
@@ -8176,7 +8804,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP278",
-    image: "/images/products/postman-veg-oil-6x3lit-special-offer.jpg"
+    image: "/images/products/postman-veg-oil-6x3lit-special-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 630,
@@ -8189,7 +8818,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2PC",
     code: "KP278",
-    image: "/images/products/postman-veg-oil-6x3lit-special-offer.jpg"
+    image: "/images/products/postman-veg-oil-6x3lit-special-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 631,
@@ -8202,7 +8832,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP278",
-    image: "/images/products/postman-veg-oil-6x3lit-special-offer.jpg"
+    image: "/images/products/postman-veg-oil-6x3lit-special-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 632,
@@ -8215,7 +8846,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP277",
-    image: "/images/products/postman-veg-oil-8x2lit-offer.jpg"
+    image: "/images/products/postman-veg-oil-8x2lit-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 633,
@@ -8228,7 +8860,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP277",
-    image: "/images/products/postman-veg-oil-8x2lit-offer.jpg"
+    image: "/images/products/postman-veg-oil-8x2lit-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 634,
@@ -8241,7 +8874,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "TRAY",
     code: "5791",
-    image: "/images/products/predator-gold-400mlx12-offer.jpg"
+    image: "/images/products/predator-gold-400mlx12-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 635,
@@ -8254,7 +8888,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BCKT",
     code: "KP050",
-    image: "/images/products/prestige-margarine-10kg-ori-bucket.jpg"
+    image: "/images/products/prestige-margarine-10kg-ori-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 636,
@@ -8267,7 +8902,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP049",
-    image: "/images/products/prestige-margarine-10kg-original-ctn.jpg"
+    image: "/images/products/prestige-margarine-10kg-original-ctn.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 637,
@@ -8280,7 +8916,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP046",
-    image: "/images/products/prestige-margarine-12x1kg-original-plastic-bucket.jpg"
+    image: "/images/products/prestige-margarine-12x1kg-original-plastic-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 638,
@@ -8293,7 +8930,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP045",
-    image: "/images/products/prestige-margarine-18x500gm-original-bucket.jpg"
+    image: "/images/products/prestige-margarine-18x500gm-original-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 639,
@@ -8306,7 +8944,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "4PC",
     code: "KP044",
-    image: "/images/products/prestige-margarine-24x250gm-original.jpg"
+    image: "/images/products/prestige-margarine-24x250gm-original.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 640,
@@ -8319,7 +8958,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP044",
-    image: "/images/products/prestige-margarine-24x250gm-original.jpg"
+    image: "/images/products/prestige-margarine-24x250gm-original.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 641,
@@ -8332,7 +8972,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP043",
-    image: "/images/products/prestige-margarine-48x100gm-vanilla-plastic-tub.jpg"
+    image: "/images/products/prestige-margarine-48x100gm-vanilla-plastic-tub.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 642,
@@ -8345,7 +8986,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BAG",
     code: "KRC001",
-    image: "/images/products/priceless-basmati-rice-25kg.jpg"
+    image: "/images/products/priceless-basmati-rice-25kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 643,
@@ -8358,7 +9000,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "SI004",
-    image: "/images/products/pulita-jumbo-t-p-12pc.jpg"
+    image: "/images/products/pulita-jumbo-t-p-12pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 644,
@@ -8371,7 +9014,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "SI003",
-    image: "/images/products/pulita-serviette-18s-pktx100.jpg"
+    image: "/images/products/pulita-serviette-18s-pktx100.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 645,
@@ -8384,7 +9028,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "SI003",
-    image: "/images/products/pulita-serviette-18s-pktx100.jpg"
+    image: "/images/products/pulita-serviette-18s-pktx100.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 646,
@@ -8397,7 +9042,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "SI002",
-    image: "/images/products/pulita-smart-40s-orange-tissue-paper.jpg"
+    image: "/images/products/pulita-smart-40s-orange-tissue-paper.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 647,
@@ -8410,7 +9056,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "SI006",
-    image: "/images/products/pulita-white-t-p-10s-x-4-200-sheets.jpg"
+    image: "/images/products/pulita-white-t-p-10s-x-4-200-sheets.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 648,
@@ -8423,7 +9070,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "1837",
-    image: "/images/products/pure-nat-honey-12x300.jpg"
+    image: "/images/products/pure-nat-honey-12x300.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 649,
@@ -8436,7 +9084,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1837",
-    image: "/images/products/pure-nat-honey-12x300.jpg"
+    image: "/images/products/pure-nat-honey-12x300.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 650,
@@ -8449,7 +9098,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BOTTL",
     code: "2227",
-    image: "/images/products/quencher-water-10ltr.jpg"
+    image: "/images/products/quencher-water-10ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 651,
@@ -8462,7 +9112,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2225",
-    image: "/images/products/quencher-water-12x1-5ltr.jpg"
+    image: "/images/products/quencher-water-12x1-5ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 652,
@@ -8475,7 +9126,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DRUM",
     code: "2226",
-    image: "/images/products/quencher-water-18lt.jpg"
+    image: "/images/products/quencher-water-18lt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 653,
@@ -8488,7 +9140,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2229",
-    image: "/images/products/quencher-water-1ltrx6x2.jpg"
+    image: "/images/products/quencher-water-1ltrx6x2.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 654,
@@ -8501,7 +9154,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2222",
-    image: "/images/products/quencher-water-500mlx24.jpg"
+    image: "/images/products/quencher-water-500mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 655,
@@ -8514,7 +9168,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2228",
-    image: "/images/products/quencher-water-5ltrx4.jpg"
+    image: "/images/products/quencher-water-5ltrx4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 656,
@@ -8527,7 +9182,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2221",
-    image: "/images/products/quencher-water-24x300ml.jpg"
+    image: "/images/products/quencher-water-24x300ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 657,
@@ -8540,7 +9196,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "2740",
-    image: "/images/products/raha-cocoa-160gx24.jpg"
+    image: "/images/products/raha-cocoa-160gx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 658,
@@ -8553,7 +9210,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2740",
-    image: "/images/products/raha-cocoa-160gx24.jpg"
+    image: "/images/products/raha-cocoa-160gx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 659,
@@ -8566,7 +9224,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2627",
-    image: "/images/products/raha-cocoa-16gmx24x4.jpg"
+    image: "/images/products/raha-cocoa-16gmx24x4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 660,
@@ -8579,7 +9238,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2631",
-    image: "/images/products/raha-cocoa-320gx12.jpg"
+    image: "/images/products/raha-cocoa-320gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 661,
@@ -8592,7 +9252,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "2629",
-    image: "/images/products/raha-cocoa-40gx96.jpg"
+    image: "/images/products/raha-cocoa-40gx96.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 662,
@@ -8605,7 +9266,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2629",
-    image: "/images/products/raha-cocoa-40gx96.jpg"
+    image: "/images/products/raha-cocoa-40gx96.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 663,
@@ -8618,7 +9280,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2625",
-    image: "/images/products/raha-cocoa-8gmx24x6.jpg"
+    image: "/images/products/raha-cocoa-8gmx24x6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 664,
@@ -8631,7 +9294,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "2628",
-    image: "/images/products/raha-dr-choc-100gmx24-sac-offer.jpg"
+    image: "/images/products/raha-dr-choc-100gmx24-sac-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 665,
@@ -8644,7 +9308,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "2628",
-    image: "/images/products/raha-dr-choc-100gmx24-sac-offer.jpg"
+    image: "/images/products/raha-dr-choc-100gmx24-sac-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 666,
@@ -8657,7 +9322,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2628",
-    image: "/images/products/raha-dr-choc-100gmx24-sac-offer.jpg"
+    image: "/images/products/raha-dr-choc-100gmx24-sac-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 667,
@@ -8670,7 +9336,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "2621",
-    image: "/images/products/raha-dr-choc-24x100g-jar-offer.jpg"
+    image: "/images/products/raha-dr-choc-24x100g-jar-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 668,
@@ -8683,7 +9350,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "2621",
-    image: "/images/products/raha-dr-choc-24x100g-jar-offer.jpg"
+    image: "/images/products/raha-dr-choc-24x100g-jar-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 669,
@@ -8696,7 +9364,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "JAR",
     code: "2621",
-    image: "/images/products/raha-dr-choc-24x100g-jar-offer.jpg"
+    image: "/images/products/raha-dr-choc-24x100g-jar-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 670,
@@ -8709,7 +9378,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2621",
-    image: "/images/products/raha-dr-choc-24x100g-jar-offer.jpg"
+    image: "/images/products/raha-dr-choc-24x100g-jar-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 671,
@@ -8722,7 +9392,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "2626",
-    image: "/images/products/raha-drinkn-choc-12x400g-jar.jpg"
+    image: "/images/products/raha-drinkn-choc-12x400g-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 672,
@@ -8735,7 +9406,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2626",
-    image: "/images/products/raha-drinkn-choc-12x400g-jar.jpg"
+    image: "/images/products/raha-drinkn-choc-12x400g-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 673,
@@ -8748,7 +9420,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "2626",
-    image: "/images/products/raha-drinkn-choc-12x400g-jar.jpg"
+    image: "/images/products/raha-drinkn-choc-12x400g-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 674,
@@ -8761,7 +9434,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2DOZ",
     code: "2620",
-    image: "/images/products/raha-drinkn-choc-24x4x20g-offer.jpg"
+    image: "/images/products/raha-drinkn-choc-24x4x20g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 675,
@@ -8774,7 +9448,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2620",
-    image: "/images/products/raha-drinkn-choc-24x4x20g-offer.jpg"
+    image: "/images/products/raha-drinkn-choc-24x4x20g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 676,
@@ -8787,7 +9462,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2DOZ",
     code: "2619",
-    image: "/images/products/raha-drinkn-choc-24x4x50g-p-d.jpg"
+    image: "/images/products/raha-drinkn-choc-24x4x50g-p-d.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 677,
@@ -8800,7 +9476,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2619",
-    image: "/images/products/raha-drinkn-choc-24x4x50g-p-d.jpg"
+    image: "/images/products/raha-drinkn-choc-24x4x50g-p-d.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 678,
@@ -8813,7 +9490,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2DOZ",
     code: "2630",
-    image: "/images/products/raha-drinkn-choc-8gx6x24-offer.jpg"
+    image: "/images/products/raha-drinkn-choc-8gx6x24-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 679,
@@ -8826,7 +9504,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2630",
-    image: "/images/products/raha-drinkn-choc-8gx6x24-offer.jpg"
+    image: "/images/products/raha-drinkn-choc-8gx6x24-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 680,
@@ -8839,7 +9518,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "2624",
-    image: "/images/products/raha-drnk-choc-200gx24-jar.jpg"
+    image: "/images/products/raha-drnk-choc-200gx24-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 681,
@@ -8852,7 +9532,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2624",
-    image: "/images/products/raha-drnk-choc-200gx24-jar.jpg"
+    image: "/images/products/raha-drnk-choc-200gx24-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 682,
@@ -8865,7 +9546,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "7554",
-    image: "/images/products/ranee-1kgx24-everyday-long-grain.jpg"
+    image: "/images/products/ranee-1kgx24-everyday-long-grain.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 683,
@@ -8878,7 +9560,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "7553",
-    image: "/images/products/ranee-2kgx12-everyday-long-grain.jpg"
+    image: "/images/products/ranee-2kgx12-everyday-long-grain.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 684,
@@ -8891,7 +9574,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "7556",
-    image: "/images/products/ranee-5kgx5-everyday-long-grain.jpg"
+    image: "/images/products/ranee-5kgx5-everyday-long-grain.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 685,
@@ -8904,7 +9588,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "7556",
-    image: "/images/products/ranee-5kgx5-everyday-long-grain.jpg"
+    image: "/images/products/ranee-5kgx5-everyday-long-grain.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 686,
@@ -8917,7 +9602,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2123",
-    image: "/images/products/ranee-biryani-l-g-1kgx24.jpg"
+    image: "/images/products/ranee-biryani-l-g-1kgx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 687,
@@ -8930,7 +9616,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "2442",
-    image: "/images/products/ranee-prem-basmat-5kgx5.jpg"
+    image: "/images/products/ranee-prem-basmat-5kgx5.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 688,
@@ -8943,7 +9630,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2442",
-    image: "/images/products/ranee-prem-basmat-5kgx5.jpg"
+    image: "/images/products/ranee-prem-basmat-5kgx5.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 689,
@@ -8956,7 +9644,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1881",
-    image: "/images/products/ranee-prmium-basmati-1kgx24.jpg"
+    image: "/images/products/ranee-prmium-basmati-1kgx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 690,
@@ -8969,7 +9658,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1898",
-    image: "/images/products/ranee-spgetti-premium-400gx20-red.jpg"
+    image: "/images/products/ranee-spgetti-premium-400gx20-red.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 691,
@@ -8982,7 +9672,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4494",
-    image: "/images/products/ratkill-rodenticide-25gx24x3outr.jpg"
+    image: "/images/products/ratkill-rodenticide-25gx24x3outr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 692,
@@ -8995,7 +9686,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4494",
-    image: "/images/products/ratkill-rodenticide-25gx24x3outr.jpg"
+    image: "/images/products/ratkill-rodenticide-25gx24x3outr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 693,
@@ -9008,7 +9700,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "JER",
     code: "KP063",
-    image: "/images/products/rina-vegetable-oil-10ltr-plastic-jerican-offer.jpg"
+    image: "/images/products/rina-vegetable-oil-10ltr-plastic-jerican-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 694,
@@ -9021,7 +9714,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP058",
-    image: "/images/products/rina-vegetable-oil-12x1lit-plastic-jerican-offer.jpg"
+    image: "/images/products/rina-vegetable-oil-12x1lit-plastic-jerican-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 695,
@@ -9034,7 +9728,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP057",
-    image: "/images/products/rina-vegetable-oil-12x500ml-plastic-jerican-offer.jpg"
+    image: "/images/products/rina-vegetable-oil-12x500ml-plastic-jerican-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 696,
@@ -9047,7 +9742,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DRUM",
     code: "KP064",
-    image: "/images/products/rina-vegetable-oil-20lit-round-jerican-offer.jpg"
+    image: "/images/products/rina-vegetable-oil-20lit-round-jerican-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 697,
@@ -9060,7 +9756,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP060",
-    image: "/images/products/rina-vegetable-oil-4x5lit-offer.jpg"
+    image: "/images/products/rina-vegetable-oil-4x5lit-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 698,
@@ -9073,7 +9770,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP062",
-    image: "/images/products/rina-vegetable-oil-6x3lit-plastic-jerican-offer.jpg"
+    image: "/images/products/rina-vegetable-oil-6x3lit-plastic-jerican-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 699,
@@ -9086,7 +9784,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP059",
-    image: "/images/products/rina-vegetable-oil-8x2lit-plastic-jerican-offer.jpg"
+    image: "/images/products/rina-vegetable-oil-8x2lit-plastic-jerican-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 700,
@@ -9099,7 +9798,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "JER",
     code: "KP077",
-    image: "/images/products/rinsun-sunflower-oil-10lit-jerican.jpg"
+    image: "/images/products/rinsun-sunflower-oil-10lit-jerican.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 701,
@@ -9112,7 +9812,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP073",
-    image: "/images/products/rinsun-sunflower-oil-12x1lit-pet.jpg"
+    image: "/images/products/rinsun-sunflower-oil-12x1lit-pet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 702,
@@ -9125,7 +9826,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP072",
-    image: "/images/products/rinsun-sunflower-oil-12x750ml-pet.jpg"
+    image: "/images/products/rinsun-sunflower-oil-12x750ml-pet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 703,
@@ -9138,7 +9840,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DRUM",
     code: "KP078",
-    image: "/images/products/rinsun-sunflower-oil-20lit-jerican.jpg"
+    image: "/images/products/rinsun-sunflower-oil-20lit-jerican.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 704,
@@ -9151,7 +9854,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP076",
-    image: "/images/products/rinsun-sunflower-oil-4x5lit-pet.jpg"
+    image: "/images/products/rinsun-sunflower-oil-4x5lit-pet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 705,
@@ -9164,7 +9868,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP076",
-    image: "/images/products/rinsun-sunflower-oil-4x5lit-pet.jpg"
+    image: "/images/products/rinsun-sunflower-oil-4x5lit-pet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 706,
@@ -9177,7 +9882,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP074",
-    image: "/images/products/rinsun-sunflower-oil-6x2lit-pet.jpg"
+    image: "/images/products/rinsun-sunflower-oil-6x2lit-pet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 707,
@@ -9190,7 +9896,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP075",
-    image: "/images/products/rinsun-sunflower-oil-6x3lit-pet.jpg"
+    image: "/images/products/rinsun-sunflower-oil-6x3lit-pet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 708,
@@ -9203,7 +9910,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BAG",
     code: "KP095",
-    image: "/images/products/rono-idp-blue-10kg-bag.jpg"
+    image: "/images/products/rono-idp-blue-10kg-bag.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 709,
@@ -9216,7 +9924,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BAG",
     code: "KP115",
-    image: "/images/products/rono-idp-white-10kg-bag.jpg"
+    image: "/images/products/rono-idp-white-10kg-bag.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 710,
@@ -9229,7 +9938,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "1423",
-    image: "/images/products/rosy-cotton-wool-100gmx48.jpg"
+    image: "/images/products/rosy-cotton-wool-100gmx48.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 711,
@@ -9242,7 +9952,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1423",
-    image: "/images/products/rosy-cotton-wool-100gmx48.jpg"
+    image: "/images/products/rosy-cotton-wool-100gmx48.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 712,
@@ -9255,7 +9966,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "1423",
-    image: "/images/products/rosy-cotton-wool-100gmx48.jpg"
+    image: "/images/products/rosy-cotton-wool-100gmx48.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 713,
@@ -9268,7 +9980,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "1424",
-    image: "/images/products/rosy-cotton-wool-200gmx30.jpg"
+    image: "/images/products/rosy-cotton-wool-200gmx30.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 714,
@@ -9281,7 +9994,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1424",
-    image: "/images/products/rosy-cotton-wool-200gmx30.jpg"
+    image: "/images/products/rosy-cotton-wool-200gmx30.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 715,
@@ -9294,7 +10008,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "10PC",
     code: "1422",
-    image: "/images/products/rosy-cotton-wool-50gmx70.jpg"
+    image: "/images/products/rosy-cotton-wool-50gmx70.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 716,
@@ -9307,7 +10022,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1422",
-    image: "/images/products/rosy-cotton-wool-50gmx70.jpg"
+    image: "/images/products/rosy-cotton-wool-50gmx70.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 717,
@@ -9320,7 +10036,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2010",
-    image: "/images/products/rosy-t-p-10sx4-printed-unwrp.jpg"
+    image: "/images/products/rosy-t-p-10sx4-printed-unwrp.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 718,
@@ -9333,7 +10050,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3011",
-    image: "/images/products/rosy-t-p-extra-white-10sx4-wrapped-offer.jpg"
+    image: "/images/products/rosy-t-p-extra-white-10sx4-wrapped-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 719,
@@ -9346,7 +10064,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3008",
-    image: "/images/products/rosy-t-p-printed-10sx4-wrapped.jpg"
+    image: "/images/products/rosy-t-p-printed-10sx4-wrapped.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 720,
@@ -9359,7 +10078,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2022",
-    image: "/images/products/rosy-t-p-wht-2sx20.jpg"
+    image: "/images/products/rosy-t-p-wht-2sx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 721,
@@ -9372,7 +10092,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "SS012",
-    image: "/images/products/rush-scou-pwdr-1kgx12.jpg"
+    image: "/images/products/rush-scou-pwdr-1kgx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 722,
@@ -9385,7 +10106,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "SS012",
-    image: "/images/products/rush-scou-pwdr-1kgx12.jpg"
+    image: "/images/products/rush-scou-pwdr-1kgx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 723,
@@ -9398,7 +10120,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "4323",
-    image: "/images/products/safari-drink-straws-x24pktx180pc.jpg"
+    image: "/images/products/safari-drink-straws-x24pktx180pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 724,
@@ -9411,7 +10134,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "4323",
-    image: "/images/products/safari-drink-straws-x24pktx180pc.jpg"
+    image: "/images/products/safari-drink-straws-x24pktx180pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 725,
@@ -9424,7 +10148,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "BL001",
-    image: "/images/products/safari-lemonade-300ml-x12.jpg"
+    image: "/images/products/safari-lemonade-300ml-x12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 726,
@@ -9437,7 +10162,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2995",
-    image: "/images/products/safari-pure-10x500g-offer.jpg"
+    image: "/images/products/safari-pure-10x500g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 727,
@@ -9450,7 +10176,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3355",
-    image: "/images/products/safari-pure-20x250gm-offer.jpg"
+    image: "/images/products/safari-pure-20x250gm-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 728,
@@ -9463,7 +10190,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "3355",
-    image: "/images/products/safari-pure-20x250gm-offer.jpg"
+    image: "/images/products/safari-pure-20x250gm-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 729,
@@ -9476,7 +10204,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "4PC",
     code: "3355",
-    image: "/images/products/safari-pure-20x250gm-offer.jpg"
+    image: "/images/products/safari-pure-20x250gm-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 730,
@@ -9489,7 +10218,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3352",
-    image: "/images/products/safari-pure-8x1kg-offer.jpg"
+    image: "/images/products/safari-pure-8x1kg-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 731,
@@ -9502,7 +10232,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "MC001",
-    image: "/images/products/sambrook-led-tube-18w-t8.jpg"
+    image: "/images/products/sambrook-led-tube-18w-t8.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 732,
@@ -9515,7 +10246,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "SG001",
-    image: "/images/products/sangare-esl-milk-500ml-x-12.jpg"
+    image: "/images/products/sangare-esl-milk-500ml-x-12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 733,
@@ -9528,7 +10260,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP263",
-    image: "/images/products/satchet-toss-12x1kg-blue-combo.jpg"
+    image: "/images/products/satchet-toss-12x1kg-blue-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 734,
@@ -9541,7 +10274,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP263",
-    image: "/images/products/satchet-toss-12x1kg-blue-combo.jpg"
+    image: "/images/products/satchet-toss-12x1kg-blue-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 735,
@@ -9554,7 +10288,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "KP265",
-    image: "/images/products/satchet-toss-12x1kg-lavendar-combo.jpg"
+    image: "/images/products/satchet-toss-12x1kg-lavendar-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 736,
@@ -9567,7 +10302,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP265",
-    image: "/images/products/satchet-toss-12x1kg-lavendar-combo.jpg"
+    image: "/images/products/satchet-toss-12x1kg-lavendar-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 737,
@@ -9580,7 +10316,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP264",
-    image: "/images/products/satchet-toss-12x1kg-white-combo.jpg"
+    image: "/images/products/satchet-toss-12x1kg-white-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 738,
@@ -9593,7 +10330,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "KP264",
-    image: "/images/products/satchet-toss-12x1kg-white-combo.jpg"
+    image: "/images/products/satchet-toss-12x1kg-white-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 739,
@@ -9606,7 +10344,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP264",
-    image: "/images/products/satchet-toss-12x1kg-white-combo.jpg"
+    image: "/images/products/satchet-toss-12x1kg-white-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 740,
@@ -9619,7 +10358,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP260",
-    image: "/images/products/satchet-toss-24x500g-blue-combo.jpg"
+    image: "/images/products/satchet-toss-24x500g-blue-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 741,
@@ -9632,7 +10372,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP262",
-    image: "/images/products/satchet-toss-24x500g-lavendr-combo.jpg"
+    image: "/images/products/satchet-toss-24x500g-lavendr-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 742,
@@ -9645,7 +10386,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "3PC",
     code: "KP261",
-    image: "/images/products/satchet-toss-24x500g-white-combo.jpg"
+    image: "/images/products/satchet-toss-24x500g-white-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 743,
@@ -9658,7 +10400,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP261",
-    image: "/images/products/satchet-toss-24x500g-white-combo.jpg"
+    image: "/images/products/satchet-toss-24x500g-white-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 744,
@@ -9671,7 +10414,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "KP261",
-    image: "/images/products/satchet-toss-24x500g-white-combo.jpg"
+    image: "/images/products/satchet-toss-24x500g-white-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 745,
@@ -9684,7 +10428,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP261",
-    image: "/images/products/satchet-toss-24x500g-white-combo.jpg"
+    image: "/images/products/satchet-toss-24x500g-white-combo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 746,
@@ -9697,7 +10442,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7550",
-    image: "/images/products/sav-co-pine-12x1-5lt.jpg"
+    image: "/images/products/sav-co-pine-12x1-5lt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 747,
@@ -9710,7 +10456,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7575",
-    image: "/images/products/sav-co-pine-12x1ltr-offer.jpg"
+    image: "/images/products/sav-co-pine-12x1ltr-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 748,
@@ -9723,7 +10470,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7601",
-    image: "/images/products/sav-co-pine-5ltrx4.jpg"
+    image: "/images/products/sav-co-pine-5ltrx4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 749,
@@ -9736,7 +10484,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "TRAY",
     code: "7576",
-    image: "/images/products/sav-co-pine-6x2ltr-offer.jpg"
+    image: "/images/products/sav-co-pine-6x2ltr-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 750,
@@ -9749,7 +10498,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7577",
-    image: "/images/products/sav-co-pine-6x3ltr-offer.jpg"
+    image: "/images/products/sav-co-pine-6x3ltr-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 751,
@@ -9762,7 +10512,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7548",
-    image: "/images/products/sav-mango-1-5ltrx12.jpg"
+    image: "/images/products/sav-mango-1-5ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 752,
@@ -9775,7 +10526,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7542",
-    image: "/images/products/sav-mango-1ltrx12-offer.jpg"
+    image: "/images/products/sav-mango-1ltrx12-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 753,
@@ -9788,7 +10540,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7551",
-    image: "/images/products/sav-mango-2ltrx6-offer.jpg"
+    image: "/images/products/sav-mango-2ltrx6-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 754,
@@ -9801,7 +10554,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7555",
-    image: "/images/products/sav-mango-3ltrx6-offer.jpg"
+    image: "/images/products/sav-mango-3ltrx6-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 755,
@@ -9814,7 +10568,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7571",
-    image: "/images/products/sav-mango-5ltrx4.jpg"
+    image: "/images/products/sav-mango-5ltrx4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 756,
@@ -9827,7 +10582,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7541",
-    image: "/images/products/sav-orange-12x1-5lt.jpg"
+    image: "/images/products/sav-orange-12x1-5lt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 757,
@@ -9840,7 +10596,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7543",
-    image: "/images/products/sav-orange-12x1ltr.jpg"
+    image: "/images/products/sav-orange-12x1ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 758,
@@ -9853,7 +10610,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7545",
-    image: "/images/products/sav-orange-3ltrx6-offer.jpg"
+    image: "/images/products/sav-orange-3ltrx6-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 759,
@@ -9866,7 +10624,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7546",
-    image: "/images/products/sav-orange-4x5lt.jpg"
+    image: "/images/products/sav-orange-4x5lt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 760,
@@ -9879,7 +10638,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7544",
-    image: "/images/products/sav-orange-6x2ltr-offer.jpg"
+    image: "/images/products/sav-orange-6x2ltr-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 761,
@@ -9892,7 +10652,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7567",
-    image: "/images/products/sav-p-appl-12x1ltr-offer.jpg"
+    image: "/images/products/sav-p-appl-12x1ltr-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 762,
@@ -9905,7 +10666,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "TRAY",
     code: "7569",
-    image: "/images/products/sav-p-appl-6x2ltr-offer.jpg"
+    image: "/images/products/sav-p-appl-6x2ltr-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 763,
@@ -9918,7 +10680,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7547",
-    image: "/images/products/sav-p-apple-12x1-5lt-offer.jpg"
+    image: "/images/products/sav-p-apple-12x1-5lt-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 764,
@@ -9931,7 +10694,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7565",
-    image: "/images/products/sav-p-apple-3ltrx6-offer.jpg"
+    image: "/images/products/sav-p-apple-3ltrx6-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 765,
@@ -9944,7 +10708,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7549",
-    image: "/images/products/sav-p-apple-4x5lt.jpg"
+    image: "/images/products/sav-p-apple-4x5lt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 766,
@@ -9957,7 +10722,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1910",
-    image: "/images/products/sav-tropical-12x1ltr-offer.jpg"
+    image: "/images/products/sav-tropical-12x1ltr-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 767,
@@ -9970,7 +10736,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7370",
-    image: "/images/products/schwepes-soda-water-24x500ml.jpg"
+    image: "/images/products/schwepes-soda-water-24x500ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 768,
@@ -9983,7 +10750,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP122",
-    image: "/images/products/seagul-fat-10kg-carton.jpg"
+    image: "/images/products/seagul-fat-10kg-carton.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 769,
@@ -9996,7 +10764,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BCKT",
     code: "KP123",
-    image: "/images/products/seagul-fat-10kg-yellow-plastic-bucket.jpg"
+    image: "/images/products/seagul-fat-10kg-yellow-plastic-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 770,
@@ -10009,7 +10778,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "KP356",
-    image: "/images/products/shark-matches-40sticks-10pcx10pktx10out.jpg"
+    image: "/images/products/shark-matches-40sticks-10pcx10pktx10out.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 771,
@@ -10022,7 +10792,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP356",
-    image: "/images/products/shark-matches-40sticks-10pcx10pktx10out.jpg"
+    image: "/images/products/shark-matches-40sticks-10pcx10pktx10out.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 772,
@@ -10035,7 +10806,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "SI008",
-    image: "/images/products/siera-jumbo-tissue-paper-12pc.jpg"
+    image: "/images/products/siera-jumbo-tissue-paper-12pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 773,
@@ -10048,7 +10820,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "SI007",
-    image: "/images/products/siera-tissue-paper-40s.jpg"
+    image: "/images/products/siera-tissue-paper-40s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 774,
@@ -10061,7 +10834,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP267",
-    image: "/images/products/simplex-t-paper-10sx4-150sheet.jpg"
+    image: "/images/products/simplex-t-paper-10sx4-150sheet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 775,
@@ -10074,7 +10848,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "KP267",
-    image: "/images/products/simplex-t-paper-10sx4-150sheet.jpg"
+    image: "/images/products/simplex-t-paper-10sx4-150sheet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 776,
@@ -10087,7 +10862,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "KP267",
-    image: "/images/products/simplex-t-paper-10sx4-150sheet.jpg"
+    image: "/images/products/simplex-t-paper-10sx4-150sheet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 777,
@@ -10100,7 +10876,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1312",
-    image: "/images/products/soko-atta-2kgx12.jpg"
+    image: "/images/products/soko-atta-2kgx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 778,
@@ -10113,7 +10890,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2926",
-    image: "/images/products/soko-h-b-1kgx24.jpg"
+    image: "/images/products/soko-h-b-1kgx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 779,
@@ -10126,7 +10904,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2925",
-    image: "/images/products/soko-h-b-2kgx12.jpg"
+    image: "/images/products/soko-h-b-2kgx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 780,
@@ -10139,7 +10918,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BAG",
     code: "1310",
-    image: "/images/products/soko-m-m-10kg.jpg"
+    image: "/images/products/soko-m-m-10kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 781,
@@ -10152,7 +10932,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1331",
-    image: "/images/products/soko-m-m-12x2kg.jpg"
+    image: "/images/products/soko-m-m-12x2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 782,
@@ -10165,7 +10946,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1332",
-    image: "/images/products/soko-m-m-24x1kg.jpg"
+    image: "/images/products/soko-m-m-24x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 783,
@@ -10178,7 +10960,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BAG",
     code: "1311",
-    image: "/images/products/soko-m-m-5kg.jpg"
+    image: "/images/products/soko-m-m-5kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 784,
@@ -10191,7 +10974,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "7528",
-    image: "/images/products/soko-uji-wimbi-mix-1kgx20.jpg"
+    image: "/images/products/soko-uji-wimbi-mix-1kgx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 785,
@@ -10204,7 +10988,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "7527",
-    image: "/images/products/soko-uji-wimbi-mix-500gx20.jpg"
+    image: "/images/products/soko-uji-wimbi-mix-500gx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 786,
@@ -10217,7 +11002,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1052",
-    image: "/images/products/soko-ujipure-wimbi-1kgx20.jpg"
+    image: "/images/products/soko-ujipure-wimbi-1kgx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 787,
@@ -10230,7 +11016,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1143",
-    image: "/images/products/soko-ujipure-wimbi-20x500g.jpg"
+    image: "/images/products/soko-ujipure-wimbi-20x500g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 788,
@@ -10243,7 +11030,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KS005",
-    image: "/images/products/solai-aqua-500ml-x-12.jpg"
+    image: "/images/products/solai-aqua-500ml-x-12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 789,
@@ -10256,7 +11044,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "4442",
-    image: "/images/products/solai-aqua-water-1-5ltrx12.jpg"
+    image: "/images/products/solai-aqua-water-1-5ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 790,
@@ -10269,7 +11058,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4442",
-    image: "/images/products/solai-aqua-water-1-5ltrx12.jpg"
+    image: "/images/products/solai-aqua-water-1-5ltrx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 791,
@@ -10282,7 +11072,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4438",
-    image: "/images/products/solai-aqua-water-1ltx12.jpg"
+    image: "/images/products/solai-aqua-water-1ltx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 792,
@@ -10295,7 +11086,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4443",
-    image: "/images/products/solai-aqua-water-5ltrx4.jpg"
+    image: "/images/products/solai-aqua-water-5ltrx4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 793,
@@ -10308,7 +11100,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP377",
-    image: "/images/products/solio-60sticks-10-x-10-x-5.jpg"
+    image: "/images/products/solio-60sticks-10-x-10-x-5.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 794,
@@ -10321,7 +11114,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "KP332",
-    image: "/images/products/solio-ndogo-45stick-matches-10pcx10pktx10outer-combo-offer.jpg"
+    image: "/images/products/solio-ndogo-45stick-matches-10pcx10pktx10outer-combo-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 795,
@@ -10334,7 +11128,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP332",
-    image: "/images/products/solio-ndogo-45stick-matches-10pcx10pktx10outer-combo-offer.jpg"
+    image: "/images/products/solio-ndogo-45stick-matches-10pcx10pktx10outer-combo-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 796,
@@ -10347,7 +11142,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "KP354",
-    image: "/images/products/solio-ndogo-matches-35sticks-10pcx10pktx10out-combo-offer.jpg"
+    image: "/images/products/solio-ndogo-matches-35sticks-10pcx10pktx10out-combo-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 797,
@@ -10360,7 +11156,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP354",
-    image: "/images/products/solio-ndogo-matches-35sticks-10pcx10pktx10out-combo-offer.jpg"
+    image: "/images/products/solio-ndogo-matches-35sticks-10pcx10pktx10out-combo-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 798,
@@ -10373,7 +11170,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "6089",
-    image: "/images/products/sossi-35gmx72-beef-chunks-offer.jpg"
+    image: "/images/products/sossi-35gmx72-beef-chunks-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 799,
@@ -10386,7 +11184,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "6090",
-    image: "/images/products/sossi-70gmx48-beef-chunks-offer.jpg"
+    image: "/images/products/sossi-70gmx48-beef-chunks-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 800,
@@ -10399,7 +11198,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "PR004",
-    image: "/images/products/sossi-classic-145g-x-24pcs-offer.jpg"
+    image: "/images/products/sossi-classic-145g-x-24pcs-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 801,
@@ -10412,7 +11212,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "6081",
-    image: "/images/products/sossi-soya-35gx12x6-offer.jpg"
+    image: "/images/products/sossi-soya-35gx12x6-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 802,
@@ -10425,7 +11226,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "6079",
-    image: "/images/products/sossi-soya-70gx12x4-offer.jpg"
+    image: "/images/products/sossi-soya-70gx12x4-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 803,
@@ -10438,7 +11240,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "VI005",
-    image: "/images/products/special-ezee-d-w-gel-sparkling-lime-500ml-x12.jpg"
+    image: "/images/products/special-ezee-d-w-gel-sparkling-lime-500ml-x12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 804,
@@ -10451,7 +11254,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1125",
-    image: "/images/products/sprite-24x500ml.jpg"
+    image: "/images/products/sprite-24x500ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 805,
@@ -10464,7 +11268,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1121",
-    image: "/images/products/sprite-6x2l.jpg"
+    image: "/images/products/sprite-6x2l.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 806,
@@ -10477,7 +11282,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "7378",
-    image: "/images/products/sprite-1-25ltr-x12.jpg"
+    image: "/images/products/sprite-1-25ltr-x12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 807,
@@ -10490,7 +11296,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4807",
-    image: "/images/products/sprite-pet-350mlx24.jpg"
+    image: "/images/products/sprite-pet-350mlx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 808,
@@ -10503,7 +11310,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "2730",
-    image: "/images/products/sta-soft-200mlx48-lavender.jpg"
+    image: "/images/products/sta-soft-200mlx48-lavender.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 809,
@@ -10516,7 +11324,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2730",
-    image: "/images/products/sta-soft-200mlx48-lavender.jpg"
+    image: "/images/products/sta-soft-200mlx48-lavender.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 810,
@@ -10529,7 +11338,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KEN004",
-    image: "/images/products/steam-power-black-300mlx12.jpg"
+    image: "/images/products/steam-power-black-300mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 811,
@@ -10542,7 +11352,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KEN003",
-    image: "/images/products/steam-power-black-400mlx12.jpg"
+    image: "/images/products/steam-power-black-400mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 812,
@@ -10555,7 +11366,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KEN006",
-    image: "/images/products/steam-recharge-300ml-x-12.jpg"
+    image: "/images/products/steam-recharge-300ml-x-12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 813,
@@ -10568,7 +11380,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KEN005",
-    image: "/images/products/steam-recharge-400mlx12.jpg"
+    image: "/images/products/steam-recharge-400mlx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 814,
@@ -10581,7 +11394,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "VV005",
-    image: "/images/products/sticky-tape-24mmx20mtr-x-144pc.jpg"
+    image: "/images/products/sticky-tape-24mmx20mtr-x-144pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 815,
@@ -10594,7 +11408,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "VV005",
-    image: "/images/products/sticky-tape-24mmx20mtr-x-144pc.jpg"
+    image: "/images/products/sticky-tape-24mmx20mtr-x-144pc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 816,
@@ -10607,7 +11422,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "SBB001",
-    image: "/images/products/sunbright-bulbs-40w-10out-x-10pcs.jpg"
+    image: "/images/products/sunbright-bulbs-40w-10out-x-10pcs.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 817,
@@ -10620,7 +11436,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "SBB001",
-    image: "/images/products/sunbright-bulbs-40w-10out-x-10pcs.jpg"
+    image: "/images/products/sunbright-bulbs-40w-10out-x-10pcs.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 818,
@@ -10633,7 +11450,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF022",
-    image: "/images/products/sunfresh-chilli-sauce-24x260g.jpg"
+    image: "/images/products/sunfresh-chilli-sauce-24x260g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 819,
@@ -10646,7 +11464,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF021",
-    image: "/images/products/sunfresh-tomato-sauce-24x250g-offer.jpg"
+    image: "/images/products/sunfresh-tomato-sauce-24x250g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 820,
@@ -10659,7 +11478,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF023",
-    image: "/images/products/sunfresh-tomato-sauce-24x400g.jpg"
+    image: "/images/products/sunfresh-tomato-sauce-24x400g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 821,
@@ -10672,7 +11492,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "TF025",
-    image: "/images/products/sunfresh-tomato-sauce-4x5kg.jpg"
+    image: "/images/products/sunfresh-tomato-sauce-4x5kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 822,
@@ -10685,7 +11506,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF025",
-    image: "/images/products/sunfresh-tomato-sauce-4x5kg.jpg"
+    image: "/images/products/sunfresh-tomato-sauce-4x5kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 823,
@@ -10698,7 +11520,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BAG",
     code: "1920",
-    image: "/images/products/sunrice-basmati-20kg.jpg"
+    image: "/images/products/sunrice-basmati-20kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 824,
@@ -10711,7 +11534,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1901",
-    image: "/images/products/sunrice-basmati-24x1kg.jpg"
+    image: "/images/products/sunrice-basmati-24x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 825,
@@ -10724,7 +11548,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1916",
-    image: "/images/products/sunrice-basmati-25kg-white-bag.jpg"
+    image: "/images/products/sunrice-basmati-25kg-white-bag.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 826,
@@ -10737,7 +11562,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BAG",
     code: "1916",
-    image: "/images/products/sunrice-basmati-25kg-white-bag.jpg"
+    image: "/images/products/sunrice-basmati-25kg-white-bag.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 827,
@@ -10750,7 +11576,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1904",
-    image: "/images/products/sunrice-biryani-12x2kg.jpg"
+    image: "/images/products/sunrice-biryani-12x2kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 828,
@@ -10763,7 +11590,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1905",
-    image: "/images/products/sunrice-biryani-24x1kg.jpg"
+    image: "/images/products/sunrice-biryani-24x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 829,
@@ -10776,7 +11604,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "1907",
-    image: "/images/products/sunrice-biryani-5x5kg.jpg"
+    image: "/images/products/sunrice-biryani-5x5kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 830,
@@ -10789,7 +11618,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1907",
-    image: "/images/products/sunrice-biryani-5x5kg.jpg"
+    image: "/images/products/sunrice-biryani-5x5kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 831,
@@ -10802,7 +11632,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "2006",
-    image: "/images/products/t-care-baby-earbuds-tin-100s.jpg"
+    image: "/images/products/t-care-baby-earbuds-tin-100s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 832,
@@ -10815,7 +11646,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2006",
-    image: "/images/products/t-care-baby-earbuds-tin-100s.jpg"
+    image: "/images/products/t-care-baby-earbuds-tin-100s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 833,
@@ -10828,7 +11660,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "3015",
-    image: "/images/products/t-care-earbuds-100sx6-ptk.jpg"
+    image: "/images/products/t-care-earbuds-100sx6-ptk.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 834,
@@ -10841,7 +11674,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3015",
-    image: "/images/products/t-care-earbuds-100sx6-ptk.jpg"
+    image: "/images/products/t-care-earbuds-100sx6-ptk.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 835,
@@ -10854,7 +11688,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "KT018",
-    image: "/images/products/tagd-new-tea-bag-cat-10x100x2g.jpg"
+    image: "/images/products/tagd-new-tea-bag-cat-10x100x2g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 836,
@@ -10867,7 +11702,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KT018",
-    image: "/images/products/tagd-new-tea-bag-cat-10x100x2g.jpg"
+    image: "/images/products/tagd-new-tea-bag-cat-10x100x2g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 837,
@@ -10880,7 +11716,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "TT005",
-    image: "/images/products/tamtamz-milk-candy-20-x80pcs.jpg"
+    image: "/images/products/tamtamz-milk-candy-20-x80pcs.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 838,
@@ -10893,7 +11730,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TT005",
-    image: "/images/products/tamtamz-milk-candy-20-x80pcs.jpg"
+    image: "/images/products/tamtamz-milk-candy-20-x80pcs.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 839,
@@ -10906,7 +11744,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "2PKT",
     code: "TT005",
-    image: "/images/products/tamtamz-milk-candy-20-x80pcs.jpg"
+    image: "/images/products/tamtamz-milk-candy-20-x80pcs.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 840,
@@ -10919,7 +11758,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "3367",
-    image: "/images/products/tea-bag-cat-10x100x2g-tagless-offer.jpg"
+    image: "/images/products/tea-bag-cat-10x100x2g-tagless-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 841,
@@ -10932,7 +11772,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3367",
-    image: "/images/products/tea-bag-cat-10x100x2g-tagless-offer.jpg"
+    image: "/images/products/tea-bag-cat-10x100x2g-tagless-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 842,
@@ -10945,7 +11786,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3366",
-    image: "/images/products/tea-bag-econ-20x50x2g-tagless-offer.jpg"
+    image: "/images/products/tea-bag-econ-20x50x2g-tagless-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 843,
@@ -10958,7 +11800,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "3366",
-    image: "/images/products/tea-bag-econ-20x50x2g-tagless-offer.jpg"
+    image: "/images/products/tea-bag-econ-20x50x2g-tagless-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 844,
@@ -10971,7 +11814,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "4PC",
     code: "3366",
-    image: "/images/products/tea-bag-econ-20x50x2g-tagless-offer.jpg"
+    image: "/images/products/tea-bag-econ-20x50x2g-tagless-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 845,
@@ -10984,7 +11828,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3445",
-    image: "/images/products/tea-bag-jum-10x100x2g-tagd-stnd-offer.jpg"
+    image: "/images/products/tea-bag-jum-10x100x2g-tagd-stnd-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 846,
@@ -10997,7 +11842,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3364",
-    image: "/images/products/tea-bag-std-enve-10x100x2g-offer.jpg"
+    image: "/images/products/tea-bag-std-enve-10x100x2g-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 847,
@@ -11010,7 +11856,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3365",
-    image: "/images/products/tea-bags-20x50x2g-enve-ecn-offer.jpg"
+    image: "/images/products/tea-bags-20x50x2g-enve-ecn-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 848,
@@ -11023,7 +11870,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1691",
-    image: "/images/products/tea-bags-econ-20x50x2g-tag-offer.jpg"
+    image: "/images/products/tea-bags-econ-20x50x2g-tag-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 849,
@@ -11036,7 +11884,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2513",
-    image: "/images/products/tena-c-tail-serv-100sx60.jpg"
+    image: "/images/products/tena-c-tail-serv-100sx60.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 850,
@@ -11049,7 +11898,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "2513",
-    image: "/images/products/tena-c-tail-serv-100sx60.jpg"
+    image: "/images/products/tena-c-tail-serv-100sx60.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 851,
@@ -11062,7 +11912,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "1180",
-    image: "/images/products/tena-earbuds-100sx6doz-tin.jpg"
+    image: "/images/products/tena-earbuds-100sx6doz-tin.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 852,
@@ -11075,7 +11926,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1180",
-    image: "/images/products/tena-earbuds-100sx6doz-tin.jpg"
+    image: "/images/products/tena-earbuds-100sx6doz-tin.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 853,
@@ -11088,7 +11940,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BOX",
     code: "6299",
-    image: "/images/products/tena-facial-towel-48x80s.jpg"
+    image: "/images/products/tena-facial-towel-48x80s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 854,
@@ -11101,7 +11954,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "6299",
-    image: "/images/products/tena-facial-towel-48x80s.jpg"
+    image: "/images/products/tena-facial-towel-48x80s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 855,
@@ -11114,7 +11968,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "6299",
-    image: "/images/products/tena-facial-towel-48x80s.jpg"
+    image: "/images/products/tena-facial-towel-48x80s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 856,
@@ -11127,7 +11982,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3067",
-    image: "/images/products/tena-jumbo-bthrm-largex12pc-200m.jpg"
+    image: "/images/products/tena-jumbo-bthrm-largex12pc-200m.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 857,
@@ -11140,7 +11996,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3066",
-    image: "/images/products/tena-jumbo-bthrm-smlx12pc-100m.jpg"
+    image: "/images/products/tena-jumbo-bthrm-smlx12pc-100m.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 858,
@@ -11153,7 +12010,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "1106",
-    image: "/images/products/tena-pocket-tissue-3lpy12.jpg"
+    image: "/images/products/tena-pocket-tissue-3lpy12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 859,
@@ -11166,7 +12024,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1106",
-    image: "/images/products/tena-pocket-tissue-3lpy12.jpg"
+    image: "/images/products/tena-pocket-tissue-3lpy12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 860,
@@ -11179,7 +12038,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "3089",
-    image: "/images/products/tena-serv-lge-48x100s.jpg"
+    image: "/images/products/tena-serv-lge-48x100s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 861,
@@ -11192,7 +12052,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3089",
-    image: "/images/products/tena-serv-lge-48x100s.jpg"
+    image: "/images/products/tena-serv-lge-48x100s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 862,
@@ -11205,7 +12066,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3090",
-    image: "/images/products/tena-serviettes-100sx18-offer.jpg"
+    image: "/images/products/tena-serviettes-100sx18-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 863,
@@ -11218,7 +12080,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1045",
-    image: "/images/products/tena-t-p-unwrap-10sx4-white-banded8s.jpg"
+    image: "/images/products/tena-t-p-unwrap-10sx4-white-banded8s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 864,
@@ -11231,7 +12094,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2975",
-    image: "/images/products/tena-wht-t-p-4sx12.jpg"
+    image: "/images/products/tena-wht-t-p-4sx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 865,
@@ -11244,7 +12108,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2977",
-    image: "/images/products/tena-wht-twin-2sx20.jpg"
+    image: "/images/products/tena-wht-twin-2sx20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 866,
@@ -11257,7 +12122,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "3041",
-    image: "/images/products/tena-wte-t-p-10sx4-wrap.jpg"
+    image: "/images/products/tena-wte-t-p-10sx4-wrap.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 867,
@@ -11270,7 +12136,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "2976",
-    image: "/images/products/tena-wte-t-p-8sx6.jpg"
+    image: "/images/products/tena-wte-t-p-8sx6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 868,
@@ -11283,7 +12150,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "4504",
-    image: "/images/products/tena-wte-t-roll-40s-offer.jpg"
+    image: "/images/products/tena-wte-t-roll-40s-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 869,
@@ -11296,7 +12164,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "6405",
-    image: "/images/products/tendercare-earbuds-100stinx6doz.jpg"
+    image: "/images/products/tendercare-earbuds-100stinx6doz.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 870,
@@ -11309,7 +12178,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "6405",
-    image: "/images/products/tendercare-earbuds-100stinx6doz.jpg"
+    image: "/images/products/tendercare-earbuds-100stinx6doz.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 871,
@@ -11322,7 +12192,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "AC005",
-    image: "/images/products/tendercare-wipes-80sx12-pkt.jpg"
+    image: "/images/products/tendercare-wipes-80sx12-pkt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 872,
@@ -11335,7 +12206,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "AC005",
-    image: "/images/products/tendercare-wipes-80sx12-pkt.jpg"
+    image: "/images/products/tendercare-wipes-80sx12-pkt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 873,
@@ -11348,7 +12220,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4759",
-    image: "/images/products/t-heat-beef-masala-100gx6-jars.jpg"
+    image: "/images/products/t-heat-beef-masala-100gx6-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 874,
@@ -11361,7 +12234,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH02",
-    image: "/images/products/t-heat-beef-masala-36x10g-sach.jpg"
+    image: "/images/products/t-heat-beef-masala-36x10g-sach.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 875,
@@ -11374,7 +12248,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH51",
-    image: "/images/products/t-heat-biryani-masala-6-x-45gm.jpg"
+    image: "/images/products/t-heat-biryani-masala-6-x-45gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 876,
@@ -11387,7 +12262,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH50",
-    image: "/images/products/t-heat-biryani-masala-6-x100gms.jpg"
+    image: "/images/products/t-heat-biryani-masala-6-x100gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 877,
@@ -11400,7 +12276,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4742",
-    image: "/images/products/t-heat-black-pepper-6x45g-jars.jpg"
+    image: "/images/products/t-heat-black-pepper-6x45g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 878,
@@ -11413,7 +12290,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH67",
-    image: "/images/products/t-heat-cardamoms-ground-6-x-100.jpg"
+    image: "/images/products/t-heat-cardamoms-ground-6-x-100.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 879,
@@ -11426,7 +12304,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH19",
-    image: "/images/products/t-heat-chicken-masala-36x10g.jpg"
+    image: "/images/products/t-heat-chicken-masala-36x10g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 880,
@@ -11439,7 +12318,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4700",
-    image: "/images/products/t-heat-cinnamon-6x100g-jar.jpg"
+    image: "/images/products/t-heat-cinnamon-6x100g-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 881,
@@ -11452,7 +12332,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH53",
-    image: "/images/products/t-heat-citric-acid-50gm-x-6.jpg"
+    image: "/images/products/t-heat-citric-acid-50gm-x-6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 882,
@@ -11465,7 +12346,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH75",
-    image: "/images/products/t-heat-citric-acid-6-x-100gms.jpg"
+    image: "/images/products/t-heat-citric-acid-6-x-100gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 883,
@@ -11478,7 +12360,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH69",
-    image: "/images/products/t-heat-cloves-ground-6-x-100gms.jpg"
+    image: "/images/products/t-heat-cloves-ground-6-x-100gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 884,
@@ -11491,7 +12374,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH68",
-    image: "/images/products/t-heat-cloves-ground-6-x-45gms.jpg"
+    image: "/images/products/t-heat-cloves-ground-6-x-45gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 885,
@@ -11504,7 +12388,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4757",
-    image: "/images/products/t-heat-coriander-grnd100gx6.jpg"
+    image: "/images/products/t-heat-coriander-grnd100gx6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 886,
@@ -11517,7 +12402,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4717",
-    image: "/images/products/t-heat-crisps-100gmx24-salted.jpg"
+    image: "/images/products/t-heat-crisps-100gmx24-salted.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 887,
@@ -11530,7 +12416,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4697",
-    image: "/images/products/t-heat-crisps-50gmx48-cheese-onion.jpg"
+    image: "/images/products/t-heat-crisps-50gmx48-cheese-onion.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 888,
@@ -11543,7 +12430,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4756",
-    image: "/images/products/t-heat-crisps-50gmx48-chilli-lemon.jpg"
+    image: "/images/products/t-heat-crisps-50gmx48-chilli-lemon.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 889,
@@ -11556,7 +12444,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4752",
-    image: "/images/products/t-heat-crisps-50gmx48-salt-vinegar.jpg"
+    image: "/images/products/t-heat-crisps-50gmx48-salt-vinegar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 890,
@@ -11569,7 +12458,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4716",
-    image: "/images/products/t-heat-crisps-50gmx48-salted.jpg"
+    image: "/images/products/t-heat-crisps-50gmx48-salted.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 891,
@@ -11582,7 +12472,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4718",
-    image: "/images/products/t-heat-crisps-50gmx48-tomato.jpg"
+    image: "/images/products/t-heat-crisps-50gmx48-tomato.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 892,
@@ -11595,7 +12486,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TRH44",
-    image: "/images/products/t-heat-crisps-cheese-onion-12x200g.jpg"
+    image: "/images/products/t-heat-crisps-cheese-onion-12x200g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 893,
@@ -11608,7 +12500,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TRH23",
-    image: "/images/products/t-heat-crisps-chilli-lemon-12x-200gms.jpg"
+    image: "/images/products/t-heat-crisps-chilli-lemon-12x-200gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 894,
@@ -11621,7 +12514,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TRH42",
-    image: "/images/products/t-heat-crisps-heroes-salted-36x40g.jpg"
+    image: "/images/products/t-heat-crisps-heroes-salted-36x40g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 895,
@@ -11634,7 +12528,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TRH43",
-    image: "/images/products/t-heat-crisps-heroes-tomato-36x40g.jpg"
+    image: "/images/products/t-heat-crisps-heroes-tomato-36x40g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 896,
@@ -11647,7 +12542,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TRH25",
-    image: "/images/products/t-heat-crisps-salted-12-x-200gms.jpg"
+    image: "/images/products/t-heat-crisps-salted-12-x-200gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 897,
@@ -11660,7 +12556,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TRH26",
-    image: "/images/products/t-heat-crisps-tomato-12-x-200gms.jpg"
+    image: "/images/products/t-heat-crisps-tomato-12-x-200gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 898,
@@ -11673,7 +12570,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4760",
-    image: "/images/products/t-heat-cuminseed-grnd-100gx6.jpg"
+    image: "/images/products/t-heat-cuminseed-grnd-100gx6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 899,
@@ -11686,7 +12584,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH38",
-    image: "/images/products/t-heat-cuminseeds-ground-6x45g-jar.jpg"
+    image: "/images/products/t-heat-cuminseeds-ground-6x45g-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 900,
@@ -11699,7 +12598,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH01",
-    image: "/images/products/t-heat-curry-powder-36x8g-sach.jpg"
+    image: "/images/products/t-heat-curry-powder-36x8g-sach.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 901,
@@ -11712,7 +12612,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH65",
-    image: "/images/products/t-heat-dhana-jeera-6-x-50gms.jpg"
+    image: "/images/products/t-heat-dhana-jeera-6-x-50gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 902,
@@ -11725,7 +12626,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH03",
-    image: "/images/products/t-heat-ginger-ground-36x10g-sach.jpg"
+    image: "/images/products/t-heat-ginger-ground-36x10g-sach.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 903,
@@ -11738,7 +12640,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH21",
-    image: "/images/products/t-heat-githeri-masala-sachets-36x-8gms.jpg"
+    image: "/images/products/t-heat-githeri-masala-sachets-36x-8gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 904,
@@ -11751,7 +12654,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TRH14",
-    image: "/images/products/t-heat-kenyan-chevda-24x50g-chilli-lemon.jpg"
+    image: "/images/products/t-heat-kenyan-chevda-24x50g-chilli-lemon.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 905,
@@ -11764,7 +12668,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH10",
-    image: "/images/products/t-heat-kenyan-chevda-340gx6-chilli-lemon.jpg"
+    image: "/images/products/t-heat-kenyan-chevda-340gx6-chilli-lemon.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 906,
@@ -11777,7 +12682,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TRH11",
-    image: "/images/products/t-heat-kenyan-chevda-50gx24-mild.jpg"
+    image: "/images/products/t-heat-kenyan-chevda-50gx24-mild.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 907,
@@ -11790,7 +12696,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TRH18",
-    image: "/images/products/t-heat-kenyan-chevda-6x150g-chilli-lemon.jpg"
+    image: "/images/products/t-heat-kenyan-chevda-6x150g-chilli-lemon.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 908,
@@ -11803,7 +12710,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TRH15",
-    image: "/images/products/t-heat-kenyan-chevda-6x150g-mild.jpg"
+    image: "/images/products/t-heat-kenyan-chevda-6x150g-mild.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 909,
@@ -11816,7 +12724,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TRH16",
-    image: "/images/products/t-heat-kenyan-chevda-6x150gm-sweet-tamu.jpg"
+    image: "/images/products/t-heat-kenyan-chevda-6x150gm-sweet-tamu.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 910,
@@ -11829,7 +12738,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH66",
-    image: "/images/products/t-heat-mint-rubbed-6-x-20gms.jpg"
+    image: "/images/products/t-heat-mint-rubbed-6-x-20gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 911,
@@ -11842,7 +12752,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4770",
-    image: "/images/products/t-heat-mixed-spices-45gx6-jars.jpg"
+    image: "/images/products/t-heat-mixed-spices-45gx6-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 912,
@@ -11855,7 +12766,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH62",
-    image: "/images/products/t-heat-nutmeg-50gm-x-6.jpg"
+    image: "/images/products/t-heat-nutmeg-50gm-x-6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 913,
@@ -11868,7 +12780,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH70",
-    image: "/images/products/t-heat-nutmeg-ground-6-x-100gms.jpg"
+    image: "/images/products/t-heat-nutmeg-ground-6-x-100gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 914,
@@ -11881,7 +12794,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH60",
-    image: "/images/products/t-heat-p-masala-whole-100g-x-6.jpg"
+    image: "/images/products/t-heat-p-masala-whole-100g-x-6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 915,
@@ -11894,7 +12808,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4754",
-    image: "/images/products/t-heat-paprika-6x100g-jars.jpg"
+    image: "/images/products/t-heat-paprika-6x100g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 916,
@@ -11907,7 +12822,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4754",
-    image: "/images/products/t-heat-paprika-6x100g-jars.jpg"
+    image: "/images/products/t-heat-paprika-6x100g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 917,
@@ -11920,7 +12836,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4753",
-    image: "/images/products/t-heat-paprika-6x45g-jars.jpg"
+    image: "/images/products/t-heat-paprika-6x45g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 918,
@@ -11933,7 +12850,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4708",
-    image: "/images/products/t-heat-pilau-masala-45gx6-jars.jpg"
+    image: "/images/products/t-heat-pilau-masala-45gx6-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 919,
@@ -11946,7 +12864,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH49",
-    image: "/images/products/t-heat-potato-sticks-masala-sticks-12x70gms.jpg"
+    image: "/images/products/t-heat-potato-sticks-masala-sticks-12x70gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 920,
@@ -11959,7 +12878,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH30",
-    image: "/images/products/t-heat-safari-puffs-bbq-48-x12gms.jpg"
+    image: "/images/products/t-heat-safari-puffs-bbq-48-x12gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 921,
@@ -11972,7 +12892,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH31",
-    image: "/images/products/t-heat-safari-puffs-cheese-48-x-12gms.jpg"
+    image: "/images/products/t-heat-safari-puffs-cheese-48-x-12gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 922,
@@ -11985,7 +12906,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH32",
-    image: "/images/products/t-heat-safari-puffs-chilli-lemon-48x12g.jpg"
+    image: "/images/products/t-heat-safari-puffs-chilli-lemon-48x12g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 923,
@@ -11998,7 +12920,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH33",
-    image: "/images/products/t-heat-safari-puffs-tomato-48-x-12gm.jpg"
+    image: "/images/products/t-heat-safari-puffs-tomato-48-x-12gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 924,
@@ -12011,7 +12934,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH72",
-    image: "/images/products/t-heat-salad-seasoning-6-x-50gm.jpg"
+    image: "/images/products/t-heat-salad-seasoning-6-x-50gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 925,
@@ -12024,7 +12948,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4711",
-    image: "/images/products/t-heat-tea-masala-100gx6-jars.jpg"
+    image: "/images/products/t-heat-tea-masala-100gx6-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 926,
@@ -12037,7 +12962,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4775",
-    image: "/images/products/t-heat-tea-masala-36x10g-sach.jpg"
+    image: "/images/products/t-heat-tea-masala-36x10g-sach.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 927,
@@ -12050,7 +12976,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH76",
-    image: "/images/products/t-heat-thyme-rubbed-6-x-20gms.jpg"
+    image: "/images/products/t-heat-thyme-rubbed-6-x-20gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 928,
@@ -12063,7 +12990,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4705",
-    image: "/images/products/t-heat-turmeric-100gx6.jpg"
+    image: "/images/products/t-heat-turmeric-100gx6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 929,
@@ -12076,7 +13004,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4704",
-    image: "/images/products/t-heat-turmeric-45gx6.jpg"
+    image: "/images/products/t-heat-turmeric-45gx6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 930,
@@ -12089,7 +13018,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "TRH64",
-    image: "/images/products/t-heat-white-pepper-50gm-x6.jpg"
+    image: "/images/products/t-heat-white-pepper-50gm-x6.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 931,
@@ -12102,7 +13032,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BCKT",
     code: "KP019",
-    image: "/images/products/tilly-fat-10kg-short-plastic-bucket.jpg"
+    image: "/images/products/tilly-fat-10kg-short-plastic-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 932,
@@ -12115,7 +13046,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP018",
-    image: "/images/products/tilly-fat-10kg-wht-ctn.jpg"
+    image: "/images/products/tilly-fat-10kg-wht-ctn.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 933,
@@ -12128,7 +13060,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP014",
-    image: "/images/products/tilly-fat-12x1kg-plastic-bucket.jpg"
+    image: "/images/products/tilly-fat-12x1kg-plastic-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 934,
@@ -12141,7 +13074,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BCKT",
     code: "KP020",
-    image: "/images/products/tilly-fat-17kg-plastic-bucket.jpg"
+    image: "/images/products/tilly-fat-17kg-plastic-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 935,
@@ -12154,7 +13088,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP012",
-    image: "/images/products/tilly-fat-24x250gm-plastic-tub.jpg"
+    image: "/images/products/tilly-fat-24x250gm-plastic-tub.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 936,
@@ -12167,7 +13102,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP013",
-    image: "/images/products/tilly-fat-24x500gm-plastic-tub.jpg"
+    image: "/images/products/tilly-fat-24x500gm-plastic-tub.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 937,
@@ -12180,7 +13116,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP017",
-    image: "/images/products/tilly-fat-5kg-ctn.jpg"
+    image: "/images/products/tilly-fat-5kg-ctn.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 938,
@@ -12193,7 +13130,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP015",
-    image: "/images/products/tilly-fat-6x2kg-plastic-tub.jpg"
+    image: "/images/products/tilly-fat-6x2kg-plastic-tub.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 939,
@@ -12206,7 +13144,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1047",
-    image: "/images/products/toilex-white-servi-18s.jpg"
+    image: "/images/products/toilex-white-servi-18s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 940,
@@ -12219,7 +13158,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1047",
-    image: "/images/products/toilex-white-servi-18s.jpg"
+    image: "/images/products/toilex-white-servi-18s.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 941,
@@ -12232,7 +13172,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "4329",
-    image: "/images/products/topex-500mlx12-colours.jpg"
+    image: "/images/products/topex-500mlx12-colours.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 942,
@@ -12245,7 +13186,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4329",
-    image: "/images/products/topex-500mlx12-colours.jpg"
+    image: "/images/products/topex-500mlx12-colours.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 943,
@@ -12258,7 +13200,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "3947",
-    image: "/images/products/topex-750mlx12-colours.jpg"
+    image: "/images/products/topex-750mlx12-colours.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 944,
@@ -12271,7 +13214,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3947",
-    image: "/images/products/topex-750mlx12-colours.jpg"
+    image: "/images/products/topex-750mlx12-colours.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 945,
@@ -12284,7 +13228,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4336",
-    image: "/images/products/topex-bleach-250mlx18-lemon.jpg"
+    image: "/images/products/topex-bleach-250mlx18-lemon.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 946,
@@ -12297,7 +13242,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "4338",
-    image: "/images/products/topex-bleach-500mlx12-lemon.jpg"
+    image: "/images/products/topex-bleach-500mlx12-lemon.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 947,
@@ -12310,7 +13256,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4338",
-    image: "/images/products/topex-bleach-500mlx12-lemon.jpg"
+    image: "/images/products/topex-bleach-500mlx12-lemon.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 948,
@@ -12323,7 +13270,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "4330",
-    image: "/images/products/topex-bleach-5ltrx4-regular.jpg"
+    image: "/images/products/topex-bleach-5ltrx4-regular.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 949,
@@ -12336,7 +13284,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4330",
-    image: "/images/products/topex-bleach-5ltrx4-regular.jpg"
+    image: "/images/products/topex-bleach-5ltrx4-regular.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 950,
@@ -12349,7 +13298,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "3963",
-    image: "/images/products/topex-bleach-6x2.25ltr-reg.jpg"
+    image: "/images/products/topex-bleach-6x2.25ltr-reg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 951,
@@ -12362,7 +13312,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3963",
-    image: "/images/products/topex-bleach-6x2.25ltr-reg.jpg"
+    image: "/images/products/topex-bleach-6x2.25ltr-reg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 952,
@@ -12375,7 +13326,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "3972",
-    image: "/images/products/topex-bleach-750mlx12-lemon.jpg"
+    image: "/images/products/topex-bleach-750mlx12-lemon.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 953,
@@ -12388,7 +13340,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3972",
-    image: "/images/products/topex-bleach-750mlx12-lemon.jpg"
+    image: "/images/products/topex-bleach-750mlx12-lemon.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 954,
@@ -12401,7 +13354,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "3976",
-    image: "/images/products/topex-bleach-750mlx12-reg.jpg"
+    image: "/images/products/topex-bleach-750mlx12-reg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 955,
@@ -12414,7 +13368,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3976",
-    image: "/images/products/topex-bleach-750mlx12-reg.jpg"
+    image: "/images/products/topex-bleach-750mlx12-reg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 956,
@@ -12427,7 +13382,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4326",
-    image: "/images/products/topex-colours-18x250ml.jpg"
+    image: "/images/products/topex-colours-18x250ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 957,
@@ -12440,7 +13396,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "4344",
-    image: "/images/products/topex-colours-8x1.5ltr.jpg"
+    image: "/images/products/topex-colours-8x1.5ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 958,
@@ -12453,7 +13410,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4344",
-    image: "/images/products/topex-colours-8x1.5ltr.jpg"
+    image: "/images/products/topex-colours-8x1.5ltr.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 959,
@@ -12466,7 +13424,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "4003",
-    image: "/images/products/topex-window-cleaner-24x300ml.jpg"
+    image: "/images/products/topex-window-cleaner-24x300ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 960,
@@ -12479,7 +13438,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4003",
-    image: "/images/products/topex-window-cleaner-24x300ml.jpg"
+    image: "/images/products/topex-window-cleaner-24x300ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 961,
@@ -12492,7 +13452,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "ALT002",
-    image: "/images/products/torta-rolls-chocolate-cake-6x24x22g.jpg"
+    image: "/images/products/torta-rolls-chocolate-cake-6x24x22g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 962,
@@ -12505,7 +13466,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "ALT002",
-    image: "/images/products/torta-rolls-chocolate-cake-6x24x22g.jpg"
+    image: "/images/products/torta-rolls-chocolate-cake-6x24x22g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 963,
@@ -12518,7 +13480,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "ALT004",
-    image: "/images/products/torta-rolls-strawberry-cake-6x-24x22gm.jpg"
+    image: "/images/products/torta-rolls-strawberry-cake-6x-24x22gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 964,
@@ -12531,7 +13494,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "ALT004",
-    image: "/images/products/torta-rolls-strawberry-cake-6x-24x22gm.jpg"
+    image: "/images/products/torta-rolls-strawberry-cake-6x-24x22gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 965,
@@ -12544,7 +13508,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "ALT001",
-    image: "/images/products/torta-rolls-vanilla-cake-6x24x22gm.jpg"
+    image: "/images/products/torta-rolls-vanilla-cake-6x24x22gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 966,
@@ -12557,7 +13522,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "ALT001",
-    image: "/images/products/torta-rolls-vanilla-cake-6x24x22gm.jpg"
+    image: "/images/products/torta-rolls-vanilla-cake-6x24x22gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 967,
@@ -12570,7 +13536,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP087",
-    image: "/images/products/toss-blue-12x500gm-plastic-container-large.jpg"
+    image: "/images/products/toss-blue-12x500gm-plastic-container-large.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 968,
@@ -12583,7 +13550,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP087",
-    image: "/images/products/toss-blue-12x500gm-plastic-container-large.jpg"
+    image: "/images/products/toss-blue-12x500gm-plastic-container-large.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 969,
@@ -12596,7 +13564,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP184",
-    image: "/images/products/toss-blue-20gx120-satch.jpg"
+    image: "/images/products/toss-blue-20gx120-satch.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 970,
@@ -12609,7 +13578,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP086",
-    image: "/images/products/toss-blue-24x200gm-plastic-container.jpg"
+    image: "/images/products/toss-blue-24x200gm-plastic-container.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 971,
@@ -12622,7 +13592,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BCKT",
     code: "KP090",
-    image: "/images/products/toss-blue-3.5kg-plastic-bucket.jpg"
+    image: "/images/products/toss-blue-3.5kg-plastic-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 972,
@@ -12635,7 +13606,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP084",
-    image: "/images/products/toss-blue-36x100gm-container-handy.jpg"
+    image: "/images/products/toss-blue-36x100gm-container-handy.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 973,
@@ -12648,7 +13620,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BAG",
     code: "KP092",
-    image: "/images/products/toss-blue-5kg-bag.jpg"
+    image: "/images/products/toss-blue-5kg-bag.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 974,
@@ -12661,7 +13634,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP088",
-    image: "/images/products/toss-blue-6x1kg-plastic-container.jpg"
+    image: "/images/products/toss-blue-6x1kg-plastic-container.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 975,
@@ -12674,7 +13648,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP088",
-    image: "/images/products/toss-blue-6x1kg-plastic-container.jpg"
+    image: "/images/products/toss-blue-6x1kg-plastic-container.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 976,
@@ -12687,7 +13662,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP166",
-    image: "/images/products/toss-bright-12x500gm-large-extra-white.jpg"
+    image: "/images/products/toss-bright-12x500gm-large-extra-white.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 977,
@@ -12700,7 +13676,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP185",
-    image: "/images/products/toss-bright-20gx120-satch.jpg"
+    image: "/images/products/toss-bright-20gx120-satch.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 978,
@@ -12713,7 +13690,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP174",
-    image: "/images/products/toss-bright-24x200gm-med.jpg"
+    image: "/images/products/toss-bright-24x200gm-med.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 979,
@@ -12726,7 +13704,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BCKT",
     code: "KP173",
-    image: "/images/products/toss-bright-3.5kg-bkt.jpg"
+    image: "/images/products/toss-bright-3.5kg-bkt.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 980,
@@ -12739,7 +13718,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP175",
-    image: "/images/products/toss-bright-6x1kg.jpg"
+    image: "/images/products/toss-bright-6x1kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 981,
@@ -12752,7 +13732,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP187",
-    image: "/images/products/toss-lav-24x200gm-plastic-container.jpg"
+    image: "/images/products/toss-lav-24x200gm-plastic-container.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 982,
@@ -12765,7 +13746,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP183",
-    image: "/images/products/toss-lavender-12x500gm.jpg"
+    image: "/images/products/toss-lavender-12x500gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 983,
@@ -12778,7 +13760,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP186",
-    image: "/images/products/toss-lavender-20gx120-satc.jpg"
+    image: "/images/products/toss-lavender-20gx120-satc.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 984,
@@ -12791,7 +13774,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BCKT",
     code: "KP094",
-    image: "/images/products/toss-machine-wash-1.5kg-plastic-bucket.jpg"
+    image: "/images/products/toss-machine-wash-1.5kg-plastic-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 985,
@@ -12804,7 +13788,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BCKT",
     code: "KP319",
-    image: "/images/products/toss-new-machine-wash-3kg-plastic-bucket.jpg"
+    image: "/images/products/toss-new-machine-wash-3kg-plastic-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 986,
@@ -12817,7 +13802,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP085",
-    image: "/images/products/toss-pink-12x500g-sensitive-plastic-container.jpg"
+    image: "/images/products/toss-pink-12x500g-sensitive-plastic-container.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 987,
@@ -12830,7 +13816,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP085",
-    image: "/images/products/toss-pink-12x500g-sensitive-plastic-container.jpg"
+    image: "/images/products/toss-pink-12x500g-sensitive-plastic-container.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 988,
@@ -12843,7 +13830,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP142",
-    image: "/images/products/toss-pink-24x200gm-plst-cont.jpg"
+    image: "/images/products/toss-pink-24x200gm-plst-cont.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 989,
@@ -12856,7 +13844,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BCKT",
     code: "KP144",
-    image: "/images/products/toss-pink-3.5kg-plastic-cont.jpg"
+    image: "/images/products/toss-pink-3.5kg-plastic-cont.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 990,
@@ -12869,7 +13858,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP143",
-    image: "/images/products/toss-pink-6x1kg-plastic-cont.jpg"
+    image: "/images/products/toss-pink-6x1kg-plastic-cont.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 991,
@@ -12882,7 +13872,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP349",
-    image: "/images/products/toss-white-120-x-20gm-sachet.jpg"
+    image: "/images/products/toss-white-120-x-20gm-sachet.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 992,
@@ -12895,7 +13886,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP120",
-    image: "/images/products/toss-white-12x500gm-plastic-container.jpg"
+    image: "/images/products/toss-white-12x500gm-plastic-container.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 993,
@@ -12908,7 +13900,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP119",
-    image: "/images/products/toss-white-24x200gm-plastic-container.jpg"
+    image: "/images/products/toss-white-24x200gm-plastic-container.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 994,
@@ -12921,7 +13914,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BCKT",
     code: "KP128",
-    image: "/images/products/toss-white-3.5kg-bucket.jpg"
+    image: "/images/products/toss-white-3.5kg-bucket.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 995,
@@ -12934,7 +13928,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BAG",
     code: "KP329",
-    image: "/images/products/toss-white-5kg-bag.jpg"
+    image: "/images/products/toss-white-5kg-bag.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 996,
@@ -12947,7 +13942,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "KP121",
-    image: "/images/products/toss-white-6x1kg-plastic-container.jpg"
+    image: "/images/products/toss-white-6x1kg-plastic-container.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 997,
@@ -12960,7 +13956,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP121",
-    image: "/images/products/toss-white-6x1kg-plastic-container.jpg"
+    image: "/images/products/toss-white-6x1kg-plastic-container.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 998,
@@ -12973,7 +13970,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP230",
-    image: "/images/products/tower-white-200gx48-tablet-soap.jpg"
+    image: "/images/products/tower-white-200gx48-tablet-soap.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 999,
@@ -12986,7 +13984,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "KP124",
-    image: "/images/products/tower-white-600gmx12.jpg"
+    image: "/images/products/tower-white-600gmx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1000,
@@ -12999,7 +13998,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CP022",
-    image: "/images/products/treatos-butter-cookies-100g-x-24.jpg"
+    image: "/images/products/treatos-butter-cookies-100g-x-24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1001,
@@ -13012,7 +14012,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CP023",
-    image: "/images/products/treatos-choco-chip-cookies-100g-x-24.jpg"
+    image: "/images/products/treatos-choco-chip-cookies-100g-x-24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1002,
@@ -13025,7 +14026,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CP024",
-    image: "/images/products/treatos-coconut-cookies-100g-x-24.jpg"
+    image: "/images/products/treatos-coconut-cookies-100g-x-24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1003,
@@ -13038,7 +14040,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CP001",
-    image: "/images/products/treatos-digestive-biscuits-170g-x-24.jpg"
+    image: "/images/products/treatos-digestive-biscuits-170g-x-24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1004,
@@ -13051,7 +14054,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CP025",
-    image: "/images/products/treatos-ginger-cookies-100g-x-24.jpg"
+    image: "/images/products/treatos-ginger-cookies-100g-x-24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1005,
@@ -13064,7 +14068,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CP013",
-    image: "/images/products/treatos-ginger-snap-3pc-x-60pkt-offer.jpg"
+    image: "/images/products/treatos-ginger-snap-3pc-x-60pkt-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1006,
@@ -13077,7 +14082,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CP003",
-    image: "/images/products/treatos-ginger-snap-80gm-x-36.jpg"
+    image: "/images/products/treatos-ginger-snap-80gm-x-36.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1007,
@@ -13090,7 +14096,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CP006",
-    image: "/images/products/treatos-glucose-105g-x-24.jpg"
+    image: "/images/products/treatos-glucose-105g-x-24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1008,
@@ -13103,7 +14110,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CP011",
-    image: "/images/products/treatos-glucose-5pcx60pkt-biscuit-offer.jpg"
+    image: "/images/products/treatos-glucose-5pcx60pkt-biscuit-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1009,
@@ -13116,7 +14124,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CP007",
-    image: "/images/products/treatos-milk-50gm-x-24.jpg"
+    image: "/images/products/treatos-milk-50gm-x-24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1010,
@@ -13129,7 +14138,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "CP012",
-    image: "/images/products/treatos-milk-5pcx60pkt-biscuit-offer.jpg"
+    image: "/images/products/treatos-milk-5pcx60pkt-biscuit-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1011,
@@ -13142,7 +14152,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "5690",
-    image: "/images/products/tro-hea-crisp-chl-lmn-6x400g.jpg"
+    image: "/images/products/tro-hea-crisp-chl-lmn-6x400g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1012,
@@ -13155,7 +14166,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4696",
-    image: "/images/products/tro-hea-crisp-salt-6x400g.jpg"
+    image: "/images/products/tro-hea-crisp-salt-6x400g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1013,
@@ -13168,7 +14180,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "5692",
-    image: "/images/products/tro-hea-crisp-salt-vin-6x400g.jpg"
+    image: "/images/products/tro-hea-crisp-salt-vin-6x400g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1014,
@@ -13181,7 +14194,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4747",
-    image: "/images/products/tro-hea-fish-masal-6x100g-jars.jpg"
+    image: "/images/products/tro-hea-fish-masal-6x100g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1015,
@@ -13194,7 +14208,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "JAR",
     code: "4747",
-    image: "/images/products/tro-hea-fish-masal-6x100g-jars.jpg"
+    image: "/images/products/tro-hea-fish-masal-6x100g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1016,
@@ -13207,7 +14222,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4746",
-    image: "/images/products/trop-hea-chily-pwdr-6x50g-jar.jpg"
+    image: "/images/products/trop-hea-chily-pwdr-6x50g-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1017,
@@ -13220,7 +14236,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4746",
-    image: "/images/products/trop-hea-chily-pwdr-6x50g-jar.jpg"
+    image: "/images/products/trop-hea-chily-pwdr-6x50g-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1018,
@@ -13233,7 +14250,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4698",
-    image: "/images/products/trop-hea-garlic-pwdr-6x45g-jars.jpg"
+    image: "/images/products/trop-hea-garlic-pwdr-6x45g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1019,
@@ -13246,7 +14264,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4698",
-    image: "/images/products/trop-hea-garlic-pwdr-6x45g-jars.jpg"
+    image: "/images/products/trop-hea-garlic-pwdr-6x45g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1020,
@@ -13259,7 +14278,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4728",
-    image: "/images/products/trop-hea-mix-herb-6x20g-jars.jpg"
+    image: "/images/products/trop-hea-mix-herb-6x20g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1021,
@@ -13272,7 +14292,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4730",
-    image: "/images/products/trop-heat-bay-leaves-6x5grm.jpg"
+    image: "/images/products/trop-heat-bay-leaves-6x5grm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1022,
@@ -13285,7 +14306,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4743",
-    image: "/images/products/trop-heat-black-pepper-6x100g-jars.jpg"
+    image: "/images/products/trop-heat-black-pepper-6x100g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1023,
@@ -13298,7 +14320,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4781",
-    image: "/images/products/trop-heat-chicken-masala-6x100g.jpg"
+    image: "/images/products/trop-heat-chicken-masala-6x100g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1024,
@@ -13311,7 +14334,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4699",
-    image: "/images/products/trop-heat-cinnamon-6x45g-jars.jpg"
+    image: "/images/products/trop-heat-cinnamon-6x45g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1025,
@@ -13324,7 +14348,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4715",
-    image: "/images/products/trop-heat-curry-powder-6x100g-jars.jpg"
+    image: "/images/products/trop-heat-curry-powder-6x100g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1026,
@@ -13337,7 +14362,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4731",
-    image: "/images/products/trop-heat-dhana-jeera-6x100g.jpg"
+    image: "/images/products/trop-heat-dhana-jeera-6x100g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1027,
@@ -13350,7 +14376,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4707",
-    image: "/images/products/trop-heat-garam-masala-6x100g-jar.jpg"
+    image: "/images/products/trop-heat-garam-masala-6x100g-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1028,
@@ -13363,7 +14390,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4706",
-    image: "/images/products/trop-heat-garam-masala-6x45g-jars.jpg"
+    image: "/images/products/trop-heat-garam-masala-6x45g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1029,
@@ -13376,7 +14404,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4701",
-    image: "/images/products/trop-heat-garlic-powder-6x100g.jpg"
+    image: "/images/products/trop-heat-garlic-powder-6x100g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1030,
@@ -13389,7 +14418,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4703",
-    image: "/images/products/trop-heat-ginger-6x100g-jar.jpg"
+    image: "/images/products/trop-heat-ginger-6x100g-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1031,
@@ -13402,7 +14432,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4703",
-    image: "/images/products/trop-heat-ginger-6x100g-jar.jpg"
+    image: "/images/products/trop-heat-ginger-6x100g-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1032,
@@ -13415,7 +14446,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4702",
-    image: "/images/products/trop-heat-ginger-6x45g.jpg"
+    image: "/images/products/trop-heat-ginger-6x45g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1033,
@@ -13428,7 +14460,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4702",
-    image: "/images/products/trop-heat-ginger-6x45g.jpg"
+    image: "/images/products/trop-heat-ginger-6x45g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1034,
@@ -13441,7 +14474,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "JAR",
     code: "4771",
-    image: "/images/products/trop-heat-mixed-spices-6x100g-jar.jpg"
+    image: "/images/products/trop-heat-mixed-spices-6x100g-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1035,
@@ -13454,7 +14488,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4771",
-    image: "/images/products/trop-heat-mixed-spices-6x100g-jar.jpg"
+    image: "/images/products/trop-heat-mixed-spices-6x100g-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1036,
@@ -13467,7 +14502,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "4709",
-    image: "/images/products/trop-heat-pilau-masala-6x100g-jars.jpg"
+    image: "/images/products/trop-heat-pilau-masala-6x100g-jars.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1037,
@@ -13480,7 +14516,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "5528",
-    image: "/images/products/tropical-basil-rubed-20gx6-jar.jpg"
+    image: "/images/products/tropical-basil-rubed-20gx6-jar.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1038,
@@ -13493,7 +14530,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "8210",
-    image: "/images/products/tropikal-a-freshner-300mlx12-offer.jpg"
+    image: "/images/products/tropikal-a-freshner-300mlx12-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1039,
@@ -13506,7 +14544,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "8210",
-    image: "/images/products/tropikal-a-freshner-300mlx12-offer.jpg"
+    image: "/images/products/tropikal-a-freshner-300mlx12-offer.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1040,
@@ -13519,7 +14558,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DISP",
     code: "2677",
-    image: "/images/products/trust-studded-12outrx24pc-condoms.jpg"
+    image: "/images/products/trust-studded-12outrx24pc-condoms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1041,
@@ -13532,7 +14572,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2677",
-    image: "/images/products/trust-studded-12outrx24pc-condoms.jpg"
+    image: "/images/products/trust-studded-12outrx24pc-condoms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1042,
@@ -13545,7 +14586,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BOTTL",
     code: "TU006",
-    image: "/images/products/tulivu-regular-water-10litres.jpg"
+    image: "/images/products/tulivu-regular-water-10litres.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1043,
@@ -13558,7 +14600,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BOTTL",
     code: "TU007",
-    image: "/images/products/tulivu-regular-water-20litres.jpg"
+    image: "/images/products/tulivu-regular-water-20litres.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1044,
@@ -13571,7 +14614,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TU005",
-    image: "/images/products/tulivu-regular-water-4-x-5litre.jpg"
+    image: "/images/products/tulivu-regular-water-4-x-5litre.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1045,
@@ -13584,7 +14628,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "1432",
-    image: "/images/products/vel-alum-foil-30cmx90mtr-catering.jpg"
+    image: "/images/products/vel-alum-foil-30cmx90mtr-catering.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1046,
@@ -13597,7 +14642,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2520",
-    image: "/images/products/velvex-80x48s-facial-tissue-petal-soft.jpg"
+    image: "/images/products/velvex-80x48s-facial-tissue-petal-soft.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1047,
@@ -13610,7 +14656,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PKT",
     code: "2520",
-    image: "/images/products/velvex-80x48s-facial-tissue-petal-soft.jpg"
+    image: "/images/products/velvex-80x48s-facial-tissue-petal-soft.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1048,
@@ -13623,7 +14670,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "CH003",
-    image: "/images/products/velvex-cling-film-45cm-x-15m.jpg"
+    image: "/images/products/velvex-cling-film-45cm-x-15m.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1049,
@@ -13636,7 +14684,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "1133",
-    image: "/images/products/velvex-cotton-100gx60-p-d.jpg"
+    image: "/images/products/velvex-cotton-100gx60-p-d.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1050,
@@ -13649,7 +14698,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "1133",
-    image: "/images/products/velvex-cotton-100gx60-p-d.jpg"
+    image: "/images/products/velvex-cotton-100gx60-p-d.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1051,
@@ -13662,7 +14712,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "12PC",
     code: "1132",
-    image: "/images/products/velvex-cotton-50gx120-p-d.jpg"
+    image: "/images/products/velvex-cotton-50gx120-p-d.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1052,
@@ -13675,7 +14726,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1132",
-    image: "/images/products/velvex-cotton-50gx120-p-d.jpg"
+    image: "/images/products/velvex-cotton-50gx120-p-d.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1053,
@@ -13688,7 +14740,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3580",
-    image: "/images/products/vitamilk-12x375g-promo.jpg"
+    image: "/images/products/vitamilk-12x375g-promo.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1054,
@@ -13701,7 +14754,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3583",
-    image: "/images/products/vitamilk-24x200gm.jpg"
+    image: "/images/products/vitamilk-24x200gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1055,
@@ -13714,7 +14768,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2607",
-    image: "/images/products/vitamilk-36x75gms.jpg"
+    image: "/images/products/vitamilk-36x75gms.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1056,
@@ -13727,7 +14782,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "6PC",
     code: "2969",
-    image: "/images/products/vivia-reg-h-wash-12x400ml-ass.jpg"
+    image: "/images/products/vivia-reg-h-wash-12x400ml-ass.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1057,
@@ -13740,7 +14796,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "2969",
-    image: "/images/products/vivia-reg-h-wash-12x400ml-ass.jpg"
+    image: "/images/products/vivia-reg-h-wash-12x400ml-ass.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1058,
@@ -13753,7 +14810,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "2969",
-    image: "/images/products/vivia-reg-h-wash-12x400ml-ass.jpg"
+    image: "/images/products/vivia-reg-h-wash-12x400ml-ass.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1059,
@@ -13766,7 +14824,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "PSK001",
-    image: "/images/products/waterguard-500ml-x12.jpg"
+    image: "/images/products/waterguard-500ml-x12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1060,
@@ -13779,7 +14838,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "5195",
-    image: "/images/products/waterguard-bot-150ml-12x4.jpg"
+    image: "/images/products/waterguard-bot-150ml-12x4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1061,
@@ -13792,7 +14852,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "5195",
-    image: "/images/products/waterguard-bot-150ml-12x4.jpg"
+    image: "/images/products/waterguard-bot-150ml-12x4.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1062,
@@ -13805,7 +14866,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "ASE001",
-    image: "/images/products/white-mobile-ladder-2.5m-h-x2.5m-d-x0.9m-w.jpg"
+    image: "/images/products/white-mobile-ladder-2.5m-h-x2.5m-d-x0.9m-w.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1063,
@@ -13818,7 +14880,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "PR001",
-    image: "/images/products/wow-barbeque-12x4x10gm.jpg"
+    image: "/images/products/wow-barbeque-12x4x10gm.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1064,
@@ -13831,7 +14894,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "6074",
-    image: "/images/products/wow-sugared-48x15g.jpg"
+    image: "/images/products/wow-sugared-48x15g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1065,
@@ -13844,7 +14908,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "BALE",
     code: "PROO6",
-    image: "/images/products/wow-sugared-8gmx12x5.jpg"
+    image: "/images/products/wow-sugared-8gmx12x5.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1066,
@@ -13857,7 +14922,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "3019",
-    image: "/images/products/zest-red-plum-jam-6x3kg.jpg"
+    image: "/images/products/zest-red-plum-jam-6x3kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1067,
@@ -13870,7 +14936,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3019",
-    image: "/images/products/zest-red-plum-jam-6x3kg.jpg"
+    image: "/images/products/zest-red-plum-jam-6x3kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1068,
@@ -13883,7 +14950,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "TF063",
-    image: "/images/products/zesta-200gx12x12-strawberry-jam.jpg"
+    image: "/images/products/zesta-200gx12x12-strawberry-jam.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1069,
@@ -13896,7 +14964,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF063",
-    image: "/images/products/zesta-200gx12x12-strawberry-jam.jpg"
+    image: "/images/products/zesta-200gx12x12-strawberry-jam.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1070,
@@ -13909,7 +14978,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF049",
-    image: "/images/products/zesta-baking-powder-12x500g.jpg"
+    image: "/images/products/zesta-baking-powder-12x500g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1071,
@@ -13922,7 +14992,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF035",
-    image: "/images/products/zesta-baking-powder-24x250g.jpg"
+    image: "/images/products/zesta-baking-powder-24x250g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1072,
@@ -13935,7 +15006,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF043",
-    image: "/images/products/zesta-brown-vinegar-12x700ml.jpg"
+    image: "/images/products/zesta-brown-vinegar-12x700ml.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1073,
@@ -13948,7 +15020,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "TF011",
-    image: "/images/products/zesta-chilli-sauce-24x375g.jpg"
+    image: "/images/products/zesta-chilli-sauce-24x375g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1074,
@@ -13961,7 +15034,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF011",
-    image: "/images/products/zesta-chilli-sauce-24x375g.jpg"
+    image: "/images/products/zesta-chilli-sauce-24x375g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1075,
@@ -13974,7 +15048,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF027",
-    image: "/images/products/zesta-crunchy-peanut-butter-12x250g.jpg"
+    image: "/images/products/zesta-crunchy-peanut-butter-12x250g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1076,
@@ -13987,7 +15062,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "TF028",
-    image: "/images/products/zesta-crunchy-peanut-butter-12x400g.jpg"
+    image: "/images/products/zesta-crunchy-peanut-butter-12x400g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1077,
@@ -14000,7 +15076,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF028",
-    image: "/images/products/zesta-crunchy-peanut-butter-12x400g.jpg"
+    image: "/images/products/zesta-crunchy-peanut-butter-12x400g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1078,
@@ -14013,7 +15090,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF018",
-    image: "/images/products/zesta-eggless-mayonaise-340gx24.jpg"
+    image: "/images/products/zesta-eggless-mayonaise-340gx24.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1079,
@@ -14026,7 +15104,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF012",
-    image: "/images/products/zesta-hot-sweet-sauce-24x250g.jpg"
+    image: "/images/products/zesta-hot-sweet-sauce-24x250g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1080,
@@ -14039,7 +15118,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "TF013",
-    image: "/images/products/zesta-hot-sweet-sauce-24x420g.jpg"
+    image: "/images/products/zesta-hot-sweet-sauce-24x420g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1081,
@@ -14052,7 +15132,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF013",
-    image: "/images/products/zesta-hot-sweet-sauce-24x420g.jpg"
+    image: "/images/products/zesta-hot-sweet-sauce-24x420g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1082,
@@ -14065,7 +15146,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF015",
-    image: "/images/products/zesta-hot-sweet-sauce-720gmx12.jpg"
+    image: "/images/products/zesta-hot-sweet-sauce-720gmx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1083,
@@ -14078,7 +15160,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "3021",
-    image: "/images/products/zesta-m-frt-jam-100gx12-20.jpg"
+    image: "/images/products/zesta-m-frt-jam-100gx12-20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1084,
@@ -14091,7 +15174,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "3021",
-    image: "/images/products/zesta-m-frt-jam-100gx12-20.jpg"
+    image: "/images/products/zesta-m-frt-jam-100gx12-20.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1085,
@@ -14104,7 +15188,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3024",
-    image: "/images/products/zesta-mix-frt-jam-1kgx12-banded.jpg"
+    image: "/images/products/zesta-mix-frt-jam-1kgx12-banded.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1086,
@@ -14117,7 +15202,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "OUTR",
     code: "3022",
-    image: "/images/products/zesta-mixed-fruit-jam-200gx12x12.jpg"
+    image: "/images/products/zesta-mixed-fruit-jam-200gx12x12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1087,
@@ -14130,7 +15216,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4748",
-    image: "/images/products/zesta-mixed-fruit-jam-300gx12.jpg"
+    image: "/images/products/zesta-mixed-fruit-jam-300gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1088,
@@ -14143,7 +15230,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "4749",
-    image: "/images/products/zesta-mixed-fruit-jam-500gx12.jpg"
+    image: "/images/products/zesta-mixed-fruit-jam-500gx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1089,
@@ -14156,7 +15244,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF056",
-    image: "/images/products/zesta-mxd-fruit-jam-pet-12x450g.jpg"
+    image: "/images/products/zesta-mxd-fruit-jam-pet-12x450g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1090,
@@ -14169,7 +15258,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "8505",
-    image: "/images/products/zesta-r-p-jam-12x12x200g.jpg"
+    image: "/images/products/zesta-r-p-jam-12x12x200g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1091,
@@ -14182,7 +15272,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "8505",
-    image: "/images/products/zesta-r-p-jam-12x12x200g.jpg"
+    image: "/images/products/zesta-r-p-jam-12x12x200g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1092,
@@ -14195,7 +15286,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3018",
-    image: "/images/products/zesta-red-plum-jam-1kgx12-eot.jpg"
+    image: "/images/products/zesta-red-plum-jam-1kgx12-eot.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1093,
@@ -14208,7 +15300,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "DOZ",
     code: "8504",
-    image: "/images/products/zesta-red-plum-jam-20x12x100g.jpg"
+    image: "/images/products/zesta-red-plum-jam-20x12x100g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1094,
@@ -14221,7 +15314,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "8504",
-    image: "/images/products/zesta-red-plum-jam-20x12x100g.jpg"
+    image: "/images/products/zesta-red-plum-jam-20x12x100g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1095,
@@ -14234,7 +15328,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF029",
-    image: "/images/products/zesta-smooth-peanut-butter-12x125g.jpg"
+    image: "/images/products/zesta-smooth-peanut-butter-12x125g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1096,
@@ -14247,7 +15342,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF030",
-    image: "/images/products/zesta-smooth-peanut-butter-12x250g.jpg"
+    image: "/images/products/zesta-smooth-peanut-butter-12x250g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1097,
@@ -14260,7 +15356,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF031",
-    image: "/images/products/zesta-smooth-peanut-butter-12x400g.jpg"
+    image: "/images/products/zesta-smooth-peanut-butter-12x400g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1098,
@@ -14273,7 +15370,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "8506",
-    image: "/images/products/zesta-strawberry-jam-12x500g.jpg"
+    image: "/images/products/zesta-strawberry-jam-12x500g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1099,
@@ -14286,7 +15384,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "3025",
-    image: "/images/products/zesta-strawberry-jam-1kgx12.jpg"
+    image: "/images/products/zesta-strawberry-jam-1kgx12.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1100,
@@ -14299,7 +15398,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF057",
-    image: "/images/products/zesta-strawberry-jam-pet-12x450g.jpg"
+    image: "/images/products/zesta-strawberry-jam-pet-12x450g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1101,
@@ -14312,7 +15412,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF019",
-    image: "/images/products/zesta-tomato-ketchup-24x400g.jpg"
+    image: "/images/products/zesta-tomato-ketchup-24x400g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1102,
@@ -14325,7 +15426,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF008",
-    image: "/images/products/zesta-tomato-sauce-12x700g.jpg"
+    image: "/images/products/zesta-tomato-sauce-12x700g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1103,
@@ -14338,7 +15440,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF006",
-    image: "/images/products/zesta-tomato-sauce-24x250g.jpg"
+    image: "/images/products/zesta-tomato-sauce-24x250g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1104,
@@ -14351,7 +15454,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF007",
-    image: "/images/products/zesta-tomato-sauce-24x400g.jpg"
+    image: "/images/products/zesta-tomato-sauce-24x400g.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1105,
@@ -14364,7 +15468,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "PC",
     code: "TF046",
-    image: "/images/products/zesta-tomato-sauce-4x5kg.jpg"
+    image: "/images/products/zesta-tomato-sauce-4x5kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1106,
@@ -14377,7 +15482,8 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "TF046",
-    image: "/images/products/zesta-tomato-sauce-4x5kg.jpg"
+    image: "/images/products/zesta-tomato-sauce-4x5kg.jpg",
+    distributorName: "Mahitaji Enterprises"
   },
   {
     id: 1107,
@@ -14390,6 +15496,14767 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     unit: "CTN",
     code: "1235",
-    image: "/images/products/zesta-whte-vinegar-12x700ml.jpg"
+    image: "/images/products/zesta-whte-vinegar-12x700ml.jpg",
+    distributorName: "Mahitaji Enterprises"
+  },
+
+
+  // SAM WEST DISTRIBUTION PRODUCTS
+  
+  {
+    id: 100001,
+    name: "10KG Ababil PK 386 Parboiled Rice",
+    description: "Ababil PK 386 parboiled rice in 10kg bags",
+    price: 1295,
+    wholesalePrice: 1285,
+    category: "food",
+    brand: "Ababil",
+    inStock: true,
+    unit: "Bag",
+    code: "SW001",
+    image: "/images/products/sw-ababil-pk386-parboiled-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100002,
+    name: "10KG Al-Mahal Biryani Rice (Purple Bag)",
+    description: "Al-Mahal biryani rice in 10kg purple bags",
+    price: 1030,
+    wholesalePrice: 1020,
+    category: "food",
+    brand: "Al-Mahal",
+    inStock: true,
+    unit: "Bag",
+    code: "SW002",
+    image: "/images/products/sw-al-mahal-biryani-purple-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100003,
+    name: "10KG Crown PK 386 Basmati Rice",
+    description: "Crown PK 386 basmati rice in 10kg bags",
+    price: 1235,
+    wholesalePrice: 1225,
+    category: "food",
+    brand: "Crown",
+    inStock: true,
+    unit: "Bag",
+    code: "SW003",
+    image: "/images/products/sw-crown-pk386-basmati-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100004,
+    name: "10KG Falcon Brand Biryani Rice (Green Bag)",
+    description: "Falcon brand biryani rice in 10kg green bags",
+    price: 1070,
+    wholesalePrice: 1060,
+    category: "food",
+    brand: "Falcon",
+    inStock: true,
+    unit: "Bag",
+    code: "SW004",
+    image: "/images/products/sw-falcon-biryani-green-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100005,
+    name: "10KG Fzami 1121 Long Grain Rice (Yellow Bag)",
+    description: "Fzami 1121 long grain rice in 10kg yellow bags",
+    price: 2150,
+    wholesalePrice: 2140,
+    category: "food",
+    brand: "Fzami",
+    inStock: true,
+    unit: "Bag",
+    code: "SW005",
+    image: "/images/products/sw-fzami-1121-yellow-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100006,
+    name: "10KG Fzami Biryani Rice (White Bag)",
+    description: "Fzami biryani rice in 10kg white bags",
+    price: 1100,
+    wholesalePrice: 1090,
+    category: "food",
+    brand: "Fzami",
+    inStock: true,
+    unit: "Bag",
+    code: "SW006",
+    image: "/images/products/sw-fzami-biryani-white-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100007,
+    name: "10KG Fzami PK386 White Rice (Black Bag)",
+    description: "Fzami PK386 white rice in 10kg black bags",
+    price: 1585,
+    wholesalePrice: 1575,
+    category: "food",
+    brand: "Fzami",
+    inStock: true,
+    unit: "Bag",
+    code: "SW007",
+    image: "/images/products/sw-fzami-pk386-black-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100008,
+    name: "10KG Fzami Superior Long Grain Rice",
+    description: "Fzami superior long grain rice in 10kg bags",
+    price: 1120,
+    wholesalePrice: 1110,
+    category: "food",
+    brand: "Fzami",
+    inStock: true,
+    unit: "Bag",
+    code: "SW008",
+    image: "/images/products/sw-fzami-superior-long-grain-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100009,
+    name: "10KG Himalaya Falcon Parboiled Rice (Yellow Bag)",
+    description: "Himalaya Falcon parboiled rice in 10kg yellow bags",
+    price: 1740,
+    wholesalePrice: 1730,
+    category: "food",
+    brand: "Himalaya Falcon",
+    inStock: true,
+    unit: "Bag",
+    code: "SW009",
+    image: "/images/products/sw-himalaya-falcon-parboiled-yellow-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100010,
+    name: "10KG Indus 1121 Sella Basmati Rice",
+    description: "Indus 1121 sella basmati rice in 10kg bags",
+    price: 1815,
+    wholesalePrice: 1805,
+    category: "food",
+    brand: "Indus",
+    inStock: true,
+    unit: "Bag",
+    code: "SW010",
+    image: "/images/products/sw-indus-1121-sella-basmati-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100011,
+    name: "10KG Indus Eco Biryani Rice",
+    description: "Indus eco biryani rice in 10kg bags",
+    price: 1030,
+    wholesalePrice: 1020,
+    category: "food",
+    brand: "Indus",
+    inStock: true,
+    unit: "Bag",
+    code: "SW011",
+    image: "/images/products/sw-indus-eco-biryani-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100012,
+    name: "10KG Indus White Rice",
+    description: "Indus white rice in 10kg bags",
+    price: 1325,
+    wholesalePrice: 1315,
+    category: "food",
+    brand: "Indus",
+    inStock: true,
+    unit: "Bag",
+    code: "SW012",
+    image: "/images/products/sw-indus-white-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100013,
+    name: "10KG Jalal Basmati Rice",
+    description: "Jalal basmati rice in 10kg bags",
+    price: 1615,
+    wholesalePrice: 1605,
+    category: "food",
+    brand: "Jalal",
+    inStock: true,
+    unit: "Bag",
+    code: "SW013",
+    image: "/images/products/sw-jalal-basmati-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100014,
+    name: "10KG Karibu Basmati Parboiled Rice (Small Bag)",
+    description: "Karibu basmati parboiled rice in 10kg small bags",
+    price: 1690,
+    wholesalePrice: 1680,
+    category: "food",
+    brand: "Karibu",
+    inStock: true,
+    unit: "Bag",
+    code: "SW014",
+    image: "/images/products/sw-karibu-basmati-parboiled-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100015,
+    name: "10KG King Africa Thai Rice",
+    description: "King Africa Thai rice in 10kg bags",
+    price: 1020,
+    wholesalePrice: 1010,
+    category: "food",
+    brand: "King Africa",
+    inStock: true,
+    unit: "Bag",
+    code: "SW015",
+    image: "/images/products/sw-king-africa-thai-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100016,
+    name: "10KG Kuku Biryani Rice",
+    description: "Kuku biryani rice in 10kg bags",
+    price: 1040,
+    wholesalePrice: 1030,
+    category: "food",
+    brand: "Kuku",
+    inStock: true,
+    unit: "Bag",
+    code: "SW016",
+    image: "/images/products/sw-kuku-biryani-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100017,
+    name: "10KG Mona PK 386 Parboiled Rice",
+    description: "Mona PK 386 parboiled rice in 10kg bags",
+    price: 1275,
+    wholesalePrice: 1265,
+    category: "food",
+    brand: "Mona",
+    inStock: true,
+    unit: "Bag",
+    code: "SW017",
+    image: "/images/products/sw-mona-pk386-parboiled-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100018,
+    name: "10KG Mr Rice Basmati Rice",
+    description: "Mr Rice basmati rice in 10kg bags",
+    price: 1945,
+    wholesalePrice: 1935,
+    category: "food",
+    brand: "Mr Rice",
+    inStock: true,
+    unit: "Bag",
+    code: "SW018",
+    image: "/images/products/sw-mr-rice-basmati-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100019,
+    name: "10KG Star Africa Parboiled Rice",
+    description: "Star Africa parboiled rice in 10kg bags",
+    price: 1295,
+    wholesalePrice: 1285,
+    category: "food",
+    brand: "Star Africa",
+    inStock: true,
+    unit: "Bag",
+    code: "SW019",
+    image: "/images/products/sw-star-africa-parboiled-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100020,
+    name: "10KG Star Africa Thai Biryani Rice",
+    description: "Star Africa Thai biryani rice in 10kg bags",
+    price: 1020,
+    wholesalePrice: 1010,
+    category: "food",
+    brand: "Star Africa",
+    inStock: true,
+    unit: "Bag",
+    code: "SW020",
+    image: "/images/products/sw-star-africa-thai-biryani-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100021,
+    name: "20PCS Nip Nap Wipes",
+    description: "Nip Nap wipes in 20 pieces per packet",
+    price: 5,
+    wholesalePrice: 4,
+    category: "hygiene",
+    brand: "Nip Nap",
+    inStock: true,
+    unit: "Packet",
+    code: "SW021",
+    image: "/images/products/sw-nip-nap-wipes-20pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100022,
+    name: "210 Atta Mark 1KG",
+    description: "Atta Mark flour in 1kg bales, 210 pieces",
+    price: 1800,
+    wholesalePrice: 1790,
+    category: "food",
+    brand: "Atta Mark",
+    inStock: true,
+    unit: "Bale",
+    code: "SW022",
+    image: "/images/products/sw-atta-mark-1kg-210.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100023,
+    name: "210 Atta Mark 2KG",
+    description: "Atta Mark flour in 2kg bales, 210 pieces",
+    price: 1770,
+    wholesalePrice: 1760,
+    category: "food",
+    brand: "Atta Mark",
+    inStock: true,
+    unit: "Bale",
+    code: "SW023",
+    image: "/images/products/sw-atta-mark-2kg-210.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100024,
+    name: "210 Home Baking 1KG",
+    description: "Home Baking flour in 1kg bales, 210 pieces",
+    price: 1800,
+    wholesalePrice: 1790,
+    category: "food",
+    brand: "Home Baking",
+    inStock: true,
+    unit: "Bale",
+    code: "SW024",
+    image: "/images/products/sw-home-baking-1kg-210.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100025,
+    name: "210 Home Baking 2KG",
+    description: "Home Baking flour in 2kg half bales, 210 pieces",
+    price: 885,
+    wholesalePrice: 875,
+    category: "food",
+    brand: "Home Baking",
+    inStock: true,
+    unit: "1/2bale",
+    code: "SW025",
+    image: "/images/products/sw-home-baking-2kg-210.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100026,
+    name: "210 Maize Meal 1KG",
+    description: "Maize meal in 1kg bales, 210 pieces",
+    price: 1850,
+    wholesalePrice: 1840,
+    category: "food",
+    brand: "Generic",
+    inStock: true,
+    unit: "Bale",
+    code: "SW026",
+    image: "/images/products/sw-maize-meal-1kg-210.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100027,
+    name: "210 Maize Meal 2KG",
+    description: "Maize meal in 2kg half bales, 210 pieces",
+    price: 910,
+    wholesalePrice: 900,
+    category: "food",
+    brand: "Generic",
+    inStock: true,
+    unit: "1/2bale",
+    code: "SW027",
+    image: "/images/products/sw-maize-meal-2kg-210.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100028,
+    name: "25KG Sugar (Small Bag)",
+    description: "Sugar in 25kg small bags",
+    price: 3600,
+    wholesalePrice: 3590,
+    category: "food",
+    brand: "Generic",
+    inStock: true,
+    unit: "Bag",
+    code: "SW028",
+    image: "/images/products/sw-sugar-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100029,
+    name: "40PCS Nip Nap Wipes",
+    description: "Nip Nap wipes in 40 pieces per packet",
+    price: 5,
+    wholesalePrice: 4,
+    category: "hygiene",
+    brand: "Nip Nap",
+    inStock: true,
+    unit: "Packet",
+    code: "SW029",
+    image: "/images/products/sw-nip-nap-wipes-40pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100030,
+    name: "4U Bathing Soap 144x15GM",
+    description: "4U bathing soap in 15gm pieces, 144 per carton",
+    price: 640,
+    wholesalePrice: 630,
+    category: "hygiene",
+    brand: "4U",
+    inStock: true,
+    unit: "Carton",
+    code: "SW030",
+    image: "/images/products/sw-4u-bathing-soap-144x15gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100031,
+    name: "4U Bathing Soap 24x250GM (Herbal)",
+    description: "4U herbal bathing soap in 250gm pieces, 24 per pack",
+    price: 55,
+    wholesalePrice: 50,
+    category: "hygiene",
+    brand: "4U",
+    inStock: true,
+    unit: "Piece",
+    code: "SW031",
+    image: "/images/products/sw-4u-bathing-soap-herbal-250gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100032,
+    name: "4U Bathing Soap 24x250GM (Original/Blue)",
+    description: "4U original blue bathing soap in 250gm pieces, 24 per pack",
+    price: 55,
+    wholesalePrice: 50,
+    category: "hygiene",
+    brand: "4U",
+    inStock: true,
+    unit: "Piece",
+    code: "SW032",
+    image: "/images/products/sw-4u-bathing-soap-blue-250gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100033,
+    name: "4U Bathing Soap 24x250GM (Rose/Pink)",
+    description: "4U rose pink bathing soap in 250gm pieces, 24 per pack",
+    price: 55,
+    wholesalePrice: 50,
+    category: "hygiene",
+    brand: "4U",
+    inStock: true,
+    unit: "Piece",
+    code: "SW033",
+    image: "/images/products/sw-4u-bathing-soap-pink-250gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100034,
+    name: "4US Yoghurt 150ML (Vanilla)",
+    description: "4US vanilla yoghurt in 150ml pieces",
+    price: 35,
+    wholesalePrice: 30,
+    category: "food",
+    brand: "4US",
+    inStock: true,
+    unit: "Piece",
+    code: "SW034",
+    image: "/images/products/sw-4us-yoghurt-vanilla-150ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100035,
+    name: "4US Yoghurt 250ML (Vanilla)",
+    description: "4US vanilla yoghurt in 250ml pieces",
+    price: 50,
+    wholesalePrice: 45,
+    category: "food",
+    brand: "4US",
+    inStock: true,
+    unit: "Piece",
+    code: "SW035",
+    image: "/images/products/sw-4us-yoghurt-vanilla-250ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100036,
+    name: "4US Yoghurt 500ML (Vanilla)",
+    description: "4US vanilla yoghurt in 500ml pieces",
+    price: 90,
+    wholesalePrice: 85,
+    category: "food",
+    brand: "4US",
+    inStock: true,
+    unit: "Piece",
+    code: "SW036",
+    image: "/images/products/sw-4us-yoghurt-vanilla-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100037,
+    name: "50KG Kuku Biryani Rice",
+    description: "Kuku biryani rice in 50kg bags",
+    price: 5100,
+    wholesalePrice: 5090,
+    category: "food",
+    brand: "Kuku",
+    inStock: true,
+    unit: "Bag",
+    code: "SW037",
+    image: "/images/products/sw-kuku-biryani-50kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100038,
+    name: "5KG Avena White Fat",
+    description: "Avena white fat in 5kg cartons",
+    price: 1250,
+    wholesalePrice: 1240,
+    category: "food",
+    brand: "Avena",
+    inStock: true,
+    unit: "Carton",
+    code: "SW038",
+    image: "/images/products/sw-avena-white-fat-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100039,
+    name: "5KG Bora White Fat",
+    description: "Bora white fat in 5kg cartons",
+    price: 920,
+    wholesalePrice: 910,
+    category: "food",
+    brand: "Bora",
+    inStock: true,
+    unit: "Carton",
+    code: "SW039",
+    image: "/images/products/sw-bora-white-fat-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100040,
+    name: "5KG Fzami 1121 Long Grain Rice (Yellow Bag)",
+    description: "Fzami 1121 long grain rice in 5kg yellow bags",
+    price: 1105,
+    wholesalePrice: 1095,
+    category: "food",
+    brand: "Fzami",
+    inStock: true,
+    unit: "Bag",
+    code: "SW040",
+    image: "/images/products/sw-fzami-1121-yellow-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100041,
+    name: "5KG Fzami 1121 Parboiled Rice (Blue Bag)",
+    description: "Fzami 1121 parboiled rice in 5kg blue bags",
+    price: 1120,
+    wholesalePrice: 1110,
+    category: "food",
+    brand: "Fzami",
+    inStock: true,
+    unit: "Bag",
+    code: "SW041",
+    image: "/images/products/sw-fzami-1121-parboiled-blue-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100042,
+    name: "5KG Fzami Biryani Rice (White Bag)",
+    description: "Fzami biryani rice in 5kg white bags",
+    price: 620,
+    wholesalePrice: 610,
+    category: "food",
+    brand: "Fzami",
+    inStock: true,
+    unit: "Bag",
+    code: "SW042",
+    image: "/images/products/sw-fzami-biryani-white-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100043,
+    name: "5KG Goldy White",
+    description: "Goldy white fat in 5kg cartons",
+    price: 850,
+    wholesalePrice: 840,
+    category: "food",
+    brand: "Goldy",
+    inStock: true,
+    unit: "Carton",
+    code: "SW043",
+    image: "/images/products/sw-goldy-white-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100044,
+    name: "5KG Indus 1121 Basmati Rice",
+    description: "Indus 1121 basmati rice in 5kg bags",
+    price: 1000,
+    wholesalePrice: 990,
+    category: "food",
+    brand: "Indus",
+    inStock: true,
+    unit: "Bag",
+    code: "SW044",
+    image: "/images/products/sw-indus-1121-basmati-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100045,
+    name: "5KG Mallo Gold White (Small Carton)",
+    description: "Mallo Gold white fat in 5kg small cartons",
+    price: 1250,
+    wholesalePrice: 1240,
+    category: "food",
+    brand: "Mallo Gold",
+    inStock: true,
+    unit: "Carton",
+    code: "SW045",
+    image: "/images/products/sw-mallo-gold-white-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100046,
+    name: "5KG Mpishi Poa White Fat",
+    description: "Mpishi Poa white fat in 5kg cartons",
+    price: 950,
+    wholesalePrice: 940,
+    category: "food",
+    brand: "Mpishi Poa",
+    inStock: true,
+    unit: "Carton",
+    code: "SW046",
+    image: "/images/products/sw-mpishi-poa-white-fat-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100047,
+    name: "5KG Mr Rice Basmati Rice",
+    description: "Mr Rice basmati rice in 5kg bags",
+    price: 975,
+    wholesalePrice: 965,
+    category: "food",
+    brand: "Mr Rice",
+    inStock: true,
+    unit: "Bag",
+    code: "SW047",
+    image: "/images/products/sw-mr-rice-basmati-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100048,
+    name: "5KG Pika Yellow Fat",
+    description: "Pika yellow fat in 5kg cartons",
+    price: 1250,
+    wholesalePrice: 1240,
+    category: "food",
+    brand: "Pika",
+    inStock: true,
+    unit: "Carton",
+    code: "SW048",
+    image: "/images/products/sw-pika-yellow-fat-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100049,
+    name: "5KG Salsa Yellow Fat",
+    description: "Salsa yellow fat in 5kg cartons",
+    price: 920,
+    wholesalePrice: 910,
+    category: "food",
+    brand: "Salsa",
+    inStock: true,
+    unit: "Carton",
+    code: "SW049",
+    image: "/images/products/sw-salsa-yellow-fat-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100050,
+    name: "5KG Samli Yellow Fat (Small Carton)",
+    description: "Samli yellow fat in 5kg small cartons",
+    price: 920,
+    wholesalePrice: 910,
+    category: "food",
+    brand: "Samli",
+    inStock: true,
+    unit: "Carton",
+    code: "SW050",
+    image: "/images/products/sw-samli-yellow-fat-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100051,
+    name: "5KG Samli White Fat (Small Carton)",
+    description: "Samli white fat in 5kg small cartons",
+    price: 960,
+    wholesalePrice: 950,
+    category: "food",
+    brand: "Samli",
+    inStock: true,
+    unit: "Carton",
+    code: "SW051",
+    image: "/images/products/sw-samli-white-fat-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100052,
+    name: "5KG Yellow Gold Fat",
+    description: "Yellow Gold fat in 5kg cartons",
+    price: 1250,
+    wholesalePrice: 1240,
+    category: "food",
+    brand: "Yellow Gold",
+    inStock: true,
+    unit: "Carton",
+    code: "SW052",
+    image: "/images/products/sw-yellow-gold-fat-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100053,
+    name: "A+ Adult Diapers Large (Blue)",
+    description: "A+ adult diapers large size in blue packets",
+    price: 615,
+    wholesalePrice: 605,
+    category: "hygiene",
+    brand: "A+",
+    inStock: true,
+    unit: "Packet",
+    code: "SW053",
+    image: "/images/products/sw-a-plus-adult-diapers-large-blue.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100054,
+    name: "A+ Adult Diapers Medium (Green)",
+    description: "A+ adult diapers medium size in green packets",
+    price: 615,
+    wholesalePrice: 605,
+    category: "hygiene",
+    brand: "A+",
+    inStock: true,
+    unit: "Packet",
+    code: "SW054",
+    image: "/images/products/sw-a-plus-adult-diapers-medium-green.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100055,
+    name: "A+ Adult Diapers XLarge (Purple)",
+    description: "A+ adult diapers extra-large size in purple packets",
+    price: 615,
+    wholesalePrice: 605,
+    category: "hygiene",
+    brand: "A+",
+    inStock: true,
+    unit: "Packet",
+    code: "SW055",
+    image: "/images/products/sw-a-plus-adult-diapers-xlarge-purple.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100056,
+    name: "A+ Sanitary Pads",
+    description: "A+ sanitary pads in outer packs",
+    price: 275,
+    wholesalePrice: 265,
+    category: "hygiene",
+    brand: "A+",
+    inStock: true,
+    unit: "Outer",
+    code: "SW056",
+    image: "/images/products/sw-a-plus-sanitary-pads.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100057,
+    name: "Ababil Parboiled Rice 25KG",
+    description: "Ababil parboiled rice in 25kg bags",
+    price: 3150,
+    wholesalePrice: 3140,
+    category: "food",
+    brand: "Ababil",
+    inStock: true,
+    unit: "Bag",
+    code: "SW057",
+    image: "/images/products/sw-ababil-parboiled-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100058,
+    name: "Abeer Super Kernel Basmati Rice 20KG",
+    description: "Abeer super kernel basmati rice in 20kg bags",
+    price: 3500,
+    wholesalePrice: 3490,
+    category: "food",
+    brand: "Abeer",
+    inStock: true,
+    unit: "Bag",
+    code: "SW058",
+    image: "/images/products/sw-abeer-super-kernel-basmati-20kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100059,
+    name: "Acacia Flavoured Water 12x500ML (Apple)",
+    description: "Acacia apple flavoured water in 12x500ml cases",
+    price: 590,
+    wholesalePrice: 580,
+    category: "food",
+    brand: "Acacia",
+    inStock: true,
+    unit: "Case",
+    code: "SW059",
+    image: "/images/products/sw-acacia-flavoured-water-apple-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100060,
+    name: "Acacia Flavoured Water 12x500ML (Peach)",
+    description: "Acacia peach flavoured water in 12x500ml cases",
+    price: 590,
+    wholesalePrice: 580,
+    category: "food",
+    brand: "Acacia",
+    inStock: true,
+    unit: "Case",
+    code: "SW060",
+    image: "/images/products/sw-acacia-flavoured-water-peach-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100061,
+    name: "Acacia Flavoured Water 12x500ML (Strawberry)",
+    description: "Acacia strawberry flavoured water in 12x500ml cases",
+    price: 590,
+    wholesalePrice: 580,
+    category: "food",
+    brand: "Acacia",
+    inStock: true,
+    unit: "Case",
+    code: "SW061",
+    image: "/images/products/sw-acacia-flavoured-water-strawberry-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100062,
+    name: "Acacia Kids Drink 200ML (Black Currant)",
+    description: "Acacia kids black currant drink in 24x200ml cases",
+    price: 930,
+    wholesalePrice: 920,
+    category: "food",
+    brand: "Acacia",
+    inStock: true,
+    unit: "Case",
+    code: "SW062",
+    image: "/images/products/sw-acacia-kids-black-currant-24x200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100063,
+    name: "Acacia Kids Drink 24x200ML (Apple)",
+    description: "Acacia kids apple drink in 24x200ml cases",
+    price: 930,
+    wholesalePrice: 920,
+    category: "food",
+    brand: "Acacia",
+    inStock: true,
+    unit: "Case",
+    code: "SW063",
+    image: "/images/products/sw-acacia-kids-apple-24x200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100064,
+    name: "Acacia Kids Drink 24x200ML (Mango)",
+    description: "Acacia kids mango drink in 24x200ml cases",
+    price: 930,
+    wholesalePrice: 920,
+    category: "food",
+    brand: "Acacia",
+    inStock: true,
+    unit: "Case",
+    code: "SW064",
+    image: "/images/products/sw-acacia-kids-mango-24x200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100065,
+    name: "Acacia Kids Drink 24x200ML (Raspberry)",
+    description: "Acacia kids raspberry drink in 24x200ml cases",
+    price: 995,
+    wholesalePrice: 985,
+    category: "food",
+    brand: "Acacia",
+    inStock: true,
+    unit: "Case",
+    code: "SW065",
+    image: "/images/products/sw-acacia-kids-raspberry-24x200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100066,
+    name: "Acacia Kids Drink 24x200ML (Strawberry)",
+    description: "Acacia kids strawberry drink in 24x200ml cases",
+    price: 930,
+    wholesalePrice: 920,
+    category: "food",
+    brand: "Acacia",
+    inStock: true,
+    unit: "Case",
+    code: "SW066",
+    image: "/images/products/sw-acacia-kids-strawberry-24x200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100067,
+    name: "Ace Bathroom Cleaner 6x500ML",
+    description: "Ace bathroom cleaner in 500ml pieces, 6 per pack",
+    price: 215,
+    wholesalePrice: 210,
+    category: "cleaning",
+    brand: "Ace",
+    inStock: true,
+    unit: "Piece",
+    code: "SW067",
+    image: "/images/products/sw-ace-bathroom-cleaner-6x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100068,
+    name: "Ace Multi Purpose Liquid 12x500ML",
+    description: "Ace multi-purpose liquid in 500ml pieces, 12 per pack",
+    price: 220,
+    wholesalePrice: 215,
+    category: "cleaning",
+    brand: "Ace",
+    inStock: true,
+    unit: "Piece",
+    code: "SW068",
+    image: "/images/products/sw-ace-multi-purpose-liquid-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100069,
+    name: "Ace Multi Purpose Liquid 4x5L",
+    description: "Ace multi-purpose liquid in 5L jericans, 4 per pack",
+    price: 615,
+    wholesalePrice: 605,
+    category: "cleaning",
+    brand: "Ace",
+    inStock: true,
+    unit: "Jerican",
+    code: "SW069",
+    image: "/images/products/sw-ace-multi-purpose-liquid-4x5l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100070,
+    name: "Ace Toilet Cleaner 12x1L (Fruity)",
+    description: "Ace fruity toilet cleaner in 1L pieces, 12 per pack",
+    price: 315,
+    wholesalePrice: 310,
+    category: "cleaning",
+    brand: "Ace",
+    inStock: true,
+    unit: "Piece",
+    code: "SW070",
+    image: "/images/products/sw-ace-toilet-cleaner-fruity-12x1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100071,
+    name: "Ace Toilet Cleaner 12x1L (Lavender)",
+    description: "Ace lavender toilet cleaner in 1L pieces, 12 per pack",
+    price: 315,
+    wholesalePrice: 310,
+    category: "cleaning",
+    brand: "Ace",
+    inStock: true,
+    unit: "Piece",
+    code: "SW071",
+    image: "/images/products/sw-ace-toilet-cleaner-lavender-12x1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100072,
+    name: "Ace Toilet Cleaner 12x1L (Ocean)",
+    description: "Ace ocean toilet cleaner in 1L pieces, 12 per pack",
+    price: 315,
+    wholesalePrice: 310,
+    category: "cleaning",
+    brand: "Ace",
+    inStock: true,
+    unit: "Piece",
+    code: "SW072",
+    image: "/images/products/sw-ace-toilet-cleaner-ocean-12x1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100073,
+    name: "Ace Toilet Cleaner 12x1L (Pine)",
+    description: "Ace pine toilet cleaner in 1L pieces, 12 per pack",
+    price: 315,
+    wholesalePrice: 310,
+    category: "cleaning",
+    brand: "Ace",
+    inStock: true,
+    unit: "Piece",
+    code: "SW073",
+    image: "/images/products/sw-ace-toilet-cleaner-pine-12x1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100074,
+    name: "Ace Toilet Cleaner 12x500ML (Citrus)",
+    description: "Ace citrus toilet cleaner in 500ml pieces, 12 per pack",
+    price: 160,
+    wholesalePrice: 155,
+    category: "cleaning",
+    brand: "Ace",
+    inStock: true,
+    unit: "Piece",
+    code: "SW074",
+    image: "/images/products/sw-ace-toilet-cleaner-citrus-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100075,
+    name: "Ace Toilet Cleaner 12x500ML (Fruity)",
+    description: "Ace fruity toilet cleaner in 500ml pieces, 12 per pack",
+    price: 160,
+    wholesalePrice: 155,
+    category: "cleaning",
+    brand: "Ace",
+    inStock: true,
+    unit: "Piece",
+    code: "SW075",
+    image: "/images/products/sw-ace-toilet-cleaner-fruity-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100076,
+    name: "Ace Toilet Cleaner 12x500ML (Lavender)",
+    description: "Ace lavender toilet cleaner in 500ml pieces, 12 per pack",
+    price: 160,
+    wholesalePrice: 155,
+    category: "cleaning",
+    brand: "Ace",
+    inStock: true,
+    unit: "Piece",
+    code: "SW076",
+    image: "/images/products/sw-ace-toilet-cleaner-lavender-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100077,
+    name: "Ace Toilet Cleaner 12x500ML (Ocean)",
+    description: "Ace ocean toilet cleaner in 500ml pieces, 12 per pack",
+    price: 210,
+    wholesalePrice: 205,
+    category: "cleaning",
+    brand: "Ace",
+    inStock: true,
+    unit: "Piece",
+    code: "SW077",
+    image: "/images/products/sw-ace-toilet-cleaner-ocean-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100078,
+    name: "Ace Toilet Cleaner 12x500ML (Pine)",
+    description: "Ace pine toilet cleaner in 500ml pieces, 12 per pack",
+    price: 160,
+    wholesalePrice: 155,
+    category: "cleaning",
+    brand: "Ace",
+    inStock: true,
+    unit: "Piece",
+    code: "SW078",
+    image: "/images/products/sw-ace-toilet-cleaner-pine-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100079,
+    name: "Aco Multi Purpose Gel 250ML (Lavender)",
+    description: "Aco lavender multi-purpose gel in 250ml pieces",
+    price: 220,
+    wholesalePrice: 215,
+    category: "cleaning",
+    brand: "Aco",
+    inStock: true,
+    unit: "Piece",
+    code: "SW079",
+    image: "/images/products/sw-aco-multi-purpose-gel-lavender-250ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100080,
+    name: "Aco Multi Purpose Gel 250ML (Original)",
+    description: "Aco original multi-purpose gel in 250ml pieces",
+    price: 170,
+    wholesalePrice: 165,
+    category: "cleaning",
+    brand: "Aco",
+    inStock: true,
+    unit: "Piece",
+    code: "SW080",
+    image: "/images/products/sw-aco-multi-purpose-gel-original-250ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100081,
+    name: "Action",
+    description: "Action cleaning product in packets",
+    price: 330,
+    wholesalePrice: 320,
+    category: "cleaning",
+    brand: "Action",
+    inStock: true,
+    unit: "Packet",
+    code: "SW081",
+    image: "/images/products/sw-action-cleaner.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100082,
+    name: "Adsopack Salt Sachets",
+    description: "Adsopack salt in sachets, outer pack",
+    price: 40,
+    wholesalePrice: 35,
+    category: "food",
+    brand: "Adsopack",
+    inStock: true,
+    unit: "Outer",
+    code: "SW082",
+    image: "/images/products/sw-adsopack-salt-sachets.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100083,
+    name: "Adsopack Sugar Sachets 5g",
+    description: "Adsopack sugar in 5g sachets, outer pack",
+    price: 130,
+    wholesalePrice: 125,
+    category: "food",
+    brand: "Adsopack",
+    inStock: true,
+    unit: "Outer",
+    code: "SW083",
+    image: "/images/products/sw-adsopack-sugar-sachets-5g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100084,
+    name: "Adultcare Diapers Extra Large",
+    description: "Adultcare extra-large diapers in outer packs",
+    price: 765,
+    wholesalePrice: 755,
+    category: "hygiene",
+    brand: "Adultcare",
+    inStock: true,
+    unit: "Outer",
+    code: "SW084",
+    image: "/images/products/sw-adultcare-diapers-extra-large.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100085,
+    name: "Adultcare Diapers Large",
+    description: "Adultcare large diapers in outer packs",
+    price: 765,
+    wholesalePrice: 755,
+    category: "hygiene",
+    brand: "Adultcare",
+    inStock: true,
+    unit: "Outer",
+    code: "SW085",
+    image: "/images/products/sw-adultcare-diapers-large.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100086,
+    name: "Adultcare Diapers Medium",
+    description: "Adultcare medium diapers in outer packs",
+    price: 765,
+    wholesalePrice: 755,
+    category: "hygiene",
+    brand: "Adultcare",
+    inStock: true,
+    unit: "Outer",
+    code: "SW086",
+    image: "/images/products/sw-adultcare-diapers-medium.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100087,
+    name: "Adultcare Pants Large",
+    description: "Adultcare large pants in packets",
+    price: 820,
+    wholesalePrice: 810,
+    category: "hygiene",
+    brand: "Adultcare",
+    inStock: true,
+    unit: "Packet",
+    code: "SW087",
+    image: "/images/products/sw-adultcare-pants-large.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100088,
+    name: "Adultcare Pants Extra Large",
+    description: "Adultcare extra-large pants in packets",
+    price: 820,
+    wholesalePrice: 810,
+    category: "hygiene",
+    brand: "Adultcare",
+    inStock: true,
+    unit: "Packet",
+    code: "SW088",
+    image: "/images/products/sw-adultcare-pants-extra-large.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100089,
+    name: "Afia Apple Ginger 12x380ML",
+    description: "Afia apple ginger drink in 380ml pieces, 12 per case",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW089",
+    image: "/images/products/sw-afia-apple-ginger-12x380ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100090,
+    name: "Afia Cola 300ML",
+    description: "Afia cola in 300ml cases",
+    price: 345,
+    wholesalePrice: 335,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW090",
+    image: "/images/products/sw-afia-cola-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100091,
+    name: "Afia Cola 500ML",
+    description: "Afia cola in 500ml cases",
+    price: 540,
+    wholesalePrice: 530,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW091",
+    image: "/images/products/sw-afia-cola-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100092,
+    name: "Afia Energy 300ML (Apple)",
+    description: "Afia apple energy drink in 300ml pieces",
+    price: 35,
+    wholesalePrice: 30,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW092",
+    image: "/images/products/sw-afia-energy-apple-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100093,
+    name: "Afia Energy 300ML (Classic)",
+    description: "Afia classic energy drink in 300ml pieces",
+    price: 35,
+    wholesalePrice: 30,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW093",
+    image: "/images/products/sw-afia-energy-classic-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100094,
+    name: "Afia Energy 300ML (Strawberry)",
+    description: "Afia strawberry energy drink in 300ml pieces",
+    price: 35,
+    wholesalePrice: 30,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW094",
+    image: "/images/products/sw-afia-energy-strawberry-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100095,
+    name: "Afia Energy 500ML (Apple)",
+    description: "Afia apple energy drink in 500ml pieces",
+    price: 55,
+    wholesalePrice: 50,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW095",
+    image: "/images/products/sw-afia-energy-apple-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100096,
+    name: "Afia Energy 500ML (Classic)",
+    description: "Afia classic energy drink in 500ml pieces",
+    price: 55,
+    wholesalePrice: 50,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW096",
+    image: "/images/products/sw-afia-energy-classic-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100097,
+    name: "Afia Energy 500ML (Exotic)",
+    description: "Afia exotic energy drink in 500ml pieces",
+    price: 55,
+    wholesalePrice: 50,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW097",
+    image: "/images/products/sw-afia-energy-exotic-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100098,
+    name: "Afia Energy 500ML (Strawberry)",
+    description: "Afia strawberry energy drink in 500ml pieces",
+    price: 55,
+    wholesalePrice: 50,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW098",
+    image: "/images/products/sw-afia-energy-strawberry-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100099,
+    name: "Afia Juice 1.5 LTR (Apple)",
+    description: "Afia apple juice in 1.5L pieces",
+    price: 155,
+    wholesalePrice: 150,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW099",
+    image: "/images/products/sw-afia-juice-apple-1.5l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100100,
+    name: "Afia Juice 1.5 LTR (Mango)",
+    description: "Afia mango juice in 1.5L pieces",
+    price: 155,
+    wholesalePrice: 150,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW100",
+    image: "/images/products/sw-afia-juice-mango-1.5l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100101,
+    name: "Afia Juice 1.5 LTR (Mixed Fruit)",
+    description: "Afia mixed fruit juice in 1.5L pieces",
+    price: 155,
+    wholesalePrice: 150,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW101",
+    image: "/images/products/sw-afia-juice-mixed-fruit-1.5l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100102,
+    name: "Afia Juice 1.5 LTR (Multi Vitamin)",
+    description: "Afia multi-vitamin juice in 1.5L pieces",
+    price: 155,
+    wholesalePrice: 150,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW102",
+    image: "/images/products/sw-afia-juice-multi-vitamin-1.5l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100103,
+    name: "Afia Juice 1.5 LTR (Tropical Carrot)",
+    description: "Afia tropical carrot juice in 1.5L pieces",
+    price: 155,
+    wholesalePrice: 150,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW103",
+    image: "/images/products/sw-afia-juice-tropical-carrot-1.5l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100104,
+    name: "Afia Juice 200ML (Apple)",
+    description: "Afia apple juice in 200ml cases",
+    price: 375,
+    wholesalePrice: 365,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW104",
+    image: "/images/products/sw-afia-juice-apple-200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100105,
+    name: "Afia Juice 200ML (Mango)",
+    description: "Afia mango juice in 200ml cases",
+    price: 375,
+    wholesalePrice: 365,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW105",
+    image: "/images/products/sw-afia-juice-mango-200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100106,
+    name: "Afia Juice 200ML (Mixed Fruit)",
+    description: "Afia mixed fruit juice in 200ml cases",
+    price: 375,
+    wholesalePrice: 365,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW106",
+    image: "/images/products/sw-afia-juice-mixed-fruit-200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100107,
+    name: "Afia Juice 200ML (Multi Vitamin)",
+    description: "Afia multi-vitamin juice in 200ml cases",
+    price: 375,
+    wholesalePrice: 365,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW107",
+    image: "/images/products/sw-afia-juice-multi-vitamin-200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100108,
+    name: "Afia Juice 2L (Mango)",
+    description: "Afia mango juice in 2L pieces",
+    price: 225,
+    wholesalePrice: 220,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW108",
+    image: "/images/products/sw-afia-juice-mango-2l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100109,
+    name: "Afia Juice 2L (Mixed Fruit)",
+    description: "Afia mixed fruit juice in 2L pieces",
+    price: 230,
+    wholesalePrice: 225,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW109",
+    image: "/images/products/sw-afia-juice-mixed-fruit-2l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100110,
+    name: "Afia Juice 2L (Multivitamin)",
+    description: "Afia multi-vitamin juice in 2L pieces",
+    price: 225,
+    wholesalePrice: 220,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW110",
+    image: "/images/products/sw-afia-juice-multivitamin-2l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100111,
+    name: "Afia Juice 300ML (Mango)",
+    description: "Afia mango juice in 300ml cases",
+    price: 560,
+    wholesalePrice: 550,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW111",
+    image: "/images/products/sw-afia-juice-mango-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100112,
+    name: "Afia Juice 300ML (Mixed Fruit)",
+    description: "Afia mixed fruit juice in 300ml cases",
+    price: 560,
+    wholesalePrice: 550,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW112",
+    image: "/images/products/sw-afia-juice-mixed-fruit-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100113,
+    name: "Afia Juice 300ML (Multi-Vitamin)",
+    description: "Afia multi-vitamin juice in 300ml cases",
+    price: 560,
+    wholesalePrice: 550,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW113",
+    image: "/images/products/sw-afia-juice-multi-vitamin-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100114,
+    name: "Afia Juice 300ML (Tropical Carrot)",
+    description: "Afia tropical carrot juice in 300ml cases",
+    price: 550,
+    wholesalePrice: 540,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW114",
+    image: "/images/products/sw-afia-juice-tropical-carrot-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100115,
+    name: "Afia Juice 300ML (Apple)",
+    description: "Afia apple juice in 300ml cases",
+    price: 560,
+    wholesalePrice: 550,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW115",
+    image: "/images/products/sw-afia-juice-apple-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100116,
+    name: "Afia Juice 300ML (Orange)",
+    description: "Afia orange juice in 300ml cases",
+    price: 565,
+    wholesalePrice: 555,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW116",
+    image: "/images/products/sw-afia-juice-orange-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100117,
+    name: "Afia Juice 300ML (Piece)",
+    description: "Afia juice in 300ml pieces",
+    price: 50,
+    wholesalePrice: 45,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW117",
+    image: "/images/products/sw-afia-juice-300ml-piece.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100118,
+    name: "Afia Juice 500ML (Apple)",
+    description: "Afia apple juice in 500ml cases",
+    price: 745,
+    wholesalePrice: 735,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW118",
+    image: "/images/products/sw-afia-juice-apple-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100119,
+    name: "Afia Juice 500ML (Guava)",
+    description: "Afia guava juice in 500ml cases",
+    price: 745,
+    wholesalePrice: 735,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW119",
+    image: "/images/products/sw-afia-juice-guava-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100120,
+    name: "Afia Juice 500ML (Mango)",
+    description: "Afia mango juice in 500ml cases",
+    price: 745,
+    wholesalePrice: 735,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW120",
+    image: "/images/products/sw-afia-juice-mango-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100121,
+    name: "Afia Juice 500ML (Mixed Fruit)",
+    description: "Afia mixed fruit juice in 500ml cases",
+    price: 745,
+    wholesalePrice: 735,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW121",
+    image: "/images/products/sw-afia-juice-mixed-fruit-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100122,
+    name: "Afia Juice 500ML (Multi-Vitamin)",
+    description: "Afia multi-vitamin juice in 500ml cases",
+    price: 745,
+    wholesalePrice: 735,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW122",
+    image: "/images/products/sw-afia-juice-multi-vitamin-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100123,
+    name: "Afia Juice 500ML (Orange)",
+    description: "Afia orange juice in 500ml cases",
+    price: 745,
+    wholesalePrice: 735,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW123",
+    image: "/images/products/sw-afia-juice-orange-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100124,
+    name: "Afia Juice 500ML (Piece)",
+    description: "Afia juice in 500ml pieces",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW124",
+    image: "/images/products/sw-afia-juice-500ml-piece.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100125,
+    name: "Afia Juice 750ML (Apple)",
+    description: "Afia apple juice in 750ml cases",
+    price: 895,
+    wholesalePrice: 885,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW125",
+    image: "/images/products/sw-afia-juice-apple-750ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100126,
+    name: "Afia Juice 750ML (Mango)",
+    description: "Afia mango juice in 750ml cases",
+    price: 895,
+    wholesalePrice: 885,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW126",
+    image: "/images/products/sw-afia-juice-mango-750ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100127,
+    name: "Afia Juice 750ML (Mixed Fruit)",
+    description: "Afia mixed fruit juice in 750ml cases",
+    price: 895,
+    wholesalePrice: 885,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW127",
+    image: "/images/products/sw-afia-juice-mixed-fruit-750ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100128,
+    name: "Afia Juice 750ML (Piece)",
+    description: "Afia juice in 750ml pieces",
+    price: 40,
+    wholesalePrice: 35,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW128",
+    image: "/images/products/sw-afia-juice-750ml-piece.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100129,
+    name: "Afia Juice Nectar Mango 1L (Tetra)",
+    description: "Afia mango nectar juice in 1L tetra pieces",
+    price: 155,
+    wholesalePrice: 150,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW129",
+    image: "/images/products/sw-afia-juice-nectar-mango-1l-tetra.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100130,
+    name: "Afia Juice PET 1L (Apple)",
+    description: "Afia apple juice in 1L PET cases",
+    price: 650,
+    wholesalePrice: 640,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW130",
+    image: "/images/products/sw-afia-juice-pet-apple-1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100131,
+    name: "Afia Juice PET 1L (Mango)",
+    description: "Afia mango juice in 1L PET cases",
+    price: 650,
+    wholesalePrice: 640,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW131",
+    image: "/images/products/sw-afia-juice-pet-mango-1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100132,
+    name: "Afia Juice PET 1L (Mixed Fruit)",
+    description: "Afia mixed fruit juice in 1L PET cases",
+    price: 650,
+    wholesalePrice: 640,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Case",
+    code: "SW132",
+    image: "/images/products/sw-afia-juice-pet-mixed-fruit-1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100133,
+    name: "Afia Juice Tetra 1L (Orange)",
+    description: "Afia orange juice in 1L tetra pieces",
+    price: 140,
+    wholesalePrice: 135,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW133",
+    image: "/images/products/sw-afia-juice-tetra-orange-1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100134,
+    name: "Afia Juice Tetra 1L (Apple Fruit)",
+    description: "Afia apple juice in 1L tetra pieces",
+    price: 120,
+    wholesalePrice: 115,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW134",
+    image: "/images/products/sw-afia-juice-tetra-apple-1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100135,
+    name: "Afia Juice Tetra 1L (Mixed Fruit)",
+    description: "Afia mixed fruit juice in 1L tetra pieces",
+    price: 125,
+    wholesalePrice: 120,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW135",
+    image: "/images/products/sw-afia-juice-tetra-mixed-fruit-1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100136,
+    name: "Afia Juice Tetra 1L (Multivitamin)",
+    description: "Afia multi-vitamin juice in 1L tetra pieces",
+    price: 135,
+    wholesalePrice: 130,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW136",
+    image: "/images/products/sw-afia-juice-tetra-multivitamin-1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100137,
+    name: "Afia Nectar Orange 12x1L (Tetra)",
+    description: "Afia orange nectar juice in 1L tetra pieces, 12 per case",
+    price: 155,
+    wholesalePrice: 150,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW137",
+    image: "/images/products/sw-afia-nectar-orange-12x1l-tetra.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100138,
+    name: "Afia Nectar Red Berry 12x1L (Tetra)",
+    description: "Afia red berry nectar juice in 1L tetra pieces, 12 per case",
+    price: 155,
+    wholesalePrice: 150,
+    category: "food",
+    brand: "Afia",
+    inStock: true,
+    unit: "Piece",
+    code: "SW138",
+    image: "/images/products/sw-afia-nectar-red-berry-12x1l-tetra.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100139,
+    name: "African Mandi Parboiled Rice 25KG",
+    description: "African Mandi parboiled rice in 25kg bags",
+    price: 2600,
+    wholesalePrice: 2590,
+    category: "food",
+    brand: "African Mandi",
+    inStock: true,
+    unit: "Bag",
+    code: "SW139",
+    image: "/images/products/sw-african-mandi-parboiled-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100140,
+    name: "Afrisense Soap 24x225GM",
+    description: "Afrisense soap in 225g pieces, 24 per pack",
+    price: 105,
+    wholesalePrice: 100,
+    category: "hygiene",
+    brand: "Afrisense",
+    inStock: true,
+    unit: "Piece",
+    code: "SW140",
+    image: "/images/products/sw-afrisense-soap-24x225g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100141,
+    name: "Afrisense Soap 48x125GM",
+    description: "Afrisense soap in 125g pieces, 48 per pack",
+    price: 70,
+    wholesalePrice: 65,
+    category: "hygiene",
+    brand: "Afrisense",
+    inStock: true,
+    unit: "Piece",
+    code: "SW141",
+    image: "/images/products/sw-afrisense-soap-48x125g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100142,
+    name: "Airmax Air Freshener Block 24x150G (Strawberry)",
+    description: "Airmax strawberry air freshener block in 150g pieces, 24 per pack",
+    price: 140,
+    wholesalePrice: 135,
+    category: "cleaning",
+    brand: "Airmax",
+    inStock: true,
+    unit: "Piece",
+    code: "SW142",
+    image: "/images/products/sw-airmax-air-freshener-strawberry-24x150g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100143,
+    name: "Airmax Air Freshener Block 24x150G (Lavender)",
+    description: "Airmax lavender air freshener block in 150g pieces, 24 per pack",
+    price: 140,
+    wholesalePrice: 135,
+    category: "cleaning",
+    brand: "Airmax",
+    inStock: true,
+    unit: "Piece",
+    code: "SW143",
+    image: "/images/products/sw-airmax-air-freshener-lavender-24x150g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100144,
+    name: "Airoma Air Freshener (Citrus) 300ML",
+    description: "Airoma citrus air freshener in 300ml pieces",
+    price: 170,
+    wholesalePrice: 165,
+    category: "cleaning",
+    brand: "Airoma",
+    inStock: true,
+    unit: "Piece",
+    code: "SW144",
+    image: "/images/products/sw-airoma-air-freshener-citrus-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100145,
+    name: "Airoma Air Freshener (Cotton Breeze) 12x300ML",
+    description: "Airoma cotton breeze air freshener in 300ml pieces, 12 per pack",
+    price: 170,
+    wholesalePrice: 165,
+    category: "cleaning",
+    brand: "Airoma",
+    inStock: true,
+    unit: "Piece",
+    code: "SW145",
+    image: "/images/products/sw-airoma-air-freshener-cotton-breeze-12x300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100146,
+    name: "Airoma Air Freshener (Floral Bloom) 12x300ML",
+    description: "Airoma floral bloom air freshener in 300ml pieces, 12 per pack",
+    price: 170,
+    wholesalePrice: 165,
+    category: "cleaning",
+    brand: "Airoma",
+    inStock: true,
+    unit: "Piece",
+    code: "SW146",
+    image: "/images/products/sw-airoma-air-freshener-floral-bloom-12x300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100147,
+    name: "Airoma Air Freshener (Ocean Spray) 300ML",
+    description: "Airoma ocean spray air freshener in 300ml pieces",
+    price: 170,
+    wholesalePrice: 165,
+    category: "cleaning",
+    brand: "Airoma",
+    inStock: true,
+    unit: "Piece",
+    code: "SW147",
+    image: "/images/products/sw-airoma-air-freshener-ocean-spray-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100148,
+    name: "Airoma Air Freshener (Pomegranate) 300ML",
+    description: "Airoma pomegranate air freshener in 300ml pieces",
+    price: 170,
+    wholesalePrice: 165,
+    category: "cleaning",
+    brand: "Airoma",
+    inStock: true,
+    unit: "Piece",
+    code: "SW148",
+    image: "/images/products/sw-airoma-air-freshener-pomegranate-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100149,
+    name: "Airoma Air Freshener (Lavender Dreams) 12x300ML",
+    description: "Airoma lavender dreams air freshener in 300ml pieces, 12 per pack",
+    price: 170,
+    wholesalePrice: 165,
+    category: "cleaning",
+    brand: "Airoma",
+    inStock: true,
+    unit: "Piece",
+    code: "SW149",
+    image: "/images/products/sw-airoma-air-freshener-lavender-dreams-12x300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100150,
+    name: "Airwick Aroma Gel 24x30G (Freshwaters)",
+    description: "Airwick freshwaters aroma gel in 30g pieces, 24 per pack",
+    price: 190,
+    wholesalePrice: 185,
+    category: "cleaning",
+    brand: "Airwick",
+    inStock: true,
+    unit: "Piece",
+    code: "SW150",
+    image: "/images/products/sw-airwick-aroma-gel-freshwaters-24x30g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100151,
+    name: "Aisha (Blue Bag) Parboiled Rice 25KG",
+    description: "Aisha parboiled rice in 25kg blue bags",
+    price: 3150,
+    wholesalePrice: 3140,
+    category: "food",
+    brand: "Aisha",
+    inStock: true,
+    unit: "Bag",
+    code: "SW151",
+    image: "/images/products/sw-aisha-parboiled-rice-blue-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100152,
+    name: "Aisha (Yellow Bag) Parboiled Rice 25KG",
+    description: "Aisha parboiled rice in 25kg yellow bags",
+    price: 3050,
+    wholesalePrice: 3040,
+    category: "food",
+    brand: "Aisha",
+    inStock: true,
+    unit: "Bag",
+    code: "SW152",
+    image: "/images/products/sw-aisha-parboiled-rice-yellow-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100153,
+    name: "Ajab (Mobile) Ngano 500G",
+    description: "Ajab mobile ngano flour in 500g bales",
+    price: 965,
+    wholesalePrice: 955,
+    category: "food",
+    brand: "Ajab",
+    inStock: true,
+    unit: "Bale",
+    code: "SW153",
+    image: "/images/products/sw-ajab-mobile-ngano-500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100154,
+    name: "Ajab Asili Bakers 50KG",
+    description: "Ajab asili bakers flour in 50kg bags",
+    price: 3600,
+    wholesalePrice: 3590,
+    category: "food",
+    brand: "Ajab",
+    inStock: true,
+    unit: "Bag",
+    code: "SW154",
+    image: "/images/products/sw-ajab-asili-bakers-50kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100155,
+    name: "Ajab Atta 2KG",
+    description: "Ajab atta flour in 2kg half bales",
+    price: 930,
+    wholesalePrice: 920,
+    category: "food",
+    brand: "Ajab",
+    inStock: true,
+    unit: "1/2bale",
+    code: "SW155",
+    image: "/images/products/sw-ajab-atta-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100156,
+    name: "Ajab Mandazi 1KG",
+    description: "Ajab mandazi flour in 1kg bales",
+    price: 1880,
+    wholesalePrice: 1870,
+    category: "food",
+    brand: "Ajab",
+    inStock: true,
+    unit: "Bale",
+    code: "SW156",
+    image: "/images/products/sw-ajab-mandazi-1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100157,
+    name: "Ajab Mandazi 2KG",
+    description: "Ajab mandazi flour in 2kg half bales",
+    price: 915,
+    wholesalePrice: 905,
+    category: "food",
+    brand: "Ajab",
+    inStock: true,
+    unit: "1/2bale",
+    code: "SW157",
+    image: "/images/products/sw-ajab-mandazi-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100158,
+    name: "Ajab Ngano 1KG",
+    description: "Ajab ngano flour in 1kg bales",
+    price: 1890,
+    wholesalePrice: 1880,
+    category: "food",
+    brand: "Ajab",
+    inStock: true,
+    unit: "Bale",
+    code: "SW158",
+    image: "/images/products/sw-ajab-ngano-1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100159,
+    name: "Ajab Ngano 2KG",
+    description: "Ajab ngano flour in 2kg half bales",
+    price: 930,
+    wholesalePrice: 920,
+    category: "food",
+    brand: "Ajab",
+    inStock: true,
+    unit: "1/2bale",
+    code: "SW159",
+    image: "/images/products/sw-ajab-ngano-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100160,
+    name: "Ajab Self Rising 2KG",
+    description: "Ajab self-rising flour in 2kg half bales",
+    price: 920,
+    wholesalePrice: 910,
+    category: "food",
+    brand: "Ajab",
+    inStock: true,
+    unit: "1/2bale",
+    code: "SW160",
+    image: "/images/products/sw-ajab-self-rising-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100161,
+    name: "Al Barkat PK 386 Parboiled Rice 25KG",
+    description: "Al Barkat PK 386 parboiled rice in 25kg bags",
+    price: 3050,
+    wholesalePrice: 3040,
+    category: "food",
+    brand: "Al Barkat",
+    inStock: true,
+    unit: "Bag",
+    code: "SW161",
+    image: "/images/products/sw-al-barkat-pk-386-parboiled-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100162,
+    name: "Al Buraq Parboiled Rice 25KG (Jute Bag)",
+    description: "Al Buraq parboiled rice in 25kg jute bags",
+    price: 3200,
+    wholesalePrice: 3190,
+    category: "food",
+    brand: "Al Buraq",
+    inStock: true,
+    unit: "Bag",
+    code: "SW162",
+    image: "/images/products/sw-al-buraq-parboiled-rice-25kg-jute.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100163,
+    name: "Al Fakher Long Grain Rice 25KG",
+    description: "Al Fakher long grain rice in 25kg bags",
+    price: 4000,
+    wholesalePrice: 3990,
+    category: "food",
+    brand: "Al Fakher",
+    inStock: true,
+    unit: "Bag",
+    code: "SW163",
+    image: "/images/products/sw-al-fakher-long-grain-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100164,
+    name: "Al Jannat Parboiled Rice 25KG",
+    description: "Al Jannat parboiled rice in 25kg bags",
+    price: 2800,
+    wholesalePrice: 2790,
+    category: "food",
+    brand: "Al Jannat",
+    inStock: true,
+    unit: "Bag",
+    code: "SW164",
+    image: "/images/products/sw-al-jannat-parboiled-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100165,
+    name: "Al Jannat White Rice 25KG",
+    description: "Al Jannat white rice in 25kg bags",
+    price: 3150,
+    wholesalePrice: 3140,
+    category: "food",
+    brand: "Al Jannat",
+    inStock: true,
+    unit: "Bag",
+    code: "SW165",
+    image: "/images/products/sw-al-jannat-white-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100166,
+    name: "Al Malik PK 386 Parboiled Rice 25KG",
+    description: "Al Malik PK 386 parboiled rice in 25kg bags",
+    price: 3250,
+    wholesalePrice: 3240,
+    category: "food",
+    brand: "Al Malik",
+    inStock: true,
+    unit: "Bag",
+    code: "SW166",
+    image: "/images/products/sw-al-malik-pk-386-parboiled-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100167,
+    name: "Al-Asad PK 386 White Rice 25KG",
+    description: "Al-Asad PK 386 white rice in 25kg bags",
+    price: 3500,
+    wholesalePrice: 3490,
+    category: "food",
+    brand: "Al-Asad",
+    inStock: true,
+    unit: "Bag",
+    code: "SW167",
+    image: "/images/products/sw-al-asad-pk-386-white-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100168,
+    name: "Alara Soap 48x150G (Papaya)",
+    description: "Alara papaya soap in 150g pieces, 48 per pack",
+    price: 315,
+    wholesalePrice: 310,
+    category: "hygiene",
+    brand: "Alara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW168",
+    image: "/images/products/sw-alara-soap-papaya-48x150g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100169,
+    name: "Alara Soap 48x150G (Turmeric)",
+    description: "Alara turmeric soap in 150g pieces, 48 per pack",
+    price: 265,
+    wholesalePrice: 260,
+    category: "hygiene",
+    brand: "Alara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW169",
+    image: "/images/products/sw-alara-soap-turmeric-48x150g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100170,
+    name: "Alara Soap 48x150G (Vitamin C)",
+    description: "Alara vitamin C soap in 150g pieces, 48 per pack",
+    price: 265,
+    wholesalePrice: 260,
+    category: "hygiene",
+    brand: "Alara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW170",
+    image: "/images/products/sw-alara-soap-vitamin-c-48x150g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100171,
+    name: "Alfanar Basmati Rice 4x5KG (Yellow Bag)",
+    description: "Alfanar basmati rice in 5kg packets, 4 per pack, yellow bag",
+    price: 1340,
+    wholesalePrice: 1330,
+    category: "food",
+    brand: "Alfanar",
+    inStock: true,
+    unit: "Packet",
+    code: "SW171",
+    image: "/images/products/sw-alfanar-basmati-rice-4x5kg-yellow.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100172,
+    name: "Alisons Rose Water & Glycerine Oil 36x200ML",
+    description: "Alisons rose water and glycerine oil in 200ml pieces, 36 per pack",
+    price: 95,
+    wholesalePrice: 90,
+    category: "hygiene",
+    brand: "Alisons",
+    inStock: true,
+    unit: "Piece",
+    code: "SW172",
+    image: "/images/products/sw-alisons-rose-water-glycerine-36x200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100173,
+    name: "Allora (Unwrapped) Panty Liners 20'S",
+    description: "Allora unwrapped panty liners, 20 per pack",
+    price: 115,
+    wholesalePrice: 110,
+    category: "hygiene",
+    brand: "Allora",
+    inStock: true,
+    unit: "Piece",
+    code: "SW173",
+    image: "/images/products/sw-allora-unwrapped-panty-liners-20s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100174,
+    name: "Allora (Wrapped) Panty Liners 20'S",
+    description: "Allora wrapped panty liners, 20 per pack",
+    price: 115,
+    wholesalePrice: 110,
+    category: "hygiene",
+    brand: "Allora",
+    inStock: true,
+    unit: "Piece",
+    code: "SW174",
+    image: "/images/products/sw-allora-wrapped-panty-liners-20s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100175,
+    name: "Alma Dish Washing Liquid 12x1L (Lemon)",
+    description: "Alma lemon dish washing liquid in 1L pieces, 12 per pack",
+    price: 155,
+    wholesalePrice: 150,
+    category: "cleaning",
+    brand: "Alma",
+    inStock: true,
+    unit: "Piece",
+    code: "SW175",
+    image: "/images/products/sw-alma-dish-washing-liquid-lemon-12x1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100176,
+    name: "Alma Dish Washing Liquid 12x1L (Orange)",
+    description: "Alma orange dish washing liquid in 1L pieces, 12 per pack",
+    price: 155,
+    wholesalePrice: 150,
+    category: "cleaning",
+    brand: "Alma",
+    inStock: true,
+    unit: "Piece",
+    code: "SW176",
+    image: "/images/products/sw-alma-dish-washing-liquid-orange-12x1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100177,
+    name: "Alma Dish Washing Liquid 20x500ML (Lemon)",
+    description: "Alma lemon dish washing liquid in 500ml pieces, 20 per pack",
+    price: 95,
+    wholesalePrice: 90,
+    category: "cleaning",
+    brand: "Alma",
+    inStock: true,
+    unit: "Piece",
+    code: "SW177",
+    image: "/images/products/sw-alma-dish-washing-liquid-lemon-20x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100178,
+    name: "Alma Handwash 24x500ML (Lemon)",
+    description: "Alma lemon handwash in 500ml pieces, 24 per pack",
+    price: 100,
+    wholesalePrice: 95,
+    category: "hygiene",
+    brand: "Alma",
+    inStock: true,
+    unit: "Piece",
+    code: "SW178",
+    image: "/images/products/sw-alma-handwash-lemon-24x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100179,
+    name: "Alma Toilet Cleaner 15x500ML",
+    description: "Alma toilet cleaner in 500ml pieces, 15 per pack",
+    price: 130,
+    wholesalePrice: 125,
+    category: "cleaning",
+    brand: "Alma",
+    inStock: true,
+    unit: "Piece",
+    code: "SW179",
+    image: "/images/products/sw-alma-toilet-cleaner-15x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100180,
+    name: "Alo Body Deodorant 12x150ML (Aqua Fire)",
+    description: "Alo aqua fire body deodorant in 150ml pieces, 12 per pack",
+    price: 365,
+    wholesalePrice: 360,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW180",
+    image: "/images/products/sw-alo-body-deodorant-aqua-fire-12x150ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100181,
+    name: "Alo Body Deodorant 12x150ML (Cool Blast)",
+    description: "Alo cool blast body deodorant in 150ml pieces, 12 per pack",
+    price: 365,
+    wholesalePrice: 360,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW181",
+    image: "/images/products/sw-alo-body-deodorant-cool-blast-12x150ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100182,
+    name: "Alo Body Deodorant 12x150ML (Dark Desire)",
+    description: "Alo dark desire body deodorant in 150ml pieces, 12 per pack",
+    price: 365,
+    wholesalePrice: 360,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW182",
+    image: "/images/products/sw-alo-body-deodorant-dark-desire-12x150ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100183,
+    name: "Alo Body Deodorant 12x150ML (Invisible)",
+    description: "Alo invisible body deodorant in 150ml pieces, 12 per pack",
+    price: 365,
+    wholesalePrice: 360,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW183",
+    image: "/images/products/sw-alo-body-deodorant-invisible-12x150ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100184,
+    name: "Alo Body Deodorant 12x150ML (Romance)",
+    description: "Alo romance body deodorant in 150ml pieces, 12 per pack",
+    price: 365,
+    wholesalePrice: 360,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW184",
+    image: "/images/products/sw-alo-body-deodorant-romance-12x150ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100185,
+    name: "Alo Body Lotion 12x200ML (Cocoa Butter)",
+    description: "Alo cocoa butter body lotion in 200ml pieces, 12 per pack",
+    price: 150,
+    wholesalePrice: 145,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW185",
+    image: "/images/products/sw-alo-body-lotion-cocoa-butter-12x200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100186,
+    name: "Alo Body Lotion 12x200ML (Full Control-Men)",
+    description: "Alo full control body lotion for men in 200ml pieces, 12 per pack",
+    price: 150,
+    wholesalePrice: 145,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW186",
+    image: "/images/products/sw-alo-body-lotion-full-control-men-12x200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100187,
+    name: "Alo Body Lotion 12x200ML (Goat Milk)",
+    description: "Alo goat milk body lotion in 200ml pieces, 12 per pack",
+    price: 150,
+    wholesalePrice: 145,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW187",
+    image: "/images/products/sw-alo-body-lotion-goat-milk-12x200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100188,
+    name: "Alo Body Lotion 12x200ML (Intense Cool)",
+    description: "Alo intense cool body lotion in 200ml cartons, 12 per pack",
+    price: 1755,
+    wholesalePrice: 1745,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Carton",
+    code: "SW188",
+    image: "/images/products/sw-alo-body-lotion-intense-cool-12x200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100189,
+    name: "Alo Body Lotion 12x200ML (Milk & Honey)",
+    description: "Alo milk and honey body lotion in 200ml cartons, 12 per pack",
+    price: 1755,
+    wholesalePrice: 1745,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Carton",
+    code: "SW189",
+    image: "/images/products/sw-alo-body-lotion-milk-honey-12x200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100190,
+    name: "Alo Body Lotion 12x200ML (Shea Butter)",
+    description: "Alo shea butter body lotion in 200ml pieces, 12 per pack",
+    price: 150,
+    wholesalePrice: 145,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW190",
+    image: "/images/products/sw-alo-body-lotion-shea-butter-12x200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100191,
+    name: "Alo Body Lotion 12x400ML (Aloe)",
+    description: "Alo aloe body lotion in 400ml pieces, 12 per pack",
+    price: 250,
+    wholesalePrice: 245,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW191",
+    image: "/images/products/sw-alo-body-lotion-aloe-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100192,
+    name: "Alo Body Lotion 12x400ML (Cocoa)",
+    description: "Alo cocoa body lotion in 400ml pieces, 12 per pack",
+    price: 250,
+    wholesalePrice: 245,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW192",
+    image: "/images/products/sw-alo-body-lotion-cocoa-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100193,
+    name: "Alo Body Lotion 12x400ML (Full Control)",
+    description: "Alo full control body lotion in 400ml pieces, 12 per pack",
+    price: 250,
+    wholesalePrice: 245,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW193",
+    image: "/images/products/sw-alo-body-lotion-full-control-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100194,
+    name: "Alo Body Lotion 12x400ML (Goat Milk)",
+    description: "Alo goat milk body lotion in 400ml pieces, 12 per pack",
+    price: 250,
+    wholesalePrice: 245,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW194",
+    image: "/images/products/sw-alo-body-lotion-goat-milk-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100195,
+    name: "Alo Body Lotion 12x400ML (Intense Cool)",
+    description: "Alo intense cool body lotion in 400ml pieces, 12 per pack",
+    price: 250,
+    wholesalePrice: 245,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW195",
+    image: "/images/products/sw-alo-body-lotion-intense-cool-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100196,
+    name: "Alo Body Lotion 12x400ML (Milk & Honey)",
+    description: "Alo milk and honey body lotion in 400ml pieces, 12 per pack",
+    price: 250,
+    wholesalePrice: 245,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW196",
+    image: "/images/products/sw-alo-body-lotion-milk-honey-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100197,
+    name: "Alo Body Lotion 12x400ML (Shea Butter)",
+    description: "Alo shea butter body lotion in 400ml pieces, 12 per pack",
+    price: 250,
+    wholesalePrice: 245,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW197",
+    image: "/images/products/sw-alo-body-lotion-shea-butter-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100198,
+    name: "Alo Body Lotion 24x100ML (Aloe)",
+    description: "Alo aloe body lotion in 100ml cartons, 24 per pack",
+    price: 2005,
+    wholesalePrice: 1995,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Carton",
+    code: "SW198",
+    image: "/images/products/sw-alo-body-lotion-aloe-24x100ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100199,
+    name: "Alo Body Lotion 24x100ML (Cocoa Butter)",
+    description: "Alo cocoa butter body lotion in 100ml pieces, 24 per pack",
+    price: 85,
+    wholesalePrice: 80,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW199",
+    image: "/images/products/sw-alo-body-lotion-cocoa-butter-24x100ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100200,
+    name: "Alo Body Lotion 24x100ML (Full Control)",
+    description: "Alo full control body lotion in 100ml cartons, 24 per pack",
+    price: 2005,
+    wholesalePrice: 1995,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Carton",
+    code: "SW200",
+    image: "/images/products/sw-alo-body-lotion-full-control-24x100ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100201,
+    name: "Alo Body Lotion 24x100ML (Goat Milk)",
+    description: "Alo goat milk body lotion in 100ml pieces, 24 per pack",
+    price: 85,
+    wholesalePrice: 80,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW201",
+    image: "/images/products/sw-alo-body-lotion-goat-milk-24x100ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100202,
+    name: "Alo Body Lotion 24x100ML (Intense Cool)",
+    description: "Alo intense cool body lotion in 100ml cartons, 24 per pack",
+    price: 2005,
+    wholesalePrice: 1995,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Carton",
+    code: "SW202",
+    image: "/images/products/sw-alo-body-lotion-intense-cool-24x100ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100203,
+    name: "Alo Body Lotion 24x100ML (Milk & Honey)",
+    description: "Alo milk and honey body lotion in 100ml cartons, 24 per pack",
+    price: 2005,
+    wholesalePrice: 1995,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Carton",
+    code: "SW203",
+    image: "/images/products/sw-alo-body-lotion-milk-honey-24x100ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100204,
+    name: "Alo Body Lotion 24x100ML (Shea Butter)",
+    description: "Alo shea butter body lotion in 100ml pieces, 24 per pack",
+    price: 85,
+    wholesalePrice: 80,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW204",
+    image: "/images/products/sw-alo-body-lotion-shea-butter-24x100ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100205,
+    name: "Alo Body Wash 12x450ML (Berry)",
+    description: "Alo berry body wash in 450ml pieces, 12 per pack",
+    price: 515,
+    wholesalePrice: 505,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW205",
+    image: "/images/products/sw-alo-body-wash-berry-12x450ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100206,
+    name: "Alo Body Wash 12x450ML (Candy Land)",
+    description: "Alo candy land body wash in 450ml pieces, 12 per pack",
+    price: 515,
+    wholesalePrice: 505,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW206",
+    image: "/images/products/sw-alo-body-wash-candy-land-12x450ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100207,
+    name: "Alo Body Wash 12x450ML (City Pulse)",
+    description: "Alo city pulse body wash in 450ml pieces, 12 per pack",
+    price: 515,
+    wholesalePrice: 505,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW207",
+    image: "/images/products/sw-alo-body-wash-city-pulse-12x450ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100208,
+    name: "Alo Body Wash 12x450ML (Mellow Melon)",
+    description: "Alo mellow melon body wash in 450ml pieces, 12 per pack",
+    price: 515,
+    wholesalePrice: 505,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW208",
+    image: "/images/products/sw-alo-body-wash-mellow-melon-12x450ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100209,
+    name: "Alo Body Wash 12x450ML (Shea Dream)",
+    description: "Alo shea dream body wash in 450ml pieces, 12 per pack",
+    price: 515,
+    wholesalePrice: 505,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW209",
+    image: "/images/products/sw-alo-body-wash-shea-dream-12x450ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100210,
+    name: "Alo Body Wash 12x450ML (Sweet Vanilla)",
+    description: "Alo sweet vanilla body wash in 450ml pieces, 12 per pack",
+    price: 515,
+    wholesalePrice: 505,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW210",
+    image: "/images/products/sw-alo-body-wash-sweet-vanilla-12x450ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100211,
+    name: "Alo Roll On 12x50ML (Cool Blast)",
+    description: "Alo cool blast roll-on deodorant in 50ml pieces, 12 per pack",
+    price: 215,
+    wholesalePrice: 210,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW211",
+    image: "/images/products/sw-alo-roll-on-cool-blast-12x50ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100212,
+    name: "Alo Roll On 12x50ML (Dark Desire)",
+    description: "Alo dark desire roll-on deodorant in 50ml pieces, 12 per pack",
+    price: 215,
+    wholesalePrice: 210,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW212",
+    image: "/images/products/sw-alo-roll-on-dark-desire-12x50ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100213,
+    name: "Alo Roll On 12x50ML (Invisible)",
+    description: "Alo invisible roll-on deodorant in 50ml pieces, 12 per pack",
+    price: 215,
+    wholesalePrice: 210,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW213",
+    image: "/images/products/sw-alo-roll-on-invisible-12x50ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100214,
+    name: "Alo Roll On 12x50ML (Romance)",
+    description: "Alo romance roll-on deodorant in 50ml pieces, 12 per pack",
+    price: 215,
+    wholesalePrice: 210,
+    category: "hygiene",
+    brand: "Alo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW214",
+    image: "/images/products/sw-alo-roll-on-romance-12x50ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100215,
+    name: "Alpa Cooking Fat 50G",
+    description: "Alpa cooking fat in 50g cartons",
+    price: 1405,
+    wholesalePrice: 1395,
+    category: "food",
+    brand: "Alpa",
+    inStock: true,
+    unit: "Carton",
+    code: "SW215",
+    image: "/images/products/sw-alpa-cooking-fat-50g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100216,
+    name: "Always (Duo Pack) 3in1 Maxi Thick Extra Long 8x14 (Blue)",
+    description: "Always 3in1 maxi thick extra long sanitary pads in blue duo pack, 8x14 per packet",
+    price: 165,
+    wholesalePrice: 160,
+    category: "hygiene",
+    brand: "Always",
+    inStock: true,
+    unit: "Packet",
+    code: "SW216",
+    image: "/images/products/sw-always-duo-3in1-maxi-thick-extra-long-8x14-blue.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100217,
+    name: "Always (Duo Pack) 3in1 Ultra Thin Long 8x14",
+    description: "Always 3in1 ultra thin long sanitary pads in duo pack, 8x14 per packet",
+    price: 225,
+    wholesalePrice: 220,
+    category: "hygiene",
+    brand: "Always",
+    inStock: true,
+    unit: "Packet",
+    code: "SW217",
+    image: "/images/products/sw-always-duo-3in1-ultra-thin-long-8x14.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100218,
+    name: "Always (Duo Pack) Cotton Soft Maxi 8x14 (Pink)",
+    description: "Always cotton soft maxi sanitary pads in pink duo pack, 8x14 per packet",
+    price: 165,
+    wholesalePrice: 160,
+    category: "hygiene",
+    brand: "Always",
+    inStock: true,
+    unit: "Packet",
+    code: "SW218",
+    image: "/images/products/sw-always-duo-cotton-soft-maxi-8x14-pink.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100219,
+    name: "Always (Duo Pack) Dreamzz 2in1 Maxi Thick 8x14 (Black) Night",
+    description: "Always dreamzz 2in1 maxi thick night sanitary pads in black duo pack, 8x14 per packet",
+    price: 225,
+    wholesalePrice: 220,
+    category: "hygiene",
+    brand: "Always",
+    inStock: true,
+    unit: "Packet",
+    code: "SW219",
+    image: "/images/products/sw-always-duo-dreamzz-2in1-maxi-thick-8x14-black.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100220,
+    name: "Always (Slim) Ultra Thin Long 24x8 (Pink Box)",
+    description: "Always slim ultra thin long sanitary pads in pink box, 24x8 per carton",
+    price: 2630,
+    wholesalePrice: 2620,
+    category: "hygiene",
+    brand: "Always",
+    inStock: true,
+    unit: "Carton",
+    code: "SW220",
+    image: "/images/products/sw-always-slim-ultra-thin-long-24x8-pink.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100221,
+    name: "Always (Small Carton) Ultra Thin Long 16x7 (Blue/Pink Box)",
+    description: "Always ultra thin long sanitary pads in blue/pink box small carton, 16x7",
+    price: 1715,
+    wholesalePrice: 1705,
+    category: "hygiene",
+    brand: "Always",
+    inStock: true,
+    unit: "Carton",
+    code: "SW221",
+    image: "/images/products/sw-always-ultra-thin-long-16x7-blue-pink.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100222,
+    name: "Always Cotton Maxi Thick Long 16x7 (Pink Box)",
+    description: "Always cotton maxi thick long sanitary pads in pink box, 16x7 per carton",
+    price: 1150,
+    wholesalePrice: 1140,
+    category: "hygiene",
+    brand: "Always",
+    inStock: true,
+    unit: "Carton",
+    code: "SW222",
+    image: "/images/products/sw-always-cotton-maxi-thick-long-16x7-pink.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100223,
+    name: "Always Maxi Thick Extra Long 16x7 (Blue Box)",
+    description: "Always maxi thick extra long sanitary pads in blue box, 16x7 per carton",
+    price: 1935,
+    wholesalePrice: 1925,
+    category: "hygiene",
+    brand: "Always",
+    inStock: true,
+    unit: "Carton",
+    code: "SW223",
+    image: "/images/products/sw-always-maxi-thick-extra-long-16x7-blue.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100224,
+    name: "Always Maxi Thick Long 18x7 (Pink Box)",
+    description: "Always maxi thick long sanitary pads in pink box, 18x7 per carton",
+    price: 2180,
+    wholesalePrice: 2170,
+    category: "hygiene",
+    brand: "Always",
+    inStock: true,
+    unit: "Carton",
+    code: "SW224",
+    image: "/images/products/sw-always-maxi-thick-long-18x7-pink.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100225,
+    name: "Always Slim Long 12x16 (Pink Box) (Value Pack)",
+    description: "Always slim long sanitary pads in pink box value pack, 12x16 per packet",
+    price: 225,
+    wholesalePrice: 220,
+    category: "hygiene",
+    brand: "Always",
+    inStock: true,
+    unit: "Packet",
+    code: "SW225",
+    image: "/images/products/sw-always-slim-long-12x16-pink.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100226,
+    name: "Always Slim Long 18x26 (Pink Box) (Value Pack)",
+    description: "Always slim long sanitary pads in pink box value pack, 18x26 per packet",
+    price: 360,
+    wholesalePrice: 355,
+    category: "hygiene",
+    brand: "Always",
+    inStock: true,
+    unit: "Packet",
+    code: "SW226",
+    image: "/images/products/sw-always-slim-long-18x26-pink.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100227,
+    name: "Always Yours Fragrance 48x250ML",
+    description: "Always yours fragrance in 250ml pieces, 48 per pack",
+    price: 395,
+    wholesalePrice: 390,
+    category: "hygiene",
+    brand: "Always",
+    inStock: true,
+    unit: "Piece",
+    code: "SW227",
+    image: "/images/products/sw-always-yours-fragrance-48x250ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100228,
+    name: "Amaize Premium Maize Flour 2KG",
+    description: "Amaize premium maize flour in 2kg half bale",
+    price: 1200,
+    wholesalePrice: 1190,
+    category: "food",
+    brand: "Amaize",
+    inStock: true,
+    unit: "1/2bale",
+    code: "SW228",
+    image: "/images/products/sw-amaize-premium-maize-flour-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100229,
+    name: "Amana Basmati Rice 24x1KG",
+    description: "Amana basmati rice in 1kg pieces, 24 per pack",
+    price: 305,
+    wholesalePrice: 300,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Piece",
+    code: "SW229",
+    image: "/images/products/sw-amana-basmati-rice-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100230,
+    name: "Amana Basmati Rice 12x2KG",
+    description: "Amana basmati rice in 2kg pieces, 12 per pack",
+    price: 605,
+    wholesalePrice: 595,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Piece",
+    code: "SW230",
+    image: "/images/products/sw-amana-basmati-rice-12x2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100231,
+    name: "Amana Basmati Rice 5KG",
+    description: "Amana basmati rice in 5kg packets",
+    price: 1465,
+    wholesalePrice: 1455,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Packet",
+    code: "SW231",
+    image: "/images/products/sw-amana-basmati-rice-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100232,
+    name: "Amana Long Grain Rice 12x1KG",
+    description: "Amana long grain rice in 1kg pieces, 12 per pack",
+    price: 140,
+    wholesalePrice: 135,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Piece",
+    code: "SW232",
+    image: "/images/products/sw-amana-long-grain-rice-12x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100233,
+    name: "Amana Long Grain Rice 12x2KG",
+    description: "Amana long grain rice in 2kg pieces, 12 per pack",
+    price: 320,
+    wholesalePrice: 315,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Piece",
+    code: "SW233",
+    image: "/images/products/sw-amana-long-grain-rice-12x2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100234,
+    name: "Amana Ndengu 24x1KG",
+    description: "Amana ndengu (green grams) in 1kg pieces, 24 per pack",
+    price: 175,
+    wholesalePrice: 170,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Piece",
+    code: "SW234",
+    image: "/images/products/sw-amana-ndengu-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100235,
+    name: "Amana Nyayo Beans 24x1KG",
+    description: "Amana nyayo beans in 1kg packets, 24 per pack",
+    price: 210,
+    wholesalePrice: 205,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Packet",
+    code: "SW235",
+    image: "/images/products/sw-amana-nyayo-beans-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100236,
+    name: "Amana Pishori Rice 24x1KG",
+    description: "Amana pishori rice in 1kg pieces, 24 per pack",
+    price: 270,
+    wholesalePrice: 265,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Piece",
+    code: "SW236",
+    image: "/images/products/sw-amana-pishori-rice-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100237,
+    name: "Amana Pishori Rice 2KG",
+    description: "Amana pishori rice in 2kg packets",
+    price: 535,
+    wholesalePrice: 525,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Packet",
+    code: "SW237",
+    image: "/images/products/sw-amana-pishori-rice-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100238,
+    name: "Amana Pishori Rice 5KG",
+    description: "Amana pishori rice in 5kg packets",
+    price: 1290,
+    wholesalePrice: 1280,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Packet",
+    code: "SW238",
+    image: "/images/products/sw-amana-pishori-rice-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100239,
+    name: "Amana Rosecoco 24x1KG",
+    description: "Amana rosecoco beans in 1kg pieces, 24 per pack",
+    price: 215,
+    wholesalePrice: 210,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Piece",
+    code: "SW239",
+    image: "/images/products/sw-amana-rosecoco-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100240,
+    name: "Amana Spaghetti 20x400G",
+    description: "Amana spaghetti in 400g cartons, 20 per pack",
+    price: 1305,
+    wholesalePrice: 1295,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Carton",
+    code: "SW240",
+    image: "/images/products/sw-amana-spaghetti-20x400g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100241,
+    name: "Amana Sugar 1KG (Packet Only)",
+    description: "Amana sugar in 1kg packets",
+    price: 140,
+    wholesalePrice: 135,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Packet",
+    code: "SW241",
+    image: "/images/products/sw-amana-sugar-1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100242,
+    name: "Amana Yellow Beans 24x1KG",
+    description: "Amana yellow beans in 1kg packets, 24 per pack",
+    price: 235,
+    wholesalePrice: 230,
+    category: "food",
+    brand: "Amana",
+    inStock: true,
+    unit: "Packet",
+    code: "SW242",
+    image: "/images/products/sw-amana-yellow-beans-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100243,
+    name: "Amara Body Lotion (For Men) 12x400ML (Blue)",
+    description: "Amara body lotion for men in blue, 400ml pieces, 12 per pack",
+    price: 205,
+    wholesalePrice: 200,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW243",
+    image: "/images/products/sw-amara-body-lotion-men-blue-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100244,
+    name: "Amara Body Lotion (For Men) 12x400ML (Grey)",
+    description: "Amara body lotion for men in grey, 400ml pieces, 12 per pack",
+    price: 220,
+    wholesalePrice: 215,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW244",
+    image: "/images/products/sw-amara-body-lotion-men-grey-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100245,
+    name: "Amara Body Lotion 12x400ML (Baobab Delight)",
+    description: "Amara baobab delight body lotion in 400ml pieces, 12 per pack",
+    price: 205,
+    wholesalePrice: 200,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW245",
+    image: "/images/products/sw-amara-body-lotion-baobab-delight-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100246,
+    name: "Amara Body Lotion 12x400ML (Cocoa Butter)",
+    description: "Amara cocoa butter body lotion in 400ml pieces, 12 per pack",
+    price: 205,
+    wholesalePrice: 200,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW246",
+    image: "/images/products/sw-amara-body-lotion-cocoa-butter-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100247,
+    name: "Amara Body Lotion 12x400ML (Jojoba)",
+    description: "Amara jojoba body lotion in 400ml pieces, 12 per pack",
+    price: 205,
+    wholesalePrice: 200,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW247",
+    image: "/images/products/sw-amara-body-lotion-jojoba-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100248,
+    name: "Amara Body Lotion 12x400ML (Macadamia)",
+    description: "Amara macadamia body lotion in 400ml pieces, 12 per pack",
+    price: 205,
+    wholesalePrice: 200,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW248",
+    image: "/images/products/sw-amara-body-lotion-macadamia-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100249,
+    name: "Amara Body Lotion 12x400ML (Raw Shea)",
+    description: "Amara raw shea body lotion in 400ml pieces, 12 per pack",
+    price: 205,
+    wholesalePrice: 200,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW249",
+    image: "/images/products/sw-amara-body-lotion-raw-shea-12x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100250,
+    name: "Amara Body Lotion 6x600ML (Argan)",
+    description: "Amara argan body lotion in 600ml pieces, 6 per pack",
+    price: 275,
+    wholesalePrice: 270,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW250",
+    image: "/images/products/sw-amara-body-lotion-argan-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100251,
+    name: "Amara Body Lotion 6x600ML (Cocoa Butter)",
+    description: "Amara cocoa butter body lotion in 600ml pieces, 6 per pack",
+    price: 275,
+    wholesalePrice: 270,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW251",
+    image: "/images/products/sw-amara-body-lotion-cocoa-butter-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100252,
+    name: "Amara Body Lotion 6x600ML (Coconut)",
+    description: "Amara coconut body lotion in 600ml pieces, 6 per pack",
+    price: 275,
+    wholesalePrice: 270,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW252",
+    image: "/images/products/sw-amara-body-lotion-coconut-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100253,
+    name: "Amara Body Lotion 6x600ML (Jojoba)",
+    description: "Amara jojoba body lotion in 600ml pieces, 6 per pack",
+    price: 275,
+    wholesalePrice: 270,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW253",
+    image: "/images/products/sw-amara-body-lotion-jojoba-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100254,
+    name: "Amara Body Lotion 6x600ML (Men)",
+    description: "Amara body lotion for men in 600ml pieces, 6 per pack",
+    price: 275,
+    wholesalePrice: 270,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW254",
+    image: "/images/products/sw-amara-body-lotion-men-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100255,
+    name: "Amara Body Lotion 6x600ML (Milk)",
+    description: "Amara milk body lotion in 600ml pieces, 6 per pack",
+    price: 275,
+    wholesalePrice: 270,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW255",
+    image: "/images/products/sw-amara-body-lotion-milk-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100256,
+    name: "Amara Body Lotion 6x600ML (Shea)",
+    description: "Amara shea body lotion in 600ml pieces, 6 per pack",
+    price: 275,
+    wholesalePrice: 270,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW256",
+    image: "/images/products/sw-amara-body-lotion-shea-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100257,
+    name: "Amara Deo Cool Active 100ML",
+    description: "Amara cool active deodorant in 100ml pieces",
+    price: 260,
+    wholesalePrice: 255,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW257",
+    image: "/images/products/sw-amara-deo-cool-active-100ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100258,
+    name: "Amara Deo Paradise Blossom 100ML",
+    description: "Amara paradise blossom deodorant in 100ml pieces",
+    price: 260,
+    wholesalePrice: 255,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW258",
+    image: "/images/products/sw-amara-deo-paradise-blossom-100ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100259,
+    name: "Amara Handwash 12x500ML (Delicate Lace)",
+    description: "Amara delicate lace handwash in 500ml pieces, 12 per pack",
+    price: 140,
+    wholesalePrice: 135,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW259",
+    image: "/images/products/sw-amara-handwash-delicate-lace-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100260,
+    name: "Amara Handwash 12x500ML (Fresh)",
+    description: "Amara fresh handwash in 500ml pieces, 12 per pack",
+    price: 140,
+    wholesalePrice: 135,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW260",
+    image: "/images/products/sw-amara-handwash-fresh-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100261,
+    name: "Amara Handwash 12x500ML (Orange)",
+    description: "Amara orange handwash in 500ml pieces, 12 per pack",
+    price: 140,
+    wholesalePrice: 135,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW261",
+    image: "/images/products/sw-amara-handwash-orange-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100262,
+    name: "Amara Handwash 12x500ML (Vanilla)",
+    description: "Amara vanilla handwash in 500ml pieces, 12 per pack",
+    price: 140,
+    wholesalePrice: 135,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW262",
+    image: "/images/products/sw-amara-handwash-vanilla-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100263,
+    name: "Amara Handwash 4x5L (Delicate Lace)",
+    description: "Amara delicate lace handwash in 5L jericans, 4 per pack",
+    price: 760,
+    wholesalePrice: 750,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Jerican",
+    code: "SW263",
+    image: "/images/products/sw-amara-handwash-delicate-lace-4x5l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100264,
+    name: "Amara Petroleum Jelly 12x200G (Men)",
+    description: "Amara petroleum jelly for men in 200g pieces, 12 per pack",
+    price: 175,
+    wholesalePrice: 170,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW264",
+    image: "/images/products/sw-amara-petroleum-jelly-men-12x200g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100265,
+    name: "Amara Petroleum Jelly 12x200G (Raw Shea)",
+    description: "Amara raw shea petroleum jelly in 200g pieces, 12 per pack",
+    price: 175,
+    wholesalePrice: 170,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW265",
+    image: "/images/products/sw-amara-petroleum-jelly-raw-shea-12x200g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100266,
+    name: "Amara Petroleum Jelly 12x200G (Aloe)",
+    description: "Amara aloe petroleum jelly in 200g pieces, 12 per pack",
+    price: 175,
+    wholesalePrice: 170,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW266",
+    image: "/images/products/sw-amara-petroleum-jelly-aloe-12x200g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100267,
+    name: "Amara Petroleum Jelly 12x200G (Baby)",
+    description: "Amara baby petroleum jelly in 200g pieces, 12 per pack",
+    price: 160,
+    wholesalePrice: 155,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW267",
+    image: "/images/products/sw-amara-petroleum-jelly-baby-12x200g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100268,
+    name: "Amara Petroleum Jelly 12x200G (Cocoa Butter)",
+    description: "Amara cocoa butter petroleum jelly in 200g pieces, 12 per pack",
+    price: 175,
+    wholesalePrice: 170,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW268",
+    image: "/images/products/sw-amara-petroleum-jelly-cocoa-butter-12x200g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100269,
+    name: "Amara Petroleum Jelly 12x200G (Unscented)",
+    description: "Amara unscented petroleum jelly in 200g pieces, 12 per pack",
+    price: 160,
+    wholesalePrice: 155,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW269",
+    image: "/images/products/sw-amara-petroleum-jelly-unscented-12x200g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100270,
+    name: "Amara Shower Gel 6x600ML (Absolute Men)",
+    description: "Amara absolute men shower gel in 600ml pieces, 6 per pack",
+    price: 395,
+    wholesalePrice: 390,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW270",
+    image: "/images/products/sw-amara-shower-gel-absolute-men-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100271,
+    name: "Amara Shower Gel 6x600ML (Black Earth)",
+    description: "Amara black earth shower gel in 600ml pieces, 6 per pack",
+    price: 395,
+    wholesalePrice: 390,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW271",
+    image: "/images/products/sw-amara-shower-gel-black-earth-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100272,
+    name: "Amara Shower Gel 6x600ML (Energizing)",
+    description: "Amara energizing shower gel in 600ml pieces, 6 per pack",
+    price: 395,
+    wholesalePrice: 390,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW272",
+    image: "/images/products/sw-amara-shower-gel-energizing-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100273,
+    name: "Amara Shower Gel 6x600ML (Mellon)",
+    description: "Amara mellon shower gel in 600ml pieces, 6 per pack",
+    price: 395,
+    wholesalePrice: 390,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW273",
+    image: "/images/products/sw-amara-shower-gel-mellon-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100274,
+    name: "Amara Shower Gel 6x600ML (Original Men)",
+    description: "Amara original men shower gel in 600ml pieces, 6 per pack",
+    price: 395,
+    wholesalePrice: 390,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW274",
+    image: "/images/products/sw-amara-shower-gel-original-men-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100275,
+    name: "Amara Shower Gel 6x600ML (Pamper Lilac)",
+    description: "Amara pamper lilac shower gel in 600ml pieces, 6 per pack",
+    price: 395,
+    wholesalePrice: 390,
+    category: "hygiene",
+    brand: "Amara",
+    inStock: true,
+    unit: "Piece",
+    code: "SW275",
+    image: "/images/products/sw-amara-shower-gel-pamper-lilac-6x600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100276,
+    name: "Amne Parboiled Rice 25KG",
+    description: "Amne parboiled rice in 25kg bags",
+    price: 3100,
+    wholesalePrice: 3090,
+    category: "food",
+    brand: "Amne",
+    inStock: true,
+    unit: "Bag",
+    code: "SW276",
+    image: "/images/products/sw-amne-parboiled-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100277,
+    name: "Angel 2 in 1 Yeast 500G (Red)",
+    description: "Angel 2 in 1 yeast in 500g pieces, red packaging",
+    price: 460,
+    wholesalePrice: 455,
+    category: "food",
+    brand: "Angel",
+    inStock: true,
+    unit: "Piece",
+    code: "SW277",
+    image: "/images/products/sw-angel-2in1-yeast-500g-red.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100278,
+    name: "APC (Apycy) Tablets (Green)",
+    description: "APC (Apycy) tablets in green packets",
+    price: 100,
+    wholesalePrice: 95,
+    category: "health",
+    brand: "APC",
+    inStock: true,
+    unit: "Packet",
+    code: "SW278",
+    image: "/images/products/sw-apc-apycy-tablets-green.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100279,
+    name: "Apex Bleach 4x4L",
+    description: "Apex bleach in 4L pieces, 4 per pack",
+    price: 960,
+    wholesalePrice: 950,
+    category: "cleaning",
+    brand: "Apex",
+    inStock: true,
+    unit: "Piece",
+    code: "SW279",
+    image: "/images/products/sw-apex-bleach-4x4l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100280,
+    name: "Apex Disinfectant 4x3L",
+    description: "Apex disinfectant in 3L pieces, 4 per pack",
+    price: 1035,
+    wholesalePrice: 1025,
+    category: "cleaning",
+    brand: "Apex",
+    inStock: true,
+    unit: "Piece",
+    code: "SW280",
+    image: "/images/products/sw-apex-disinfectant-4x3l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100281,
+    name: "Apex Disinfectant 8x1.5L",
+    description: "Apex disinfectant in 1.5L pieces, 8 per pack",
+    price: 460,
+    wholesalePrice: 455,
+    category: "cleaning",
+    brand: "Apex",
+    inStock: true,
+    unit: "Piece",
+    code: "SW281",
+    image: "/images/products/sw-apex-disinfectant-8x1.5l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100282,
+    name: "Apex Kitchen Cleaner 12x750ML",
+    description: "Apex kitchen cleaner in 750ml pieces, 12 per pack",
+    price: 410,
+    wholesalePrice: 405,
+    category: "cleaning",
+    brand: "Apex",
+    inStock: true,
+    unit: "Piece",
+    code: "SW282",
+    image: "/images/products/sw-apex-kitchen-cleaner-12x750ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100283,
+    name: "Aptamil (0-6 Months) 400G",
+    description: "Aptamil infant formula for 0-6 months in 400g tins",
+    price: 1775,
+    wholesalePrice: 1765,
+    category: "food",
+    brand: "Aptamil",
+    inStock: true,
+    unit: "Tin",
+    code: "SW283",
+    image: "/images/products/sw-aptamil-0-6months-400g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100284,
+    name: "Aqua Clear 12x500ML",
+    description: "Aqua Clear mineral water in 500ml pieces, 12 per case",
+    price: 305,
+    wholesalePrice: 300,
+    category: "beverage",
+    brand: "Aqua Clear",
+    inStock: true,
+    unit: "Case",
+    code: "SW284",
+    image: "/images/products/sw-aqua-clear-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100285,
+    name: "Aqua Clear 1L",
+    description: "Aqua Clear mineral water in 1L pieces",
+    price: 50,
+    wholesalePrice: 45,
+    category: "beverage",
+    brand: "Aqua Clear",
+    inStock: true,
+    unit: "Piece",
+    code: "SW285",
+    image: "/images/products/sw-aqua-clear-1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100286,
+    name: "Aqua Fresh 50ML Herbal",
+    description: "Aqua Fresh herbal toothpaste in 50ml pieces, per dozen",
+    price: 1105,
+    wholesalePrice: 1095,
+    category: "hygiene",
+    brand: "Aqua Fresh",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW286",
+    image: "/images/products/sw-aqua-fresh-50ml-herbal.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100287,
+    name: "Aquaclear Mineral Water 500ML (Piece)",
+    description: "Aquaclear mineral water in 500ml pieces",
+    price: 30,
+    wholesalePrice: 25,
+    category: "beverage",
+    brand: "Aquaclear",
+    inStock: true,
+    unit: "Piece",
+    code: "SW287",
+    image: "/images/products/sw-aquaclear-mineral-water-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100288,
+    name: "Aquaguard 150ML",
+    description: "Aquaguard water purifier in 150ml pieces, per dozen",
+    price: 350,
+    wholesalePrice: 345,
+    category: "cleaning",
+    brand: "Aquaguard",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW288",
+    image: "/images/products/sw-aquaguard-150ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100289,
+    name: "Aquamist Flavoured Water 12x500ML (Apple)",
+    description: "Aquamist apple flavoured water in 500ml pieces, 12 per case",
+    price: 595,
+    wholesalePrice: 585,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Case",
+    code: "SW289",
+    image: "/images/products/sw-aquamist-flavoured-water-apple-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100290,
+    name: "Aquamist Flavoured Water 12x500ML (Lemon)",
+    description: "Aquamist lemon flavoured water in 500ml pieces, 12 per case",
+    price: 595,
+    wholesalePrice: 585,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Case",
+    code: "SW290",
+    image: "/images/products/sw-aquamist-flavoured-water-lemon-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100291,
+    name: "Aquamist Flavoured Water 12x500ML (Mango)",
+    description: "Aquamist mango flavoured water in 500ml pieces, 12 per case",
+    price: 595,
+    wholesalePrice: 585,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Case",
+    code: "SW291",
+    image: "/images/products/sw-aquamist-flavoured-water-mango-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100292,
+    name: "Aquamist Flavoured Water 12x500ML (Peach)",
+    description: "Aquamist peach flavoured water in 500ml pieces, 12 per case",
+    price: 595,
+    wholesalePrice: 585,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Case",
+    code: "SW292",
+    image: "/images/products/sw-aquamist-flavoured-water-peach-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100293,
+    name: "Aquamist Flavoured Water 12x500ML (Pineapple)",
+    description: "Aquamist pineapple flavoured water in 500ml pieces, 12 per case",
+    price: 595,
+    wholesalePrice: 585,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Case",
+    code: "SW293",
+    image: "/images/products/sw-aquamist-flavoured-water-pineapple-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100294,
+    name: "Aquamist Flavoured Water 12x500ML (Strawberry)",
+    description: "Aquamist strawberry flavoured water in 500ml pieces, 12 per case",
+    price: 595,
+    wholesalePrice: 585,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Case",
+    code: "SW294",
+    image: "/images/products/sw-aquamist-flavoured-water-strawberry-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100295,
+    name: "Aquamist Flavoured Water 500ML (Piece)",
+    description: "Aquamist flavoured water in 500ml pieces",
+    price: 60,
+    wholesalePrice: 55,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Piece",
+    code: "SW295",
+    image: "/images/products/sw-aquamist-flavoured-water-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100296,
+    name: "Aquamist Ice Tea 12x500ML (Lemon)",
+    description: "Aquamist lemon ice tea in 500ml pieces, 12 per case",
+    price: 715,
+    wholesalePrice: 705,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Case",
+    code: "SW296",
+    image: "/images/products/sw-aquamist-ice-tea-lemon-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100297,
+    name: "Aquamist Ice Tea 12x500ML (Peach)",
+    description: "Aquamist peach ice tea in 500ml pieces, 12 per case",
+    price: 865,
+    wholesalePrice: 855,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Case",
+    code: "SW297",
+    image: "/images/products/sw-aquamist-ice-tea-peach-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100298,
+    name: "Aquamist Ice Tea 500ML Peach (Piece)",
+    description: "Aquamist peach ice tea in 500ml pieces",
+    price: 60,
+    wholesalePrice: 55,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Piece",
+    code: "SW298",
+    image: "/images/products/sw-aquamist-ice-tea-peach-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100299,
+    name: "Aquamist Mineral Water 12x1.5L",
+    description: "Aquamist mineral water in 1.5L pieces, 12 per pack",
+    price: 75,
+    wholesalePrice: 70,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Piece",
+    code: "SW299",
+    image: "/images/products/sw-aquamist-mineral-water-12x1.5l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100300,
+    name: "Aquamist Mineral Water 12x1L",
+    description: "Aquamist mineral water in 1L pieces, 12 per pack",
+    price: 60,
+    wholesalePrice: 55,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Piece",
+    code: "SW300",
+    image: "/images/products/sw-aquamist-mineral-water-12x1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100301,
+    name: "Aquamist Mineral Water 24x500ML",
+    description: "Aquamist mineral water in 500ml pieces, 24 per case",
+    price: 845,
+    wholesalePrice: 835,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Case",
+    code: "SW301",
+    image: "/images/products/sw-aquamist-mineral-water-24x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100302,
+    name: "Aquamist Sparkling Water 500ML (Piece)",
+    description: "Aquamist sparkling water in 500ml pieces",
+    price: 65,
+    wholesalePrice: 60,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Piece",
+    code: "SW302",
+    image: "/images/products/sw-aquamist-sparkling-water-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100303,
+    name: "Aquamist Sparkling Water 24x500ML",
+    description: "Aquamist sparkling water in 500ml pieces, 24 per case",
+    price: 1435,
+    wholesalePrice: 1425,
+    category: "beverage",
+    brand: "Aquamist",
+    inStock: true,
+    unit: "Case",
+    code: "SW303",
+    image: "/images/products/sw-aquamist-sparkling-water-24x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100304,
+    name: "Arhaam 1121 Basmati Rice 20KG",
+    description: "Arhaam 1121 basmati rice in 20kg bags",
+    price: 3800,
+    wholesalePrice: 3790,
+    category: "food",
+    brand: "Arhaam",
+    inStock: true,
+    unit: "Bag",
+    code: "SW304",
+    image: "/images/products/sw-arhaam-1121-basmati-rice-20kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100305,
+    name: "Ariel Liquid Hand Wash 40ML (Spring Fresh)",
+    description: "Ariel spring fresh liquid hand wash in 40ml pieces, per dozen",
+    price: 60,
+    wholesalePrice: 55,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW305",
+    image: "/images/products/sw-ariel-liquid-hand-wash-spring-fresh-40ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100306,
+    name: "Ariel Liquid Machine Wash 2L (Automatic)",
+    description: "Ariel automatic liquid machine wash in 2L pieces",
+    price: 1075,
+    wholesalePrice: 1065,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Piece",
+    code: "SW306",
+    image: "/images/products/sw-ariel-liquid-machine-wash-automatic-2l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100307,
+    name: "Ariel Liquid Machine Wash 3L (4KG) (Automatic)",
+    description: "Ariel automatic liquid machine wash in 3L (4kg) pieces",
+    price: 1520,
+    wholesalePrice: 1510,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Piece",
+    code: "SW307",
+    image: "/images/products/sw-ariel-liquid-machine-wash-3l-4kg-automatic.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100308,
+    name: "Ariel Machine Powder 3KG",
+    description: "Ariel machine washing powder in 3kg packets",
+    price: 1630,
+    wholesalePrice: 1620,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Packet",
+    code: "SW308",
+    image: "/images/products/sw-ariel-machine-powder-3kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100309,
+    name: "Ariel Washing Powder 1KG (Floral)",
+    description: "Ariel floral washing powder in 1kg packets",
+    price: 400,
+    wholesalePrice: 395,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Packet",
+    code: "SW309",
+    image: "/images/products/sw-ariel-washing-powder-1kg-floral.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100310,
+    name: "Ariel Washing Powder 1KG (Lavender)",
+    description: "Ariel lavender washing powder in 1kg packets",
+    price: 400,
+    wholesalePrice: 395,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Packet",
+    code: "SW310",
+    image: "/images/products/sw-ariel-washing-powder-1kg-lavender.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100311,
+    name: "Ariel Washing Powder 1KG (Springs)",
+    description: "Ariel springs washing powder in 1kg packets",
+    price: 400,
+    wholesalePrice: 395,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Packet",
+    code: "SW311",
+    image: "/images/products/sw-ariel-washing-powder-1kg-springs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100312,
+    name: "Ariel Washing Powder 200G (Floral)",
+    description: "Ariel floral washing powder in 200g pieces, per dozen",
+    price: 745,
+    wholesalePrice: 735,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW312",
+    image: "/images/products/sw-ariel-washing-powder-200g-floral.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100313,
+    name: "Ariel Washing Powder 200G (Lavender)",
+    description: "Ariel lavender washing powder in 200g pieces, per dozen",
+    price: 705,
+    wholesalePrice: 695,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW313",
+    image: "/images/products/sw-ariel-washing-powder-200g-lavender.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100314,
+    name: "Ariel Washing Powder 200G (Springs)",
+    description: "Ariel springs washing powder in 200g pieces, per dozen",
+    price: 700,
+    wholesalePrice: 690,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW314",
+    image: "/images/products/sw-ariel-washing-powder-200g-springs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100315,
+    name: "Ariel Washing Powder 20G (Floral)",
+    description: "Ariel floral washing powder in 20g pieces, per dozen",
+    price: 105,
+    wholesalePrice: 100,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW315",
+    image: "/images/products/sw-ariel-washing-powder-20g-floral.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100316,
+    name: "Ariel Washing Powder 20G (Lavender)",
+    description: "Ariel lavender washing powder in 20g pieces, per dozen",
+    price: 100,
+    wholesalePrice: 95,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW316",
+    image: "/images/products/sw-ariel-washing-powder-20g-lavender.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100317,
+    name: "Ariel Washing Powder 20G (Spring)",
+    description: "Ariel spring washing powder in 20g pieces, per dozen",
+    price: 100,
+    wholesalePrice: 95,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW317",
+    image: "/images/products/sw-ariel-washing-powder-20g-spring.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100318,
+    name: "Ariel Washing Powder 3.5KG (Fresh Floral)",
+    description: "Ariel fresh floral washing powder in 3.5kg packets",
+    price: 1310,
+    wholesalePrice: 1300,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Packet",
+    code: "SW318",
+    image: "/images/products/sw-ariel-washing-powder-3.5kg-fresh-floral.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100319,
+    name: "Ariel Washing Powder 3.5KG (Lavender)",
+    description: "Ariel lavender washing powder in 3.5kg packets",
+    price: 1315,
+    wholesalePrice: 1305,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Packet",
+    code: "SW319",
+    image: "/images/products/sw-ariel-washing-powder-3.5kg-lavender.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100320,
+    name: "Ariel Washing Powder 3.5KG (Springs)",
+    description: "Ariel springs washing powder in 3.5kg packets",
+    price: 1320,
+    wholesalePrice: 1310,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Packet",
+    code: "SW320",
+    image: "/images/products/sw-ariel-washing-powder-3.5kg-springs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100321,
+    name: "Ariel Washing Powder 3.5KG (Touch of Downy)",
+    description: "Ariel touch of Downy washing powder in 3.5kg packets",
+    price: 1355,
+    wholesalePrice: 1345,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Packet",
+    code: "SW321",
+    image: "/images/products/sw-ariel-washing-powder-3.5kg-touch-of-downy.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100322,
+    name: "Ariel Washing Powder 30G (Original)",
+    description: "Ariel original washing powder in 30g pieces, per dozen",
+    price: 105,
+    wholesalePrice: 100,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW322",
+    image: "/images/products/sw-ariel-washing-powder-30g-original.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100323,
+    name: "Ariel Washing Powder 45G (Spring)",
+    description: "Ariel spring washing powder in 45g pieces, per dozen",
+    price: 155,
+    wholesalePrice: 150,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW323",
+    image: "/images/products/sw-ariel-washing-powder-45g-spring.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100324,
+    name: "Ariel Washing Powder 500G (Floral)",
+    description: "Ariel floral washing powder in 500g packets",
+    price: 235,
+    wholesalePrice: 230,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Packet",
+    code: "SW324",
+    image: "/images/products/sw-ariel-washing-powder-500g-floral.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100325,
+    name: "Ariel Washing Powder 500G (Lavender)",
+    description: "Ariel lavender washing powder in 500g packets",
+    price: 235,
+    wholesalePrice: 230,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Packet",
+    code: "SW325",
+    image: "/images/products/sw-ariel-washing-powder-500g-lavender.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100326,
+    name: "Ariel Washing Powder 500G (Spring)",
+    description: "Ariel spring washing powder in 500g packets",
+    price: 235,
+    wholesalePrice: 230,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Packet",
+    code: "SW326",
+    image: "/images/products/sw-ariel-washing-powder-500g-spring.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100327,
+    name: "Ariel Washing Powder 70G (Floral)",
+    description: "Ariel floral washing powder in 70g pieces, per dozen",
+    price: 305,
+    wholesalePrice: 300,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW327",
+    image: "/images/products/sw-ariel-washing-powder-70g-floral.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100328,
+    name: "Ariel Washing Powder 70G (Lavender)",
+    description: "Ariel lavender washing powder in 70g pieces, per dozen",
+    price: 300,
+    wholesalePrice: 295,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW328",
+    image: "/images/products/sw-ariel-washing-powder-70g-lavender.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100329,
+    name: "Ariel Washing Powder 70G (Springs)",
+    description: "Ariel springs washing powder in 70g pieces, per dozen",
+    price: 305,
+    wholesalePrice: 300,
+    category: "cleaning",
+    brand: "Ariel",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW329",
+    image: "/images/products/sw-ariel-washing-powder-70g-springs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100330,
+    name: "Arimis (Small) Milking Jelly 25G",
+    description: "Arimis small milking jelly in 25g pieces, per dozen",
+    price: 170,
+    wholesalePrice: 165,
+    category: "hygiene",
+    brand: "Arimis",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW330",
+    image: "/images/products/sw-arimis-milking-jelly-25g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100331,
+    name: "Arimis Milking Jelly 200G",
+    description: "Arimis milking jelly in 200g pieces, per outer",
+    price: 580,
+    wholesalePrice: 570,
+    category: "hygiene",
+    brand: "Arimis",
+    inStock: true,
+    unit: "Outer",
+    code: "SW331",
+    image: "/images/products/sw-arimis-milking-jelly-200g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100332,
+    name: "Arimis Milking Jelly 50G",
+    description: "Arimis milking jelly in 50g pieces, per dozen",
+    price: 355,
+    wholesalePrice: 350,
+    category: "hygiene",
+    brand: "Arimis",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW332",
+    image: "/images/products/sw-arimis-milking-jelly-50g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100333,
+    name: "Arimis Milking Jelly 90G",
+    description: "Arimis milking jelly in 90g pieces, per dozen",
+    price: 585,
+    wholesalePrice: 575,
+    category: "hygiene",
+    brand: "Arimis",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW333",
+    image: "/images/products/sw-arimis-milking-jelly-90g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100334,
+    name: "Aromat Naturally Tasty 60x70GM (Green)",
+    description: "Aromat naturally tasty seasoning in 70g pieces, 60 per pack, green packaging",
+    price: 130,
+    wholesalePrice: 125,
+    category: "food",
+    brand: "Aromat",
+    inStock: true,
+    unit: "Piece",
+    code: "SW334",
+    image: "/images/products/sw-aromat-naturally-tasty-60x70g-green.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100335,
+    name: "Aromat Original 75GM",
+    description: "Aromat original seasoning in 75g pieces",
+    price: 175,
+    wholesalePrice: 170,
+    category: "food",
+    brand: "Aromat",
+    inStock: true,
+    unit: "Piece",
+    code: "SW335",
+    image: "/images/products/sw-aromat-original-75g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100336,
+    name: "Aryuv Adult (Pants) Large",
+    description: "Aryuv adult pants in large size packets",
+    price: 700,
+    wholesalePrice: 690,
+    category: "hygiene",
+    brand: "Aryuv",
+    inStock: true,
+    unit: "Packet",
+    code: "SW336",
+    image: "/images/products/sw-aryuv-adult-pants-large.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100337,
+    name: "Aryuv Adult (Pants) XLarge",
+    description: "Aryuv adult pants in extra-large size packets",
+    price: 700,
+    wholesalePrice: 690,
+    category: "hygiene",
+    brand: "Aryuv",
+    inStock: true,
+    unit: "Packet",
+    code: "SW337",
+    image: "/images/products/sw-aryuv-adult-pants-xlarge.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100338,
+    name: "Aryuv Baby Wipes 80's (Antibacterial)",
+    description: "Aryuv antibacterial baby wipes, 80 pieces per packet",
+    price: 180,
+    wholesalePrice: 175,
+    category: "hygiene",
+    brand: "Aryuv",
+    inStock: true,
+    unit: "Packet",
+    code: "SW338",
+    image: "/images/products/sw-aryuv-baby-wipes-80s-antibacterial.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100339,
+    name: "Aryuv Baby Wipes 80's (Pure)",
+    description: "Aryuv pure baby wipes, 80 pieces per packet",
+    price: 160,
+    wholesalePrice: 155,
+    category: "hygiene",
+    brand: "Aryuv",
+    inStock: true,
+    unit: "Packet",
+    code: "SW339",
+    image: "/images/products/sw-aryuv-baby-wipes-80s-pure.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100340,
+    name: "Aryuv Baby Wipes 80's (Sensitive)",
+    description: "Aryuv sensitive baby wipes, 80 pieces per packet",
+    price: 160,
+    wholesalePrice: 155,
+    category: "hygiene",
+    brand: "Aryuv",
+    inStock: true,
+    unit: "Packet",
+    code: "SW340",
+    image: "/images/products/sw-aryuv-baby-wipes-80s-sensitive.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100341,
+    name: "Aryuv Facial Tissue 200's",
+    description: "Aryuv facial tissue, 200 sheets per packet",
+    price: 225,
+    wholesalePrice: 220,
+    category: "hygiene",
+    brand: "Aryuv",
+    inStock: true,
+    unit: "Packet",
+    code: "SW341",
+    image: "/images/products/sw-aryuv-facial-tissue-200s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100342,
+    name: "Aryuv Facial Tissue 80's",
+    description: "Aryuv facial tissue, 80 sheets per packet",
+    price: 110,
+    wholesalePrice: 105,
+    category: "hygiene",
+    brand: "Aryuv",
+    inStock: true,
+    unit: "Packet",
+    code: "SW342",
+    image: "/images/products/sw-aryuv-facial-tissue-80s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100343,
+    name: "Aryuv Pocket Tissues",
+    description: "Aryuv pocket tissues, per outer",
+    price: 170,
+    wholesalePrice: 165,
+    category: "hygiene",
+    brand: "Aryuv",
+    inStock: true,
+    unit: "Outer",
+    code: "SW343",
+    image: "/images/products/sw-aryuv-pocket-tissues.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100344,
+    name: "Aryuv Premium Adult (Diaper) Large",
+    description: "Aryuv premium adult diapers in large size packets",
+    price: 830,
+    wholesalePrice: 820,
+    category: "hygiene",
+    brand: "Aryuv",
+    inStock: true,
+    unit: "Packet",
+    code: "SW344",
+    image: "/images/products/sw-aryuv-premium-adult-diaper-large.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100345,
+    name: "Aryuv Premium Adult (Diaper) XL",
+    description: "Aryuv premium adult diapers in extra-large size packets",
+    price: 865,
+    wholesalePrice: 855,
+    category: "hygiene",
+    brand: "Aryuv",
+    inStock: true,
+    unit: "Packet",
+    code: "SW345",
+    image: "/images/products/sw-aryuv-premium-adult-diaper-xl.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100346,
+    name: "Aryuv Premium Dark Soy Sauce 150ML",
+    description: "Aryuv premium dark soy sauce in 150ml pieces",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Aryuv",
+    inStock: true,
+    unit: "Piece",
+    code: "SW346",
+    image: "/images/products/sw-aryuv-premium-dark-soy-sauce-150ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100347,
+    name: "Aryuv Premium Dark Soy Sauce 625ML",
+    description: "Aryuv premium dark soy sauce in 625ml pieces",
+    price: 230,
+    wholesalePrice: 225,
+    category: "food",
+    brand: "Aryuv",
+    inStock: true,
+    unit: "Piece",
+    code: "SW347",
+    image: "/images/products/sw-aryuv-premium-dark-soy-sauce-625ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100348,
+    name: "Aryuva Coconut Cream 24x400ML",
+    description: "Aryuva coconut cream in 400ml pieces, 24 per pack",
+    price: 250,
+    wholesalePrice: 245,
+    category: "food",
+    brand: "Aryuva",
+    inStock: true,
+    unit: "Piece",
+    code: "SW348",
+    image: "/images/products/sw-aryuva-coconut-cream-24x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100349,
+    name: "Aryuva Coconut Milk 24x400ML",
+    description: "Aryuva coconut milk in 400ml pieces, 24 per pack",
+    price: 230,
+    wholesalePrice: 225,
+    category: "food",
+    brand: "Aryuva",
+    inStock: true,
+    unit: "Piece",
+    code: "SW349",
+    image: "/images/products/sw-aryuva-coconut-milk-24x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100350,
+    name: "Aryuva Coconut Milk Powder 24x150ML",
+    description: "Aryuva coconut milk powder in 150ml pieces, 24 per pack",
+    price: 305,
+    wholesalePrice: 300,
+    category: "food",
+    brand: "Aryuva",
+    inStock: true,
+    unit: "Piece",
+    code: "SW350",
+    image: "/images/products/sw-aryuva-coconut-milk-powder-24x150ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100351,
+    name: "Aryuva Sweet Corn Kernel 24x425ML",
+    description: "Aryuva sweet corn kernels in 425ml pieces, 24 per pack",
+    price: 150,
+    wholesalePrice: 145,
+    category: "food",
+    brand: "Aryuva",
+    inStock: true,
+    unit: "Piece",
+    code: "SW351",
+    image: "/images/products/sw-aryuva-sweet-corn-kernel-24x425ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100352,
+    name: "Aryuva Tomato Paste 2.2KG (Tin)",
+    description: "Aryuva tomato paste in 2.2kg tins",
+    price: 755,
+    wholesalePrice: 745,
+    category: "food",
+    brand: "Aryuva",
+    inStock: true,
+    unit: "Piece",
+    code: "SW352",
+    image: "/images/products/sw-aryuva-tomato-paste-2.2kg-tin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100353,
+    name: "Aryuva Tomato Paste 200G (Sachet)",
+    description: "Aryuva tomato paste in 200g sachets",
+    price: 105,
+    wholesalePrice: 100,
+    category: "food",
+    brand: "Aryuva",
+    inStock: true,
+    unit: "Packet",
+    code: "SW353",
+    image: "/images/products/sw-aryuva-tomato-paste-200g-sachet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100354,
+    name: "Aryuva Tomato Paste 400G (Tin)",
+    description: "Aryuva tomato paste in 400g tins",
+    price: 155,
+    wholesalePrice: 150,
+    category: "food",
+    brand: "Aryuva",
+    inStock: true,
+    unit: "Tin",
+    code: "SW354",
+    image: "/images/products/sw-aryuva-tomato-paste-400g-tin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100355,
+    name: "Aryuva Tomato Paste 70G (Sachet)",
+    description: "Aryuva tomato paste in 70g sachets, per outer",
+    price: 915,
+    wholesalePrice: 905,
+    category: "food",
+    brand: "Aryuva",
+    inStock: true,
+    unit: "Outer",
+    code: "SW355",
+    image: "/images/products/sw-aryuva-tomato-paste-70g-sachet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100356,
+    name: "Aryuva UHT Coconut Cream 36x65ML",
+    description: "Aryuva UHT coconut cream in 65ml packets, 36 per pack",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Aryuva",
+    inStock: true,
+    unit: "Packet",
+    code: "SW356",
+    image: "/images/products/sw-aryuva-uht-coconut-cream-36x65ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100357,
+    name: "Aryuva Whole Mushrooms 24x400ML",
+    description: "Aryuva whole mushrooms in 400ml pieces, 24 per pack",
+    price: 220,
+    wholesalePrice: 215,
+    category: "food",
+    brand: "Aryuva",
+    inStock: true,
+    unit: "Piece",
+    code: "SW357",
+    image: "/images/products/sw-aryuva-whole-mushrooms-24x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100358,
+    name: "Asanta Kamande 24x1KG",
+    description: "Asanta kamande beans in 1kg packets, 24 per pack",
+    price: 380,
+    wholesalePrice: 375,
+    category: "food",
+    brand: "Asanta",
+    inStock: true,
+    unit: "Packet",
+    code: "SW358",
+    image: "/images/products/sw-asanta-kamande-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100359,
+    name: "Asanta Kamande 48x500G",
+    description: "Asanta kamande beans in 500g pieces, 48 per pack",
+    price: 190,
+    wholesalePrice: 185,
+    category: "food",
+    brand: "Asanta",
+    inStock: true,
+    unit: "Piece",
+    code: "SW359",
+    image: "/images/products/sw-asanta-kamande-48x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100360,
+    name: "Asanta Ndengu 24x1KG",
+    description: "Asanta ndengu (green grams) in 1kg packets, 24 per pack",
+    price: 170,
+    wholesalePrice: 165,
+    category: "food",
+    brand: "Asanta",
+    inStock: true,
+    unit: "Packet",
+    code: "SW360",
+    image: "/images/products/sw-asanta-ndengu-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100361,
+    name: "Asanta Ndengu 48x500G",
+    description: "Asanta ndengu (green grams) in 500g packets, 48 per pack",
+    price: 85,
+    wholesalePrice: 80,
+    category: "food",
+    brand: "Asanta",
+    inStock: true,
+    unit: "Packet",
+    code: "SW361",
+    image: "/images/products/sw-asanta-ndengu-48x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100362,
+    name: "Asanta Popcorn 120x200GM",
+    description: "Asanta popcorn in 200g pieces, 120 per pack",
+    price: 95,
+    wholesalePrice: 90,
+    category: "food",
+    brand: "Asanta",
+    inStock: true,
+    unit: "Piece",
+    code: "SW362",
+    image: "/images/products/sw-asanta-popcorn-120x200g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100363,
+    name: "Asanta Super Sweet Rice 25KG",
+    description: "Asanta super sweet rice in 25kg bags",
+    price: 2750,
+    wholesalePrice: 2740,
+    category: "food",
+    brand: "Asanta",
+    inStock: true,
+    unit: "Bag",
+    code: "SW363",
+    image: "/images/products/sw-asanta-super-sweet-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100364,
+    name: "Asanta Yellow Beans 1KG",
+    description: "Asanta yellow beans in 1kg packets",
+    price: 180,
+    wholesalePrice: 175,
+    category: "food",
+    brand: "Asanta",
+    inStock: true,
+    unit: "Packet",
+    code: "SW364",
+    image: "/images/products/sw-asanta-yellow-beans-1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100365,
+    name: "Asanta Yellow Beans 500GM",
+    description: "Asanta yellow beans in 500g packets",
+    price: 90,
+    wholesalePrice: 85,
+    category: "food",
+    brand: "Asanta",
+    inStock: true,
+    unit: "Packet",
+    code: "SW365",
+    image: "/images/products/sw-asanta-yellow-beans-500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100366,
+    name: "Ascotlight Ball Scubber 15G",
+    description: "Ascotlight ball scrubber in 15g pieces, per dozen",
+    price: 340,
+    wholesalePrice: 335,
+    category: "cleaning",
+    brand: "Ascotlight",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW366",
+    image: "/images/products/sw-ascotlight-ball-scubber-15g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100367,
+    name: "Asis Hibiscus Flower Enveloped (Tagged) 25's",
+    description: "Asis hibiscus flower tea, 25 enveloped tagged bags per packet",
+    price: 170,
+    wholesalePrice: 165,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Packet",
+    code: "SW367",
+    image: "/images/products/sw-asis-hibiscus-flower-tea-25s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100368,
+    name: "Asis Lemon Tea Enveloped (Tagged) 25's",
+    description: "Asis lemon tea, 25 enveloped tagged bags per packet",
+    price: 100,
+    wholesalePrice: 95,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Packet",
+    code: "SW368",
+    image: "/images/products/sw-asis-lemon-tea-25s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100369,
+    name: "Asis Masala Chai Enveloped (Tagged) 25's",
+    description: "Asis masala chai, 25 enveloped tagged bags per packet",
+    price: 85,
+    wholesalePrice: 80,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Packet",
+    code: "SW369",
+    image: "/images/products/sw-asis-masala-chai-25s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100370,
+    name: "Asis Premium Tea 100G",
+    description: "Asis premium tea in 100g pieces, per outer",
+    price: 350,
+    wholesalePrice: 345,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Outer",
+    code: "SW370",
+    image: "/images/products/sw-asis-premium-tea-100g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100371,
+    name: "Asis Premium Tea 15G",
+    description: "Asis premium tea in 15g pieces, per outer",
+    price: 105,
+    wholesalePrice: 100,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Outer",
+    code: "SW371",
+    image: "/images/products/sw-asis-premium-tea-15g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100372,
+    name: "Asis Premium Tea 250G",
+    description: "Asis premium tea in 250g packets",
+    price: 90,
+    wholesalePrice: 85,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Packet",
+    code: "SW372",
+    image: "/images/products/sw-asis-premium-tea-250g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100373,
+    name: "Asis Premium Tea 500G",
+    description: "Asis premium tea in 500g packets",
+    price: 175,
+    wholesalePrice: 170,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Packet",
+    code: "SW373",
+    image: "/images/products/sw-asis-premium-tea-500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100374,
+    name: "Asis Premium Tea 50G",
+    description: "Asis premium tea in 50g pieces, per outer",
+    price: 175,
+    wholesalePrice: 170,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Outer",
+    code: "SW374",
+    image: "/images/products/sw-asis-premium-tea-50g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100375,
+    name: "Asis Purple Tea Enveloped (Tagged) 25's",
+    description: "Asis purple tea, 25 enveloped tagged bags per packet",
+    price: 190,
+    wholesalePrice: 185,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Packet",
+    code: "SW375",
+    image: "/images/products/sw-asis-purple-tea-25s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100376,
+    name: "Asis Tangawizi 100G",
+    description: "Asis tangawizi (ginger) tea in 100g pieces, per outer",
+    price: 390,
+    wholesalePrice: 385,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Outer",
+    code: "SW376",
+    image: "/images/products/sw-asis-tangawizi-100g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100377,
+    name: "Asis Tangawizi 250GM",
+    description: "Asis tangawizi (ginger) tea in 250g packets",
+    price: 100,
+    wholesalePrice: 95,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Packet",
+    code: "SW377",
+    image: "/images/products/sw-asis-tangawizi-250g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100378,
+    name: "Asis Tangawizi 50G",
+    description: "Asis tangawizi (ginger) tea in 50g pieces, per outer",
+    price: 195,
+    wholesalePrice: 190,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Outer",
+    code: "SW378",
+    image: "/images/products/sw-asis-tangawizi-50g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100379,
+    name: "Asis Tangawizi Chai Enveloped (Tagged) 25's",
+    description: "Asis tangawizi chai, 25 enveloped tagged bags per packet",
+    price: 75,
+    wholesalePrice: 70,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Packet",
+    code: "SW379",
+    image: "/images/products/sw-asis-tangawizi-chai-25s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100380,
+    name: "Asis Tangawizi Tea 15G",
+    description: "Asis tangawizi tea in 15g pieces, per outer",
+    price: 110,
+    wholesalePrice: 105,
+    category: "beverage",
+    brand: "Asis",
+    inStock: true,
+    unit: "Outer",
+    code: "SW380",
+    image: "/images/products/sw-asis-tangawizi-tea-15g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100381,
+    name: "Atilla Toilet Cleaner 16x500ML (Apple Green)",
+    description: "Atilla apple green toilet cleaner in 500ml pieces, 16 per pack",
+    price: 155,
+    wholesalePrice: 150,
+    category: "cleaning",
+    brand: "Atilla",
+    inStock: true,
+    unit: "Piece",
+    code: "SW381",
+    image: "/images/products/sw-atilla-toilet-cleaner-16x500ml-apple-green.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100382,
+    name: "Atilla Toilet Cleaner 16x500ML (Blue Freshness)",
+    description: "Atilla blue freshness toilet cleaner in 500ml pieces, 16 per pack",
+    price: 155,
+    wholesalePrice: 150,
+    category: "cleaning",
+    brand: "Atilla",
+    inStock: true,
+    unit: "Piece",
+    code: "SW382",
+    image: "/images/products/sw-atilla-toilet-cleaner-16x500ml-blue-freshness.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100383,
+    name: "Atilla Toilet Cleaner 16x500ML (Violet Infusion)",
+    description: "Atilla violet infusion toilet cleaner in 500ml pieces, 16 per pack",
+    price: 155,
+    wholesalePrice: 150,
+    category: "cleaning",
+    brand: "Atilla",
+    inStock: true,
+    unit: "Piece",
+    code: "SW383",
+    image: "/images/products/sw-atilla-toilet-cleaner-16x500ml-violet-infusion.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100384,
+    name: "Attenis Peanuts 24x125G",
+    description: "Attenis peanuts in 125g pieces, 24 per pack",
+    price: 95,
+    wholesalePrice: 90,
+    category: "food",
+    brand: "Attenis",
+    inStock: true,
+    unit: "Piece",
+    code: "SW384",
+    image: "/images/products/sw-attenis-peanuts-24x125g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100385,
+    name: "Attenis Peanuts 24x250G",
+    description: "Attenis peanuts in 250g pieces, 24 per pack",
+    price: 190,
+    wholesalePrice: 185,
+    category: "food",
+    brand: "Attenis",
+    inStock: true,
+    unit: "Piece",
+    code: "SW385",
+    image: "/images/products/sw-attenis-peanuts-24x250g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100386,
+    name: "Attenis Peanuts 24x500G",
+    description: "Attenis peanuts in 500g pieces, 24 per pack",
+    price: 355,
+    wholesalePrice: 350,
+    category: "food",
+    brand: "Attenis",
+    inStock: true,
+    unit: "Piece",
+    code: "SW386",
+    image: "/images/products/sw-attenis-peanuts-24x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100387,
+    name: "Attenis Peanuts 24x75G",
+    description: "Attenis peanuts in 75g pieces, 24 per pack",
+    price: 60,
+    wholesalePrice: 55,
+    category: "food",
+    brand: "Attenis",
+    inStock: true,
+    unit: "Piece",
+    code: "SW387",
+    image: "/images/products/sw-attenis-peanuts-24x75g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100388,
+    name: "Attenis Simsim 150G",
+    description: "Attenis simsim (sesame seeds) in 150g pieces",
+    price: 160,
+    wholesalePrice: 155,
+    category: "food",
+    brand: "Attenis",
+    inStock: true,
+    unit: "Piece",
+    code: "SW388",
+    image: "/images/products/sw-attenis-simsim-150g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100389,
+    name: "Attenis Simsim 250G",
+    description: "Attenis simsim (sesame seeds) in 250g pieces",
+    price: 240,
+    wholesalePrice: 235,
+    category: "food",
+    brand: "Attenis",
+    inStock: true,
+    unit: "Piece",
+    code: "SW389",
+    image: "/images/products/sw-attenis-simsim-250g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100390,
+    name: "Attenis Simsim 75G",
+    description: "Attenis simsim (sesame seeds) in 75g pieces",
+    price: 95,
+    wholesalePrice: 90,
+    category: "food",
+    brand: "Attenis",
+    inStock: true,
+    unit: "Piece",
+    code: "SW390",
+    image: "/images/products/sw-attenis-simsim-75g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100391,
+    name: "Avena (White) C.Fat 10KG",
+    description: "Avena white cooking fat in 10kg cartons",
+    price: 2500,
+    wholesalePrice: 2490,
+    category: "food",
+    brand: "Avena",
+    inStock: true,
+    unit: "Carton",
+    code: "SW391",
+    image: "/images/products/sw-avena-white-cfat-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100392,
+    name: "Avena Oil 12x1LTR",
+    description: "Avena cooking oil in 1L pieces, 12 per carton",
+    price: 3500,
+    wholesalePrice: 3490,
+    category: "food",
+    brand: "Avena",
+    inStock: true,
+    unit: "Carton",
+    code: "SW392",
+    image: "/images/products/sw-avena-oil-12x1ltr.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100393,
+    name: "Avena Oil 12x500ML",
+    description: "Avena cooking oil in 500ml pieces, 12 per carton",
+    price: 1765,
+    wholesalePrice: 1755,
+    category: "food",
+    brand: "Avena",
+    inStock: true,
+    unit: "Carton",
+    code: "SW393",
+    image: "/images/products/sw-avena-oil-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100394,
+    name: "Avena Oil 4x5LTR",
+    description: "Avena cooking oil in 5L pieces, 4 per pack",
+    price: 1200,
+    wholesalePrice: 1190,
+    category: "food",
+    brand: "Avena",
+    inStock: true,
+    unit: "Piece",
+    code: "SW394",
+    image: "/images/products/sw-avena-oil-4x5ltr.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100395,
+    name: "Avena Oil 6x2LTR",
+    description: "Avena cooking oil in 2L pieces, 6 per carton",
+    price: 3275,
+    wholesalePrice: 3265,
+    category: "food",
+    brand: "Avena",
+    inStock: true,
+    unit: "Carton",
+    code: "SW395",
+    image: "/images/products/sw-avena-oil-6x2ltr.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100396,
+    name: "Avena Oil 6x3LTR",
+    description: "Avena cooking oil in 3L pieces, 6 per pack",
+    price: 785,
+    wholesalePrice: 775,
+    category: "food",
+    brand: "Avena",
+    inStock: true,
+    unit: "Piece",
+    code: "SW396",
+    image: "/images/products/sw-avena-oil-6x3ltr.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100397,
+    name: "Avido Spray Sanitizer 65ML",
+    description: "Avido spray sanitizer in 65ml pieces, per dozen",
+    price: 705,
+    wholesalePrice: 695,
+    category: "hygiene",
+    brand: "Avido",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW397",
+    image: "/images/products/sw-avido-spray-sanitizer-65ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100398,
+    name: "Avido Sanitizer 500ML",
+    description: "Avido sanitizer in 500ml pieces",
+    price: 325,
+    wholesalePrice: 320,
+    category: "hygiene",
+    brand: "Avido",
+    inStock: true,
+    unit: "Piece",
+    code: "SW398",
+    image: "/images/products/sw-avido-sanitizer-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100399,
+    name: "Axe Body Spray 150ML (Adrenalin)",
+    description: "Axe adrenalin body spray in 150ml pieces",
+    price: 445,
+    wholesalePrice: 440,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW399",
+    image: "/images/products/sw-axe-body-spray-150ml-adrenalin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100400,
+    name: "Axe Body Spray 150ML (Apollo)",
+    description: "Axe apollo body spray in 150ml pieces",
+    price: 445,
+    wholesalePrice: 440,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW400",
+    image: "/images/products/sw-axe-body-spray-150ml-apollo.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100401,
+    name: "Axe Body Spray 150ML (Black)",
+    description: "Axe black body spray in 150ml pieces",
+    price: 445,
+    wholesalePrice: 440,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW401",
+    image: "/images/products/sw-axe-body-spray-150ml-black.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100402,
+    name: "Axe Body Spray 150ML (Dark Temptation)",
+    description: "Axe dark temptation body spray in 150ml pieces",
+    price: 445,
+    wholesalePrice: 440,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW402",
+    image: "/images/products/sw-axe-body-spray-150ml-dark-temptation.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100403,
+    name: "Axe Body Spray 150ML (Excite)",
+    description: "Axe excite body spray in 150ml pieces",
+    price: 445,
+    wholesalePrice: 440,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW403",
+    image: "/images/products/sw-axe-body-spray-150ml-excite.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100404,
+    name: "Axe Body Spray 150ML (Ice Chill)",
+    description: "Axe ice chill body spray in 150ml pieces",
+    price: 445,
+    wholesalePrice: 440,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW404",
+    image: "/images/products/sw-axe-body-spray-150ml-ice-chill.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100405,
+    name: "Axe Body Wash 6x400ML (Apollo) (Banded)",
+    description: "Axe apollo body wash in 400ml pieces, 6 per pack, banded",
+    price: 615,
+    wholesalePrice: 605,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW405",
+    image: "/images/products/sw-axe-body-wash-6x400ml-apollo-banded.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100406,
+    name: "Axe Body Wash 6x400ML (Dark Temptation) (Banded)",
+    description: "Axe dark temptation body wash in 400ml pieces, 6 per pack, banded",
+    price: 615,
+    wholesalePrice: 605,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW406",
+    image: "/images/products/sw-axe-body-wash-6x400ml-dark-temptation-banded.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100407,
+    name: "Axe Body Wash 6x400ML (Excite) (Banded)",
+    description: "Axe excite body wash in 400ml pieces, 6 per pack, banded",
+    price: 615,
+    wholesalePrice: 605,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW407",
+    image: "/images/products/sw-axe-body-wash-6x400ml-excite-banded.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100408,
+    name: "Axe Body Wash 6x400ML (Sport Blast) (Banded)",
+    description: "Axe sport blast body wash in 400ml pieces, 6 per pack, banded",
+    price: 615,
+    wholesalePrice: 605,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW408",
+    image: "/images/products/sw-axe-body-wash-6x400ml-sport-blast-banded.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100409,
+    name: "Axe Roll On 6x50ML (Dark Temptation)",
+    description: "Axe dark temptation roll-on deodorant in 50ml pieces, 6 per pack",
+    price: 350,
+    wholesalePrice: 345,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW409",
+    image: "/images/products/sw-axe-roll-on-6x50ml-dark-temptation.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100410,
+    name: "Axe Soap 48x100ML (Clean Fresh)",
+    description: "Axe clean fresh soap in 100ml pieces, 48 per pack",
+    price: 145,
+    wholesalePrice: 140,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW410",
+    image: "/images/products/sw-axe-soap-48x100ml-clean-fresh.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100411,
+    name: "Axe Soap 48x100ML (Dark Temptation)",
+    description: "Axe dark temptation soap in 100ml pieces, 48 per pack",
+    price: 145,
+    wholesalePrice: 140,
+    category: "hygiene",
+    brand: "Axe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW411",
+    image: "/images/products/sw-axe-soap-48x100ml-dark-temptation.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100412,
+    name: "Axion Dish Washing Paste 12x750G (Lime)",
+    description: "Axion lime dish washing paste in 750g pieces, 12 per pack",
+    price: 445,
+    wholesalePrice: 440,
+    category: "cleaning",
+    brand: "Axion",
+    inStock: true,
+    unit: "Piece",
+    code: "SW412",
+    image: "/images/products/sw-axion-dish-washing-paste-12x750g-lime.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100413,
+    name: "Axion Dish Washing Paste 190G (Lemon)",
+    description: "Axion lemon dish washing paste in 190g pieces",
+    price: 165,
+    wholesalePrice: 160,
+    category: "cleaning",
+    brand: "Axion",
+    inStock: true,
+    unit: "Piece",
+    code: "SW413",
+    image: "/images/products/sw-axion-dish-washing-paste-190g-lemon.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100414,
+    name: "Axion Dish Washing Paste 190G (Lime)",
+    description: "Axion lime dish washing paste in 190g pieces",
+    price: 165,
+    wholesalePrice: 160,
+    category: "cleaning",
+    brand: "Axion",
+    inStock: true,
+    unit: "Piece",
+    code: "SW414",
+    image: "/images/products/sw-axion-dish-washing-paste-190g-lime.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100415,
+    name: "Axion Dish Washing Paste 350G (Lemon)",
+    description: "Axion lemon dish washing paste in 350g pieces",
+    price: 250,
+    wholesalePrice: 245,
+    category: "cleaning",
+    brand: "Axion",
+    inStock: true,
+    unit: "Piece",
+    code: "SW415",
+    image: "/images/products/sw-axion-dish-washing-paste-350g-lemon.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100416,
+    name: "Axion Dish Washing Paste 350G (Lime)",
+    description: "Axion lime dish washing paste in 350g pieces",
+    price: 245,
+    wholesalePrice: 240,
+    category: "cleaning",
+    brand: "Axion",
+    inStock: true,
+    unit: "Piece",
+    code: "SW416",
+    image: "/images/products/sw-axion-dish-washing-paste-350g-lime.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100417,
+    name: "Axion Dish Washing Paste 750G (Lemon)",
+    description: "Axion lemon dish washing paste in 750g pieces",
+    price: 445,
+    wholesalePrice: 440,
+    category: "cleaning",
+    brand: "Axion",
+    inStock: true,
+    unit: "Piece",
+    code: "SW417",
+    image: "/images/products/sw-axion-dish-washing-paste-750g-lemon.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100418,
+    name: "Azam Energy Drink 300ML",
+    description: "Azam energy drink in 300ml pieces",
+    price: 35,
+    wholesalePrice: 30,
+    category: "beverage",
+    brand: "Azam",
+    inStock: true,
+    unit: "Piece",
+    code: "SW418",
+    image: "/images/products/sw-azam-energy-drink-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100419,
+    name: "Azizia PK 386 Parboiled Rice 25KG",
+    description: "Azizia PK 386 parboiled rice in 25kg bags",
+    price: 2900,
+    wholesalePrice: 2890,
+    category: "food",
+    brand: "Azizia",
+    inStock: true,
+    unit: "Bag",
+    code: "SW419",
+    image: "/images/products/sw-azizia-pk-386-parboiled-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100420,
+    name: "Azmat PK 386 Parboiled Rice 25KG",
+    description: "Azmat PK 386 parboiled rice in 25kg bags",
+    price: 3050,
+    wholesalePrice: 3040,
+    category: "food",
+    brand: "Azmat",
+    inStock: true,
+    unit: "Bag",
+    code: "SW420",
+    image: "/images/products/sw-azmat-pk-386-parboiled-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100421,
+    name: "Baba Lao Ngano 2KG",
+    description: "Baba Lao ngano (wheat flour) in 2kg, per half bale",
+    price: 1090,
+    wholesalePrice: 1080,
+    category: "food",
+    brand: "Baba Lao",
+    inStock: true,
+    unit: "1/2bale",
+    code: "SW421",
+    image: "/images/products/sw-baba-lao-ngano-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100422,
+    name: "Baby Dove Body Lotion 18x400ML",
+    description: "Baby Dove body lotion in 400ml pieces, 18 per pack",
+    price: 1145,
+    wholesalePrice: 1135,
+    category: "hygiene",
+    brand: "Baby Dove",
+    inStock: true,
+    unit: "Piece",
+    code: "SW422",
+    image: "/images/products/sw-baby-dove-body-lotion-18x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100423,
+    name: "Baby Dove Body Wash 18x400ML",
+    description: "Baby Dove body wash in 400ml pieces, 18 per pack",
+    price: 1045,
+    wholesalePrice: 1035,
+    category: "hygiene",
+    brand: "Baby Dove",
+    inStock: true,
+    unit: "Piece",
+    code: "SW423",
+    image: "/images/products/sw-baby-dove-body-wash-18x400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100424,
+    name: "Baby Dove Soap 48x90G",
+    description: "Baby Dove soap in 90g pieces, 48 per pack",
+    price: 145,
+    wholesalePrice: 140,
+    category: "hygiene",
+    brand: "Baby Dove",
+    inStock: true,
+    unit: "Piece",
+    code: "SW424",
+    image: "/images/products/sw-baby-dove-soap-48x90g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100425,
+    name: "Babycare Petroleum Jelly 100G",
+    description: "Babycare petroleum jelly in 100g pieces, per dozen",
+    price: 475,
+    wholesalePrice: 470,
+    category: "hygiene",
+    brand: "Babycare",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW425",
+    image: "/images/products/sw-babycare-petroleum-jelly-100g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100426,
+    name: "Babycare Petroleum Jelly 25G",
+    description: "Babycare petroleum jelly in 25g pieces, per dozen",
+    price: 155,
+    wholesalePrice: 150,
+    category: "hygiene",
+    brand: "Babycare",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW426",
+    image: "/images/products/sw-babycare-petroleum-jelly-25g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100427,
+    name: "Bahari Fry 10LTR",
+    description: "Bahari Fry cooking oil in 10L jericans",
+    price: 2470,
+    wholesalePrice: 2460,
+    category: "food",
+    brand: "Bahari Fry",
+    inStock: true,
+    unit: "Jerican",
+    code: "SW427",
+    image: "/images/products/sw-bahari-fry-10ltr.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100428,
+    name: "Bahari Fry 12x1LT",
+    description: "Bahari Fry cooking oil in 1L pieces, 12 per carton",
+    price: 3145,
+    wholesalePrice: 3135,
+    category: "food",
+    brand: "Bahari Fry",
+    inStock: true,
+    unit: "Carton",
+    code: "SW428",
+    image: "/images/products/sw-bahari-fry-12x1lt.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100429,
+    name: "Bahari Fry 12x500ML",
+    description: "Bahari Fry cooking oil in 500ml pieces, 12 per carton",
+    price: 1690,
+    wholesalePrice: 1680,
+    category: "food",
+    brand: "Bahari Fry",
+    inStock: true,
+    unit: "Carton",
+    code: "SW429",
+    image: "/images/products/sw-bahari-fry-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100430,
+    name: "Bahari Fry 20LTR",
+    description: "Bahari Fry cooking oil in 20L jericans",
+    price: 4900,
+    wholesalePrice: 4890,
+    category: "food",
+    brand: "Bahari Fry",
+    inStock: true,
+    unit: "Jerican",
+    code: "SW430",
+    image: "/images/products/sw-bahari-fry-20ltr.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100431,
+    name: "Bahari Fry 4x5LTS",
+    description: "Bahari Fry cooking oil in 5L pieces, 4 per pack",
+    price: 1190,
+    wholesalePrice: 1180,
+    category: "food",
+    brand: "Bahari Fry",
+    inStock: true,
+    unit: "Piece",
+    code: "SW431",
+    image: "/images/products/sw-bahari-fry-4x5lts.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100432,
+    name: "Bahari Fry 6x2LTR",
+    description: "Bahari Fry cooking oil in 2L pieces, 6 per carton",
+    price: 3100,
+    wholesalePrice: 3090,
+    category: "food",
+    brand: "Bahari Fry",
+    inStock: true,
+    unit: "Carton",
+    code: "SW432",
+    image: "/images/products/sw-bahari-fry-6x2ltr.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100433,
+    name: "Bahari Fry 6x3LTR",
+    description: "Bahari Fry cooking oil in 3L pieces, 6 per pack",
+    price: 760,
+    wholesalePrice: 750,
+    category: "food",
+    brand: "Bahari Fry",
+    inStock: true,
+    unit: "Piece",
+    code: "SW433",
+    image: "/images/products/sw-bahari-fry-6x3ltr.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100434,
+    name: "Bakery Classic Cookies 107.1G",
+    description: "Bakery classic cookies in 107.1g packets",
+    price: 55,
+    wholesalePrice: 50,
+    category: "food",
+    brand: "Bakery",
+    inStock: true,
+    unit: "Packet",
+    code: "SW434",
+    image: "/images/products/sw-bakery-classic-cookies-107.1g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100435,
+    name: "Ballet Baby Jelly 100G (Butter Blend)",
+    description: "Ballet baby jelly butter blend in 100g pieces, per dozen",
+    price: 1180,
+    wholesalePrice: 1170,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW435",
+    image: "/images/products/sw-ballet-baby-jelly-100g-butter-blend.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100436,
+    name: "Ballet Baby Jelly 100G (Pink Cap)",
+    description: "Ballet baby jelly pink cap in 100g pieces, per dozen",
+    price: 1180,
+    wholesalePrice: 1170,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW436",
+    image: "/images/products/sw-ballet-baby-jelly-100g-pink-cap.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100437,
+    name: "Ballet Baby Jelly 250G (Blue Cap) Active",
+    description: "Ballet active baby jelly blue cap in 250g pieces",
+    price: 220,
+    wholesalePrice: 215,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Piece",
+    code: "SW437",
+    image: "/images/products/sw-ballet-baby-jelly-250g-blue-cap-active.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100438,
+    name: "Ballet Baby Jelly 250G (Pink Cap) Baby",
+    description: "Ballet baby jelly pink cap in 250g pieces",
+    price: 220,
+    wholesalePrice: 215,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Piece",
+    code: "SW438",
+    image: "/images/products/sw-ballet-baby-jelly-250g-pink-cap-baby.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100439,
+    name: "Ballet Baby Lotion 125ML",
+    description: "Ballet baby lotion in 125ml pieces",
+    price: 120,
+    wholesalePrice: 115,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Piece",
+    code: "SW439",
+    image: "/images/products/sw-ballet-baby-lotion-125ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100440,
+    name: "Ballet Baby Lotion 240ML",
+    description: "Ballet baby lotion in 240ml pieces",
+    price: 195,
+    wholesalePrice: 190,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Piece",
+    code: "SW440",
+    image: "/images/products/sw-ballet-baby-lotion-240ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100441,
+    name: "Ballet Baby Oil 125ML",
+    description: "Ballet baby oil in 125ml pieces",
+    price: 150,
+    wholesalePrice: 145,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Piece",
+    code: "SW441",
+    image: "/images/products/sw-ballet-baby-oil-125ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100442,
+    name: "Ballet Baby Oil 240ML",
+    description: "Ballet baby oil in 240ml pieces",
+    price: 245,
+    wholesalePrice: 240,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Piece",
+    code: "SW442",
+    image: "/images/products/sw-ballet-baby-oil-240ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100443,
+    name: "Ballet Baby Powder 100G",
+    description: "Ballet baby powder in 100g pieces",
+    price: 110,
+    wholesalePrice: 105,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Piece",
+    code: "SW443",
+    image: "/images/products/sw-ballet-baby-powder-100g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100444,
+    name: "Ballet Baby Shampoo 240ML",
+    description: "Ballet baby shampoo in 240ml pieces",
+    price: 325,
+    wholesalePrice: 320,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Piece",
+    code: "SW444",
+    image: "/images/products/sw-ballet-baby-shampoo-240ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100445,
+    name: "Ballet Baby Soap 100G (Regular)",
+    description: "Ballet regular baby soap in 100g pieces",
+    price: 75,
+    wholesalePrice: 70,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Piece",
+    code: "SW445",
+    image: "/images/products/sw-ballet-baby-soap-100g-regular.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100446,
+    name: "Ballet Mosquito Repellent Jelly 100G",
+    description: "Ballet mosquito repellent jelly in 100g pieces",
+    price: 130,
+    wholesalePrice: 125,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Piece",
+    code: "SW446",
+    image: "/images/products/sw-ballet-mosquito-repellent-jelly-100g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100447,
+    name: "Ballet Mosquito Repellent Lotion 130ML",
+    description: "Ballet mosquito repellent lotion in 130ml pieces",
+    price: 165,
+    wholesalePrice: 160,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Piece",
+    code: "SW447",
+    image: "/images/products/sw-ballet-mosquito-repellent-lotion-130ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100448,
+    name: "Ballet Mosquito Repellent Lotion 65ML",
+    description: "Ballet mosquito repellent lotion in 65ml pieces",
+    price: 95,
+    wholesalePrice: 90,
+    category: "hygiene",
+    brand: "Ballet",
+    inStock: true,
+    unit: "Piece",
+    code: "SW448",
+    image: "/images/products/sw-ballet-mosquito-repellent-lotion-65ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100449,
+    name: "Balu Jumbo Tissue",
+    description: "Balu jumbo tissue rolls, per bale",
+    price: 925,
+    wholesalePrice: 915,
+    category: "hygiene",
+    brand: "Balu",
+    inStock: true,
+    unit: "Bale",
+    code: "SW449",
+    image: "/images/products/sw-balu-jumbo-tissue.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100450,
+    name: "Balu Tissue 10 Pack (White)",
+    description: "Balu white tissue in 10 pack, per outer",
+    price: 140,
+    wholesalePrice: 135,
+    category: "hygiene",
+    brand: "Balu",
+    inStock: true,
+    unit: "Outer",
+    code: "SW450",
+    image: "/images/products/sw-balu-tissue-10pack-white.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100451,
+    name: "Baraka Chai 100G",
+    description: "Baraka chai tea in 100g pieces, per outer",
+    price: 375,
+    wholesalePrice: 370,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Outer",
+    code: "SW451",
+    image: "/images/products/sw-baraka-chai-100g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100452,
+    name: "Baraka Chai 100G (Tangawizi)",
+    description: "Baraka chai tangawizi (ginger) tea in 100g pieces, per outer",
+    price: 440,
+    wholesalePrice: 435,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Outer",
+    code: "SW452",
+    image: "/images/products/sw-baraka-chai-100g-tangawizi.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100453,
+    name: "Baraka Chai 12x500G",
+    description: "Baraka chai tea in 500g packets, 12 per pack",
+    price: 220,
+    wholesalePrice: 215,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Packet",
+    code: "SW453",
+    image: "/images/products/sw-baraka-chai-12x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100454,
+    name: "Baraka Chai 12x500G (Tangawizi)",
+    description: "Baraka chai tangawizi (ginger) tea in 500g packets, 12 per pack",
+    price: 255,
+    wholesalePrice: 250,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Packet",
+    code: "SW454",
+    image: "/images/products/sw-baraka-chai-12x500g-tangawizi.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100455,
+    name: "Baraka Chai 15G",
+    description: "Baraka chai tea in 15g pieces, per outer",
+    price: 100,
+    wholesalePrice: 95,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Outer",
+    code: "SW455",
+    image: "/images/products/sw-baraka-chai-15g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100456,
+    name: "Baraka Chai 15G (Tangawizi)",
+    description: "Baraka chai tangawizi (ginger) tea in 15g pieces, per outer",
+    price: 130,
+    wholesalePrice: 125,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Outer",
+    code: "SW456",
+    image: "/images/products/sw-baraka-chai-15g-tangawizi.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100457,
+    name: "Baraka Chai 24x250G",
+    description: "Baraka chai tea in 250g pieces, 24 per pack",
+    price: 115,
+    wholesalePrice: 110,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Piece",
+    code: "SW457",
+    image: "/images/products/sw-baraka-chai-24x250g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100458,
+    name: "Baraka Chai 24x250G (Tangawizi)",
+    description: "Baraka chai tangawizi (ginger) tea in 250g pieces, 24 per pack",
+    price: 140,
+    wholesalePrice: 135,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Piece",
+    code: "SW458",
+    image: "/images/products/sw-baraka-chai-24x250g-tangawizi.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100459,
+    name: "Baraka Chai 50G",
+    description: "Baraka chai tea in 50g pieces, per outer",
+    price: 145,
+    wholesalePrice: 140,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Outer",
+    code: "SW459",
+    image: "/images/products/sw-baraka-chai-50g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100460,
+    name: "Baraka Chai 50G (Tangawizi)",
+    description: "Baraka chai tangawizi (ginger) tea in 50g pieces, per outer",
+    price: 205,
+    wholesalePrice: 200,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Outer",
+    code: "SW460",
+    image: "/images/products/sw-baraka-chai-50g-tangawizi.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100461,
+    name: "Baraka Chai Catering 100's (Tangawizi)",
+    description: "Baraka chai tangawizi (ginger) catering tea bags, 100 per outer",
+    price: 195,
+    wholesalePrice: 190,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Outer",
+    code: "SW461",
+    image: "/images/products/sw-baraka-chai-catering-100s-tangawizi.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100462,
+    name: "Baraka Chai Tea Bags 100's (Catering)",
+    description: "Baraka chai catering tea bags, 100 per piece",
+    price: 140,
+    wholesalePrice: 135,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Piece",
+    code: "SW462",
+    image: "/images/products/sw-baraka-chai-tea-bags-100s-catering.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100463,
+    name: "Baraka Chai Tea Bags 100's (Enveloped) Promo Mug",
+    description: "Baraka chai enveloped tea bags with promo mug, 100 per piece",
+    price: 255,
+    wholesalePrice: 250,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Piece",
+    code: "SW463",
+    image: "/images/products/sw-baraka-chai-tea-bags-100s-enveloped-promo-mug.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100464,
+    name: "Baraka Chai Tea Bags 100's (String & Tag)",
+    description: "Baraka chai string and tag tea bags, 100 per piece",
+    price: 210,
+    wholesalePrice: 205,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Piece",
+    code: "SW464",
+    image: "/images/products/sw-baraka-chai-tea-bags-100s-string-tag.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100465,
+    name: "Baraka Chai Tea Bags 25's (Masala)",
+    description: "Baraka chai masala tea bags, 25 per piece",
+    price: 100,
+    wholesalePrice: 95,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Piece",
+    code: "SW465",
+    image: "/images/products/sw-baraka-chai-tea-bags-25s-masala.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100466,
+    name: "Baraka Chai Tea Bags 25's (Tangawizi)",
+    description: "Baraka chai tangawizi (ginger) tea bags, 25 per piece",
+    price: 95,
+    wholesalePrice: 90,
+    category: "beverage",
+    brand: "Baraka Chai",
+    inStock: true,
+    unit: "Piece",
+    code: "SW466",
+    image: "/images/products/sw-baraka-chai-tea-bags-25s-tangawizi.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100467,
+    name: "Beacon Jumbo",
+    description: "Beacon jumbo tissue rolls, per bale",
+    price: 755,
+    wholesalePrice: 745,
+    category: "hygiene",
+    brand: "Beacon",
+    inStock: true,
+    unit: "Bale",
+    code: "SW467",
+    image: "/images/products/sw-beacon-jumbo.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100468,
+    name: "Beacon Serviettes 18's",
+    description: "Beacon serviettes, 18 per bale",
+    price: 1170,
+    wholesalePrice: 1160,
+    category: "hygiene",
+    brand: "Beacon",
+    inStock: true,
+    unit: "Bale",
+    code: "SW468",
+    image: "/images/products/sw-beacon-serviettes-18s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100469,
+    name: "Beacon Tissue 10 Pack",
+    description: "Beacon tissue in 10 pack, per outer",
+    price: 155,
+    wholesalePrice: 150,
+    category: "hygiene",
+    brand: "Beacon",
+    inStock: true,
+    unit: "Outer",
+    code: "SW469",
+    image: "/images/products/sw-beacon-tissue-10pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100470,
+    name: "Bear Biscuits 60G",
+    description: "Bear biscuits in 60g pieces, per carton",
+    price: 210,
+    wholesalePrice: 205,
+    category: "food",
+    brand: "Bear",
+    inStock: true,
+    unit: "Carton",
+    code: "SW470",
+    image: "/images/products/sw-bear-biscuits-60g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100471,
+    name: "Bella Hand Towel",
+    description: "Bella hand towel, per packet",
+    price: 150,
+    wholesalePrice: 145,
+    category: "hygiene",
+    brand: "Bella",
+    inStock: true,
+    unit: "Packet",
+    code: "SW471",
+    image: "/images/products/sw-bella-hand-towel.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100472,
+    name: "Bella Jumbo TP",
+    description: "Bella jumbo toilet paper rolls, per bale",
+    price: 1235,
+    wholesalePrice: 1225,
+    category: "hygiene",
+    brand: "Bella",
+    inStock: true,
+    unit: "Bale",
+    code: "SW472",
+    image: "/images/products/sw-bella-jumbo-tp.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100473,
+    name: "Bella S.Pad 12's (Maxi)",
+    description: "Bella maxi sanitary pads, 12 per pack, per dozen",
+    price: 170,
+    wholesalePrice: 165,
+    category: "hygiene",
+    brand: "Bella",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW473",
+    image: "/images/products/sw-bella-s-pad-12s-maxi.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100474,
+    name: "Bella S.Pad 8's (Ultra Thin)",
+    description: "Bella ultra thin sanitary pads, 8 per pack, per outer",
+    price: 275,
+    wholesalePrice: 270,
+    category: "hygiene",
+    brand: "Bella",
+    inStock: true,
+    unit: "Outer",
+    code: "SW474",
+    image: "/images/products/sw-bella-s-pad-8s-ultra-thin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100475,
+    name: "Bella Serviette 1x18",
+    description: "Bella serviettes, 18 per carton",
+    price: 1180,
+    wholesalePrice: 1170,
+    category: "hygiene",
+    brand: "Bella",
+    inStock: true,
+    unit: "Carton",
+    code: "SW475",
+    image: "/images/products/sw-bella-serviette-1x18.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100476,
+    name: "Bella Toilet Rolls 10 Pack",
+    description: "Bella toilet rolls in 10 pack, per outer",
+    price: 325,
+    wholesalePrice: 320,
+    category: "hygiene",
+    brand: "Bella",
+    inStock: true,
+    unit: "Outer",
+    code: "SW476",
+    image: "/images/products/sw-bella-toilet-rolls-10pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100477,
+    name: "Bella Toilet Rolls (2 Pack)",
+    description: "Bella toilet rolls in 2 pack, per bale",
+    price: 1280,
+    wholesalePrice: 1270,
+    category: "hygiene",
+    brand: "Bella",
+    inStock: true,
+    unit: "Bale",
+    code: "SW477",
+    image: "/images/products/sw-bella-toilet-rolls-2pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100478,
+    name: "Bella Toilet Rolls (4 Pack)",
+    description: "Bella toilet rolls in 4 pack, per bale",
+    price: 1520,
+    wholesalePrice: 1510,
+    category: "hygiene",
+    brand: "Bella",
+    inStock: true,
+    unit: "Bale",
+    code: "SW478",
+    image: "/images/products/sw-bella-toilet-rolls-4pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100479,
+    name: "Bella Toilet Rolls (8 Pack)",
+    description: "Bella toilet rolls in 8 pack, per bale",
+    price: 1515,
+    wholesalePrice: 1505,
+    category: "hygiene",
+    brand: "Bella",
+    inStock: true,
+    unit: "Bale",
+    code: "SW479",
+    image: "/images/products/sw-bella-toilet-rolls-8pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100480,
+    name: "Bella Toilet Rolls (Singles)",
+    description: "Bella single toilet rolls, per outer",
+    price: 305,
+    wholesalePrice: 300,
+    category: "hygiene",
+    brand: "Bella",
+    inStock: true,
+    unit: "Outer",
+    code: "SW480",
+    image: "/images/products/sw-bella-toilet-rolls-singles.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100481,
+    name: "Bella Wet Wipes 40PCS",
+    description: "Bella wet wipes, 40 pieces per packet",
+    price: 50,
+    wholesalePrice: 45,
+    category: "hygiene",
+    brand: "Bella",
+    inStock: true,
+    unit: "Packet",
+    code: "SW481",
+    image: "/images/products/sw-bella-wet-wipes-40pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100482,
+    name: "Bella Wipes 80's (Big Pkt)",
+    description: "Bella wet wipes, 80 pieces per big packet",
+    price: 105,
+    wholesalePrice: 100,
+    category: "hygiene",
+    brand: "Bella",
+    inStock: true,
+    unit: "Piece",
+    code: "SW482",
+    image: "/images/products/sw-bella-wipes-80s-big-pkt.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100483,
+    name: "Bheems Kamande 24x1KG",
+    description: "Bheems kamande (lentils) in 1kg packets, 24 per pack",
+    price: 350,
+    wholesalePrice: 345,
+    category: "food",
+    brand: "Bheems",
+    inStock: true,
+    unit: "Packet",
+    code: "SW483",
+    image: "/images/products/sw-bheems-kamande-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100484,
+    name: "Bheems Ndengu 24x1KG",
+    description: "Bheems ndengu (green grams) in 1kg packets, 24 per pack",
+    price: 165,
+    wholesalePrice: 160,
+    category: "food",
+    brand: "Bheems",
+    inStock: true,
+    unit: "Packet",
+    code: "SW484",
+    image: "/images/products/sw-bheems-ndengu-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100485,
+    name: "Bheems Yellow Beans 24x1KG",
+    description: "Bheems yellow beans in 1kg packets, 24 per pack",
+    price: 255,
+    wholesalePrice: 250,
+    category: "food",
+    brand: "Bheems",
+    inStock: true,
+    unit: "Packet",
+    code: "SW485",
+    image: "/images/products/sw-bheems-yellow-beans-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100486,
+    name: "BIC Razor (Metal)",
+    description: "BIC metal razors, per dozen",
+    price: 410,
+    wholesalePrice: 405,
+    category: "hygiene",
+    brand: "BIC",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW486",
+    image: "/images/products/sw-bic-razor-metal.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100487,
+    name: "BIC 1 Razor (Lady)",
+    description: "BIC lady razors, per dozen",
+    price: 320,
+    wholesalePrice: 315,
+    category: "hygiene",
+    brand: "BIC",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW487",
+    image: "/images/products/sw-bic-1-razor-lady.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100488,
+    name: "BIC 1 Razor (Plastic/Yellow)",
+    description: "BIC plastic yellow razors, per dozen",
+    price: 290,
+    wholesalePrice: 285,
+    category: "hygiene",
+    brand: "BIC",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW488",
+    image: "/images/products/sw-bic-1-razor-plastic-yellow.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100489,
+    name: "BIC Ball Pen Red 25PCS",
+    description: "BIC red ball pens, 25 pieces per packet",
+    price: 395,
+    wholesalePrice: 390,
+    category: "stationery",
+    brand: "BIC",
+    inStock: true,
+    unit: "Packet",
+    code: "SW489",
+    image: "/images/products/sw-bic-ball-pen-red-25pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100490,
+    name: "BIC Fine Point Black 20PCS",
+    description: "BIC fine point black pens, 20 pieces per packet",
+    price: 425,
+    wholesalePrice: 420,
+    category: "stationery",
+    brand: "BIC",
+    inStock: true,
+    unit: "Packet",
+    code: "SW490",
+    image: "/images/products/sw-bic-fine-point-black-20pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100491,
+    name: "BIC Fine Point Blue 20PCS",
+    description: "BIC fine point blue pens, 20 pieces per packet",
+    price: 420,
+    wholesalePrice: 415,
+    category: "stationery",
+    brand: "BIC",
+    inStock: true,
+    unit: "Packet",
+    code: "SW491",
+    image: "/images/products/sw-bic-fine-point-blue-20pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100492,
+    name: "Bidco Cream 10x1KG",
+    description: "Bidco cream (cooking fat) in 1kg pieces, 10 per outer",
+    price: 895,
+    wholesalePrice: 885,
+    category: "food",
+    brand: "Bidco",
+    inStock: true,
+    unit: "Outer",
+    code: "SW492",
+    image: "/images/products/sw-bidco-cream-10x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100493,
+    name: "Bidco Cream 800G",
+    description: "Bidco cream (cooking fat) in 800g pieces, per outer",
+    price: 900,
+    wholesalePrice: 890,
+    category: "food",
+    brand: "Bidco",
+    inStock: true,
+    unit: "Outer",
+    code: "SW493",
+    image: "/images/products/sw-bidco-cream-800g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100494,
+    name: "Big Bang Lollipop 16x50PCS (Assorted)",
+    description: "Big Bang assorted lollipops, 50 pieces per packet, 16 per pack",
+    price: 190,
+    wholesalePrice: 185,
+    category: "food",
+    brand: "Big Bang",
+    inStock: true,
+    unit: "Packet",
+    code: "SW494",
+    image: "/images/products/sw-big-bang-lollipop-16x50pcs-assorted.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100495,
+    name: "Big Boss Bubble Gum 50PCS (Banana) (Satchet)",
+    description: "Big Boss banana bubble gum, 50 pieces per satchet",
+    price: 140,
+    wholesalePrice: 135,
+    category: "food",
+    brand: "Big Boss",
+    inStock: true,
+    unit: "Packet",
+    code: "SW495",
+    image: "/images/products/sw-big-boss-bubble-gum-50pcs-banana-satchet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100496,
+    name: "Big Boss Bubble Gum 50PCS (Energy) (Satchet)",
+    description: "Big Boss energy bubble gum, 50 pieces per satchet",
+    price: 130,
+    wholesalePrice: 125,
+    category: "food",
+    brand: "Big Boss",
+    inStock: true,
+    unit: "Packet",
+    code: "SW496",
+    image: "/images/products/sw-big-boss-bubble-gum-50pcs-energy-satchet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100497,
+    name: "Big Boss Bubble Gum 50PCS (Strawberry) (Satchet)",
+    description: "Big Boss strawberry bubble gum, 50 pieces per satchet",
+    price: 130,
+    wholesalePrice: 125,
+    category: "food",
+    brand: "Big Boss",
+    inStock: true,
+    unit: "Packet",
+    code: "SW497",
+    image: "/images/products/sw-big-boss-bubble-gum-50pcs-strawberry-satchet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100498,
+    name: "Big Boss Bubble Gum 50PCS (Tutti Frutti) (Satchet)",
+    description: "Big Boss tutti frutti bubble gum, 50 pieces per satchet",
+    price: 130,
+    wholesalePrice: 125,
+    category: "food",
+    brand: "Big Boss",
+    inStock: true,
+    unit: "Packet",
+    code: "SW498",
+    image: "/images/products/sw-big-boss-bubble-gum-50pcs-tutti-frutti-satchet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100499,
+    name: "Big Boss Bubble Gum 6x100PCS (Energy) (Jar)",
+    description: "Big Boss energy bubble gum, 100 pieces per jar, 6 per pack",
+    price: 285,
+    wholesalePrice: 280,
+    category: "food",
+    brand: "Big Boss",
+    inStock: true,
+    unit: "Jar",
+    code: "SW499",
+    image: "/images/products/sw-big-boss-bubble-gum-6x100pcs-energy-jar.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100500,
+    name: "Big Boss Bubble Gum 6x100PCS (Tutti Frutti) (Jar)",
+    description: "Big Boss tutti frutti bubble gum, 100 pieces per jar, 6 per pack",
+    price: 285,
+    wholesalePrice: 280,
+    category: "food",
+    brand: "Big Boss",
+    inStock: true,
+    unit: "Jar",
+    code: "SW500",
+    image: "/images/products/sw-big-boss-bubble-gum-6x100pcs-tutti-frutti-jar.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100501,
+    name: "Big Daddy Lollipop 50PCS (American)",
+    description: "Big Daddy American lollipops, 50 pieces per packet",
+    price: 250,
+    wholesalePrice: 245,
+    category: "food",
+    brand: "Big Daddy",
+    inStock: true,
+    unit: "Packet",
+    code: "SW501",
+    image: "/images/products/sw-big-daddy-lollipop-50pcs-american.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100502,
+    name: "Big Daddy Lollipop 50PCS (Mega Mix/Assorted)",
+    description: "Big Daddy mega mix assorted lollipops, 50 pieces per packet",
+    price: 250,
+    wholesalePrice: 245,
+    category: "food",
+    brand: "Big Daddy",
+    inStock: true,
+    unit: "Packet",
+    code: "SW502",
+    image: "/images/products/sw-big-daddy-lollipop-50pcs-mega-mix-assorted.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100503,
+    name: "Big Daddy Lollipop 50PCS (Passion)",
+    description: "Big Daddy passion lollipops, 50 pieces per packet",
+    price: 250,
+    wholesalePrice: 245,
+    category: "food",
+    brand: "Big Daddy",
+    inStock: true,
+    unit: "Packet",
+    code: "SW503",
+    image: "/images/products/sw-big-daddy-lollipop-50pcs-passion.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100504,
+    name: "Big Daddy Lollipop 50PCS (Strawberry)",
+    description: "Big Daddy strawberry lollipops, 50 pieces per packet",
+    price: 250,
+    wholesalePrice: 245,
+    category: "food",
+    brand: "Big Daddy",
+    inStock: true,
+    unit: "Packet",
+    code: "SW504",
+    image: "/images/products/sw-big-daddy-lollipop-50pcs-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100505,
+    name: "Big Daddy Lollipop 50PCS (Watermelon)",
+    description: "Big Daddy watermelon lollipops, 50 pieces per packet",
+    price: 250,
+    wholesalePrice: 245,
+    category: "food",
+    brand: "Big Daddy",
+    inStock: true,
+    unit: "Packet",
+    code: "SW505",
+    image: "/images/products/sw-big-daddy-lollipop-50pcs-watermelon.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100506,
+    name: "Big Daddy Lollipop 50PCS (Yoghurt)",
+    description: "Big Daddy yoghurt lollipops, 50 pieces per packet",
+    price: 250,
+    wholesalePrice: 245,
+    category: "food",
+    brand: "Big Daddy",
+    inStock: true,
+    unit: "Packet",
+    code: "SW506",
+    image: "/images/products/sw-big-daddy-lollipop-50pcs-yoghurt.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100507,
+    name: "Big Five (Small) Match Sticks",
+    description: "Big Five small match sticks, per outer",
+    price: 230,
+    wholesalePrice: 225,
+    category: "household",
+    brand: "Big Five",
+    inStock: true,
+    unit: "Outer",
+    code: "SW507",
+    image: "/images/products/sw-big-five-small-match-sticks.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100508,
+    name: "Big Giant Lollipop 50PCS (Assorted)",
+    description: "Big Giant assorted lollipops, 50 pieces per packet",
+    price: 230,
+    wholesalePrice: 225,
+    category: "food",
+    brand: "Big Giant",
+    inStock: true,
+    unit: "Packet",
+    code: "SW508",
+    image: "/images/products/sw-big-giant-lollipop-50pcs-assorted.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100509,
+    name: "Big Giant Lollipop 50PCS (Passion)",
+    description: "Big Giant passion lollipops, 50 pieces per packet",
+    price: 230,
+    wholesalePrice: 225,
+    category: "food",
+    brand: "Big Giant",
+    inStock: true,
+    unit: "Packet",
+    code: "SW509",
+    image: "/images/products/sw-big-giant-lollipop-50pcs-passion.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100510,
+    name: "Big Giant Lollipop 50PCS (Strawberry)",
+    description: "Big Giant strawberry lollipops, 50 pieces per packet",
+    price: 230,
+    wholesalePrice: 225,
+    category: "food",
+    brand: "Big Giant",
+    inStock: true,
+    unit: "Packet",
+    code: "SW510",
+    image: "/images/products/sw-big-giant-lollipop-50pcs-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100511,
+    name: "Big Giant Lollipop 50PCS (Tongue Painter)",
+    description: "Big Giant tongue painter lollipops, 50 pieces per packet",
+    price: 230,
+    wholesalePrice: 225,
+    category: "food",
+    brand: "Big Giant",
+    inStock: true,
+    unit: "Packet",
+    code: "SW511",
+    image: "/images/products/sw-big-giant-lollipop-50pcs-tongue-painter.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100512,
+    name: "Bingo Soft 16x1L (Purple Dream)",
+    description: "Bingo soft purple dream fabric softener in 1L pieces, 16 per packet",
+    price: 275,
+    wholesalePrice: 270,
+    category: "cleaning",
+    brand: "Bingo",
+    inStock: true,
+    unit: "Packet",
+    code: "SW512",
+    image: "/images/products/sw-bingo-soft-16x1l-purple-dream.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100513,
+    name: "Bingo Soft 16x1L (Sea Breeze)",
+    description: "Bingo soft sea breeze fabric softener in 1L pieces, 16 per packet",
+    price: 275,
+    wholesalePrice: 270,
+    category: "cleaning",
+    brand: "Bingo",
+    inStock: true,
+    unit: "Packet",
+    code: "SW513",
+    image: "/images/products/sw-bingo-soft-16x1l-sea-breeze.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100514,
+    name: "Bingo Yoghurt 150ML (Strawberry)",
+    description: "Bingo strawberry yoghurt in 150ml pieces",
+    price: 35,
+    wholesalePrice: 30,
+    category: "beverage",
+    brand: "Bingo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW514",
+    image: "/images/products/sw-bingo-yoghurt-150ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100515,
+    name: "Bingo Yoghurt 150ML (Vanilla)",
+    description: "Bingo vanilla yoghurt in 150ml pieces",
+    price: 35,
+    wholesalePrice: 30,
+    category: "beverage",
+    brand: "Bingo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW515",
+    image: "/images/products/sw-bingo-yoghurt-150ml-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100516,
+    name: "Bingo Yoghurt 1LTR (Strawberry)",
+    description: "Bingo strawberry yoghurt in 1L pieces",
+    price: 190,
+    wholesalePrice: 185,
+    category: "beverage",
+    brand: "Bingo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW516",
+    image: "/images/products/sw-bingo-yoghurt-1ltr-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100517,
+    name: "Bingo Yoghurt 1LTR (Vanilla)",
+    description: "Bingo vanilla yoghurt in 1L pieces",
+    price: 190,
+    wholesalePrice: 185,
+    category: "beverage",
+    brand: "Bingo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW517",
+    image: "/images/products/sw-bingo-yoghurt-1ltr-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100518,
+    name: "Bingo Yoghurt 250ML (Strawberry)",
+    description: "Bingo strawberry yoghurt in 250ml pieces",
+    price: 45,
+    wholesalePrice: 40,
+    category: "beverage",
+    brand: "Bingo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW518",
+    image: "/images/products/sw-bingo-yoghurt-250ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100519,
+    name: "Bingo Yoghurt 250ML (Vanilla)",
+    description: "Bingo vanilla yoghurt in 250ml pieces",
+    price: 45,
+    wholesalePrice: 40,
+    category: "beverage",
+    brand: "Bingo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW519",
+    image: "/images/products/sw-bingo-yoghurt-250ml-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100520,
+    name: "Bingo Yoghurt 500ML (Strawberry)",
+    description: "Bingo strawberry yoghurt in 500ml pieces",
+    price: 90,
+    wholesalePrice: 85,
+    category: "beverage",
+    brand: "Bingo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW520",
+    image: "/images/products/sw-bingo-yoghurt-500ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100521,
+    name: "Bingo Yoghurt 500ML (Vanilla)",
+    description: "Bingo vanilla yoghurt in 500ml pieces",
+    price: 90,
+    wholesalePrice: 85,
+    category: "beverage",
+    brand: "Bingo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW521",
+    image: "/images/products/sw-bingo-yoghurt-500ml-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100522,
+    name: "Bingwa Atta 2KG",
+    description: "Bingwa atta (wheat flour) in 2kg, per half bale",
+    price: 785,
+    wholesalePrice: 775,
+    category: "food",
+    brand: "Bingwa",
+    inStock: true,
+    unit: "1/2bale",
+    code: "SW522",
+    image: "/images/products/sw-bingwa-atta-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100523,
+    name: "Bingwa Ngano 2KG",
+    description: "Bingwa ngano (wheat flour) in 2kg, per half bale",
+    price: 875,
+    wholesalePrice: 865,
+    category: "food",
+    brand: "Bingwa",
+    inStock: true,
+    unit: "1/2bale",
+    code: "SW523",
+    image: "/images/products/sw-bingwa-ngano-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100524,
+    name: "Bingwa Premium Ugali 2KG",
+    description: "Bingwa premium ugali (maize flour) in 2kg, per half bale",
+    price: 980,
+    wholesalePrice: 970,
+    category: "food",
+    brand: "Bingwa",
+    inStock: true,
+    unit: "1/2bale",
+    code: "SW524",
+    image: "/images/products/sw-bingwa-premium-ugali-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100525,
+    name: "Biryani Rice 25KG",
+    description: "Biryani rice in 25kg bags",
+    price: 2250,
+    wholesalePrice: 2240,
+    category: "food",
+    brand: "Biryani",
+    inStock: true,
+    unit: "Bag",
+    code: "SW525",
+    image: "/images/products/sw-biryani-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100526,
+    name: "Bitez Barbeque Clear 12GM",
+    description: "Bitez barbeque clear snacks in 12g pieces, per bale",
+    price: 410,
+    wholesalePrice: 405,
+    category: "food",
+    brand: "Bitez",
+    inStock: true,
+    unit: "Bale",
+    code: "SW526",
+    image: "/images/products/sw-bitez-barbeque-clear-12gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100527,
+    name: "Bloom All Purpose Towel Twin Pack",
+    description: "Bloom all purpose towel, twin pack, per outer",
+    price: 235,
+    wholesalePrice: 230,
+    category: "hygiene",
+    brand: "Bloom",
+    inStock: true,
+    unit: "Outer",
+    code: "SW527",
+    image: "/images/products/sw-bloom-all-purpose-towel-twin-pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100528,
+    name: "Bloom Classic Tissue (White Cover)",
+    description: "Bloom classic tissue with white cover, per outer",
+    price: 605,
+    wholesalePrice: 595,
+    category: "hygiene",
+    brand: "Bloom",
+    inStock: true,
+    unit: "Outer",
+    code: "SW528",
+    image: "/images/products/sw-bloom-classic-tissue-white-cover.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100529,
+    name: "Bloom Kitchen Towel Twin Pack",
+    description: "Bloom kitchen towel, twin pack, per outer",
+    price: 295,
+    wholesalePrice: 290,
+    category: "hygiene",
+    brand: "Bloom",
+    inStock: true,
+    unit: "Outer",
+    code: "SW529",
+    image: "/images/products/sw-bloom-kitchen-towel-twin-pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100530,
+    name: "Bloom Luxury Tissue (Purple Cover)",
+    description: "Bloom luxury tissue with purple cover, per outer",
+    price: 605,
+    wholesalePrice: 595,
+    category: "hygiene",
+    brand: "Bloom",
+    inStock: true,
+    unit: "Outer",
+    code: "SW530",
+    image: "/images/products/sw-bloom-luxury-tissue-purple-cover.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100531,
+    name: "Blue Bubble Toilet Block 48x4's (Blue)",
+    description: "Blue Bubble toilet block in blue, 4 pieces per pack, 48 per piece",
+    price: 280,
+    wholesalePrice: 275,
+    category: "cleaning",
+    brand: "Blue Bubble",
+    inStock: true,
+    unit: "Piece",
+    code: "SW531",
+    image: "/images/products/sw-blue-bubble-toilet-block-48x4s-blue.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100532,
+    name: "Blue King Handwash (White Pearl) 500ML",
+    description: "Blue King white pearl handwash in 500ml pieces",
+    price: 160,
+    wholesalePrice: 155,
+    category: "cleaning",
+    brand: "Blue King",
+    inStock: true,
+    unit: "Piece",
+    code: "SW532",
+    image: "/images/products/sw-blue-king-handwash-white-pearl-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100533,
+    name: "Blueband (Low Fat) 250G (Sky Blue)",
+    description: "Blueband low fat margarine in 250g pieces, sky blue packaging",
+    price: 95,
+    wholesalePrice: 90,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Piece",
+    code: "SW533",
+    image: "/images/products/sw-blueband-low-fat-250g-sky-blue.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100534,
+    name: "Blueband (Original) 1KG",
+    description: "Blueband original margarine in 1kg pieces",
+    price: 495,
+    wholesalePrice: 490,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Piece",
+    code: "SW534",
+    image: "/images/products/sw-blueband-original-1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100535,
+    name: "Blueband (Original) 500G",
+    description: "Blueband original margarine in 500g pieces",
+    price: 270,
+    wholesalePrice: 265,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Piece",
+    code: "SW535",
+    image: "/images/products/sw-blueband-original-500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100536,
+    name: "Blueband 100G",
+    description: "Blueband original margarine in 100g pieces, per dozen",
+    price: 575,
+    wholesalePrice: 565,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW536",
+    image: "/images/products/sw-blueband-100g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100537,
+    name: "Blueband 250G",
+    description: "Blueband original margarine in 250g pieces",
+    price: 135,
+    wholesalePrice: 130,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Piece",
+    code: "SW537",
+    image: "/images/products/sw-blueband-250g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100538,
+    name: "Blueband 30G",
+    description: "Blueband original margarine in 30g pieces, per dozen",
+    price: 180,
+    wholesalePrice: 175,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW538",
+    image: "/images/products/sw-blueband-30g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100539,
+    name: "Blueband Choco 100G",
+    description: "Blueband chocolate spread in 100g pieces, per dozen",
+    price: 630,
+    wholesalePrice: 620,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW539",
+    image: "/images/products/sw-blueband-choco-100g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100540,
+    name: "Blueband Choco 24x500G",
+    description: "Blueband chocolate spread in 500g pieces, 24 per pack",
+    price: 305,
+    wholesalePrice: 300,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Piece",
+    code: "SW540",
+    image: "/images/products/sw-blueband-choco-24x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100541,
+    name: "Blueband Choco 30G",
+    description: "Blueband chocolate spread in 30g pieces, per dozen",
+    price: 185,
+    wholesalePrice: 180,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW541",
+    image: "/images/products/sw-blueband-choco-30g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100542,
+    name: "Blueband Choco 48x250G",
+    description: "Blueband chocolate spread in 250g pieces, 48 per pack",
+    price: 140,
+    wholesalePrice: 135,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Piece",
+    code: "SW542",
+    image: "/images/products/sw-blueband-choco-48x250g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100543,
+    name: "Blueband Peanut Butter 200G Smooth",
+    description: "Blueband smooth peanut butter in 200g pieces",
+    price: 150,
+    wholesalePrice: 145,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Piece",
+    code: "SW543",
+    image: "/images/products/sw-blueband-peanut-butter-200g-smooth.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100544,
+    name: "Blueband Peanut Butter 400G Smooth",
+    description: "Blueband smooth peanut butter in 400g pieces",
+    price: 280,
+    wholesalePrice: 275,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Piece",
+    code: "SW544",
+    image: "/images/products/sw-blueband-peanut-butter-400g-smooth.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100545,
+    name: "Blueband Peanut Butter 800G Smooth",
+    description: "Blueband smooth peanut butter in 800g pieces",
+    price: 545,
+    wholesalePrice: 535,
+    category: "food",
+    brand: "Blueband",
+    inStock: true,
+    unit: "Piece",
+    code: "SW545",
+    image: "/images/products/sw-blueband-peanut-butter-800g-smooth.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100546,
+    name: "Bogani Yoghurt 150ML (Strawberry)",
+    description: "Bogani strawberry yoghurt in 150ml pieces",
+    price: 60,
+    wholesalePrice: 55,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW546",
+    image: "/images/products/sw-bogani-yoghurt-150ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100547,
+    name: "Bogani Yoghurt 150ML (Vanilla)",
+    description: "Bogani vanilla yoghurt in 150ml pieces",
+    price: 60,
+    wholesalePrice: 55,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW547",
+    image: "/images/products/sw-bogani-yoghurt-150ml-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100548,
+    name: "Bogani Yoghurt 1LTR (Coconut)",
+    description: "Bogani coconut yoghurt in 1L pieces",
+    price: 250,
+    wholesalePrice: 245,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW548",
+    image: "/images/products/sw-bogani-yoghurt-1ltr-coconut.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100549,
+    name: "Bogani Yoghurt 1LTR (Lemon)",
+    description: "Bogani lemon yoghurt in 1L pieces",
+    price: 250,
+    wholesalePrice: 245,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW549",
+    image: "/images/products/sw-bogani-yoghurt-1ltr-lemon.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100550,
+    name: "Bogani Yoghurt 1LTR (Natural)",
+    description: "Bogani natural yoghurt in 1L pieces",
+    price: 250,
+    wholesalePrice: 245,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW550",
+    image: "/images/products/sw-bogani-yoghurt-1ltr-natural.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100551,
+    name: "Bogani Yoghurt 1LTR (Peach)",
+    description: "Bogani peach yoghurt in 1L pieces",
+    price: 250,
+    wholesalePrice: 245,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW551",
+    image: "/images/products/sw-bogani-yoghurt-1ltr-peach.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100552,
+    name: "Bogani Yoghurt 1LTR (Strawberry)",
+    description: "Bogani strawberry yoghurt in 1L pieces",
+    price: 250,
+    wholesalePrice: 245,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW552",
+    image: "/images/products/sw-bogani-yoghurt-1ltr-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100553,
+    name: "Bogani Yoghurt 1LTR (Vanilla)",
+    description: "Bogani vanilla yoghurt in 1L pieces",
+    price: 250,
+    wholesalePrice: 245,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW553",
+    image: "/images/products/sw-bogani-yoghurt-1ltr-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100554,
+    name: "Bogani Yoghurt 250ML (Natural)",
+    description: "Bogani natural yoghurt in 250ml pieces",
+    price: 80,
+    wholesalePrice: 75,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW554",
+    image: "/images/products/sw-bogani-yoghurt-250ml-natural.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100555,
+    name: "Bogani Yoghurt 250ML (Strawberry)",
+    description: "Bogani strawberry yoghurt in 250ml pieces",
+    price: 80,
+    wholesalePrice: 75,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW555",
+    image: "/images/products/sw-bogani-yoghurt-250ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100556,
+    name: "Bogani Yoghurt 250ML (Vanilla)",
+    description: "Bogani vanilla yoghurt in 250ml pieces",
+    price: 80,
+    wholesalePrice: 75,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW556",
+    image: "/images/products/sw-bogani-yoghurt-250ml-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100557,
+    name: "Bogani Yoghurt 2LTR (Natural)",
+    description: "Bogani natural yoghurt in 2L pieces",
+    price: 470,
+    wholesalePrice: 465,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW557",
+    image: "/images/products/sw-bogani-yoghurt-2ltr-natural.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100558,
+    name: "Bogani Yoghurt 2LTR (Strawberry)",
+    description: "Bogani strawberry yoghurt in 2L pieces",
+    price: 470,
+    wholesalePrice: 465,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW558",
+    image: "/images/products/sw-bogani-yoghurt-2ltr-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100559,
+    name: "Bogani Yoghurt 2LTR (Vanilla)",
+    description: "Bogani vanilla yoghurt in 2L pieces",
+    price: 470,
+    wholesalePrice: 465,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW559",
+    image: "/images/products/sw-bogani-yoghurt-2ltr-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100560,
+    name: "Bogani Yoghurt 500ML (Natural)",
+    description: "Bogani natural yoghurt in 500ml pieces",
+    price: 140,
+    wholesalePrice: 135,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW560",
+    image: "/images/products/sw-bogani-yoghurt-500ml-natural.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100561,
+    name: "Bogani Yoghurt 500ML (Strawberry)",
+    description: "Bogani strawberry yoghurt in 500ml pieces",
+    price: 140,
+    wholesalePrice: 135,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW561",
+    image: "/images/products/sw-bogani-yoghurt-500ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100562,
+    name: "Bogani Yoghurt 500ML (Vanilla)",
+    description: "Bogani vanilla yoghurt in 500ml pieces",
+    price: 140,
+    wholesalePrice: 135,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW562",
+    image: "/images/products/sw-bogani-yoghurt-500ml-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100563,
+    name: "Bogani Yoghurt 5LTR (Natural)",
+    description: "Bogani natural yoghurt in 5L pieces",
+    price: 1310,
+    wholesalePrice: 1300,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW563",
+    image: "/images/products/sw-bogani-yoghurt-5ltr-natural.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100564,
+    name: "Bogani Yoghurt 5LTR (Strawberry)",
+    description: "Bogani strawberry yoghurt in 5L pieces",
+    price: 1310,
+    wholesalePrice: 1300,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW564",
+    image: "/images/products/sw-bogani-yoghurt-5ltr-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100565,
+    name: "Bogani Yoghurt 5LTR (Vanilla)",
+    description: "Bogani vanilla yoghurt in 5L pieces",
+    price: 1310,
+    wholesalePrice: 1300,
+    category: "beverage",
+    brand: "Bogani",
+    inStock: true,
+    unit: "Piece",
+    code: "SW565",
+    image: "/images/products/sw-bogani-yoghurt-5ltr-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100566,
+    name: "Bolt 100ML",
+    description: "Bolt energy drink in 100ml pieces",
+    price: 185,
+    wholesalePrice: 180,
+    category: "beverage",
+    brand: "Bolt",
+    inStock: true,
+    unit: "Piece",
+    code: "SW566",
+    image: "/images/products/sw-bolt-100ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100567,
+    name: "Bolt 24x280ML",
+    description: "Bolt energy drink in 280ml pieces, 24 per pack",
+    price: 425,
+    wholesalePrice: 420,
+    category: "beverage",
+    brand: "Bolt",
+    inStock: true,
+    unit: "Piece",
+    code: "SW567",
+    image: "/images/products/sw-bolt-24x280ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100568,
+    name: "Bolt 400ML",
+    description: "Bolt energy drink in 400ml pieces",
+    price: 600,
+    wholesalePrice: 590,
+    category: "beverage",
+    brand: "Bolt",
+    inStock: true,
+    unit: "Piece",
+    code: "SW568",
+    image: "/images/products/sw-bolt-400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100569,
+    name: "Bolt 600ML",
+    description: "Bolt energy drink in 600ml pieces",
+    price: 815,
+    wholesalePrice: 805,
+    category: "beverage",
+    brand: "Bolt",
+    inStock: true,
+    unit: "Piece",
+    code: "SW569",
+    image: "/images/products/sw-bolt-600ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100570,
+    name: "Book A4 120PGS",
+    description: "A4 exercise book with 120 pages, per dozen",
+    price: 600,
+    wholesalePrice: 590,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW570",
+    image: "/images/products/sw-book-a4-120pgs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100571,
+    name: "Book A4 200PGS",
+    description: "A4 exercise book with 200 pages, per dozen",
+    price: 1040,
+    wholesalePrice: 1030,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW571",
+    image: "/images/products/sw-book-a4-200pgs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100572,
+    name: "Book A4 20PGS (Scrap)",
+    description: "A4 scrap book with 20 pages, per piece",
+    price: 95,
+    wholesalePrice: 90,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Piece",
+    code: "SW572",
+    image: "/images/products/sw-book-a4-20pgs-scrap.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100573,
+    name: "Book A4 64PGS",
+    description: "A4 exercise book with 64 pages, per dozen",
+    price: 355,
+    wholesalePrice: 350,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW573",
+    image: "/images/products/sw-book-a4-64pgs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100574,
+    name: "Book A4 80PGS",
+    description: "A4 exercise book with 80 pages, per dozen",
+    price: 420,
+    wholesalePrice: 415,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW574",
+    image: "/images/products/sw-book-a4-80pgs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100575,
+    name: "Book A4 96PGS",
+    description: "A4 exercise book with 96 pages, per dozen",
+    price: 535,
+    wholesalePrice: 525,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW575",
+    image: "/images/products/sw-book-a4-96pgs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100576,
+    name: "Book A4 96PGS (Graph)",
+    description: "A4 graph book with 96 pages, per piece",
+    price: 50,
+    wholesalePrice: 45,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Piece",
+    code: "SW576",
+    image: "/images/products/sw-book-a4-96pgs-graph.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100577,
+    name: "Book A4 96PGS (Plain)",
+    description: "A4 plain book with 96 pages, per piece",
+    price: 45,
+    wholesalePrice: 40,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Piece",
+    code: "SW577",
+    image: "/images/products/sw-book-a4-96pgs-plain.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100578,
+    name: "Book A5 120PGS",
+    description: "A5 exercise book with 120 pages, per dozen",
+    price: 315,
+    wholesalePrice: 310,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW578",
+    image: "/images/products/sw-book-a5-120pgs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100579,
+    name: "Book A5 200PGS",
+    description: "A5 exercise book with 200 pages, per dozen",
+    price: 445,
+    wholesalePrice: 440,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW579",
+    image: "/images/products/sw-book-a5-200pgs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100580,
+    name: "Book A5 32PGS",
+    description: "A5 exercise book with 32 pages, per dozen",
+    price: 120,
+    wholesalePrice: 115,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW580",
+    image: "/images/products/sw-book-a5-32pgs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100581,
+    name: "Book A5 48PGS",
+    description: "A5 exercise book with 48 pages, per dozen",
+    price: 140,
+    wholesalePrice: 135,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW581",
+    image: "/images/products/sw-book-a5-48pgs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100582,
+    name: "Book A5 48PGS (1/2 Inch)",
+    description: "A5 exercise book with 48 pages, 1/2 inch ruled, per dozen",
+    price: 140,
+    wholesalePrice: 135,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW582",
+    image: "/images/products/sw-book-a5-48pgs-1-2-inch.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100583,
+    name: "Book A5 64PGS",
+    description: "A5 exercise book with 64 pages, per dozen",
+    price: 185,
+    wholesalePrice: 180,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW583",
+    image: "/images/products/sw-book-a5-64pgs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100584,
+    name: "Book A5 80PGS",
+    description: "A5 exercise book with 80 pages, per dozen",
+    price: 220,
+    wholesalePrice: 215,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW584",
+    image: "/images/products/sw-book-a5-80pgs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100585,
+    name: "Book A5 96PGS",
+    description: "A5 exercise book with 96 pages, per dozen",
+    price: 270,
+    wholesalePrice: 265,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW585",
+    image: "/images/products/sw-book-a5-96pgs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100586,
+    name: "Book A5 96PGS (1/2 Inch)",
+    description: "A5 exercise book with 96 pages, 1/2 inch ruled, per dozen",
+    price: 270,
+    wholesalePrice: 265,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW586",
+    image: "/images/products/sw-book-a5-96pgs-1-2-inch.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100587,
+    name: "Book Cover (Roll)",
+    description: "Book cover roll, per roll",
+    price: 80,
+    wholesalePrice: 75,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Roll",
+    code: "SW587",
+    image: "/images/products/sw-book-cover-roll.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100588,
+    name: "Book Cover A4 (10'S)",
+    description: "A4 book covers, 10 pieces per outer",
+    price: 80,
+    wholesalePrice: 75,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Outer",
+    code: "SW588",
+    image: "/images/products/sw-book-cover-a4-10s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100589,
+    name: "Book Cover A5 (10'S)",
+    description: "A5 book covers, 10 pieces per outer",
+    price: 45,
+    wholesalePrice: 40,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Outer",
+    code: "SW589",
+    image: "/images/products/sw-book-cover-a5-10s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100590,
+    name: "Bora C. Fat (White) 10KG",
+    description: "Bora white cooking fat in 10kg, per carton",
+    price: 2500,
+    wholesalePrice: 2490,
+    category: "food",
+    brand: "Bora",
+    inStock: true,
+    unit: "Carton",
+    code: "SW590",
+    image: "/images/products/sw-bora-c-fat-white-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100591,
+    name: "Borges Extra Virgin Olive Oil 500ML",
+    description: "Borges extra virgin olive oil in 500ml pieces",
+    price: 1645,
+    wholesalePrice: 1635,
+    category: "food",
+    brand: "Borges",
+    inStock: true,
+    unit: "Piece",
+    code: "SW591",
+    image: "/images/products/sw-borges-extra-virgin-olive-oil-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100592,
+    name: "Brio Body Wash 12x400ML (Artic Cool)",
+    description: "Brio artic cool body wash in 400ml pieces, 12 per pack",
+    price: 310,
+    wholesalePrice: 305,
+    category: "hygiene",
+    brand: "Brio",
+    inStock: true,
+    unit: "Piece",
+    code: "SW592",
+    image: "/images/products/sw-brio-body-wash-12x400ml-artic-cool.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100593,
+    name: "Brio Body Wash 12x400ML (Silky Velvet)",
+    description: "Brio silky velvet body wash in 400ml pieces, 12 per pack",
+    price: 310,
+    wholesalePrice: 305,
+    category: "hygiene",
+    brand: "Brio",
+    inStock: true,
+    unit: "Piece",
+    code: "SW593",
+    image: "/images/products/sw-brio-body-wash-12x400ml-silky-velvet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100594,
+    name: "Brio Body Wash 12x400ML (Sunny Daze)",
+    description: "Brio sunny daze body wash in 400ml pieces, 12 per pack",
+    price: 310,
+    wholesalePrice: 305,
+    category: "hygiene",
+    brand: "Brio",
+    inStock: true,
+    unit: "Piece",
+    code: "SW594",
+    image: "/images/products/sw-brio-body-wash-12x400ml-sunny-daze.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100595,
+    name: "Brio Body Wash 12x400ML (Valentine)",
+    description: "Brio valentine body wash in 400ml pieces, 12 per pack",
+    price: 310,
+    wholesalePrice: 305,
+    category: "hygiene",
+    brand: "Brio",
+    inStock: true,
+    unit: "Piece",
+    code: "SW595",
+    image: "/images/products/sw-brio-body-wash-12x400ml-valentine.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100596,
+    name: "Britannia Bourbon 12x100G",
+    description: "Britannia bourbon biscuits in 100g pieces, 12 per packet",
+    price: 50,
+    wholesalePrice: 45,
+    category: "food",
+    brand: "Britannia",
+    inStock: true,
+    unit: "Packet",
+    code: "SW596",
+    image: "/images/products/sw-britannia-bourbon-12x100g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100597,
+    name: "Britannia Bourbon Biscuit 36x2PCS",
+    description: "Britannia bourbon biscuits, 2 pieces per pack, 36 per carton",
+    price: 235,
+    wholesalePrice: 230,
+    category: "food",
+    brand: "Britannia",
+    inStock: true,
+    unit: "Carton",
+    code: "SW597",
+    image: "/images/products/sw-britannia-bourbon-biscuit-36x2pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100598,
+    name: "Britannia Gooday Chocochip 36x3 (Small Carton)",
+    description: "Britannia gooday chocochip biscuits, 3 pieces per pack, 36 per small carton",
+    price: 225,
+    wholesalePrice: 220,
+    category: "food",
+    brand: "Britannia",
+    inStock: true,
+    unit: "Carton",
+    code: "SW598",
+    image: "/images/products/sw-britannia-gooday-chocochip-36x3-small-carton.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100599,
+    name: "Britannia Gooday Chocochip 36x33G (Big Carton)",
+    description: "Britannia gooday chocochip biscuits in 33g pieces, 36 per big carton",
+    price: 495,
+    wholesalePrice: 490,
+    category: "food",
+    brand: "Britannia",
+    inStock: true,
+    unit: "Carton",
+    code: "SW599",
+    image: "/images/products/sw-britannia-gooday-chocochip-36x33g-big-carton.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100600,
+    name: "Britannia Kreemz Choco 36x3",
+    description: "Britannia kreemz chocolate biscuits, 3 pieces per pack, 36 per carton",
+    price: 225,
+    wholesalePrice: 220,
+    category: "food",
+    brand: "Britannia",
+    inStock: true,
+    unit: "Carton",
+    code: "SW600",
+    image: "/images/products/sw-britannia-kreemz-choco-36x3.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100601,
+    name: "Britannia Kreemz Strawberry 36x3",
+    description: "Britannia kreemz strawberry biscuits, 3 pieces per pack, 36 per carton",
+    price: 225,
+    wholesalePrice: 220,
+    category: "food",
+    brand: "Britannia",
+    inStock: true,
+    unit: "Carton",
+    code: "SW601",
+    image: "/images/products/sw-britannia-kreemz-strawberry-36x3.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100602,
+    name: "Britannia Kreemz Vanilla 36x3",
+    description: "Britannia kreemz vanilla biscuits, 3 pieces per pack, 36 per carton",
+    price: 225,
+    wholesalePrice: 220,
+    category: "food",
+    brand: "Britannia",
+    inStock: true,
+    unit: "Carton",
+    code: "SW602",
+    image: "/images/products/sw-britannia-kreemz-vanilla-36x3.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100603,
+    name: "Britannia Star Cream 60x2 (Chocolate)",
+    description: "Britannia star cream chocolate biscuits, 2 pieces per pack, 60 per carton",
+    price: 220,
+    wholesalePrice: 215,
+    category: "food",
+    brand: "Britannia",
+    inStock: true,
+    unit: "Carton",
+    code: "SW603",
+    image: "/images/products/sw-britannia-star-cream-60x2-chocolate.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100604,
+    name: "Britannia Star Cream 60x2 (Strawberry)",
+    description: "Britannia star cream strawberry biscuits, 2 pieces per pack, 60 per carton",
+    price: 220,
+    wholesalePrice: 215,
+    category: "food",
+    brand: "Britannia",
+    inStock: true,
+    unit: "Carton",
+    code: "SW604",
+    image: "/images/products/sw-britannia-star-cream-60x2-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100605,
+    name: "Britannia Star Cream 60x2 (Vanilla)",
+    description: "Britannia star cream vanilla biscuits, 2 pieces per pack, 60 per carton",
+    price: 220,
+    wholesalePrice: 215,
+    category: "food",
+    brand: "Britannia",
+    inStock: true,
+    unit: "Carton",
+    code: "SW605",
+    image: "/images/products/sw-britannia-star-cream-60x2-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100606,
+    name: "Brut Roll On 6x50ML (Musk)",
+    description: "Brut musk roll on in 50ml pieces, 6 per pack",
+    price: 325,
+    wholesalePrice: 320,
+    category: "hygiene",
+    brand: "Brut",
+    inStock: true,
+    unit: "Piece",
+    code: "SW606",
+    image: "/images/products/sw-brut-roll-on-6x50ml-musk.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100607,
+    name: "Brut Roll On 6x50ML (Original)",
+    description: "Brut original roll on in 50ml pieces, 6 per pack",
+    price: 325,
+    wholesalePrice: 320,
+    category: "hygiene",
+    brand: "Brut",
+    inStock: true,
+    unit: "Piece",
+    code: "SW607",
+    image: "/images/products/sw-brut-roll-on-6x50ml-original.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100608,
+    name: "Bubble Up Lemon 300ML (Piece)",
+    description: "Bubble Up lemon soda in 300ml pieces",
+    price: 25,
+    wholesalePrice: 20,
+    category: "beverage",
+    brand: "Bubble Up",
+    inStock: true,
+    unit: "Piece",
+    code: "SW608",
+    image: "/images/products/sw-bubble-up-lemon-300ml-piece.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100609,
+    name: "Bubble Up Lemon Lime (Green) 300ML",
+    description: "Bubble Up lemon lime (green) soda in 300ml pieces, per case",
+    price: 300,
+    wholesalePrice: 295,
+    category: "beverage",
+    brand: "Bubble Up",
+    inStock: true,
+    unit: "Case",
+    code: "SW609",
+    image: "/images/products/sw-bubble-up-lemon-lime-green-300ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100610,
+    name: "Bubble Up Tonic Water 350ML",
+    description: "Bubble Up tonic water in 350ml pieces, per case",
+    price: 395,
+    wholesalePrice: 390,
+    category: "beverage",
+    brand: "Bubble Up",
+    inStock: true,
+    unit: "Case",
+    code: "SW610",
+    image: "/images/products/sw-bubble-up-tonic-water-350ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100611,
+    name: "Bucket",
+    description: "Standard bucket, per bucket",
+    price: 5,
+    wholesalePrice: 0,
+    category: "household",
+    brand: "Generic",
+    inStock: true,
+    unit: "Bucket",
+    code: "SW611",
+    image: "/images/products/sw-bucket.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100612,
+    name: "Butterfly Atta Mark 12x2KG",
+    description: "Butterfly atta mark (wheat flour) in 2kg pieces, 12 per packet",
+    price: 265,
+    wholesalePrice: 260,
+    category: "food",
+    brand: "Butterfly",
+    inStock: true,
+    unit: "Packet",
+    code: "SW612",
+    image: "/images/products/sw-butterfly-atta-mark-12x2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100613,
+    name: "Butterfly Kamande 24x1KG",
+    description: "Butterfly kamande (green grams) in 1kg pieces, 24 per packet",
+    price: 415,
+    wholesalePrice: 410,
+    category: "food",
+    brand: "Butterfly",
+    inStock: true,
+    unit: "Packet",
+    code: "SW613",
+    image: "/images/products/sw-butterfly-kamande-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100614,
+    name: "Butterfly Long Grain Rice 5KG",
+    description: "Butterfly long grain rice in 5kg packets",
+    price: 765,
+    wholesalePrice: 755,
+    category: "food",
+    brand: "Butterfly",
+    inStock: true,
+    unit: "Packet",
+    code: "SW614",
+    image: "/images/products/sw-butterfly-long-grain-rice-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100615,
+    name: "Butterfly Ndengu 24x1KG",
+    description: "Butterfly ndengu (green grams) in 1kg pieces, 24 per packet",
+    price: 205,
+    wholesalePrice: 200,
+    category: "food",
+    brand: "Butterfly",
+    inStock: true,
+    unit: "Packet",
+    code: "SW615",
+    image: "/images/products/sw-butterfly-ndengu-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100616,
+    name: "Butterfly Ndengu 40x500G",
+    description: "Butterfly ndengu (green grams) in 500g pieces, 40 per piece",
+    price: 105,
+    wholesalePrice: 100,
+    category: "food",
+    brand: "Butterfly",
+    inStock: true,
+    unit: "Piece",
+    code: "SW616",
+    image: "/images/products/sw-butterfly-ndengu-40x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100617,
+    name: "Butterfly Popcorn 40x500GM",
+    description: "Butterfly popcorn in 500g pieces, 40 per piece",
+    price: 180,
+    wholesalePrice: 175,
+    category: "food",
+    brand: "Butterfly",
+    inStock: true,
+    unit: "Piece",
+    code: "SW617",
+    image: "/images/products/sw-butterfly-popcorn-40x500gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100618,
+    name: "Butterfly Popcorn 48x200GM",
+    description: "Butterfly popcorn in 200g pieces, 48 per piece",
+    price: 95,
+    wholesalePrice: 90,
+    category: "food",
+    brand: "Butterfly",
+    inStock: true,
+    unit: "Piece",
+    code: "SW618",
+    image: "/images/products/sw-butterfly-popcorn-48x200gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100619,
+    name: "Butterfly Spaghetti 400G",
+    description: "Butterfly spaghetti in 400g pieces",
+    price: 75,
+    wholesalePrice: 70,
+    category: "food",
+    brand: "Butterfly",
+    inStock: true,
+    unit: "Piece",
+    code: "SW619",
+    image: "/images/products/sw-butterfly-spaghetti-400g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100620,
+    name: "C K L Cola 80PCS",
+    description: "C K L cola sweets, 80 pieces per packet",
+    price: 60,
+    wholesalePrice: 55,
+    category: "food",
+    brand: "C K L",
+    inStock: true,
+    unit: "Packet",
+    code: "SW620",
+    image: "/images/products/sw-c-k-l-cola-80pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100621,
+    name: "C K L Mint (White)",
+    description: "C K L mint (white) sweets, per packet",
+    price: 75,
+    wholesalePrice: 70,
+    category: "food",
+    brand: "C K L",
+    inStock: true,
+    unit: "Packet",
+    code: "SW621",
+    image: "/images/products/sw-c-k-l-mint-white.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100622,
+    name: "Cadbury 20x150G (Fruit & Nut)",
+    description: "Cadbury fruit & nut chocolate in 150g pieces, 20 per packet",
+    price: 450,
+    wholesalePrice: 445,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW622",
+    image: "/images/products/sw-cadbury-20x150g-fruit-nut.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100623,
+    name: "Cadbury 20x150G (Dairy Milk)",
+    description: "Cadbury dairy milk chocolate in 150g pieces, 20 per packet",
+    price: 450,
+    wholesalePrice: 445,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW623",
+    image: "/images/products/sw-cadbury-20x150g-dairy-milk.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100624,
+    name: "Cadbury 20x150G (Top Deck)",
+    description: "Cadbury top deck chocolate in 150g pieces, 20 per packet",
+    price: 450,
+    wholesalePrice: 445,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW624",
+    image: "/images/products/sw-cadbury-20x150g-top-deck.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100625,
+    name: "Cadbury 20x150G (Whole Nut)",
+    description: "Cadbury whole nut chocolate in 150g pieces, 20 per packet",
+    price: 395,
+    wholesalePrice: 390,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW625",
+    image: "/images/products/sw-cadbury-20x150g-whole-nut.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100626,
+    name: "Cadbury 24x80G (Cashew & Coconut)",
+    description: "Cadbury cashew & coconut chocolate in 80g pieces, 24 per packet",
+    price: 245,
+    wholesalePrice: 240,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW626",
+    image: "/images/products/sw-cadbury-24x80g-cashew-coconut.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100627,
+    name: "Cadbury 24x80G (Dairy Milk Biscuit)",
+    description: "Cadbury dairy milk biscuit chocolate in 80g pieces, 24 per packet",
+    price: 245,
+    wholesalePrice: 240,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW627",
+    image: "/images/products/sw-cadbury-24x80g-dairy-milk-biscuit.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100628,
+    name: "Cadbury 24x80G (Dairy Milk)",
+    description: "Cadbury dairy milk chocolate in 80g pieces, 24 per packet",
+    price: 245,
+    wholesalePrice: 240,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW628",
+    image: "/images/products/sw-cadbury-24x80g-dairy-milk.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100629,
+    name: "Cadbury 24x80G (Dream With Biscuit)",
+    description: "Cadbury dream with biscuit chocolate in 80g pieces, 24 per packet",
+    price: 245,
+    wholesalePrice: 240,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW629",
+    image: "/images/products/sw-cadbury-24x80g-dream-with-biscuit.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100630,
+    name: "Cadbury 24x80G (Dream)",
+    description: "Cadbury dream chocolate in 80g pieces, 24 per packet",
+    price: 245,
+    wholesalePrice: 240,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW630",
+    image: "/images/products/sw-cadbury-24x80g-dream.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100631,
+    name: "Cadbury 24x80G (Fruit & Nut)",
+    description: "Cadbury fruit & nut chocolate in 80g pieces, 24 per packet",
+    price: 245,
+    wholesalePrice: 240,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW631",
+    image: "/images/products/sw-cadbury-24x80g-fruit-nut.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100632,
+    name: "Cadbury 24x80G (Mint)",
+    description: "Cadbury mint chocolate in 80g pieces, 24 per packet",
+    price: 245,
+    wholesalePrice: 240,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW632",
+    image: "/images/products/sw-cadbury-24x80g-mint.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100633,
+    name: "Cadbury 24x80G (Rum & Raisin)",
+    description: "Cadbury rum & raisin chocolate in 80g pieces, 24 per packet",
+    price: 245,
+    wholesalePrice: 240,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW633",
+    image: "/images/products/sw-cadbury-24x80g-rum-raisin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100634,
+    name: "Cadbury 24x80G (Top Deck Mint)",
+    description: "Cadbury top deck mint chocolate in 80g pieces, 24 per packet",
+    price: 245,
+    wholesalePrice: 240,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW634",
+    image: "/images/products/sw-cadbury-24x80g-top-deck-mint.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100635,
+    name: "Cadbury 24x80G (Top Deck)",
+    description: "Cadbury top deck chocolate in 80g pieces, 24 per packet",
+    price: 245,
+    wholesalePrice: 240,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW635",
+    image: "/images/products/sw-cadbury-24x80g-top-deck.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100636,
+    name: "Cadbury 24x80G (Whole Nut)",
+    description: "Cadbury whole nut chocolate in 80g pieces, 24 per packet",
+    price: 245,
+    wholesalePrice: 240,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Packet",
+    code: "SW636",
+    image: "/images/products/sw-cadbury-24x80g-whole-nut.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100637,
+    name: "Cadbury Cocoa 200G (Jar)",
+    description: "Cadbury cocoa in 200g jars",
+    price: 535,
+    wholesalePrice: 525,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Piece",
+    code: "SW637",
+    image: "/images/products/sw-cadbury-cocoa-200g-jar.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100638,
+    name: "Cadbury Cocoa 20G (Satchet)",
+    description: "Cadbury cocoa in 20g sachets, per dozen",
+    price: 645,
+    wholesalePrice: 635,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW638",
+    image: "/images/products/sw-cadbury-cocoa-20g-satchet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100639,
+    name: "Cadbury Cocoa 320G",
+    description: "Cadbury cocoa in 320g jars",
+    price: 895,
+    wholesalePrice: 885,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Jar",
+    code: "SW639",
+    image: "/images/products/sw-cadbury-cocoa-320g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100640,
+    name: "Cadbury Cocoa 90G (Jar)",
+    description: "Cadbury cocoa in 90g jars",
+    price: 285,
+    wholesalePrice: 280,
+    category: "food",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Piece",
+    code: "SW640",
+    image: "/images/products/sw-cadbury-cocoa-90g-jar.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100641,
+    name: "Cadbury Drinking Chocolate 125G",
+    description: "Cadbury drinking chocolate in 125g pieces",
+    price: 190,
+    wholesalePrice: 185,
+    category: "beverage",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Piece",
+    code: "SW641",
+    image: "/images/products/sw-cadbury-drinking-chocolate-125g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100642,
+    name: "Cadbury Drinking Chocolate 20G",
+    description: "Cadbury drinking chocolate in 20g sachets, per dozen",
+    price: 305,
+    wholesalePrice: 300,
+    category: "beverage",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW642",
+    image: "/images/products/sw-cadbury-drinking-chocolate-20g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100643,
+    name: "Cadbury Drinking Chocolate 225G",
+    description: "Cadbury drinking chocolate in 225g pieces",
+    price: 315,
+    wholesalePrice: 310,
+    category: "beverage",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Piece",
+    code: "SW643",
+    image: "/images/products/sw-cadbury-drinking-chocolate-225g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100644,
+    name: "Cadbury Drinking Chocolate 450G",
+    description: "Cadbury drinking chocolate in 450g jars",
+    price: 600,
+    wholesalePrice: 590,
+    category: "beverage",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Jar",
+    code: "SW644",
+    image: "/images/products/sw-cadbury-drinking-chocolate-450g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100645,
+    name: "Cadbury Drinking Chocolate 90G (Satchet)",
+    description: "Cadbury drinking chocolate in 90g sachets, per dozen",
+    price: 1135,
+    wholesalePrice: 1125,
+    category: "beverage",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW645",
+    image: "/images/products/sw-cadbury-drinking-chocolate-90g-satchet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100646,
+    name: "Cadbury Hot Cocoa 3 In 1 300G (Purple)",
+    description: "Cadbury hot cocoa 3 in 1 in 300g pieces, purple packaging",
+    price: 540,
+    wholesalePrice: 530,
+    category: "beverage",
+    brand: "Cadbury",
+    inStock: true,
+    unit: "Piece",
+    code: "SW646",
+    image: "/images/products/sw-cadbury-hot-cocoa-3-in-1-300g-purple.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100647,
+    name: "Camay Soap 48x165G",
+    description: "Camay soap in 165g pieces, 48 per pack",
+    price: 110,
+    wholesalePrice: 105,
+    category: "hygiene",
+    brand: "Camay",
+    inStock: true,
+    unit: "Piece",
+    code: "SW647",
+    image: "/images/products/sw-camay-soap-48x165g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100648,
+    name: "Capital White Rice 25KG",
+    description: "Capital white rice in 25kg bags",
+    price: 3050,
+    wholesalePrice: 3040,
+    category: "food",
+    brand: "Capital",
+    inStock: true,
+    unit: "Bag",
+    code: "SW648",
+    image: "/images/products/sw-capital-white-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100649,
+    name: "Captain Cook 20L",
+    description: "Captain Cook cooking oil in 20L jerrycans",
+    price: 5905,
+    wholesalePrice: 5895,
+    category: "food",
+    brand: "Captain Cook",
+    inStock: true,
+    unit: "Jerican",
+    code: "SW649",
+    image: "/images/products/sw-captain-cook-20l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100650,
+    name: "Caramel Cube 12x50PCS",
+    description: "Caramel cube sweets, 50 pieces per pack, 12 per packet",
+    price: 115,
+    wholesalePrice: 110,
+    category: "food",
+    brand: "Generic",
+    inStock: true,
+    unit: "Packet",
+    code: "SW650",
+    image: "/images/products/sw-caramel-cube-12x50pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100651,
+    name: "Carol's Lea Toto Weaning Porridge Flour 1KG",
+    description: "Carol's Lea Toto weaning porridge flour in 1kg packets",
+    price: 165,
+    wholesalePrice: 160,
+    category: "food",
+    brand: "Carol's",
+    inStock: true,
+    unit: "Packet",
+    code: "SW651",
+    image: "/images/products/sw-carols-lea-toto-weaning-porridge-flour-1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100652,
+    name: "Carol's Lea Toto Weaning Porridge Flour 500G",
+    description: "Carol's Lea Toto weaning porridge flour in 500g packets",
+    price: 85,
+    wholesalePrice: 80,
+    category: "food",
+    brand: "Carol's",
+    inStock: true,
+    unit: "Packet",
+    code: "SW652",
+    image: "/images/products/sw-carols-lea-toto-weaning-porridge-flour-500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100653,
+    name: "Carol's Pure Wimbi Porridge Flour 1KG",
+    description: "Carol's pure wimbi porridge flour in 1kg packets",
+    price: 150,
+    wholesalePrice: 145,
+    category: "food",
+    brand: "Carol's",
+    inStock: true,
+    unit: "Packet",
+    code: "SW653",
+    image: "/images/products/sw-carols-pure-wimbi-porridge-flour-1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100654,
+    name: "Carol's Pure Wimbi Porridge Flour 500G",
+    description: "Carol's pure wimbi porridge flour in 500g packets",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Carol's",
+    inStock: true,
+    unit: "Packet",
+    code: "SW654",
+    image: "/images/products/sw-carols-pure-wimbi-porridge-flour-500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100655,
+    name: "Carrier Bag (Small Size)",
+    description: "Small size carrier bag, per piece",
+    price: 20,
+    wholesalePrice: 15,
+    category: "household",
+    brand: "Generic",
+    inStock: true,
+    unit: "Piece",
+    code: "SW655",
+    image: "/images/products/sw-carrier-bag-small-size.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100656,
+    name: "Carrier Bag (Small Size)",
+    description: "Small size carrier bag, per piece",
+    price: 20,
+    wholesalePrice: 15,
+    category: "household",
+    brand: "Generic",
+    inStock: true,
+    unit: "Piece",
+    code: "SW656",
+    image: "/images/products/sw-carrier-bag-small-size.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100657,
+    name: "Cartoon Biscuits",
+    description: "Cartoon biscuits, per outer",
+    price: 365,
+    wholesalePrice: 360,
+    category: "food",
+    brand: "Generic",
+    inStock: true,
+    unit: "Outer",
+    code: "SW657",
+    image: "/images/products/sw-cartoon-biscuits.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100658,
+    name: "Celine Luxury Soft (10Pack)",
+    description: "Celine luxury soft tissue, 10 packs per outer",
+    price: 345,
+    wholesalePrice: 340,
+    category: "hygiene",
+    brand: "Celine",
+    inStock: true,
+    unit: "Outer",
+    code: "SW658",
+    image: "/images/products/sw-celine-luxury-soft-10pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100659,
+    name: "Celine Mega Kitchen Towel (Big)",
+    description: "Celine mega kitchen towel, big size, per outer",
+    price: 370,
+    wholesalePrice: 365,
+    category: "hygiene",
+    brand: "Celine",
+    inStock: true,
+    unit: "Outer",
+    code: "SW659",
+    image: "/images/products/sw-celine-mega-kitchen-towel-big.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100660,
+    name: "Celine Roll POA 10 Pack (Unwrapped) (White)",
+    description: "Celine unwrapped white toilet roll, 10 packs per outer",
+    price: 205,
+    wholesalePrice: 200,
+    category: "hygiene",
+    brand: "Celine",
+    inStock: true,
+    unit: "Outer",
+    code: "SW660",
+    image: "/images/products/sw-celine-roll-poa-10-pack-unwrapped-white.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100661,
+    name: "Celine Serviettes 1x9 (Small)",
+    description: "Celine small serviettes, 1x9 per bale",
+    price: 810,
+    wholesalePrice: 800,
+    category: "hygiene",
+    brand: "Celine",
+    inStock: true,
+    unit: "Bale",
+    code: "SW661",
+    image: "/images/products/sw-celine-serviettes-1x9-small.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100662,
+    name: "Celine Serviettes 200'S Value Pack",
+    description: "Celine serviettes, 200 pieces per value pack",
+    price: 160,
+    wholesalePrice: 155,
+    category: "hygiene",
+    brand: "Celine",
+    inStock: true,
+    unit: "Packet",
+    code: "SW662",
+    image: "/images/products/sw-celine-serviettes-200s-value-pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100663,
+    name: "Celine Signature Tissue (12 Pack)",
+    description: "Celine signature tissue, 12 packs per outer",
+    price: 340,
+    wholesalePrice: 335,
+    category: "hygiene",
+    brand: "Celine",
+    inStock: true,
+    unit: "Outer",
+    code: "SW663",
+    image: "/images/products/sw-celine-signature-tissue-12-pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100664,
+    name: "Cement",
+    description: "Cement, per bag",
+    price: 715,
+    wholesalePrice: 705,
+    category: "construction",
+    brand: "Generic",
+    inStock: true,
+    unit: "Bag",
+    code: "SW664",
+    image: "/images/products/sw-cement.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100665,
+    name: "Cerelac 200G (Banana)",
+    description: "Cerelac banana infant cereal in 200g, per outer",
+    price: 405,
+    wholesalePrice: 400,
+    category: "food",
+    brand: "Cerelac",
+    inStock: true,
+    unit: "Outer",
+    code: "SW665",
+    image: "/images/products/sw-cerelac-200g-banana.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100666,
+    name: "Cerelac 200G (Wheat)",
+    description: "Cerelac wheat infant cereal in 200g, per outer",
+    price: 405,
+    wholesalePrice: 400,
+    category: "food",
+    brand: "Cerelac",
+    inStock: true,
+    unit: "Outer",
+    code: "SW666",
+    image: "/images/products/sw-cerelac-200g-wheat.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100667,
+    name: "Cerelac 24x400G",
+    description: "Cerelac infant cereal in 400g pieces, 24 per pack",
+    price: 795,
+    wholesalePrice: 785,
+    category: "food",
+    brand: "Cerelac",
+    inStock: true,
+    unit: "Piece",
+    code: "SW667",
+    image: "/images/products/sw-cerelac-24x400g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100668,
+    name: "Cerelac 25G (Wheat)",
+    description: "Cerelac wheat infant cereal in 25g sachets, per dozen",
+    price: 410,
+    wholesalePrice: 405,
+    category: "food",
+    brand: "Cerelac",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW668",
+    image: "/images/products/sw-cerelac-25g-wheat.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100669,
+    name: "Cerelac 50G Banana (Satchet)",
+    description: "Cerelac banana infant cereal in 50g sachets, per dozen",
+    price: 630,
+    wholesalePrice: 620,
+    category: "food",
+    brand: "Cerelac",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW669",
+    image: "/images/products/sw-cerelac-50g-banana-satchet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100670,
+    name: "Cerelac 50G Wheat (Satchet)",
+    description: "Cerelac wheat infant cereal in 50g sachets, per dozen",
+    price: 700,
+    wholesalePrice: 690,
+    category: "food",
+    brand: "Cerelac",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW670",
+    image: "/images/products/sw-cerelac-50g-wheat-satchet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100671,
+    name: "Cerevita 18x315G",
+    description: "Cerevita cereal in 315g pieces, 18 per packet",
+    price: 410,
+    wholesalePrice: 405,
+    category: "food",
+    brand: "Cerevita",
+    inStock: true,
+    unit: "Packet",
+    code: "SW671",
+    image: "/images/products/sw-cerevita-18x315g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100672,
+    name: "Cerevita With Honey 12x420G",
+    description: "Cerevita with honey cereal in 420g pieces, 12 per packet",
+    price: 555,
+    wholesalePrice: 545,
+    category: "food",
+    brand: "Cerevita",
+    inStock: true,
+    unit: "Packet",
+    code: "SW672",
+    image: "/images/products/sw-cerevita-with-honey-12x420g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100673,
+    name: "Cerevita With Milk 12x420G",
+    description: "Cerevita with milk cereal in 420g pieces, 12 per packet",
+    price: 555,
+    wholesalePrice: 545,
+    category: "food",
+    brand: "Cerevita",
+    inStock: true,
+    unit: "Packet",
+    code: "SW673",
+    image: "/images/products/sw-cerevita-with-milk-12x420g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100674,
+    name: "Chai Sheshe Tangawizi Tea 15G",
+    description: "Chai Sheshe tangawizi (ginger) tea in 15g, per outer",
+    price: 115,
+    wholesalePrice: 110,
+    category: "beverage",
+    brand: "Chai Sheshe",
+    inStock: true,
+    unit: "Outer",
+    code: "SW674",
+    image: "/images/products/sw-chai-sheshe-tangawizi-tea-15g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100675,
+    name: "Champ Pop Magic Lollipop 50PCS",
+    description: "Champ Pop Magic lollipop, 50 pieces per packet",
+    price: 180,
+    wholesalePrice: 175,
+    category: "food",
+    brand: "Champ",
+    inStock: true,
+    unit: "Packet",
+    code: "SW675",
+    image: "/images/products/sw-champ-pop-magic-lollipop-50pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100676,
+    name: "Champion Fine Pen (Black)",
+    description: "Champion fine black pen, per packet",
+    price: 155,
+    wholesalePrice: 150,
+    category: "stationery",
+    brand: "Champion",
+    inStock: true,
+    unit: "Packet",
+    code: "SW676",
+    image: "/images/products/sw-champion-fine-pen-black.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100677,
+    name: "Champion Fine Pen (Blue)",
+    description: "Champion fine blue pen, per packet",
+    price: 155,
+    wholesalePrice: 150,
+    category: "stationery",
+    brand: "Champion",
+    inStock: true,
+    unit: "Packet",
+    code: "SW677",
+    image: "/images/products/sw-champion-fine-pen-blue.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100678,
+    name: "Champion Fine Pen (Red)",
+    description: "Champion fine red pen, per packet",
+    price: 155,
+    wholesalePrice: 150,
+    category: "stationery",
+    brand: "Champion",
+    inStock: true,
+    unit: "Packet",
+    code: "SW678",
+    image: "/images/products/sw-champion-fine-pen-red.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100679,
+    name: "Chapa Mandashi 100G",
+    description: "Chapa Mandashi in 100g, per dozen",
+    price: 365,
+    wholesalePrice: 360,
+    category: "food",
+    brand: "Chapa Mandashi",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW679",
+    image: "/images/products/sw-chapa-mandashi-100g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100680,
+    name: "Chapa Mandashi 4KG",
+    description: "Chapa Mandashi in 4kg packets",
+    price: 905,
+    wholesalePrice: 895,
+    category: "food",
+    brand: "Chapa Mandashi",
+    inStock: true,
+    unit: "Packet",
+    code: "SW680",
+    image: "/images/products/sw-chapa-mandashi-4kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100681,
+    name: "Chapati Afya 6x2KG",
+    description: "Chapati Afya wheat flour in 2kg pieces, 6 per packet",
+    price: 255,
+    wholesalePrice: 250,
+    category: "food",
+    brand: "Chapati Afya",
+    inStock: true,
+    unit: "Packet",
+    code: "SW681",
+    image: "/images/products/sw-chapati-afya-6x2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100682,
+    name: "Chebe Soap 24x125G (Shea Butter)",
+    description: "Chebe shea butter soap in 125g pieces, 24 per pack",
+    price: 300,
+    wholesalePrice: 295,
+    category: "hygiene",
+    brand: "Chebe",
+    inStock: true,
+    unit: "Piece",
+    code: "SW682",
+    image: "/images/products/sw-chebe-soap-24x125g-shea-butter.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100683,
+    name: "Chenna Jumbo Tissue",
+    description: "Chenna jumbo tissue, per bale",
+    price: 930,
+    wholesalePrice: 920,
+    category: "hygiene",
+    brand: "Chenna",
+    inStock: true,
+    unit: "Bale",
+    code: "SW683",
+    image: "/images/products/sw-chenna-jumbo-tissue.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100684,
+    name: "Chenna Kitchen Towel Twin (White)",
+    description: "Chenna white kitchen towel, twin pack, per outer",
+    price: 220,
+    wholesalePrice: 215,
+    category: "hygiene",
+    brand: "Chenna",
+    inStock: true,
+    unit: "Outer",
+    code: "SW684",
+    image: "/images/products/sw-chenna-kitchen-towel-twin-white.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100685,
+    name: "Chenna Serviette 18'S",
+    description: "Chenna serviettes, 18 pieces per bale",
+    price: 1300,
+    wholesalePrice: 1290,
+    category: "hygiene",
+    brand: "Chenna",
+    inStock: true,
+    unit: "Bale",
+    code: "SW685",
+    image: "/images/products/sw-chenna-serviette-18s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100686,
+    name: "Chenna Tissue 10Pack White (Unwrapped)",
+    description: "Chenna white tissue, unwrapped, 10 packs per outer",
+    price: 310,
+    wholesalePrice: 305,
+    category: "hygiene",
+    brand: "Chenna",
+    inStock: true,
+    unit: "Outer",
+    code: "SW686",
+    image: "/images/products/sw-chenna-tissue-10pack-white-unwrapped.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100687,
+    name: "Chenna Tissue 10Pack White (Wrapped)",
+    description: "Chenna white tissue, wrapped, 10 packs per outer",
+    price: 310,
+    wholesalePrice: 305,
+    category: "hygiene",
+    brand: "Chenna",
+    inStock: true,
+    unit: "Outer",
+    code: "SW687",
+    image: "/images/products/sw-chenna-tissue-10pack-white-wrapped.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100688,
+    name: "Chenna Tissue 4Pack (White)",
+    description: "Chenna white tissue, 4 packs per bale",
+    price: 1240,
+    wholesalePrice: 1230,
+    category: "hygiene",
+    brand: "Chenna",
+    inStock: true,
+    unit: "Bale",
+    code: "SW688",
+    image: "/images/products/sw-chenna-tissue-4pack-white.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100689,
+    name: "Chigs Crisps 50G (Salt & Vinegar)",
+    description: "Chigs salt & vinegar crisps in 50g packets",
+    price: 45,
+    wholesalePrice: 40,
+    category: "food",
+    brand: "Chigs",
+    inStock: true,
+    unit: "Packet",
+    code: "SW689",
+    image: "/images/products/sw-chigs-crisps-50g-salt-vinegar.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100690,
+    name: "Chigs Crisps 50G (Salted)",
+    description: "Chigs salted crisps in 50g packets",
+    price: 45,
+    wholesalePrice: 40,
+    category: "food",
+    brand: "Chigs",
+    inStock: true,
+    unit: "Packet",
+    code: "SW690",
+    image: "/images/products/sw-chigs-crisps-50g-salted.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100691,
+    name: "Chipsy Cooking Fat 12x1KG",
+    description: "Chipsy cooking fat in 1kg pieces, 12 per carton",
+    price: 3880,
+    wholesalePrice: 3870,
+    category: "food",
+    brand: "Chipsy",
+    inStock: true,
+    unit: "Carton",
+    code: "SW691",
+    image: "/images/products/sw-chipsy-cooking-fat-12x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100692,
+    name: "Chipsy Cooking Fat 500G",
+    description: "Chipsy cooking fat in 500g, per carton",
+    price: 3950,
+    wholesalePrice: 3940,
+    category: "food",
+    brand: "Chipsy",
+    inStock: true,
+    unit: "Carton",
+    code: "SW692",
+    image: "/images/products/sw-chipsy-cooking-fat-500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100693,
+    name: "Chipsy Cooking Fat 6x2KG",
+    description: "Chipsy cooking fat in 2kg pieces, 6 per piece",
+    price: 645,
+    wholesalePrice: 635,
+    category: "food",
+    brand: "Chipsy",
+    inStock: true,
+    unit: "Piece",
+    code: "SW693",
+    image: "/images/products/sw-chipsy-cooking-fat-6x2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100694,
+    name: "Choco Primo Drinking Chocolate 100G (Sachet)",
+    description: "Choco Primo drinking chocolate in 100g sachets",
+    price: 65,
+    wholesalePrice: 60,
+    category: "beverage",
+    brand: "Choco Primo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW694",
+    image: "/images/products/sw-choco-primo-drinking-chocolate-100g-sachet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100695,
+    name: "Choco Primo Drinking Chocolate 12x100G (Tin)",
+    description: "Choco Primo drinking chocolate in 100g tins, 12 per pack",
+    price: 90,
+    wholesalePrice: 85,
+    category: "beverage",
+    brand: "Choco Primo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW695",
+    image: "/images/products/sw-choco-primo-drinking-chocolate-12x100g-tin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100696,
+    name: "Choco Primo Drinking Chocolate 12x400G (Tin)",
+    description: "Choco Primo drinking chocolate in 400g tins, 12 per pack",
+    price: 285,
+    wholesalePrice: 280,
+    category: "beverage",
+    brand: "Choco Primo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW696",
+    image: "/images/products/sw-choco-primo-drinking-chocolate-12x400g-tin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100697,
+    name: "Choco Primo Drinking Chocolate 16/20G",
+    description: "Choco Primo drinking chocolate in 20g sachets, 16 per dozen",
+    price: 100,
+    wholesalePrice: 95,
+    category: "beverage",
+    brand: "Choco Primo",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW697",
+    image: "/images/products/sw-choco-primo-drinking-chocolate-16-20g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100698,
+    name: "Choco Primo Drinking Chocolate 200G (Tin)",
+    description: "Choco Primo drinking chocolate in 200g tins",
+    price: 160,
+    wholesalePrice: 155,
+    category: "beverage",
+    brand: "Choco Primo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW698",
+    image: "/images/products/sw-choco-primo-drinking-chocolate-200g-tin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100699,
+    name: "Choco Primo Drinking Chocolate 8/10G",
+    description: "Choco Primo drinking chocolate in 10g sachets, 8 per dozen",
+    price: 45,
+    wholesalePrice: 40,
+    category: "beverage",
+    brand: "Choco Primo",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW699",
+    image: "/images/products/sw-choco-primo-drinking-chocolate-8-10g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100700,
+    name: "Chocolate Burst Drinking Chocolate 125G",
+    description: "Chocolate Burst drinking chocolate in 125g jars",
+    price: 130,
+    wholesalePrice: 125,
+    category: "beverage",
+    brand: "Chocolate Burst",
+    inStock: true,
+    unit: "Jar",
+    code: "SW700",
+    image: "/images/products/sw-chocolate-burst-drinking-chocolate-125g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100701,
+    name: "Chocolate Burst Drinking Chocolate 225G",
+    description: "Chocolate Burst drinking chocolate in 225g jars",
+    price: 225,
+    wholesalePrice: 220,
+    category: "beverage",
+    brand: "Chocolate Burst",
+    inStock: true,
+    unit: "Jar",
+    code: "SW701",
+    image: "/images/products/sw-chocolate-burst-drinking-chocolate-225g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100702,
+    name: "Chocolate Burst Drinking Chocolate 90G (Sachet)",
+    description: "Chocolate Burst drinking chocolate in 90g sachets",
+    price: 80,
+    wholesalePrice: 75,
+    category: "beverage",
+    brand: "Chocolate Burst",
+    inStock: true,
+    unit: "Piece",
+    code: "SW702",
+    image: "/images/products/sw-chocolate-burst-drinking-chocolate-90g-sachet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100703,
+    name: "Chooze Puffs Barbeque 20G",
+    description: "Chooze barbeque puffs in 20g, per bale",
+    price: 370,
+    wholesalePrice: 365,
+    category: "food",
+    brand: "Chooze",
+    inStock: true,
+    unit: "Bale",
+    code: "SW703",
+    image: "/images/products/sw-chooze-puffs-barbeque-20g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100704,
+    name: "Chrismas Basket",
+    description: "Christmas gift basket, per bucket",
+    price: 725,
+    wholesalePrice: 715,
+    category: "household",
+    brand: "Generic",
+    inStock: true,
+    unit: "Bucket",
+    code: "SW704",
+    image: "/images/products/sw-chrismas-basket.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100705,
+    name: "Cif Cream Cleaner 16x500ML (Pink)",
+    description: "Cif pink cream cleaner in 500ml pieces, 16 per packet",
+    price: 370,
+    wholesalePrice: 365,
+    category: "cleaning",
+    brand: "Cif",
+    inStock: true,
+    unit: "Packet",
+    code: "SW705",
+    image: "/images/products/sw-cif-cream-cleaner-16x500ml-pink.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100706,
+    name: "Cif Floor Cleaner 8x950ML (Ocean)",
+    description: "Cif ocean floor cleaner in 950ml pieces, 8 per piece",
+    price: 670,
+    wholesalePrice: 660,
+    category: "cleaning",
+    brand: "Cif",
+    inStock: true,
+    unit: "Piece",
+    code: "SW706",
+    image: "/images/products/sw-cif-floor-cleaner-8x950ml-ocean.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100707,
+    name: "Cif Floor Cleaner 8x950ML (Wild Orchid)",
+    description: "Cif wild orchid floor cleaner in 950ml pieces, 8 per piece",
+    price: 670,
+    wholesalePrice: 660,
+    category: "cleaning",
+    brand: "Cif",
+    inStock: true,
+    unit: "Piece",
+    code: "SW707",
+    image: "/images/products/sw-cif-floor-cleaner-8x950ml-wild-orchid.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100708,
+    name: "Cif Perfect Finish 6x435ML (Oven & Grill)",
+    description: "Cif oven & grill perfect finish cleaner in 435ml pieces, 6 per piece",
+    price: 615,
+    wholesalePrice: 605,
+    category: "cleaning",
+    brand: "Cif",
+    inStock: true,
+    unit: "Piece",
+    code: "SW708",
+    image: "/images/products/sw-cif-perfect-finish-6x435ml-oven-grill.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100709,
+    name: "Cif Power & Shine 6x700ML (Bathroom)",
+    description: "Cif power & shine bathroom cleaner in 700ml pieces, 6 per piece",
+    price: 795,
+    wholesalePrice: 785,
+    category: "cleaning",
+    brand: "Cif",
+    inStock: true,
+    unit: "Piece",
+    code: "SW709",
+    image: "/images/products/sw-cif-power-shine-6x700ml-bathroom.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100710,
+    name: "Cif Power & Shine 6x700ML (Kitchen)",
+    description: "Cif power & shine kitchen cleaner in 700ml pieces, 6 per piece",
+    price: 770,
+    wholesalePrice: 760,
+    category: "cleaning",
+    brand: "Cif",
+    inStock: true,
+    unit: "Piece",
+    code: "SW710",
+    image: "/images/products/sw-cif-power-shine-6x700ml-kitchen.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100711,
+    name: "Cil Blended Rice 24x1KG",
+    description: "Cil blended rice in 1kg pieces, 24 per packet",
+    price: 145,
+    wholesalePrice: 140,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Packet",
+    code: "SW711",
+    image: "/images/products/sw-cil-blended-rice-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100712,
+    name: "Cil Blended Rice 2KG",
+    description: "Cil blended rice in 2kg packets",
+    price: 280,
+    wholesalePrice: 275,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Packet",
+    code: "SW712",
+    image: "/images/products/sw-cil-blended-rice-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100713,
+    name: "Cil Blended Rice 5KG",
+    description: "Cil blended rice in 5kg packets",
+    price: 680,
+    wholesalePrice: 670,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Packet",
+    code: "SW713",
+    image: "/images/products/sw-cil-blended-rice-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100714,
+    name: "Cil Brown Rice 1KG",
+    description: "Cil brown rice in 1kg packets",
+    price: 300,
+    wholesalePrice: 295,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Packet",
+    code: "SW714",
+    image: "/images/products/sw-cil-brown-rice-1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100715,
+    name: "Cil Komboka Rice 12x2KG",
+    description: "Cil Komboka rice in 2kg pieces, 12 per packet",
+    price: 395,
+    wholesalePrice: 390,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Packet",
+    code: "SW715",
+    image: "/images/products/sw-cil-komboka-rice-12x2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100716,
+    name: "Cil Komboka Rice 24x1KG",
+    description: "Cil Komboka rice in 1kg pieces, 24 per packet",
+    price: 200,
+    wholesalePrice: 195,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Packet",
+    code: "SW716",
+    image: "/images/products/sw-cil-komboka-rice-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100717,
+    name: "Cil Komboka Rice 5x5KG",
+    description: "Cil Komboka rice in 5kg pieces, 5 per packet",
+    price: 965,
+    wholesalePrice: 955,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Packet",
+    code: "SW717",
+    image: "/images/products/sw-cil-komboka-rice-5x5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100718,
+    name: "Cil Ndengu 24x1KG",
+    description: "Cil ndengu (green grams) in 1kg pieces, 24 per packet",
+    price: 145,
+    wholesalePrice: 140,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Packet",
+    code: "SW718",
+    image: "/images/products/sw-cil-ndengu-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100719,
+    name: "Cil Ndengu 24x500GM",
+    description: "Cil ndengu (green grams) in 500g pieces, 24 per packet",
+    price: 75,
+    wholesalePrice: 70,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Packet",
+    code: "SW719",
+    image: "/images/products/sw-cil-ndengu-24x500gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100720,
+    name: "Cil Pishori Rice 24x1KG",
+    description: "Cil Pishori rice in 1kg pieces, 24 per packet",
+    price: 260,
+    wholesalePrice: 255,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Packet",
+    code: "SW720",
+    image: "/images/products/sw-cil-pishori-rice-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100721,
+    name: "Cil Pishori Rice 2KG",
+    description: "Cil Pishori rice in 2kg packets",
+    price: 515,
+    wholesalePrice: 505,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Packet",
+    code: "SW721",
+    image: "/images/products/sw-cil-pishori-rice-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100722,
+    name: "Cil Pishori Rice 5x5KG",
+    description: "Cil Pishori rice in 5kg pieces, 5 per outer",
+    price: 1280,
+    wholesalePrice: 1270,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Outer",
+    code: "SW722",
+    image: "/images/products/sw-cil-pishori-rice-5x5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100723,
+    name: "Cil Sindano Rice 12x2KG",
+    description: "Cil Sindano rice in 2kg pieces, 12 per packet",
+    price: 485,
+    wholesalePrice: 480,
+    category: "food",
+    brand: "Cil",
+    inStock: true,
+    unit: "Packet",
+    code: "SW723",
+    image: "/images/products/sw-cil-sindano-rice-12x2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100724,
+    name: "Classic Bar Soap 10x1KG (White)",
+    description: "Classic white bar soap in 1kg pieces, 10 per outer",
+    price: 820,
+    wholesalePrice: 810,
+    category: "hygiene",
+    brand: "Classic",
+    inStock: true,
+    unit: "Outer",
+    code: "SW724",
+    image: "/images/products/sw-classic-bar-soap-10x1kg-white.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100725,
+    name: "Classic Bar Soap 10x1KG (Natural)",
+    description: "Classic natural bar soap in 1kg pieces, 10 per outer",
+    price: 700,
+    wholesalePrice: 690,
+    category: "hygiene",
+    brand: "Classic",
+    inStock: true,
+    unit: "Outer",
+    code: "SW725",
+    image: "/images/products/sw-classic-bar-soap-10x1kg-natural.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100726,
+    name: "Classic Detergent 12x500G (Lavender)",
+    description: "Classic lavender detergent in 500g pieces, 12 per packet",
+    price: 100,
+    wholesalePrice: 95,
+    category: "cleaning",
+    brand: "Classic",
+    inStock: true,
+    unit: "Packet",
+    code: "SW726",
+    image: "/images/products/sw-classic-detergent-12x500g-lavender.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100727,
+    name: "Classic Detergent 12x500G (White)",
+    description: "Classic white detergent in 500g pieces, 12 per packet",
+    price: 100,
+    wholesalePrice: 95,
+    category: "cleaning",
+    brand: "Classic",
+    inStock: true,
+    unit: "Packet",
+    code: "SW727",
+    image: "/images/products/sw-classic-detergent-12x500g-white.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100728,
+    name: "Classic Detergent 36x200G",
+    description: "Classic detergent in 200g pieces, 36 per dozen",
+    price: 435,
+    wholesalePrice: 430,
+    category: "cleaning",
+    brand: "Classic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW728",
+    image: "/images/products/sw-classic-detergent-36x200g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100729,
+    name: "Classic Detergent 6x1KG (Lavender)",
+    description: "Classic lavender detergent in 1kg pieces, 6 per packet",
+    price: 190,
+    wholesalePrice: 185,
+    category: "cleaning",
+    brand: "Classic",
+    inStock: true,
+    unit: "Packet",
+    code: "SW729",
+    image: "/images/products/sw-classic-detergent-6x1kg-lavender.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100730,
+    name: "Classic Detergent 6x1KG (White)",
+    description: "Classic white detergent in 1kg pieces, 6 per packet",
+    price: 190,
+    wholesalePrice: 185,
+    category: "cleaning",
+    brand: "Classic",
+    inStock: true,
+    unit: "Packet",
+    code: "SW730",
+    image: "/images/products/sw-classic-detergent-6x1kg-white.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100731,
+    name: "Classic Detergent 72x100G",
+    description: "Classic detergent in 100g pieces, 72 per dozen",
+    price: 225,
+    wholesalePrice: 220,
+    category: "cleaning",
+    brand: "Classic",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW731",
+    image: "/images/products/sw-classic-detergent-72x100g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100732,
+    name: "Cleanrol Kitchen Towel Twin Pack",
+    description: "Cleanrol kitchen towel, twin pack, per packet",
+    price: 235,
+    wholesalePrice: 230,
+    category: "hygiene",
+    brand: "Cleanrol",
+    inStock: true,
+    unit: "Packet",
+    code: "SW732",
+    image: "/images/products/sw-cleanrol-kitchen-towel-twin-pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100733,
+    name: "Clere Petroleum Jelly 24x250ML (Blue)",
+    description: "Clere blue petroleum jelly in 250ml pieces, 24 per piece",
+    price: 270,
+    wholesalePrice: 265,
+    category: "hygiene",
+    brand: "Clere",
+    inStock: true,
+    unit: "Piece",
+    code: "SW733",
+    image: "/images/products/sw-clere-petroleum-jelly-24x250ml-blue.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100734,
+    name: "Clere Petroleum Jelly 24x250ML (Pink)",
+    description: "Clere pink petroleum jelly in 250ml pieces, 24 per piece",
+    price: 270,
+    wholesalePrice: 265,
+    category: "hygiene",
+    brand: "Clere",
+    inStock: true,
+    unit: "Piece",
+    code: "SW734",
+    image: "/images/products/sw-clere-petroleum-jelly-24x250ml-pink.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100735,
+    name: "Climax Air Freshener Toilet Block 50G",
+    description: "Climax air freshener toilet block in 50g pieces",
+    price: 75,
+    wholesalePrice: 70,
+    category: "hygiene",
+    brand: "Climax",
+    inStock: true,
+    unit: "Piece",
+    code: "SW735",
+    image: "/images/products/sw-climax-air-freshener-toilet-block-50g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100736,
+    name: "Clinclear S.Pad Blue",
+    description: "Clinclear sanitary pads, blue, per outer",
+    price: 295,
+    wholesalePrice: 290,
+    category: "hygiene",
+    brand: "Clinclear",
+    inStock: true,
+    unit: "Outer",
+    code: "SW736",
+    image: "/images/products/sw-clinclear-s-pad-blue.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100737,
+    name: "Clinclear S.Pad Pink",
+    description: "Clinclear sanitary pads, pink, per outer",
+    price: 295,
+    wholesalePrice: 290,
+    category: "hygiene",
+    brand: "Clinclear",
+    inStock: true,
+    unit: "Outer",
+    code: "SW737",
+    image: "/images/products/sw-clinclear-s-pad-pink.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100738,
+    name: "Clorox Bleach 12x750ML (Regular)",
+    description: "Clorox regular bleach in 750ml pieces, 12 per piece",
+    price: 220,
+    wholesalePrice: 215,
+    category: "cleaning",
+    brand: "Clorox",
+    inStock: true,
+    unit: "Piece",
+    code: "SW738",
+    image: "/images/products/sw-clorox-bleach-12x750ml-regular.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100739,
+    name: "Clorox Bleach 4x5L (Regular)",
+    description: "Clorox regular bleach in 5L pieces, 4 per piece",
+    price: 1020,
+    wholesalePrice: 1010,
+    category: "cleaning",
+    brand: "Clorox",
+    inStock: true,
+    unit: "Piece",
+    code: "SW739",
+    image: "/images/products/sw-clorox-bleach-4x5l-regular.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100740,
+    name: "Clorox Bleach 70ML (Regular)",
+    description: "Clorox regular bleach in 70ml, per dozen",
+    price: 165,
+    wholesalePrice: 160,
+    category: "cleaning",
+    brand: "Clorox",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW740",
+    image: "/images/products/sw-clorox-bleach-70ml-regular.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100741,
+    name: "Clorox Toilet Cleaner 24x500ML (Regular)",
+    description: "Clorox regular toilet cleaner in 500ml pieces, 24 per piece",
+    price: 205,
+    wholesalePrice: 200,
+    category: "cleaning",
+    brand: "Clorox",
+    inStock: true,
+    unit: "Piece",
+    code: "SW741",
+    image: "/images/products/sw-clorox-toilet-cleaner-24x500ml-regular.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100742,
+    name: "Close Up 125GM (1+1)",
+    description: "Close Up toothpaste 125g, 1+1 offer, per piece",
+    price: 295,
+    wholesalePrice: 290,
+    category: "hygiene",
+    brand: "Close Up",
+    inStock: true,
+    unit: "Piece",
+    code: "SW742",
+    image: "/images/products/sw-close-up-125gm-1plus1.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100743,
+    name: "Close Up 30G",
+    description: "Close Up toothpaste in 30g, per dozen",
+    price: 620,
+    wholesalePrice: 610,
+    category: "hygiene",
+    brand: "Close Up",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW743",
+    image: "/images/products/sw-close-up-30g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100744,
+    name: "Close Up Mouthwash 12x500ML (Nature Boost)",
+    description: "Close Up nature boost mouthwash in 500ml pieces, 12 per piece",
+    price: 680,
+    wholesalePrice: 670,
+    category: "hygiene",
+    brand: "Close Up",
+    inStock: true,
+    unit: "Piece",
+    code: "SW744",
+    image: "/images/products/sw-close-up-mouthwash-12x500ml-nature-boost.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100745,
+    name: "Close Up Mouthwash 12x500ML (Red Hot)",
+    description: "Close Up red hot mouthwash in 500ml pieces, 12 per piece",
+    price: 680,
+    wholesalePrice: 670,
+    category: "hygiene",
+    brand: "Close Up",
+    inStock: true,
+    unit: "Piece",
+    code: "SW745",
+    image: "/images/products/sw-close-up-mouthwash-12x500ml-red-hot.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100746,
+    name: "Close-Up 60GMs",
+    description: "Close Up toothpaste in 60g, per outer",
+    price: 565,
+    wholesalePrice: 555,
+    category: "hygiene",
+    brand: "Close Up",
+    inStock: true,
+    unit: "Outer",
+    code: "SW746",
+    image: "/images/products/sw-close-up-60gms.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100747,
+    name: "Clovers Baked Beans 420GMs",
+    description: "Clovers baked beans in 420g pieces",
+    price: 135,
+    wholesalePrice: 130,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW747",
+    image: "/images/products/sw-clovers-baked-beans-420gms.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100748,
+    name: "Clovers Baking Powder 250G",
+    description: "Clovers baking powder in 250g pieces",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW748",
+    image: "/images/products/sw-clovers-baking-powder-250g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100749,
+    name: "Clovers Baking Powder 4x4KG",
+    description: "Clovers baking powder in 4kg pieces, 4 per piece",
+    price: 735,
+    wholesalePrice: 725,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW749",
+    image: "/images/products/sw-clovers-baking-powder-4x4kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100750,
+    name: "Clovers Baking Powder 500G",
+    description: "Clovers baking powder in 500g pieces",
+    price: 140,
+    wholesalePrice: 135,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW750",
+    image: "/images/products/sw-clovers-baking-powder-500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100751,
+    name: "Clovers Bicarbonate Soda 100G Jar",
+    description: "Clovers bicarbonate soda in 100g jars",
+    price: 45,
+    wholesalePrice: 40,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW751",
+    image: "/images/products/sw-clovers-bicarbonate-soda-100g-jar.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100752,
+    name: "Clovers Caster Sugar 500G Poly",
+    description: "Clovers caster sugar in 500g poly packs",
+    price: 120,
+    wholesalePrice: 115,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW752",
+    image: "/images/products/sw-clovers-caster-sugar-500g-poly.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100753,
+    name: "Clovers Chilli Sauce 250G",
+    description: "Clovers chilli sauce in 250g pieces",
+    price: 50,
+    wholesalePrice: 45,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW753",
+    image: "/images/products/sw-clovers-chilli-sauce-250g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100754,
+    name: "Clovers Chilli Sauce 500G",
+    description: "Clovers chilli sauce in 500g pieces",
+    price: 100,
+    wholesalePrice: 95,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW754",
+    image: "/images/products/sw-clovers-chilli-sauce-500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100755,
+    name: "Clovers Cocoa 100GM Jar",
+    description: "Clovers cocoa powder in 100g jars",
+    price: 180,
+    wholesalePrice: 175,
+    category: "beverage",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW755",
+    image: "/images/products/sw-clovers-cocoa-100gm-jar.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100756,
+    name: "Clovers Cocoa 10G",
+    description: "Clovers cocoa powder in 10g, per dozen",
+    price: 170,
+    wholesalePrice: 165,
+    category: "beverage",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW756",
+    image: "/images/products/sw-clovers-cocoa-10g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100757,
+    name: "Clovers Cocoa 12x400GM Jar",
+    description: "Clovers cocoa powder in 400g jars, 12 per piece",
+    price: 570,
+    wholesalePrice: 560,
+    category: "beverage",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW757",
+    image: "/images/products/sw-clovers-cocoa-12x400gm-jar.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100758,
+    name: "Clovers Cocoa 20G",
+    description: "Clovers cocoa powder in 20g, per dozen",
+    price: 360,
+    wholesalePrice: 355,
+    category: "beverage",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW758",
+    image: "/images/products/sw-clovers-cocoa-20g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100759,
+    name: "Clovers Cocoa 24x200GM Jar",
+    description: "Clovers cocoa powder in 200g jars, 24 per piece",
+    price: 320,
+    wholesalePrice: 315,
+    category: "beverage",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW759",
+    image: "/images/products/sw-clovers-cocoa-24x200gm-jar.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100760,
+    name: "Clovers Cocoa 96x50G",
+    description: "Clovers cocoa powder in 50g, 96 per dozen",
+    price: 860,
+    wholesalePrice: 850,
+    category: "beverage",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW760",
+    image: "/images/products/sw-clovers-cocoa-96x50g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100761,
+    name: "Clovers Corn Flour 30x400G",
+    description: "Clovers corn flour in 400g pieces, 30 per packet",
+    price: 100,
+    wholesalePrice: 95,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Packet",
+    code: "SW761",
+    image: "/images/products/sw-clovers-corn-flour-30x400g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100762,
+    name: "Clovers Corn Flour 5KG",
+    description: "Clovers corn flour in 5kg bags",
+    price: 980,
+    wholesalePrice: 970,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Bag",
+    code: "SW762",
+    image: "/images/products/sw-clovers-corn-flour-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100763,
+    name: "Clovers Custard Powder Plain 250G Jar",
+    description: "Clovers plain custard powder in 250g jars",
+    price: 85,
+    wholesalePrice: 80,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW763",
+    image: "/images/products/sw-clovers-custard-powder-plain-250g-jar.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100764,
+    name: "Clovers D/Chocolate 10GM",
+    description: "Clovers drinking chocolate in 10g, per dozen",
+    price: 70,
+    wholesalePrice: 65,
+    category: "beverage",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW764",
+    image: "/images/products/sw-clovers-d-chocolate-10gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100765,
+    name: "Clovers D/Chocolate 12x400GM",
+    description: "Clovers drinking chocolate in 400g, 12 per piece",
+    price: 285,
+    wholesalePrice: 280,
+    category: "beverage",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW765",
+    image: "/images/products/sw-clovers-d-chocolate-12x400gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100766,
+    name: "Clovers D/Chocolate 200GM",
+    description: "Clovers drinking chocolate in 200g pieces",
+    price: 175,
+    wholesalePrice: 170,
+    category: "beverage",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW766",
+    image: "/images/products/sw-clovers-d-chocolate-200gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100767,
+    name: "Clovers D/Chocolate 24x100GM Jar",
+    description: "Clovers drinking chocolate in 100g jars, 24 per piece",
+    price: 100,
+    wholesalePrice: 95,
+    category: "beverage",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW767",
+    image: "/images/products/sw-clovers-d-chocolate-24x100gm-jar.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100768,
+    name: "Clovers Dark Vanilla Essence 12x50ML",
+    description: "Clovers dark vanilla essence in 50ml pieces, 12 per piece",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW768",
+    image: "/images/products/sw-clovers-dark-vanilla-essence-12x50ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100769,
+    name: "Clovers Glucose 10GM (Pure)",
+    description: "Clovers pure glucose in 10g, per dozen",
+    price: 35,
+    wholesalePrice: 30,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW769",
+    image: "/images/products/sw-clovers-glucose-10gm-pure.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100770,
+    name: "Clovers Glucose 24x250G",
+    description: "Clovers glucose in 250g pieces, 24 per piece",
+    price: 95,
+    wholesalePrice: 90,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW770",
+    image: "/images/products/sw-clovers-glucose-24x250g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100771,
+    name: "Clovers Glucose 45GM",
+    description: "Clovers glucose in 45g, per dozen",
+    price: 160,
+    wholesalePrice: 155,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW771",
+    image: "/images/products/sw-clovers-glucose-45gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100772,
+    name: "Clovers Glucose 500GM",
+    description: "Clovers glucose in 500g pieces",
+    price: 160,
+    wholesalePrice: 155,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW772",
+    image: "/images/products/sw-clovers-glucose-500gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100773,
+    name: "Clovers Glucose 90GM",
+    description: "Clovers glucose in 90g, per dozen",
+    price: 265,
+    wholesalePrice: 260,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW773",
+    image: "/images/products/sw-clovers-glucose-90gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100774,
+    name: "Clovers Golden Sweet Corn 24x420G",
+    description: "Clovers golden sweet corn in 420g pieces, 24 per piece",
+    price: 130,
+    wholesalePrice: 125,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW774",
+    image: "/images/products/sw-clovers-golden-sweet-corn-24x420g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100775,
+    name: "Clovers Hot and Sweet Sauce 400G",
+    description: "Clovers hot and sweet sauce in 400g pieces",
+    price: 85,
+    wholesalePrice: 80,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW775",
+    image: "/images/products/sw-clovers-hot-and-sweet-sauce-400g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100776,
+    name: "Clovers Hot and Sweet Sauce 700GM",
+    description: "Clovers hot and sweet sauce in 700g pieces",
+    price: 140,
+    wholesalePrice: 135,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW776",
+    image: "/images/products/sw-clovers-hot-and-sweet-sauce-700gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100777,
+    name: "Clovers Icing Sugar 500G Poly",
+    description: "Clovers icing sugar in 500g poly packs",
+    price: 120,
+    wholesalePrice: 115,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW777",
+    image: "/images/products/sw-clovers-icing-sugar-500g-poly.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100778,
+    name: "Clovers Jelly Crystal Strawberry 85G",
+    description: "Clovers strawberry jelly crystals in 85g packets",
+    price: 120,
+    wholesalePrice: 115,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Packet",
+    code: "SW778",
+    image: "/images/products/sw-clovers-jelly-crystal-strawberry-85g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100779,
+    name: "Clovers Mixed Fruit Jam 12x500G",
+    description: "Clovers mixed fruit jam in 500g pieces, 12 per piece",
+    price: 175,
+    wholesalePrice: 170,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW779",
+    image: "/images/products/sw-clovers-mixed-fruit-jam-12x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100780,
+    name: "Clovers Red Plum Jam 12x500G",
+    description: "Clovers red plum jam in 500g pieces, 12 per piece",
+    price: 175,
+    wholesalePrice: 170,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW780",
+    image: "/images/products/sw-clovers-red-plum-jam-12x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100781,
+    name: "Clovers Rose Sherbet Syrup 12x700GM",
+    description: "Clovers rose sherbet syrup in 700g pieces, 12 per piece",
+    price: 170,
+    wholesalePrice: 165,
+    category: "beverage",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW781",
+    image: "/images/products/sw-clovers-rose-sherbet-syrup-12x700gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100782,
+    name: "Clovers Strawberry Jam 12x500G",
+    description: "Clovers strawberry jam in 500g pieces, 12 per piece",
+    price: 180,
+    wholesalePrice: 175,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW782",
+    image: "/images/products/sw-clovers-strawberry-jam-12x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100783,
+    name: "Clovers Sugar Molasses 12x500G",
+    description: "Clovers sugar molasses in 500g pieces, 12 per packet",
+    price: 140,
+    wholesalePrice: 135,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Packet",
+    code: "SW783",
+    image: "/images/products/sw-clovers-sugar-molasses-12x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100784,
+    name: "Clovers Tomato Ketchup 400GM",
+    description: "Clovers tomato ketchup in 400g pieces",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW784",
+    image: "/images/products/sw-clovers-tomato-ketchup-400gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100785,
+    name: "Clovers Tomato Ketchup 700GM",
+    description: "Clovers tomato ketchup in 700g pieces",
+    price: 185,
+    wholesalePrice: 180,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW785",
+    image: "/images/products/sw-clovers-tomato-ketchup-700gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100786,
+    name: "Clovers Tomato Paste 24x340G (Sachet)",
+    description: "Clovers tomato paste in 340g sachets, 24 per piece",
+    price: 150,
+    wholesalePrice: 145,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW786",
+    image: "/images/products/sw-clovers-tomato-paste-24x340g-sachet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100787,
+    name: "Clovers Tomato Paste 24x400G Tin",
+    description: "Clovers tomato paste in 400g tins, 24 per piece",
+    price: 150,
+    wholesalePrice: 145,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW787",
+    image: "/images/products/sw-clovers-tomato-paste-24x400g-tin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100788,
+    name: "Clovers Tomato Paste 6x2.2KG",
+    description: "Clovers tomato paste in 2.2kg pieces, 6 per piece",
+    price: 560,
+    wholesalePrice: 550,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW788",
+    image: "/images/products/sw-clovers-tomato-paste-6x2.2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100789,
+    name: "Clovers Tomato Paste 6x3.3KG",
+    description: "Clovers tomato paste in 3.3kg pieces, 6 per piece",
+    price: 985,
+    wholesalePrice: 975,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW789",
+    image: "/images/products/sw-clovers-tomato-paste-6x3.3kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100790,
+    name: "Clovers Tomato Paste 70G (Sachet)",
+    description: "Clovers tomato paste in 70g sachets, per outer",
+    price: 870,
+    wholesalePrice: 860,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Outer",
+    code: "SW790",
+    image: "/images/products/sw-clovers-tomato-paste-70g-sachet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100791,
+    name: "Clovers Tomato Sauce 12x1KG",
+    description: "Clovers tomato sauce in 1kg pieces, 12 per piece",
+    price: 145,
+    wholesalePrice: 140,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW791",
+    image: "/images/products/sw-clovers-tomato-sauce-12x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100792,
+    name: "Clovers Tomato Sauce 250G",
+    description: "Clovers tomato sauce in 250g pieces",
+    price: 55,
+    wholesalePrice: 50,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW792",
+    image: "/images/products/sw-clovers-tomato-sauce-250g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100793,
+    name: "Clovers Tomato Sauce 2KG",
+    description: "Clovers tomato sauce in 2kg pieces",
+    price: 155,
+    wholesalePrice: 150,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW793",
+    image: "/images/products/sw-clovers-tomato-sauce-2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100794,
+    name: "Clovers Tomato Sauce 400G",
+    description: "Clovers tomato sauce in 400g pieces",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW794",
+    image: "/images/products/sw-clovers-tomato-sauce-400g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100795,
+    name: "Clovers Tomato Sauce 5KG",
+    description: "Clovers tomato sauce in 5kg pieces",
+    price: 340,
+    wholesalePrice: 335,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW795",
+    image: "/images/products/sw-clovers-tomato-sauce-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100796,
+    name: "Clovers Tomato Sauce 700G",
+    description: "Clovers tomato sauce in 700g pieces",
+    price: 130,
+    wholesalePrice: 125,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW796",
+    image: "/images/products/sw-clovers-tomato-sauce-700g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100797,
+    name: "Clovers Vanilla Essence 12x50ML (Chocolate)",
+    description: "Clovers chocolate vanilla essence in 50ml pieces, 12 per piece",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW797",
+    image: "/images/products/sw-clovers-vanilla-essence-12x50ml-chocolate.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100798,
+    name: "Clovers Vanilla Essence 12x50ML (Orange)",
+    description: "Clovers orange vanilla essence in 50ml pieces, 12 per piece",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW798",
+    image: "/images/products/sw-clovers-vanilla-essence-12x50ml-orange.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100799,
+    name: "Clovers Vanilla Essence 12x50ML (Strawberry)",
+    description: "Clovers strawberry vanilla essence in 50ml pieces, 12 per piece",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW799",
+    image: "/images/products/sw-clovers-vanilla-essence-12x50ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100800,
+    name: "Clovers Vanilla Essence 240ML",
+    description: "Clovers vanilla essence in 240ml pieces",
+    price: 125,
+    wholesalePrice: 120,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW800",
+    image: "/images/products/sw-clovers-vanilla-essence-240ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100801,
+    name: "Clovers White Vinegar 400ML",
+    description: "Clovers white vinegar in 400ml pieces",
+    price: 65,
+    wholesalePrice: 60,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW801",
+    image: "/images/products/sw-clovers-white-vinegar-400ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100802,
+    name: "Clovers White Vinegar 12x700G",
+    description: "Clovers white vinegar in 700g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW802",
+    image: "/images/products/sw-clovers-white-vinegar-12x700g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100803,
+    name: "Clovers White Vinegar 5L",
+    description: "Clovers white vinegar in 5L pieces",
+    price: 290,
+    wholesalePrice: 285,
+    category: "food",
+    brand: "Clovers",
+    inStock: true,
+    unit: "Piece",
+    code: "SW803",
+    image: "/images/products/sw-clovers-white-vinegar-5l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100804,
+    name: "Clown Fruityoghurt 20x80PCS",
+    description: "Clown Fruityoghurt candy, 80 pieces, 20 per packet",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Clown",
+    inStock: true,
+    unit: "Packet",
+    code: "SW804",
+    image: "/images/products/sw-clown-fruityoghurt-20x80pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100805,
+    name: "Clown Kenya Yetu 80PCS",
+    description: "Clown Kenya Yetu candy, 80 pieces per packet",
+    price: 60,
+    wholesalePrice: 55,
+    category: "food",
+    brand: "Clown",
+    inStock: true,
+    unit: "Packet",
+    code: "SW805",
+    image: "/images/products/sw-clown-kenya-yetu-80pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100806,
+    name: "Clown Milkees 20x80PCS",
+    description: "Clown Milkees candy, 80 pieces, 20 per packet",
+    price: 60,
+    wholesalePrice: 55,
+    category: "food",
+    brand: "Clown",
+    inStock: true,
+    unit: "Packet",
+    code: "SW806",
+    image: "/images/products/sw-clown-milkees-20x80pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100807,
+    name: "Clown Pan Masala 20x80PCS",
+    description: "Clown Pan Masala candy, 80 pieces, 20 per packet",
+    price: 75,
+    wholesalePrice: 70,
+    category: "food",
+    brand: "Clown",
+    inStock: true,
+    unit: "Packet",
+    code: "SW807",
+    image: "/images/products/sw-clown-pan-masala-20x80pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100808,
+    name: "Clown Pipi Eclairs 80PCS",
+    description: "Clown Pipi Eclairs candy, 80 pieces per packet",
+    price: 60,
+    wholesalePrice: 55,
+    category: "food",
+    brand: "Clown",
+    inStock: true,
+    unit: "Packet",
+    code: "SW808",
+    image: "/images/products/sw-clown-pipi-eclairs-80pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100809,
+    name: "Clown Pipi Maziwa 20x80PCS",
+    description: "Clown Pipi Maziwa candy, 80 pieces, 20 per packet",
+    price: 60,
+    wholesalePrice: 55,
+    category: "food",
+    brand: "Clown",
+    inStock: true,
+    unit: "Packet",
+    code: "SW809",
+    image: "/images/products/sw-clown-pipi-maziwa-20x80pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100810,
+    name: "Club 99 Biscuit 12x150G (Bourbon)",
+    description: "Club 99 bourbon biscuits in 150g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Club 99",
+    inStock: true,
+    unit: "Piece",
+    code: "SW810",
+    image: "/images/products/sw-club-99-biscuit-12x150g-bourbon.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100811,
+    name: "Club 99 Biscuit 12x175G (Coconut)",
+    description: "Club 99 coconut biscuits in 175g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Club 99",
+    inStock: true,
+    unit: "Piece",
+    code: "SW811",
+    image: "/images/products/sw-club-99-biscuit-12x175g-coconut.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100812,
+    name: "Club 99 Biscuit 12x175G (Digestive)",
+    description: "Club 99 digestive biscuits in 175g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Club 99",
+    inStock: true,
+    unit: "Piece",
+    code: "SW812",
+    image: "/images/products/sw-club-99-biscuit-12x175g-digestive.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100813,
+    name: "Club 99 Biscuit 12x175G (Gingernuts)",
+    description: "Club 99 gingernuts biscuits in 175g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Club 99",
+    inStock: true,
+    unit: "Piece",
+    code: "SW813",
+    image: "/images/products/sw-club-99-biscuit-12x175g-gingernuts.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100814,
+    name: "Club 99 Biscuit 12x175G (Oat Digestive)",
+    description: "Club 99 oat digestive biscuits in 175g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Club 99",
+    inStock: true,
+    unit: "Piece",
+    code: "SW814",
+    image: "/images/products/sw-club-99-biscuit-12x175g-oat-digestive.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100815,
+    name: "Club 99 Biscuit 12x175G (Shortcake)",
+    description: "Club 99 shortcake biscuits in 175g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Club 99",
+    inStock: true,
+    unit: "Piece",
+    code: "SW815",
+    image: "/images/products/sw-club-99-biscuit-12x175g-shortcake.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100816,
+    name: "Club 99 Biscuit 12x240G (Glucose)",
+    description: "Club 99 glucose biscuits in 240g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Club 99",
+    inStock: true,
+    unit: "Piece",
+    code: "SW816",
+    image: "/images/products/sw-club-99-biscuit-12x240g-glucose.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100817,
+    name: "Club 99 Biscuit 12x240G (Koko Coffee)",
+    description: "Club 99 koko coffee biscuits in 240g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Club 99",
+    inStock: true,
+    unit: "Piece",
+    code: "SW817",
+    image: "/images/products/sw-club-99-biscuit-12x240g-koko-coffee.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100818,
+    name: "Club 99 Biscuit 12x240G (Milk)",
+    description: "Club 99 milk biscuits in 240g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Club 99",
+    inStock: true,
+    unit: "Piece",
+    code: "SW818",
+    image: "/images/products/sw-club-99-biscuit-12x240g-milk.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100819,
+    name: "Club 99 Biscuit 12x240G (Nice)",
+    description: "Club 99 nice biscuits in 240g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Club 99",
+    inStock: true,
+    unit: "Piece",
+    code: "SW819",
+    image: "/images/products/sw-club-99-biscuit-12x240g-nice.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100820,
+    name: "Club 99 Biscuit 12x250G (Family)",
+    description: "Club 99 family biscuits in 250g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Club 99",
+    inStock: true,
+    unit: "Piece",
+    code: "SW820",
+    image: "/images/products/sw-club-99-biscuit-12x250g-family.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100821,
+    name: "Club 99 Biscuit 12x250G (Marie)",
+    description: "Club 99 marie biscuits in 250g pieces, 12 per piece",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Club 99",
+    inStock: true,
+    unit: "Piece",
+    code: "SW821",
+    image: "/images/products/sw-club-99-biscuit-12x250g-marie.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100822,
+    name: "Club Soda 12x350ML (Apple)",
+    description: "Club soda apple flavor in 350ml bottles, 12 per case",
+    price: 360,
+    wholesalePrice: 355,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Case",
+    code: "SW822",
+    image: "/images/products/sw-club-soda-12x350ml-apple.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100823,
+    name: "Club Soda 12x350ML (Black Currant)",
+    description: "Club soda black currant flavor in 350ml bottles, 12 per case",
+    price: 360,
+    wholesalePrice: 355,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Case",
+    code: "SW823",
+    image: "/images/products/sw-club-soda-12x350ml-black-currant.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100824,
+    name: "Club Soda 12x350ML (Cola)",
+    description: "Club soda cola flavor in 350ml bottles, 12 per case",
+    price: 360,
+    wholesalePrice: 355,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Case",
+    code: "SW824",
+    image: "/images/products/sw-club-soda-12x350ml-cola.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100825,
+    name: "Club Soda 12x350ML (Lemonade)",
+    description: "Club soda lemonade flavor in 350ml bottles, 12 per case",
+    price: 340,
+    wholesalePrice: 335,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Case",
+    code: "SW825",
+    image: "/images/products/sw-club-soda-12x350ml-lemonade.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100826,
+    name: "Club Soda 12x350ML (Pinacolada)",
+    description: "Club soda pinacolada flavor in 350ml bottles, 12 per case",
+    price: 360,
+    wholesalePrice: 355,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Case",
+    code: "SW826",
+    image: "/images/products/sw-club-soda-12x350ml-pinacolada.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100827,
+    name: "Club Soda 6x2L (Apple)",
+    description: "Club soda apple flavor in 2L bottles, 6 per piece",
+    price: 145,
+    wholesalePrice: 140,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Piece",
+    code: "SW827",
+    image: "/images/products/sw-club-soda-6x2l-apple.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100828,
+    name: "Club Soda 6x2L (Black Currant)",
+    description: "Club soda black currant flavor in 2L bottles, 6 per piece",
+    price: 145,
+    wholesalePrice: 140,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Piece",
+    code: "SW828",
+    image: "/images/products/sw-club-soda-6x2l-black-currant.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100829,
+    name: "Club Soda 6x2L (Cola)",
+    description: "Club soda cola flavor in 2L bottles, 6 per piece",
+    price: 145,
+    wholesalePrice: 140,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Piece",
+    code: "SW829",
+    image: "/images/products/sw-club-soda-6x2l-cola.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100830,
+    name: "Club Soda 6x2L (Lemon)",
+    description: "Club soda lemon flavor in 2L bottles, 6 per piece",
+    price: 145,
+    wholesalePrice: 140,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Piece",
+    code: "SW830",
+    image: "/images/products/sw-club-soda-6x2l-lemon.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100831,
+    name: "Club Soda 6x2L (Mango)",
+    description: "Club soda mango flavor in 2L bottles, 6 per piece",
+    price: 145,
+    wholesalePrice: 140,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Piece",
+    code: "SW831",
+    image: "/images/products/sw-club-soda-6x2l-mango.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100832,
+    name: "Club Soda 6x2L (Orange)",
+    description: "Club soda orange flavor in 2L bottles, 6 per piece",
+    price: 145,
+    wholesalePrice: 140,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Piece",
+    code: "SW832",
+    image: "/images/products/sw-club-soda-6x2l-orange.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100833,
+    name: "Club Soda 6x2L (Passion)",
+    description: "Club soda passion flavor in 2L bottles, 6 per piece",
+    price: 145,
+    wholesalePrice: 140,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Piece",
+    code: "SW833",
+    image: "/images/products/sw-club-soda-6x2l-passion.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100834,
+    name: "Club Soda 6x2L (Pinacolada)",
+    description: "Club soda pinacolada flavor in 2L bottles, 6 per piece",
+    price: 145,
+    wholesalePrice: 140,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Piece",
+    code: "SW834",
+    image: "/images/products/sw-club-soda-6x2l-pinacolada.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100835,
+    name: "Club Soda 6x2L (Pineapple)",
+    description: "Club soda pineapple flavor in 2L bottles, 6 per piece",
+    price: 145,
+    wholesalePrice: 140,
+    category: "beverage",
+    brand: "Club",
+    inStock: true,
+    unit: "Piece",
+    code: "SW835",
+    image: "/images/products/sw-club-soda-6x2l-pineapple.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100836,
+    name: "Cocoa Primo 100G (Sachets)",
+    description: "Cocoa Primo in 100g sachets",
+    price: 140,
+    wholesalePrice: 135,
+    category: "beverage",
+    brand: "Primo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW836",
+    image: "/images/products/sw-cocoa-primo-100g-sachets.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100837,
+    name: "Cocoa Primo 100G (Tin)",
+    description: "Cocoa Primo in 100g tins",
+    price: 170,
+    wholesalePrice: 165,
+    category: "beverage",
+    brand: "Primo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW837",
+    image: "/images/products/sw-cocoa-primo-100g-tin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100838,
+    name: "Cocoa Primo 200G",
+    description: "Cocoa Primo in 200g pieces",
+    price: 320,
+    wholesalePrice: 315,
+    category: "beverage",
+    brand: "Primo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW838",
+    image: "/images/products/sw-cocoa-primo-200g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100839,
+    name: "Cocoa Primo 20G (Sachets)",
+    description: "Cocoa Primo in 20g sachets, per dozen",
+    price: 305,
+    wholesalePrice: 300,
+    category: "beverage",
+    brand: "Primo",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW839",
+    image: "/images/products/sw-cocoa-primo-20g-sachets.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100840,
+    name: "Cocoa Primo 6x400G",
+    description: "Cocoa Primo in 400g pieces, 6 per piece",
+    price: 575,
+    wholesalePrice: 565,
+    category: "beverage",
+    brand: "Primo",
+    inStock: true,
+    unit: "Piece",
+    code: "SW840",
+    image: "/images/products/sw-cocoa-primo-6x400g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100841,
+    name: "Coffeebee Coffee 1.6G Sachet",
+    description: "Coffeebee coffee in 1.6g sachets, per dozen",
+    price: 55,
+    wholesalePrice: 50,
+    category: "beverage",
+    brand: "Coffeebee",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW841",
+    image: "/images/products/sw-coffeebee-coffee-1.6g-sachet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100842,
+    name: "Coffeebee Coffee 100G Tin",
+    description: "Coffeebee coffee in 100g tins",
+    price: 345,
+    wholesalePrice: 340,
+    category: "beverage",
+    brand: "Coffeebee",
+    inStock: true,
+    unit: "Tin",
+    code: "SW842",
+    image: "/images/products/sw-coffeebee-coffee-100g-tin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100843,
+    name: "Coffeebee Coffee 12x50G Tin",
+    description: "Coffeebee coffee in 50g tins, 12 per tin",
+    price: 195,
+    wholesalePrice: 190,
+    category: "beverage",
+    brand: "Coffeebee",
+    inStock: true,
+    unit: "Tin",
+    code: "SW843",
+    image: "/images/products/sw-coffeebee-coffee-12x50g-tin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100844,
+    name: "Coffeebee Coffee 200G Tin",
+    description: "Coffeebee coffee in 200g tins",
+    price: 635,
+    wholesalePrice: 625,
+    category: "beverage",
+    brand: "Coffeebee",
+    inStock: true,
+    unit: "Tin",
+    code: "SW844",
+    image: "/images/products/sw-coffeebee-coffee-200g-tin.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100845,
+    name: "Coke 350ML",
+    description: "Coca-Cola in 350ml bottles",
+    price: 5,
+    wholesalePrice: 0,
+    category: "beverage",
+    brand: "Coca-Cola",
+    inStock: true,
+    unit: "Piece",
+    code: "SW845",
+    image: "/images/products/sw-coke-350ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100846,
+    name: "Colgate Charcoal Toothpaste 120G (Black)",
+    description: "Colgate charcoal toothpaste in 120g, black variant",
+    price: 310,
+    wholesalePrice: 305,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Piece",
+    code: "SW846",
+    image: "/images/products/sw-colgate-charcoal-toothpaste-120g-black.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100847,
+    name: "Colgate Charcoal Toothpaste 35G",
+    description: "Colgate charcoal toothpaste in 35g, per dozen",
+    price: 1060,
+    wholesalePrice: 1050,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW847",
+    image: "/images/products/sw-colgate-charcoal-toothpaste-35g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100848,
+    name: "Colgate Plax Mouthwash 12x500ML",
+    description: "Colgate Plax mouthwash in 500ml bottles, 12 per piece",
+    price: 1185,
+    wholesalePrice: 1175,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Piece",
+    code: "SW848",
+    image: "/images/products/sw-colgate-plax-mouthwash-12x500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100849,
+    name: "Colgate Plax Mouthwash 24x250ML",
+    description: "Colgate Plax mouthwash in 250ml bottles, 24 per piece",
+    price: 635,
+    wholesalePrice: 625,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Piece",
+    code: "SW849",
+    image: "/images/products/sw-colgate-plax-mouthwash-24x250ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100850,
+    name: "Colgate Plax Mouthwash 96x55ML",
+    description: "Colgate Plax mouthwash in 55ml bottles, 96 per piece",
+    price: 110,
+    wholesalePrice: 105,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Piece",
+    code: "SW850",
+    image: "/images/products/sw-colgate-plax-mouthwash-96x55ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100851,
+    name: "Colgate Toothpaste 140G (100ML) (Triple Action)",
+    description: "Colgate triple action toothpaste in 140g (100ml) pieces",
+    price: 265,
+    wholesalePrice: 260,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Piece",
+    code: "SW851",
+    image: "/images/products/sw-colgate-toothpaste-140g-100ml-triple-action.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100852,
+    name: "Colgate Toothbrush 12'S (Anti Cavity)",
+    description: "Colgate anti-cavity toothbrushes, 12 per dozen",
+    price: 355,
+    wholesalePrice: 350,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW852",
+    image: "/images/products/sw-colgate-toothbrush-12s-anti-cavity.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100853,
+    name: "Colgate Toothbrush 12'S (Double Action)",
+    description: "Colgate double action toothbrushes, 12 per dozen",
+    price: 845,
+    wholesalePrice: 835,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW853",
+    image: "/images/products/sw-colgate-toothbrush-12s-double-action.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100854,
+    name: "Colgate Toothbrush 2'S (Charcoal)",
+    description: "Colgate charcoal toothbrushes, 2 per pack, per dozen",
+    price: 1905,
+    wholesalePrice: 1895,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW854",
+    image: "/images/products/sw-colgate-toothbrush-2s-charcoal.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100855,
+    name: "Colgate Toothbrush 4'S (Double Action) Value Pack",
+    description: "Colgate double action toothbrushes, 4 per value pack",
+    price: 265,
+    wholesalePrice: 260,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Packet",
+    code: "SW855",
+    image: "/images/products/sw-colgate-toothbrush-4s-double-action-value-pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100856,
+    name: "Colgate Toothbrush 6'S (Kids 2+)",
+    description: "Colgate kids 2+ toothbrushes, 6 per outer",
+    price: 140,
+    wholesalePrice: 135,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Outer",
+    code: "SW856",
+    image: "/images/products/sw-colgate-toothbrush-6s-kids-2plus.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100857,
+    name: "Colgate Toothbrush Value Pack (360 Surround)",
+    description: "Colgate 360 surround toothbrush value pack",
+    price: 530,
+    wholesalePrice: 520,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Piece",
+    code: "SW857",
+    image: "/images/products/sw-colgate-toothbrush-value-pack-360-surround.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100858,
+    name: "Colgate Toothpaste 140G (Herbal)",
+    description: "Colgate herbal toothpaste in 140g pieces",
+    price: 300,
+    wholesalePrice: 295,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Piece",
+    code: "SW858",
+    image: "/images/products/sw-colgate-toothpaste-140g-herbal.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100859,
+    name: "Colgate Toothpaste 140G (Red)",
+    description: "Colgate red toothpaste in 140g pieces",
+    price: 300,
+    wholesalePrice: 295,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Piece",
+    code: "SW859",
+    image: "/images/products/sw-colgate-toothpaste-140g-red.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100860,
+    name: "Colgate Toothpaste 150ML (Red) (Value Pack)",
+    description: "Colgate red toothpaste in 150ml value pack pieces",
+    price: 415,
+    wholesalePrice: 410,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Piece",
+    code: "SW860",
+    image: "/images/products/sw-colgate-toothpaste-150ml-red-value-pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100861,
+    name: "Colgate Toothpaste 15G (Red)",
+    description: "Colgate red toothpaste in 15g, per outer",
+    price: 695,
+    wholesalePrice: 685,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Outer",
+    code: "SW861",
+    image: "/images/products/sw-colgate-toothpaste-15g-red.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100862,
+    name: "Colgate Toothpaste 230G (Herbal)",
+    description: "Colgate herbal toothpaste in 230g pieces",
+    price: 400,
+    wholesalePrice: 395,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Piece",
+    code: "SW862",
+    image: "/images/products/sw-colgate-toothpaste-230g-herbal.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100863,
+    name: "Colgate Toothpaste 35G (Herbal)",
+    description: "Colgate herbal toothpaste in 35g, per dozen",
+    price: 920,
+    wholesalePrice: 910,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW863",
+    image: "/images/products/sw-colgate-toothpaste-35g-herbal.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100864,
+    name: "Colgate Toothpaste 35G (Red)",
+    description: "Colgate red toothpaste in 35g, per dozen",
+    price: 920,
+    wholesalePrice: 910,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW864",
+    image: "/images/products/sw-colgate-toothpaste-35g-red.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100865,
+    name: "Colgate Toothpaste 65G (Max Fresh) (Red)",
+    description: "Colgate max fresh red toothpaste in 65g, per dozen",
+    price: 1865,
+    wholesalePrice: 1855,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW865",
+    image: "/images/products/sw-colgate-toothpaste-65g-max-fresh-red.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100866,
+    name: "Colgate Toothpaste 70G (Herbal)",
+    description: "Colgate herbal toothpaste in 70g, per dozen",
+    price: 1705,
+    wholesalePrice: 1695,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW866",
+    image: "/images/products/sw-colgate-toothpaste-70g-herbal.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100867,
+    name: "Colgate Toothpaste 70G (Red)",
+    description: "Colgate red toothpaste in 70g, per dozen",
+    price: 1605,
+    wholesalePrice: 1595,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW867",
+    image: "/images/products/sw-colgate-toothpaste-70g-red.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100868,
+    name: "Colgate Toothpaste 75ML (Natural Extracts) (Black)",
+    description: "Colgate natural extracts black toothpaste in 75ml pieces",
+    price: 400,
+    wholesalePrice: 395,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Piece",
+    code: "SW868",
+    image: "/images/products/sw-colgate-toothpaste-75ml-natural-extracts-black.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100869,
+    name: "Colgate Toothpaste 75ML (Natural Extracts) (Green)",
+    description: "Colgate natural extracts green toothpaste in 75ml pieces",
+    price: 400,
+    wholesalePrice: 395,
+    category: "hygiene",
+    brand: "Colgate",
+    inStock: true,
+    unit: "Piece",
+    code: "SW869",
+    image: "/images/products/sw-colgate-toothpaste-75ml-natural-extracts-green.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100870,
+    name: "Colour Pencils",
+    description: "Colour pencils in packets",
+    price: 50,
+    wholesalePrice: 45,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Packet",
+    code: "SW870",
+    image: "/images/products/sw-colour-pencils.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100871,
+    name: "Combat Solo Mosquito Coil",
+    description: "Combat solo mosquito coils, per dozen",
+    price: 20,
+    wholesalePrice: 15,
+    category: "hygiene",
+    brand: "Combat",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW871",
+    image: "/images/products/sw-combat-solo-mosquito-coil.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100872,
+    name: "Comfort Spring 12x1L (Blue)",
+    description: "Comfort spring blue fabric softener in 1L bottles, 12 per piece",
+    price: 560,
+    wholesalePrice: 550,
+    category: "cleaning",
+    brand: "Comfort",
+    inStock: true,
+    unit: "Piece",
+    code: "SW872",
+    image: "/images/products/sw-comfort-spring-12x1l-blue.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100873,
+    name: "Comfort Spring 4x3L (Pink)",
+    description: "Comfort spring pink fabric softener in 3L bottles, 4 per piece",
+    price: 1515,
+    wholesalePrice: 1505,
+    category: "cleaning",
+    brand: "Comfort",
+    inStock: true,
+    unit: "Piece",
+    code: "SW873",
+    image: "/images/products/sw-comfort-spring-4x3l-pink.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100874,
+    name: "Comfy Deluxe Tissue 12 Pack",
+    description: "Comfy deluxe tissue, 12 packs per outer",
+    price: 505,
+    wholesalePrice: 495,
+    category: "hygiene",
+    brand: "Comfy",
+    inStock: true,
+    unit: "Outer",
+    code: "SW874",
+    image: "/images/products/sw-comfy-deluxe-tissue-12-pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100875,
+    name: "Confidence Adult Diaper Large 30PCS",
+    description: "Confidence adult diapers, large size, 30 pieces per packet",
+    price: 1350,
+    wholesalePrice: 1340,
+    category: "hygiene",
+    brand: "Confidence",
+    inStock: true,
+    unit: "Packet",
+    code: "SW875",
+    image: "/images/products/sw-confidence-adult-diaper-large-30pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100876,
+    name: "Confidence Sanitary Pads 8'S (Normal)",
+    description: "Confidence normal sanitary pads, 8 per packet",
+    price: 65,
+    wholesalePrice: 60,
+    category: "hygiene",
+    brand: "Confidence",
+    inStock: true,
+    unit: "Packet",
+    code: "SW876",
+    image: "/images/products/sw-confidence-sanitary-pads-8s-normal.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100877,
+    name: "Confini Belt 75G",
+    description: "Confini belt in 75g packets",
+    price: 100,
+    wholesalePrice: 95,
+    category: "hygiene",
+    brand: "Confini",
+    inStock: true,
+    unit: "Packet",
+    code: "SW877",
+    image: "/images/products/sw-confini-belt-75g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100878,
+    name: "Cook Star (White) Fat 10KG",
+    description: "Cook Star white cooking fat in 10kg cartons",
+    price: 2630,
+    wholesalePrice: 2620,
+    category: "food",
+    brand: "Cook Star",
+    inStock: true,
+    unit: "Carton",
+    code: "SW878",
+    image: "/images/products/sw-cook-star-white-fat-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100879,
+    name: "Cook Star (Yellow) Fat 10KG",
+    description: "Cook Star yellow cooking fat in 10kg cartons",
+    price: 2630,
+    wholesalePrice: 2620,
+    category: "food",
+    brand: "Cook Star",
+    inStock: true,
+    unit: "Carton",
+    code: "SW879",
+    image: "/images/products/sw-cook-star-yellow-fat-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100880,
+    name: "Cool Baby Diapers (Large) (HC) 40PCS",
+    description: "Cool Baby large diapers, high capacity, 40 pieces per outer",
+    price: 425,
+    wholesalePrice: 420,
+    category: "hygiene",
+    brand: "Cool Baby",
+    inStock: true,
+    unit: "Outer",
+    code: "SW880",
+    image: "/images/products/sw-cool-baby-diapers-large-hc-40pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100881,
+    name: "Cool Baby Diapers (Medium) (HC) 44PCS",
+    description: "Cool Baby medium diapers, high capacity, 44 pieces per outer",
+    price: 425,
+    wholesalePrice: 420,
+    category: "hygiene",
+    brand: "Cool Baby",
+    inStock: true,
+    unit: "Outer",
+    code: "SW881",
+    image: "/images/products/sw-cool-baby-diapers-medium-hc-44pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100882,
+    name: "Cool Baby Diapers (Singles) Small (Blue)",
+    description: "Cool Baby small blue diapers, singles, per dozen",
+    price: 170,
+    wholesalePrice: 165,
+    category: "hygiene",
+    brand: "Cool Baby",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW882",
+    image: "/images/products/sw-cool-baby-diapers-singles-small-blue.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100883,
+    name: "Cool Baby Wipes 80PCS",
+    description: "Cool Baby wipes, 80 pieces per outer",
+    price: 100,
+    wholesalePrice: 95,
+    category: "hygiene",
+    brand: "Cool Baby",
+    inStock: true,
+    unit: "Outer",
+    code: "SW883",
+    image: "/images/products/sw-cool-baby-wipes-80pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100884,
+    name: "Cool Cow Lollipops 50PCS",
+    description: "Cool Cow lollipops, 50 pieces per packet",
+    price: 275,
+    wholesalePrice: 270,
+    category: "food",
+    brand: "Cool Cow",
+    inStock: true,
+    unit: "Packet",
+    code: "SW884",
+    image: "/images/products/sw-cool-cow-lollipops-50pcs.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100885,
+    name: "Cosy Poa Tissue 10'S (Pink) (Wrapped)",
+    description: "Cosy Poa pink wrapped tissue, 10 per outer",
+    price: 205,
+    wholesalePrice: 200,
+    category: "hygiene",
+    brand: "Cosy Poa",
+    inStock: true,
+    unit: "Outer",
+    code: "SW885",
+    image: "/images/products/sw-cosy-poa-tissue-10s-pink-wrapped.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100886,
+    name: "Cosy Poa Tissue 10'S (White) (Wrapped)",
+    description: "Cosy Poa white wrapped tissue, 10 per outer",
+    price: 205,
+    wholesalePrice: 200,
+    category: "hygiene",
+    brand: "Cosy Poa",
+    inStock: true,
+    unit: "Outer",
+    code: "SW886",
+    image: "/images/products/sw-cosy-poa-tissue-10s-white-wrapped.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100887,
+    name: "Cosy Poa White 4Pack (Pieces)",
+    description: "Cosy Poa white tissue, 4 per piece",
+    price: 90,
+    wholesalePrice: 85,
+    category: "hygiene",
+    brand: "Cosy Poa",
+    inStock: true,
+    unit: "Piece",
+    code: "SW887",
+    image: "/images/products/sw-cosy-poa-white-4pack-pieces.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100888,
+    name: "Cosy Serviette 18'S (White)",
+    description: "Cosy white serviettes, 18 per bale",
+    price: 1280,
+    wholesalePrice: 1270,
+    category: "hygiene",
+    brand: "Cosy",
+    inStock: true,
+    unit: "Bale",
+    code: "SW888",
+    image: "/images/products/sw-cosy-serviette-18s-white.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100889,
+    name: "Counter Book A4 288PGS (3 Quire)",
+    description: "A4 counter book with 288 pages, 3 quire",
+    price: 160,
+    wholesalePrice: 155,
+    category: "stationery",
+    brand: "Generic",
+    inStock: true,
+    unit: "Piece",
+    code: "SW889",
+    image: "/images/products/sw-counter-book-a4-288pgs-3-quire.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100890,
+    name: "County Fresh Milk ESL 200ML",
+    description: "County Fresh ESL milk in 200ml cartons",
+    price: 415,
+    wholesalePrice: 410,
+    category: "beverage",
+    brand: "County Fresh",
+    inStock: true,
+    unit: "Carton",
+    code: "SW890",
+    image: "/images/products/sw-county-fresh-milk-esl-200ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100891,
+    name: "County Fresh Milk ESL 500ML",
+    description: "County Fresh ESL milk in 500ml cartons",
+    price: 500,
+    wholesalePrice: 495,
+    category: "beverage",
+    brand: "County Fresh",
+    inStock: true,
+    unit: "Carton",
+    code: "SW891",
+    image: "/images/products/sw-county-fresh-milk-esl-500ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100892,
+    name: "Cow and Gate No.1 (0 to 6 Months) 400G",
+    description: "Cow and Gate No.1 infant formula for 0-6 months in 400g tins",
+    price: 1310,
+    wholesalePrice: 1300,
+    category: "food",
+    brand: "Cow and Gate",
+    inStock: true,
+    unit: "Tin",
+    code: "SW892",
+    image: "/images/products/sw-cow-and-gate-no1-0-6months-400g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100893,
+    name: "Cow and Gate No.2 (6-12 Months) 400G",
+    description: "Cow and Gate No.2 infant formula for 6-12 months in 400g tins",
+    price: 1310,
+    wholesalePrice: 1300,
+    category: "food",
+    brand: "Cow and Gate",
+    inStock: true,
+    unit: "Tin",
+    code: "SW893",
+    image: "/images/products/sw-cow-and-gate-no2-6-12months-400g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100894,
+    name: "Cow and Gate No.3 (1-3 Years) 12x400G",
+    description: "Cow and Gate No.3 formula for 1-3 years in 400g tins, 12 per tin",
+    price: 1310,
+    wholesalePrice: 1300,
+    category: "food",
+    brand: "Cow and Gate",
+    inStock: true,
+    unit: "Tin",
+    code: "SW894",
+    image: "/images/products/sw-cow-and-gate-no3-1-3years-12x400g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100895,
+    name: "Cowboy Cooking Fat 12x1KG (Yellow)",
+    description: "Cowboy yellow cooking fat in 1kg pieces, 12 per carton",
+    price: 3985,
+    wholesalePrice: 3975,
+    category: "food",
+    brand: "Cowboy",
+    inStock: true,
+    unit: "Carton",
+    code: "SW895",
+    image: "/images/products/sw-cowboy-cooking-fat-12x1kg-yellow.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100896,
+    name: "Cowboy Cooking Fat 24x250G (Yellow)",
+    description: "Cowboy yellow cooking fat in 250g pieces, 24 per carton",
+    price: 3950,
+    wholesalePrice: 3940,
+    category: "food",
+    brand: "Cowboy",
+    inStock: true,
+    unit: "Carton",
+    code: "SW896",
+    image: "/images/products/sw-cowboy-cooking-fat-24x250g-yellow.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100897,
+    name: "Cowboy Cooking Fat 24x500G (Yellow)",
+    description: "Cowboy yellow cooking fat in 500g pieces, 24 per carton",
+    price: 4090,
+    wholesalePrice: 4080,
+    category: "food",
+    brand: "Cowboy",
+    inStock: true,
+    unit: "Carton",
+    code: "SW897",
+    image: "/images/products/sw-cowboy-cooking-fat-24x500g-yellow.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100898,
+    name: "Cowboy Cooking Fat 6x2KG (Yellow)",
+    description: "Cowboy yellow cooking fat in 2kg pieces, 6 per piece",
+    price: 660,
+    wholesalePrice: 650,
+    category: "food",
+    brand: "Cowboy",
+    inStock: true,
+    unit: "Piece",
+    code: "SW898",
+    image: "/images/products/sw-cowboy-cooking-fat-6x2kg-yellow.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100899,
+    name: "Cream Bell (Doubles) Ice Cream 65ML (Blue Berry)",
+    description: "Cream Bell doubles blue berry ice cream in 65ml pieces",
+    price: 50,
+    wholesalePrice: 45,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW899",
+    image: "/images/products/sw-cream-bell-doubles-ice-cream-65ml-blue-berry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100900,
+    name: "Cream Bell (Doubles) Ice Cream 65ML (Chocolate)",
+    description: "Cream Bell doubles chocolate ice cream in 65ml pieces",
+    price: 55,
+    wholesalePrice: 50,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW900",
+    image: "/images/products/sw-cream-bell-doubles-ice-cream-65ml-chocolate.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100901,
+    name: "Cream Bell (Doubles) Ice Cream 65ML (Strawberry)",
+    description: "Cream Bell doubles strawberry ice cream in 65ml pieces",
+    price: 50,
+    wholesalePrice: 45,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW901",
+    image: "/images/products/sw-cream-bell-doubles-ice-cream-65ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100902,
+    name: "Cream Bell (Joostick) Ice Cream 12x65ML (Strawberry)",
+    description: "Cream Bell joostick strawberry ice cream in 65ml pieces, 12 per piece",
+    price: 55,
+    wholesalePrice: 50,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW902",
+    image: "/images/products/sw-cream-bell-joostick-ice-cream-12x65ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100903,
+    name: "Cream Bell (Licks) Ice Cream 12x65ML (Mango)",
+    description: "Cream Bell licks mango ice cream in 65ml pieces, 12 per piece",
+    price: 35,
+    wholesalePrice: 30,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW903",
+    image: "/images/products/sw-cream-bell-licks-ice-cream-12x65ml-mango.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100904,
+    name: "Cream Bell (Licks) Ice Cream 12x65ML (Mixed Berry)",
+    description: "Cream Bell licks mixed berry ice cream in 65ml pieces, 12 per piece",
+    price: 35,
+    wholesalePrice: 30,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW904",
+    image: "/images/products/sw-cream-bell-licks-ice-cream-12x65ml-mixed-berry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100905,
+    name: "Cream Bell (Licks) Ice Cream 12x65ML (Orange)",
+    description: "Cream Bell licks orange ice cream in 65ml pieces, 12 per piece",
+    price: 35,
+    wholesalePrice: 30,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW905",
+    image: "/images/products/sw-cream-bell-licks-ice-cream-12x65ml-orange.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100906,
+    name: "Cream Bell (Premium) Ice Cream 6x125ML (Caramel Crunch)",
+    description: "Cream Bell premium caramel crunch ice cream in 125ml pieces, 6 per piece",
+    price: 120,
+    wholesalePrice: 115,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW906",
+    image: "/images/products/sw-cream-bell-premium-ice-cream-6x125ml-caramel-crunch.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100907,
+    name: "Cream Bell (Premium) Ice Cream 6x125ML (French Vanilla)",
+    description: "Cream Bell premium french vanilla ice cream in 125ml pieces, 6 per piece",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW907",
+    image: "/images/products/sw-cream-bell-premium-ice-cream-6x125ml-french-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100908,
+    name: "Cream Bell (Premium) Ice Cream 6x125ML (Mocha Almond)",
+    description: "Cream Bell premium mocha almond ice cream in 125ml pieces, 6 per piece",
+    price: 135,
+    wholesalePrice: 130,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW908",
+    image: "/images/products/sw-cream-bell-premium-ice-cream-6x125ml-mocha-almond.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100909,
+    name: "Cream Bell (Premium) Ice Cream 6x500ML (Caramel Crunch)",
+    description: "Cream Bell premium caramel crunch ice cream in 500ml pieces, 6 per piece",
+    price: 390,
+    wholesalePrice: 385,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW909",
+    image: "/images/products/sw-cream-bell-premium-ice-cream-6x500ml-caramel-crunch.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100910,
+    name: "Cream Bell (Premium) Ice Cream 6x500ML (Cookies N Cream)",
+    description: "Cream Bell premium cookies n cream ice cream in 500ml pieces, 6 per piece",
+    price: 390,
+    wholesalePrice: 385,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW910",
+    image: "/images/products/sw-cream-bell-premium-ice-cream-6x500ml-cookies-n-cream.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100911,
+    name: "Cream Bell (Premium) Ice Cream 6x500ML (French Vanilla)",
+    description: "Cream Bell premium french vanilla ice cream in 500ml pieces, 6 per piece",
+    price: 390,
+    wholesalePrice: 385,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW911",
+    image: "/images/products/sw-cream-bell-premium-ice-cream-6x500ml-french-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100912,
+    name: "Cream Bell (Premium) Ice Cream 6x500ML (Red Velvet)",
+    description: "Cream Bell premium red velvet ice cream in 500ml pieces, 6 per piece",
+    price: 390,
+    wholesalePrice: 385,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW912",
+    image: "/images/products/sw-cream-bell-premium-ice-cream-6x500ml-red-velvet.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100913,
+    name: "Cream Bell (Ripple) Ice Cream 6x200ML (Chocolate)",
+    description: "Cream Bell ripple chocolate ice cream in 200ml pieces, 6 per piece",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW913",
+    image: "/images/products/sw-cream-bell-ripple-ice-cream-6x200ml-chocolate.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100914,
+    name: "Cream Bell (Ripple) Ice Cream 6x200ML (Mixed)",
+    description: "Cream Bell ripple mixed flavor ice cream in 200ml pieces, 6 per piece",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW914",
+    image: "/images/products/sw-cream-bell-ripple-ice-cream-6x200ml-mixed.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100915,
+    name: "Cream Bell (Ripple) Ice Cream 6x200ML (Orange)",
+    description: "Cream Bell ripple orange ice cream in 200ml pieces, 6 per piece",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW915",
+    image: "/images/products/sw-cream-bell-ripple-ice-cream-6x200ml-orange.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100916,
+    name: "Cream Bell (Ripple) Ice Cream 6x200ML (Strawberry)",
+    description: "Cream Bell ripple strawberry ice cream in 200ml pieces, 6 per piece",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW916",
+    image: "/images/products/sw-cream-bell-ripple-ice-cream-6x200ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100917,
+    name: "Cream Bell Extruded Bar 12x120ML (Choco Vanilla)",
+    description: "Cream Bell extruded bar choco vanilla ice cream in 120ml pieces, 12 per piece",
+    price: 105,
+    wholesalePrice: 100,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW917",
+    image: "/images/products/sw-cream-bell-extruded-bar-12x120ml-choco-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100918,
+    name: "Cream Bell Extruded Bar 12x120ML (Tiramisu)",
+    description: "Cream Bell extruded bar tiramisu ice cream in 120ml pieces, 12 per piece",
+    price: 105,
+    wholesalePrice: 100,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW918",
+    image: "/images/products/sw-cream-bell-extruded-bar-12x120ml-tiramisu.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100919,
+    name: "Cream Bell Ice Cream 12x120ML (Chocolate Vanilla)",
+    description: "Cream Bell chocolate vanilla ice cream in 120ml pieces, 12 per piece",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW919",
+    image: "/images/products/sw-cream-bell-ice-cream-12x120ml-chocolate-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100920,
+    name: "Cream Bell Ice Cream 12x120ML (Classic Vanilla)",
+    description: "Cream Bell classic vanilla ice cream in 120ml pieces, 12 per piece",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW920",
+    image: "/images/products/sw-cream-bell-ice-cream-12x120ml-classic-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100921,
+    name: "Cream Bell Ice Cream 12x120ML (Royal Mango)",
+    description: "Cream Bell royal mango ice cream in 120ml pieces, 12 per piece",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW921",
+    image: "/images/products/sw-cream-bell-ice-cream-12x120ml-royal-mango.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100922,
+    name: "Cream Bell Ice Cream 12x120ML (Strawberry Vanilla)",
+    description: "Cream Bell strawberry vanilla ice cream in 120ml pieces, 12 per piece",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW922",
+    image: "/images/products/sw-cream-bell-ice-cream-12x120ml-strawberry-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100923,
+    name: "Cream Bell Ice Cream 12x120ML (Strawberry)",
+    description: "Cream Bell strawberry ice cream in 120ml pieces, 12 per piece",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW923",
+    image: "/images/products/sw-cream-bell-ice-cream-12x120ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100924,
+    name: "Cream Bell Ice Cream 1L (Chocolate)",
+    description: "Cream Bell chocolate ice cream in 1L pieces",
+    price: 610,
+    wholesalePrice: 600,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW924",
+    image: "/images/products/sw-cream-bell-ice-cream-1l-chocolate.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100925,
+    name: "Cream Bell Ice Cream 1L (Classic Vanilla)",
+    description: "Cream Bell classic vanilla ice cream in 1L pieces",
+    price: 570,
+    wholesalePrice: 560,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW925",
+    image: "/images/products/sw-cream-bell-ice-cream-1l-classic-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100926,
+    name: "Cream Bell Ice Cream 1L (Fresh Mango)",
+    description: "Cream Bell fresh mango ice cream in 1L pieces",
+    price: 555,
+    wholesalePrice: 545,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW926",
+    image: "/images/products/sw-cream-bell-ice-cream-1l-fresh-mango.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100927,
+    name: "Cream Bell Ice Cream 1L (Strawberry Vanilla)",
+    description: "Cream Bell strawberry vanilla ice cream in 1L pieces",
+    price: 570,
+    wholesalePrice: 560,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW927",
+    image: "/images/products/sw-cream-bell-ice-cream-1l-strawberry-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100928,
+    name: "Cream Bell Ice Cream 1L (Strawberry)",
+    description: "Cream Bell strawberry ice cream in 1L pieces",
+    price: 570,
+    wholesalePrice: 560,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW928",
+    image: "/images/products/sw-cream-bell-ice-cream-1l-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100929,
+    name: "Cream Bell Ice Cream 2L (Classic Vanilla)",
+    description: "Cream Bell classic vanilla ice cream in 2L pieces",
+    price: 1030,
+    wholesalePrice: 1020,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW929",
+    image: "/images/products/sw-cream-bell-ice-cream-2l-classic-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100930,
+    name: "Cream Bell Ice Cream 2L (Magic Strawberry)",
+    description: "Cream Bell magic strawberry ice cream in 2L pieces",
+    price: 1030,
+    wholesalePrice: 1020,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW930",
+    image: "/images/products/sw-cream-bell-ice-cream-2l-magic-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100931,
+    name: "Cream Bell Ice Cream 2L (Royal Mango)",
+    description: "Cream Bell royal mango ice cream in 2L pieces",
+    price: 1020,
+    wholesalePrice: 1010,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW931",
+    image: "/images/products/sw-cream-bell-ice-cream-2l-royal-mango.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100932,
+    name: "Cream Bell Ice Cream 4L (Magic Strawberry)",
+    description: "Cream Bell magic strawberry ice cream in 4L pieces",
+    price: 1490,
+    wholesalePrice: 1480,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW932",
+    image: "/images/products/sw-cream-bell-ice-cream-4l-magic-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100933,
+    name: "Cream Bell Ice Cream 4L (Royal Mango)",
+    description: "Cream Bell royal mango ice cream in 4L pieces",
+    price: 1490,
+    wholesalePrice: 1480,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW933",
+    image: "/images/products/sw-cream-bell-ice-cream-4l-royal-mango.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100934,
+    name: "Cream Bell Ice Cream 4L (Vanilla)",
+    description: "Cream Bell vanilla ice cream in 4L pieces",
+    price: 1490,
+    wholesalePrice: 1480,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW934",
+    image: "/images/products/sw-cream-bell-ice-cream-4l-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100935,
+    name: "Cream Bell Ice Cream 6x200ML (Chocolate Choco)",
+    description: "Cream Bell chocolate choco ice cream in 200ml pieces, 6 per piece",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW935",
+    image: "/images/products/sw-cream-bell-ice-cream-6x200ml-chocolate-choco.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100936,
+    name: "Cream Bell Ice Cream 6x200ML (Royal Mango)",
+    description: "Cream Bell royal mango ice cream in 200ml pieces, 6 per piece",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW936",
+    image: "/images/products/sw-cream-bell-ice-cream-6x200ml-royal-mango.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100937,
+    name: "Cream Bell Ice Cream 6x200ML (Strawberry)",
+    description: "Cream Bell strawberry ice cream in 200ml pieces, 6 per piece",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW937",
+    image: "/images/products/sw-cream-bell-ice-cream-6x200ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100938,
+    name: "Cream Bell Ice Cream 6x200ML (Vanilla)",
+    description: "Cream Bell vanilla ice cream in 200ml pieces, 6 per piece",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW938",
+    image: "/images/products/sw-cream-bell-ice-cream-6x200ml-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100939,
+    name: "Cream Bell Ice Cream 6x500ML (Classic Vanilla)",
+    description: "Cream Bell classic vanilla ice cream in 500ml pieces, 6 per piece",
+    price: 280,
+    wholesalePrice: 275,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW939",
+    image: "/images/products/sw-cream-bell-ice-cream-6x500ml-classic-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100940,
+    name: "Cream Bell Ice Cream 6x500ML (Magic Strawberry)",
+    description: "Cream Bell magic strawberry ice cream in 500ml pieces, 6 per piece",
+    price: 280,
+    wholesalePrice: 275,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW940",
+    image: "/images/products/sw-cream-bell-ice-cream-6x500ml-magic-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100941,
+    name: "Cream Bell Ice Cream 6x500ML (Strawberry Vanilla)",
+    description: "Cream Bell strawberry vanilla ice cream in 500ml pieces, 6 per piece",
+    price: 280,
+    wholesalePrice: 275,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW941",
+    image: "/images/products/sw-cream-bell-ice-cream-6x500ml-strawberry-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100942,
+    name: "Cream Bell Yoghurt 250G (Coconut/Pineapple)",
+    description: "Cream Bell coconut and pineapple yoghurt in 250g pieces",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW942",
+    image: "/images/products/sw-cream-bell-yoghurt-250g-coconut-pineapple.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100943,
+    name: "Cream Bell Yoghurt 250G (Orange)",
+    description: "Cream Bell orange yoghurt in 250g pieces",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW943",
+    image: "/images/products/sw-cream-bell-yoghurt-250g-orange.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100944,
+    name: "Cream Bell Yoghurt 250G (Wild Berry)",
+    description: "Cream Bell wild berry yoghurt in 250g pieces",
+    price: 110,
+    wholesalePrice: 105,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW944",
+    image: "/images/products/sw-cream-bell-yoghurt-250g-wild-berry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100945,
+    name: "Cream Bell Yoghurt 450G (Coconut & Pineapple)",
+    description: "Cream Bell coconut and pineapple yoghurt in 450g pieces",
+    price: 170,
+    wholesalePrice: 165,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW945",
+    image: "/images/products/sw-cream-bell-yoghurt-450g-coconut-pineapple.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100946,
+    name: "Cream Bell Yoghurt 450G (Orange)",
+    description: "Cream Bell orange yoghurt in 450g pieces",
+    price: 170,
+    wholesalePrice: 165,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW946",
+    image: "/images/products/sw-cream-bell-yoghurt-450g-orange.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100947,
+    name: "Cream Bell Yoghurt 450G (Vanilla)",
+    description: "Cream Bell vanilla yoghurt in 450g pieces",
+    price: 170,
+    wholesalePrice: 165,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW947",
+    image: "/images/products/sw-cream-bell-yoghurt-450g-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100948,
+    name: "Cream Bell Yoghurt 450G (Wild Berry)",
+    description: "Cream Bell wild berry yoghurt in 450g pieces",
+    price: 170,
+    wholesalePrice: 165,
+    category: "food",
+    brand: "Cream Bell",
+    inStock: true,
+    unit: "Piece",
+    code: "SW948",
+    image: "/images/products/sw-cream-bell-yoghurt-450g-wild-berry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100949,
+    name: "Creamy Yoghurt Lollipop 50PCS Assorted",
+    description: "Creamy assorted yoghurt lollipops, 50 pieces per packet",
+    price: 140,
+    wholesalePrice: 135,
+    category: "food",
+    brand: "Creamy",
+    inStock: true,
+    unit: "Packet",
+    code: "SW949",
+    image: "/images/products/sw-creamy-yoghurt-lollipop-50pcs-assorted.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100950,
+    name: "Cribaz 24x95G (Babeque)",
+    description: "Cribaz babeque flavor snacks in 95g packets, 24 per carton",
+    price: 1890,
+    wholesalePrice: 1880,
+    category: "food",
+    brand: "Cribaz",
+    inStock: true,
+    unit: "Carton",
+    code: "SW950",
+    image: "/images/products/sw-cribaz-24x95g-babeque.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100951,
+    name: "Cribaz 24x95G (Assorted)",
+    description: "Cribaz assorted flavor snacks in 95g packets, 24 per packet",
+    price: 90,
+    wholesalePrice: 85,
+    category: "food",
+    brand: "Cribaz",
+    inStock: true,
+    unit: "Packet",
+    code: "SW951",
+    image: "/images/products/sw-cribaz-24x95g-assorted.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100952,
+    name: "Cribaz 48x45G (Assorted)",
+    description: "Cribaz assorted flavor snacks in 45g packets, 48 per packet",
+    price: 45,
+    wholesalePrice: 40,
+    category: "food",
+    brand: "Cribaz",
+    inStock: true,
+    unit: "Packet",
+    code: "SW952",
+    image: "/images/products/sw-cribaz-48x45g-assorted.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100953,
+    name: "Cribaz 48x45G (Babeque)",
+    description: "Cribaz babeque flavor snacks in 45g packets, 48 per packet",
+    price: 45,
+    wholesalePrice: 40,
+    category: "food",
+    brand: "Cribaz",
+    inStock: true,
+    unit: "Packet",
+    code: "SW953",
+    image: "/images/products/sw-cribaz-48x45g-babeque.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100954,
+    name: "Cribaz 48x45G (Salted)",
+    description: "Cribaz salted flavor snacks in 45g packets, 48 per packet",
+    price: 45,
+    wholesalePrice: 40,
+    category: "food",
+    brand: "Cribaz",
+    inStock: true,
+    unit: "Packet",
+    code: "SW954",
+    image: "/images/products/sw-cribaz-48x45g-salted.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100955,
+    name: "Cribaz 48x45G (Tomato)",
+    description: "Cribaz tomato flavor snacks in 45g packets, 48 per packet",
+    price: 45,
+    wholesalePrice: 40,
+    category: "food",
+    brand: "Cribaz",
+    inStock: true,
+    unit: "Packet",
+    code: "SW955",
+    image: "/images/products/sw-cribaz-48x45g-tomato.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100956,
+    name: "Croma 10KG",
+    description: "Croma cooking fat in 10kg cartons",
+    price: 2740,
+    wholesalePrice: 2730,
+    category: "food",
+    brand: "Croma",
+    inStock: true,
+    unit: "Carton",
+    code: "SW956",
+    image: "/images/products/sw-croma-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100957,
+    name: "Crown PK 386 Basmati Sella Rice 25KG (White Bag)",
+    description: "Crown PK 386 basmati sella rice in 25kg white bags",
+    price: 3250,
+    wholesalePrice: 3240,
+    category: "food",
+    brand: "Crown",
+    inStock: true,
+    unit: "Bag",
+    code: "SW957",
+    image: "/images/products/sw-crown-pk-386-basmati-sella-rice-25kg-white-bag.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100958,
+    name: "Crown Super Kernal Rice 20KG (Black Bag)",
+    description: "Crown super kernal rice in 20kg black bags",
+    price: 2950,
+    wholesalePrice: 2940,
+    category: "food",
+    brand: "Crown",
+    inStock: true,
+    unit: "Bag",
+    code: "SW958",
+    image: "/images/products/sw-crown-super-kernal-rice-20kg-black-bag.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100959,
+    name: "Cuddles Fabric Softener Ever Fresh 2LTR",
+    description: "Cuddles ever fresh fabric softener in 2L pieces",
+    price: 440,
+    wholesalePrice: 435,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW959",
+    image: "/images/products/sw-cuddles-fabric-softener-ever-fresh-2ltr.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100960,
+    name: "Cuddles Fabric Softener Ever Fresh 350ML",
+    description: "Cuddles ever fresh fabric softener in 350ml pieces",
+    price: 90,
+    wholesalePrice: 85,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW960",
+    image: "/images/products/sw-cuddles-fabric-softener-ever-fresh-350ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100961,
+    name: "Cuddles Fabric Softener Ever Fresh 45ML",
+    description: "Cuddles ever fresh fabric softener in 45ml pieces, per dozen",
+    price: 180,
+    wholesalePrice: 175,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW961",
+    image: "/images/products/sw-cuddles-fabric-softener-ever-fresh-45ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100962,
+    name: "Cuddles Fabric Softener Ever Fresh 5LTR",
+    description: "Cuddles ever fresh fabric softener in 5L pieces",
+    price: 795,
+    wholesalePrice: 785,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW962",
+    image: "/images/products/sw-cuddles-fabric-softener-ever-fresh-5ltr.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100963,
+    name: "Cuddles Fabric Softener Ever Fresh 750ML",
+    description: "Cuddles ever fresh fabric softener in 750ml pieces",
+    price: 180,
+    wholesalePrice: 175,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW963",
+    image: "/images/products/sw-cuddles-fabric-softener-ever-fresh-750ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100964,
+    name: "Cuddles Fabric Softener Ivory 12x1L",
+    description: "Cuddles ivory fabric softener in 1L pieces, 12 per piece",
+    price: 415,
+    wholesalePrice: 410,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW964",
+    image: "/images/products/sw-cuddles-fabric-softener-ivory-12x1l.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100965,
+    name: "Cuddles Fabric Softener Ivory 12x500ML (Orange)",
+    description: "Cuddles ivory orange fabric softener in 500ml pieces, 12 per piece",
+    price: 210,
+    wholesalePrice: 205,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW965",
+    image: "/images/products/sw-cuddles-fabric-softener-ivory-12x500ml-orange.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100966,
+    name: "Cuddles Fabric Softener Lavender Fresh 2LTR",
+    description: "Cuddles lavender fresh fabric softener in 2L pieces",
+    price: 440,
+    wholesalePrice: 435,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW966",
+    image: "/images/products/sw-cuddles-fabric-softener-lavender-fresh-2ltr.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100967,
+    name: "Cuddles Fabric Softener Lavender Fresh 350ML",
+    description: "Cuddles lavender fresh fabric softener in 350ml pieces",
+    price: 90,
+    wholesalePrice: 85,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW967",
+    image: "/images/products/sw-cuddles-fabric-softener-lavender-fresh-350ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100968,
+    name: "Cuddles Fabric Softener Lavender Fresh 45ML",
+    description: "Cuddles lavender fresh fabric softener in 45ml pieces, per dozen",
+    price: 180,
+    wholesalePrice: 175,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Dozen",
+    code: "SW968",
+    image: "/images/products/sw-cuddles-fabric-softener-lavender-fresh-45ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100969,
+    name: "Cuddles Fabric Softener Lavender Fresh 5LTR",
+    description: "Cuddles lavender fresh fabric softener in 5L pieces",
+    price: 795,
+    wholesalePrice: 785,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW969",
+    image: "/images/products/sw-cuddles-fabric-softener-lavender-fresh-5ltr.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100970,
+    name: "Cuddles Fabric Softener Lavender Fresh 750ML",
+    description: "Cuddles lavender fresh fabric softener in 750ml pieces",
+    price: 180,
+    wholesalePrice: 175,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW970",
+    image: "/images/products/sw-cuddles-fabric-softener-lavender-fresh-750ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100971,
+    name: "Cuddles Fabric Softener Lilac 12x1L (Purple)",
+    description: "Cuddles lilac purple fabric softener in 1L pieces, 12 per piece",
+    price: 415,
+    wholesalePrice: 410,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW971",
+    image: "/images/products/sw-cuddles-fabric-softener-lilac-12x1l-purple.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100972,
+    name: "Cuddles Fabric Softener Lilac 12x500ML (Purple)",
+    description: "Cuddles lilac purple fabric softener in 500ml pieces, 12 per piece",
+    price: 210,
+    wholesalePrice: 205,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW972",
+    image: "/images/products/sw-cuddles-fabric-softener-lilac-12x500ml-purple.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100973,
+    name: "Cuddles Fabric Softener Tender Fresh 750ML",
+    description: "Cuddles tender fresh fabric softener in 750ml pieces",
+    price: 180,
+    wholesalePrice: 175,
+    category: "cleaning",
+    brand: "Cuddles",
+    inStock: true,
+    unit: "Piece",
+    code: "SW973",
+    image: "/images/products/sw-cuddles-fabric-softener-tender-fresh-750ml.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100974,
+    name: "Cussons Baby Jelly 200ML (Mild & Gentle)",
+    description: "Cussons mild & gentle baby jelly in 200ml pieces",
+    price: 225,
+    wholesalePrice: 220,
+    category: "hygiene",
+    brand: "Cussons",
+    inStock: true,
+    unit: "Piece",
+    code: "SW974",
+    image: "/images/products/sw-cussons-baby-jelly-200ml-mild-gentle.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100975,
+    name: "Cussons Baby Jelly 200ML (Soft & Smooth)",
+    description: "Cussons soft & smooth baby jelly in 200ml pieces",
+    price: 245,
+    wholesalePrice: 240,
+    category: "hygiene",
+    brand: "Cussons",
+    inStock: true,
+    unit: "Piece",
+    code: "SW975",
+    image: "/images/products/sw-cussons-baby-jelly-200ml-soft-smooth.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100976,
+    name: "Cussons Baby Oil 200ML (Mild & Gentle)",
+    description: "Cussons mild & gentle baby oil in 200ml pieces",
+    price: 385,
+    wholesalePrice: 380,
+    category: "hygiene",
+    brand: "Cussons",
+    inStock: true,
+    unit: "Piece",
+    code: "SW976",
+    image: "/images/products/sw-cussons-baby-oil-200ml-mild-gentle.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100977,
+    name: "Cussons Baby Oil 200ML (Soft & Smooth)",
+    description: "Cussons soft & smooth baby oil in 200ml pieces",
+    price: 385,
+    wholesalePrice: 380,
+    category: "hygiene",
+    brand: "Cussons",
+    inStock: true,
+    unit: "Piece",
+    code: "SW977",
+    image: "/images/products/sw-cussons-baby-oil-200ml-soft-smooth.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100978,
+    name: "Cussons Baby Soap 72x100G (Mild & Gentle)",
+    description: "Cussons mild & gentle baby soap in 100g pieces, 72 per piece",
+    price: 90,
+    wholesalePrice: 85,
+    category: "hygiene",
+    brand: "Cussons",
+    inStock: true,
+    unit: "Piece",
+    code: "SW978",
+    image: "/images/products/sw-cussons-baby-soap-72x100g-mild-gentle.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100979,
+    name: "Cussons Baby Soap 72x100G (Soft & Smooth)",
+    description: "Cussons soft & smooth baby soap in 100g pieces, 72 per piece",
+    price: 90,
+    wholesalePrice: 85,
+    category: "hygiene",
+    brand: "Cussons",
+    inStock: true,
+    unit: "Piece",
+    code: "SW979",
+    image: "/images/products/sw-cussons-baby-soap-72x100g-soft-smooth.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100980,
+    name: "Cussons Baby Wipes 80'S (Mild & Gentle)",
+    description: "Cussons mild & gentle baby wipes, 80 per packet",
+    price: 190,
+    wholesalePrice: 185,
+    category: "hygiene",
+    brand: "Cussons",
+    inStock: true,
+    unit: "Packet",
+    code: "SW980",
+    image: "/images/products/sw-cussons-baby-wipes-80s-mild-gentle.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100981,
+    name: "Cussons Baby Wipes 80'S (Soft & Smooth)",
+    description: "Cussons soft & smooth baby wipes, 80 per packet",
+    price: 190,
+    wholesalePrice: 185,
+    category: "hygiene",
+    brand: "Cussons",
+    inStock: true,
+    unit: "Packet",
+    code: "SW981",
+    image: "/images/products/sw-cussons-baby-wipes-80s-soft-smooth.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100982,
+    name: "Cyrus Tea 20x500GM",
+    description: "Cyrus tea in 500g packets, 20 per packet",
+    price: 150,
+    wholesalePrice: 145,
+    category: "beverage",
+    brand: "Cyrus",
+    inStock: true,
+    unit: "Packet",
+    code: "SW982",
+    image: "/images/products/sw-cyrus-tea-20x500gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100983,
+    name: "Cyrus Tea 40x250GM",
+    description: "Cyrus tea in 250g packets, 40 per packet",
+    price: 75,
+    wholesalePrice: 70,
+    category: "beverage",
+    brand: "Cyrus",
+    inStock: true,
+    unit: "Packet",
+    code: "SW983",
+    image: "/images/products/sw-cyrus-tea-40x250gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100984,
+    name: "Cyrus Tea 50GM",
+    description: "Cyrus tea in 50g packets, per outer",
+    price: 150,
+    wholesalePrice: 145,
+    category: "beverage",
+    brand: "Cyrus",
+    inStock: true,
+    unit: "Outer",
+    code: "SW984",
+    image: "/images/products/sw-cyrus-tea-50gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100985,
+    name: "Daawat (Blue Label) Spaghetti 20x400G",
+    description: "Daawat blue label spaghetti in 400g packets, 20 per carton",
+    price: 2705,
+    wholesalePrice: 2695,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Carton",
+    code: "SW985",
+    image: "/images/products/sw-daawat-blue-label-spaghetti-20x400g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100986,
+    name: "Daawat (Blue Label) Spaghetti 400G (Value Pack)",
+    description: "Daawat blue label spaghetti in 400g value pack, per outer",
+    price: 390,
+    wholesalePrice: 385,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Outer",
+    code: "SW986",
+    image: "/images/products/sw-daawat-blue-label-spaghetti-400g-value-pack.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100987,
+    name: "Daawat (Green Label) Spaghetti 400GM",
+    description: "Daawat green label spaghetti in 400g packets, per carton",
+    price: 1455,
+    wholesalePrice: 1445,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Carton",
+    code: "SW987",
+    image: "/images/products/sw-daawat-green-label-spaghetti-400gm.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100988,
+    name: "Daawat Aromatic 12x2KG",
+    description: "Daawat aromatic rice in 2kg packets, 12 per packet",
+    price: 555,
+    wholesalePrice: 545,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW988",
+    image: "/images/products/sw-daawat-aromatic-12x2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100989,
+    name: "Daawat Aromatic 24x1KG",
+    description: "Daawat aromatic rice in 1kg packets, 24 per packet",
+    price: 280,
+    wholesalePrice: 275,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW989",
+    image: "/images/products/sw-daawat-aromatic-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100990,
+    name: "Daawat Aromatic 5KG",
+    description: "Daawat aromatic rice in 5kg packets, per outer",
+    price: 1370,
+    wholesalePrice: 1360,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Outer",
+    code: "SW990",
+    image: "/images/products/sw-daawat-aromatic-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100991,
+    name: "Daawat Biryani 10KG",
+    description: "Daawat biryani rice in 10kg bags",
+    price: 2020,
+    wholesalePrice: 2010,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Bag",
+    code: "SW991",
+    image: "/images/products/sw-daawat-biryani-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100992,
+    name: "Daawat Biryani 12x2KG",
+    description: "Daawat biryani rice in 2kg packets, 12 per packet",
+    price: 435,
+    wholesalePrice: 430,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW992",
+    image: "/images/products/sw-daawat-biryani-12x2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100993,
+    name: "Daawat Biryani 24x1KG",
+    description: "Daawat biryani rice in 1kg packets, 24 per packet",
+    price: 220,
+    wholesalePrice: 215,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW993",
+    image: "/images/products/sw-daawat-biryani-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100994,
+    name: "Daawat Biryani 5x5KG",
+    description: "Daawat biryani rice in 5kg packets, 5 per outer",
+    price: 1065,
+    wholesalePrice: 1055,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Outer",
+    code: "SW994",
+    image: "/images/products/sw-daawat-biryani-5x5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100995,
+    name: "Daawat Deli Basmati 5x5KG",
+    description: "Daawat deli basmati rice in 5kg packets, 5 per outer",
+    price: 1450,
+    wholesalePrice: 1440,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Outer",
+    code: "SW995",
+    image: "/images/products/sw-daawat-deli-basmati-5x5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100996,
+    name: "Daawat Deli Basmati 5KG (Bag)",
+    description: "Daawat deli basmati rice in 5kg bags",
+    price: 1160,
+    wholesalePrice: 1150,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Bag",
+    code: "SW996",
+    image: "/images/products/sw-daawat-deli-basmati-5kg-bag.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100997,
+    name: "Daawat Kamande 24x1KG",
+    description: "Daawat kamande in 1kg packets, 24 per packet",
+    price: 350,
+    wholesalePrice: 345,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW997",
+    image: "/images/products/sw-daawat-kamande-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100998,
+    name: "Daawat Long Grain 12x2KG",
+    description: "Daawat long grain rice in 2kg packets, 12 per packet",
+    price: 270,
+    wholesalePrice: 265,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW998",
+    image: "/images/products/sw-daawat-long-grain-12x2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 100999,
+    name: "Daawat Long Grain 5x5KG",
+    description: "Daawat long grain rice in 5kg packets, 5 per outer",
+    price: 665,
+    wholesalePrice: 655,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Outer",
+    code: "SW999",
+    image: "/images/products/sw-daawat-long-grain-5x5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101000,
+    name: "Daawat Long Grain Rice 10KG",
+    description: "Daawat long grain rice in 10kg bags",
+    price: 1375,
+    wholesalePrice: 1365,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Bag",
+    code: "SW1000",
+    image: "/images/products/sw-daawat-long-grain-rice-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101001,
+    name: "Daawat Long Grain Rice 24x1KG (Big Bale)",
+    description: "Daawat long grain rice in 1kg packets, 24 per big bale",
+    price: 130,
+    wholesalePrice: 125,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1001",
+    image: "/images/products/sw-daawat-long-grain-rice-24x1kg-big-bale.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101002,
+    name: "Daawat Long Grain Rice 25KG",
+    description: "Daawat long grain rice in 25kg bags",
+    price: 3680,
+    wholesalePrice: 3670,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Bag",
+    code: "SW1002",
+    image: "/images/products/sw-daawat-long-grain-rice-25kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101003,
+    name: "Daawat Ndengu 12x1KG",
+    description: "Daawat ndengu in 1kg packets, 12 per packet",
+    price: 150,
+    wholesalePrice: 145,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1003",
+    image: "/images/products/sw-daawat-ndengu-12x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101004,
+    name: "Daawat Ndengu 24x500G",
+    description: "Daawat ndengu in 500g packets, 24 per packet",
+    price: 75,
+    wholesalePrice: 70,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1004",
+    image: "/images/products/sw-daawat-ndengu-24x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101005,
+    name: "Daawat Njahi 24x1KG",
+    description: "Daawat njahi in 1kg packets, 24 per packet",
+    price: 225,
+    wholesalePrice: 220,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1005",
+    image: "/images/products/sw-daawat-njahi-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101006,
+    name: "Daawat Pasta 20x400G (Fusili)",
+    description: "Daawat fusili pasta in 400g packets, 20 per packet",
+    price: 170,
+    wholesalePrice: 165,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1006",
+    image: "/images/products/sw-daawat-pasta-20x400g-fusili.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101007,
+    name: "Daawat Pasta 20x400G (Penne)",
+    description: "Daawat penne pasta in 400g packets, 20 per packet",
+    price: 170,
+    wholesalePrice: 165,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1007",
+    image: "/images/products/sw-daawat-pasta-20x400g-penne.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101008,
+    name: "Daawat Popcorn 12x1KG",
+    description: "Daawat popcorn in 1kg packets, 12 per packet",
+    price: 225,
+    wholesalePrice: 220,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1008",
+    image: "/images/products/sw-daawat-popcorn-12x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101009,
+    name: "Daawat Popcorn 24x500G",
+    description: "Daawat popcorn in 500g packets, 24 per packet",
+    price: 115,
+    wholesalePrice: 110,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1009",
+    image: "/images/products/sw-daawat-popcorn-24x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101010,
+    name: "Daawat Traditional Basmati 10KG",
+    description: "Daawat traditional basmati rice in 10kg bags",
+    price: 2780,
+    wholesalePrice: 2770,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Bag",
+    code: "SW1010",
+    image: "/images/products/sw-daawat-traditional-basmati-10kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101011,
+    name: "Daawat Traditional Basmati 12x2KG",
+    description: "Daawat traditional basmati rice in 2kg packets, 12 per packet",
+    price: 645,
+    wholesalePrice: 635,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1011",
+    image: "/images/products/sw-daawat-traditional-basmati-12x2kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101012,
+    name: "Daawat Traditional Basmati Rice 24x1KG",
+    description: "Daawat traditional basmati rice in 1kg packets, 24 per packet",
+    price: 325,
+    wholesalePrice: 320,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1012",
+    image: "/images/products/sw-daawat-traditional-basmati-rice-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101013,
+    name: "Daawat Traditional Basmati Rice 5KG",
+    description: "Daawat traditional basmati rice in 5kg packets, per outer",
+    price: 1590,
+    wholesalePrice: 1580,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Outer",
+    code: "SW1013",
+    image: "/images/products/sw-daawat-traditional-basmati-rice-5kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101014,
+    name: "Daawat Yellow Beans 24x1KG",
+    description: "Daawat yellow beans in 1kg packets, 24 per packet",
+    price: 250,
+    wholesalePrice: 245,
+    category: "food",
+    brand: "Daawat",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1014",
+    image: "/images/products/sw-daawat-yellow-beans-24x1kg.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101015,
+    name: "Daima Butter 10x500G (Salted)",
+    description: "Daima salted butter in 500g pieces, 10 per piece",
+    price: 670,
+    wholesalePrice: 660,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1015",
+    image: "/images/products/sw-daima-butter-10x500g-salted.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101016,
+    name: "Daima Butter 10x500G (Unsalted)",
+    description: "Daima unsalted butter in 500g pieces, 10 per piece",
+    price: 670,
+    wholesalePrice: 660,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1016",
+    image: "/images/products/sw-daima-butter-10x500g-unsalted.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101017,
+    name: "Daima Butter 20x250G (Salted)",
+    description: "Daima salted butter in 250g pieces, 20 per piece",
+    price: 330,
+    wholesalePrice: 325,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1017",
+    image: "/images/products/sw-daima-butter-20x250g-salted.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101018,
+    name: "Daima Butter 20x250G (Unsalted)",
+    description: "Daima unsalted butter in 250g pieces, 20 per piece",
+    price: 330,
+    wholesalePrice: 325,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1018",
+    image: "/images/products/sw-daima-butter-20x250g-unsalted.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101019,
+    name: "Daima Juice 480ML (Mango)",
+    description: "Daima mango juice in 480ml pieces",
+    price: 65,
+    wholesalePrice: 60,
+    category: "beverage",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1019",
+    image: "/images/products/sw-daima-juice-480ml-mango.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101020,
+    name: "Daima Lala 6x500G",
+    description: "Daima lala (fermented milk) in 500g pieces, 6 per piece",
+    price: 85,
+    wholesalePrice: 80,
+    category: "beverage",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1020",
+    image: "/images/products/sw-daima-lala-6x500g.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101021,
+    name: "Daima Milk 12x500ML (ESL)",
+    description: "Daima ESL milk in 500ml packets, 12 per carton",
+    price: 550,
+    wholesalePrice: 540,
+    category: "beverage",
+    brand: "Daima",
+    inStock: true,
+    unit: "Carton",
+    code: "SW1021",
+    image: "/images/products/sw-daima-milk-12x500ml-esl.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101022,
+    name: "Daima Milk 12x500ML (Fino)",
+    description: "Daima Fino milk in 500ml packets, 12 per carton",
+    price: 530,
+    wholesalePrice: 520,
+    category: "beverage",
+    brand: "Daima",
+    inStock: true,
+    unit: "Carton",
+    code: "SW1022",
+    image: "/images/products/sw-daima-milk-12x500ml-fino.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101023,
+    name: "Daima Milk 21x200ML (ESL) (Small Carton) Bora",
+    description: "Daima ESL milk in 200ml packets, 21 per small carton, Bora",
+    price: 375,
+    wholesalePrice: 370,
+    category: "beverage",
+    brand: "Daima",
+    inStock: true,
+    unit: "Carton",
+    code: "SW1023",
+    image: "/images/products/sw-daima-milk-21x200ml-esl-small-carton-bora.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101024,
+    name: "Daima Milk Drink 12x480ML (Strawberry)",
+    description: "Daima strawberry milk drink in 480ml pieces, 12 per piece",
+    price: 95,
+    wholesalePrice: 90,
+    category: "beverage",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1024",
+    image: "/images/products/sw-daima-milk-drink-12x480ml-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101025,
+    name: "Daima Milk Drink 12x480ML (Vanilla)",
+    description: "Daima vanilla milk drink in 480ml pieces, 12 per piece",
+    price: 95,
+    wholesalePrice: 90,
+    category: "beverage",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1025",
+    image: "/images/products/sw-daima-milk-drink-12x480ml-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101026,
+    name: "Daima Milk Drink 250ML (Assorted) 6'S",
+    description: "Daima assorted milk drink in 250ml pieces, 6 per outer",
+    price: 340,
+    wholesalePrice: 335,
+    category: "beverage",
+    brand: "Daima",
+    inStock: true,
+    unit: "Outer",
+    code: "SW1026",
+    image: "/images/products/sw-daima-milk-drink-250ml-assorted-6s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101027,
+    name: "Daima Milk Drink 250ML (Chocolate) 6'S",
+    description: "Daima chocolate milk drink in 250ml pieces, 6 per outer",
+    price: 85,
+    wholesalePrice: 80,
+    category: "beverage",
+    brand: "Daima",
+    inStock: true,
+    unit: "Outer",
+    code: "SW1027",
+    image: "/images/products/sw-daima-milk-drink-250ml-chocolate-6s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101028,
+    name: "Daima Milk Drink 250ML (Vanilla) 6'S",
+    description: "Daima vanilla milk drink in 250ml pieces, 6 per outer",
+    price: 340,
+    wholesalePrice: 335,
+    category: "beverage",
+    brand: "Daima",
+    inStock: true,
+    unit: "Outer",
+    code: "SW1028",
+    image: "/images/products/sw-daima-milk-drink-250ml-vanilla-6s.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101029,
+    name: "Daima Yoghurt 250G (Black Currant)",
+    description: "Daima black currant yoghurt in 250g pieces",
+    price: 80,
+    wholesalePrice: 75,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1029",
+    image: "/images/products/sw-daima-yoghurt-250g-black-currant.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101030,
+    name: "Daima Yoghurt 250G (Chocolate)",
+    description: "Daima chocolate yoghurt in 250g pieces",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1030",
+    image: "/images/products/sw-daima-yoghurt-250g-chocolate.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101031,
+    name: "Daima Yoghurt 250G (Natural)",
+    description: "Daima natural yoghurt in 250g pieces",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1031",
+    image: "/images/products/sw-daima-yoghurt-250g-natural.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101032,
+    name: "Daima Yoghurt 250G (Strawberry)",
+    description: "Daima strawberry yoghurt in 250g pieces",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1032",
+    image: "/images/products/sw-daima-yoghurt-250g-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101033,
+    name: "Daima Yoghurt 250G (Vanilla)",
+    description: "Daima vanilla yoghurt in 250g pieces",
+    price: 70,
+    wholesalePrice: 65,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1033",
+    image: "/images/products/sw-daima-yoghurt-250g-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101034,
+    name: "Daima Yoghurt 500G (Black Currant)",
+    description: "Daima black currant yoghurt in 500g pieces",
+    price: 115,
+    wholesalePrice: 110,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1034",
+    image: "/images/products/sw-daima-yoghurt-500g-black-currant.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101035,
+    name: "Daima Yoghurt 500G (Chocolate)",
+    description: "Daima chocolate yoghurt in 500g pieces",
+    price: 115,
+    wholesalePrice: 110,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1035",
+    image: "/images/products/sw-daima-yoghurt-500g-chocolate.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101036,
+    name: "Daima Yoghurt 500G (Mango)",
+    description: "Daima mango yoghurt in 500g pieces",
+    price: 115,
+    wholesalePrice: 110,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1036",
+    image: "/images/products/sw-daima-yoghurt-500g-mango.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101037,
+    name: "Daima Yoghurt 500G (Natural)",
+    description: "Daima natural yoghurt in 500g pieces",
+    price: 115,
+    wholesalePrice: 110,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1037",
+    image: "/images/products/sw-daima-yoghurt-500g-natural.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101038,
+    name: "Daima Yoghurt 500G (Strawberry)",
+    description: "Daima strawberry yoghurt in 500g pieces",
+    price: 115,
+    wholesalePrice: 110,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1038",
+    image: "/images/products/sw-daima-yoghurt-500g-strawberry.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101039,
+    name: "Daima Yoghurt 500G (Vanilla)",
+    description: "Daima vanilla yoghurt in 500g pieces",
+    price: 115,
+    wholesalePrice: 110,
+    category: "food",
+    brand: "Daima",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1039",
+    image: "/images/products/sw-daima-yoghurt-500g-vanilla.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101040,
+    name: "Dairyland Chocolate 12x80G (Mint Choc)",
+    description: "Dairyland mint choc chocolate in 80g pieces, 12 per piece",
+    price: 145,
+    wholesalePrice: 140,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1040",
+    image: "/images/products/sw-dairyland-chocolate-12x80g-mint-choc.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101041,
+    name: "Dairyland Chocolate 12x80G (Mint Crunch)",
+    description: "Dairyland mint crunch chocolate in 80g pieces, 12 per piece",
+    price: 195,
+    wholesalePrice: 190,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1041",
+    image: "/images/products/sw-dairyland-chocolate-12x80g-mint-crunch.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101042,
+    name: "Dairyland Chocolate 12x80G (Real Milk)",
+    description: "Dairyland real milk chocolate in 80g pieces, 12 per piece",
+    price: 195,
+    wholesalePrice: 190,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1042",
+    image: "/images/products/sw-dairyland-chocolate-12x80g-real-milk.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101043,
+    name: "Dairyland Chocolate 12x80G (Real White)",
+    description: "Dairyland real white chocolate in 80g pieces, 12 per piece",
+    price: 195,
+    wholesalePrice: 190,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1043",
+    image: "/images/products/sw-dairyland-chocolate-12x80g-real-white.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101044,
+    name: "Dairyland Chocolate 20x500G (Dark Compound)",
+    description: "Dairyland dark compound chocolate in 500g pieces, 20 per piece",
+    price: 515,
+    wholesalePrice: 505,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1044",
+    image: "/images/products/sw-dairyland-chocolate-20x500g-dark-compound.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101045,
+    name: "Dairyland Chocolate 20x500G (White Compound)",
+    description: "Dairyland white compound chocolate in 500g pieces, 20 per piece",
+    price: 515,
+    wholesalePrice: 505,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Piece",
+    code: "SW1045",
+    image: "/images/products/sw-dairyland-chocolate-20x500g-white-compound.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101046,
+    name: "Dairyland Chocolate 24x20G (Real Milk)",
+    description: "Dairyland real milk chocolate in 20g packets, 24 per packet",
+    price: 45,
+    wholesalePrice: 40,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1046",
+    image: "/images/products/sw-dairyland-chocolate-24x20g-real-milk.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101047,
+    name: "Dairyland Chocolate 24x20G (Real White)",
+    description: "Dairyland real white chocolate in 20g packets, 24 per packet",
+    price: 45,
+    wholesalePrice: 40,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1047",
+    image: "/images/products/sw-dairyland-chocolate-24x20g-real-white.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101048,
+    name: "Dairyland Chocolate 24x37G (Berry Bliss)",
+    description: "Dairyland berry bliss chocolate in 37g packets, 24 per packet",
+    price: 60,
+    wholesalePrice: 55,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1048",
+    image: "/images/products/sw-dairyland-chocolate-24x37g-berry-bliss.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101049,
+    name: "Dairyland Chocolate 24x37G (Double Choc)",
+    description: "Dairyland double choc chocolate in 37g packets, 24 per packet",
+    price: 60,
+    wholesalePrice: 55,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1049",
+    image: "/images/products/sw-dairyland-chocolate-24x37g-double-choc.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101050,
+    name: "Dairyland Chocolate 24x37G (Mint Choco)",
+    description: "Dairyland mint choco chocolate in 37g packets, 24 per packet",
+    price: 60,
+    wholesalePrice: 55,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1050",
+    image: "/images/products/sw-dairyland-chocolate-24x37g-mint-choco.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101051,
+    name: "Dairyland Chocolate 24x40G (Dark Milk)",
+    description: "Dairyland dark milk chocolate in 40g packets, 24 per packet",
+    price: 100,
+    wholesalePrice: 95,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1051",
+    image: "/images/products/sw-dairyland-chocolate-24x40g-dark-milk.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101052,
+    name: "Dairyland Chocolate 24x40G (Milk Cookies)",
+    description: "Dairyland milk cookies chocolate in 40g packets, 24 per packet",
+    price: 100,
+    wholesalePrice: 95,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1052",
+    image: "/images/products/sw-dairyland-chocolate-24x40g-milk-cookies.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101053,
+    name: "Dairyland Chocolate 24x40G (Mint Crunch)",
+    description: "Dairyland mint crunch chocolate in 40g packets, 24 per packet",
+    price: 100,
+    wholesalePrice: 95,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1053",
+    image: "/images/products/sw-dairyland-chocolate-24x40g-mint-crunch.jpg",
+    distributorName: "Sam West Distributors"
+  },
+  {
+    id: 101054,
+    name: "Dairyland Chocolate 24x40G (Real Milk)",
+    description: "Dairyland real milk chocolate in 40g packets, 24 per packet",
+    price: 100,
+    wholesalePrice: 95,
+    category: "food",
+    brand: "Dairyland",
+    inStock: true,
+    unit: "Packet",
+    code: "SW1054",
+    image: "/images/products/sw-dairyland-chocolate-24x40g-real-milk.jpg",
+    distributorName: "Sam West Distributors"
   },
 ];

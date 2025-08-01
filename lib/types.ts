@@ -53,6 +53,7 @@ export interface Product {
   code?: string
   size?: string
   wholesaleQuantity?: number
+  distributorName?: string
 }
 
 export interface CartItem {
