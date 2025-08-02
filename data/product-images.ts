@@ -22196,6 +22196,13606 @@ export const PRODUCT_IMAGES: ProductImage[] = [
     alt: "Greengel Fuel Gel 6x3L Piece",
     isPrimary: true
   },
+  {
+    id: 101667,
+    productId: 101667,
+    filename: "sw-guppies-hc-baby-diapers-large-40pcs.jpg",
+    path: "/images/products/sw-guppies-hc-baby-diapers-large-40pcs.jpg",
+    alt: "Guppies (HC) Baby Diapers Large 40PCS Outer",
+    isPrimary: true
+  },
+  {
+    id: 101668,
+    productId: 101668,
+    filename: "sw-guppies-hc-baby-diapers-medium-44pcs.jpg",
+    path: "/images/products/sw-guppies-hc-baby-diapers-medium-44pcs.jpg",
+    alt: "Guppies (HC) Baby Diapers Medium 44PCS Outer",
+    isPrimary: true
+  },
+  {
+    id: 101669,
+    productId: 101669,
+    filename: "sw-guppies-lc-baby-diapers-large-8pcs.jpg",
+    path: "/images/products/sw-guppies-lc-baby-diapers-large-8pcs.jpg",
+    alt: "Guppies (LC) Baby Diapers Large 8PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 101670,
+    productId: 101670,
+    filename: "sw-guppies-lc-baby-diapers-medium-9pcs.jpg",
+    path: "/images/products/sw-guppies-lc-baby-diapers-medium-9pcs.jpg",
+    alt: "Guppies (LC) Baby Diapers Medium 9PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 101671,
+    productId: 101671,
+    filename: "sw-guppies-baby-powder-50g.jpg",
+    path: "/images/products/sw-guppies-baby-powder-50g.jpg",
+    alt: "Guppies Baby Powder 50G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101672,
+    productId: 101672,
+    filename: "sw-guppies-baby-wipes-80pcs.jpg",
+    path: "/images/products/sw-guppies-baby-wipes-80pcs.jpg",
+    alt: "Guppies Baby Wipes 80PCS Outer",
+    isPrimary: true
+  },
+  {
+    id: 101673,
+    productId: 101673,
+    filename: "sw-guru-pure-pishori-rice-12x2kg.jpg",
+    path: "/images/products/sw-guru-pure-pishori-rice-12x2kg.jpg",
+    alt: "Guru Pure Pishori Rice 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101674,
+    productId: 101674,
+    filename: "sw-guru-pure-pishori-rice-5x5kg.jpg",
+    path: "/images/products/sw-guru-pure-pishori-rice-5x5kg.jpg",
+    alt: "Guru Pure Pishori Rice 5x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101675,
+    productId: 101675,
+    filename: "sw-guru-sindano-rice-25kg.jpg",
+    path: "/images/products/sw-guru-sindano-rice-25kg.jpg",
+    alt: "Guru Sindano Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101676,
+    productId: 101676,
+    filename: "sw-guru-special-basmati-rice-12x2kg.jpg",
+    path: "/images/products/sw-guru-special-basmati-rice-12x2kg.jpg",
+    alt: "Guru Special Basmati Rice 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101677,
+    productId: 101677,
+    filename: "sw-guru-special-basmati-rice-5x5kg.jpg",
+    path: "/images/products/sw-guru-special-basmati-rice-5x5kg.jpg",
+    alt: "Guru Special Basmati Rice 5x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101678,
+    productId: 101678,
+    filename: "sw-gx-bleach-1l.jpg",
+    path: "/images/products/sw-gx-bleach-1l.jpg",
+    alt: "GX Bleach 1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 101679,
+    productId: 101679,
+    filename: "sw-gx-bleach-500ml.jpg",
+    path: "/images/products/sw-gx-bleach-500ml.jpg",
+    alt: "GX Bleach 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101680,
+    productId: 101680,
+    filename: "sw-gx-bleach-5l-regular.jpg",
+    path: "/images/products/sw-gx-bleach-5l-regular.jpg",
+    alt: "GX Bleach 5L (Regular) Jerican",
+    isPrimary: true
+  },
+  {
+    id: 101681,
+    productId: 101681,
+    filename: "sw-gx-dish-washing-liquid-12x1l.jpg",
+    path: "/images/products/sw-gx-dish-washing-liquid-12x1l.jpg",
+    alt: "GX Dish Washing Liquid 12x1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 101682,
+    productId: 101682,
+    filename: "sw-gx-dish-washing-liquid-500ml.jpg",
+    path: "/images/products/sw-gx-dish-washing-liquid-500ml.jpg",
+    alt: "GX Dish Washing Liquid 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101683,
+    productId: 101683,
+    filename: "sw-gx-dish-washing-liquid-5l-lemon.jpg",
+    path: "/images/products/sw-gx-dish-washing-liquid-5l-lemon.jpg",
+    alt: "GX Dish Washing Liquid 5L (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101684,
+    productId: 101684,
+    filename: "sw-gx-fabric-softener-5l.jpg",
+    path: "/images/products/sw-gx-fabric-softener-5l.jpg",
+    alt: "GX Fabric Softener 5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 101685,
+    productId: 101685,
+    filename: "sw-gx-glass-cleaner-500ml.jpg",
+    path: "/images/products/sw-gx-glass-cleaner-500ml.jpg",
+    alt: "GX Glass Cleaner 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101686,
+    productId: 101686,
+    filename: "sw-gx-hand-wash-500ml.jpg",
+    path: "/images/products/sw-gx-hand-wash-500ml.jpg",
+    alt: "GX Hand Wash 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101687,
+    productId: 101687,
+    filename: "sw-gx-handwash-5l-strawberry.jpg",
+    path: "/images/products/sw-gx-handwash-5l-strawberry.jpg",
+    alt: "GX Handwash 5L (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101688,
+    productId: 101688,
+    filename: "sw-gx-liquid-detergent-1l-machine-wash.jpg",
+    path: "/images/products/sw-gx-liquid-detergent-1l-machine-wash.jpg",
+    alt: "GX Liquid Detergent 1L (Machine Wash) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101689,
+    productId: 101689,
+    filename: "sw-gx-multi-purpose-liquid-20l.jpg",
+    path: "/images/products/sw-gx-multi-purpose-liquid-20l.jpg",
+    alt: "GX Multi-Purpose Liquid 20L Jerican",
+    isPrimary: true
+  },
+  {
+    id: 101690,
+    productId: 101690,
+    filename: "sw-gx-multipurpose-lemon-5l.jpg",
+    path: "/images/products/sw-gx-multipurpose-lemon-5l.jpg",
+    alt: "GX Multipurpose Lemon 5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 101691,
+    productId: 101691,
+    filename: "sw-gx-oven-cleaner-500ml.jpg",
+    path: "/images/products/sw-gx-oven-cleaner-500ml.jpg",
+    alt: "GX Oven Cleaner 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101692,
+    productId: 101692,
+    filename: "sw-gx-scouring-powder-12x1kg.jpg",
+    path: "/images/products/sw-gx-scouring-powder-12x1kg.jpg",
+    alt: "GX Scouring Powder 12x1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 101693,
+    productId: 101693,
+    filename: "sw-gx-scouring-powder-500g.jpg",
+    path: "/images/products/sw-gx-scouring-powder-500g.jpg",
+    alt: "GX Scouring Powder 500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101694,
+    productId: 101694,
+    filename: "sw-gx-shower-gel-800ml-blue.jpg",
+    path: "/images/products/sw-gx-shower-gel-800ml-blue.jpg",
+    alt: "GX Shower Gel 800ML (Blue) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101695,
+    productId: 101695,
+    filename: "sw-gx-shower-gel-800ml-pink.jpg",
+    path: "/images/products/sw-gx-shower-gel-800ml-pink.jpg",
+    alt: "GX Shower Gel 800ML (Pink) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101696,
+    productId: 101696,
+    filename: "sw-gx-tiles-cleaner-1l.jpg",
+    path: "/images/products/sw-gx-tiles-cleaner-1l.jpg",
+    alt: "GX Tiles Cleaner 1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 101697,
+    productId: 101697,
+    filename: "sw-gx-toilet-cleaner-12x750ml.jpg",
+    path: "/images/products/sw-gx-toilet-cleaner-12x750ml.jpg",
+    alt: "GX Toilet Cleaner 12x750ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101698,
+    productId: 101698,
+    filename: "sw-gx-toilet-cleaner-500ml.jpg",
+    path: "/images/products/sw-gx-toilet-cleaner-500ml.jpg",
+    alt: "GX Toilet Cleaner 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101699,
+    productId: 101699,
+    filename: "sw-haco-pegs.jpg",
+    path: "/images/products/sw-haco-pegs.jpg",
+    alt: "Haco Pegs Piece",
+    isPrimary: true
+  },
+  {
+    id: 101700,
+    productId: 101700,
+    filename: "sw-halisi-small-10l.jpg",
+    path: "/images/products/sw-halisi-small-10l.jpg",
+    alt: "Halisi (Small) 10L Jerican",
+    isPrimary: true
+  },
+  {
+    id: 101701,
+    productId: 101701,
+    filename: "sw-halisi-fry-20l.jpg",
+    path: "/images/products/sw-halisi-fry-20l.jpg",
+    alt: "Halisi Fry 20L Jerican",
+    isPrimary: true
+  },
+  {
+    id: 101702,
+    productId: 101702,
+    filename: "sw-hanan-indian-basmati-rice-25kg-jute-bag.jpg",
+    path: "/images/products/sw-hanan-indian-basmati-rice-25kg-jute-bag.jpg",
+    alt: "Hanan Indian Basmati Rice 25KG Jute Bag",
+    isPrimary: true
+  },
+  {
+    id: 101703,
+    productId: 101703,
+    filename: "sw-hanan-antibacterial-wipes.jpg",
+    path: "/images/products/sw-hanan-antibacterial-wipes.jpg",
+    alt: "Hanan Antibacterial Wipes Packet",
+    isPrimary: true
+  },
+  {
+    id: 101704,
+    productId: 101704,
+    filename: "sw-hanan-charcoal-wipes-20s.jpg",
+    path: "/images/products/sw-hanan-charcoal-wipes-20s.jpg",
+    alt: "Hanan Charcoal Wipes 20's Piece",
+    isPrimary: true
+  },
+  {
+    id: 101705,
+    productId: 101705,
+    filename: "sw-hanan-cling-film-30cmx300m.jpg",
+    path: "/images/products/sw-hanan-cling-film-30cmx300m.jpg",
+    alt: "Hanan Cling Film 30CMx300M Outer",
+    isPrimary: true
+  },
+  {
+    id: 101706,
+    productId: 101706,
+    filename: "sw-hanan-cling-film-30cmx15m.jpg",
+    path: "/images/products/sw-hanan-cling-film-30cmx15m.jpg",
+    alt: "Hanan Cling Film 30CMx15M Piece",
+    isPrimary: true
+  },
+  {
+    id: 101707,
+    productId: 101707,
+    filename: "sw-hanan-cling-film-45cmx15m.jpg",
+    path: "/images/products/sw-hanan-cling-film-45cmx15m.jpg",
+    alt: "Hanan Cling Film 45CMx15M Piece",
+    isPrimary: true
+  },
+  {
+    id: 101708,
+    productId: 101708,
+    filename: "sw-hanan-cotton-earbuds-100s.jpg",
+    path: "/images/products/sw-hanan-cotton-earbuds-100s.jpg",
+    alt: "Hanan Cotton Earbuds 100's Dozen",
+    isPrimary: true
+  },
+  {
+    id: 101709,
+    productId: 101709,
+    filename: "sw-hanan-cotton-earbuds-200s.jpg",
+    path: "/images/products/sw-hanan-cotton-earbuds-200s.jpg",
+    alt: "Hanan Cotton Earbuds 200's Piece",
+    isPrimary: true
+  },
+  {
+    id: 101710,
+    productId: 101710,
+    filename: "sw-hanan-cotton-wool-100g.jpg",
+    path: "/images/products/sw-hanan-cotton-wool-100g.jpg",
+    alt: "Hanan Cotton Wool 100G Outer",
+    isPrimary: true
+  },
+  {
+    id: 101711,
+    productId: 101711,
+    filename: "sw-hanan-cotton-wool-400g.jpg",
+    path: "/images/products/sw-hanan-cotton-wool-400g.jpg",
+    alt: "Hanan Cotton Wool 400G Outer",
+    isPrimary: true
+  },
+  {
+    id: 101712,
+    productId: 101712,
+    filename: "sw-hanan-facial-tissue-80s.jpg",
+    path: "/images/products/sw-hanan-facial-tissue-80s.jpg",
+    alt: "Hanan Facial Tissue 80's Packet",
+    isPrimary: true
+  },
+  {
+    id: 101713,
+    productId: 101713,
+    filename: "sw-hanan-flushable-wipes-72s.jpg",
+    path: "/images/products/sw-hanan-flushable-wipes-72s.jpg",
+    alt: "Hanan Flushable Wipes 72's Packet",
+    isPrimary: true
+  },
+  {
+    id: 101714,
+    productId: 101714,
+    filename: "sw-hanan-foil-30cmx5m.jpg",
+    path: "/images/products/sw-hanan-foil-30cmx5m.jpg",
+    alt: "Hanan Foil 30CMx5M Piece",
+    isPrimary: true
+  },
+  {
+    id: 101715,
+    productId: 101715,
+    filename: "sw-hanan-foil-45cmx90m.jpg",
+    path: "/images/products/sw-hanan-foil-45cmx90m.jpg",
+    alt: "Hanan Foil 45CMx90M Piece",
+    isPrimary: true
+  },
+  {
+    id: 101716,
+    productId: 101716,
+    filename: "sw-hanan-foil-45cmx30m.jpg",
+    path: "/images/products/sw-hanan-foil-45cmx30m.jpg",
+    alt: "Hanan Foil 45CMx30M Piece",
+    isPrimary: true
+  },
+  {
+    id: 101717,
+    productId: 101717,
+    filename: "sw-hanan-foil-45cmx5m.jpg",
+    path: "/images/products/sw-hanan-foil-45cmx5m.jpg",
+    alt: "Hanan Foil 45CMx5M Piece",
+    isPrimary: true
+  },
+  {
+    id: 101718,
+    productId: 101718,
+    filename: "sw-hanan-gold-25kg-white-rice.jpg",
+    path: "/images/products/sw-hanan-gold-25kg-white-rice.jpg",
+    alt: "Hanan Gold 25KG (White Rice) Bag",
+    isPrimary: true
+  },
+  {
+    id: 101719,
+    productId: 101719,
+    filename: "sw-hanan-hand-towel.jpg",
+    path: "/images/products/sw-hanan-hand-towel.jpg",
+    alt: "Hanan Hand Towel Packet",
+    isPrimary: true
+  },
+  {
+    id: 101720,
+    productId: 101720,
+    filename: "sw-hanan-jumbo-tissue.jpg",
+    path: "/images/products/sw-hanan-jumbo-tissue.jpg",
+    alt: "Hanan Jumbo Tissue Bale",
+    isPrimary: true
+  },
+  {
+    id: 101721,
+    productId: 101721,
+    filename: "sw-hanan-kitchen-towel-single.jpg",
+    path: "/images/products/sw-hanan-kitchen-towel-single.jpg",
+    alt: "Hanan Kitchen Towel Single Piece",
+    isPrimary: true
+  },
+  {
+    id: 101722,
+    productId: 101722,
+    filename: "sw-hanan-kitchen-towels-2plus1-promo.jpg",
+    path: "/images/products/sw-hanan-kitchen-towels-2plus1-promo.jpg",
+    alt: "Hanan Kitchen Towels (2+1) Promo Outer",
+    isPrimary: true
+  },
+  {
+    id: 101723,
+    productId: 101723,
+    filename: "sw-hanan-kitchen-towels-twin.jpg",
+    path: "/images/products/sw-hanan-kitchen-towels-twin.jpg",
+    alt: "Hanan Kitchen Towels Twin Outer",
+    isPrimary: true
+  },
+  {
+    id: 101724,
+    productId: 101724,
+    filename: "sw-hanan-pk-386-parboiled-rice-25kg-yellow-bag.jpg",
+    path: "/images/products/sw-hanan-pk-386-parboiled-rice-25kg-yellow-bag.jpg",
+    alt: "Hanan PK 386 Parboiled Rice 25KG (Yellow Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 101725,
+    productId: 101725,
+    filename: "sw-hanan-pocket-tissue.jpg",
+    path: "/images/products/sw-hanan-pocket-tissue.jpg",
+    alt: "Hanan Pocket Tissue Outer",
+    isPrimary: true
+  },
+  {
+    id: 101726,
+    productId: 101726,
+    filename: "sw-hanan-sensitive-wet-wipes-72s.jpg",
+    path: "/images/products/sw-hanan-sensitive-wet-wipes-72s.jpg",
+    alt: "Hanan Sensitive Wet Wipes 72's Packet",
+    isPrimary: true
+  },
+  {
+    id: 101727,
+    productId: 101727,
+    filename: "sw-hanan-serviettes-1x18.jpg",
+    path: "/images/products/sw-hanan-serviettes-1x18.jpg",
+    alt: "Hanan Serviettes 1x18 Bale",
+    isPrimary: true
+  },
+  {
+    id: 101728,
+    productId: 101728,
+    filename: "sw-hanan-serviettes-value-pack-200pcs.jpg",
+    path: "/images/products/sw-hanan-serviettes-value-pack-200pcs.jpg",
+    alt: "Hanan Serviettes Value Pack 200PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 101729,
+    productId: 101729,
+    filename: "sw-hanan-toilet-balls-coloured.jpg",
+    path: "/images/products/sw-hanan-toilet-balls-coloured.jpg",
+    alt: "Hanan Toilet Balls Coloured Packet",
+    isPrimary: true
+  },
+  {
+    id: 101730,
+    productId: 101730,
+    filename: "sw-hanan-toilet-rolls-10-pack.jpg",
+    path: "/images/products/sw-hanan-toilet-rolls-10-pack.jpg",
+    alt: "Hanan Toilet Rolls (10 Pack) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101731,
+    productId: 101731,
+    filename: "sw-hanan-toilet-rolls-2-pack.jpg",
+    path: "/images/products/sw-hanan-toilet-rolls-2-pack.jpg",
+    alt: "Hanan Toilet Rolls (2 Pack) Bale",
+    isPrimary: true
+  },
+  {
+    id: 101732,
+    productId: 101732,
+    filename: "sw-hanan-toilet-rolls-4-pack.jpg",
+    path: "/images/products/sw-hanan-toilet-rolls-4-pack.jpg",
+    alt: "Hanan Toilet Rolls (4 Pack) Bale",
+    isPrimary: true
+  },
+  {
+    id: 101733,
+    productId: 101733,
+    filename: "sw-hanan-toilet-rolls-8-pack.jpg",
+    path: "/images/products/sw-hanan-toilet-rolls-8-pack.jpg",
+    alt: "Hanan Toilet Rolls (8 Pack) Bale",
+    isPrimary: true
+  },
+  {
+    id: 101734,
+    productId: 101734,
+    filename: "sw-hanan-toilet-rolls-singles.jpg",
+    path: "/images/products/sw-hanan-toilet-rolls-singles.jpg",
+    alt: "Hanan Toilet Rolls (Singles) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101735,
+    productId: 101735,
+    filename: "sw-hanan-water-wipes-72pcs.jpg",
+    path: "/images/products/sw-hanan-water-wipes-72pcs.jpg",
+    alt: "Hanan Water Wipes 72PCS (Baby Wipes from Day 1) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101736,
+    productId: 101736,
+    filename: "sw-hanan-wet-wipes-72pcs-classic.jpg",
+    path: "/images/products/sw-hanan-wet-wipes-72pcs-classic.jpg",
+    alt: "Hanan Wet Wipes 72PCS (Classic) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101737,
+    productId: 101737,
+    filename: "sw-hanan-white-rice-25kg-black-bag.jpg",
+    path: "/images/products/sw-hanan-white-rice-25kg-black-bag.jpg",
+    alt: "Hanan White Rice 25KG (Black Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 101738,
+    productId: 101738,
+    filename: "sw-hanan-white-rice-25kg-pink-bag.jpg",
+    path: "/images/products/sw-hanan-white-rice-25kg-pink-bag.jpg",
+    alt: "Hanan White Rice 25KG (Pink Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 101739,
+    productId: 101739,
+    filename: "sw-hanifa-creamy-sella-rice-25kg.jpg",
+    path: "/images/products/sw-hanifa-creamy-sella-rice-25kg.jpg",
+    alt: "Hanifa Creamy Sella Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101740,
+    productId: 101740,
+    filename: "sw-hanifa-pk-386-premium-basmati-rice-25kg.jpg",
+    path: "/images/products/sw-hanifa-pk-386-premium-basmati-rice-25kg.jpg",
+    alt: "Hanifa PK 386 Premium Basmati Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101741,
+    productId: 101741,
+    filename: "sw-happys-crisps-100g-cheese-onion.jpg",
+    path: "/images/products/sw-happys-crisps-100g-cheese-onion.jpg",
+    alt: "Happys Crisps 100G (Cheese & Onion) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101742,
+    productId: 101742,
+    filename: "sw-happys-crisps-100g-chilli.jpg",
+    path: "/images/products/sw-happys-crisps-100g-chilli.jpg",
+    alt: "Happys Crisps 100G (Chilli) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101743,
+    productId: 101743,
+    filename: "sw-happys-crisps-12x100g-salted.jpg",
+    path: "/images/products/sw-happys-crisps-12x100g-salted.jpg",
+    alt: "Happys Crisps 12x100G (Salted) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101744,
+    productId: 101744,
+    filename: "sw-happys-crisps-12x200g-cheese-onion.jpg",
+    path: "/images/products/sw-happys-crisps-12x200g-cheese-onion.jpg",
+    alt: "Happys Crisps 12x200G (Cheese & Onion) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101745,
+    productId: 101745,
+    filename: "sw-happys-crisps-12x200g-chilli.jpg",
+    path: "/images/products/sw-happys-crisps-12x200g-chilli.jpg",
+    alt: "Happys Crisps 12x200G (Chilli) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101746,
+    productId: 101746,
+    filename: "sw-happys-crisps-12x200g-salted.jpg",
+    path: "/images/products/sw-happys-crisps-12x200g-salted.jpg",
+    alt: "Happys Crisps 12x200G (Salted) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101747,
+    productId: 101747,
+    filename: "sw-happys-crisps-50g-cheese-onion.jpg",
+    path: "/images/products/sw-happys-crisps-50g-cheese-onion.jpg",
+    alt: "Happys Crisps 50G (Cheese & Onion) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101748,
+    productId: 101748,
+    filename: "sw-happys-crisps-50g-salt-vinegar.jpg",
+    path: "/images/products/sw-happys-crisps-50g-salt-vinegar.jpg",
+    alt: "Happys Crisps 50G (Salt & Vinegar) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101749,
+    productId: 101749,
+    filename: "sw-happys-crisps-50g-salted.jpg",
+    path: "/images/products/sw-happys-crisps-50g-salted.jpg",
+    alt: "Happys Crisps 50G (Salted) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101750,
+    productId: 101750,
+    filename: "sw-happys-crisps-50g-tomato.jpg",
+    path: "/images/products/sw-happys-crisps-50g-tomato.jpg",
+    alt: "Happys Crisps 50G (Tomato) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101751,
+    productId: 101751,
+    filename: "sw-harpic-original-36x100ml.jpg",
+    path: "/images/products/sw-harpic-original-36x100ml.jpg",
+    alt: "Harpic Original 36x100ML Carton",
+    isPrimary: true
+  },
+  {
+    id: 101752,
+    productId: 101752,
+    filename: "sw-harpic-power-plus-12x1l.jpg",
+    path: "/images/products/sw-harpic-power-plus-12x1l.jpg",
+    alt: "Harpic Power Plus 12x1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 101753,
+    productId: 101753,
+    filename: "sw-harpic-power-plus-36x200ml.jpg",
+    path: "/images/products/sw-harpic-power-plus-36x200ml.jpg",
+    alt: "Harpic Power Plus 36x200ML Dozen",
+    isPrimary: true
+  },
+  {
+    id: 101754,
+    productId: 101754,
+    filename: "sw-harpic-power-plus-500ml.jpg",
+    path: "/images/products/sw-harpic-power-plus-500ml.jpg",
+    alt: "Harpic Power Plus 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101755,
+    productId: 101755,
+    filename: "sw-harpic-toilet-block-3s-blue.jpg",
+    path: "/images/products/sw-harpic-toilet-block-3s-blue.jpg",
+    alt: "Harpic Toilet Block 3'S (Blue) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101756,
+    productId: 101756,
+    filename: "sw-harpic-toilet-block-3s-lavender.jpg",
+    path: "/images/products/sw-harpic-toilet-block-3s-lavender.jpg",
+    alt: "Harpic Toilet Block 3'S (Lavender) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101757,
+    productId: 101757,
+    filename: "sw-hassabu-aaa-pk-386-parboiled-rice-25kg.jpg",
+    path: "/images/products/sw-hassabu-aaa-pk-386-parboiled-rice-25kg.jpg",
+    alt: "Hassabu AAA PK 386 Parboiled Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101758,
+    productId: 101758,
+    filename: "sw-hassabu-pk-386-white-rice-25kg.jpg",
+    path: "/images/products/sw-hassabu-pk-386-white-rice-25kg.jpg",
+    alt: "Hassabu PK 386 White Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101759,
+    productId: 101759,
+    filename: "sw-heinz-baked-beans-415g.jpg",
+    path: "/images/products/sw-heinz-baked-beans-415g.jpg",
+    alt: "Heinz Baked Beans 415G Tin",
+    isPrimary: true
+  },
+  {
+    id: 101760,
+    productId: 101760,
+    filename: "sw-heinz-creamy-classic-mayonnaise-430ml.jpg",
+    path: "/images/products/sw-heinz-creamy-classic-mayonnaise-430ml.jpg",
+    alt: "Heinz Creamy Classic Mayonnaise 430ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101761,
+    productId: 101761,
+    filename: "sw-heinz-tomato-ketchup-295ml.jpg",
+    path: "/images/products/sw-heinz-tomato-ketchup-295ml.jpg",
+    alt: "Heinz Tomato Ketchup 295ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101762,
+    productId: 101762,
+    filename: "sw-heinz-tomato-ketchup-570ml.jpg",
+    path: "/images/products/sw-heinz-tomato-ketchup-570ml.jpg",
+    alt: "Heinz Tomato Ketchup 570ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101763,
+    productId: 101763,
+    filename: "sw-heinz-tomato-ketchup-910ml.jpg",
+    path: "/images/products/sw-heinz-tomato-ketchup-910ml.jpg",
+    alt: "Heinz Tomato Ketchup 910ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101764,
+    productId: 101764,
+    filename: "sw-heinz-yellow-mustard-245g.jpg",
+    path: "/images/products/sw-heinz-yellow-mustard-245g.jpg",
+    alt: "Heinz Yellow Mustard 245G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101765,
+    productId: 101765,
+    filename: "sw-hibisco-mango-juice-500ml.jpg",
+    path: "/images/products/sw-hibisco-mango-juice-500ml.jpg",
+    alt: "Hibisco Mango Juice 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101766,
+    productId: 101766,
+    filename: "sw-hibisco-tropical-500ml.jpg",
+    path: "/images/products/sw-hibisco-tropical-500ml.jpg",
+    alt: "Hibisco Tropical 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101767,
+    productId: 101767,
+    filename: "sw-highlands-cocopine-1l.jpg",
+    path: "/images/products/sw-highlands-cocopine-1l.jpg",
+    alt: "Highlands Cocopine 1L Case",
+    isPrimary: true
+  },
+  {
+    id: 101768,
+    productId: 101768,
+    filename: "sw-highlands-cocopine-2l.jpg",
+    path: "/images/products/sw-highlands-cocopine-2l.jpg",
+    alt: "Highlands Cocopine 2L Case",
+    isPrimary: true
+  },
+  {
+    id: 101769,
+    productId: 101769,
+    filename: "sw-highlands-lemon-1ltr.jpg",
+    path: "/images/products/sw-highlands-lemon-1ltr.jpg",
+    alt: "Highlands Lemon 1LTR Case",
+    isPrimary: true
+  },
+  {
+    id: 101770,
+    productId: 101770,
+    filename: "sw-highlands-lemon-6x2l.jpg",
+    path: "/images/products/sw-highlands-lemon-6x2l.jpg",
+    alt: "Highlands Lemon 6x2L Case",
+    isPrimary: true
+  },
+  {
+    id: 101771,
+    productId: 101771,
+    filename: "sw-highlands-mango-3ltr.jpg",
+    path: "/images/products/sw-highlands-mango-3ltr.jpg",
+    alt: "Highlands Mango 3LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 101772,
+    productId: 101772,
+    filename: "sw-highlands-mango-6x2l.jpg",
+    path: "/images/products/sw-highlands-mango-6x2l.jpg",
+    alt: "Highlands Mango 6x2L Case",
+    isPrimary: true
+  },
+  {
+    id: 101773,
+    productId: 101773,
+    filename: "sw-highlands-orange-1ltr.jpg",
+    path: "/images/products/sw-highlands-orange-1ltr.jpg",
+    alt: "Highlands Orange 1LTR Case",
+    isPrimary: true
+  },
+  {
+    id: 101774,
+    productId: 101774,
+    filename: "sw-highlands-orange-3ltr.jpg",
+    path: "/images/products/sw-highlands-orange-3ltr.jpg",
+    alt: "Highlands Orange 3LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 101775,
+    productId: 101775,
+    filename: "sw-highlands-orange-5ltr.jpg",
+    path: "/images/products/sw-highlands-orange-5ltr.jpg",
+    alt: "Highlands Orange 5LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 101776,
+    productId: 101776,
+    filename: "sw-highlands-orange-6x2l.jpg",
+    path: "/images/products/sw-highlands-orange-6x2l.jpg",
+    alt: "Highlands Orange 6x2L Case",
+    isPrimary: true
+  },
+  {
+    id: 101777,
+    productId: 101777,
+    filename: "sw-highlands-pineapple-1ltr.jpg",
+    path: "/images/products/sw-highlands-pineapple-1ltr.jpg",
+    alt: "Highlands Pineapple 1LTR Case",
+    isPrimary: true
+  },
+  {
+    id: 101778,
+    productId: 101778,
+    filename: "sw-highlands-pineapple-2ltr.jpg",
+    path: "/images/products/sw-highlands-pineapple-2ltr.jpg",
+    alt: "Highlands Pineapple 2LTR Case",
+    isPrimary: true
+  },
+  {
+    id: 101779,
+    productId: 101779,
+    filename: "sw-highlands-pineapple-3ltr.jpg",
+    path: "/images/products/sw-highlands-pineapple-3ltr.jpg",
+    alt: "Highlands Pineapple 3LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 101780,
+    productId: 101780,
+    filename: "sw-highlands-pineapple-5ltr.jpg",
+    path: "/images/products/sw-highlands-pineapple-5ltr.jpg",
+    alt: "Highlands Pineapple 5LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 101781,
+    productId: 101781,
+    filename: "sw-highlands-tropical-3ltr.jpg",
+    path: "/images/products/sw-highlands-tropical-3ltr.jpg",
+    alt: "Highlands Tropical 3LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 101782,
+    productId: 101782,
+    filename: "sw-highlands-tropical-5ltr.jpg",
+    path: "/images/products/sw-highlands-tropical-5ltr.jpg",
+    alt: "Highlands Tropical 5LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 101783,
+    productId: 101783,
+    filename: "sw-highlands-water-20l.jpg",
+    path: "/images/products/sw-highlands-water-20l.jpg",
+    alt: "Highlands Water 20L Jerican",
+    isPrimary: true
+  },
+  {
+    id: 101784,
+    productId: 101784,
+    filename: "sw-himalaya-baby-shampoo-24x200ml.jpg",
+    path: "/images/products/sw-himalaya-baby-shampoo-24x200ml.jpg",
+    alt: "Himalaya Baby Shampoo 24x200ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101785,
+    productId: 101785,
+    filename: "sw-himalaya-falcon-basmati-rice-20kg-blue-bag.jpg",
+    path: "/images/products/sw-himalaya-falcon-basmati-rice-20kg-blue-bag.jpg",
+    alt: "Himalaya Falcon Basmati Rice 20KG (Blue Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 101786,
+    productId: 101786,
+    filename: "sw-himalaya-falcon-parboiled-rice-20kg-yellow-bag.jpg",
+    path: "/images/products/sw-himalaya-falcon-parboiled-rice-20kg-yellow-bag.jpg",
+    alt: "Himalaya Falcon Parboiled Rice 20KG (Yellow Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 101787,
+    productId: 101787,
+    filename: "sw-himalayan-basmati-rice-10x2kg.jpg",
+    path: "/images/products/sw-himalayan-basmati-rice-10x2kg.jpg",
+    alt: "Himalayan Basmati Rice 10x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101788,
+    productId: 101788,
+    filename: "sw-himalayan-basmati-rice-20x1kg.jpg",
+    path: "/images/products/sw-himalayan-basmati-rice-20x1kg.jpg",
+    alt: "Himalayan Basmati Rice 20x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101789,
+    productId: 101789,
+    filename: "sw-himalayan-basmati-rice-5kg.jpg",
+    path: "/images/products/sw-himalayan-basmati-rice-5kg.jpg",
+    alt: "Himalayan Basmati Rice 5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101790,
+    productId: 101790,
+    filename: "sw-hobby-body-lotion-400ml.jpg",
+    path: "/images/products/sw-hobby-body-lotion-400ml.jpg",
+    alt: "Hobby Body Lotion 400ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101791,
+    productId: 101791,
+    filename: "sw-hobby-body-wash-300ml.jpg",
+    path: "/images/products/sw-hobby-body-wash-300ml.jpg",
+    alt: "Hobby Body Wash 300ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101792,
+    productId: 101792,
+    filename: "sw-hobby-body-wash-500ml.jpg",
+    path: "/images/products/sw-hobby-body-wash-500ml.jpg",
+    alt: "Hobby Body Wash 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101793,
+    productId: 101793,
+    filename: "sw-hodari-maize-meal-2kg.jpg",
+    path: "/images/products/sw-hodari-maize-meal-2kg.jpg",
+    alt: "Hodari Maize Meal 2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 101794,
+    productId: 101794,
+    filename: "sw-honeycomb-kenyan-chevda-12x75g-fruit-n-nut.jpg",
+    path: "/images/products/sw-honeycomb-kenyan-chevda-12x75g-fruit-n-nut.jpg",
+    alt: "Honeycomb Kenyan Chevda 12x75G (Fruit N Nut) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101795,
+    productId: 101795,
+    filename: "sw-honeycomb-kenyan-chevda-12x75g-hot.jpg",
+    path: "/images/products/sw-honeycomb-kenyan-chevda-12x75g-hot.jpg",
+    alt: "Honeycomb Kenyan Chevda 12x75G (Hot) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101796,
+    productId: 101796,
+    filename: "sw-honeycomb-kenyan-chevda-12x75g-mild.jpg",
+    path: "/images/products/sw-honeycomb-kenyan-chevda-12x75g-mild.jpg",
+    alt: "Honeycomb Kenyan Chevda 12x75G (Mild) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101797,
+    productId: 101797,
+    filename: "sw-honeycomb-kenyan-chevda-12x75g-original.jpg",
+    path: "/images/products/sw-honeycomb-kenyan-chevda-12x75g-original.jpg",
+    alt: "Honeycomb Kenyan Chevda 12x75G (Original) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101798,
+    productId: 101798,
+    filename: "sw-honeycomb-kenyan-chevda-150g-hot.jpg",
+    path: "/images/products/sw-honeycomb-kenyan-chevda-150g-hot.jpg",
+    alt: "Honeycomb Kenyan Chevda 150G (Hot) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101799,
+    productId: 101799,
+    filename: "sw-honeycomb-kenyan-chevda-150g-mild.jpg",
+    path: "/images/products/sw-honeycomb-kenyan-chevda-150g-mild.jpg",
+    alt: "Honeycomb Kenyan Chevda 150G (Mild) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101800,
+    productId: 101800,
+    filename: "sw-honeycomb-kenyan-chevda-150g-original.jpg",
+    path: "/images/products/sw-honeycomb-kenyan-chevda-150g-original.jpg",
+    alt: "Honeycomb Kenyan Chevda 150G (Original) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101801,
+    productId: 101801,
+    filename: "sw-honeycomb-oat-coconut-cookies-200g.jpg",
+    path: "/images/products/sw-honeycomb-oat-coconut-cookies-200g.jpg",
+    alt: "Honeycomb Oat & Coconut Cookies 200G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101802,
+    productId: 101802,
+    filename: "sw-honeycomb-original-biscuits-200g.jpg",
+    path: "/images/products/sw-honeycomb-original-biscuits-200g.jpg",
+    alt: "Honeycomb Original Biscuits 200G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101803,
+    productId: 101803,
+    filename: "sw-hostess-premium-maize-flour-2kg.jpg",
+    path: "/images/products/sw-hostess-premium-maize-flour-2kg.jpg",
+    alt: "Hostess Premium Maize Flour 2KG 1/2bale",
+    isPrimary: true
+  },
+  {
+    id: 101804,
+    productId: 101804,
+    filename: "sw-huggies-baby-wipes-56s.jpg",
+    path: "/images/products/sw-huggies-baby-wipes-56s.jpg",
+    alt: "Huggies Baby Wipes 56'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 101805,
+    productId: 101805,
+    filename: "sw-huggies-baby-wipes-56s-pure.jpg",
+    path: "/images/products/sw-huggies-baby-wipes-56s-pure.jpg",
+    alt: "Huggies Baby Wipes 56'S (Pure) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101806,
+    productId: 101806,
+    filename: "sw-huggies-dry-comfort-diapers-size-2-10s.jpg",
+    path: "/images/products/sw-huggies-dry-comfort-diapers-size-2-10s.jpg",
+    alt: "Huggies Dry Comfort Diapers Size 2 (10'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101807,
+    productId: 101807,
+    filename: "sw-huggies-dry-comfort-diapers-size-2-38s.jpg",
+    path: "/images/products/sw-huggies-dry-comfort-diapers-size-2-38s.jpg",
+    alt: "Huggies Dry Comfort Diapers Size 2 (38'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101808,
+    productId: 101808,
+    filename: "sw-huggies-dry-comfort-diapers-size-2-68s.jpg",
+    path: "/images/products/sw-huggies-dry-comfort-diapers-size-2-68s.jpg",
+    alt: "Huggies Dry Comfort Diapers Size 2 (68'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101809,
+    productId: 101809,
+    filename: "sw-huggies-dry-comfort-diapers-size-3-36s.jpg",
+    path: "/images/products/sw-huggies-dry-comfort-diapers-size-3-36s.jpg",
+    alt: "Huggies Dry Comfort Diapers Size 3 (36'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101810,
+    productId: 101810,
+    filename: "sw-huggies-dry-comfort-diapers-size-3-64s.jpg",
+    path: "/images/products/sw-huggies-dry-comfort-diapers-size-3-64s.jpg",
+    alt: "Huggies Dry Comfort Diapers Size 3 (64'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101811,
+    productId: 101811,
+    filename: "sw-huggies-dry-comfort-diapers-size-4-34s.jpg",
+    path: "/images/products/sw-huggies-dry-comfort-diapers-size-4-34s.jpg",
+    alt: "Huggies Dry Comfort Diapers Size 4 (34'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101812,
+    productId: 101812,
+    filename: "sw-huggies-dry-comfort-diapers-size-4-40s.jpg",
+    path: "/images/products/sw-huggies-dry-comfort-diapers-size-4-40s.jpg",
+    alt: "Huggies Dry Comfort Diapers Size 4 (40'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101813,
+    productId: 101813,
+    filename: "sw-huggies-dry-comfort-diapers-size-4-60s.jpg",
+    path: "/images/products/sw-huggies-dry-comfort-diapers-size-4-60s.jpg",
+    alt: "Huggies Dry Comfort Diapers Size 4 (60'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101814,
+    productId: 101814,
+    filename: "sw-huggies-dry-comfort-diapers-size-5-30s.jpg",
+    path: "/images/products/sw-huggies-dry-comfort-diapers-size-5-30s.jpg",
+    alt: "Huggies Dry Comfort Diapers Size 5 (30'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101815,
+    productId: 101815,
+    filename: "sw-huggies-dry-comfort-diapers-size-5-56s.jpg",
+    path: "/images/products/sw-huggies-dry-comfort-diapers-size-5-56s.jpg",
+    alt: "Huggies Dry Comfort Diapers Size 5 (56'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101816,
+    productId: 101816,
+    filename: "sw-huggies-extra-care-diapers-size-3-42s.jpg",
+    path: "/images/products/sw-huggies-extra-care-diapers-size-3-42s.jpg",
+    alt: "Huggies Extra Care Diapers Size 3 (42'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101817,
+    productId: 101817,
+    filename: "sw-huggies-extra-care-diapers-size-4-40s.jpg",
+    path: "/images/products/sw-huggies-extra-care-diapers-size-4-40s.jpg",
+    alt: "Huggies Extra Care Diapers Size 4 (40'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101818,
+    productId: 101818,
+    filename: "sw-huggies-pants-size-4-28s.jpg",
+    path: "/images/products/sw-huggies-pants-size-4-28s.jpg",
+    alt: "Huggies Pants Size 4 (28'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101819,
+    productId: 101819,
+    filename: "sw-huggies-pants-size-4-32s.jpg",
+    path: "/images/products/sw-huggies-pants-size-4-32s.jpg",
+    alt: "Huggies Pants Size 4 (32'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101820,
+    productId: 101820,
+    filename: "sw-huggies-pants-size-5-26s.jpg",
+    path: "/images/products/sw-huggies-pants-size-5-26s.jpg",
+    alt: "Huggies Pants Size 5 (26'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101821,
+    productId: 101821,
+    filename: "sw-huggies-pants-size-5-28s.jpg",
+    path: "/images/products/sw-huggies-pants-size-5-28s.jpg",
+    alt: "Huggies Pants Size 5 (28'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101822,
+    productId: 101822,
+    filename: "sw-huggies-pants-size-5-44s.jpg",
+    path: "/images/products/sw-huggies-pants-size-5-44s.jpg",
+    alt: "Huggies Pants Size 5 (44'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101823,
+    productId: 101823,
+    filename: "sw-huggies-pants-size-6-38s.jpg",
+    path: "/images/products/sw-huggies-pants-size-6-38s.jpg",
+    alt: "Huggies Pants Size 6 (38'S) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101824,
+    productId: 101824,
+    filename: "sw-hunny-bunny-diapers-large-40pcs-hc.jpg",
+    path: "/images/products/sw-hunny-bunny-diapers-large-40pcs-hc.jpg",
+    alt: "Hunny Bunny Diapers Large 40PCS (HC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101825,
+    productId: 101825,
+    filename: "sw-hunny-bunny-diapers-medium-44pcs-hc.jpg",
+    path: "/images/products/sw-hunny-bunny-diapers-medium-44pcs-hc.jpg",
+    alt: "Hunny Bunny Diapers Medium 44PCS (HC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101826,
+    productId: 101826,
+    filename: "sw-hunny-bunny-diapers-xlarge-36pcs-hc.jpg",
+    path: "/images/products/sw-hunny-bunny-diapers-xlarge-36pcs-hc.jpg",
+    alt: "Hunny Bunny Diapers XLarge 36PCS (HC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101827,
+    productId: 101827,
+    filename: "sw-hurricane-toilet-cleaner-12x1l-ocean-fresh.jpg",
+    path: "/images/products/sw-hurricane-toilet-cleaner-12x1l-ocean-fresh.jpg",
+    alt: "Hurricane Toilet Cleaner 12x1L (Ocean Fresh) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101828,
+    productId: 101828,
+    filename: "sw-hurricane-toilet-cleaner-12x1l-super-power.jpg",
+    path: "/images/products/sw-hurricane-toilet-cleaner-12x1l-super-power.jpg",
+    alt: "Hurricane Toilet Cleaner 12x1L (Super Power) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101829,
+    productId: 101829,
+    filename: "sw-hurricane-toilet-cleaner-500ml-value-pack.jpg",
+    path: "/images/products/sw-hurricane-toilet-cleaner-500ml-value-pack.jpg",
+    alt: "Hurricane Toilet Cleaner 500ML (Value Pack) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101830,
+    productId: 101830,
+    filename: "sw-ice-cool-mint-500g-arctic-mint.jpg",
+    path: "/images/products/sw-ice-cool-mint-500g-arctic-mint.jpg",
+    alt: "Ice Cool Mint 500G (Arctic Mint) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101831,
+    productId: 101831,
+    filename: "sw-ice-cool-mint-500g-midnight-mint.jpg",
+    path: "/images/products/sw-ice-cool-mint-500g-midnight-mint.jpg",
+    alt: "Ice Cool Mint 500G (Midnight Mint) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101832,
+    productId: 101832,
+    filename: "sw-ice-cool-mint-500g-mountain-mint.jpg",
+    path: "/images/products/sw-ice-cool-mint-500g-mountain-mint.jpg",
+    alt: "Ice Cool Mint 500G (Mountain Mint) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101833,
+    productId: 101833,
+    filename: "sw-ideal-castor-oil-36x200ml.jpg",
+    path: "/images/products/sw-ideal-castor-oil-36x200ml.jpg",
+    alt: "Ideal Castor Oil 36x200ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101834,
+    productId: 101834,
+    filename: "sw-ideal-glycerine-oil-36x200ml.jpg",
+    path: "/images/products/sw-ideal-glycerine-oil-36x200ml.jpg",
+    alt: "Ideal Glycerine Oil 36x200ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101835,
+    productId: 101835,
+    filename: "sw-ideal-olive-oil-36x200ml.jpg",
+    path: "/images/products/sw-ideal-olive-oil-36x200ml.jpg",
+    alt: "Ideal Olive Oil 36x200ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101836,
+    productId: 101836,
+    filename: "sw-imara-sauce-400g.jpg",
+    path: "/images/products/sw-imara-sauce-400g.jpg",
+    alt: "Imara Sauce 400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101837,
+    productId: 101837,
+    filename: "sw-imara-sauce-5ltrs.jpg",
+    path: "/images/products/sw-imara-sauce-5ltrs.jpg",
+    alt: "Imara Sauce 5LTRS Jerican",
+    isPrimary: true
+  },
+  {
+    id: 101838,
+    productId: 101838,
+    filename: "sw-imperial-leather-soap-150g.jpg",
+    path: "/images/products/sw-imperial-leather-soap-150g.jpg",
+    alt: "Imperial Leather Soap 150G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101839,
+    productId: 101839,
+    filename: "sw-imperial-leather-soap-48x75g.jpg",
+    path: "/images/products/sw-imperial-leather-soap-48x75g.jpg",
+    alt: "Imperial Leather Soap 48x75G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101840,
+    productId: 101840,
+    filename: "sw-indomie-beef-5in1-70g-brown-box.jpg",
+    path: "/images/products/sw-indomie-beef-5in1-70g-brown-box.jpg",
+    alt: "Indomie Beef (5 in 1) 70G (Brown Box) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101841,
+    productId: 101841,
+    filename: "sw-indomie-beef-120g.jpg",
+    path: "/images/products/sw-indomie-beef-120g.jpg",
+    alt: "Indomie Beef 120G Carton",
+    isPrimary: true
+  },
+  {
+    id: 101842,
+    productId: 101842,
+    filename: "sw-indomie-chicken-5in1-70g.jpg",
+    path: "/images/products/sw-indomie-chicken-5in1-70g.jpg",
+    alt: "Indomie Chicken (5 in 1) 70GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 101843,
+    productId: 101843,
+    filename: "sw-indomie-chicken-jumbo-120g.jpg",
+    path: "/images/products/sw-indomie-chicken-jumbo-120g.jpg",
+    alt: "Indomie Chicken Jumbo 120G Carton",
+    isPrimary: true
+  },
+  {
+    id: 101844,
+    productId: 101844,
+    filename: "sw-indus-1121-basmati-rice-20kg.jpg",
+    path: "/images/products/sw-indus-1121-basmati-rice-20kg.jpg",
+    alt: "Indus 1121 Basmati Rice 20KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101845,
+    productId: 101845,
+    filename: "sw-indus-basmati-parboiled-rice-25kg.jpg",
+    path: "/images/products/sw-indus-basmati-parboiled-rice-25kg.jpg",
+    alt: "Indus Basmati Parboiled Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101846,
+    productId: 101846,
+    filename: "sw-indus-basmati-sella-rice-25kg-jute-bag.jpg",
+    path: "/images/products/sw-indus-basmati-sella-rice-25kg-jute-bag.jpg",
+    alt: "Indus Basmati Sella Rice 25KG (Jute Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 101847,
+    productId: 101847,
+    filename: "sw-indus-parboiled-biryani-rice-25kg.jpg",
+    path: "/images/products/sw-indus-parboiled-biryani-rice-25kg.jpg",
+    alt: "Indus Parboiled Biryani Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101848,
+    productId: 101848,
+    filename: "sw-indus-pk-386-white-rice-25kg-blue-bag.jpg",
+    path: "/images/products/sw-indus-pk-386-white-rice-25kg-blue-bag.jpg",
+    alt: "Indus PK-386 White Rice 25KG (Blue Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 101849,
+    productId: 101849,
+    filename: "sw-inspecta-bombo-lollipop-16x50pcs-assorted.jpg",
+    path: "/images/products/sw-inspecta-bombo-lollipop-16x50pcs-assorted.jpg",
+    alt: "Inspecta Bombo Lollipop 16x50PCS (Assorted) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101850,
+    productId: 101850,
+    filename: "sw-inspecta-bombo-lollipop-50pcs-strawberry.jpg",
+    path: "/images/products/sw-inspecta-bombo-lollipop-50pcs-strawberry.jpg",
+    alt: "Inspecta Bombo Lollipop 50PCS (Strawberry) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101851,
+    productId: 101851,
+    filename: "sw-ixora-shower-gel-12x750ml-peach.jpg",
+    path: "/images/products/sw-ixora-shower-gel-12x750ml-peach.jpg",
+    alt: "Ixora Shower Gel 12x750ML (Peach) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101852,
+    productId: 101852,
+    filename: "sw-ixora-shower-gel-12x750ml-pineapple-mango.jpg",
+    path: "/images/products/sw-ixora-shower-gel-12x750ml-pineapple-mango.jpg",
+    alt: "Ixora Shower Gel 12x750ML (Pineapple Mango) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101853,
+    productId: 101853,
+    filename: "sw-jamaa-cream-small-12x800g.jpg",
+    path: "/images/products/sw-jamaa-cream-small-12x800g.jpg",
+    alt: "Jamaa (Cream Small) 12x800G Carton",
+    isPrimary: true
+  },
+  {
+    id: 101854,
+    productId: 101854,
+    filename: "sw-jamaa-white-small-12x800g.jpg",
+    path: "/images/products/sw-jamaa-white-small-12x800g.jpg",
+    alt: "Jamaa (White Small) 12x800G Carton",
+    isPrimary: true
+  },
+  {
+    id: 101855,
+    productId: 101855,
+    filename: "sw-jamaa-10x1kg-white.jpg",
+    path: "/images/products/sw-jamaa-10x1kg-white.jpg",
+    alt: "Jamaa 10x1KG (White) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101856,
+    productId: 101856,
+    filename: "sw-jamaa-cream-1kg-piece.jpg",
+    path: "/images/products/sw-jamaa-cream-1kg-piece.jpg",
+    alt: "Jamaa Cream 1KG (Piece) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101857,
+    productId: 101857,
+    filename: "sw-jamaa-cream-10x1kg.jpg",
+    path: "/images/products/sw-jamaa-cream-10x1kg.jpg",
+    alt: "Jamaa Cream 10x1KG Outer",
+    isPrimary: true
+  },
+  {
+    id: 101858,
+    productId: 101858,
+    filename: "sw-jamaa-cream-25x800g-big.jpg",
+    path: "/images/products/sw-jamaa-cream-25x800g-big.jpg",
+    alt: "Jamaa Cream 25x800G (Big) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101859,
+    productId: 101859,
+    filename: "sw-jamaa-luxury-ivory-15g.jpg",
+    path: "/images/products/sw-jamaa-luxury-ivory-15g.jpg",
+    alt: "Jamaa Luxury Ivory 15G Carton",
+    isPrimary: true
+  },
+  {
+    id: 101860,
+    productId: 101860,
+    filename: "sw-jamaa-t-shirt.jpg",
+    path: "/images/products/sw-jamaa-t-shirt.jpg",
+    alt: "Jamaa T-Shirt Piece",
+    isPrimary: true
+  },
+  {
+    id: 101861,
+    productId: 101861,
+    filename: "sw-jamaa-white-25x800g-big.jpg",
+    path: "/images/products/sw-jamaa-white-25x800g-big.jpg",
+    alt: "Jamaa White 25x800G (Big) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101862,
+    productId: 101862,
+    filename: "sw-jamaa-luxury-ivory-125g.jpg",
+    path: "/images/products/sw-jamaa-luxury-ivory-125g.jpg",
+    alt: "Jamaa Luxury Ivory 125G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 101863,
+    productId: 101863,
+    filename: "sw-jamaa-luxury-ivory-18x250g.jpg",
+    path: "/images/products/sw-jamaa-luxury-ivory-18x250g.jpg",
+    alt: "Jamaa Luxury Ivory 18x250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101864,
+    productId: 101864,
+    filename: "sw-jambo-basmati-rice-4x5kg.jpg",
+    path: "/images/products/sw-jambo-basmati-rice-4x5kg.jpg",
+    alt: "Jambo Basmati Rice 4x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101865,
+    productId: 101865,
+    filename: "sw-jambo-kamande-24x1kg.jpg",
+    path: "/images/products/sw-jambo-kamande-24x1kg.jpg",
+    alt: "Jambo Kamande 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101866,
+    productId: 101866,
+    filename: "sw-jambo-kamande-48x500g.jpg",
+    path: "/images/products/sw-jambo-kamande-48x500g.jpg",
+    alt: "Jambo Kamande 48x500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 101867,
+    productId: 101867,
+    filename: "sw-jambo-kamande-96x250g.jpg",
+    path: "/images/products/sw-jambo-kamande-96x250g.jpg",
+    alt: "Jambo Kamande 96x250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101868,
+    productId: 101868,
+    filename: "sw-jambo-long-grain-rice-4x5kg.jpg",
+    path: "/images/products/sw-jambo-long-grain-rice-4x5kg.jpg",
+    alt: "Jambo Long Grain Rice 4x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101869,
+    productId: 101869,
+    filename: "sw-jambo-ndengu-24x1kg.jpg",
+    path: "/images/products/sw-jambo-ndengu-24x1kg.jpg",
+    alt: "Jambo Ndengu 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101870,
+    productId: 101870,
+    filename: "sw-jambo-ndengu-24x500g.jpg",
+    path: "/images/products/sw-jambo-ndengu-24x500g.jpg",
+    alt: "Jambo Ndengu 24x500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 101871,
+    productId: 101871,
+    filename: "sw-jambo-pishori-rice-4x5kg.jpg",
+    path: "/images/products/sw-jambo-pishori-rice-4x5kg.jpg",
+    alt: "Jambo Pishori Rice 4x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101872,
+    productId: 101872,
+    filename: "sw-jambo-popcorn-48x500g.jpg",
+    path: "/images/products/sw-jambo-popcorn-48x500g.jpg",
+    alt: "Jambo Popcorn 48x500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 101873,
+    productId: 101873,
+    filename: "sw-jambo-sugar-4x5kg.jpg",
+    path: "/images/products/sw-jambo-sugar-4x5kg.jpg",
+    alt: "Jambo Sugar 4x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101874,
+    productId: 101874,
+    filename: "sw-jambo-yellow-beans-24x1kg.jpg",
+    path: "/images/products/sw-jambo-yellow-beans-24x1kg.jpg",
+    alt: "Jambo Yellow Beans 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101875,
+    productId: 101875,
+    filename: "sw-jambo-yellow-beans-48x500g.jpg",
+    path: "/images/products/sw-jambo-yellow-beans-48x500g.jpg",
+    alt: "Jambo Yellow Beans 48x500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 101876,
+    productId: 101876,
+    filename: "sw-java-house-cookies-choco-chip-300g.jpg",
+    path: "/images/products/sw-java-house-cookies-choco-chip-300g.jpg",
+    alt: "Java House Cookies (Choco Chip) 300G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101877,
+    productId: 101877,
+    filename: "sw-java-house-cookies-choco-chip-90g.jpg",
+    path: "/images/products/sw-java-house-cookies-choco-chip-90g.jpg",
+    alt: "Java House Cookies (Choco Chip) 90G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101878,
+    productId: 101878,
+    filename: "sw-java-house-cookies-macadamia-nut-300g.jpg",
+    path: "/images/products/sw-java-house-cookies-macadamia-nut-300g.jpg",
+    alt: "Java House Cookies (Macadamia Nut) 300G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101879,
+    productId: 101879,
+    filename: "sw-java-house-cookies-macadamia-nut-90g.jpg",
+    path: "/images/products/sw-java-house-cookies-macadamia-nut-90g.jpg",
+    alt: "Java House Cookies (Macadamia Nut) 90G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101880,
+    productId: 101880,
+    filename: "sw-java-house-cookies-oat-raisin-300g.jpg",
+    path: "/images/products/sw-java-house-cookies-oat-raisin-300g.jpg",
+    alt: "Java House Cookies (Oat & Raisin) 300G Packet",
+    isPrimary: true
+  },
+  {
+    id: 101881,
+    productId: 101881,
+    filename: "sw-java-house-cookies-oat-raisin-90g.jpg",
+    path: "/images/products/sw-java-house-cookies-oat-raisin-90g.jpg",
+    alt: "Java House Cookies (Oat & Raisin) 90G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101882,
+    productId: 101882,
+    filename: "sw-java-house-gold-label-black-tea-350g.jpg",
+    path: "/images/products/sw-java-house-gold-label-black-tea-350g.jpg",
+    alt: "Java House Gold Label Black Tea 350G Packet",
+    isPrimary: true
+  },
+  {
+    id: 101883,
+    productId: 101883,
+    filename: "sw-java-house-granola-400g.jpg",
+    path: "/images/products/sw-java-house-granola-400g.jpg",
+    alt: "Java House Granola 400G Packet",
+    isPrimary: true
+  },
+  {
+    id: 101884,
+    productId: 101884,
+    filename: "sw-java-house-granola-70g.jpg",
+    path: "/images/products/sw-java-house-granola-70g.jpg",
+    alt: "Java House Granola 70G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101885,
+    productId: 101885,
+    filename: "sw-java-house-ground-coffee-arabica-kenya-blend-250g.jpg",
+    path: "/images/products/sw-java-house-ground-coffee-arabica-kenya-blend-250g.jpg",
+    alt: "Java House Ground Coffee (Arabica Kenya Blend) 250G Packet",
+    isPrimary: true
+  },
+  {
+    id: 101886,
+    productId: 101886,
+    filename: "sw-java-house-ground-coffee-espresso-375g.jpg",
+    path: "/images/products/sw-java-house-ground-coffee-espresso-375g.jpg",
+    alt: "Java House Ground Coffee (Espresso) 375G Packet",
+    isPrimary: true
+  },
+  {
+    id: 101887,
+    productId: 101887,
+    filename: "sw-jejo-peanuts-60g-chilli.jpg",
+    path: "/images/products/sw-jejo-peanuts-60g-chilli.jpg",
+    alt: "Je&Jo Peanuts 60G (Chilli) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101888,
+    productId: 101888,
+    filename: "sw-jejo-peanuts-60g-cinnamon.jpg",
+    path: "/images/products/sw-jejo-peanuts-60g-cinnamon.jpg",
+    alt: "Je&Jo Peanuts 60G (Cinnamon) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101889,
+    productId: 101889,
+    filename: "sw-jejo-peanuts-60g-coconut.jpg",
+    path: "/images/products/sw-jejo-peanuts-60g-coconut.jpg",
+    alt: "Je&Jo Peanuts 60G (Coconut) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101890,
+    productId: 101890,
+    filename: "sw-jejo-peanuts-60g-sea-salt.jpg",
+    path: "/images/products/sw-jejo-peanuts-60g-sea-salt.jpg",
+    alt: "Je&Jo Peanuts 60G (Sea Salt) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101891,
+    productId: 101891,
+    filename: "sw-jejo-peanuts-60g-sesame.jpg",
+    path: "/images/products/sw-jejo-peanuts-60g-sesame.jpg",
+    alt: "Je&Jo Peanuts 60G (Sesame) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101892,
+    productId: 101892,
+    filename: "sw-jento-tissue-10pack-wrapped.jpg",
+    path: "/images/products/sw-jento-tissue-10pack-wrapped.jpg",
+    alt: "Jento Tissue 10Pack (Wrapped) Outer",
+    isPrimary: true
+  },
+  {
+    id: 101893,
+    productId: 101893,
+    filename: "sw-jiba-kitchen-towel-twin.jpg",
+    path: "/images/products/sw-jiba-kitchen-towel-twin.jpg",
+    alt: "Jiba Kitchen Towel Twin Packet",
+    isPrimary: true
+  },
+  {
+    id: 101894,
+    productId: 101894,
+    filename: "sw-jik-colours-70ml.jpg",
+    path: "/images/products/sw-jik-colours-70ml.jpg",
+    alt: "Jik Colours (Small) 70ML Dozen",
+    isPrimary: true
+  },
+  {
+    id: 101895,
+    productId: 101895,
+    filename: "sw-jik-colours-1.5l.jpg",
+    path: "/images/products/sw-jik-colours-1.5l.jpg",
+    alt: "Jik Colours 1.5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 101896,
+    productId: 101896,
+    filename: "sw-jik-colours-18x250ml.jpg",
+    path: "/images/products/sw-jik-colours-18x250ml.jpg",
+    alt: "Jik Colours 18x250ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101897,
+    productId: 101897,
+    filename: "sw-jik-colours-18x750ml.jpg",
+    path: "/images/products/sw-jik-colours-18x750ml.jpg",
+    alt: "Jik Colours 18x750ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101898,
+    productId: 101898,
+    filename: "sw-jik-colours-2.25l.jpg",
+    path: "/images/products/sw-jik-colours-2.25l.jpg",
+    alt: "Jik Colours 2.25L Jar",
+    isPrimary: true
+  },
+  {
+    id: 101899,
+    productId: 101899,
+    filename: "sw-jik-colours-5l.jpg",
+    path: "/images/products/sw-jik-colours-5l.jpg",
+    alt: "Jik Colours 5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 101900,
+    productId: 101900,
+    filename: "sw-jik-lemon-18x750ml.jpg",
+    path: "/images/products/sw-jik-lemon-18x750ml.jpg",
+    alt: "Jik Lemon 18x750ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101901,
+    productId: 101901,
+    filename: "sw-jik-regular-1.5l.jpg",
+    path: "/images/products/sw-jik-regular-1.5l.jpg",
+    alt: "Jik Regular 1.5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 101902,
+    productId: 101902,
+    filename: "sw-jik-regular-18x250ml.jpg",
+    path: "/images/products/sw-jik-regular-18x250ml.jpg",
+    alt: "Jik Regular 18x250ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101903,
+    productId: 101903,
+    filename: "sw-jik-regular-2.25l.jpg",
+    path: "/images/products/sw-jik-regular-2.25l.jpg",
+    alt: "Jik Regular 2.25L Piece",
+    isPrimary: true
+  },
+  {
+    id: 101904,
+    productId: 101904,
+    filename: "sw-jik-regular-4x5l.jpg",
+    path: "/images/products/sw-jik-regular-4x5l.jpg",
+    alt: "Jik Regular 4x5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 101905,
+    productId: 101905,
+    filename: "sw-jik-regular-70ml-small.jpg",
+    path: "/images/products/sw-jik-regular-70ml-small.jpg",
+    alt: "Jik Regular 70ML (Small) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 101906,
+    productId: 101906,
+    filename: "sw-jik-regular-750ml.jpg",
+    path: "/images/products/sw-jik-regular-750ml.jpg",
+    alt: "Jik Regular 750ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101907,
+    productId: 101907,
+    filename: "sw-jikoni-broom-60cm.jpg",
+    path: "/images/products/sw-jikoni-broom-60cm.jpg",
+    alt: "Jikoni Broom 60CM Piece",
+    isPrimary: true
+  },
+  {
+    id: 101908,
+    productId: 101908,
+    filename: "sw-jikoni-cotton-mop-200cm.jpg",
+    path: "/images/products/sw-jikoni-cotton-mop-200cm.jpg",
+    alt: "Jikoni Cotton Mop 200CM Piece",
+    isPrimary: true
+  },
+  {
+    id: 101909,
+    productId: 101909,
+    filename: "sw-jikoni-super-fragrant-rice-25kg.jpg",
+    path: "/images/products/sw-jikoni-super-fragrant-rice-25kg.jpg",
+    alt: "Jikoni Super Fragrant Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101910,
+    productId: 101910,
+    filename: "sw-jikoni-toilet-brush-with-holder.jpg",
+    path: "/images/products/sw-jikoni-toilet-brush-with-holder.jpg",
+    alt: "Jikoni Toilet Brush with Holder Piece",
+    isPrimary: true
+  },
+  {
+    id: 101911,
+    productId: 101911,
+    filename: "sw-jogoo-maize-flour-10kg.jpg",
+    path: "/images/products/sw-jogoo-maize-flour-10kg.jpg",
+    alt: "Jogoo Maize Flour 10KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101912,
+    productId: 101912,
+    filename: "sw-jogoo-maize-flour-2kg.jpg",
+    path: "/images/products/sw-jogoo-maize-flour-2kg.jpg",
+    alt: "Jogoo Maize Flour 2KG 1/2bale",
+    isPrimary: true
+  },
+  {
+    id: 101913,
+    productId: 101913,
+    filename: "sw-jogoo-maize-flour-5kg.jpg",
+    path: "/images/products/sw-jogoo-maize-flour-5kg.jpg",
+    alt: "Jogoo Maize Flour 5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101914,
+    productId: 101914,
+    filename: "sw-joli-basmati-sella-rice-25kg-brown-bag.jpg",
+    path: "/images/products/sw-joli-basmati-sella-rice-25kg-brown-bag.jpg",
+    alt: "Joli Basmati Sella Rice 25KG (Brown Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 101915,
+    productId: 101915,
+    filename: "sw-joli-marhaba-creamy-sella-rice-25kg.jpg",
+    path: "/images/products/sw-joli-marhaba-creamy-sella-rice-25kg.jpg",
+    alt: "Joli Marhaba Creamy Sella Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101916,
+    productId: 101916,
+    filename: "sw-joli-white-rice-25kg.jpg",
+    path: "/images/products/sw-joli-white-rice-25kg.jpg",
+    alt: "Joli White Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101917,
+    productId: 101917,
+    filename: "sw-joma-fry-20l.jpg",
+    path: "/images/products/sw-joma-fry-20l.jpg",
+    alt: "Joma Fry 20L Jerican",
+    isPrimary: true
+  },
+  {
+    id: 101918,
+    productId: 101918,
+    filename: "sw-jooz-drink-12x300ml-apple.jpg",
+    path: "/images/products/sw-jooz-drink-12x300ml-apple.jpg",
+    alt: "Jooz Drink 12x300ML (Apple) Case",
+    isPrimary: true
+  },
+  {
+    id: 101919,
+    productId: 101919,
+    filename: "sw-jooz-drink-12x300ml-mango-passion.jpg",
+    path: "/images/products/sw-jooz-drink-12x300ml-mango-passion.jpg",
+    alt: "Jooz Drink 12x300ML (Mango & Passion) Case",
+    isPrimary: true
+  },
+  {
+    id: 101920,
+    productId: 101920,
+    filename: "sw-jooz-drink-12x300ml-mango.jpg",
+    path: "/images/products/sw-jooz-drink-12x300ml-mango.jpg",
+    alt: "Jooz Drink 12x300ML (Mango) Case",
+    isPrimary: true
+  },
+  {
+    id: 101921,
+    productId: 101921,
+    filename: "sw-jooz-drink-12x300ml-orange.jpg",
+    path: "/images/products/sw-jooz-drink-12x300ml-orange.jpg",
+    alt: "Jooz Drink 12x300ML (Orange) Case",
+    isPrimary: true
+  },
+  {
+    id: 101922,
+    productId: 101922,
+    filename: "sw-jooz-drink-12x300ml-strawberry-guava.jpg",
+    path: "/images/products/sw-jooz-drink-12x300ml-strawberry-guava.jpg",
+    alt: "Jooz Drink 12x300ML (Strawberry Guava) Case",
+    isPrimary: true
+  },
+  {
+    id: 101923,
+    productId: 101923,
+    filename: "sw-jooz-drink-12x300ml-tropical.jpg",
+    path: "/images/products/sw-jooz-drink-12x300ml-tropical.jpg",
+    alt: "Jooz Drink 12x300ML (Tropical) Case",
+    isPrimary: true
+  },
+  {
+    id: 101924,
+    productId: 101924,
+    filename: "sw-jooz-drink-300ml-piece.jpg",
+    path: "/images/products/sw-jooz-drink-300ml-piece.jpg",
+    alt: "Jooz Drink 300ML (Piece) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101925,
+    productId: 101925,
+    filename: "sw-jooz-drink-6x1-5ltrs.jpg",
+    path: "/images/products/sw-jooz-drink-6x1-5ltrs.jpg",
+    alt: "Jooz Drink 6x1.5LTRS Case",
+    isPrimary: true
+  },
+  {
+    id: 101926,
+    productId: 101926,
+    filename: "sw-jooz-drink-6x1-5ltrs-mango-passion.jpg",
+    path: "/images/products/sw-jooz-drink-6x1-5ltrs-mango-passion.jpg",
+    alt: "Jooz Drink 6x1.5LTRS (Mango & Passion) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101927,
+    productId: 101927,
+    filename: "sw-jooz-drink-6x1-5ltrs-mango.jpg",
+    path: "/images/products/sw-jooz-drink-6x1-5ltrs-mango.jpg",
+    alt: "Jooz Drink 6x1.5LTRS (Mango) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101928,
+    productId: 101928,
+    filename: "sw-jooz-drink-6x1-5ltrs-orange.jpg",
+    path: "/images/products/sw-jooz-drink-6x1-5ltrs-orange.jpg",
+    alt: "Jooz Drink 6x1.5LTRS (Orange) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101929,
+    productId: 101929,
+    filename: "sw-josh-chocolate-cookies-65g.jpg",
+    path: "/images/products/sw-josh-chocolate-cookies-65g.jpg",
+    alt: "Josh (Chocolate) Cookies 65G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101930,
+    productId: 101930,
+    filename: "sw-josh-coconut-cookies-65g.jpg",
+    path: "/images/products/sw-josh-coconut-cookies-65g.jpg",
+    alt: "Josh (Coconut) Cookies 65G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101931,
+    productId: 101931,
+    filename: "sw-josh-butter-cashew-cookies-65g.jpg",
+    path: "/images/products/sw-josh-butter-cashew-cookies-65g.jpg",
+    alt: "Josh Butter (Cashew) Cookies 65G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101932,
+    productId: 101932,
+    filename: "sw-josh-butter-cashew-cookies-300g.jpg",
+    path: "/images/products/sw-josh-butter-cashew-cookies-300g.jpg",
+    alt: "Josh Butter Cashew Cookies 300G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101933,
+    productId: 101933,
+    filename: "sw-josh-chocolate-cookies-300g.jpg",
+    path: "/images/products/sw-josh-chocolate-cookies-300g.jpg",
+    alt: "Josh Chocolate Cookies 300G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101934,
+    productId: 101934,
+    filename: "sw-josh-coconut-cookies-300g.jpg",
+    path: "/images/products/sw-josh-coconut-cookies-300g.jpg",
+    alt: "Josh Coconut Cookies 300G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101935,
+    productId: 101935,
+    filename: "sw-josh-cookies-36x28g-ginger-honey.jpg",
+    path: "/images/products/sw-josh-cookies-36x28g-ginger-honey.jpg",
+    alt: "Josh Cookies 36x28G (Ginger Honey) Carton",
+    isPrimary: true
+  },
+  {
+    id: 101936,
+    productId: 101936,
+    filename: "sw-josh-cookies-85g-mango-chocolate.jpg",
+    path: "/images/products/sw-josh-cookies-85g-mango-chocolate.jpg",
+    alt: "Josh Cookies 85G (Mango Chocolate) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101937,
+    productId: 101937,
+    filename: "sw-josh-cookies-85g-milk.jpg",
+    path: "/images/products/sw-josh-cookies-85g-milk.jpg",
+    alt: "Josh Cookies 85G (Milk) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101938,
+    productId: 101938,
+    filename: "sw-josh-cookies-85g-orange-chocolate.jpg",
+    path: "/images/products/sw-josh-cookies-85g-orange-chocolate.jpg",
+    alt: "Josh Cookies 85G (Orange Chocolate) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101939,
+    productId: 101939,
+    filename: "sw-josh-ginger-honey-300g.jpg",
+    path: "/images/products/sw-josh-ginger-honey-300g.jpg",
+    alt: "Josh Ginger Honey 300G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101940,
+    productId: 101940,
+    filename: "sw-josh-ginger-honey-65g.jpg",
+    path: "/images/products/sw-josh-ginger-honey-65g.jpg",
+    alt: "Josh Ginger Honey 65G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101941,
+    productId: 101941,
+    filename: "sw-joymax-ugali-10kg.jpg",
+    path: "/images/products/sw-joymax-ugali-10kg.jpg",
+    alt: "Joymax Ugali 10KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101942,
+    productId: 101942,
+    filename: "sw-joymax-ugali-1kg.jpg",
+    path: "/images/products/sw-joymax-ugali-1kg.jpg",
+    alt: "Joymax Ugali 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 101943,
+    productId: 101943,
+    filename: "sw-joymax-ugali-2kg.jpg",
+    path: "/images/products/sw-joymax-ugali-2kg.jpg",
+    alt: "Joymax Ugali 2KG 1/2bale",
+    isPrimary: true
+  },
+  {
+    id: 101944,
+    productId: 101944,
+    filename: "sw-joymax-ugali-5kg.jpg",
+    path: "/images/products/sw-joymax-ugali-5kg.jpg",
+    alt: "Joymax Ugali 5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101945,
+    productId: 101945,
+    filename: "sw-juice-2good-assorted-jar.jpg",
+    path: "/images/products/sw-juice-2good-assorted-jar.jpg",
+    alt: "Juice 2Good Assorted Jar Piece",
+    isPrimary: true
+  },
+  {
+    id: 101946,
+    productId: 101946,
+    filename: "sw-jumbo-cinnamon-50g.jpg",
+    path: "/images/products/sw-jumbo-cinnamon-50g.jpg",
+    alt: "Jumbo Cinnamon 50G Outer",
+    isPrimary: true
+  },
+  {
+    id: 101947,
+    productId: 101947,
+    filename: "sw-jumbo-curry-powder-50g.jpg",
+    path: "/images/products/sw-jumbo-curry-powder-50g.jpg",
+    alt: "Jumbo Curry Powder 50G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101948,
+    productId: 101948,
+    filename: "sw-jumbo-dawn-peke-tissue.jpg",
+    path: "/images/products/sw-jumbo-dawn-peke-tissue.jpg",
+    alt: "Jumbo Dawn Peke Tissue Bale",
+    isPrimary: true
+  },
+  {
+    id: 101949,
+    productId: 101949,
+    filename: "sw-jumbo-pilau-masala-100g.jpg",
+    path: "/images/products/sw-jumbo-pilau-masala-100g.jpg",
+    alt: "Jumbo Pilau Masala 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101950,
+    productId: 101950,
+    filename: "sw-jumbo-pilau-masala-ground-50g-jar.jpg",
+    path: "/images/products/sw-jumbo-pilau-masala-ground-50g-jar.jpg",
+    alt: "Jumbo Pilau Masala Ground 50G Jar Outer",
+    isPrimary: true
+  },
+  {
+    id: 101951,
+    productId: 101951,
+    filename: "sw-juo-black-currant-12x300ml.jpg",
+    path: "/images/products/sw-juo-black-currant-12x300ml.jpg",
+    alt: "Juo Black Currant 12x300ML Case",
+    isPrimary: true
+  },
+  {
+    id: 101952,
+    productId: 101952,
+    filename: "sw-juo-drink-300ml.jpg",
+    path: "/images/products/sw-juo-drink-300ml.jpg",
+    alt: "Juo Drink 300ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101953,
+    productId: 101953,
+    filename: "sw-juo-drink-mango-12x300ml.jpg",
+    path: "/images/products/sw-juo-drink-mango-12x300ml.jpg",
+    alt: "Juo Drink Mango 12x300ML Case",
+    isPrimary: true
+  },
+  {
+    id: 101954,
+    productId: 101954,
+    filename: "sw-juo-drink-orange-12x300ml.jpg",
+    path: "/images/products/sw-juo-drink-orange-12x300ml.jpg",
+    alt: "Juo Drink Orange 12x300ML Case",
+    isPrimary: true
+  },
+  {
+    id: 101955,
+    productId: 101955,
+    filename: "sw-juo-drink-pineapple-12x300ml.jpg",
+    path: "/images/products/sw-juo-drink-pineapple-12x300ml.jpg",
+    alt: "Juo Drink Pineapple 12x300ML Case",
+    isPrimary: true
+  },
+  {
+    id: 101956,
+    productId: 101956,
+    filename: "sw-just-juicy-apple-250ml.jpg",
+    path: "/images/products/sw-just-juicy-apple-250ml.jpg",
+    alt: "Just Juicy Apple 250ML Packet",
+    isPrimary: true
+  },
+  {
+    id: 101957,
+    productId: 101957,
+    filename: "sw-just-juicy-mango-1l.jpg",
+    path: "/images/products/sw-just-juicy-mango-1l.jpg",
+    alt: "Just Juicy Mango 1L Packet",
+    isPrimary: true
+  },
+  {
+    id: 101958,
+    productId: 101958,
+    filename: "sw-just-juicy-mixed-berries-1l.jpg",
+    path: "/images/products/sw-just-juicy-mixed-berries-1l.jpg",
+    alt: "Just Juicy Mixed Berries 1L Packet",
+    isPrimary: true
+  },
+  {
+    id: 101959,
+    productId: 101959,
+    filename: "sw-just-juicy-mixed-berries-250ml.jpg",
+    path: "/images/products/sw-just-juicy-mixed-berries-250ml.jpg",
+    alt: "Just Juicy Mixed Berries 250ML Packet",
+    isPrimary: true
+  },
+  {
+    id: 101960,
+    productId: 101960,
+    filename: "sw-just-juicy-pineapple-coconut-250ml.jpg",
+    path: "/images/products/sw-just-juicy-pineapple-coconut-250ml.jpg",
+    alt: "Just Juicy Pineapple & Coconut 250ML Packet",
+    isPrimary: true
+  },
+  {
+    id: 101961,
+    productId: 101961,
+    filename: "sw-kaboom-bubble-gum-100pcs-jars.jpg",
+    path: "/images/products/sw-kaboom-bubble-gum-100pcs-jars.jpg",
+    alt: "Kaboom Bubble Gum 100PCS (Jars) Jar",
+    isPrimary: true
+  },
+  {
+    id: 101962,
+    productId: 101962,
+    filename: "sw-kaboom-bubble-gum-50pcs-satchet.jpg",
+    path: "/images/products/sw-kaboom-bubble-gum-50pcs-satchet.jpg",
+    alt: "Kaboom Bubble Gum 50PCS (Satchet) Packet",
+    isPrimary: true
+  },
+  {
+    id: 101963,
+    productId: 101963,
+    filename: "sw-kabras-10x2kg.jpg",
+    path: "/images/products/sw-kabras-10x2kg.jpg",
+    alt: "Kabras 10x2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 101964,
+    productId: 101964,
+    filename: "sw-kabras-20x1kg.jpg",
+    path: "/images/products/sw-kabras-20x1kg.jpg",
+    alt: "Kabras 20x1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 101965,
+    productId: 101965,
+    filename: "sw-kabras-sugar-2kg.jpg",
+    path: "/images/products/sw-kabras-sugar-2kg.jpg",
+    alt: "Kabras Sugar 2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 101966,
+    productId: 101966,
+    filename: "sw-kaluma-24x4g.jpg",
+    path: "/images/products/sw-kaluma-24x4g.jpg",
+    alt: "Kaluma 24x4G Packet",
+    isPrimary: true
+  },
+  {
+    id: 101967,
+    productId: 101967,
+    filename: "sw-kaluma-9ml.jpg",
+    path: "/images/products/sw-kaluma-9ml.jpg",
+    alt: "Kaluma 9ML Packet",
+    isPrimary: true
+  },
+  {
+    id: 101968,
+    productId: 101968,
+    filename: "sw-kaluma-king-18x50.jpg",
+    path: "/images/products/sw-kaluma-king-18x50.jpg",
+    alt: "Kaluma King 18x50 Packet",
+    isPrimary: true
+  },
+  {
+    id: 101969,
+    productId: 101969,
+    filename: "sw-kaluma-strong-tab.jpg",
+    path: "/images/products/sw-kaluma-strong-tab.jpg",
+    alt: "Kaluma Strong Tab Packet",
+    isPrimary: true
+  },
+  {
+    id: 101970,
+    productId: 101970,
+    filename: "sw-kamal-parboiled-rice-25kg.jpg",
+    path: "/images/products/sw-kamal-parboiled-rice-25kg.jpg",
+    alt: "Kamal Parboiled Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101971,
+    productId: 101971,
+    filename: "sw-kamande-25kg.jpg",
+    path: "/images/products/sw-kamande-25kg.jpg",
+    alt: "Kamande 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101972,
+    productId: 101972,
+    filename: "sw-kamande-50kg.jpg",
+    path: "/images/products/sw-kamande-50kg.jpg",
+    alt: "Kamande 50KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101973,
+    productId: 101973,
+    filename: "sw-kamili-festive-gift-pack.jpg",
+    path: "/images/products/sw-kamili-festive-gift-pack.jpg",
+    alt: "Kamili Festive Gift Pack Bag",
+    isPrimary: true
+  },
+  {
+    id: 101974,
+    productId: 101974,
+    filename: "sw-kangore-biryani-rice-25kg-green-bag.jpg",
+    path: "/images/products/sw-kangore-biryani-rice-25kg-green-bag.jpg",
+    alt: "Kangore Biryani Rice 25KG (Green Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 101975,
+    productId: 101975,
+    filename: "sw-kangore-parboiled-rice-25kg.jpg",
+    path: "/images/products/sw-kangore-parboiled-rice-25kg.jpg",
+    alt: "Kangore Parboiled Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101976,
+    productId: 101976,
+    filename: "sw-kangore-premium-gold-25kg-blue-bag.jpg",
+    path: "/images/products/sw-kangore-premium-gold-25kg-blue-bag.jpg",
+    alt: "Kangore Premium Gold 25KG (Blue Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 101977,
+    productId: 101977,
+    filename: "sw-kangore-premium-gold-25kg-gold-bag.jpg",
+    path: "/images/products/sw-kangore-premium-gold-25kg-gold-bag.jpg",
+    alt: "Kangore Premium Gold 25KG (Gold Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 101978,
+    productId: 101978,
+    filename: "sw-kangore-spaghetti-20x400g.jpg",
+    path: "/images/products/sw-kangore-spaghetti-20x400g.jpg",
+    alt: "Kangore Spaghetti 20x400G Packet",
+    isPrimary: true
+  },
+  {
+    id: 101979,
+    productId: 101979,
+    filename: "sw-kangore-special-biryani-25kg.jpg",
+    path: "/images/products/sw-kangore-special-biryani-25kg.jpg",
+    alt: "Kangore Special Biryani 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 101980,
+    productId: 101980,
+    filename: "sw-kapa-glycerine-18x100ml.jpg",
+    path: "/images/products/sw-kapa-glycerine-18x100ml.jpg",
+    alt: "Kapa Glycerine 18x100ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101981,
+    productId: 101981,
+    filename: "sw-kapa-glycerine-36x50ml.jpg",
+    path: "/images/products/sw-kapa-glycerine-36x50ml.jpg",
+    alt: "Kapa Glycerine 36x50ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 101982,
+    productId: 101982,
+    filename: "sw-kaputei-barbeque-sauce-24x400g-honey.jpg",
+    path: "/images/products/sw-kaputei-barbeque-sauce-24x400g-honey.jpg",
+    alt: "Kaputei Barbeque Sauce 24x400G (Honey) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101983,
+    productId: 101983,
+    filename: "sw-kaputei-barbeque-sauce-24x400g-original.jpg",
+    path: "/images/products/sw-kaputei-barbeque-sauce-24x400g-original.jpg",
+    alt: "Kaputei Barbeque Sauce 24x400G (Original) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101984,
+    productId: 101984,
+    filename: "sw-kaputei-barbeque-sauce-24x400g-smoke.jpg",
+    path: "/images/products/sw-kaputei-barbeque-sauce-24x400g-smoke.jpg",
+    alt: "Kaputei Barbeque Sauce 24x400G (Smoke) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101985,
+    productId: 101985,
+    filename: "sw-kaputei-barbeque-sauce-24x400g-sweet-sticky.jpg",
+    path: "/images/products/sw-kaputei-barbeque-sauce-24x400g-sweet-sticky.jpg",
+    alt: "Kaputei Barbeque Sauce 24x400G (Sweet & Sticky) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101986,
+    productId: 101986,
+    filename: "sw-kaputei-barbeque-sauce-700g-honey.jpg",
+    path: "/images/products/sw-kaputei-barbeque-sauce-700g-honey.jpg",
+    alt: "Kaputei Barbeque Sauce 700G (Honey) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101987,
+    productId: 101987,
+    filename: "sw-kaputei-barbeque-sauce-700g-original.jpg",
+    path: "/images/products/sw-kaputei-barbeque-sauce-700g-original.jpg",
+    alt: "Kaputei Barbeque Sauce 700G (Original) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101988,
+    productId: 101988,
+    filename: "sw-kaputei-barbeque-sauce-700g-smoke.jpg",
+    path: "/images/products/sw-kaputei-barbeque-sauce-700g-smoke.jpg",
+    alt: "Kaputei Barbeque Sauce 700G (Smoke) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101989,
+    productId: 101989,
+    filename: "sw-kaputei-barbeque-sauce-700g-sweet-sticky.jpg",
+    path: "/images/products/sw-kaputei-barbeque-sauce-700g-sweet-sticky.jpg",
+    alt: "Kaputei Barbeque Sauce 700G (Sweet & Sticky) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101990,
+    productId: 101990,
+    filename: "sw-kaputei-chili-sauce-250g.jpg",
+    path: "/images/products/sw-kaputei-chili-sauce-250g.jpg",
+    alt: "Kaputei Chili Sauce 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101991,
+    productId: 101991,
+    filename: "sw-kaputei-chili-sauce-400g.jpg",
+    path: "/images/products/sw-kaputei-chili-sauce-400g.jpg",
+    alt: "Kaputei Chili Sauce 400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101992,
+    productId: 101992,
+    filename: "sw-kaputei-choma-sauce-12x400g.jpg",
+    path: "/images/products/sw-kaputei-choma-sauce-12x400g.jpg",
+    alt: "Kaputei Choma Sauce 12x400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101993,
+    productId: 101993,
+    filename: "sw-kaputei-choma-sauce-5kg.jpg",
+    path: "/images/products/sw-kaputei-choma-sauce-5kg.jpg",
+    alt: "Kaputei Choma Sauce 5KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 101994,
+    productId: 101994,
+    filename: "sw-kaputei-dressing-12x400g-honey-mustard.jpg",
+    path: "/images/products/sw-kaputei-dressing-12x400g-honey-mustard.jpg",
+    alt: "Kaputei Dressing 12x400G (Honey Mustard) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101995,
+    productId: 101995,
+    filename: "sw-kaputei-dressings-12x400g-1000-islands.jpg",
+    path: "/images/products/sw-kaputei-dressings-12x400g-1000-islands.jpg",
+    alt: "Kaputei Dressings 12x400G (1000 Islands) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101996,
+    productId: 101996,
+    filename: "sw-kaputei-dressings-12x400g-mustard.jpg",
+    path: "/images/products/sw-kaputei-dressings-12x400g-mustard.jpg",
+    alt: "Kaputei Dressings 12x400G (Mustard) Piece",
+    isPrimary: true
+  },
+  {
+    id: 101997,
+    productId: 101997,
+    filename: "sw-kaputei-hot-sweet-sauce-400g.jpg",
+    path: "/images/products/sw-kaputei-hot-sweet-sauce-400g.jpg",
+    alt: "Kaputei Hot & Sweet Sauce 400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101998,
+    productId: 101998,
+    filename: "sw-kaputei-mayo-350g.jpg",
+    path: "/images/products/sw-kaputei-mayo-350g.jpg",
+    alt: "Kaputei Mayo 350G Piece",
+    isPrimary: true
+  },
+  {
+    id: 101999,
+    productId: 101999,
+    filename: "sw-kaputei-mayo-700g.jpg",
+    path: "/images/products/sw-kaputei-mayo-700g.jpg",
+    alt: "Kaputei Mayo 700G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102000,
+    productId: 102000,
+    filename: "sw-kaputei-natural-honey-1kg.jpg",
+    path: "/images/products/sw-kaputei-natural-honey-1kg.jpg",
+    alt: "Kaputei Natural Honey 1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102001,
+    productId: 102001,
+    filename: "sw-kaputei-natural-honey-2kg-jar.jpg",
+    path: "/images/products/sw-kaputei-natural-honey-2kg-jar.jpg",
+    alt: "Kaputei Natural Honey 2KG (Jar) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102002,
+    productId: 102002,
+    filename: "sw-kaputei-natural-honey-300g-squeeze.jpg",
+    path: "/images/products/sw-kaputei-natural-honey-300g-squeeze.jpg",
+    alt: "Kaputei Natural Honey 300G (Squeeze) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102003,
+    productId: 102003,
+    filename: "sw-kaputei-natural-honey-300g-jar.jpg",
+    path: "/images/products/sw-kaputei-natural-honey-300g-jar.jpg",
+    alt: "Kaputei Natural Honey 300G Jar Piece",
+    isPrimary: true
+  },
+  {
+    id: 102004,
+    productId: 102004,
+    filename: "sw-kaputei-natural-honey-500g-jar.jpg",
+    path: "/images/products/sw-kaputei-natural-honey-500g-jar.jpg",
+    alt: "Kaputei Natural Honey 500G (Jar) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102005,
+    productId: 102005,
+    filename: "sw-kaputei-natural-honey-500g-squeeze.jpg",
+    path: "/images/products/sw-kaputei-natural-honey-500g-squeeze.jpg",
+    alt: "Kaputei Natural Honey 500G (Squeeze) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102006,
+    productId: 102006,
+    filename: "sw-kaputei-tomato-ketchup-250g.jpg",
+    path: "/images/products/sw-kaputei-tomato-ketchup-250g.jpg",
+    alt: "Kaputei Tomato Ketchup 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102007,
+    productId: 102007,
+    filename: "sw-kaputei-tomato-ketchup-400g.jpg",
+    path: "/images/products/sw-kaputei-tomato-ketchup-400g.jpg",
+    alt: "Kaputei Tomato Ketchup 400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102008,
+    productId: 102008,
+    filename: "sw-kaputei-tomato-ketchup-5kg.jpg",
+    path: "/images/products/sw-kaputei-tomato-ketchup-5kg.jpg",
+    alt: "Kaputei Tomato Ketchup 5KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102009,
+    productId: 102009,
+    filename: "sw-kaputei-tomato-ketchup-700g.jpg",
+    path: "/images/products/sw-kaputei-tomato-ketchup-700g.jpg",
+    alt: "Kaputei Tomato Ketchup 700G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102010,
+    productId: 102010,
+    filename: "sw-kaputei-tomato-sauce-1kg.jpg",
+    path: "/images/products/sw-kaputei-tomato-sauce-1kg.jpg",
+    alt: "Kaputei Tomato Sauce 1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102011,
+    productId: 102011,
+    filename: "sw-kaputei-tomato-sauce-2kg.jpg",
+    path: "/images/products/sw-kaputei-tomato-sauce-2kg.jpg",
+    alt: "Kaputei Tomato Sauce 2KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102012,
+    productId: 102012,
+    filename: "sw-kaputei-tomato-sauce-400g.jpg",
+    path: "/images/products/sw-kaputei-tomato-sauce-400g.jpg",
+    alt: "Kaputei Tomato Sauce 400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102013,
+    productId: 102013,
+    filename: "sw-kaputei-tomato-sauce-5kg.jpg",
+    path: "/images/products/sw-kaputei-tomato-sauce-5kg.jpg",
+    alt: "Kaputei Tomato Sauce 5KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102014,
+    productId: 102014,
+    filename: "sw-kaputei-tomato-sauce-700g.jpg",
+    path: "/images/products/sw-kaputei-tomato-sauce-700g.jpg",
+    alt: "Kaputei Tomato Sauce 700G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102015,
+    productId: 102015,
+    filename: "sw-kaputei-worcestershire-sauce-250g.jpg",
+    path: "/images/products/sw-kaputei-worcestershire-sauce-250g.jpg",
+    alt: "Kaputei Worcestershire Sauce 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102016,
+    productId: 102016,
+    filename: "sw-kara-coconut-cream-24x400ml-tin.jpg",
+    path: "/images/products/sw-kara-coconut-cream-24x400ml-tin.jpg",
+    alt: "Kara Coconut Cream 24x400ML (Tin) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102017,
+    productId: 102017,
+    filename: "sw-kara-coconut-cream-powder-12x50g.jpg",
+    path: "/images/products/sw-kara-coconut-cream-powder-12x50g.jpg",
+    alt: "Kara Coconut Cream Powder 12x50G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102018,
+    productId: 102018,
+    filename: "sw-kara-coconut-cream-uht-12x500ml.jpg",
+    path: "/images/products/sw-kara-coconut-cream-uht-12x500ml.jpg",
+    alt: "Kara Coconut Cream UHT 12x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102019,
+    productId: 102019,
+    filename: "sw-kara-coconut-cream-uht-25x200ml.jpg",
+    path: "/images/products/sw-kara-coconut-cream-uht-25x200ml.jpg",
+    alt: "Kara Coconut Cream UHT 25x200ML Packet",
+    isPrimary: true
+  },
+  {
+    id: 102020,
+    productId: 102020,
+    filename: "sw-kara-coconut-cream-uht-36x65ml.jpg",
+    path: "/images/products/sw-kara-coconut-cream-uht-36x65ml.jpg",
+    alt: "Kara Coconut Cream UHT 36x65ML Packet",
+    isPrimary: true
+  },
+  {
+    id: 102021,
+    productId: 102021,
+    filename: "sw-kara-coconut-milk-24x400ml-tin.jpg",
+    path: "/images/products/sw-kara-coconut-milk-24x400ml-tin.jpg",
+    alt: "Kara Coconut Milk 24x400ML (Tin) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102022,
+    productId: 102022,
+    filename: "sw-kara-coconut-milk-uht-24x400ml.jpg",
+    path: "/images/products/sw-kara-coconut-milk-uht-24x400ml.jpg",
+    alt: "Kara Coconut Milk UHT 24x400ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102023,
+    productId: 102023,
+    filename: "sw-kara-coconut-milk-uht-25x200ml.jpg",
+    path: "/images/products/sw-kara-coconut-milk-uht-25x200ml.jpg",
+    alt: "Kara Coconut Milk UHT 25x200ML Packet",
+    isPrimary: true
+  },
+  {
+    id: 102024,
+    productId: 102024,
+    filename: "sw-karaih-cooking-oil-10l.jpg",
+    path: "/images/products/sw-karaih-cooking-oil-10l.jpg",
+    alt: "Karaih Cooking Oil 10L Jerican",
+    isPrimary: true
+  },
+  {
+    id: 102025,
+    productId: 102025,
+    filename: "sw-karaih-cooking-oil-20l.jpg",
+    path: "/images/products/sw-karaih-cooking-oil-20l.jpg",
+    alt: "Karaih Cooking Oil 20L Jerican",
+    isPrimary: true
+  },
+  {
+    id: 102026,
+    productId: 102026,
+    filename: "sw-karaih-cooking-oil-4x5l.jpg",
+    path: "/images/products/sw-karaih-cooking-oil-4x5l.jpg",
+    alt: "Karaih Cooking Oil 4x5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102027,
+    productId: 102027,
+    filename: "sw-karaih-cooking-oil-6x3l.jpg",
+    path: "/images/products/sw-karaih-cooking-oil-6x3l.jpg",
+    alt: "Karaih Cooking Oil 6x3L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102028,
+    productId: 102028,
+    filename: "sw-kare-in-adult-diaper-large-10pcs.jpg",
+    path: "/images/products/sw-kare-in-adult-diaper-large-10pcs.jpg",
+    alt: "Kare In Adult Diaper Large (10PCS) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102029,
+    productId: 102029,
+    filename: "sw-kare-in-adult-diaper-medium-10pcs.jpg",
+    path: "/images/products/sw-kare-in-adult-diaper-medium-10pcs.jpg",
+    alt: "Kare In Adult Diaper Medium (10PCS) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102030,
+    productId: 102030,
+    filename: "sw-karibu-10kg-white-cooking-fat.jpg",
+    path: "/images/products/sw-karibu-10kg-white-cooking-fat.jpg",
+    alt: "Karibu 10KG White Cooking Fat Carton",
+    isPrimary: true
+  },
+  {
+    id: 102031,
+    productId: 102031,
+    filename: "sw-karibu-gold-premium-rice-25kg-jute.jpg",
+    path: "/images/products/sw-karibu-gold-premium-rice-25kg-jute.jpg",
+    alt: "Karibu Gold Premium Rice 25KG (Jute Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102032,
+    productId: 102032,
+    filename: "sw-karibu-long-grain-rice-25kg-sky-blue.jpg",
+    path: "/images/products/sw-karibu-long-grain-rice-25kg-sky-blue.jpg",
+    alt: "Karibu Long Grain Rice 25KG (Sky Blue) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102033,
+    productId: 102033,
+    filename: "sw-karibu-pk386-basmati-parboiled-rice-25kg-blue.jpg",
+    path: "/images/products/sw-karibu-pk386-basmati-parboiled-rice-25kg-blue.jpg",
+    alt: "Karibu PK386 Basmati Parboiled Rice 25KG (Blue Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102034,
+    productId: 102034,
+    filename: "sw-kashata-crunch-12x50pcs.jpg",
+    path: "/images/products/sw-kashata-crunch-12x50pcs.jpg",
+    alt: "Kashata Crunch 12x50PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102035,
+    productId: 102035,
+    filename: "sw-kasuku-cooking-fat-100g.jpg",
+    path: "/images/products/sw-kasuku-cooking-fat-100g.jpg",
+    alt: "Kasuku Cooking Fat 100G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102036,
+    productId: 102036,
+    filename: "sw-kasuku-cooking-fat-12x1kg.jpg",
+    path: "/images/products/sw-kasuku-cooking-fat-12x1kg.jpg",
+    alt: "Kasuku Cooking Fat 12x1KG Carton",
+    isPrimary: true
+  },
+  {
+    id: 102037,
+    productId: 102037,
+    filename: "sw-kasuku-cooking-fat-24x250g.jpg",
+    path: "/images/products/sw-kasuku-cooking-fat-24x250g.jpg",
+    alt: "Kasuku Cooking Fat 24x250G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102038,
+    productId: 102038,
+    filename: "sw-kasuku-cooking-fat-24x500g.jpg",
+    path: "/images/products/sw-kasuku-cooking-fat-24x500g.jpg",
+    alt: "Kasuku Cooking Fat 24x500G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102039,
+    productId: 102039,
+    filename: "sw-kasuku-cooking-fat-6x2kg.jpg",
+    path: "/images/products/sw-kasuku-cooking-fat-6x2kg.jpg",
+    alt: "Kasuku Cooking Fat 6x2KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102040,
+    productId: 102040,
+    filename: "sw-kaysalt-1kg.jpg",
+    path: "/images/products/sw-kaysalt-1kg.jpg",
+    alt: "Kaysalt 1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102041,
+    productId: 102041,
+    filename: "sw-kaysalt-200g.jpg",
+    path: "/images/products/sw-kaysalt-200g.jpg",
+    alt: "Kaysalt 200G Bale",
+    isPrimary: true
+  },
+  {
+    id: 102042,
+    productId: 102042,
+    filename: "sw-kaysalt-2kg.jpg",
+    path: "/images/products/sw-kaysalt-2kg.jpg",
+    alt: "Kaysalt 2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102043,
+    productId: 102043,
+    filename: "sw-kaysalt-500g.jpg",
+    path: "/images/products/sw-kaysalt-500g.jpg",
+    alt: "Kaysalt 500G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102044,
+    productId: 102044,
+    filename: "sw-kazuri-kenyan-coffee-25g.jpg",
+    path: "/images/products/sw-kazuri-kenyan-coffee-25g.jpg",
+    alt: "Kazuri Kenyan Coffee 25G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102045,
+    productId: 102045,
+    filename: "sw-kazuri-kenyan-coffee-50g.jpg",
+    path: "/images/products/sw-kazuri-kenyan-coffee-50g.jpg",
+    alt: "Kazuri Kenyan Coffee 50G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102046,
+    productId: 102046,
+    filename: "sw-kcc-esl-gold-crown-milk-12x500ml.jpg",
+    path: "/images/products/sw-kcc-esl-gold-crown-milk-12x500ml.jpg",
+    alt: "KCC (ESL) Gold Crown Milk 12x500ML Carton",
+    isPrimary: true
+  },
+  {
+    id: 102047,
+    productId: 102047,
+    filename: "sw-kcc-fino-gold-crown-milk-12x500ml.jpg",
+    path: "/images/products/sw-kcc-fino-gold-crown-milk-12x500ml.jpg",
+    alt: "KCC (Fino) Gold Crown Milk 12x500ML Carton",
+    isPrimary: true
+  },
+  {
+    id: 102048,
+    productId: 102048,
+    filename: "sw-kcc-milk-21x200ml.jpg",
+    path: "/images/products/sw-kcc-milk-21x200ml.jpg",
+    alt: "KCC Milk 21x200ML Carton",
+    isPrimary: true
+  },
+  {
+    id: 102049,
+    productId: 102049,
+    filename: "sw-kcl-methylated-spirit-5l.jpg",
+    path: "/images/products/sw-kcl-methylated-spirit-5l.jpg",
+    alt: "KCL Methylated Spirit 5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102050,
+    productId: 102050,
+    filename: "sw-kelloggs-coco-pops-18x480gm.jpg",
+    path: "/images/products/sw-kelloggs-coco-pops-18x480gm.jpg",
+    alt: "Kelloggs Coco Pops 18x480GM Packet",
+    isPrimary: true
+  },
+  {
+    id: 102051,
+    productId: 102051,
+    filename: "sw-kelloggs-cornflakes-750gm.jpg",
+    path: "/images/products/sw-kelloggs-cornflakes-750gm.jpg",
+    alt: "Kelloggs Cornflakes 750GM Packet",
+    isPrimary: true
+  },
+  {
+    id: 102052,
+    productId: 102052,
+    filename: "sw-kelloggs-cornflakes-375g-honey-nut.jpg",
+    path: "/images/products/sw-kelloggs-cornflakes-375g-honey-nut.jpg",
+    alt: "Kelloggs Cornflakes 375G (Honey & Nut) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102053,
+    productId: 102053,
+    filename: "sw-kelloggs-cornflakes-450g.jpg",
+    path: "/images/products/sw-kelloggs-cornflakes-450g.jpg",
+    alt: "Kelloggs Cornflakes 450G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102054,
+    productId: 102054,
+    filename: "sw-kelloggs-frosties-470-500g.jpg",
+    path: "/images/products/sw-kelloggs-frosties-470-500g.jpg",
+    alt: "Kelloggs Frosties 470/500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102055,
+    productId: 102055,
+    filename: "sw-kelloggs-noodies-chicken-350g-value-pack.jpg",
+    path: "/images/products/sw-kelloggs-noodies-chicken-350g-value-pack.jpg",
+    alt: "Kelloggs Noodies Chicken 350G (Value Pack) 5's Outer",
+    isPrimary: true
+  },
+  {
+    id: 102056,
+    productId: 102056,
+    filename: "sw-ken-chilli-sauce-250g.jpg",
+    path: "/images/products/sw-ken-chilli-sauce-250g.jpg",
+    alt: "Ken Chilli Sauce 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102057,
+    productId: 102057,
+    filename: "sw-ken-chilli-sauce-5ltr.jpg",
+    path: "/images/products/sw-ken-chilli-sauce-5ltr.jpg",
+    alt: "Ken Chilli Sauce 5LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 102058,
+    productId: 102058,
+    filename: "sw-ken-hot-sweet-sauce-250g.jpg",
+    path: "/images/products/sw-ken-hot-sweet-sauce-250g.jpg",
+    alt: "Ken Hot & Sweet Sauce 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102059,
+    productId: 102059,
+    filename: "sw-ken-hot-sweet-sauce-400g.jpg",
+    path: "/images/products/sw-ken-hot-sweet-sauce-400g.jpg",
+    alt: "Ken Hot & Sweet Sauce 400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102060,
+    productId: 102060,
+    filename: "sw-ken-mixed-fruit-jam-100g.jpg",
+    path: "/images/products/sw-ken-mixed-fruit-jam-100g.jpg",
+    alt: "Ken Mixed Fruit Jam 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102061,
+    productId: 102061,
+    filename: "sw-ken-mixed-fruit-jam-250g.jpg",
+    path: "/images/products/sw-ken-mixed-fruit-jam-250g.jpg",
+    alt: "Ken Mixed Fruit Jam 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102062,
+    productId: 102062,
+    filename: "sw-ken-mixed-fruit-jam-500g.jpg",
+    path: "/images/products/sw-ken-mixed-fruit-jam-500g.jpg",
+    alt: "Ken Mixed Fruit Jam 500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102063,
+    productId: 102063,
+    filename: "sw-ken-red-plum-jam-100g.jpg",
+    path: "/images/products/sw-ken-red-plum-jam-100g.jpg",
+    alt: "Ken Red Plum Jam 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102064,
+    productId: 102064,
+    filename: "sw-ken-red-plum-jam-250g.jpg",
+    path: "/images/products/sw-ken-red-plum-jam-250g.jpg",
+    alt: "Ken Red Plum Jam 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102065,
+    productId: 102065,
+    filename: "sw-ken-tomato-ketchup-400g.jpg",
+    path: "/images/products/sw-ken-tomato-ketchup-400g.jpg",
+    alt: "Ken Tomato Ketchup 400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102066,
+    productId: 102066,
+    filename: "sw-ken-tomato-ketchup-5ltr.jpg",
+    path: "/images/products/sw-ken-tomato-ketchup-5ltr.jpg",
+    alt: "Ken Tomato Ketchup 5LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 102067,
+    productId: 102067,
+    filename: "sw-ken-tomato-sauce-20g.jpg",
+    path: "/images/products/sw-ken-tomato-sauce-20g.jpg",
+    alt: "Ken Tomato Sauce 20G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102068,
+    productId: 102068,
+    filename: "sw-ken-tomato-sauce-250g.jpg",
+    path: "/images/products/sw-ken-tomato-sauce-250g.jpg",
+    alt: "Ken Tomato Sauce 250G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102069,
+    productId: 102069,
+    filename: "sw-ken-tomato-sauce-2ltr.jpg",
+    path: "/images/products/sw-ken-tomato-sauce-2ltr.jpg",
+    alt: "Ken Tomato Sauce 2LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 102070,
+    productId: 102070,
+    filename: "sw-ken-tomato-sauce-400g.jpg",
+    path: "/images/products/sw-ken-tomato-sauce-400g.jpg",
+    alt: "Ken Tomato Sauce 400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102071,
+    productId: 102071,
+    filename: "sw-ken-tomato-sauce-5ltr.jpg",
+    path: "/images/products/sw-ken-tomato-sauce-5ltr.jpg",
+    alt: "Ken Tomato Sauce 5LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 102072,
+    productId: 102072,
+    filename: "sw-ken-tomato-sauce-700g.jpg",
+    path: "/images/products/sw-ken-tomato-sauce-700g.jpg",
+    alt: "Ken Tomato Sauce 700G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102073,
+    productId: 102073,
+    filename: "sw-ken-white-vinegar-400ml.jpg",
+    path: "/images/products/sw-ken-white-vinegar-400ml.jpg",
+    alt: "Ken White Vinegar 400ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102074,
+    productId: 102074,
+    filename: "sw-ken-white-vinegar-5ltr.jpg",
+    path: "/images/products/sw-ken-white-vinegar-5ltr.jpg",
+    alt: "Ken White Vinegar 5LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 102075,
+    productId: 102075,
+    filename: "sw-ken-white-vinegar-700ml.jpg",
+    path: "/images/products/sw-ken-white-vinegar-700ml.jpg",
+    alt: "Ken White Vinegar 700ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102076,
+    productId: 102076,
+    filename: "sw-kenchic-chicken-brawn-200g.jpg",
+    path: "/images/products/sw-kenchic-chicken-brawn-200g.jpg",
+    alt: "Kenchic Chicken Brawn 200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102077,
+    productId: 102077,
+    filename: "sw-kenchic-hungarian-choma-sausages-500g-5s.jpg",
+    path: "/images/products/sw-kenchic-hungarian-choma-sausages-500g-5s.jpg",
+    alt: "Kenchic Hungarian Choma Sausages 500G 5'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102078,
+    productId: 102078,
+    filename: "sw-kenchic-smoked-sausages-250g-6s.jpg",
+    path: "/images/products/sw-kenchic-smoked-sausages-250g-6s.jpg",
+    alt: "Kenchic Smoked Sausages 250G 6'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102079,
+    productId: 102079,
+    filename: "sw-kenchic-smoked-sausages-500g-12s.jpg",
+    path: "/images/products/sw-kenchic-smoked-sausages-500g-12s.jpg",
+    alt: "Kenchic Smoked Sausages 500G 12'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102080,
+    productId: 102080,
+    filename: "sw-kenchic-smoked-sausages-900g-22s.jpg",
+    path: "/images/products/sw-kenchic-smoked-sausages-900g-22s.jpg",
+    alt: "Kenchic Smoked Sausages 900G 22'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102081,
+    productId: 102081,
+    filename: "sw-kenpat-chili-sauce-5l.jpg",
+    path: "/images/products/sw-kenpat-chili-sauce-5l.jpg",
+    alt: "Kenpat Chili Sauce 5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102082,
+    productId: 102082,
+    filename: "sw-kenpat-tomato-sauce-5l.jpg",
+    path: "/images/products/sw-kenpat-tomato-sauce-5l.jpg",
+    alt: "Kenpat Tomato Sauce 5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102083,
+    productId: 102083,
+    filename: "sw-kensalt-jar-500g.jpg",
+    path: "/images/products/sw-kensalt-jar-500g.jpg",
+    alt: "Kensalt (Jar) 500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102084,
+    productId: 102084,
+    filename: "sw-kensalt-1kg.jpg",
+    path: "/images/products/sw-kensalt-1kg.jpg",
+    alt: "Kensalt 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102085,
+    productId: 102085,
+    filename: "sw-kensalt-200g.jpg",
+    path: "/images/products/sw-kensalt-200g.jpg",
+    alt: "Kensalt 200G Bale",
+    isPrimary: true
+  },
+  {
+    id: 102086,
+    productId: 102086,
+    filename: "sw-kensalt-2kg.jpg",
+    path: "/images/products/sw-kensalt-2kg.jpg",
+    alt: "Kensalt 2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102087,
+    productId: 102087,
+    filename: "sw-kensalt-500g.jpg",
+    path: "/images/products/sw-kensalt-500g.jpg",
+    alt: "Kensalt 500G Bale",
+    isPrimary: true
+  },
+  {
+    id: 102088,
+    productId: 102088,
+    filename: "sw-kenylon-baked-beans-12x420g.jpg",
+    path: "/images/products/sw-kenylon-baked-beans-12x420g.jpg",
+    alt: "Kenylon Baked Beans in Tomato Sauce 12x420G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102089,
+    productId: 102089,
+    filename: "sw-kenylon-tomato-paste-100g-tin.jpg",
+    path: "/images/products/sw-kenylon-tomato-paste-100g-tin.jpg",
+    alt: "Kenylon Tomato Paste 100G (Tin) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102090,
+    productId: 102090,
+    filename: "sw-kenylon-tomato-paste-12x275g.jpg",
+    path: "/images/products/sw-kenylon-tomato-paste-12x275g.jpg",
+    alt: "Kenylon Tomato Paste 12x275G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102091,
+    productId: 102091,
+    filename: "sw-kenylon-tomato-paste-2.2kg.jpg",
+    path: "/images/products/sw-kenylon-tomato-paste-2.2kg.jpg",
+    alt: "Kenylon Tomato Paste 2.2KG Tin",
+    isPrimary: true
+  },
+  {
+    id: 102092,
+    productId: 102092,
+    filename: "sw-kenylon-tomato-paste-25x70g-satchet.jpg",
+    path: "/images/products/sw-kenylon-tomato-paste-25x70g-satchet.jpg",
+    alt: "Kenylon Tomato Paste 25x70G Satchet Outer",
+    isPrimary: true
+  },
+  {
+    id: 102093,
+    productId: 102093,
+    filename: "sw-kenylon-tomato-paste-30g-satchet.jpg",
+    path: "/images/products/sw-kenylon-tomato-paste-30g-satchet.jpg",
+    alt: "Kenylon Tomato Paste 30G Satchet Outer",
+    isPrimary: true
+  },
+  {
+    id: 102094,
+    productId: 102094,
+    filename: "sw-kenylon-tomato-paste-450g.jpg",
+    path: "/images/products/sw-kenylon-tomato-paste-450g.jpg",
+    alt: "Kenylon Tomato Paste 450G Tin",
+    isPrimary: true
+  },
+  {
+    id: 102095,
+    productId: 102095,
+    filename: "sw-kenylon-tomato-paste-6x3.3kg.jpg",
+    path: "/images/products/sw-kenylon-tomato-paste-6x3.3kg.jpg",
+    alt: "Kenylon Tomato Paste 6x3.3KG Tin",
+    isPrimary: true
+  },
+  {
+    id: 102096,
+    productId: 102096,
+    filename: "sw-kenylon-tomato-paste-900g.jpg",
+    path: "/images/products/sw-kenylon-tomato-paste-900g.jpg",
+    alt: "Kenylon Tomato Paste 900G Tin",
+    isPrimary: true
+  },
+  {
+    id: 102097,
+    productId: 102097,
+    filename: "sw-kericho-gold-100s-enveloped.jpg",
+    path: "/images/products/sw-kericho-gold-100s-enveloped.jpg",
+    alt: "Kericho Gold 100'S (Enveloped) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102098,
+    productId: 102098,
+    filename: "sw-kericho-gold-100s-round-tea-bags.jpg",
+    path: "/images/products/sw-kericho-gold-100s-round-tea-bags.jpg",
+    alt: "Kericho Gold 100'S (Round Tea Bags) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102099,
+    productId: 102099,
+    filename: "sw-kericho-gold-100s-string-tag.jpg",
+    path: "/images/products/sw-kericho-gold-100s-string-tag.jpg",
+    alt: "Kericho Gold 100'S (String Tag) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102100,
+    productId: 102100,
+    filename: "sw-kericho-gold-1kg-loose-tea.jpg",
+    path: "/images/products/sw-kericho-gold-1kg-loose-tea.jpg",
+    alt: "Kericho Gold 1KG (Loose Tea) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102101,
+    productId: 102101,
+    filename: "sw-kericho-gold-20s-apple-cinnamon.jpg",
+    path: "/images/products/sw-kericho-gold-20s-apple-cinnamon.jpg",
+    alt: "Kericho Gold 20'S (Apple & Cinnamon) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102102,
+    productId: 102102,
+    filename: "sw-kericho-gold-20s-blueberry.jpg",
+    path: "/images/products/sw-kericho-gold-20s-blueberry.jpg",
+    alt: "Kericho Gold 20'S (Blueberry) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102103,
+    productId: 102103,
+    filename: "sw-kericho-gold-20s-detox.jpg",
+    path: "/images/products/sw-kericho-gold-20s-detox.jpg",
+    alt: "Kericho Gold 20'S (Detox) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102104,
+    productId: 102104,
+    filename: "sw-kericho-gold-20s-ginger-lemon.jpg",
+    path: "/images/products/sw-kericho-gold-20s-ginger-lemon.jpg",
+    alt: "Kericho Gold 20'S (Ginger & Lemon) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102105,
+    productId: 102105,
+    filename: "sw-kericho-gold-20s-green-tea-orange.jpg",
+    path: "/images/products/sw-kericho-gold-20s-green-tea-orange.jpg",
+    alt: "Kericho Gold 20'S (Green Tea & Orange) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102106,
+    productId: 102106,
+    filename: "sw-kericho-gold-20s-lemon-lime.jpg",
+    path: "/images/products/sw-kericho-gold-20s-lemon-lime.jpg",
+    alt: "Kericho Gold 20'S (Lemon & Lime) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102107,
+    productId: 102107,
+    filename: "sw-kericho-gold-20s-orange-spice.jpg",
+    path: "/images/products/sw-kericho-gold-20s-orange-spice.jpg",
+    alt: "Kericho Gold 20'S (Orange Spice) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102108,
+    productId: 102108,
+    filename: "sw-kericho-gold-20s-pure-green-tea.jpg",
+    path: "/images/products/sw-kericho-gold-20s-pure-green-tea.jpg",
+    alt: "Kericho Gold 20'S (Pure Green Tea) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102109,
+    productId: 102109,
+    filename: "sw-kericho-gold-20s-pure-hibiscus.jpg",
+    path: "/images/products/sw-kericho-gold-20s-pure-hibiscus.jpg",
+    alt: "Kericho Gold 20's (Pure Hibiscus) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102110,
+    productId: 102110,
+    filename: "sw-kericho-gold-20s-pure-peppermint.jpg",
+    path: "/images/products/sw-kericho-gold-20s-pure-peppermint.jpg",
+    alt: "Kericho Gold 20's (Pure Peppermint) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102111,
+    productId: 102111,
+    filename: "sw-kericho-gold-20s-rasberry.jpg",
+    path: "/images/products/sw-kericho-gold-20s-rasberry.jpg",
+    alt: "Kericho Gold 20's (Rasberry) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102112,
+    productId: 102112,
+    filename: "sw-kericho-gold-20s-red-berries.jpg",
+    path: "/images/products/sw-kericho-gold-20s-red-berries.jpg",
+    alt: "Kericho Gold 20's (Red Berries) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102113,
+    productId: 102113,
+    filename: "sw-kericho-gold-20s-slimtea.jpg",
+    path: "/images/products/sw-kericho-gold-20s-slimtea.jpg",
+    alt: "Kericho Gold 20's (Slimtea) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102114,
+    productId: 102114,
+    filename: "sw-kericho-gold-20s-spiced-tea.jpg",
+    path: "/images/products/sw-kericho-gold-20s-spiced-tea.jpg",
+    alt: "Kericho Gold 20's (Spiced Tea) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102115,
+    productId: 102115,
+    filename: "sw-kericho-gold-20s-sweet-camomile.jpg",
+    path: "/images/products/sw-kericho-gold-20s-sweet-camomile.jpg",
+    alt: "Kericho Gold 20's (Sweet Camomile) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102116,
+    productId: 102116,
+    filename: "sw-kericho-gold-20s-sweet-peppermint.jpg",
+    path: "/images/products/sw-kericho-gold-20s-sweet-peppermint.jpg",
+    alt: "Kericho Gold 20's (Sweet Peppermint) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102117,
+    productId: 102117,
+    filename: "sw-kericho-gold-25s-cardamom.jpg",
+    path: "/images/products/sw-kericho-gold-25s-cardamom.jpg",
+    alt: "Kericho Gold 25's (Cardamom) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102118,
+    productId: 102118,
+    filename: "sw-kericho-gold-25s-enveloped.jpg",
+    path: "/images/products/sw-kericho-gold-25s-enveloped.jpg",
+    alt: "Kericho Gold 25's (Enveloped) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102119,
+    productId: 102119,
+    filename: "sw-kericho-gold-25s-green-tea-lemon.jpg",
+    path: "/images/products/sw-kericho-gold-25s-green-tea-lemon.jpg",
+    alt: "Kericho Gold 25's (Green Tea Lemon) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102120,
+    productId: 102120,
+    filename: "sw-kericho-gold-25s-green-tea-mint.jpg",
+    path: "/images/products/sw-kericho-gold-25s-green-tea-mint.jpg",
+    alt: "Kericho Gold 25's (Green Tea Mint) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102121,
+    productId: 102121,
+    filename: "sw-kericho-gold-25s-string-tag.jpg",
+    path: "/images/products/sw-kericho-gold-25s-string-tag.jpg",
+    alt: "Kericho Gold 25's (String Tag) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102122,
+    productId: 102122,
+    filename: "sw-kericho-gold-250g-loose-tea.jpg",
+    path: "/images/products/sw-kericho-gold-250g-loose-tea.jpg",
+    alt: "Kericho Gold 250G (Loose Tea) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102123,
+    productId: 102123,
+    filename: "sw-kericho-gold-50s-enveloped.jpg",
+    path: "/images/products/sw-kericho-gold-50s-enveloped.jpg",
+    alt: "Kericho Gold 50's (Enveloped) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102124,
+    productId: 102124,
+    filename: "sw-kericho-gold-50s-round-tea-bags.jpg",
+    path: "/images/products/sw-kericho-gold-50s-round-tea-bags.jpg",
+    alt: "Kericho Gold 50's (Round Tea Bags) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102125,
+    productId: 102125,
+    filename: "sw-kericho-gold-50s-string-tag.jpg",
+    path: "/images/products/sw-kericho-gold-50s-string-tag.jpg",
+    alt: "Kericho Gold 50's (String Tag) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102126,
+    productId: 102126,
+    filename: "sw-kericho-gold-500g-loose-tea-jar.jpg",
+    path: "/images/products/sw-kericho-gold-500g-loose-tea-jar.jpg",
+    alt: "Kericho Gold 500G (Loose Tea) Jar",
+    isPrimary: true
+  },
+  {
+    id: 102127,
+    productId: 102127,
+    filename: "sw-kericho-gold-500g-loose-tea-sachet.jpg",
+    path: "/images/products/sw-kericho-gold-500g-loose-tea-sachet.jpg",
+    alt: "Kericho Gold 500G (Loose Tea) Sachet Packet",
+    isPrimary: true
+  },
+  {
+    id: 102128,
+    productId: 102128,
+    filename: "sw-kericho-gold-black-tea-100s-zebra.jpg",
+    path: "/images/products/sw-kericho-gold-black-tea-100s-zebra.jpg",
+    alt: "Kericho Gold Black Tea 100's (Zebra) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102129,
+    productId: 102129,
+    filename: "sw-kericho-gold-black-tea-50s-zebra.jpg",
+    path: "/images/products/sw-kericho-gold-black-tea-50s-zebra.jpg",
+    alt: "Kericho Gold Black Tea 50's (Zebra) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102130,
+    productId: 102130,
+    filename: "sw-ketepa-100g.jpg",
+    path: "/images/products/sw-ketepa-100g.jpg",
+    alt: "Ketepa 100G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102131,
+    productId: 102131,
+    filename: "sw-ketepa-15g-8outers.jpg",
+    path: "/images/products/sw-ketepa-15g-8outers.jpg",
+    alt: "Ketepa 15G 8Outers Outer",
+    isPrimary: true
+  },
+  {
+    id: 102132,
+    productId: 102132,
+    filename: "sw-ketepa-250g.jpg",
+    path: "/images/products/sw-ketepa-250g.jpg",
+    alt: "Ketepa 250G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102133,
+    productId: 102133,
+    filename: "sw-ketepa-500g.jpg",
+    path: "/images/products/sw-ketepa-500g.jpg",
+    alt: "Ketepa 500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102134,
+    productId: 102134,
+    filename: "sw-ketepa-50g.jpg",
+    path: "/images/products/sw-ketepa-50g.jpg",
+    alt: "Ketepa 50G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102135,
+    productId: 102135,
+    filename: "sw-ketepa-5g.jpg",
+    path: "/images/products/sw-ketepa-5g.jpg",
+    alt: "Ketepa 5G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102136,
+    productId: 102136,
+    filename: "sw-ketepa-black-instant-tea-12x25g.jpg",
+    path: "/images/products/sw-ketepa-black-instant-tea-12x25g.jpg",
+    alt: "Ketepa Black Instant Tea 12x25G Tin",
+    isPrimary: true
+  },
+  {
+    id: 102137,
+    productId: 102137,
+    filename: "sw-ketepa-ginger-100g.jpg",
+    path: "/images/products/sw-ketepa-ginger-100g.jpg",
+    alt: "Ketepa Ginger 100G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102138,
+    productId: 102138,
+    filename: "sw-ketepa-ginger-15g.jpg",
+    path: "/images/products/sw-ketepa-ginger-15g.jpg",
+    alt: "Ketepa Ginger 15G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102139,
+    productId: 102139,
+    filename: "sw-ketepa-ginger-250g.jpg",
+    path: "/images/products/sw-ketepa-ginger-250g.jpg",
+    alt: "Ketepa Ginger 250G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102140,
+    productId: 102140,
+    filename: "sw-ketepa-ginger-500g.jpg",
+    path: "/images/products/sw-ketepa-ginger-500g.jpg",
+    alt: "Ketepa Ginger 500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102141,
+    productId: 102141,
+    filename: "sw-ketepa-ginger-50g.jpg",
+    path: "/images/products/sw-ketepa-ginger-50g.jpg",
+    alt: "Ketepa Ginger 50G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102142,
+    productId: 102142,
+    filename: "sw-ketepa-hexagonal-tea-bags-25s-assorted.jpg",
+    path: "/images/products/sw-ketepa-hexagonal-tea-bags-25s-assorted.jpg",
+    alt: "Ketepa Hexagonal Tea Bags 25's (Assorted) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102143,
+    productId: 102143,
+    filename: "sw-ketepa-jani-tea-bags-25s.jpg",
+    path: "/images/products/sw-ketepa-jani-tea-bags-25s.jpg",
+    alt: "Ketepa Jani Tea Bags 25'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102144,
+    productId: 102144,
+    filename: "sw-ketepa-tea-bag-catering-100s-tagged.jpg",
+    path: "/images/products/sw-ketepa-tea-bag-catering-100s-tagged.jpg",
+    alt: "Ketepa Tea Bag Catering 100'S (Tagged) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102145,
+    productId: 102145,
+    filename: "sw-ketepa-tea-bag-catering-100s-tagless.jpg",
+    path: "/images/products/sw-ketepa-tea-bag-catering-100s-tagless.jpg",
+    alt: "Ketepa Tea Bag Catering 100'S (Tagless) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102146,
+    productId: 102146,
+    filename: "sw-ketepa-tea-bag-economy-50s-enveloped.jpg",
+    path: "/images/products/sw-ketepa-tea-bag-economy-50s-enveloped.jpg",
+    alt: "Ketepa Tea Bag Economy 50'S (Enveloped) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102147,
+    productId: 102147,
+    filename: "sw-ketepa-tea-bag-economy-50s-tagged.jpg",
+    path: "/images/products/sw-ketepa-tea-bag-economy-50s-tagged.jpg",
+    alt: "Ketepa Tea Bag Economy 50'S (Tagged) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102148,
+    productId: 102148,
+    filename: "sw-ketepa-tea-bag-economy-50s-tagless.jpg",
+    path: "/images/products/sw-ketepa-tea-bag-economy-50s-tagless.jpg",
+    alt: "Ketepa Tea Bag Economy 50'S (Tagless) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102149,
+    productId: 102149,
+    filename: "sw-ketepa-tea-bag-handy-25s-tagged.jpg",
+    path: "/images/products/sw-ketepa-tea-bag-handy-25s-tagged.jpg",
+    alt: "Ketepa Tea Bag Handy 25'S (Tagged) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102150,
+    productId: 102150,
+    filename: "sw-ketepa-tea-bag-handy-25s-tagless.jpg",
+    path: "/images/products/sw-ketepa-tea-bag-handy-25s-tagless.jpg",
+    alt: "Ketepa Tea Bag Handy 25'S (Tagless) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102151,
+    productId: 102151,
+    filename: "sw-ketepa-tea-bag-standard-100s-enveloped.jpg",
+    path: "/images/products/sw-ketepa-tea-bag-standard-100s-enveloped.jpg",
+    alt: "Ketepa Tea Bag Standard 100'S (Enveloped) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102152,
+    productId: 102152,
+    filename: "sw-ketepa-tea-bag-standard-100s-tagged.jpg",
+    path: "/images/products/sw-ketepa-tea-bag-standard-100s-tagged.jpg",
+    alt: "Ketepa Tea Bag Standard 100'S (Tagged) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102153,
+    productId: 102153,
+    filename: "sw-ketepa-tea-bag-standard-100s-tagless.jpg",
+    path: "/images/products/sw-ketepa-tea-bag-standard-100s-tagless.jpg",
+    alt: "Ketepa Tea Bag Standard 100'S (Tagless) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102154,
+    productId: 102154,
+    filename: "sw-ketepa-tea-bags-25s-assorted.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-assorted.jpg",
+    alt: "Ketepa Tea Bags 25'S (Assorted) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102155,
+    productId: 102155,
+    filename: "sw-ketepa-tea-bags-25s-caramel.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-caramel.jpg",
+    alt: "Ketepa Tea Bags 25'S (Caramel) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102156,
+    productId: 102156,
+    filename: "sw-ketepa-tea-bags-25s-cardamom.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-cardamom.jpg",
+    alt: "Ketepa Tea Bags 25'S (Cardamom) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102157,
+    productId: 102157,
+    filename: "sw-ketepa-tea-bags-25s-cinnamon.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-cinnamon.jpg",
+    alt: "Ketepa Tea Bags 25'S (Cinnamon) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102158,
+    productId: 102158,
+    filename: "sw-ketepa-tea-bags-25s-digestive.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-digestive.jpg",
+    alt: "Ketepa Tea Bags 25'S (Digestive) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102159,
+    productId: 102159,
+    filename: "sw-ketepa-tea-bags-25s-earl-grey.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-earl-grey.jpg",
+    alt: "Ketepa Tea Bags 25'S (Earl Grey) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102160,
+    productId: 102160,
+    filename: "sw-ketepa-tea-bags-25s-forest-fruit.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-forest-fruit.jpg",
+    alt: "Ketepa Tea Bags 25'S (Forest Fruit) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102161,
+    productId: 102161,
+    filename: "sw-ketepa-tea-bags-25s-ginger-lemon-immunitea.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-ginger-lemon-immunitea.jpg",
+    alt: "Ketepa Tea Bags 25'S (Ginger Lemon/Immunitea) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102162,
+    productId: 102162,
+    filename: "sw-ketepa-tea-bags-25s-ginger.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-ginger.jpg",
+    alt: "Ketepa Tea Bags 25'S (Ginger) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102163,
+    productId: 102163,
+    filename: "sw-ketepa-tea-bags-25s-heartchai.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-heartchai.jpg",
+    alt: "Ketepa Tea Bags 25'S (Heartchai) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102164,
+    productId: 102164,
+    filename: "sw-ketepa-tea-bags-25s-hibiscus.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-hibiscus.jpg",
+    alt: "Ketepa Tea Bags 25'S (Hibiscus) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102165,
+    productId: 102165,
+    filename: "sw-ketepa-tea-bags-25s-lemon.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-lemon.jpg",
+    alt: "Ketepa Tea Bags 25'S (Lemon) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102166,
+    productId: 102166,
+    filename: "sw-ketepa-tea-bags-25s-masala.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-masala.jpg",
+    alt: "Ketepa Tea Bags 25'S (Masala) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102167,
+    productId: 102167,
+    filename: "sw-ketepa-tea-bags-25s-mint.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-mint.jpg",
+    alt: "Ketepa Tea Bags 25'S (Mint) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102168,
+    productId: 102168,
+    filename: "sw-ketepa-tea-bags-25s-purple-tea.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-purple-tea.jpg",
+    alt: "Ketepa Tea Bags 25'S (Purple Tea) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102169,
+    productId: 102169,
+    filename: "sw-ketepa-tea-bags-25s-sleep-easy.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-sleep-easy.jpg",
+    alt: "Ketepa Tea Bags 25'S (Sleep Easy) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102170,
+    productId: 102170,
+    filename: "sw-ketepa-tea-bags-25s-vanilla.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-vanilla.jpg",
+    alt: "Ketepa Tea Bags 25'S (Vanilla) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102171,
+    productId: 102171,
+    filename: "sw-ketepa-tea-bags-25s-vitalitea.jpg",
+    path: "/images/products/sw-ketepa-tea-bags-25s-vitalitea.jpg",
+    alt: "Ketepa Tea Bags 25'S (Vitalitea) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102172,
+    productId: 102172,
+    filename: "sw-kevian-hot-sweet-sauce-400g.jpg",
+    path: "/images/products/sw-kevian-hot-sweet-sauce-400g.jpg",
+    alt: "Kevian Hot & Sweet Sauce 400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102173,
+    productId: 102173,
+    filename: "sw-kevian-tomato-ketchup-700g.jpg",
+    path: "/images/products/sw-kevian-tomato-ketchup-700g.jpg",
+    alt: "Kevian Tomato Ketchup 700G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102174,
+    productId: 102174,
+    filename: "sw-kevian-tomato-sauce-700g.jpg",
+    path: "/images/products/sw-kevian-tomato-sauce-700g.jpg",
+    alt: "Kevian Tomato Sauce 700G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102175,
+    productId: 102175,
+    filename: "sw-kiboko-lollipops-25pcs-passion.jpg",
+    path: "/images/products/sw-kiboko-lollipops-25pcs-passion.jpg",
+    alt: "Kiboko Lollipops 25PCS Jar (Passion) Jar",
+    isPrimary: true
+  },
+  {
+    id: 102176,
+    productId: 102176,
+    filename: "sw-kiboko-lollipops-25pcs-strawberry.jpg",
+    path: "/images/products/sw-kiboko-lollipops-25pcs-strawberry.jpg",
+    alt: "Kiboko Lollipops 25PCS Jar (Strawberry) Jar",
+    isPrimary: true
+  },
+  {
+    id: 102177,
+    productId: 102177,
+    filename: "sw-kiboko-lollipops-25pcs-tongue-painter.jpg",
+    path: "/images/products/sw-kiboko-lollipops-25pcs-tongue-painter.jpg",
+    alt: "Kiboko Lollipops 25pcs Jar (Tongue Painter)",
+    isPrimary: true
+  },
+  {
+    id: 102178,
+    productId: 102178,
+    filename: "sw-kibuyu-cream-10x1kg.jpg",
+    path: "/images/products/sw-kibuyu-cream-10x1kg.jpg",
+    alt: "Kibuyu Cream 10x1KG Outer",
+    isPrimary: true
+  },
+  {
+    id: 102179,
+    productId: 102179,
+    filename: "sw-kibuyu-cream-12x600g.jpg",
+    path: "/images/products/sw-kibuyu-cream-12x600g.jpg",
+    alt: "Kibuyu Cream 12x600G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102180,
+    productId: 102180,
+    filename: "sw-kibuyu-herbal-10x1kg.jpg",
+    path: "/images/products/sw-kibuyu-herbal-10x1kg.jpg",
+    alt: "Kibuyu Herbal 10x1KG Outer",
+    isPrimary: true
+  },
+  {
+    id: 102181,
+    productId: 102181,
+    filename: "sw-kijani-honey-acacia-12x1kg.jpg",
+    path: "/images/products/sw-kijani-honey-acacia-12x1kg.jpg",
+    alt: "Kijani Honey (Acacia) 12x1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102182,
+    productId: 102182,
+    filename: "sw-kijani-honey-keepers-12x500g.jpg",
+    path: "/images/products/sw-kijani-honey-keepers-12x500g.jpg",
+    alt: "Kijani Honey (Keepers) 12x500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102183,
+    productId: 102183,
+    filename: "sw-kijani-honey-lemon-ginger-330g.jpg",
+    path: "/images/products/sw-kijani-honey-lemon-ginger-330g.jpg",
+    alt: "Kijani Honey (Lemon Ginger) 330G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102184,
+    productId: 102184,
+    filename: "sw-kijani-honey-acacia-500g.jpg",
+    path: "/images/products/sw-kijani-honey-acacia-500g.jpg",
+    alt: "Kijani Honey (Acacia) 500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102185,
+    productId: 102185,
+    filename: "sw-kijani-honey-keepers-100g.jpg",
+    path: "/images/products/sw-kijani-honey-keepers-100g.jpg",
+    alt: "Kijani Honey (Keepers) 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102186,
+    productId: 102186,
+    filename: "sw-kijani-honey-keepers-12x330g.jpg",
+    path: "/images/products/sw-kijani-honey-keepers-12x330g.jpg",
+    alt: "Kijani Honey (Keepers) 12x330G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102187,
+    productId: 102187,
+    filename: "sw-kijani-honey-keepers-1kg.jpg",
+    path: "/images/products/sw-kijani-honey-keepers-1kg.jpg",
+    alt: "Kijani Honey (Keepers) 1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102188,
+    productId: 102188,
+    filename: "sw-kijani-honey-keepers-6x2kg.jpg",
+    path: "/images/products/sw-kijani-honey-keepers-6x2kg.jpg",
+    alt: "Kijani Honey (Keepers) 6x2KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102189,
+    productId: 102189,
+    filename: "sw-kijani-premium-honey-1kg.jpg",
+    path: "/images/products/sw-kijani-premium-honey-1kg.jpg",
+    alt: "Kijani Premium Honey 1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102190,
+    productId: 102190,
+    filename: "sw-kijani-premium-honey-500g.jpg",
+    path: "/images/products/sw-kijani-premium-honey-500g.jpg",
+    alt: "Kijani Premium Honey 500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102191,
+    productId: 102191,
+    filename: "sw-kikkoman-soy-sauce-12x500ml.jpg",
+    path: "/images/products/sw-kikkoman-soy-sauce-12x500ml.jpg",
+    alt: "Kikkoman Soy Sauce 12x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102192,
+    productId: 102192,
+    filename: "sw-kikkoman-soy-sauce-30ml-sachet.jpg",
+    path: "/images/products/sw-kikkoman-soy-sauce-30ml-sachet.jpg",
+    alt: "Kikkoman Soy Sauce 30ML (Sachet) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102193,
+    productId: 102193,
+    filename: "sw-kimbo-fat-1kg.jpg",
+    path: "/images/products/sw-kimbo-fat-1kg.jpg",
+    alt: "Kimbo Fat 1KG Carton",
+    isPrimary: true
+  },
+  {
+    id: 102194,
+    productId: 102194,
+    filename: "sw-kimbo-fat-24x500g.jpg",
+    path: "/images/products/sw-kimbo-fat-24x500g.jpg",
+    alt: "Kimbo Fat 24x500G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102195,
+    productId: 102195,
+    filename: "sw-kimbo-fat-250g.jpg",
+    path: "/images/products/sw-kimbo-fat-250g.jpg",
+    alt: "Kimbo Fat 250G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102196,
+    productId: 102196,
+    filename: "sw-kimbo-fat-6x2kg.jpg",
+    path: "/images/products/sw-kimbo-fat-6x2kg.jpg",
+    alt: "Kimbo Fat 6x2KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102197,
+    productId: 102197,
+    filename: "sw-kimbo-premium-oil-1ltr.jpg",
+    path: "/images/products/sw-kimbo-premium-oil-1ltr.jpg",
+    alt: "Kimbo Premium Oil 1LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 102198,
+    productId: 102198,
+    filename: "sw-kinangop-200ml-esl-milk.jpg",
+    path: "/images/products/sw-kinangop-200ml-esl-milk.jpg",
+    alt: "Kinangop 200ML (ESL) Milk Carton",
+    isPrimary: true
+  },
+  {
+    id: 102199,
+    productId: 102199,
+    filename: "sw-kinangop-500ml-esl-milk.jpg",
+    path: "/images/products/sw-kinangop-500ml-esl-milk.jpg",
+    alt: "Kinangop 500ML (ESL) Milk Carton",
+    isPrimary: true
+  },
+  {
+    id: 102200,
+    productId: 102200,
+    filename: "sw-kinangop-gold-milk-500ml-fino.jpg",
+    path: "/images/products/sw-kinangop-gold-milk-500ml-fino.jpg",
+    alt: "Kinangop Gold Milk 500ML (Fino) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102201,
+    productId: 102201,
+    filename: "sw-kinangop-lala-500ml.jpg",
+    path: "/images/products/sw-kinangop-lala-500ml.jpg",
+    alt: "Kinangop Lala 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102202,
+    productId: 102202,
+    filename: "sw-kinangop-yoghurt-gold-200g-pineapple.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-gold-200g-pineapple.jpg",
+    alt: "Kinangop Yoghurt (Gold) 200G (Pineapple) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102203,
+    productId: 102203,
+    filename: "sw-kinangop-yoghurt-gold-200g-strawberry.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-gold-200g-strawberry.jpg",
+    alt: "Kinangop Yoghurt (Gold) 200G (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102204,
+    productId: 102204,
+    filename: "sw-kinangop-yoghurt-gold-200g-vanilla.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-gold-200g-vanilla.jpg",
+    alt: "Kinangop Yoghurt (Gold) 200G (Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102205,
+    productId: 102205,
+    filename: "sw-kinangop-yoghurt-gold-400g-pineapple.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-gold-400g-pineapple.jpg",
+    alt: "Kinangop Yoghurt (Gold) 400G (Pineapple) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102206,
+    productId: 102206,
+    filename: "sw-kinangop-yoghurt-gold-400g-strawberry.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-gold-400g-strawberry.jpg",
+    alt: "Kinangop Yoghurt (Gold) 400G (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102207,
+    productId: 102207,
+    filename: "sw-kinangop-yoghurt-gold-400g-vanilla.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-gold-400g-vanilla.jpg",
+    alt: "Kinangop Yoghurt (Gold) 400G (Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102208,
+    productId: 102208,
+    filename: "sw-kinangop-yoghurt-150ml-strawberry.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-150ml-strawberry.jpg",
+    alt: "Kinangop Yoghurt 150ML (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102209,
+    productId: 102209,
+    filename: "sw-kinangop-yoghurt-150ml-vanilla.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-150ml-vanilla.jpg",
+    alt: "Kinangop Yoghurt 150ML (Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102210,
+    productId: 102210,
+    filename: "sw-kinangop-yoghurt-1l-strawberry.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-1l-strawberry.jpg",
+    alt: "Kinangop Yoghurt 1L (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102211,
+    productId: 102211,
+    filename: "sw-kinangop-yoghurt-1l-vanilla.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-1l-vanilla.jpg",
+    alt: "Kinangop Yoghurt 1L (Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102212,
+    productId: 102212,
+    filename: "sw-kinangop-yoghurt-250ml-strawberry.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-250ml-strawberry.jpg",
+    alt: "Kinangop Yoghurt 250ML (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102213,
+    productId: 102213,
+    filename: "sw-kinangop-yoghurt-250ml-vanilla.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-250ml-vanilla.jpg",
+    alt: "Kinangop Yoghurt 250ML (Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102214,
+    productId: 102214,
+    filename: "sw-kinangop-yoghurt-500ml-strawberry.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-500ml-strawberry.jpg",
+    alt: "Kinangop Yoghurt 500ML (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102215,
+    productId: 102215,
+    filename: "sw-kinangop-yoghurt-500ml-vanilla.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-500ml-vanilla.jpg",
+    alt: "Kinangop Yoghurt 500ML (Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102216,
+    productId: 102216,
+    filename: "sw-kinangop-yoghurt-5l-strawberry.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-5l-strawberry.jpg",
+    alt: "Kinangop Yoghurt 5L (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102217,
+    productId: 102217,
+    filename: "sw-kinangop-yoghurt-5l-vanilla.jpg",
+    path: "/images/products/sw-kinangop-yoghurt-5l-vanilla.jpg",
+    alt: "Kinangop Yoghurt 5L (Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102218,
+    productId: 102218,
+    filename: "sw-kinder-joy-egg.jpg",
+    path: "/images/products/sw-kinder-joy-egg.jpg",
+    alt: "Kinder Joy Egg Packet",
+    isPrimary: true
+  },
+  {
+    id: 102219,
+    productId: 102219,
+    filename: "sw-king-africa-1121-steam-rice-20kg.jpg",
+    path: "/images/products/sw-king-africa-1121-steam-rice-20kg.jpg",
+    alt: "King Africa 1121 Steam Rice 20KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102220,
+    productId: 102220,
+    filename: "sw-king-africa-basmati-rice-25kg-white-jute.jpg",
+    path: "/images/products/sw-king-africa-basmati-rice-25kg-white-jute.jpg",
+    alt: "King Africa Basmati Rice 25KG (White Jute Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102221,
+    productId: 102221,
+    filename: "sw-king-africa-parboiled-rice-25kg.jpg",
+    path: "/images/products/sw-king-africa-parboiled-rice-25kg.jpg",
+    alt: "King Africa Parboiled Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102222,
+    productId: 102222,
+    filename: "sw-king-kuba-lollipop-50pcs-mega-mix.jpg",
+    path: "/images/products/sw-king-kuba-lollipop-50pcs-mega-mix.jpg",
+    alt: "King Kuba Lollipop 50PCS (Mega Mix) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102223,
+    productId: 102223,
+    filename: "sw-king-kuba-lollipop-50pcs-passion.jpg",
+    path: "/images/products/sw-king-kuba-lollipop-50pcs-passion.jpg",
+    alt: "King Kuba Lollipop 50PCS (Passion) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102224,
+    productId: 102224,
+    filename: "sw-king-kuba-lollipop-50pcs-strawberry.jpg",
+    path: "/images/products/sw-king-kuba-lollipop-50pcs-strawberry.jpg",
+    alt: "King Kuba Lollipop 50PCS (Strawberry) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102225,
+    productId: 102225,
+    filename: "sw-king-kuba-lollipop-50pcs-tongue-painter.jpg",
+    path: "/images/products/sw-king-kuba-lollipop-50pcs-tongue-painter.jpg",
+    alt: "King Kuba Lollipop 50PCS (Tongue Painter) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102226,
+    productId: 102226,
+    filename: "sw-king-sponge-cake-chocolate-50x12g.jpg",
+    path: "/images/products/sw-king-sponge-cake-chocolate-50x12g.jpg",
+    alt: "King Sponge Cake (Chocolate) 50x12G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102227,
+    productId: 102227,
+    filename: "sw-king-sponge-cake-lemon-50x12g.jpg",
+    path: "/images/products/sw-king-sponge-cake-lemon-50x12g.jpg",
+    alt: "King Sponge Cake (Lemon) 50x12G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102228,
+    productId: 102228,
+    filename: "sw-king-sponge-cake-strawberry-50x12g.jpg",
+    path: "/images/products/sw-king-sponge-cake-strawberry-50x12g.jpg",
+    alt: "King Sponge Cake (Strawberry) 50x12G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102229,
+    productId: 102229,
+    filename: "sw-king-sponge-cake-vanilla-50x12g.jpg",
+    path: "/images/products/sw-king-sponge-cake-vanilla-50x12g.jpg",
+    alt: "King Sponge Cake (Vanilla) 50x12G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102230,
+    productId: 102230,
+    filename: "sw-kinyara-sugar-1kg.jpg",
+    path: "/images/products/sw-kinyara-sugar-1kg.jpg",
+    alt: "Kinyara Sugar 1KG Carton",
+    isPrimary: true
+  },
+  {
+    id: 102231,
+    productId: 102231,
+    filename: "sw-kinyara-sugar-2kg.jpg",
+    path: "/images/products/sw-kinyara-sugar-2kg.jpg",
+    alt: "Kinyara Sugar 2KG Carton",
+    isPrimary: true
+  },
+  {
+    id: 102232,
+    productId: 102232,
+    filename: "sw-kiss-sheen-spray-12x230ml.jpg",
+    path: "/images/products/sw-kiss-sheen-spray-12x230ml.jpg",
+    alt: "Kiss Sheen Spray 12x230ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102233,
+    productId: 102233,
+    filename: "sw-kiss-sheen-spray-12x450ml.jpg",
+    path: "/images/products/sw-kiss-sheen-spray-12x450ml.jpg",
+    alt: "Kiss Sheen Spray 12x450ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102234,
+    productId: 102234,
+    filename: "sw-kiss-sheen-spray-12x85ml.jpg",
+    path: "/images/products/sw-kiss-sheen-spray-12x85ml.jpg",
+    alt: "Kiss Sheen Spray 12x85ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102235,
+    productId: 102235,
+    filename: "sw-kisskids-dark-blue-diapers-hc-large-40pcs.jpg",
+    path: "/images/products/sw-kisskids-dark-blue-diapers-hc-large-40pcs.jpg",
+    alt: "Kisskids (Dark Blue) Diapers (HC) Large 40PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102236,
+    productId: 102236,
+    filename: "sw-kisskids-dark-blue-diapers-hc-medium-42pcs.jpg",
+    path: "/images/products/sw-kisskids-dark-blue-diapers-hc-medium-42pcs.jpg",
+    alt: "Kisskids (Dark Blue) Diapers (HC) Medium 42PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102237,
+    productId: 102237,
+    filename: "sw-kisskids-dark-blue-diapers-hc-mini-48pcs.jpg",
+    path: "/images/products/sw-kisskids-dark-blue-diapers-hc-mini-48pcs.jpg",
+    alt: "Kisskids (Dark Blue) Diapers (HC) Mini 48PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102238,
+    productId: 102238,
+    filename: "sw-kisskids-dark-blue-diapers-lc-large-9pcs.jpg",
+    path: "/images/products/sw-kisskids-dark-blue-diapers-lc-large-9pcs.jpg",
+    alt: "Kisskids (Dark Blue) Diapers (LC) Large 9PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102239,
+    productId: 102239,
+    filename: "sw-kisskids-dark-blue-diapers-lc-medium-10pcs.jpg",
+    path: "/images/products/sw-kisskids-dark-blue-diapers-lc-medium-10pcs.jpg",
+    alt: "Kisskids (Dark Blue) Diapers (LC) Medium 10PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102240,
+    productId: 102240,
+    filename: "sw-kisskids-dark-blue-diapers-lc-mini-11pcs.jpg",
+    path: "/images/products/sw-kisskids-dark-blue-diapers-lc-mini-11pcs.jpg",
+    alt: "Kisskids (Dark Blue) Diapers (LC) Mini 11PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102241,
+    productId: 102241,
+    filename: "sw-kisskids-dream-diapers-hc-large-40pcs.jpg",
+    path: "/images/products/sw-kisskids-dream-diapers-hc-large-40pcs.jpg",
+    alt: "Kisskids (Dream) Diapers (HC) Large 40PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102242,
+    productId: 102242,
+    filename: "sw-kisskids-dream-diapers-hc-medium-42pcs.jpg",
+    path: "/images/products/sw-kisskids-dream-diapers-hc-medium-42pcs.jpg",
+    alt: "Kisskids (Dream) Diapers (HC) Medium 42PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102243,
+    productId: 102243,
+    filename: "sw-kisskids-dream-diapers-hc-small-48pcs.jpg",
+    path: "/images/products/sw-kisskids-dream-diapers-hc-small-48pcs.jpg",
+    alt: "Kisskids (Dream) Diapers (HC) Small 48PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102244,
+    productId: 102244,
+    filename: "sw-kisskids-dream-diapers-hc-xlarge-36pcs.jpg",
+    path: "/images/products/sw-kisskids-dream-diapers-hc-xlarge-36pcs.jpg",
+    alt: "Kisskids (Dream) Diapers (HC) XLarge 36PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102245,
+    productId: 102245,
+    filename: "sw-kisskids-dream-diapers-lc-large-8pcs.jpg",
+    path: "/images/products/sw-kisskids-dream-diapers-lc-large-8pcs.jpg",
+    alt: "Kisskids (Dream) Diapers (LC) Large 8PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102246,
+    productId: 102246,
+    filename: "sw-kisskids-dream-diapers-lc-medium-9pcs.jpg",
+    path: "/images/products/sw-kisskids-dream-diapers-lc-medium-9pcs.jpg",
+    alt: "Kisskids (Dream) Diapers (LC) Medium 9PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102247,
+    productId: 102247,
+    filename: "sw-kisskids-dream-diapers-lc-small-10pcs.jpg",
+    path: "/images/products/sw-kisskids-dream-diapers-lc-small-10pcs.jpg",
+    alt: "Kisskids (Dream) Diapers (LC) Small 10PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102248,
+    productId: 102248,
+    filename: "sw-kisskids-new-pack-no2-small-50pcs.jpg",
+    path: "/images/products/sw-kisskids-new-pack-no2-small-50pcs.jpg",
+    alt: "Kisskids (New Pack) No.2 Small 50PCS Outer",
+    isPrimary: true
+  },
+  {
+    id: 102249,
+    productId: 102249,
+    filename: "sw-kisskids-new-pack-no3-medium-44pcs.jpg",
+    path: "/images/products/sw-kisskids-new-pack-no3-medium-44pcs.jpg",
+    alt: "Kisskids (New Pack) No.3 Medium 44PCS Outer",
+    isPrimary: true
+  },
+  {
+    id: 102250,
+    productId: 102250,
+    filename: "sw-kisskids-new-pack-no4-large-42pcs.jpg",
+    path: "/images/products/sw-kisskids-new-pack-no4-large-42pcs.jpg",
+    alt: "Kisskids (New Pack) No.4 Large 42PCS Outer",
+    isPrimary: true
+  },
+  {
+    id: 102251,
+    productId: 102251,
+    filename: "sw-kisskids-baby-pants-hc-large-30pcs.jpg",
+    path: "/images/products/sw-kisskids-baby-pants-hc-large-30pcs.jpg",
+    alt: "Kisskids Baby Pants (HC) Large 30PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102252,
+    productId: 102252,
+    filename: "sw-kisskids-baby-pants-hc-medium-32pcs.jpg",
+    path: "/images/products/sw-kisskids-baby-pants-hc-medium-32pcs.jpg",
+    alt: "Kisskids Baby Pants (HC) Medium 32PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102253,
+    productId: 102253,
+    filename: "sw-kisskids-baby-pants-hc-xlarge-28pcs.jpg",
+    path: "/images/products/sw-kisskids-baby-pants-hc-xlarge-28pcs.jpg",
+    alt: "Kisskids Baby Pants (HC) XLarge 28PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102254,
+    productId: 102254,
+    filename: "sw-kisskids-baby-wipes-80pcs.jpg",
+    path: "/images/products/sw-kisskids-baby-wipes-80pcs.jpg",
+    alt: "Kisskids Baby Wipes 80PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102255,
+    productId: 102255,
+    filename: "sw-kisskids-diapers-hc-large-40pcs.jpg",
+    path: "/images/products/sw-kisskids-diapers-hc-large-40pcs.jpg",
+    alt: "Kisskids Diapers (HC) Large 40PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102256,
+    productId: 102256,
+    filename: "sw-kisskids-diapers-hc-medium-42pcs.jpg",
+    path: "/images/products/sw-kisskids-diapers-hc-medium-42pcs.jpg",
+    alt: "Kisskids Diapers (HC) Medium 42PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102257,
+    productId: 102257,
+    filename: "sw-kisskids-diapers-hc-mini-48pcs.jpg",
+    path: "/images/products/sw-kisskids-diapers-hc-mini-48pcs.jpg",
+    alt: "Kisskids Diapers (HC) Mini 48PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102258,
+    productId: 102258,
+    filename: "sw-kisskids-diapers-hc-xlarge-36pcs.jpg",
+    path: "/images/products/sw-kisskids-diapers-hc-xlarge-36pcs.jpg",
+    alt: "Kisskids Diapers (HC) XLarge 36PCS Outer",
+    isPrimary: true
+  },
+  {
+    id: 102259,
+    productId: 102259,
+    filename: "sw-kisskids-diapers-lc-large-8pcs.jpg",
+    path: "/images/products/sw-kisskids-diapers-lc-large-8pcs.jpg",
+    alt: "Kisskids Diapers (LC) Large 8PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102260,
+    productId: 102260,
+    filename: "sw-kisskids-diapers-lc-medium-9pcs.jpg",
+    path: "/images/products/sw-kisskids-diapers-lc-medium-9pcs.jpg",
+    alt: "Kisskids Diapers (LC) Medium 9PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102261,
+    productId: 102261,
+    filename: "sw-kisskids-diapers-lc-mini-10pcs.jpg",
+    path: "/images/products/sw-kisskids-diapers-lc-mini-10pcs.jpg",
+    alt: "Kisskids Diapers (LC) Mini 10PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102262,
+    productId: 102262,
+    filename: "sw-kisskids-dream-wipes-10pcs-small.jpg",
+    path: "/images/products/sw-kisskids-dream-wipes-10pcs-small.jpg",
+    alt: "Kisskids Dream Wipes 10PCS (Small) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102263,
+    productId: 102263,
+    filename: "sw-kisskids-dream-wipes-80pcs-big.jpg",
+    path: "/images/products/sw-kisskids-dream-wipes-80pcs-big.jpg",
+    alt: "Kisskids Dream Wipes 80PCS (Big) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102264,
+    productId: 102264,
+    filename: "sw-kiwi-black-100ml.jpg",
+    path: "/images/products/sw-kiwi-black-100ml.jpg",
+    alt: "Kiwi Black 100ML Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102265,
+    productId: 102265,
+    filename: "sw-kiwi-black-15ml.jpg",
+    path: "/images/products/sw-kiwi-black-15ml.jpg",
+    alt: "Kiwi Black 15ML Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102266,
+    productId: 102266,
+    filename: "sw-kiwi-black-200ml.jpg",
+    path: "/images/products/sw-kiwi-black-200ml.jpg",
+    alt: "Kiwi Black 200ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102267,
+    productId: 102267,
+    filename: "sw-kiwi-black-25ml.jpg",
+    path: "/images/products/sw-kiwi-black-25ml.jpg",
+    alt: "Kiwi Black 25ML Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102268,
+    productId: 102268,
+    filename: "sw-kiwi-black-40ml.jpg",
+    path: "/images/products/sw-kiwi-black-40ml.jpg",
+    alt: "Kiwi Black 40ML Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102269,
+    productId: 102269,
+    filename: "sw-kleenex-tissue-10s-pink-unwrapped.jpg",
+    path: "/images/products/sw-kleenex-tissue-10s-pink-unwrapped.jpg",
+    alt: "Kleenex Tissue 10'S (Pink) (Unwrapped) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102270,
+    productId: 102270,
+    filename: "sw-kleenit-scuba-sponge-scrubber.jpg",
+    path: "/images/products/sw-kleenit-scuba-sponge-scrubber.jpg",
+    alt: "Kleenit Scuba Sponge Scrubber Outer",
+    isPrimary: true
+  },
+  {
+    id: 102271,
+    productId: 102271,
+    filename: "sw-kleenit-sufuria-scourer-tub.jpg",
+    path: "/images/products/sw-kleenit-sufuria-scourer-tub.jpg",
+    alt: "Kleenit Sufuria Scourer Tub Piece",
+    isPrimary: true
+  },
+  {
+    id: 102272,
+    productId: 102272,
+    filename: "sw-kleenit-swipe-3-pack-sponge-cloth-giant.jpg",
+    path: "/images/products/sw-kleenit-swipe-3-pack-sponge-cloth-giant.jpg",
+    alt: "Kleenit Swipe 3 Pack Sponge Cloth (Giant) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102273,
+    productId: 102273,
+    filename: "sw-kleesoft-10x1kg-anti-bacterial.jpg",
+    path: "/images/products/sw-kleesoft-10x1kg-anti-bacterial.jpg",
+    alt: "Kleesoft 10x1KG (Anti-Bacterial) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102274,
+    productId: 102274,
+    filename: "sw-kleesoft-10x1kg-pink-white.jpg",
+    path: "/images/products/sw-kleesoft-10x1kg-pink-white.jpg",
+    alt: "Kleesoft 10x1KG (Pink/White) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102275,
+    productId: 102275,
+    filename: "sw-kleesoft-20x500g-anti-bacterial.jpg",
+    path: "/images/products/sw-kleesoft-20x500g-anti-bacterial.jpg",
+    alt: "Kleesoft 20x500G (Anti-Bacterial) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102276,
+    productId: 102276,
+    filename: "sw-kleesoft-20x500g-pink-white.jpg",
+    path: "/images/products/sw-kleesoft-20x500g-pink-white.jpg",
+    alt: "Kleesoft 20x500G (Pink/White) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102277,
+    productId: 102277,
+    filename: "sw-kleesoft-40x200g-anti-bacterial.jpg",
+    path: "/images/products/sw-kleesoft-40x200g-anti-bacterial.jpg",
+    alt: "Kleesoft 40x200G (Anti-Bacterial) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102278,
+    productId: 102278,
+    filename: "sw-kleesoft-40x200g-pink.jpg",
+    path: "/images/products/sw-kleesoft-40x200g-pink.jpg",
+    alt: "Kleesoft 40x200G (Pink) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102279,
+    productId: 102279,
+    filename: "sw-kleesoft-40g-anti-bacterial.jpg",
+    path: "/images/products/sw-kleesoft-40g-anti-bacterial.jpg",
+    alt: "Kleesoft 40G (Anti-Bacterial) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102280,
+    productId: 102280,
+    filename: "sw-kleesoft-blue-3.5kg-bucket.jpg",
+    path: "/images/products/sw-kleesoft-blue-3.5kg-bucket.jpg",
+    alt: "Kleesoft Blue 3.5KG Bucket",
+    isPrimary: true
+  },
+  {
+    id: 102281,
+    productId: 102281,
+    filename: "sw-kleesoft-pink-3.5kg-bucket.jpg",
+    path: "/images/products/sw-kleesoft-pink-3.5kg-bucket.jpg",
+    alt: "Kleesoft Pink 3.5KG Bucket",
+    isPrimary: true
+  },
+  {
+    id: 102282,
+    productId: 102282,
+    filename: "sw-klub-101-lemonade-300ml.jpg",
+    path: "/images/products/sw-klub-101-lemonade-300ml.jpg",
+    alt: "Klub 101 Lemonade 300ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102283,
+    productId: 102283,
+    filename: "sw-knorr-beef-chill-cube-6s.jpg",
+    path: "/images/products/sw-knorr-beef-chill-cube-6s.jpg",
+    alt: "Knorr Beef Chill Cube 6'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102284,
+    productId: 102284,
+    filename: "sw-knorr-beef-cube-6s.jpg",
+    path: "/images/products/sw-knorr-beef-cube-6s.jpg",
+    alt: "Knorr Beef Cube 6'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102285,
+    productId: 102285,
+    filename: "sw-knorr-beef-soup-10x50g.jpg",
+    path: "/images/products/sw-knorr-beef-soup-10x50g.jpg",
+    alt: "Knorr Beef Soup 10x50G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102286,
+    productId: 102286,
+    filename: "sw-knorr-chicken-cubes-6s.jpg",
+    path: "/images/products/sw-knorr-chicken-cubes-6s.jpg",
+    alt: "Knorr Chicken Cubes 6'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102287,
+    productId: 102287,
+    filename: "sw-knorr-chicken-noodle-soup-10x50g.jpg",
+    path: "/images/products/sw-knorr-chicken-noodle-soup-10x50g.jpg",
+    alt: "Knorr Chicken Noodle Soup 10x50G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102288,
+    productId: 102288,
+    filename: "sw-knorr-chicken-soup-10x50g.jpg",
+    path: "/images/products/sw-knorr-chicken-soup-10x50g.jpg",
+    alt: "Knorr Chicken Soup 10x50G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102289,
+    productId: 102289,
+    filename: "sw-knorr-cube-4g-green.jpg",
+    path: "/images/products/sw-knorr-cube-4g-green.jpg",
+    alt: "Knorr Cube 4G (Green) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102290,
+    productId: 102290,
+    filename: "sw-knorr-minestrone-soup-10x50g.jpg",
+    path: "/images/products/sw-knorr-minestrone-soup-10x50g.jpg",
+    alt: "Knorr Minestrone Soup 10x50G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102291,
+    productId: 102291,
+    filename: "sw-knorr-mushroom-soup-10x50g.jpg",
+    path: "/images/products/sw-knorr-mushroom-soup-10x50g.jpg",
+    alt: "Knorr Mushroom Soup 10x50G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102292,
+    productId: 102292,
+    filename: "sw-knorr-rich-oxtail-soup-10x50g.jpg",
+    path: "/images/products/sw-knorr-rich-oxtail-soup-10x50g.jpg",
+    alt: "Knorr Rich Oxtail Soup 10x50G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102293,
+    productId: 102293,
+    filename: "sw-knorr-tomato-soup-10x50g.jpg",
+    path: "/images/products/sw-knorr-tomato-soup-10x50g.jpg",
+    alt: "Knorr Tomato Soup 10x50G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102294,
+    productId: 102294,
+    filename: "sw-knorr-vegetable-soup-10x50g.jpg",
+    path: "/images/products/sw-knorr-vegetable-soup-10x50g.jpg",
+    alt: "Knorr Vegetable Soup 10x50G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102295,
+    productId: 102295,
+    filename: "sw-kopiko-candy-12x350g-jar.jpg",
+    path: "/images/products/sw-kopiko-candy-12x350g-jar.jpg",
+    alt: "Kopiko Candy 12x350G Jar",
+    isPrimary: true
+  },
+  {
+    id: 102296,
+    productId: 102296,
+    filename: "sw-kopiko-coffee-candy-24x175g.jpg",
+    path: "/images/products/sw-kopiko-coffee-candy-24x175g.jpg",
+    alt: "Kopiko Coffee Candy 24x175G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102297,
+    productId: 102297,
+    filename: "sw-korie-premium-aromatic-rice-6x5kgs.jpg",
+    path: "/images/products/sw-korie-premium-aromatic-rice-6x5kgs.jpg",
+    alt: "Korie Premium Aromatic Rice 6x5KGS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102298,
+    productId: 102298,
+    filename: "sw-kotex-pads-7s.jpg",
+    path: "/images/products/sw-kotex-pads-7s.jpg",
+    alt: "Kotex Pads 7'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102299,
+    productId: 102299,
+    filename: "sw-kotex-pads-8s.jpg",
+    path: "/images/products/sw-kotex-pads-8s.jpg",
+    alt: "Kotex Pads 8'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102300,
+    productId: 102300,
+    filename: "sw-kotex-pads-9s.jpg",
+    path: "/images/products/sw-kotex-pads-9s.jpg",
+    alt: "Kotex Pads 9'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102301,
+    productId: 102301,
+    filename: "sw-kotex-panty-liners-regular-20s.jpg",
+    path: "/images/products/sw-kotex-panty-liners-regular-20s.jpg",
+    alt: "Kotex Panty Liners Regular 20'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102302,
+    productId: 102302,
+    filename: "sw-kotex-panty-liners-regular-40s.jpg",
+    path: "/images/products/sw-kotex-panty-liners-regular-40s.jpg",
+    alt: "Kotex Panty Liners Regular 40'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102303,
+    productId: 102303,
+    filename: "sw-kotex-tampons-16s-normal.jpg",
+    path: "/images/products/sw-kotex-tampons-16s-normal.jpg",
+    alt: "Kotex Tampons 16'S (Normal) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102304,
+    productId: 102304,
+    filename: "sw-kotex-tampons-16s-super.jpg",
+    path: "/images/products/sw-kotex-tampons-16s-super.jpg",
+    alt: "Kotex Tampons 16'S (Super) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102305,
+    productId: 102305,
+    filename: "sw-kpl-biryani-rice-25kg-green-bag.jpg",
+    path: "/images/products/sw-kpl-biryani-rice-25kg-green-bag.jpg",
+    alt: "KPL Biryani Rice 25KG (Green Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102306,
+    productId: 102306,
+    filename: "sw-kpl-kamande-24x1kg.jpg",
+    path: "/images/products/sw-kpl-kamande-24x1kg.jpg",
+    alt: "KPL Kamande 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102307,
+    productId: 102307,
+    filename: "sw-kpl-long-grain-rice-5kg.jpg",
+    path: "/images/products/sw-kpl-long-grain-rice-5kg.jpg",
+    alt: "KPL Long Grain Rice 5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102308,
+    productId: 102308,
+    filename: "sw-kpl-ndengu-24x1kg.jpg",
+    path: "/images/products/sw-kpl-ndengu-24x1kg.jpg",
+    alt: "KPL Ndengu 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102309,
+    productId: 102309,
+    filename: "sw-kpl-ndengu-48x500g.jpg",
+    path: "/images/products/sw-kpl-ndengu-48x500g.jpg",
+    alt: "KPL Ndengu 48x500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102310,
+    productId: 102310,
+    filename: "sw-kpl-nyayo-beans-24x1kg.jpg",
+    path: "/images/products/sw-kpl-nyayo-beans-24x1kg.jpg",
+    alt: "KPL Nyayo Beans 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102311,
+    productId: 102311,
+    filename: "sw-kpl-super-aromatic-rice-25kg-white-bag.jpg",
+    path: "/images/products/sw-kpl-super-aromatic-rice-25kg-white-bag.jpg",
+    alt: "KPL Super Aromatic Rice 25KG (White Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102312,
+    productId: 102312,
+    filename: "sw-kpl-wairimu-beans-24x1kg.jpg",
+    path: "/images/products/sw-kpl-wairimu-beans-24x1kg.jpg",
+    alt: "KPL Wairimu Beans 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102313,
+    productId: 102313,
+    filename: "sw-kpl-yellow-beans-24x1kg.jpg",
+    path: "/images/products/sw-kpl-yellow-beans-24x1kg.jpg",
+    alt: "KPL Yellow Beans 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102314,
+    productId: 102314,
+    filename: "sw-krackles-125g-assorted.jpg",
+    path: "/images/products/sw-krackles-125g-assorted.jpg",
+    alt: "Krackles 125G (Assorted) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102315,
+    productId: 102315,
+    filename: "sw-krackles-30g-assorted.jpg",
+    path: "/images/products/sw-krackles-30g-assorted.jpg",
+    alt: "Krackles 30G (Assorted) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102316,
+    productId: 102316,
+    filename: "sw-krackles-toons-30g-caramel.jpg",
+    path: "/images/products/sw-krackles-toons-30g-caramel.jpg",
+    alt: "Krackles Toons 30G (Caramel) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102317,
+    productId: 102317,
+    filename: "sw-kracks-potato-crisps-110g.jpg",
+    path: "/images/products/sw-kracks-potato-crisps-110g.jpg",
+    alt: "Kracks Potato Crisps 110G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102318,
+    productId: 102318,
+    filename: "sw-kripsii-100g-barbeque.jpg",
+    path: "/images/products/sw-kripsii-100g-barbeque.jpg",
+    alt: "Kripsii 100G (Barbeque) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102319,
+    productId: 102319,
+    filename: "sw-kripsii-100g-lemon-chilli.jpg",
+    path: "/images/products/sw-kripsii-100g-lemon-chilli.jpg",
+    alt: "Kripsii 100G (Lemon & Chilli) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102320,
+    productId: 102320,
+    filename: "sw-kripsii-100g-salted.jpg",
+    path: "/images/products/sw-kripsii-100g-salted.jpg",
+    alt: "Kripsii 100G (Salted) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102321,
+    productId: 102321,
+    filename: "sw-kripsii-100g-tomato-ketchup.jpg",
+    path: "/images/products/sw-kripsii-100g-tomato-ketchup.jpg",
+    alt: "Kripsii 100G (Tomato Ketchup) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102322,
+    productId: 102322,
+    filename: "sw-kripsii-25g-salted.jpg",
+    path: "/images/products/sw-kripsii-25g-salted.jpg",
+    alt: "Kripsii 25G (Salted) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102323,
+    productId: 102323,
+    filename: "sw-kripsii-50g-bbq-chicken.jpg",
+    path: "/images/products/sw-kripsii-50g-bbq-chicken.jpg",
+    alt: "Kripsii 50G (BBQ Chicken) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102324,
+    productId: 102324,
+    filename: "sw-kripsii-50g-lemon-chilli.jpg",
+    path: "/images/products/sw-kripsii-50g-lemon-chilli.jpg",
+    alt: "Kripsii 50G (Lemon & Chilli) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102325,
+    productId: 102325,
+    filename: "sw-kripsii-50g-salted.jpg",
+    path: "/images/products/sw-kripsii-50g-salted.jpg",
+    alt: "Kripsii 50G (Salted) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102326,
+    productId: 102326,
+    filename: "sw-kripsii-50g-tomato-ketchup.jpg",
+    path: "/images/products/sw-kripsii-50g-tomato-ketchup.jpg",
+    alt: "Kripsii 50G (Tomato Ketchup) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102327,
+    productId: 102327,
+    filename: "sw-ksl-drinking-chocolate-10g.jpg",
+    path: "/images/products/sw-ksl-drinking-chocolate-10g.jpg",
+    alt: "KSL Drinking Chocolate 10G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102328,
+    productId: 102328,
+    filename: "sw-ksl-eucalyptus-cough-blasters-12x50pcs.jpg",
+    path: "/images/products/sw-ksl-eucalyptus-cough-blasters-12x50pcs.jpg",
+    alt: "KSL Eucalyptus Cough Blasters 12x50PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102329,
+    productId: 102329,
+    filename: "sw-ksl-fruit-drops-12x1kg.jpg",
+    path: "/images/products/sw-ksl-fruit-drops-12x1kg.jpg",
+    alt: "KSL Fruit Drops 12x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102330,
+    productId: 102330,
+    filename: "sw-ksl-fruit-drops-12x500g.jpg",
+    path: "/images/products/sw-ksl-fruit-drops-12x500g.jpg",
+    alt: "KSL Fruit Drops 12x500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102331,
+    productId: 102331,
+    filename: "sw-ksl-happy-blackcurrant-100pcs.jpg",
+    path: "/images/products/sw-ksl-happy-blackcurrant-100pcs.jpg",
+    alt: "KSL Happy Blackcurrant 100PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102332,
+    productId: 102332,
+    filename: "sw-ksl-happy-strawberry-100pcs.jpg",
+    path: "/images/products/sw-ksl-happy-strawberry-100pcs.jpg",
+    alt: "KSL Happy Strawberry 100PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102333,
+    productId: 102333,
+    filename: "sw-ksl-koo-cuffy-cough-drops.jpg",
+    path: "/images/products/sw-ksl-koo-cuffy-cough-drops.jpg",
+    alt: "KSL Koo (Cuffy Cough Drops) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102334,
+    productId: 102334,
+    filename: "sw-ksl-lit-mints-12x80pcs-peanut.jpg",
+    path: "/images/products/sw-ksl-lit-mints-12x80pcs-peanut.jpg",
+    alt: "KSL Lit Mints 12x80PCS (Peanut) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102335,
+    productId: 102335,
+    filename: "sw-ksl-lit-mints-80pcs-heaven.jpg",
+    path: "/images/products/sw-ksl-lit-mints-80pcs-heaven.jpg",
+    alt: "KSL Lit Mints 80PCS (Heaven) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102336,
+    productId: 102336,
+    filename: "sw-ksl-patco-white-12x1kg.jpg",
+    path: "/images/products/sw-ksl-patco-white-12x1kg.jpg",
+    alt: "KSL Patco White 12x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102337,
+    productId: 102337,
+    filename: "sw-ksl-patco-white-12x500g.jpg",
+    path: "/images/products/sw-ksl-patco-white-12x500g.jpg",
+    alt: "KSL Patco White 12x500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102338,
+    productId: 102338,
+    filename: "sw-ksl-superstar-lollipop-50pcs-creamy.jpg",
+    path: "/images/products/sw-ksl-superstar-lollipop-50pcs-creamy.jpg",
+    alt: "KSL Superstar Lollipop 50PCS (Creamy) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102339,
+    productId: 102339,
+    filename: "sw-ksl-tropical-1kg.jpg",
+    path: "/images/products/sw-ksl-tropical-1kg.jpg",
+    alt: "KSL Tropical 1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102340,
+    productId: 102340,
+    filename: "sw-ksl-tropical-500g.jpg",
+    path: "/images/products/sw-ksl-tropical-500g.jpg",
+    alt: "KSL Tropical 500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102341,
+    productId: 102341,
+    filename: "sw-ksl-tropical-lollipop-12x20pcs.jpg",
+    path: "/images/products/sw-ksl-tropical-lollipop-12x20pcs.jpg",
+    alt: "KSL Tropical Lollipop 12x20PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102342,
+    productId: 102342,
+    filename: "sw-kt-keny-tom-tomato-paste-50g.jpg",
+    path: "/images/products/sw-kt-keny-tom-tomato-paste-50g.jpg",
+    alt: "KT (Keny-Tom) Tomato Paste 50GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102343,
+    productId: 102343,
+    filename: "sw-kt-keny-tom-tomato-paste-800g.jpg",
+    path: "/images/products/sw-kt-keny-tom-tomato-paste-800g.jpg",
+    alt: "KT (Keny-Tom) Tomato Paste 800GM Piece",
+    isPrimary: true
+  },
+  {
+    id: 102344,
+    productId: 102344,
+    filename: "sw-kuku-biryani-rice-10kg.jpg",
+    path: "/images/products/sw-kuku-biryani-rice-10kg.jpg",
+    alt: "Kuku Biryani Rice 10KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102345,
+    productId: 102345,
+    filename: "sw-kunde-beans-22.5kg.jpg",
+    path: "/images/products/sw-kunde-beans-22.5kg.jpg",
+    alt: "Kunde Beans 22.5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102346,
+    productId: 102346,
+    filename: "sw-kwale-sugar-10x2kg.jpg",
+    path: "/images/products/sw-kwale-sugar-10x2kg.jpg",
+    alt: "Kwale Sugar 10x2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102347,
+    productId: 102347,
+    filename: "sw-kwale-sugar-20x1kg.jpg",
+    path: "/images/products/sw-kwale-sugar-20x1kg.jpg",
+    alt: "Kwale Sugar 20x1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102348,
+    productId: 102348,
+    filename: "sw-kwik-brite-pot-scrubber-sponge-3s.jpg",
+    path: "/images/products/sw-kwik-brite-pot-scrubber-sponge-3s.jpg",
+    alt: "Kwik Brite Pot Scrubber with Sponge 3'S Outer",
+    isPrimary: true
+  },
+  {
+    id: 102349,
+    productId: 102349,
+    filename: "sw-kwik-brite-scrubbing-pad-6pk.jpg",
+    path: "/images/products/sw-kwik-brite-scrubbing-pad-6pk.jpg",
+    alt: "Kwik Brite Scrubbing Pad 6PK Outer",
+    isPrimary: true
+  },
+  {
+    id: 102350,
+    productId: 102350,
+    filename: "sw-la-zain-tomato-paste-50g.jpg",
+    path: "/images/products/sw-la-zain-tomato-paste-50g.jpg",
+    alt: "La Zain Tomato Paste 50G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102351,
+    productId: 102351,
+    filename: "sw-lady-diana-body-lotion-12x600ml-papaya.jpg",
+    path: "/images/products/sw-lady-diana-body-lotion-12x600ml-papaya.jpg",
+    alt: "Lady Diana Body Lotion 12x600ML (Papaya) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102352,
+    productId: 102352,
+    filename: "sw-lady-diana-body-lotion-24x500ml-carrot.jpg",
+    path: "/images/products/sw-lady-diana-body-lotion-24x500ml-carrot.jpg",
+    alt: "Lady Diana Body Lotion 24x500ML (Carrot) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102353,
+    productId: 102353,
+    filename: "sw-lady-diana-body-lotion-24x500ml-cocoa-butter.jpg",
+    path: "/images/products/sw-lady-diana-body-lotion-24x500ml-cocoa-butter.jpg",
+    alt: "Lady Diana Body Lotion 24x500ML (Cocoa Butter) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102354,
+    productId: 102354,
+    filename: "sw-lady-diana-body-lotion-24x500ml-papaya.jpg",
+    path: "/images/products/sw-lady-diana-body-lotion-24x500ml-papaya.jpg",
+    alt: "Lady Diana Body Lotion 24x500ML (Papaya) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102355,
+    productId: 102355,
+    filename: "sw-lady-diana-body-lotion-24x500ml-pearl-rose.jpg",
+    path: "/images/products/sw-lady-diana-body-lotion-24x500ml-pearl-rose.jpg",
+    alt: "Lady Diana Body Lotion 24x500ML (Pearl Rose) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102356,
+    productId: 102356,
+    filename: "sw-lady-diana-body-lotion-6x500ml-shea-butter.jpg",
+    path: "/images/products/sw-lady-diana-body-lotion-6x500ml-shea-butter.jpg",
+    alt: "Lady Diana Body Lotion 6x500ML (Shea Butter) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102357,
+    productId: 102357,
+    filename: "sw-lady-diana-body-scrub-12x1l-aloe.jpg",
+    path: "/images/products/sw-lady-diana-body-scrub-12x1l-aloe.jpg",
+    alt: "Lady Diana Body Scrub 12x1L (Aloe) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102358,
+    productId: 102358,
+    filename: "sw-lady-diana-body-scrub-12x1l-blueberry.jpg",
+    path: "/images/products/sw-lady-diana-body-scrub-12x1l-blueberry.jpg",
+    alt: "Lady Diana Body Scrub 12x1L (Blueberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102359,
+    productId: 102359,
+    filename: "sw-lady-diana-body-scrub-12x1l-carrot.jpg",
+    path: "/images/products/sw-lady-diana-body-scrub-12x1l-carrot.jpg",
+    alt: "Lady Diana Body Scrub 12x1L (Carrot) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102360,
+    productId: 102360,
+    filename: "sw-lady-diana-body-scrub-12x1l-cherry.jpg",
+    path: "/images/products/sw-lady-diana-body-scrub-12x1l-cherry.jpg",
+    alt: "Lady Diana Body Scrub 12x1L (Cherry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102361,
+    productId: 102361,
+    filename: "sw-lady-diana-body-scrub-12x1l-papaya.jpg",
+    path: "/images/products/sw-lady-diana-body-scrub-12x1l-papaya.jpg",
+    alt: "Lady Diana Body Scrub 12x1L (Papaya) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102362,
+    productId: 102362,
+    filename: "sw-lady-diana-body-scrub-12x1l-strawberry.jpg",
+    path: "/images/products/sw-lady-diana-body-scrub-12x1l-strawberry.jpg",
+    alt: "Lady Diana Body Scrub 12x1L (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102363,
+    productId: 102363,
+    filename: "sw-lady-diana-body-scrub-6x300ml-arabic-coffee.jpg",
+    path: "/images/products/sw-lady-diana-body-scrub-6x300ml-arabic-coffee.jpg",
+    alt: "Lady Diana Body Scrub 6x300ML (Arabic Coffee) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102364,
+    productId: 102364,
+    filename: "sw-lady-diana-body-scrub-6x300ml-charcoal.jpg",
+    path: "/images/products/sw-lady-diana-body-scrub-6x300ml-charcoal.jpg",
+    alt: "Lady Diana Body Scrub 6x300ML (Charcoal) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102365,
+    productId: 102365,
+    filename: "sw-lady-diana-facial-scrub-12x170ml-charcoal.jpg",
+    path: "/images/products/sw-lady-diana-facial-scrub-12x170ml-charcoal.jpg",
+    alt: "Lady Diana Facial Scrub 12x170ML (Charcoal) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102366,
+    productId: 102366,
+    filename: "sw-lady-diana-facial-scrub-12x170ml-rice.jpg",
+    path: "/images/products/sw-lady-diana-facial-scrub-12x170ml-rice.jpg",
+    alt: "Lady Diana Facial Scrub 12x170ML (Rice) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102367,
+    productId: 102367,
+    filename: "sw-lady-diana-sheen-spray-24x400ml.jpg",
+    path: "/images/products/sw-lady-diana-sheen-spray-24x400ml.jpg",
+    alt: "Lady Diana Sheen Spray 24x400ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102368,
+    productId: 102368,
+    filename: "sw-lady-diana-shower-gel-12x1l-cherry.jpg",
+    path: "/images/products/sw-lady-diana-shower-gel-12x1l-cherry.jpg",
+    alt: "Lady Diana Shower Gel 12x1L (Cherry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102369,
+    productId: 102369,
+    filename: "sw-lady-diana-shower-gel-12x1l-lavender-chamomile.jpg",
+    path: "/images/products/sw-lady-diana-shower-gel-12x1l-lavender-chamomile.jpg",
+    alt: "Lady Diana Shower Gel 12x1L (Lavender Chamomile) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102370,
+    productId: 102370,
+    filename: "sw-lady-diana-shower-gel-12x1l-lemon.jpg",
+    path: "/images/products/sw-lady-diana-shower-gel-12x1l-lemon.jpg",
+    alt: "Lady Diana Shower Gel 12x1L (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102371,
+    productId: 102371,
+    filename: "sw-lady-diana-shower-gel-12x1l-strawberry.jpg",
+    path: "/images/products/sw-lady-diana-shower-gel-12x1l-strawberry.jpg",
+    alt: "Lady Diana Shower Gel 12x1L (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102372,
+    productId: 102372,
+    filename: "sw-lady-diana-soap-96x100g-black-african.jpg",
+    path: "/images/products/sw-lady-diana-soap-96x100g-black-african.jpg",
+    alt: "Lady Diana Soap 96x100G (Black African) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102373,
+    productId: 102373,
+    filename: "sw-lady-diana-soap-96x100g-vitamin-c.jpg",
+    path: "/images/products/sw-lady-diana-soap-96x100g-vitamin-c.jpg",
+    alt: "Lady Diana Soap 96x100G (Vitamin C) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102374,
+    productId: 102374,
+    filename: "sw-lamu-nuts-55g-assorted.jpg",
+    path: "/images/products/sw-lamu-nuts-55g-assorted.jpg",
+    alt: "Lamu Nuts 55G (Assorted) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102375,
+    productId: 102375,
+    filename: "sw-lanzo-soap-100g-antibacterial.jpg",
+    path: "/images/products/sw-lanzo-soap-100g-antibacterial.jpg",
+    alt: "Lanzo Soap 100G (Antibacterial) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102376,
+    productId: 102376,
+    filename: "sw-lanzo-soap-100g-blueberry.jpg",
+    path: "/images/products/sw-lanzo-soap-100g-blueberry.jpg",
+    alt: "Lanzo Soap 100G (Blueberry) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102377,
+    productId: 102377,
+    filename: "sw-lanzo-soap-100g-menthol.jpg",
+    path: "/images/products/sw-lanzo-soap-100g-menthol.jpg",
+    alt: "Lanzo Soap 100G (Menthol) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102378,
+    productId: 102378,
+    filename: "sw-lanzo-soap-100g-raspberry-vanilla.jpg",
+    path: "/images/products/sw-lanzo-soap-100g-raspberry-vanilla.jpg",
+    alt: "Lanzo Soap 100G (Raspberry & Vanilla) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102379,
+    productId: 102379,
+    filename: "sw-lanzo-soap-100g-shea-butter.jpg",
+    path: "/images/products/sw-lanzo-soap-100g-shea-butter.jpg",
+    alt: "Lanzo Soap 100G (Shea Butter) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102380,
+    productId: 102380,
+    filename: "sw-lanzo-soap-144x15g-antibacterial.jpg",
+    path: "/images/products/sw-lanzo-soap-144x15g-antibacterial.jpg",
+    alt: "Lanzo Soap 144x15G (Antibacterial) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102381,
+    productId: 102381,
+    filename: "sw-lanzo-soap-18x200g-antibacterial.jpg",
+    path: "/images/products/sw-lanzo-soap-18x200g-antibacterial.jpg",
+    alt: "Lanzo Soap 18x200G (Antibacterial) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102382,
+    productId: 102382,
+    filename: "sw-lanzo-soap-18x200g-blueberry.jpg",
+    path: "/images/products/sw-lanzo-soap-18x200g-blueberry.jpg",
+    alt: "Lanzo Soap 18x200G (Blueberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102383,
+    productId: 102383,
+    filename: "sw-lanzo-soap-18x200g-menthol.jpg",
+    path: "/images/products/sw-lanzo-soap-18x200g-menthol.jpg",
+    alt: "Lanzo Soap 18x200G (Menthol) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102384,
+    productId: 102384,
+    filename: "sw-lanzo-soap-18x200g-rasberry-vanilla.jpg",
+    path: "/images/products/sw-lanzo-soap-18x200g-rasberry-vanilla.jpg",
+    alt: "Lanzo Soap 18x200G (Rasberry & Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102385,
+    productId: 102385,
+    filename: "sw-lanzo-soap-18x200g-shea-butter.jpg",
+    path: "/images/products/sw-lanzo-soap-18x200g-shea-butter.jpg",
+    alt: "Lanzo Soap 18x200G (Shea Butter) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102386,
+    productId: 102386,
+    filename: "sw-lato-ghee-24x500ml.jpg",
+    path: "/images/products/sw-lato-ghee-24x500ml.jpg",
+    alt: "Lato Ghee 24x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102387,
+    productId: 102387,
+    filename: "sw-lato-milk-12x500ml-fino.jpg",
+    path: "/images/products/sw-lato-milk-12x500ml-fino.jpg",
+    alt: "Lato Milk 12x500ML (Fino) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102388,
+    productId: 102388,
+    filename: "sw-lato-milk-18x500ml-esl.jpg",
+    path: "/images/products/sw-lato-milk-18x500ml-esl.jpg",
+    alt: "Lato Milk 18x500ML (ESL) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102389,
+    productId: 102389,
+    filename: "sw-lato-milk-21x200ml-esl.jpg",
+    path: "/images/products/sw-lato-milk-21x200ml-esl.jpg",
+    alt: "Lato Milk 21x200ML (ESL) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102390,
+    productId: 102390,
+    filename: "sw-lato-milk-uht-24x125ml-vanilla.jpg",
+    path: "/images/products/sw-lato-milk-uht-24x125ml-vanilla.jpg",
+    alt: "Lato Milk UHT 24x125ML (Vanilla) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102391,
+    productId: 102391,
+    filename: "sw-lato-milk-uht-24x250ml-pineapple.jpg",
+    path: "/images/products/sw-lato-milk-uht-24x250ml-pineapple.jpg",
+    alt: "Lato Milk UHT 24x250ML (Pineapple) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102392,
+    productId: 102392,
+    filename: "sw-lato-nonna-gold-1-12x400ml-0-6months.jpg",
+    path: "/images/products/sw-lato-nonna-gold-1-12x400ml-0-6months.jpg",
+    alt: "Lato Nonna Gold 1 12x400ML (0-6 Months) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102393,
+    productId: 102393,
+    filename: "sw-lato-nonna-gold-2-12x400ml-6-12months.jpg",
+    path: "/images/products/sw-lato-nonna-gold-2-12x400ml-6-12months.jpg",
+    alt: "Lato Nonna Gold 2 12x400ML (6-12 Months) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102394,
+    productId: 102394,
+    filename: "sw-laundry-baskets.jpg",
+    path: "/images/products/sw-laundry-baskets.jpg",
+    alt: "Laundry Baskets Piece",
+    isPrimary: true
+  },
+  {
+    id: 102395,
+    productId: 102395,
+    filename: "sw-laziz-himalayan-pink-salt-18x1kg.jpg",
+    path: "/images/products/sw-laziz-himalayan-pink-salt-18x1kg.jpg",
+    alt: "Laziz Himalayan Pink Salt 18x1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102396,
+    productId: 102396,
+    filename: "sw-laziz-himalayan-pink-salt-32x500g.jpg",
+    path: "/images/products/sw-laziz-himalayan-pink-salt-32x500g.jpg",
+    alt: "Laziz Himalayan Pink Salt 32x500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102397,
+    productId: 102397,
+    filename: "sw-lea-premium-1kg.jpg",
+    path: "/images/products/sw-lea-premium-1kg.jpg",
+    alt: "Lea Premium 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102398,
+    productId: 102398,
+    filename: "sw-lea-premium-ugali-2kg.jpg",
+    path: "/images/products/sw-lea-premium-ugali-2kg.jpg",
+    alt: "Lea Premium Ugali 2KG 1/2bale",
+    isPrimary: true
+  },
+  {
+    id: 102399,
+    productId: 102399,
+    filename: "sw-leaders-pishori-rice-12x2kg.jpg",
+    path: "/images/products/sw-leaders-pishori-rice-12x2kg.jpg",
+    alt: "Leaders Pishori Rice 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102400,
+    productId: 102400,
+    filename: "sw-leaders-pishori-rice-6x5kg.jpg",
+    path: "/images/products/sw-leaders-pishori-rice-6x5kg.jpg",
+    alt: "Leaders Pishori Rice 6x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102401,
+    productId: 102401,
+    filename: "sw-lemon-water-24x500ml.jpg",
+    path: "/images/products/sw-lemon-water-24x500ml.jpg",
+    alt: "Lemon Water 24x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102402,
+    productId: 102402,
+    filename: "sw-lido-soap-12x700g-cream.jpg",
+    path: "/images/products/sw-lido-soap-12x700g-cream.jpg",
+    alt: "Lido Soap 12x700G (Cream) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102403,
+    productId: 102403,
+    filename: "sw-lido-soap-12x700g-white.jpg",
+    path: "/images/products/sw-lido-soap-12x700g-white.jpg",
+    alt: "Lido Soap 12x700G (White) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102404,
+    productId: 102404,
+    filename: "sw-life-guard-studded.jpg",
+    path: "/images/products/sw-life-guard-studded.jpg",
+    alt: "Life Guard Studded Packet",
+    isPrimary: true
+  },
+  {
+    id: 102405,
+    productId: 102405,
+    filename: "sw-lily-c9-white-rice-25kg.jpg",
+    path: "/images/products/sw-lily-c9-white-rice-25kg.jpg",
+    alt: "Lily C-9 White Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102406,
+    productId: 102406,
+    filename: "sw-livelle-kitchen-towel-single-coloured.jpg",
+    path: "/images/products/sw-livelle-kitchen-towel-single-coloured.jpg",
+    alt: "Livelle Kitchen Towel (Single) (Coloured) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102407,
+    productId: 102407,
+    filename: "sw-livelle-kitchen-towel-singles-white.jpg",
+    path: "/images/products/sw-livelle-kitchen-towel-singles-white.jpg",
+    alt: "Livelle Kitchen Towel (Singles) (White) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102408,
+    productId: 102408,
+    filename: "sw-livelle-kitchen-towel-twin-coloured.jpg",
+    path: "/images/products/sw-livelle-kitchen-towel-twin-coloured.jpg",
+    alt: "Livelle Kitchen Towel (Twin) (Coloured) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102409,
+    productId: 102409,
+    filename: "sw-livelle-kitchen-towel-twin-white.jpg",
+    path: "/images/products/sw-livelle-kitchen-towel-twin-white.jpg",
+    alt: "Livelle Kitchen Towel (Twin) (White) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102410,
+    productId: 102410,
+    filename: "sw-livelle-tissue-10pack.jpg",
+    path: "/images/products/sw-livelle-tissue-10pack.jpg",
+    alt: "Livelle Tissue (10 Pack) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102411,
+    productId: 102411,
+    filename: "sw-lix-bleach-500ml.jpg",
+    path: "/images/products/sw-lix-bleach-500ml.jpg",
+    alt: "Lix Bleach 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102412,
+    productId: 102412,
+    filename: "sw-lotta-toffee-20x80pcs-butter-scotch.jpg",
+    path: "/images/products/sw-lotta-toffee-20x80pcs-butter-scotch.jpg",
+    alt: "Lotta Toffee 20x80PCS (Butter Scotch) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102413,
+    productId: 102413,
+    filename: "sw-lotta-toffee-20x80pcs-caramella.jpg",
+    path: "/images/products/sw-lotta-toffee-20x80pcs-caramella.jpg",
+    alt: "Lotta Toffee 20x80PCS (Caramella) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102414,
+    productId: 102414,
+    filename: "sw-lotta-toffee-20x80pcs-choc-cream.jpg",
+    path: "/images/products/sw-lotta-toffee-20x80pcs-choc-cream.jpg",
+    alt: "Lotta Toffee 20x80PCS (Choc-cream) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102415,
+    productId: 102415,
+    filename: "sw-lotta-toffee-20x80pcs-milk-munch.jpg",
+    path: "/images/products/sw-lotta-toffee-20x80pcs-milk-munch.jpg",
+    alt: "Lotta Toffee 20x80PCS (Milk Munch) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102416,
+    productId: 102416,
+    filename: "sw-lotta-toffee-20x80pcs-yoghurt.jpg",
+    path: "/images/products/sw-lotta-toffee-20x80pcs-yoghurt.jpg",
+    alt: "Lotta Toffee 20x80PCS (Yoghurt) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102417,
+    productId: 102417,
+    filename: "sw-lotto-mints-30x75pcs.jpg",
+    path: "/images/products/sw-lotto-mints-30x75pcs.jpg",
+    alt: "Lotto Mints 30x75PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102418,
+    productId: 102418,
+    filename: "sw-lotus-ngano-2kg.jpg",
+    path: "/images/products/sw-lotus-ngano-2kg.jpg",
+    alt: "Lotus Ngano 2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102419,
+    productId: 102419,
+    filename: "sw-lotus-white-serviettes-50pcs.jpg",
+    path: "/images/products/sw-lotus-white-serviettes-50pcs.jpg",
+    alt: "Lotus White Serviettes 50PCS Bale",
+    isPrimary: true
+  },
+  {
+    id: 102420,
+    productId: 102420,
+    filename: "sw-lovin-it-air-freshener-300ml-lavender.jpg",
+    path: "/images/products/sw-lovin-it-air-freshener-300ml-lavender.jpg",
+    alt: "Lovin It Air Freshener 300ML (Lavender) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102421,
+    productId: 102421,
+    filename: "sw-lovin-it-air-freshener-300ml-lemon-fresh.jpg",
+    path: "/images/products/sw-lovin-it-air-freshener-300ml-lemon-fresh.jpg",
+    alt: "Lovin It Air Freshener 300ML (Lemon Fresh) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102422,
+    productId: 102422,
+    filename: "sw-lovin-it-air-freshener-300ml-mountain-breeze.jpg",
+    path: "/images/products/sw-lovin-it-air-freshener-300ml-mountain-breeze.jpg",
+    alt: "Lovin It Air Freshener 300ML (Mountain Breeze) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102423,
+    productId: 102423,
+    filename: "sw-lovin-it-air-freshener-300ml-orange-blossom.jpg",
+    path: "/images/products/sw-lovin-it-air-freshener-300ml-orange-blossom.jpg",
+    alt: "Lovin It Air Freshener 300ML (Orange Blossom) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102424,
+    productId: 102424,
+    filename: "sw-lovin-it-air-freshener-300ml-spice-breeze.jpg",
+    path: "/images/products/sw-lovin-it-air-freshener-300ml-spice-breeze.jpg",
+    alt: "Lovin It Air Freshener 300ML (Spice Breeze) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102425,
+    productId: 102425,
+    filename: "sw-lovin-it-air-freshener-300ml-strawberry.jpg",
+    path: "/images/products/sw-lovin-it-air-freshener-300ml-strawberry.jpg",
+    alt: "Lovin It Air Freshener 300ML (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102426,
+    productId: 102426,
+    filename: "sw-lovin-it-air-freshener-300ml-vanilla.jpg",
+    path: "/images/products/sw-lovin-it-air-freshener-300ml-vanilla.jpg",
+    alt: "Lovin It Air Freshener 300ML (Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102427,
+    productId: 102427,
+    filename: "sw-lucky-parboiled-rice-25kg.jpg",
+    path: "/images/products/sw-lucky-parboiled-rice-25kg.jpg",
+    alt: "Lucky Parboiled Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102428,
+    productId: 102428,
+    filename: "sw-lucozade-boost-1ltr-pkt.jpg",
+    path: "/images/products/sw-lucozade-boost-1ltr-pkt.jpg",
+    alt: "Lucozade Boost 1LTR (PKT) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102429,
+    productId: 102429,
+    filename: "sw-lucozade-boost-250ml-pkt.jpg",
+    path: "/images/products/sw-lucozade-boost-250ml-pkt.jpg",
+    alt: "Lucozade Boost 250ML (PKT) Tray",
+    isPrimary: true
+  },
+  {
+    id: 102430,
+    productId: 102430,
+    filename: "sw-luna-jumbo-roll-bale.jpg",
+    path: "/images/products/sw-luna-jumbo-roll-bale.jpg",
+    alt: "Luna Jumbo Roll Bale",
+    isPrimary: true
+  },
+  {
+    id: 102431,
+    productId: 102431,
+    filename: "sw-luna-tissue-unwrapped-10pack.jpg",
+    path: "/images/products/sw-luna-tissue-unwrapped-10pack.jpg",
+    alt: "Luna Tissue Unwrapped 10PACK Outer",
+    isPrimary: true
+  },
+  {
+    id: 102432,
+    productId: 102432,
+    filename: "sw-luron-avena-baby-cream-175ml.jpg",
+    path: "/images/products/sw-luron-avena-baby-cream-175ml.jpg",
+    alt: "Luron Avena Baby Cream 175ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102433,
+    productId: 102433,
+    filename: "sw-luron-diaper-rash-baby-cream-75ml.jpg",
+    path: "/images/products/sw-luron-diaper-rash-baby-cream-75ml.jpg",
+    alt: "Luron Diaper Rash Baby Cream 75ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102434,
+    productId: 102434,
+    filename: "sw-lux-bar-shower-gel-500g-magical.jpg",
+    path: "/images/products/sw-lux-bar-shower-gel-500g-magical.jpg",
+    alt: "Lux Bar Shower Gel 500G (Magical) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102435,
+    productId: 102435,
+    filename: "sw-lux-bar-soap-85g-creamy.jpg",
+    path: "/images/products/sw-lux-bar-soap-85g-creamy.jpg",
+    alt: "Lux Bar Soap 85G (Creamy) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102436,
+    productId: 102436,
+    filename: "sw-lux-bar-soap-85g-magical.jpg",
+    path: "/images/products/sw-lux-bar-soap-85g-magical.jpg",
+    alt: "Lux Bar Soap 85G (Magical) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102437,
+    productId: 102437,
+    filename: "sw-lux-bar-soap-85g-soft-touch.jpg",
+    path: "/images/products/sw-lux-bar-soap-85g-soft-touch.jpg",
+    alt: "Lux Bar Soap 85G (Soft Touch) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102438,
+    productId: 102438,
+    filename: "sw-luxor-ball-point-pen-20pcs-black.jpg",
+    path: "/images/products/sw-luxor-ball-point-pen-20pcs-black.jpg",
+    alt: "Luxor Ball Point Pen 20PCS (Black) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102439,
+    productId: 102439,
+    filename: "sw-maa-water-24x500ml.jpg",
+    path: "/images/products/sw-maa-water-24x500ml.jpg",
+    alt: "Maa Water 24x500ML Case",
+    isPrimary: true
+  },
+  {
+    id: 102440,
+    productId: 102440,
+    filename: "sw-maa-water-500ml-piece.jpg",
+    path: "/images/products/sw-maa-water-500ml-piece.jpg",
+    alt: "Maa Water 500ML (Piece) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102441,
+    productId: 102441,
+    filename: "sw-maarufu-cream-sella-pk386-parboiled-rice-25kg-red-bag.jpg",
+    path: "/images/products/sw-maarufu-cream-sella-pk386-parboiled-rice-25kg-red-bag.jpg",
+    alt: "Maarufu (Cream Sella) PK 386 Parboiled Rice 25KG (Red Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102442,
+    productId: 102442,
+    filename: "sw-maarufu-sharbati-sella-parboiled-rice-25kg-red.jpg",
+    path: "/images/products/sw-maarufu-sharbati-sella-parboiled-rice-25kg-red.jpg",
+    alt: "Maarufu (Sharbati Sella) Parboiled Rice 25KG (Red) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102443,
+    productId: 102443,
+    filename: "sw-maarufu-basmati-rice-25kg-green-bag.jpg",
+    path: "/images/products/sw-maarufu-basmati-rice-25kg-green-bag.jpg",
+    alt: "Maarufu Basmati Rice 25KG (Green Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102444,
+    productId: 102444,
+    filename: "sw-maarufu-pk386-parboiled-rice-25kg.jpg",
+    path: "/images/products/sw-maarufu-pk386-parboiled-rice-25kg.jpg",
+    alt: "Maarufu PK 386 Parboiled Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102445,
+    productId: 102445,
+    filename: "sw-maarufu-pk386-white-rice-25kg.jpg",
+    path: "/images/products/sw-maarufu-pk386-white-rice-25kg.jpg",
+    alt: "Maarufu PK 386 White Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102446,
+    productId: 102446,
+    filename: "sw-maarufu-steam-1121-basmati-rice-20kg-jute-bag.jpg",
+    path: "/images/products/sw-maarufu-steam-1121-basmati-rice-20kg-jute-bag.jpg",
+    alt: "Maarufu Steam 1121 Basmati Rice 20KG (Jute Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102447,
+    productId: 102447,
+    filename: "sw-macaronto-spaghetti-20x500g.jpg",
+    path: "/images/products/sw-macaronto-spaghetti-20x500g.jpg",
+    alt: "Macaronto Spaghetti 20x500G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102448,
+    productId: 102448,
+    filename: "sw-maccoffee-3in1-morning-34g.jpg",
+    path: "/images/products/sw-maccoffee-3in1-morning-34g.jpg",
+    alt: "Maccoffee 3 in 1 Morning 34G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102449,
+    productId: 102449,
+    filename: "sw-maccoffee-3in1-white-coffee-15g.jpg",
+    path: "/images/products/sw-maccoffee-3in1-white-coffee-15g.jpg",
+    alt: "Maccoffee 3 in 1 White Coffee 15G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102450,
+    productId: 102450,
+    filename: "sw-maccoffee-3in1-white-coffee-sticks-18g.jpg",
+    path: "/images/products/sw-maccoffee-3in1-white-coffee-sticks-18g.jpg",
+    alt: "Maccoffee 3 in 1 White Coffee Sticks 18G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102451,
+    productId: 102451,
+    filename: "sw-maccoffee-classic-1.6g.jpg",
+    path: "/images/products/sw-maccoffee-classic-1.6g.jpg",
+    alt: "Maccoffee Classic 1.6G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102452,
+    productId: 102452,
+    filename: "sw-maccoffee-classic-100g-tin.jpg",
+    path: "/images/products/sw-maccoffee-classic-100g-tin.jpg",
+    alt: "Maccoffee Classic 100G (Tin) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102453,
+    productId: 102453,
+    filename: "sw-maccoffee-classic-50g-tin.jpg",
+    path: "/images/products/sw-maccoffee-classic-50g-tin.jpg",
+    alt: "Maccoffee Classic 50G (Tin) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102454,
+    productId: 102454,
+    filename: "sw-maccoffee-kenyan-kahawa-250g.jpg",
+    path: "/images/products/sw-maccoffee-kenyan-kahawa-250g.jpg",
+    alt: "Maccoffee Kenyan Kahawa 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102455,
+    productId: 102455,
+    filename: "sw-maccoffee-kenyan-kahawa-25g.jpg",
+    path: "/images/products/sw-maccoffee-kenyan-kahawa-25g.jpg",
+    alt: "Maccoffee Kenyan Kahawa 25G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102456,
+    productId: 102456,
+    filename: "sw-maccoffee-original-100g.jpg",
+    path: "/images/products/sw-maccoffee-original-100g.jpg",
+    alt: "Maccoffee Original 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102457,
+    productId: 102457,
+    filename: "sw-maccoffee-original-50g.jpg",
+    path: "/images/products/sw-maccoffee-original-50g.jpg",
+    alt: "Maccoffee Original 50G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102458,
+    productId: 102458,
+    filename: "sw-machera-rice-25kg.jpg",
+    path: "/images/products/sw-machera-rice-25kg.jpg",
+    alt: "Machera Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102459,
+    productId: 102459,
+    filename: "sw-maggi-cubes-4g.jpg",
+    path: "/images/products/sw-maggi-cubes-4g.jpg",
+    alt: "Maggi Cubes 4G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102460,
+    productId: 102460,
+    filename: "sw-magic-bubble-gum-12x85pcs.jpg",
+    path: "/images/products/sw-magic-bubble-gum-12x85pcs.jpg",
+    alt: "Magic Bubble Gum 12x85PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102461,
+    productId: 102461,
+    filename: "sw-magnee-glass-cleaner-500ml-lemon.jpg",
+    path: "/images/products/sw-magnee-glass-cleaner-500ml-lemon.jpg",
+    alt: "Magnee Glass Cleaner 500ML (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102462,
+    productId: 102462,
+    filename: "sw-magnee-glass-cleaner-750ml-banded.jpg",
+    path: "/images/products/sw-magnee-glass-cleaner-750ml-banded.jpg",
+    alt: "Magnee Glass Cleaner 750ML (Banded) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102463,
+    productId: 102463,
+    filename: "sw-mahi-7-pk-386-white-rice-25kg.jpg",
+    path: "/images/products/sw-mahi-7-pk-386-white-rice-25kg.jpg",
+    alt: "Mahi 7 PK 386 White Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102464,
+    productId: 102464,
+    filename: "sw-mahia-1121-steam-rice-20kg.jpg",
+    path: "/images/products/sw-mahia-1121-steam-rice-20kg.jpg",
+    alt: "Mahia 1121 Steam Rice 20KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102465,
+    productId: 102465,
+    filename: "sw-mahia-biryani-rice-25kg-yellow-bag.jpg",
+    path: "/images/products/sw-mahia-biryani-rice-25kg-yellow-bag.jpg",
+    alt: "Mahia Biryani Rice 25KG (Yellow Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102466,
+    productId: 102466,
+    filename: "sw-mahia-diamond-pk-386-white-rice-25kg.jpg",
+    path: "/images/products/sw-mahia-diamond-pk-386-white-rice-25kg.jpg",
+    alt: "Mahia Diamond PK 386 White Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102467,
+    productId: 102467,
+    filename: "sw-mahia-gold-386-white-rice-25kg-yellow-bag.jpg",
+    path: "/images/products/sw-mahia-gold-386-white-rice-25kg-yellow-bag.jpg",
+    alt: "Mahia Gold 386 White Rice 25KG (Yellow Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102468,
+    productId: 102468,
+    filename: "sw-mahia-pk-386-premium-basmati-rice-25kg-white-bag.jpg",
+    path: "/images/products/sw-mahia-pk-386-premium-basmati-rice-25kg-white-bag.jpg",
+    alt: "Mahia PK 386 Premium Basmati Rice 25KG (White Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102469,
+    productId: 102469,
+    filename: "sw-mahia-queen-pk-386-parboiled-rice-25kg-red-bag.jpg",
+    path: "/images/products/sw-mahia-queen-pk-386-parboiled-rice-25kg-red-bag.jpg",
+    alt: "Mahia Queen PK 386 Parboiled Rice 25KG (Red Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102470,
+    productId: 102470,
+    filename: "sw-malibu-lemon-blossom-fragrance-48x250ml.jpg",
+    path: "/images/products/sw-malibu-lemon-blossom-fragrance-48x250ml.jpg",
+    alt: "Malibu Lemon Blossom Fragrance 48x250ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102471,
+    productId: 102471,
+    filename: "sw-mallo-fat-10kg.jpg",
+    path: "/images/products/sw-mallo-fat-10kg.jpg",
+    alt: "Mallo Fat 10KG Carton",
+    isPrimary: true
+  },
+  {
+    id: 102472,
+    productId: 102472,
+    filename: "sw-mamas-choice-chilli-sauce-235g.jpg",
+    path: "/images/products/sw-mamas-choice-chilli-sauce-235g.jpg",
+    alt: "Mamas Choice Chilli Sauce 235G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102473,
+    productId: 102473,
+    filename: "sw-mamas-choice-chips-sauce-24x400g.jpg",
+    path: "/images/products/sw-mamas-choice-chips-sauce-24x400g.jpg",
+    alt: "Mamas Choice Chips Sauce 24x400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102474,
+    productId: 102474,
+    filename: "sw-mamas-choice-chips-sauce-250g.jpg",
+    path: "/images/products/sw-mamas-choice-chips-sauce-250g.jpg",
+    alt: "Mamas Choice Chips Sauce 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102475,
+    productId: 102475,
+    filename: "sw-mambo-bubble-gum-12x24pcs-strawberry.jpg",
+    path: "/images/products/sw-mambo-bubble-gum-12x24pcs-strawberry.jpg",
+    alt: "Mambo Bubble Gum 12x24PCS (Strawberry) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102476,
+    productId: 102476,
+    filename: "sw-mandi-parboiled-rice-25kg.jpg",
+    path: "/images/products/sw-mandi-parboiled-rice-25kg.jpg",
+    alt: "Mandi Parboiled Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102477,
+    productId: 102477,
+    filename: "sw-mandolin-chocolate-24x15g.jpg",
+    path: "/images/products/sw-mandolin-chocolate-24x15g.jpg",
+    alt: "Mandolin Chocolate 24x15G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102478,
+    productId: 102478,
+    filename: "sw-manji-ginger-snap-jar-1kg.jpg",
+    path: "/images/products/sw-manji-ginger-snap-jar-1kg.jpg",
+    alt: "Manji (Ginger Snap) Jar 1KG",
+    isPrimary: true
+  },
+  {
+    id: 102479,
+    productId: 102479,
+    filename: "sw-manji-nice-jar-biscuits-1kg.jpg",
+    path: "/images/products/sw-manji-nice-jar-biscuits-1kg.jpg",
+    alt: "Manji (Nice) Jar Biscuits 1KG",
+    isPrimary: true
+  },
+  {
+    id: 102480,
+    productId: 102480,
+    filename: "sw-manji-shortcake-biscuits-1kg-jar.jpg",
+    path: "/images/products/sw-manji-shortcake-biscuits-1kg-jar.jpg",
+    alt: "Manji (Shortcake) Biscuits 1KG (Jar)",
+    isPrimary: true
+  },
+  {
+    id: 102481,
+    productId: 102481,
+    filename: "sw-manji-assorted-biscuits-4kg.jpg",
+    path: "/images/products/sw-manji-assorted-biscuits-4kg.jpg",
+    alt: "Manji Assorted Biscuits 4KG Carton",
+    isPrimary: true
+  },
+  {
+    id: 102482,
+    productId: 102482,
+    filename: "sw-manji-bits-60x3-choco.jpg",
+    path: "/images/products/sw-manji-bits-60x3-choco.jpg",
+    alt: "Manji Bits 60x3 (Choco) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102483,
+    productId: 102483,
+    filename: "sw-manji-bits-60x3-coconut.jpg",
+    path: "/images/products/sw-manji-bits-60x3-coconut.jpg",
+    alt: "Manji Bits 60x3 (Coconut) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102484,
+    productId: 102484,
+    filename: "sw-manji-bits-60x3-lemon.jpg",
+    path: "/images/products/sw-manji-bits-60x3-lemon.jpg",
+    alt: "Manji Bits 60x3 (Lemon) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102485,
+    productId: 102485,
+    filename: "sw-manji-bourbon-biscuits-36x55-65g.jpg",
+    path: "/images/products/sw-manji-bourbon-biscuits-36x55-65g.jpg",
+    alt: "Manji Bourbon Biscuits 36x55/65G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102486,
+    productId: 102486,
+    filename: "sw-manji-butter-almond-cookies-24x150g.jpg",
+    path: "/images/products/sw-manji-butter-almond-cookies-24x150g.jpg",
+    alt: "Manji Butter Almond Cookies 24x150G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102487,
+    productId: 102487,
+    filename: "sw-manji-butter-cashew-cookies-12x450g-jar.jpg",
+    path: "/images/products/sw-manji-butter-cashew-cookies-12x450g-jar.jpg",
+    alt: "Manji Butter Cashew Cookies 12x450G (Jar) Jar",
+    isPrimary: true
+  },
+  {
+    id: 102488,
+    productId: 102488,
+    filename: "sw-manji-choco-chip-cookies-12x500g.jpg",
+    path: "/images/products/sw-manji-choco-chip-cookies-12x500g.jpg",
+    alt: "Manji Choco Chip Cookies 12x500G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102489,
+    productId: 102489,
+    filename: "sw-manji-chocolate-biscuit-24x150g.jpg",
+    path: "/images/products/sw-manji-chocolate-biscuit-24x150g.jpg",
+    alt: "Manji Chocolate Biscuit 24x150G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102490,
+    productId: 102490,
+    filename: "sw-manji-chox-biscuit-24x70g.jpg",
+    path: "/images/products/sw-manji-chox-biscuit-24x70g.jpg",
+    alt: "Manji Chox Biscuit 24x70G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102491,
+    productId: 102491,
+    filename: "sw-manji-chox-biscuit-36x20g.jpg",
+    path: "/images/products/sw-manji-chox-biscuit-36x20g.jpg",
+    alt: "Manji Chox Biscuit 36x20G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102492,
+    productId: 102492,
+    filename: "sw-manji-coconut-cookies-12x500g.jpg",
+    path: "/images/products/sw-manji-coconut-cookies-12x500g.jpg",
+    alt: "Manji Coconut Cookies 12x500G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102493,
+    productId: 102493,
+    filename: "sw-manji-digestive-good-day-biscuit-36x100g.jpg",
+    path: "/images/products/sw-manji-digestive-good-day-biscuit-36x100g.jpg",
+    alt: "Manji Digestive (Good Day) Biscuit 36x100G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102494,
+    productId: 102494,
+    filename: "sw-manji-digestive-200g.jpg",
+    path: "/images/products/sw-manji-digestive-200g.jpg",
+    alt: "Manji Digestive 200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102495,
+    productId: 102495,
+    filename: "sw-manji-digestive-biscuits-1kg-jars.jpg",
+    path: "/images/products/sw-manji-digestive-biscuits-1kg-jars.jpg",
+    alt: "Manji Digestive Biscuits 1KG (Jars) Jar",
+    isPrimary: true
+  },
+  {
+    id: 102496,
+    productId: 102496,
+    filename: "sw-manji-digestive-biscuits-24x450g.jpg",
+    path: "/images/products/sw-manji-digestive-biscuits-24x450g.jpg",
+    alt: "Manji Digestive Biscuits 24x450G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102497,
+    productId: 102497,
+    filename: "sw-manji-duos-cookies-12x60g-big-carton.jpg",
+    path: "/images/products/sw-manji-duos-cookies-12x60g-big-carton.jpg",
+    alt: "Manji Duo's Cookies 12x60G (Big Carton) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102498,
+    productId: 102498,
+    filename: "sw-manji-family-biscuits-24x80g.jpg",
+    path: "/images/products/sw-manji-family-biscuits-24x80g.jpg",
+    alt: "Manji Family Biscuits 24x80G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102499,
+    productId: 102499,
+    filename: "sw-manji-family-classic-biscuits-36x75g.jpg",
+    path: "/images/products/sw-manji-family-classic-biscuits-36x75g.jpg",
+    alt: "Manji Family Classic Biscuits 36x75G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102500,
+    productId: 102500,
+    filename: "sw-manji-ginger-cookies-12x500g.jpg",
+    path: "/images/products/sw-manji-ginger-cookies-12x500g.jpg",
+    alt: "Manji Ginger Cookies 12x500G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102501,
+    productId: 102501,
+    filename: "sw-manji-ginger-nuts-60x3pcs.jpg",
+    path: "/images/products/sw-manji-ginger-nuts-60x3pcs.jpg",
+    alt: "Manji Ginger Nuts 60x3PCS Carton",
+    isPrimary: true
+  },
+  {
+    id: 102502,
+    productId: 102502,
+    filename: "sw-manji-high-energy-biscuit-egg-milk-36x70g.jpg",
+    path: "/images/products/sw-manji-high-energy-biscuit-egg-milk-36x70g.jpg",
+    alt: "Manji High Energy Biscuit (Egg & Milk) 36x70G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102503,
+    productId: 102503,
+    filename: "sw-manji-high-energy-biscuit-honey-chocolate-36x70g.jpg",
+    path: "/images/products/sw-manji-high-energy-biscuit-honey-chocolate-36x70g.jpg",
+    alt: "Manji High Energy Biscuit (Honey & Chocolate) 36x70G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102504,
+    productId: 102504,
+    filename: "sw-manji-marie-classic-36x75g.jpg",
+    path: "/images/products/sw-manji-marie-classic-36x75g.jpg",
+    alt: "Manji Marie Classic 36x75G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102505,
+    productId: 102505,
+    filename: "sw-manji-milkstar-24x200g.jpg",
+    path: "/images/products/sw-manji-milkstar-24x200g.jpg",
+    alt: "Manji Milkstar 24x200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102506,
+    productId: 102506,
+    filename: "sw-manji-milkstar-72x4pcs.jpg",
+    path: "/images/products/sw-manji-milkstar-72x4pcs.jpg",
+    alt: "Manji Milkstar 72x4PCS Carton",
+    isPrimary: true
+  },
+  {
+    id: 102507,
+    productId: 102507,
+    filename: "sw-manji-shortcake-biscuits-24x100g.jpg",
+    path: "/images/products/sw-manji-shortcake-biscuits-24x100g.jpg",
+    alt: "Manji Shortcake Biscuits 24x100G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102508,
+    productId: 102508,
+    filename: "sw-manji-so-nice-biscuits-48x100g.jpg",
+    path: "/images/products/sw-manji-so-nice-biscuits-48x100g.jpg",
+    alt: "Manji So Nice Biscuits 48x100G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102509,
+    productId: 102509,
+    filename: "sw-manji-tea-biscuits-24x100g.jpg",
+    path: "/images/products/sw-manji-tea-biscuits-24x100g.jpg",
+    alt: "Manji Tea Biscuits 24x100G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102510,
+    productId: 102510,
+    filename: "sw-manji-treat-biscuits-240g-butter.jpg",
+    path: "/images/products/sw-manji-treat-biscuits-240g-butter.jpg",
+    alt: "Manji Treat Biscuits 240G (Butter) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102511,
+    productId: 102511,
+    filename: "sw-manji-treat-biscuits-240g-cashew.jpg",
+    path: "/images/products/sw-manji-treat-biscuits-240g-cashew.jpg",
+    alt: "Manji Treat Biscuits 240G (Cashew) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102512,
+    productId: 102512,
+    filename: "sw-manji-treat-biscuits-240g-chocolate.jpg",
+    path: "/images/products/sw-manji-treat-biscuits-240g-chocolate.jpg",
+    alt: "Manji Treat Biscuits 240G (Chocolate) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102513,
+    productId: 102513,
+    filename: "sw-manji-wafers-10g.jpg",
+    path: "/images/products/sw-manji-wafers-10g.jpg",
+    alt: "Manji Wafers 10G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102514,
+    productId: 102514,
+    filename: "sw-manna-yellow-cooking-fat-10kg.jpg",
+    path: "/images/products/sw-manna-yellow-cooking-fat-10kg.jpg",
+    alt: "Manna Yellow Cooking Fat 10KG Carton",
+    isPrimary: true
+  },
+  {
+    id: 102515,
+    productId: 102515,
+    filename: "sw-mara-777-white-rice-25kg.jpg",
+    path: "/images/products/sw-mara-777-white-rice-25kg.jpg",
+    alt: "Mara 777 White Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102516,
+    productId: 102516,
+    filename: "sw-mara-moja.jpg",
+    path: "/images/products/sw-mara-moja.jpg",
+    alt: "Mara Moja Packet",
+    isPrimary: true
+  },
+  {
+    id: 102517,
+    productId: 102517,
+    filename: "sw-mara-sella-basmati-20kgs.jpg",
+    path: "/images/products/sw-mara-sella-basmati-20kgs.jpg",
+    alt: "Mara Sella Basmati 20KGS Bag",
+    isPrimary: true
+  },
+  {
+    id: 102518,
+    productId: 102518,
+    filename: "sw-mara-white-rice-25kg.jpg",
+    path: "/images/products/sw-mara-white-rice-25kg.jpg",
+    alt: "Mara White Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102519,
+    productId: 102519,
+    filename: "sw-marche-200ml.jpg",
+    path: "/images/products/sw-marche-200ml.jpg",
+    alt: "Marche 200ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102520,
+    productId: 102520,
+    filename: "sw-marche-mix-200ml.jpg",
+    path: "/images/products/sw-marche-mix-200ml.jpg",
+    alt: "Marche Mix 200ML Carton",
+    isPrimary: true
+  },
+  {
+    id: 102521,
+    productId: 102521,
+    filename: "sw-mariandazi-baking-powder-100g.jpg",
+    path: "/images/products/sw-mariandazi-baking-powder-100g.jpg",
+    alt: "Mariandazi Baking Powder 100G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102522,
+    productId: 102522,
+    filename: "sw-maridadi-h-wash-500ml.jpg",
+    path: "/images/products/sw-maridadi-h-wash-500ml.jpg",
+    alt: "Maridadi H.Wash 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102523,
+    productId: 102523,
+    filename: "sw-maroa-makueni-sorted-grains-22.5kg.jpg",
+    path: "/images/products/sw-maroa-makueni-sorted-grains-22.5kg.jpg",
+    alt: "Maroa (Makueni) Sorted Grains 22.5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102524,
+    productId: 102524,
+    filename: "sw-maroa-ndengu-special-sorted-grains-22.5kg.jpg",
+    path: "/images/products/sw-maroa-ndengu-special-sorted-grains-22.5kg.jpg",
+    alt: "Maroa (Ndengu Special) Sorted Grains 22.5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102525,
+    productId: 102525,
+    filename: "sw-maroa-njahi-sorted-grains-22.5kg.jpg",
+    path: "/images/products/sw-maroa-njahi-sorted-grains-22.5kg.jpg",
+    alt: "Maroa (Njahi) Sorted Grains 22.5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102526,
+    productId: 102526,
+    filename: "sw-maroa-nyayo-beans-sorted-grains-22.5kg.jpg",
+    path: "/images/products/sw-maroa-nyayo-beans-sorted-grains-22.5kg.jpg",
+    alt: "Maroa (Nyayo Beans) Sorted Grains 22.5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102527,
+    productId: 102527,
+    filename: "sw-maroa-nylon-sorted-grains-22.5kg.jpg",
+    path: "/images/products/sw-maroa-nylon-sorted-grains-22.5kg.jpg",
+    alt: "Maroa (Nylon) Sorted Grains 22.5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102528,
+    productId: 102528,
+    filename: "sw-maroa-yellow-beans-sorted-grains-22.5kg.jpg",
+    path: "/images/products/sw-maroa-yellow-beans-sorted-grains-22.5kg.jpg",
+    alt: "Maroa (Yellow Beans) Sorted Grains 22.5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102529,
+    productId: 102529,
+    filename: "sw-maroa-popcorn-25kg.jpg",
+    path: "/images/products/sw-maroa-popcorn-25kg.jpg",
+    alt: "Maroa Popcorn 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102530,
+    productId: 102530,
+    filename: "sw-martino-spaghetti-20x400g.jpg",
+    path: "/images/products/sw-martino-spaghetti-20x400g.jpg",
+    alt: "Martino Spaghetti 20x400G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102531,
+    productId: 102531,
+    filename: "sw-maruti-ndengu-24x1kg.jpg",
+    path: "/images/products/sw-maruti-ndengu-24x1kg.jpg",
+    alt: "Maruti Ndengu 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102532,
+    productId: 102532,
+    filename: "sw-maruti-njahi-24x1kg.jpg",
+    path: "/images/products/sw-maruti-njahi-24x1kg.jpg",
+    alt: "Maruti Njahi 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102533,
+    productId: 102533,
+    filename: "sw-maruti-nyayo-beans-24x1kg.jpg",
+    path: "/images/products/sw-maruti-nyayo-beans-24x1kg.jpg",
+    alt: "Maruti Nyayo Beans 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102534,
+    productId: 102534,
+    filename: "sw-maruti-popcorn-24x1kg.jpg",
+    path: "/images/products/sw-maruti-popcorn-24x1kg.jpg",
+    alt: "Maruti Popcorn 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102535,
+    productId: 102535,
+    filename: "sw-maruti-popcorn-48x250g.jpg",
+    path: "/images/products/sw-maruti-popcorn-48x250g.jpg",
+    alt: "Maruti Popcorn 48x250G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102536,
+    productId: 102536,
+    filename: "sw-maruti-popcorn-48x500g.jpg",
+    path: "/images/products/sw-maruti-popcorn-48x500g.jpg",
+    alt: "Maruti Popcorn 48x500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102537,
+    productId: 102537,
+    filename: "sw-maryland-cookies-20x136g.jpg",
+    path: "/images/products/sw-maryland-cookies-20x136g.jpg",
+    alt: "Maryland Cookies 20x136G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102538,
+    productId: 102538,
+    filename: "sw-master-chef-ngano-2kg.jpg",
+    path: "/images/products/sw-master-chef-ngano-2kg.jpg",
+    alt: "Master Chef Ngano 2KG 1/2bale",
+    isPrimary: true
+  },
+  {
+    id: 102539,
+    productId: 102539,
+    filename: "sw-master-chef-premium-cooking-oil-1ltr.jpg",
+    path: "/images/products/sw-master-chef-premium-cooking-oil-1ltr.jpg",
+    alt: "Master Chef Premium Cooking Oil 1LTR Carton",
+    isPrimary: true
+  },
+  {
+    id: 102540,
+    productId: 102540,
+    filename: "sw-master-chef-premium-cooking-oil-3ltr.jpg",
+    path: "/images/products/sw-master-chef-premium-cooking-oil-3ltr.jpg",
+    alt: "Master Chef Premium Cooking Oil 3LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 102541,
+    productId: 102541,
+    filename: "sw-master-chef-premium-cooking-oil-500ml.jpg",
+    path: "/images/products/sw-master-chef-premium-cooking-oil-500ml.jpg",
+    alt: "Master Chef Premium Cooking Oil 500ML Carton",
+    isPrimary: true
+  },
+  {
+    id: 102542,
+    productId: 102542,
+    filename: "sw-master-chef-ugali-2kg.jpg",
+    path: "/images/products/sw-master-chef-ugali-2kg.jpg",
+    alt: "Master Chef Ugali 2KG 1/2bale",
+    isPrimary: true
+  },
+  {
+    id: 102543,
+    productId: 102543,
+    filename: "sw-max-choco-drinking-chocolate-100g-sachet.jpg",
+    path: "/images/products/sw-max-choco-drinking-chocolate-100g-sachet.jpg",
+    alt: "Max Choco Drinking Chocolate 100G Sachet Piece",
+    isPrimary: true
+  },
+  {
+    id: 102544,
+    productId: 102544,
+    filename: "sw-max-drinking-straws.jpg",
+    path: "/images/products/sw-max-drinking-straws.jpg",
+    alt: "Max Drinking Straws Packet",
+    isPrimary: true
+  },
+  {
+    id: 102545,
+    productId: 102545,
+    filename: "sw-max-guard-toothpaste-fresh-mint-150g.jpg",
+    path: "/images/products/sw-max-guard-toothpaste-fresh-mint-150g.jpg",
+    alt: "Max Guard Toothpaste (Fresh Mint) 150G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102546,
+    productId: 102546,
+    filename: "sw-max-guard-toothpaste-herbal-150g.jpg",
+    path: "/images/products/sw-max-guard-toothpaste-herbal-150g.jpg",
+    alt: "Max Guard Toothpaste (Herbal) 150G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102547,
+    productId: 102547,
+    filename: "sw-maxbite-choma-sticks-caramel-packet.jpg",
+    path: "/images/products/sw-maxbite-choma-sticks-caramel-packet.jpg",
+    alt: "Maxbite Choma Sticks Caramel Packet",
+    isPrimary: true
+  },
+  {
+    id: 102548,
+    productId: 102548,
+    filename: "sw-maxbite-choma-sticks-caramel-bag.jpg",
+    path: "/images/products/sw-maxbite-choma-sticks-caramel-bag.jpg",
+    alt: "Maxbite Choma Sticks Caramel Bag",
+    isPrimary: true
+  },
+  {
+    id: 102549,
+    productId: 102549,
+    filename: "sw-maxbrite-shiny-sponge-pad-6s.jpg",
+    path: "/images/products/sw-maxbrite-shiny-sponge-pad-6s.jpg",
+    alt: "Maxbrite (Shiny) Sponge Pad 6S Outer",
+    isPrimary: true
+  },
+  {
+    id: 102550,
+    productId: 102550,
+    filename: "sw-maxbrite-yellow-sponge-pad.jpg",
+    path: "/images/products/sw-maxbrite-yellow-sponge-pad.jpg",
+    alt: "Maxbrite (Yellow) Sponge Pad Piece",
+    isPrimary: true
+  },
+  {
+    id: 102551,
+    productId: 102551,
+    filename: "sw-maxbrite-laminate-scouring-pad-3pcs.jpg",
+    path: "/images/products/sw-maxbrite-laminate-scouring-pad-3pcs.jpg",
+    alt: "Maxbrite Laminate Scouring Pad (3PCS) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102552,
+    productId: 102552,
+    filename: "-maxbrite-multipurpose-liquid-150ml.jpg",
+    path: "/images/products/sw-maxbrite-multipurpose-liquid-150ml.jpg",
+    alt: "Maxbrite Multipurpose Liquid 150ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102553,
+    productId: 102553,
+    filename: "sw-maxbrite-multipurpose-liquid-5l.jpg",
+    path: "/images/products/sw-maxbrite-multipurpose-liquid-5l.jpg",
+    alt: "Maxbrite Multipurpose Liquid 5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102554,
+    productId: 102554,
+    filename: "sw-maxbrite-net-scourer.jpg",
+    path: "/images/products/sw-maxbrite-net-scourer.jpg",
+    alt: "Maxbrite Net Scourer Outer",
+    isPrimary: true
+  },
+  {
+    id: 102555,
+    productId: 102555,
+    filename: "sw-maxbrite-scouring-pad-green.jpg",
+    path: "/images/products/sw-maxbrite-scouring-pad-green.jpg",
+    alt: "Maxbrite Scouring Pad (Green) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102556,
+    productId: 102556,
+    filename: "sw-maxbrite-steelwool-15g.jpg",
+    path: "/images/products/sw-maxbrite-steelwool-15g.jpg",
+    alt: "Maxbrite Steelwool 15G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102557,
+    productId: 102557,
+    filename: "sw-maxfree-pads.jpg",
+    path: "/images/products/sw-maxfree-pads.jpg",
+    alt: "Maxfree Pads Piece",
+    isPrimary: true
+  },
+  {
+    id: 102558,
+    productId: 102558,
+    filename: "sw-maxlite-premium-candles.jpg",
+    path: "/images/products/sw-maxlite-premium-candles.jpg",
+    alt: "Maxlite Premium Candles Packet",
+    isPrimary: true
+  },
+  {
+    id: 102559,
+    productId: 102559,
+    filename: "sw-maya-diaper-large-40pcs-hc.jpg",
+    path: "/images/products/sw-maya-diaper-large-40pcs-hc.jpg",
+    alt: "Maya Diaper Large 40PCS (HC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102560,
+    productId: 102560,
+    filename: "sw-maya-diaper-small-48pcs-hc.jpg",
+    path: "/images/products/sw-maya-diaper-small-48pcs-hc.jpg",
+    alt: "Maya Diaper Small 48PCS (HC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102561,
+    productId: 102561,
+    filename: "sw-maya-diaper-xl-36pcs-hc.jpg",
+    path: "/images/products/sw-maya-diaper-xl-36pcs-hc.jpg",
+    alt: "Maya Diaper XL 36PCS (HC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102562,
+    productId: 102562,
+    filename: "sw-maya-diapers-medium-44pcs-hc.jpg",
+    path: "/images/products/sw-maya-diapers-medium-44pcs-hc.jpg",
+    alt: "Maya Diapers Medium 44PCS (HC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102563,
+    productId: 102563,
+    filename: "sw-mbaazi-22-5kg.jpg",
+    path: "/images/products/sw-mbaazi-22-5kg.jpg",
+    alt: "Mbaazi 22.5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102564,
+    productId: 102564,
+    filename: "sw-mcvities-digestive-biscuits-20x400g-original.jpg",
+    path: "/images/products/sw-mcvities-digestive-biscuits-20x400g-original.jpg",
+    alt: "McVities Digestive Biscuits 20x400G (Original) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102565,
+    productId: 102565,
+    filename: "sw-mcvities-digestive-biscuits-24x200g-chocolate.jpg",
+    path: "/images/products/sw-mcvities-digestive-biscuits-24x200g-chocolate.jpg",
+    alt: "McVities Digestive Biscuits 24x200G (Chocolate) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102566,
+    productId: 102566,
+    filename: "sw-mcvities-digestive-biscuits-24x250g-original.jpg",
+    path: "/images/products/sw-mcvities-digestive-biscuits-24x250g-original.jpg",
+    alt: "McVities Digestive Biscuits 24x250G (Original) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102567,
+    productId: 10267,
+    filename: "sw-medicott-3in1-maternity-pads-pink.jpg",
+    path: "/images/products/sw-medicott-3in1-maternity-pads-pink.jpg",
+    alt: "Medicott 3in1 Maternity Pads (Pink) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102568,
+    productId: 102568,
+    filename: "sw-medicott-press-towels.jpg",
+    path: "/images/products/sw-medicott-press-towels.jpg",
+    alt: "Medicott Press Towels Packet",
+    isPrimary: true
+  },
+  {
+    id: 102569,
+    productId: 102569,
+    filename: "sw-mega-laundrex-1l.jpg",
+    path: "/images/products/sw-mega-laundrex-1l.jpg",
+    alt: "Mega Laundrex 1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102570,
+    productId: 102570,
+    filename: "sw-mega-laundrex-5l.jpg",
+    path: "/images/products/sw-mega-laundrex-5l.jpg",
+    alt: "Mega La 5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102571,
+    productId: 102571,
+    filename: "sw-mega-lavofresh-750ml.jpg",
+    path: "/images/products/sw-mega-lavofresh-750ml.jpg",
+    alt: "Mega Lavofresh 750ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102572,
+    productId: 102572,
+    filename: "sw-mega-lavofresh-disinfectant-5l.jpg",
+    path: "/images/products/sw-mega-lavofresh-disinfectant-5l.jpg",
+    alt: "Mega Lavofresh Disinfectant 5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102573,
+    productId: 102573,
+    filename: "sw-mega-multi-kleen-1l.jpg",
+    path: "/images/products/sw-mega-multi-kleen-1l.jpg",
+    alt: "Mega Multi-Kleen 1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102574,
+    productId: 102574,
+    filename: "sw-mega-multi-kleen-500ml.jpg",
+    path: "/images/products/sw-mega-multi-kleen-500ml.jpg",
+    alt: "Mega Multi-Kleen 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102575,
+    productId: 102575,
+    filename: "sw-mega-multi-kleen-5l.jpg",
+    path: "/images/products/sw-mega-multi-kleen-5l.jpg",
+    alt: "Mega Multi-Kleen 5L Jerican",
+    isPrimary: true
+  },
+  {
+    id: 102576,
+    productId: 102576,
+    filename: "sw-mega-shower-gel-500ml-aloe.jpg",
+    path: "/images/products/sw-mega-shower-gel-500ml-aloe.jpg",
+    alt: "Mega Shower Gel 500ML (Aloe) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102577,
+    productId: 102577,
+    filename: "sw-mega-shower-gel-500ml-coconut.jpg",
+    path: "/images/products/sw-mega-shower-gel-500ml-coconut.jpg",
+    alt: "Mega Shower Gel 500ML (Coconut) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102578,
+    productId: 102578,
+    filename: "sw-mega-shower-gel-500ml-rose.jpg",
+    path: "/images/products/sw-mega-shower-gel-500ml-rose.jpg",
+    alt: "Mega Shower Gel 500ML (Rose) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102579,
+    productId: 102579,
+    filename: "sw-mega-soft-1l.jpg",
+    path: "/images/products/sw-mega-soft-1l.jpg",
+    alt: "Mega Soft 1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102580,
+    productId: 102580,
+    filename: "sw-mega-soft-500ml.jpg",
+    path: "/images/products/sw-mega-soft-500ml.jpg",
+    alt: "Mega Soft 500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102581,
+    productId: 102581,
+    filename: "sw-mega-soft-5l.jpg",
+    path: "/images/products/sw-mega-soft-5l.jpg",
+    alt: "Mega Soft 5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102582,
+    productId: 102582,
+    filename: "sw-melvins-100g-black-chai-masala.jpg",
+    path: "/images/products/sw-melvins-100g-black-chai-masala.jpg",
+    alt: "Melvins 100G (Black Chai + Masala) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102583,
+    productId: 102583,
+    filename: "sw-melvins-100g-black-chai-tangawizi.jpg",
+    path: "/images/products/sw-melvins-100g-black-chai-tangawizi.jpg",
+    alt: "Melvins 100G (Black Chai + Tangawizi) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102584,
+    productId: 102584,
+    filename: "sw-melvins-3in1-african-tea-sticks.jpg",
+    path: "/images/products/sw-melvins-3in1-african-tea-sticks.jpg",
+    alt: "Melvins 3 in 1 African Tea Sticks Packet",
+    isPrimary: true
+  },
+  {
+    id: 102585,
+    productId: 102585,
+    filename: "sw-melvins-barbeque-seasoning-100g.jpg",
+    path: "/images/products/sw-melvins-barbeque-seasoning-100g.jpg",
+    alt: "Melvins Barbeque Seasoning 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102586,
+    productId: 102586,
+    filename: "sw-melvins-black-chai-100g.jpg",
+    path: "/images/products/sw-melvins-black-chai-100g.jpg",
+    alt: "Melvins Black Chai 100GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102587,
+    productId: 102587,
+    filename: "sw-melvins-black-chai-15g.jpg",
+    path: "/images/products/sw-melvins-black-chai-15g.jpg",
+    alt: "Melvins Black Chai 15GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102588,
+    productId: 102588,
+    filename: "sw-melvins-black-chai-250g.jpg",
+    path: "/images/products/sw-melvins-black-chai-250g.jpg",
+    alt: "Melvins Black Chai 250GM Piece",
+    isPrimary: true
+  },
+  {
+    id: 102589,
+    productId: 102589,
+    filename: "sw-melvins-black-chai-50g.jpg",
+    path: "/images/products/sw-melvins-black-chai-50g.jpg",
+    alt: "Melvins Black Chai 50GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102590,
+    productId: 102590,
+    filename: "sw-melvins-black-chai-500g.jpg",
+    path: "/images/products/sw-melvins-black-chai-500g.jpg",
+    alt: "Melvins Black Chai 500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102591,
+    productId: 102591,
+    filename: "sw-melvins-cardamom-spice-100g.jpg",
+    path: "/images/products/sw-melvins-cardamom-spice-100g.jpg",
+    alt: "Melvins Cardamom Spice 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102592,
+    productId: 102592,
+    filename: "sw-melvins-flow-salt-200g.jpg",
+    path: "/images/products/sw-melvins-flow-salt-200g.jpg",
+    alt: "Melvins Flow Salt 200G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102593,
+    productId: 102593,
+    filename: "sw-melvins-flow-salt-500g.jpg",
+    path: "/images/products/sw-melvins-flow-salt-500g.jpg",
+    alt: "Melvins Flow Salt 500GM Tin",
+    isPrimary: true
+  },
+  {
+    id: 102594,
+    productId: 102594,
+    filename: "sw-melvins-herbal-salt-200g.jpg",
+    path: "/images/products/sw-melvins-herbal-salt-200g.jpg",
+    alt: "Melvins Herbal Salt 200G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102595,
+    productId: 102595,
+    filename: "sw-melvins-herbal-salt-500g.jpg",
+    path: "/images/products/sw-melvins-herbal-salt-500g.jpg",
+    alt: "Melvins Herbal Salt 500G Tin",
+    isPrimary: true
+  },
+  {
+    id: 102596,
+    productId: 102596,
+    filename: "sw-melvins-herbal-seasoning-mix-120g.jpg",
+    path: "/images/products/sw-melvins-herbal-seasoning-mix-120g.jpg",
+    alt: "Melvins Herbal Seasoning Mix 120G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102597,
+    productId: 102597,
+    filename: "sw-melvins-honey-12x500g-squeeze.jpg",
+    path: "/images/products/sw-melvins-honey-12x500g-squeeze.jpg",
+    alt: "Melvins Honey 12x500G (Squeeze) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102598,
+    productId: 102598,
+    filename: "sw-melvins-lemon-chilli-seasoning-100-120g.jpg",
+    path: "/images/products/sw-melvins-lemon-chilli-seasoning-100-120g.jpg",
+    alt: "Melvins Lemon Chilli Seasoning 100/120G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102599,
+    productId: 102599,
+    filename: "sw-melvins-masala-100g.jpg",
+    path: "/images/products/sw-melvins-masala-100g.jpg",
+    alt: "Melvins Masala 100GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102600,
+    productId: 102600,
+    filename: "sw-melvins-masala-250g.jpg",
+    path: "/images/products/sw-melvins-masala-250g.jpg",
+    alt: "Melvins Masala 250GM Piece",
+    isPrimary: true
+  },
+  {
+    id: 102601,
+    productId: 102601,
+    filename: "sw-melvins-masala-50g.jpg",
+    path: "/images/products/sw-melvins-masala-50g.jpg",
+    alt: "Melvins Masala 50GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102602,
+    productId: 102602,
+    filename: "sw-melvins-pink-salt-120g.jpg",
+    path: "/images/products/sw-melvins-pink-salt-120g.jpg",
+    alt: "Melvins Pink Salt 120G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102603,
+    productId: 102603,
+    filename: "sw-melvins-tangawizi-100g.jpg",
+    path: "/images/products/sw-melvins-tangawizi-100g.jpg",
+    alt: "Melvins Tangawizi 100GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102604,
+    productId: 102604,
+    filename: "sw-melvins-tangawizi-15g.jpg",
+    path: "/images/products/sw-melvins-tangawizi-15g.jpg",
+    alt: "Melvins Tangawizi 15GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102605,
+    productId: 102605,
+    filename: "sw-melvins-tangawizi-250g.jpg",
+    path: "/images/products/sw-melvins-tangawizi-250g.jpg",
+    alt: "Melvins Tangawizi 250GM Packet",
+    isPrimary: true
+  },
+  {
+    id: 102606,
+    productId: 102606,
+    filename: "sw-melvins-tangawizi-50g.jpg",
+    path: "/images/products/sw-melvins-tangawizi-50g.jpg",
+    alt: "Melvins Tangawizi 50GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102607,
+    productId: 102607,
+    filename: "sw-melvins-tangawizi-500g.jpg",
+    path: "/images/products/sw-melvins-tangawizi-500g.jpg",
+    alt: "Melvins Tangawizi 500GM Packet",
+    isPrimary: true
+  },
+  {
+    id: 102608,
+    productId: 102608,
+    filename: "sw-melvins-tangawizi-5g.jpg",
+    path: "/images/products/sw-melvins-tangawizi-5g.jpg",
+    alt: "Melvins Tangawizi 5G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102609,
+    productId: 102609,
+    filename: "sw-melvins-tea-bags-100s-black-chai.jpg",
+    path: "/images/products/sw-melvins-tea-bags-100s-black-chai.jpg",
+    alt: "Melvins Tea Bags 100'S (Black Chai) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102610,
+    productId: 102610,
+    filename: "sw-melvins-tea-bags-100s-masala.jpg",
+    path: "/images/products/sw-melvins-tea-bags-100s-masala.jpg",
+    alt: "Melvins Tea Bags 100'S (Masala) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102611,
+    productId: 102611,
+    filename: "sw-melvins-tea-bags-100s-tangawizi.jpg",
+    path: "/images/products/sw-melvins-tea-bags-100s-tangawizi.jpg",
+    alt: "Melvins Tea Bags 100'S (Tangawizi) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102612,
+    productId: 102612,
+    filename: "sw-melvins-tea-bags-25s-berry-blast.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-berry-blast.jpg",
+    alt: "Melvins Tea Bags 25'S (Berry Blast) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102613,
+    productId: 102613,
+    filename: "sw-melvins-tea-bags-25s-chamomile.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-chamomile.jpg",
+    alt: "Melvins Tea Bags 25'S (Chamomile) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102614,
+    productId: 102614,
+    filename: "sw-melvins-tea-bags-25s-cinnamon.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-cinnamon.jpg",
+    alt: "Melvins Tea Bags 25'S (Cinnamon) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102615,
+    productId: 102615,
+    filename: "sw-melvins-tea-bags-25s-detox-tea.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-detox-tea.jpg",
+    alt: "Melvins Tea Bags 25'S (Detox Tea) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102616,
+    productId: 102616,
+    filename: "sw-melvins-tea-bags-25s-gold.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-gold.jpg",
+    alt: "Melvins Tea Bags 25'S (Gold) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102617,
+    productId: 102617,
+    filename: "sw-melvins-tea-bags-25s-green-tea-lemon.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-green-tea-lemon.jpg",
+    alt: "Melvins Tea Bags 25'S (Green Tea & Lemon) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102618,
+    productId: 102618,
+    filename: "sw-melvins-tea-bags-25s-green-tea-mint.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-green-tea-mint.jpg",
+    alt: "Melvins Tea Bags 25'S (Green Tea & Mint) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102619,
+    productId: 102619,
+    filename: "sw-melvins-tea-bags-25s-green-tea-tangawizi.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-green-tea-tangawizi.jpg",
+    alt: "Melvins Tea Bags 25'S (Green Tea & Tangawizi) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102620,
+    productId: 102620,
+    filename: "sw-melvins-tea-bags-25s-hibiscus.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-hibiscus.jpg",
+    alt: "Melvins Tea Bags 25'S (Hibiscus) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102621,
+    productId: 102621,
+    filename: "sw-melvins-tea-bags-25s-lemon-ginger.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-lemon-ginger.jpg",
+    alt: "Melvins Tea Bags 25'S (Lemon & Ginger) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102622,
+    productId: 102622,
+    filename: "sw-melvins-tea-bags-25s-lemon-twist.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-lemon-twist.jpg",
+    alt: "Melvins Tea Bags 25'S (Lemon Twist) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102623,
+    productId: 102623,
+    filename: "sw-melvins-tea-bags-25s-masala.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-masala.jpg",
+    alt: "Melvins Tea Bags 25'S (Masala) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102624,
+    productId: 102624,
+    filename: "sw-melvins-tea-bags-25s-medley-of-infusions.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-medley-of-infusions.jpg",
+    alt: "Melvins Tea Bags 25'S (Medley of Infusions) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102625,
+    productId: 102625,
+    filename: "sw-melvins-tea-bags-25s-pure-green-tea.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-pure-green-tea.jpg",
+    alt: "Melvins Tea Bags 25'S (Pure Green Tea) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102626,
+    productId: 102626,
+    filename: "sw-melvins-tea-bags-25s-slimming-tea.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-slimming-tea.jpg",
+    alt: "Melvins Tea Bags 25'S (Slimming Tea) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102627,
+    productId: 102627,
+    filename: "sw-melvins-tea-bags-25s-tangawizi.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-tangawizi.jpg",
+    alt: "Melvins Tea Bags 25'S (Tangawizi) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102628,
+    productId: 102628,
+    filename: "sw-melvins-tea-bags-25s-vanilla.jpg",
+    path: "/images/products/sw-melvins-tea-bags-25s-vanilla.jpg",
+    alt: "Melvins Tea Bags 25'S (Vanilla) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102629,
+    productId: 102629,
+    filename: "sw-melvins-tea-bags-50s-black-chai.jpg",
+    path: "/images/products/sw-melvins-tea-bags-50s-black-chai.jpg",
+    alt: "Melvins Tea Bags 50'S (Black Chai) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102630,
+    productId: 102630,
+    filename: "sw-melvins-tea-bags-50s-masala.jpg",
+    path: "/images/products/sw-melvins-tea-bags-50s-masala.jpg",
+    alt: "Melvins Tea Bags 50'S (Masala) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102631,
+    productId: 102631,
+    filename: "sw-melvins-tea-bags-50s-tangawizi.jpg",
+    path: "/images/products/sw-melvins-tea-bags-50s-tangawizi.jpg",
+    alt: "Melvins Tea Bags 50'S (Tangawizi) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102632,
+    productId: 102632,
+    filename: "sw-menendazi-baking-powder-100g.jpg",
+    path: "/images/products/sw-menendazi-baking-powder-100g.jpg",
+    alt: "Menendazi Baking Powder 100G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102633,
+    productId: 102633,
+    filename: "sw-menengai-20x1kg.jpg",
+    path: "/images/products/sw-menengai-20x1kg.jpg",
+    alt: "Menengai 20x1KG Outer",
+    isPrimary: true
+  },
+  {
+    id: 102634,
+    productId: 102634,
+    filename: "sw-menengai-bathing-soap-125g-gold.jpg",
+    path: "/images/products/sw-menengai-bathing-soap-125g-gold.jpg",
+    alt: "Menengai Bathing Soap 125G (Gold) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102635,
+    productId: 102635,
+    filename: "sw-menengai-bathing-soap-125g-velvet.jpg",
+    path: "/images/products/sw-menengai-bathing-soap-125g-velvet.jpg",
+    alt: "Menengai Bathing Soap 125G (Velvet) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102636,
+    productId: 102636,
+    filename: "sw-menengai-bathing-soap-200g-black.jpg",
+    path: "/images/products/sw-menengai-bathing-soap-200g-black.jpg",
+    alt: "Menengai Bathing Soap 200G (Black) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102637,
+    productId: 102637,
+    filename: "sw-menengai-bathing-soap-200g-gold.jpg",
+    path: "/images/products/sw-menengai-bathing-soap-200g-gold.jpg",
+    alt: "Menengai Bathing Soap 200G (Gold) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102638,
+    productId: 102638,
+    filename: "sw-menengai-bathing-soap-200g-velvet.jpg",
+    path: "/images/products/sw-menengai-bathing-soap-200g-velvet.jpg",
+    alt: "Menengai Bathing Soap 200G (Velvet) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102639,
+    productId: 102639,
+    filename: "sw-menengai-cream-20x500g.jpg",
+    path: "/images/products/sw-menengai-cream-20x500g.jpg",
+    alt: "Menengai Cream 20x500G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102640,
+    productId: 102640,
+    filename: "sw-menengai-cream-25x800g.jpg",
+    path: "/images/products/sw-menengai-cream-25x800g.jpg",
+    alt: "Menengai Cream 25x800G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102641,
+    productId: 102641,
+    filename: "sw-menengai-cream-48x200g.jpg",
+    path: "/images/products/sw-menengai-cream-48x200g.jpg",
+    alt: "Menengai Cream 48x200G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102642,
+    productId: 102642,
+    filename: "sw-menengai-hand-sanitizer-50ml.jpg",
+    path: "/images/products/sw-menengai-hand-sanitizer-50ml.jpg",
+    alt: "Menengai Hand Sanitizer 50ML Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102643,
+    productId: 102643,
+    filename: "sw-menengai-lemon-soap-10x1kg.jpg",
+    path: "/images/products/sw-menengai-lemon-soap-10x1kg.jpg",
+    alt: "Menengai Lemon Soap 10x1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102644,
+    productId: 102644,
+    filename: "sw-menengai-milking-jelly-100ml.jpg",
+    path: "/images/products/sw-menengai-milking-jelly-100ml.jpg",
+    alt: "Menengai Milking Jelly 100ML Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102645,
+    productId: 102645,
+    filename: "sw-menengai-milking-jelly-200ml.jpg",
+    path: "/images/products/sw-menengai-milking-jelly-200ml.jpg",
+    alt: "Menengai Milking Jelly 200ML Outer",
+    isPrimary: true
+  },
+  {
+    id: 102646,
+    productId: 102646,
+    filename: "sw-menengai-milking-jelly-50ml.jpg",
+    path: "/images/products/sw-menengai-milking-jelly-50ml.jpg",
+    alt: "Menengai Milking Jelly 50ML Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102647,
+    productId: 102647,
+    filename: "sw-menengai-scourer-twin-pack.jpg",
+    path: "/images/products/sw-menengai-scourer-twin-pack.jpg",
+    alt: "Menengai Scourer (Twin Pack) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102648,
+    productId: 102648,
+    filename: "sw-menthoking-lozenges-18x50s.jpg",
+    path: "/images/products/sw-menthoking-lozenges-18x50s.jpg",
+    alt: "Menthoking Lozenges 18x50'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102649,
+    productId: 102649,
+    filename: "sw-menthol-plus-9ml-emami.jpg",
+    path: "/images/products/sw-menthol-plus-9ml-emami.jpg",
+    alt: "Menthol Plus 9ML (Emami) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102650,
+    productId: 102650,
+    filename: "sw-mentos-mint-monos-40x135g.jpg",
+    path: "/images/products/sw-mentos-mint-monos-40x135g.jpg",
+    alt: "Mentos Mint Monos 40x135G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102651,
+    productId: 102651,
+    filename: "sw-meta-clear-soap-10x1kg.jpg",
+    path: "/images/products/sw-meta-clear-soap-10x1kg.jpg",
+    alt: "Meta Clear Soap 10x1KG Outer",
+    isPrimary: true
+  },
+  {
+    id: 102652,
+    productId: 102652,
+    filename: "sw-mfalme-jumbo-tissue.jpg",
+    path: "/images/products/sw-mfalme-jumbo-tissue.jpg",
+    alt: "Mfalme Jumbo Tissue Bale",
+    isPrimary: true
+  },
+  {
+    id: 102653,
+    productId: 102653,
+    filename: "sw-mfalme-toilet-tissue-10pack-wrapped.jpg",
+    path: "/images/products/sw-mfalme-toilet-tissue-10pack-wrapped.jpg",
+    alt: "Mfalme Toilet Tissue (10Pack) Wrapped Outer",
+    isPrimary: true
+  },
+  {
+    id: 102654,
+    productId: 102654,
+    filename: "sw-mfalme-toilet-tissue-10pack-unwrapped.jpg",
+    path: "/images/products/sw-mfalme-toilet-tissue-10pack-unwrapped.jpg",
+    alt: "Mfalme Toilet Tissue 10Pack (Unwrapped) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102655,
+    productId: 102655,
+    filename: "sw-mfalme-ugali-1kg.jpg",
+    path: "/images/products/sw-mfalme-ugali-1kg.jpg",
+    alt: "Mfalme Ugali 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102656,
+    productId: 102656,
+    filename: "sw-mfalme-ugali-2kg.jpg",
+    path: "/images/products/sw-mfalme-ugali-2kg.jpg",
+    alt: "Mfalme Ugali 2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102657,
+    productId: 102657,
+    filename: "sw-microcide-hand-sanitizer-50ml.jpg",
+    path: "/images/products/sw-microcide-hand-sanitizer-50ml.jpg",
+    alt: "Microcide Hand Sanitizer 50ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102658,
+    productId: 102658,
+    filename: "sw-miksi-12x450g-sachets.jpg",
+    path: "/images/products/sw-miksi-12x450g-sachets.jpg",
+    alt: "Miksi 12x450G Sachets Piece",
+    isPrimary: true
+  },
+  {
+    id: 102659,
+    productId: 102659,
+    filename: "sw-miksi-milk-can-900g.jpg",
+    path: "/images/products/sw-miksi-milk-can-900g.jpg",
+    alt: "Miksi Milk Can 900GM Piece",
+    isPrimary: true
+  },
+  {
+    id: 102660,
+    productId: 102660,
+    filename: "sw-miksi-milk-cans-400g.jpg",
+    path: "/images/products/sw-miksi-milk-cans-400g.jpg",
+    alt: "Miksi Milk Cans 400GM Piece",
+    isPrimary: true
+  },
+  {
+    id: 102661,
+    productId: 102661,
+    filename: "sw-miksi-sachet-20g-chocolate.jpg",
+    path: "/images/products/sw-miksi-sachet-20g-chocolate.jpg",
+    alt: "Miksi Sachet 20G (Chocolate) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102662,
+    productId: 102662,
+    filename: "sw-miksi-sachet-20g-coffee.jpg",
+    path: "/images/products/sw-miksi-sachet-20g-coffee.jpg",
+    alt: "Miksi Sachet 20G (Coffee) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102663,
+    productId: 102663,
+    filename: "sw-miksi-sachet-240g.jpg",
+    path: "/images/products/sw-miksi-sachet-240g.jpg",
+    alt: "Miksi Sachet 240GM Piece",
+    isPrimary: true
+  },
+  {
+    id: 102664,
+    productId: 102664,
+    filename: "sw-mil-tomato-sauce-5ltr.jpg",
+    path: "/images/products/sw-mil-tomato-sauce-5ltr.jpg",
+    alt: "Mil Tomato Sauce 5LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 102665,
+    productId: 102665,
+    filename: "sw-milele-soap-125g-aloe.jpg",
+    path: "/images/products/sw-milele-soap-125g-aloe.jpg",
+    alt: "Milele Soap 125G (Aloe) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102666,
+    productId: 102666,
+    filename: "sw-milele-soap-125g-black.jpg",
+    path: "/images/products/sw-milele-soap-125g-black.jpg",
+    alt: "Milele Soap 125G (Black) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102667,
+    productId: 102667,
+    filename: "sw-milele-soap-125g-coconut.jpg",
+    path: "/images/products/sw-milele-soap-125g-coconut.jpg",
+    alt: "Milele Soap 125G (Coconut) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102668,
+    productId: 102668,
+    filename: "sw-milele-soap-125g-cool.jpg",
+    path: "/images/products/sw-milele-soap-125g-cool.jpg",
+    alt: "Milele Soap 125G (Cool) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102669,
+    productId: 102669,
+    filename: "sw-milele-soap-125g-herbal.jpg",
+    path: "/images/products/sw-milele-soap-125g-herbal.jpg",
+    alt: "Milele Soap 125G (Herbal) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102670,
+    productId: 102670,
+    filename: "sw-milele-soap-125g-rose.jpg",
+    path: "/images/products/sw-milele-soap-125g-rose.jpg",
+    alt: "Milele Soap 125G (Rose) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102671,
+    productId: 102671,
+    filename: "sw-milele-soap-24x250g-aloe.jpg",
+    path: "/images/products/sw-milele-soap-24x250g-aloe.jpg",
+    alt: "Milele Soap 24x250G (Aloe) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102672,
+    productId: 102672,
+    filename: "sw-milele-soap-24x250g-black.jpg",
+    path: "/images/products/sw-milele-soap-24x250g-black.jpg",
+    alt: "Milele Soap 24x250G (Black) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102673,
+    productId: 102673,
+    filename: "sw-milele-soap-24x250g-coconut.jpg",
+    path: "/images/products/sw-milele-soap-24x250g-coconut.jpg",
+    alt: "Milele Soap 24x250G (Coconut) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102674,
+    productId: 102674,
+    filename: "sw-milele-soap-24x250g-rose.jpg",
+    path: "/images/products/sw-milele-soap-24x250g-rose.jpg",
+    alt: "Milele Soap 24x250G (Rose) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102675,
+    productId: 102675,
+    filename: "sw-milo-sachet-24x200g-50g.jpg",
+    path: "/images/products/sw-milo-sachet-24x200g-50g.jpg",
+    alt: "Milo (Sachet) 24x200G +50G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102676,
+    productId: 102676,
+    filename: "sw-milo-sachets-400g.jpg",
+    path: "/images/products/sw-milo-sachets-400g.jpg",
+    alt: "Milo (Sachets) 400G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102677,
+    productId: 102677,
+    filename: "sw-milo-tin-200g.jpg",
+    path: "/images/products/sw-milo-tin-200g.jpg",
+    alt: "Milo (Tin) 200G Tin",
+    isPrimary: true
+  },
+  {
+    id: 102678,
+    productId: 102678,
+    filename: "sw-milo-tin-400g.jpg",
+    path: "/images/products/sw-milo-tin-400g.jpg",
+    alt: "Milo (Tin) 400G Tin",
+    isPrimary: true
+  },
+  {
+    id: 102679,
+    productId: 102679,
+    filename: "sw-milo-100g-tin.jpg",
+    path: "/images/products/sw-milo-100g-tin.jpg",
+    alt: "Milo 100G (Tin) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102680,
+    productId: 102680,
+    filename: "sw-milo-10g-sachet-promo.jpg",
+    path: "/images/products/sw-milo-10g-sachet-promo.jpg",
+    alt: "Milo 10G (Sachet) Promo Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102681,
+    productId: 102681,
+    filename: "sw-milo-400g-champ-mug-promo.jpg",
+    path: "/images/products/sw-milo-400g-champ-mug-promo.jpg",
+    alt: "Milo 400G Champ Mug Promo Packet",
+    isPrimary: true
+  },
+  {
+    id: 102682,
+    productId: 102682,
+    filename: "sw-mina-tomato-paste-50g-sachet.jpg",
+    path: "/images/products/sw-mina-tomato-paste-50g-sachet.jpg",
+    alt: "Mina Tomato Paste 50G (Sachet) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102683,
+    productId: 102683,
+    filename: "sw-mineral-water-10ltr.jpg",
+    path: "/images/products/sw-mineral-water-10ltr.jpg",
+    alt: "Mineral Water 10LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 102684,
+    productId: 102684,
+    filename: "sw-mineral-water-1ltr.jpg",
+    path: "/images/products/sw-mineral-water-1ltr.jpg",
+    alt: "Mineral Water 1LTR Carton",
+    isPrimary: true
+  },
+  {
+    id: 102685,
+    productId: 102685,
+    filename: "sw-mineral-water-1ltr-piece.jpg",
+    path: "/images/products/sw-mineral-water-1ltr-piece.jpg",
+    alt: "Mineral Water 1LTR (Piece) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102686,
+    productId: 102686,
+    filename: "sw-mineral-water-20ltr.jpg",
+    path: "/images/products/sw-mineral-water-20ltr.jpg",
+    alt: "Mineral Water 20LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 102687,
+    productId: 102687,
+    filename: "sw-mineral-water-500ml.jpg",
+    path: "/images/products/sw-mineral-water-500ml.jpg",
+    alt: "Mineral Water 500ML Carton",
+    isPrimary: true
+  },
+  {
+    id: 102688,
+    productId: 102688,
+    filename: "sw-mineral-water-5ltr.jpg",
+    path: "/images/products/sw-mineral-water-5ltr.jpg",
+    alt: "Mineral Water 5LTR Carton",
+    isPrimary: true
+  },
+  {
+    id: 102689,
+    productId: 102689,
+    filename: "sw-minute-maid-tropical-juice-400ml.jpg",
+    path: "/images/products/sw-minute-maid-tropical-juice-400ml.jpg",
+    alt: "Minute Maid Tropical Juice 400ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102690,
+    productId: 102690,
+    filename: "sw-mirinda-12x500ml-fruity.jpg",
+    path: "/images/products/sw-mirinda-12x500ml-fruity.jpg",
+    alt: "Mirinda 12x500ML (Fruity) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102691,
+    productId: 102691,
+    filename: "sw-mirinda-12x500ml-green-apple.jpg",
+    path: "/images/products/sw-mirinda-12x500ml-green-apple.jpg",
+    alt: "Mirinda 12x500ML (Green Apple) Case",
+    isPrimary: true
+  },
+  {
+    id: 102692,
+    productId: 102692,
+    filename: "sw-mirinda-12x500ml-lemon.jpg",
+    path: "/images/products/sw-mirinda-12x500ml-lemon.jpg",
+    alt: "Mirinda 12x500ML (Lemon) Case",
+    isPrimary: true
+  },
+  {
+    id: 102693,
+    productId: 102693,
+    filename: "sw-mirinda-12x500ml-orange.jpg",
+    path: "/images/products/sw-mirinda-12x500ml-orange.jpg",
+    alt: "Mirinda 12x500ML (Orange) Case",
+    isPrimary: true
+  },
+  {
+    id: 102694,
+    productId: 102694,
+    filename: "sw-mirinda-12x500ml-pineapple.jpg",
+    path: "/images/products/sw-mirinda-12x500ml-pineapple.jpg",
+    alt: "Mirinda 12x500ML (Pineapple) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102695,
+    productId: 102695,
+    filename: "sw-mirinda-330ml-fruity.jpg",
+    path: "/images/products/sw-mirinda-330ml-fruity.jpg",
+    alt: "Mirinda 330ML (Fruity) Case",
+    isPrimary: true
+  },
+  {
+    id: 102696,
+    productId: 102696,
+    filename: "sw-mirinda-330ml-green-apple.jpg",
+    path: "/images/products/sw-mirinda-330ml-green-apple.jpg",
+    alt: "Mirinda 330ML (Green Apple) Case",
+    isPrimary: true
+  },
+  {
+    id: 102697,
+    productId: 102697,
+    filename: "sw-mirinda-330ml-lemon.jpg",
+    path: "/images/products/sw-mirinda-330ml-lemon.jpg",
+    alt: "Mirinda 330ML (Lemon) Case",
+    isPrimary: true
+  },
+  {
+    id: 102698,
+    productId: 102698,
+    filename: "sw-mirinda-330ml-orange.jpg",
+    path: "/images/products/sw-mirinda-330ml-orange.jpg",
+    alt: "Mirinda 330ML (Orange) Case",
+    isPrimary: true
+  },
+  {
+    id: 102699,
+    productId: 102699,
+    filename: "sw-mirinda-330ml-pineapple.jpg",
+    path: "/images/products/sw-mirinda-330ml-pineapple.jpg",
+    alt: "Mirinda 330ML (Pineapple) Case",
+    isPrimary: true
+  },
+  {
+    id: 102700,
+    productId: 102700,
+    filename: "sw-mirinda-6x2l-fruity.jpg",
+    path: "/images/products/sw-mirinda-6x2l-fruity.jpg",
+    alt: "Mirinda 6x2L (Fruity) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102701,
+    productId: 102701,
+    filename: "sw-mirinda-6x2l-lemon.jpg",
+    path: "/images/products/sw-mirinda-6x2l-lemon.jpg",
+    alt: "Mirinda 6x2L (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102702,
+    productId: 102702,
+    filename: "sw-mirinda-6x2l-orange.jpg",
+    path: "/images/products/sw-mirinda-6x2l-orange.jpg",
+    alt: "Mirinda 6x2L (Orange) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102703,
+    productId: 102703,
+    filename: "sw-mirinda-6x2l-pineapple.jpg",
+    path: "/images/products/sw-mirinda-6x2l-pineapple.jpg",
+    alt: "Mirinda 6x2L (Pineapple) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102704,
+    productId: 102704,
+    filename: "sw-mix-juice-drops-75pcs.jpg",
+    path: "/images/products/sw-mix-juice-drops-75pcs.jpg",
+    alt: "Mix Juice Drops 75PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102705,
+    productId: 102705,
+    filename: "sw-mol-parboiled-rice-25kg.jpg",
+    path: "/images/products/sw-mol-parboiled-rice-25kg.jpg",
+    alt: "Mol Parboiled Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102706,
+    productId: 102706,
+    filename: "sw-molfix-diapers-jumbo-no2-small-72pcs.jpg",
+    path: "/images/products/sw-molfix-diapers-jumbo-no2-small-72pcs.jpg",
+    alt: "Molfix Diapers (Jumbo) No.2 Small 72PCS Outer",
+    isPrimary: true
+  },
+  {
+    id: 102707,
+    productId: 102707,
+    filename: "sw-molfix-diapers-jumbo-no3-medium-66pcs.jpg",
+    path: "/images/products/sw-molfix-diapers-jumbo-no3-medium-66pcs.jpg",
+    alt: "Molfix Diapers (Jumbo) No.3 Medium 66PCS Outer",
+    isPrimary: true
+  },
+  {
+    id: 102708,
+    productId: 102708,
+    filename: "sw-molfix-diapers-jumbo-no4-large-64pcs.jpg",
+    path: "/images/products/sw-molfix-diapers-jumbo-no4-large-64pcs.jpg",
+    alt: "Molfix Diapers (Jumbo) No.4 Large 64PCS Outer",
+    isPrimary: true
+  },
+  {
+    id: 102709,
+    productId: 102709,
+    filename: "sw-molfix-diapers-jumbo-no5-xlarge-56pcs.jpg",
+    path: "/images/products/sw-molfix-diapers-jumbo-no5-xlarge-56pcs.jpg",
+    alt: "Molfix Diapers (Jumbo) No.5 X Large 56PCS Outer",
+    isPrimary: true
+  },
+  {
+    id: 102710,
+    productId: 102710,
+    filename: "sw-molfix-diapers-no2-small-10pcs-lc.jpg",
+    path: "/images/products/sw-molfix-diapers-no2-small-10pcs-lc.jpg",
+    alt: "Molfix Diapers No.2 Small 10PCS (LC) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102711,
+    productId: 102711,
+    filename: "sw-molfix-diapers-no2-small-48pcs-hc.jpg",
+    path: "/images/products/sw-molfix-diapers-no2-small-48pcs-hc.jpg",
+    alt: "Molfix Diapers No.2 Small 48PCS (HC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102712,
+    productId: 102712,
+    filename: "sw-molfix-diapers-no3-medium-42pcs-hc.jpg",
+    path: "/images/products/sw-molfix-diapers-no3-medium-42pcs-hc.jpg",
+    alt: "Molfix Diapers No.3 Medium 42PCS (HC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102713,
+    productId: 102713,
+    filename: "sw-molfix-diapers-no3-medium-9pcs-lc.jpg",
+    path: "/images/products/sw-molfix-diapers-no3-medium-9pcs-lc.jpg",
+    alt: "Molfix Diapers No.3 Medium 9PCS (LC) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102714,
+    productId: 102714,
+    filename: "sw-molfix-diapers-no4-large-40pcs-hc.jpg",
+    path: "/images/products/sw-molfix-diapers-no4-large-40pcs-hc.jpg",
+    alt: "Molfix Diapers No.4 Large 40PCS (HC) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102715,
+    productId: 102715,
+    filename: "sw-molfix-diapers-no4-large-8pcs-lc.jpg",
+    path: "/images/products/sw-molfix-diapers-no4-large-8pcs-lc.jpg",
+    alt: "Molfix Diapers No.4 Large 8PCS (LC) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102716,
+    productId: 102716,
+    filename: "sw-molfix-diapers-no5-xlarge-36pcs-hc.jpg",
+    path: "/images/products/sw-molfix-diapers-no5-xlarge-36pcs-hc.jpg",
+    alt: "Molfix Diapers No.5 X Large 36PCS (HC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102717,
+    productId: 102717,
+    filename: "sw-molfix-diapers-no5-xlarge-7pcs-lc.jpg",
+    path: "/images/products/sw-molfix-diapers-no5-xlarge-7pcs-lc.jpg",
+    alt: "Molfix Diapers No.5 X Large 7PCS (LC) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102718,
+    productId: 102718,
+    filename: "sw-molfix-isotonic-water-wipes-60pcs.jpg",
+    path: "/images/products/sw-molfix-isotonic-water-wipes-60pcs.jpg",
+    alt: "Molfix Isotonic Water Wipes 60PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102719,
+    productId: 102719,
+    filename: "sw-molfix-pants-no3-medium-31pcs-hc.jpg",
+    path: "/images/products/sw-molfix-pants-no3-medium-31pcs-hc.jpg",
+    alt: "Molfix Pants No.3 Medium 31PCS (HC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102720,
+    productId: 102720,
+    filename: "sw-molfix-pants-no3-medium-9pcs-lc.jpg",
+    path: "/images/products/sw-molfix-pants-no3-medium-9pcs-lc.jpg",
+    alt: "Molfix Pants No.3 Medium 9PCS (LC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102721,
+    productId: 102721,
+    filename: "sw-molfix-pants-no4-large-28pcs-hc.jpg",
+    path: "/images/products/sw-molfix-pants-no4-large-28pcs-hc.jpg",
+    alt: "Molfix Pants No.4 Large 28 PCS (HC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102722,
+    productId: 102722,
+    filename: "sw-molfix-pants-no4-large-56pcs-jumbo.jpg",
+    path: "/images/products/sw-molfix-pants-no4-large-56pcs-jumbo.jpg",
+    alt: "Molfix Pants No.4 Large 56 PCS (Jumbo) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102723,
+    productId: 102723,
+    filename: "sw-molfix-pants-no4-large-8pcs-lc.jpg",
+    path: "/images/products/sw-molfix-pants-no4-large-8pcs-lc.jpg",
+    alt: "Molfix Pants No.4 Large 8 PCS (LC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102724,
+    productId: 102724,
+    filename: "sw-molfix-pants-no5-xlarge-8pcs-lc.jpg",
+    path: "/images/products/sw-molfix-pants-no5-xlarge-8pcs-lc.jpg",
+    alt: "Molfix Pants No.5 X Large 8PCS (LC) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102725,
+    productId: 102725,
+    filename: "sw-molfix-pants-no5-xlarge-52pcs-jumbo.jpg",
+    path: "/images/products/sw-molfix-pants-no5-xlarge-52pcs-jumbo.jpg",
+    alt: "Molfix Pants No.5 XLarge 52 PCS (Jumbo) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102726,
+    productId: 102726,
+    filename: "sw-molfix-pants-no6-xxlarge-44pcs-jumbo.jpg",
+    path: "/images/products/sw-molfix-pants-no6-xxlarge-44pcs-jumbo.jpg",
+    alt: "Molfix Pants No.6 XX Large 44PCS (Jumbo) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102727,
+    productId: 102727,
+    filename: "sw-molfix-pants-no7-xxx-large-36pcs-jumbo.jpg",
+    path: "/images/products/sw-molfix-pants-no7-xxx-large-36pcs-jumbo.jpg",
+    alt: "Molfix Pants No.7 XXX Large 36PCS (Jumbo) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102728,
+    productId: 102728,
+    filename: "sw-molped-pad-pure-soft-extra-long-14s.jpg",
+    path: "/images/products/sw-molped-pad-pure-soft-extra-long-14s.jpg",
+    alt: "Molped Pad Pure & Soft (Extra Long) 14'S (Value Pack) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102729,
+    productId: 102729,
+    filename: "sw-molped-pad-pure-soft-long-16s.jpg",
+    path: "/images/products/sw-molped-pad-pure-soft-long-16s.jpg",
+    alt: "Molped Pad Pure & Soft (Long) 16'S (Value Pack) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102730,
+    productId: 102730,
+    filename: "sw-molped-panty-liner-16s-pure-soft.jpg",
+    path: "/images/products/sw-molped-panty-liner-16s-pure-soft.jpg",
+    alt: "Molped Panty Liner 16'S (Pure & Soft) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102731,
+    productId: 102731,
+    filename: "sw-molped-supernight-extra-long-6pcs.jpg",
+    path: "/images/products/sw-molped-supernight-extra-long-6pcs.jpg",
+    alt: "Molped Supernight Extra Long 6PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102732,
+    productId: 102732,
+    filename: "sw-molped-supernight-long-7pcs.jpg",
+    path: "/images/products/sw-molped-supernight-long-7pcs.jpg",
+    alt: "Molped Supernight Long 7PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102733,
+    productId: 102733,
+    filename: "sw-molped-ultra-soft-extra-long-7pcs.jpg",
+    path: "/images/products/sw-molped-ultra-soft-extra-long-7pcs.jpg",
+    alt: "Molped Ultra Soft Extra Long 7PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102734,
+    productId: 102734,
+    filename: "sw-molped-ultra-soft-long-8pcs.jpg",
+    path: "/images/products/sw-molped-ultra-soft-long-8pcs.jpg",
+    alt: "Molped Ultra Soft Long 8PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102735,
+    productId: 102735,
+    filename: "sw-mona-parboiled-25kg.jpg",
+    path: "/images/products/sw-mona-parboiled-25kg.jpg",
+    alt: "Mona Parboiled 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102736,
+    productId: 102736,
+    filename: "sw-mooz-maziwa-sweets-20x80pcs.jpg",
+    path: "/images/products/sw-mooz-maziwa-sweets-20x80pcs.jpg",
+    alt: "Mooz Maziwa Sweets 20x80PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102737,
+    productId: 102737,
+    filename: "sw-morning-choco-shells-10x450g.jpg",
+    path: "/images/products/sw-morning-choco-shells-10x450g.jpg",
+    alt: "Morning Choco Shells 10x450G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102738,
+    productId: 102738,
+    filename: "sw-morning-choco-shells-18x250g.jpg",
+    path: "/images/products/sw-morning-choco-shells-18x250g.jpg",
+    alt: "Morning Choco Shells 18x250G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102739,
+    productId: 102739,
+    filename: "sw-morning-fresh-dw-paste-12x400g.jpg",
+    path: "/images/products/sw-morning-fresh-dw-paste-12x400g.jpg",
+    alt: "Morning Fresh D/W Paste 12x400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102740,
+    productId: 102740,
+    filename: "sw-morning-fresh-dw-paste-12x800g.jpg",
+    path: "/images/products/sw-morning-fresh-dw-paste-12x800g.jpg",
+    alt: "Morning Fresh D/W Paste 12x800G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102741,
+    productId: 102741,
+    filename: "sw-morning-fresh-liquid-400ml-orange.jpg",
+    path: "/images/products/sw-morning-fresh-liquid-400ml-orange.jpg",
+    alt: "Morning Fresh Liquid 400ML (Orange) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102742,
+    productId: 102742,
+    filename: "sw-morning-fresh-liquid-400ml-original-fresh.jpg",
+    path: "/images/products/sw-morning-fresh-liquid-400ml-original-fresh.jpg",
+    alt: "Morning Fresh Liquid 400ML (Original Fresh) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102743,
+    productId: 102743,
+    filename: "sw-morning-fresh-liquid-400ml-zesty-lemon.jpg",
+    path: "/images/products/sw-morning-fresh-liquid-400ml-zesty-lemon.jpg",
+    alt: "Morning Fresh Liquid 400ML (Zesty Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102744,
+    productId: 102744,
+    filename: "sw-morning-fresh-liquid-750ml-green.jpg",
+    path: "/images/products/sw-morning-fresh-liquid-750ml-green.jpg",
+    alt: "Morning Fresh Liquid 750ML (Green) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102745,
+    productId: 102745,
+    filename: "sw-morning-fresh-liquid-750ml-orange.jpg",
+    path: "/images/products/sw-morning-fresh-liquid-750ml-orange.jpg",
+    alt: "Morning Fresh Liquid 750ML (Orange) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102746,
+    productId: 102746,
+    filename: "sw-morning-fresh-liquid-750ml-yellow.jpg",
+    path: "/images/products/sw-morning-fresh-liquid-750ml-yellow.jpg",
+    alt: "Morning Fresh Liquid 750ML (Yellow) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102747,
+    productId: 102747,
+    filename: "sw-morning-fresh-scouring-powder-24x500g-green.jpg",
+    path: "/images/products/sw-morning-fresh-scouring-powder-24x500g-green.jpg",
+    alt: "Morning Fresh Scouring Powder 24x500G (Green) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102748,
+    productId: 102748,
+    filename: "sw-morning-fresh-scouring-powder-24x500g-orange.jpg",
+    path: "/images/products/sw-morning-fresh-scouring-powder-24x500g-orange.jpg",
+    alt: "Morning Fresh Scouring Powder 24x500G (Orange) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102749,
+    productId: 102749,
+    filename: "sw-morning-fresh-scouring-powder-6x1kg-green.jpg",
+    path: "/images/products/sw-morning-fresh-scouring-powder-6x1kg-green.jpg",
+    alt: "Morning Fresh Scouring Powder 6x1KG (Green) Value Pack Piece",
+    isPrimary: true
+  },
+  {
+    id: 102750,
+    productId: 102750,
+    filename: "sw-morning-fresh-scouring-powder-6x1kg-orange.jpg",
+    path: "/images/products/sw-morning-fresh-scouring-powder-6x1kg-orange.jpg",
+    alt: "Morning Fresh Scouring Powder 6x1KG (Orange) Value Pack Piece",
+    isPrimary: true
+  },
+  {
+    id: 102751,
+    productId: 102751,
+    filename: "sw-morning-harvest-conflakes-10x1kg.jpg",
+    path: "/images/products/sw-morning-harvest-conflakes-10x1kg.jpg",
+    alt: "Morning Harvest Conflakes 10x1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102752,
+    productId: 102752,
+    filename: "sw-morning-harvest-conflakes-18x250g.jpg",
+    path: "/images/products/sw-morning-harvest-conflakes-18x250g.jpg",
+    alt: "Morning Harvest Conflakes 18x250G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102753,
+    productId: 102753,
+    filename: "sw-morning-harvest-conflakes-20x500g.jpg",
+    path: "/images/products/sw-morning-harvest-conflakes-20x500g.jpg",
+    alt: "Morning Harvest Conflakes 20x500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102754,
+    productId: 102754,
+    filename: "sw-morning-harvest-jumbo-oats-12x500g.jpg",
+    path: "/images/products/sw-morning-harvest-jumbo-oats-12x500g.jpg",
+    alt: "Morning Harvest Jumbo Oats 12x500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102755,
+    productId: 102755,
+    filename: "sw-morning-harvest-jumbo-oats-1kg.jpg",
+    path: "/images/products/sw-morning-harvest-jumbo-oats-1kg.jpg",
+    alt: "Morning Harvest Jumbo Oats 1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102756,
+    productId: 102756,
+    filename: "sw-moskill-aerosol-spray-300ml.jpg",
+    path: "/images/products/sw-moskill-aerosol-spray-300ml.jpg",
+    alt: "Moskill Aerosol Spray 300ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102757,
+    productId: 102757,
+    filename: "sw-moskill-mosquito-coil-green.jpg",
+    path: "/images/products/sw-moskill-mosquito-coil-green.jpg",
+    alt: "Moskill Mosquito Coil (Green) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102758,
+    productId: 102758,
+    filename: "sw-moskill-mosquito-coil-red.jpg",
+    path: "/images/products/sw-moskill-mosquito-coil-red.jpg",
+    alt: "Moskill Mosquito Coil (Red) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102759,
+    productId: 102759,
+    filename: "sw-moskill-spiral-electric-vaporiser-48hrs.jpg",
+    path: "/images/products/sw-moskill-spiral-electric-vaporiser-48hrs.jpg",
+    alt: "Moskill Spiral Electric Vaporiser 48HRS Piece",
+    isPrimary: true
+  },
+  {
+    id: 102760,
+    productId: 102760,
+    filename: "sw-moto-sawa-fuel-gel-12x1l.jpg",
+    path: "/images/products/sw-moto-sawa-fuel-gel-12x1l.jpg",
+    alt: "Moto Sawa Fuel Gel 12x1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102761,
+    productId: 102761,
+    filename: "sw-moto-sawa-fuel-gel-4x5l.jpg",
+    path: "/images/products/sw-moto-sawa-fuel-gel-4x5l.jpg",
+    alt: "Moto Sawa Fuel Gel 4x5L Jerican",
+    isPrimary: true
+  },
+  {
+    id: 102762,
+    productId: 102762,
+    filename: "sw-moto-sawa-fuel-gel-6x3l.jpg",
+    path: "/images/products/sw-moto-sawa-fuel-gel-6x3l.jpg",
+    alt: "Moto Sawa Fuel Gel 6x3L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102763,
+    productId: 102763,
+    filename: "sw-mount-kenya-long-life-milk-500ml-fino.jpg",
+    path: "/images/products/sw-mount-kenya-long-life-milk-500ml-fino.jpg",
+    alt: "Mount Kenya Long Life Milk 500ML (Fino) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102764,
+    productId: 102764,
+    filename: "sw-mount-kenya-whole-milk-18x500ml-esl.jpg",
+    path: "/images/products/sw-mount-kenya-whole-milk-18x500ml-esl.jpg",
+    alt: "Mount Kenya Whole Milk 18x500ML (ESL) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102765,
+    productId: 102765,
+    filename: "sw-mount-kenya-milk-200ml-esl.jpg",
+    path: "/images/products/sw-mount-kenya-milk-200ml-esl.jpg",
+    alt: "Mount Kenya Milk 200ML (ESL) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102766,
+    productId: 102766,
+    filename: "sw-mountain-dew-12x330ml.jpg",
+    path: "/images/products/sw-mountain-dew-12x330ml.jpg",
+    alt: "Mountain Dew 12x330ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102767,
+    productId: 102767,
+    filename: "sw-mountain-dew-12x500ml.jpg",
+    path: "/images/products/sw-mountain-dew-12x500ml.jpg",
+    alt: "Mountain Dew 12x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102768,
+    productId: 102768,
+    filename: "sw-mountain-dew-6x2l.jpg",
+    path: "/images/products/sw-mountain-dew-6x2l.jpg",
+    alt: "Mountain Dew 6x2L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102769,
+    productId: 102769,
+    filename: "sw-mountain-fresh-milk-200ml-esl.jpg",
+    path: "/images/products/sw-mountain-fresh-milk-200ml-esl.jpg",
+    alt: "Mountain Fresh Milk 200ML (ESL) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102770,
+    productId: 102770,
+    filename: "sw-mountain-fresh-milk-500ml-esl-white-ctn.jpg",
+    path: "/images/products/sw-mountain-fresh-milk-500ml-esl-white-ctn.jpg",
+    alt: "Mountain Fresh Milk 500ML (ESL) (White Carton) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102771,
+    productId: 102771,
+    filename: "sw-mountain-fresh-milk-500ml-fino-brown-ctn.jpg",
+    path: "/images/products/sw-mountain-fresh-milk-500ml-fino-brown-ctn.jpg",
+    alt: "Mountain Fresh Milk 500ML (Fino) (Brown Carton) Carton",
+    isPrimary: true
+  },
+  {
+    id: 102772,
+    productId: 102772,
+    filename: "sw-mountain-fresh-yoghurt-150ml-lemon.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-150ml-lemon.jpg",
+    alt: "Mountain Fresh Yoghurt 150ML (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102773,
+    productId: 102773,
+    filename: "sw-mountain-fresh-yoghurt-150ml-passion.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-150ml-passion.jpg",
+    alt: "Mountain Fresh Yoghurt 150ML (Passion) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102774,
+    productId: 102774,
+    filename: "sw-mountain-fresh-yoghurt-150ml-strawberry.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-150ml-strawberry.jpg",
+    alt: "Mountain Fresh Yoghurt 150ML (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102775,
+    productId: 102775,
+    filename: "sw-mountain-fresh-yoghurt-150ml-vanilla.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-150ml-vanilla.jpg",
+    alt: "Mountain Fresh Yoghurt 150ML (Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102776,
+    productId: 102776,
+    filename: "sw-mountain-fresh-yoghurt-250ml-lemon.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-250ml-lemon.jpg",
+    alt: "Mountain Fresh Yoghurt 250ML (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102777,
+    productId: 102777,
+    filename: "sw-mountain-fresh-yoghurt-250ml-passion.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-250ml-passion.jpg",
+    alt: "Mountain Fresh Yoghurt 250ML (Passion) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102778,
+    productId: 102778,
+    filename: "sw-mountain-fresh-yoghurt-250ml-strawberry.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-250ml-strawberry.jpg",
+    alt: "Mountain Fresh Yoghurt 250ML (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102779,
+    productId: 102779,
+    filename: "sw-mountain-fresh-yoghurt-250ml-vanilla.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-250ml-vanilla.jpg",
+    alt: "Mountain Fresh Yoghurt 250ML (Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102780,
+    productId: 102780,
+    filename: "sw-mountain-fresh-yoghurt-500ml-chocolate.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-500ml-chocolate.jpg",
+    alt: "Mountain Fresh Yoghurt 500ML (Chocolate) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102781,
+    productId: 102781,
+    filename: "sw-mountain-fresh-yoghurt-500ml-lemon.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-500ml-lemon.jpg",
+    alt: "Mountain Fresh Yoghurt 500ML (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102782,
+    productId: 102782,
+    filename: "sw-mountain-fresh-yoghurt-500ml-passion.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-500ml-passion.jpg",
+    alt: "Mountain Fresh Yoghurt 500ML (Passion) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102783,
+    productId: 102783,
+    filename: "sw-mountain-fresh-yoghurt-500ml-strawberry.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-500ml-strawberry.jpg",
+    alt: "Mountain Fresh Yoghurt 500ML (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102784,
+    productId: 102784,
+    filename: "sw-mountain-fresh-yoghurt-500ml-vanilla.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-500ml-vanilla.jpg",
+    alt: "Mountain Fresh Yoghurt 500ML (Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102785,
+    productId: 102785,
+    filename: "sw-mountain-fresh-yoghurt-5l-strawberry.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-5l-strawberry.jpg",
+    alt: "Mountain Fresh Yoghurt 5L (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102786,
+    productId: 102786,
+    filename: "sw-mountain-fresh-yoghurt-5l-vanilla.jpg",
+    path: "/images/products/sw-mountain-fresh-yoghurt-5l-vanilla.jpg",
+    alt: "Mountain Fresh Yoghurt 5L (Vanilla) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102787,
+    productId: 102787,
+    filename: "sw-mpishi-poa-10x1kg-sachet.jpg",
+    path: "/images/products/sw-mpishi-poa-10x1kg-sachet.jpg",
+    alt: "Mpishi Poa 10x1KG (Sachet) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102788,
+    productId: 102788,
+    filename: "sw-mpishi-poa-20x500g-sachet.jpg",
+    path: "/images/products/sw-mpishi-poa-20x500g-sachet.jpg",
+    alt: "Mpishi Poa 20x500G (Sachet) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102789,
+    productId: 102789,
+    filename: "sw-mpishi-poa-cooking-fat-1kg-plastic.jpg",
+    path: "/images/products/sw-mpishi-poa-cooking-fat-1kg-plastic.jpg",
+    alt: "Mpishi Poa Cooking Fat 1KG (Plastic) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102790,
+    productId: 102790,
+    filename: "sw-mpishi-poa-cooking-fat-500g-plastic.jpg",
+    path: "/images/products/sw-mpishi-poa-cooking-fat-500g-plastic.jpg",
+    alt: "Mpishi Poa Cooking Fat 500G (Plastic) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102791,
+    productId: 102791,
+    filename: "sw-mpishi-poa-fat-2kg.jpg",
+    path: "/images/products/sw-mpishi-poa-fat-2kg.jpg",
+    alt: "Mpishi Poa Fat 2KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102792,
+    productId: 102792,
+    filename: "sw-mpishi-poa-fat-white-10kg.jpg",
+    path: "/images/products/sw-mpishi-poa-fat-white-10kg.jpg",
+    alt: "Mpishi Poa Fat White 10KG Carton",
+    isPrimary: true
+  },
+  {
+    id: 102793,
+    productId: 102793,
+    filename: "sw-mr-berry-gum-balls-12x200pcs.jpg",
+    path: "/images/products/sw-mr-berry-gum-balls-12x200pcs.jpg",
+    alt: "Mr Berry Gum Balls 12x200PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102794,
+    productId: 102794,
+    filename: "sw-mr-berry-ice-cool-20x100pcs-mint.jpg",
+    path: "/images/products/sw-mr-berry-ice-cool-20x100pcs-mint.jpg",
+    alt: "Mr Berry Ice Cool 20x100PCS (Mint) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102795,
+    productId: 102795,
+    filename: "sw-mr-berry-icing-sugar-500g.jpg",
+    path: "/images/products/sw-mr-berry-icing-sugar-500g.jpg",
+    alt: "Mr Berry Icing Sugar 500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102796,
+    productId: 102796,
+    filename: "sw-mr-berry-original-100pcs-strawberry.jpg",
+    path: "/images/products/sw-mr-berry-original-100pcs-strawberry.jpg",
+    alt: "Mr Berry Original 100PCS (Strawberry) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102797,
+    productId: 102797,
+    filename: "sw-mr-berry-sweet-drop.jpg",
+    path: "/images/products/sw-mr-berry-sweet-drop.jpg",
+    alt: "Mr Berry Sweet Drop Packet",
+    isPrimary: true
+  },
+  {
+    id: 102798,
+    productId: 102798,
+    filename: "sw-mr-berrys-juice-drops-12x50pcs.jpg",
+    path: "/images/products/sw-mr-berrys-juice-drops-12x50pcs.jpg",
+    alt: "Mr Berry's Juice Drops 12x50PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102799,
+    productId: 102799,
+    filename: "sw-mr-rice-1121-basmati-20kg-jute-bag.jpg",
+    path: "/images/products/sw-mr-rice-1121-basmati-20kg-jute-bag.jpg",
+    alt: "Mr Rice 1121 Basmati Rice 20KG (Jute Bag) Bag",
+    isPrimary: true
+  },
+  {
+    id: 102800,
+    productId: 102800,
+    filename: "sw-msafi-aloe-vera-soap-10x1kg.jpg",
+    path: "/images/products/sw-msafi-aloe-vera-soap-10x1kg.jpg",
+    alt: "Msafi Aloe Vera Soap 10x1KG Outer",
+    isPrimary: true
+  },
+  {
+    id: 102801,
+    productId: 102801,
+    filename: "sw-msafi-bleach-colours-500ml-100ml-free.jpg",
+    path: "/images/products/sw-msafi-bleach-colours-500ml-100ml-free.jpg",
+    alt: "Msafi Bleach Colours 500ML+(100ML Free) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102802,
+    productId: 102802,
+    filename: "sw-msafi-bleach-colours-750ml-250ml-free.jpg",
+    path: "/images/products/sw-msafi-bleach-colours-750ml-250ml-free.jpg",
+    alt: "Msafi Bleach Colours 750ML+(250ML Free) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102803,
+    productId: 102803,
+    filename: "sw-msafi-bleach-lavender-750ml-250ml-free.jpg",
+    path: "/images/products/sw-msafi-bleach-lavender-750ml-250ml-free.jpg",
+    alt: "Msafi Bleach Lavender 750ML+(250ML Free) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102804,
+    productId: 102804,
+    filename: "sw-msafi-bleach-lemon-750ml-250ml-free.jpg",
+    path: "/images/products/sw-msafi-bleach-lemon-750ml-250ml-free.jpg",
+    alt: "Msafi Bleach Lemon 750ML+(250ML Free) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102805,
+    productId: 102805,
+    filename: "sw-msafi-bleach-potpourri-750ml-250ml-free.jpg",
+    path: "/images/products/sw-msafi-bleach-potpourri-750ml-250ml-free.jpg",
+    alt: "Msafi Bleach Potpourri 750ML+(250ML Free) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102806,
+    productId: 102806,
+    filename: "sw-msafi-bleach-regular-750ml-250ml-free.jpg",
+    path: "/images/products/sw-msafi-bleach-regular-750ml-250ml-free.jpg",
+    alt: "Msafi Bleach Regular 750ML+(250ML Free) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102807,
+    productId: 102807,
+    filename: "sw-msafi-clear-soap-10x1kg.jpg",
+    path: "/images/products/sw-msafi-clear-soap-10x1kg.jpg",
+    alt: "Msafi Clear Soap 10x1KG Outer",
+    isPrimary: true
+  },
+  {
+    id: 102808,
+    productId: 102808,
+    filename: "sw-msafi-soap-cream-700g.jpg",
+    path: "/images/products/sw-msafi-soap-cream-700g.jpg",
+    alt: "Msafi Soap Cream 700G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102809,
+    productId: 102809,
+    filename: "sw-msafi-soap-white-10x1kg.jpg",
+    path: "/images/products/sw-msafi-soap-white-10x1kg.jpg",
+    alt: "Msafi Soap White 10x1KG Outer",
+    isPrimary: true
+  },
+  {
+    id: 102810,
+    productId: 102810,
+    filename: "sw-msafi-toilet-cleaner-12x750ml-citrus.jpg",
+    path: "/images/products/sw-msafi-toilet-cleaner-12x750ml-citrus.jpg",
+    alt: "Msafi Toilet Cleaner 12x750ML (Citrus) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102811,
+    productId: 102811,
+    filename: "sw-msafi-toilet-cleaner-12x750ml-lavender.jpg",
+    path: "/images/products/sw-msafi-toilet-cleaner-12x750ml-lavender.jpg",
+    alt: "Msafi Toilet Cleaner 12x750ML (Lavender) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102812,
+    productId: 102812,
+    filename: "sw-msafi-toilet-cleaner-12x750ml-ocean.jpg",
+    path: "/images/products/sw-msafi-toilet-cleaner-12x750ml-ocean.jpg",
+    alt: "Msafi Toilet Cleaner 12x750ML (Ocean) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102813,
+    productId: 102813,
+    filename: "sw-msafi-toilet-cleaner-12x750ml-pine.jpg",
+    path: "/images/products/sw-msafi-toilet-cleaner-12x750ml-pine.jpg",
+    alt: "Msafi Toilet Cleaner 12x750ML (Pine) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102814,
+    productId: 102814,
+    filename: "sw-msafi-toilet-cleaner-24x500ml-lavender.jpg",
+    path: "/images/products/sw-msafi-toilet-cleaner-24x500ml-lavender.jpg",
+    alt: "Msafi Toilet Cleaner 24x500ML (Lavender) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102815,
+    productId: 102815,
+    filename: "sw-msafi-toilet-cleaner-24x500ml-ocean-fresh.jpg",
+    path: "/images/products/sw-msafi-toilet-cleaner-24x500ml-ocean-fresh.jpg",
+    alt: "Msafi Toilet Cleaner 24x500ML (Ocean Fresh) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102816,
+    productId: 102816,
+    filename: "sw-msafi-toilet-cleaner-24x500ml-pine.jpg",
+    path: "/images/products/sw-msafi-toilet-cleaner-24x500ml-pine.jpg",
+    alt: "Msafi Toilet Cleaner 24x500ML (Pine) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102817,
+    productId: 102817,
+    filename: "sw-msafi-wpowder-100g-lavender.jpg",
+    path: "/images/products/sw-msafi-wpowder-100g-lavender.jpg",
+    alt: "Msafi W/Powder 100G (Lavender) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102818,
+    productId: 102818,
+    filename: "sw-msafi-wpowder-100g-white.jpg",
+    path: "/images/products/sw-msafi-wpowder-100g-white.jpg",
+    alt: "Msafi W/Powder 100G (White) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102819,
+    productId: 102819,
+    filename: "sw-msafi-wpowder-200g-lavender.jpg",
+    path: "/images/products/sw-msafi-wpowder-200g-lavender.jpg",
+    alt: "Msafi W/Powder 200G (Lavender) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102820,
+    productId: 102820,
+    filename: "sw-msafi-wpowder-3.5kg-bucket-lavender.jpg",
+    path: "/images/products/sw-msafi-wpowder-3.5kg-bucket-lavender.jpg",
+    alt: "Msafi W/Powder 3.5KG Bucket (Lavender) Bucket",
+    isPrimary: true
+  },
+  {
+    id: 102821,
+    productId: 102821,
+    filename: "sw-msafi-wpowder-3.5kg-bucket-white.jpg",
+    path: "/images/products/sw-msafi-wpowder-3.5kg-bucket-white.jpg",
+    alt: "Msafi W/Powder 3.5KG Bucket (White) Bucket",
+    isPrimary: true
+  },
+  {
+    id: 102822,
+    productId: 102822,
+    filename: "sw-msafi-wpowder-50g.jpg",
+    path: "/images/products/sw-msafi-wpowder-50g.jpg",
+    alt: "Msafi W/Powder 50G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102823,
+    productId: 102823,
+    filename: "sw-msafi-washing-powder-lavender-jar-12x1kg.jpg",
+    path: "/images/products/sw-msafi-washing-powder-lavender-jar-12x1kg.jpg",
+    alt: "Msafi Washing Powder (Lavender) (Jar) 12x1KG Jar",
+    isPrimary: true
+  },
+  {
+    id: 102824,
+    productId: 102824,
+    filename: "sw-msafi-washing-powder-purple-sachet-6x1kg.jpg",
+    path: "/images/products/sw-msafi-washing-powder-purple-sachet-6x1kg.jpg",
+    alt: "Msafi Washing Powder (Purple) (Sachet) 6x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102825,
+    productId: 102825,
+    filename: "sw-msafi-washing-powder-white-sachet-6x1kg.jpg",
+    path: "/images/products/sw-msafi-washing-powder-white-sachet-6x1kg.jpg",
+    alt: "Msafi Washing Powder (White) (Sachet) 6x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102826,
+    productId: 102826,
+    filename: "sw-msafi-washing-powder-yellow-sachet-6x1kg.jpg",
+    path: "/images/products/sw-msafi-washing-powder-yellow-sachet-6x1kg.jpg",
+    alt: "Msafi Washing Powder (Yellow) (Sachet) 6x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102827,
+    productId: 102827,
+    filename: "sw-msafi-washing-powder-purple-sachet-12x500g.jpg",
+    path: "/images/products/sw-msafi-washing-powder-purple-sachet-12x500g.jpg",
+    alt: "Msafi Washing Powder Purple (Sachet) 12x500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102828,
+    productId: 102828,
+    filename: "sw-msafi-washing-powder-white-sachet-12x500g.jpg",
+    path: "/images/products/sw-msafi-washing-powder-white-sachet-12x500g.jpg",
+    alt: "Msafi Washing Powder White (Sachet) 12x500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102829,
+    productId: 102829,
+    filename: "sw-msafi-washing-powder-yellow-sachet-500g.jpg",
+    path: "/images/products/sw-msafi-washing-powder-yellow-sachet-500g.jpg",
+    alt: "Msafi Washing Powder Yellow (Sachet) 500G Packet",
+    isPrimary: true
+  },
+  {
+    id: 102830,
+    productId: 102830,
+    filename: "sw-mt-kenya-water-500ml.jpg",
+    path: "/images/products/sw-mt-kenya-water-500ml.jpg",
+    alt: "Mt Kenya Water 500ML Case",
+    isPrimary: true
+  },
+  {
+    id: 102831,
+    productId: 102831,
+    filename: "sw-mt-kenya-water-6x1l.jpg",
+    path: "/images/products/sw-mt-kenya-water-6x1l.jpg",
+    alt: "Mt Kenya Water 6x1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 102832,
+    productId: 102832,
+    filename: "sw-muguka-bubble-gum-20x100pcs.jpg",
+    path: "/images/products/sw-muguka-bubble-gum-20x100pcs.jpg",
+    alt: "Muguka Bubble Gum 20x100PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102833,
+    productId: 102833,
+    filename: "sw-mumias-sugar-1kg.jpg",
+    path: "/images/products/sw-mumias-sugar-1kg.jpg",
+    alt: "Mumias Sugar 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102834,
+    productId: 102834,
+    filename: "sw-mumias-sugar-2kg.jpg",
+    path: "/images/products/sw-mumias-sugar-2kg.jpg",
+    alt: "Mumias Sugar 2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102835,
+    productId: 102835,
+    filename: "sw-mums-aromatic-mwea-pishori-rice-12x2kg.jpg",
+    path: "/images/products/sw-mums-aromatic-mwea-pishori-rice-12x2kg.jpg",
+    alt: "Mums Aromatic Mwea Pishori Rice 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102836,
+    productId: 102836,
+    filename: "sw-mums-long-grain-rice-12x2kg.jpg",
+    path: "/images/products/sw-mums-long-grain-rice-12x2kg.jpg",
+    alt: "Mums Long Grain Rice 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102837,
+    productId: 102837,
+    filename: "sw-mums-long-grain-rice-5x5kg.jpg",
+    path: "/images/products/sw-mums-long-grain-rice-5x5kg.jpg",
+    alt: "Mums Long Grain Rice 5x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102838,
+    productId: 102838,
+    filename: "sw-mums-pishori-basmati-rice-12x2kg.jpg",
+    path: "/images/products/sw-mums-pishori-basmati-rice-12x2kg.jpg",
+    alt: "Mums Pishori/Basmati Rice 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102839,
+    productId: 102839,
+    filename: "sw-munchee-milk-short-cake-biscuits-80g.jpg",
+    path: "/images/products/sw-munchee-milk-short-cake-biscuits-80g.jpg",
+    alt: "Munchee Milk Short Cake Biscuits 80G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102840,
+    productId: 102840,
+    filename: "sw-musk-white-rice-25kg.jpg",
+    path: "/images/products/sw-musk-white-rice-25kg.jpg",
+    alt: "Musk White Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102841,
+    productId: 102841,
+    filename: "sw-my-girl-sanitary-pad-pink.jpg",
+    path: "/images/products/sw-my-girl-sanitary-pad-pink.jpg",
+    alt: "My Girl Cotton Soft & Fit Sanitary Pad (Pink) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102842,
+    productId: 102842,
+    filename: "sw-my-girl-sanitary-pad-blue.jpg",
+    path: "/images/products/sw-my-girl-sanitary-pad-blue.jpg",
+    alt: "My Girl Sanitary Pad (Blue) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102843,
+    productId: 102843,
+    filename: "sw-my-girl-sanitary-pad-purple.jpg",
+    path: "/images/products/sw-my-girl-sanitary-pad-purple.jpg",
+    alt: "My Girl Sanitary Pad (Purple) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102844,
+    productId: 102844,
+    filename: "sw-my-girl-sanitary-pad-10s.jpg",
+    path: "/images/products/sw-my-girl-sanitary-pad-10s.jpg",
+    alt: "My Girl Sanitary Pad 10'S Piece",
+    isPrimary: true
+  },
+  {
+    id: 102845,
+    productId: 102845,
+    filename: "sw-nala-noodies-chicken-120g.jpg",
+    path: "/images/products/sw-nala-noodies-chicken-120g.jpg",
+    alt: "Nala Noodies Chicken 120G Carton",
+    isPrimary: true
+  },
+  {
+    id: 102846,
+    productId: 102846,
+    filename: "sw-nala-noodies-chicken-70g-value-pack-5s.jpg",
+    path: "/images/products/sw-nala-noodies-chicken-70g-value-pack-5s.jpg",
+    alt: "Nala Noodies Chicken 70G (Value Pack) 5'S Outer",
+    isPrimary: true
+  },
+  {
+    id: 102847,
+    productId: 102847,
+    filename: "sw-nala-noodies-coconut-70g-value-pack-5s.jpg",
+    path: "/images/products/sw-nala-noodies-coconut-70g-value-pack-5s.jpg",
+    alt: "Nala Noodies Coconut 70G (Value Pack) 5'S Outer",
+    isPrimary: true
+  },
+  {
+    id: 102848,
+    productId: 102848,
+    filename: "sw-nala-noodies-vegetable-70g-value-pack-5s.jpg",
+    path: "/images/products/sw-nala-noodies-vegetable-70g-value-pack-5s.jpg",
+    alt: "Nala Noodies Vegetable 70G (Value Pack) 5'S Outer",
+    isPrimary: true
+  },
+  {
+    id: 102849,
+    productId: 102849,
+    filename: "sw-nalla-tissue-10pack.jpg",
+    path: "/images/products/sw-nalla-tissue-10pack.jpg",
+    alt: "Nalla Tissue 10 Pack Outer",
+    isPrimary: true
+  },
+  {
+    id: 102850,
+    productId: 102850,
+    filename: "sw-nan-1-optipro-400g.jpg",
+    path: "/images/products/sw-nan-1-optipro-400g.jpg",
+    alt: "NAN 1 Optipro 400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102851,
+    productId: 102851,
+    filename: "sw-nan-2-optipro-400g.jpg",
+    path: "/images/products/sw-nan-2-optipro-400g.jpg",
+    alt: "NAN 2 Optipro 400G Tin",
+    isPrimary: true
+  },
+  {
+    id: 102852,
+    productId: 102852,
+    filename: "sw-nana-ugali-1kg.jpg",
+    path: "/images/products/sw-nana-ugali-1kg.jpg",
+    alt: "Nana Ugali 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102853,
+    productId: 102853,
+    filename: "sw-nana-ugali-2kg.jpg",
+    path: "/images/products/sw-nana-ugali-2kg.jpg",
+    alt: "Nana Ugali 2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102854,
+    productId: 102854,
+    filename: "sw-nataraj-ruler-30cm-packet.jpg",
+    path: "/images/products/sw-nataraj-ruler-30cm-packet.jpg",
+    alt: "Nataraj Ruler 30CM (Packet) Packet",
+    isPrimary: true
+  },
+  {
+    id: 102855,
+    productId: 102855,
+    filename: "sw-nataraj-ruler-30cm-piece.jpg",
+    path: "/images/products/sw-nataraj-ruler-30cm-piece.jpg",
+    alt: "Nataraj Ruler 30CM (Piece) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102856,
+    productId: 102856,
+    filename: "sw-naturalli-chia-seeds-100g.jpg",
+    path: "/images/products/sw-naturalli-chia-seeds-100g.jpg",
+    alt: "Naturalli Chia Seeds 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102857,
+    productId: 102857,
+    filename: "sw-naturalli-chia-seeds-250g.jpg",
+    path: "/images/products/sw-naturalli-chia-seeds-250g.jpg",
+    alt: "Naturalli Chia Seeds 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102858,
+    productId: 102858,
+    filename: "sw-naturalli-dates-100g.jpg",
+    path: "/images/products/sw-naturalli-dates-100g.jpg",
+    alt: "Naturalli Dates 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102859,
+    productId: 102859,
+    filename: "sw-naturalli-dates-250g.jpg",
+    path: "/images/products/sw-naturalli-dates-250g.jpg",
+    alt: "Naturalli Dates 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102860,
+    productId: 102860,
+    filename: "sw-naturalli-himalayan-pink-salt-150g.jpg",
+    path: "/images/products/sw-naturalli-himalayan-pink-salt-150g.jpg",
+    alt: "Naturalli Himalayan Pink Salt 150G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102861,
+    productId: 102861,
+    filename: "sw-naturalli-himalayan-pink-salt-1kg.jpg",
+    path: "/images/products/sw-naturalli-himalayan-pink-salt-1kg.jpg",
+    alt: "Naturalli Himalayan Pink Salt 1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 102862,
+    productId: 102862,
+    filename: "sw-naturalli-himalayan-pink-salt-300g.jpg",
+    path: "/images/products/sw-naturalli-himalayan-pink-salt-300g.jpg",
+    alt: "Naturalli Himalayan Pink Salt 300G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102863,
+    productId: 102863,
+    filename: "sw-naturalli-himalayan-pink-salt-500g.jpg",
+    path: "/images/products/sw-naturalli-himalayan-pink-salt-500g.jpg",
+    alt: "Naturalli Himalayan Pink Salt 500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102864,
+    productId: 102864,
+    filename: "sw-naturalli-moringa-powder-150g.jpg",
+    path: "/images/products/sw-naturalli-moringa-powder-150g.jpg",
+    alt: "Naturalli Moringa Powder 150G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102865,
+    productId: 102865,
+    filename: "sw-naturalli-pumpkin-seeds-100g.jpg",
+    path: "/images/products/sw-naturalli-pumpkin-seeds-100g.jpg",
+    alt: "Naturalli Pumpkin Seeds 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102866,
+    productId: 102866,
+    filename: "sw-naturalli-raising-100g.jpg",
+    path: "/images/products/sw-naturalli-raising-100g.jpg",
+    alt: "Naturalli Raising 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102867,
+    productId: 102867,
+    filename: "sw-naturalli-raising-250g.jpg",
+    path: "/images/products/sw-naturalli-raising-250g.jpg",
+    alt: "Naturalli Raising 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102868,
+    productId: 102868,
+    filename: "sw-naturalli-sunflower-seeds-100g.jpg",
+    path: "/images/products/sw-naturalli-sunflower-seeds-100g.jpg",
+    alt: "Naturalli Sunflower Seeds 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102869,
+    productId: 102869,
+    filename: "sw-naturalli-whole-almonds-100g.jpg",
+    path: "/images/products/sw-naturalli-whole-almonds-100g.jpg",
+    alt: "Naturalli Whole Almonds 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102870,
+    productId: 102870,
+    filename: "sw-naturalli-whole-almonds-250g.jpg",
+    path: "/images/products/sw-naturalli-whole-almonds-250g.jpg",
+    alt: "Naturalli Whole Almonds 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102871,
+    productId: 102871,
+    filename: "sw-naturally-fair-9ml.jpg",
+    path: "/images/products/sw-naturally-fair-9ml.jpg",
+    alt: "Naturally Fair 9ML Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102872,
+    productId: 102872,
+    filename: "sw-natures-own-black-pepper-100g.jpg",
+    path: "/images/products/sw-natures-own-black-pepper-100g.jpg",
+    alt: "Nature's Own Black Pepper 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102873,
+    productId: 102873,
+    filename: "sw-natures-own-cardamon-spice-100g.jpg",
+    path: "/images/products/sw-natures-own-cardamon-spice-100g.jpg",
+    alt: "Nature's Own Cardamon Spice 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102874,
+    productId: 102874,
+    filename: "sw-natures-own-chicken-masala-100g.jpg",
+    path: "/images/products/sw-natures-own-chicken-masala-100g.jpg",
+    alt: "Nature's Own Chicken Masala 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102875,
+    productId: 102875,
+    filename: "sw-natures-own-curry-powder-100g.jpg",
+    path: "/images/products/sw-natures-own-curry-powder-100g.jpg",
+    alt: "Nature's Own Curry Powder 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102876,
+    productId: 102876,
+    filename: "sw-natures-own-curry-powder-50g.jpg",
+    path: "/images/products/sw-natures-own-curry-powder-50g.jpg",
+    alt: "Nature's Own Curry Powder 50G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102877,
+    productId: 102877,
+    filename: "sw-natures-own-mixed-spice-100g.jpg",
+    path: "/images/products/sw-natures-own-mixed-spice-100g.jpg",
+    alt: "Nature's Own Mixed Spice 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102878,
+    productId: 102878,
+    filename: "sw-natures-own-pilau-masala-100g.jpg",
+    path: "/images/products/sw-natures-own-pilau-masala-100g.jpg",
+    alt: "Nature's Own Pilau Masala 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102879,
+    productId: 102879,
+    filename: "sw-natures-own-spanish-paprika-100g.jpg",
+    path: "/images/products/sw-natures-own-spanish-paprika-100g.jpg",
+    alt: "Nature's Own Spanish Paprika 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102880,
+    productId: 102880,
+    filename: "sw-natures-own-spanish-paprika-50g.jpg",
+    path: "/images/products/sw-natures-own-spanish-paprika-50g.jpg",
+    alt: "Nature's Own Spanish Paprika 50G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102881,
+    productId: 102881,
+    filename: "sw-natures-own-tea-masala-100g.jpg",
+    path: "/images/products/sw-natures-own-tea-masala-100g.jpg",
+    alt: "Nature's Own Tea Masala 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102882,
+    productId: 102882,
+    filename: "sw-natures-own-tea-masala-50g.jpg",
+    path: "/images/products/sw-natures-own-tea-masala-50g.jpg",
+    alt: "Nature's Own Tea Masala 50G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102883,
+    productId: 102883,
+    filename: "sw-natures-own-turmeric-100g.jpg",
+    path: "/images/products/sw-natures-own-turmeric-100g.jpg",
+    alt: "Nature's Own Turmeric 100G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102884,
+    productId: 102884,
+    filename: "sw-natures-own-pilau-masala-50g.jpg",
+    path: "/images/products/sw-natures-own-pilau-masala-50g.jpg",
+    alt: "Nature's Own Pilau Masala 50G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102885,
+    productId: 102885,
+    filename: "sw-ndengu-makueni-90kg.jpg",
+    path: "/images/products/sw-ndengu-makueni-90kg.jpg",
+    alt: "Ndengu (Makueni) 90KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102886,
+    productId: 102886,
+    filename: "sw-ndengu-makueni-22.5kg.jpg",
+    path: "/images/products/sw-ndengu-makueni-22.5kg.jpg",
+    alt: "Ndengu (Makueni) 22.5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102887,
+    productId: 102887,
+    filename: "sw-ndengu-nylon-22.5kg.jpg",
+    path: "/images/products/sw-ndengu-nylon-22.5kg.jpg",
+    alt: "Ndengu (Nylon) 22.5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102888,
+    productId: 102888,
+    filename: "sw-ndengu-nylon-90kg.jpg",
+    path: "/images/products/sw-ndengu-nylon-90kg.jpg",
+    alt: "Ndengu (Nylon) 90KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102889,
+    productId: 102889,
+    filename: "sw-ndengu-special-22.5kg.jpg",
+    path: "/images/products/sw-ndengu-special-22.5kg.jpg",
+    alt: "Ndengu (Special) 22.5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102890,
+    productId: 102890,
+    filename: "sw-ndhiwa-brown-sugar-1kg.jpg",
+    path: "/images/products/sw-ndhiwa-brown-sugar-1kg.jpg",
+    alt: "Ndhiwa Brown Sugar 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102891,
+    productId: 102891,
+    filename: "sw-ndovu-ngano-10kg.jpg",
+    path: "/images/products/sw-ndovu-ngano-10kg.jpg",
+    alt: "Ndovu Ngano 10KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102892,
+    productId: 102892,
+    filename: "sw-ndovu-ngano-1kg.jpg",
+    path: "/images/products/sw-ndovu-ngano-1kg.jpg",
+    alt: "Ndovu Ngano 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102893,
+    productId: 102893,
+    filename: "sw-ndovu-ngano-2kg.jpg",
+    path: "/images/products/sw-ndovu-ngano-2kg.jpg",
+    alt: "Ndovu Ngano 2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102894,
+    productId: 102894,
+    filename: "sw-ndovu-ngano-5kg.jpg",
+    path: "/images/products/sw-ndovu-ngano-5kg.jpg",
+    alt: "Ndovu Ngano 5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102895,
+    productId: 102895,
+    filename: "sw-ndovu-ugali-2kg.jpg",
+    path: "/images/products/sw-ndovu-ugali-2kg.jpg",
+    alt: "Ndovu Ugali 2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102896,
+    productId: 102896,
+    filename: "sw-ndume-cream-soap-10x1kg.jpg",
+    path: "/images/products/sw-ndume-cream-soap-10x1kg.jpg",
+    alt: "Ndume Cream Soap 10x1KG Outer",
+    isPrimary: true
+  },
+  {
+    id: 102897,
+    productId: 102897,
+    filename: "sw-ndume-herbal-soap-10x1kg.jpg",
+    path: "/images/products/sw-ndume-herbal-soap-10x1kg.jpg",
+    alt: "Ndume Herbal Soap 10x1KG Outer",
+    isPrimary: true
+  },
+  {
+    id: 102898,
+    productId: 102898,
+    filename: "sw-ndume-natural-soap-12x600gm.jpg",
+    path: "/images/products/sw-ndume-natural-soap-12x600gm.jpg",
+    alt: "Ndume Natural Soap 12x600GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102899,
+    productId: 102899,
+    filename: "sw-ndume-natural-soap-12x700gm.jpg",
+    path: "/images/products/sw-ndume-natural-soap-12x700gm.jpg",
+    alt: "Ndume Natural Soap 12x700GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102900,
+    productId: 102900,
+    filename: "sw-ndume-natural-soap-12x800gm.jpg",
+    path: "/images/products/sw-ndume-natural-soap-12x800gm.jpg",
+    alt: "Ndume Natural Soap 12x800GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102901,
+    productId: 102901,
+    filename: "sw-ndume-white-soap-12x600gm.jpg",
+    path: "/images/products/sw-ndume-white-soap-12x600gm.jpg",
+    alt: "Ndume White Soap 12x600GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102902,
+    productId: 102902,
+    filename: "sw-neptune-white-jumbo-tissue.jpg",
+    path: "/images/products/sw-neptune-white-jumbo-tissue.jpg",
+    alt: "Neptune White Jumbo Tissue Bale",
+    isPrimary: true
+  },
+  {
+    id: 102903,
+    productId: 102903,
+    filename: "sw-neptune-coloured-jumbo-tissue.jpg",
+    path: "/images/products/sw-neptune-coloured-jumbo-tissue.jpg",
+    alt: "Neptune Coloured Jumbo Tissue Bale",
+    isPrimary: true
+  },
+  {
+    id: 102904,
+    productId: 102904,
+    filename: "sw-neptune-serviette-18s.jpg",
+    path: "/images/products/sw-neptune-serviette-18s.jpg",
+    alt: "Neptune Serviette 18'S Bale",
+    isPrimary: true
+  },
+  {
+    id: 102905,
+    productId: 102905,
+    filename: "sw-neptune-tissue-10pack-coloured.jpg",
+    path: "/images/products/sw-neptune-tissue-10pack-coloured.jpg",
+    alt: "Neptune Tissue 10 Pack (Coloured) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102906,
+    productId: 102906,
+    filename: "sw-neptune-tissue-10pack-white.jpg",
+    path: "/images/products/sw-neptune-tissue-10pack-white.jpg",
+    alt: "Neptune Tissue 10 Pack (White) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102907,
+    productId: 102907,
+    filename: "sw-neptune-tissue-2pack-coloured.jpg",
+    path: "/images/products/sw-neptune-tissue-2pack-coloured.jpg",
+    alt: "Neptune Tissue 2 Pack (Coloured) Bale",
+    isPrimary: true
+  },
+  {
+    id: 102908,
+    productId: 102908,
+    filename: "sw-neptune-tissue-2pack-white.jpg",
+    path: "/images/products/sw-neptune-tissue-2pack-white.jpg",
+    alt: "Neptune Tissue 2 Pack (White) Bale",
+    isPrimary: true
+  },
+  {
+    id: 102909,
+    productId: 102909,
+    filename: "sw-neptune-tissue-4pack-coloured.jpg",
+    path: "/images/products/sw-neptune-tissue-4pack-coloured.jpg",
+    alt: "Neptune Tissue 4 Pack (Coloured) Bale",
+    isPrimary: true
+  },
+  {
+    id: 102910,
+    productId: 102910,
+    filename: "sw-neptune-tissue-4pack-white.jpg",
+    path: "/images/products/sw-neptune-tissue-4pack-white.jpg",
+    alt: "Neptune Tissue 4 Pack (White) Bale",
+    isPrimary: true
+  },
+  {
+    id: 102911,
+    productId: 102911,
+    filename: "sw-neptune-tissue-singles-white.jpg",
+    path: "/images/products/sw-neptune-tissue-singles-white.jpg",
+    alt: "Neptune Tissue Singles (White) Bale",
+    isPrimary: true
+  },
+  {
+    id: 102912,
+    productId: 102912,
+    filename: "sw-neptune-tissue-singles-coloured.jpg",
+    path: "/images/products/sw-neptune-tissue-singles-coloured.jpg",
+    alt: "Neptune Tissue Singles (Coloured) Bale",
+    isPrimary: true
+  },
+  {
+    id: 102913,
+    productId: 102913,
+    filename: "sw-nescafe-classic-100g-jar.jpg",
+    path: "/images/products/sw-nescafe-classic-100g-jar.jpg",
+    alt: "Nescafe Classic 100G Jar Piece",
+    isPrimary: true
+  },
+  {
+    id: 102914,
+    productId: 102914,
+    filename: "sw-nescafe-classic-50g-jar.jpg",
+    path: "/images/products/sw-nescafe-classic-50g-jar.jpg",
+    alt: "Nescafe Classic 50G Jar Piece",
+    isPrimary: true
+  },
+  {
+    id: 102915,
+    productId: 102915,
+    filename: "sw-nescafe-classic-1.5g.jpg",
+    path: "/images/products/sw-nescafe-classic-1.5g.jpg",
+    alt: "Nescafe Classic 1.5G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102916,
+    productId: 102916,
+    filename: "sw-nescafe-classic-48x15g.jpg",
+    path: "/images/products/sw-nescafe-classic-48x15g.jpg",
+    alt: "Nescafe Classic 48x15G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 102917,
+    productId: 102917,
+    filename: "sw-nescafe-classic-12x200gm-jar.jpg",
+    path: "/images/products/sw-nescafe-classic-12x200gm-jar.jpg",
+    alt: "Nescafe Classic 12x200GM Jar Piece",
+    isPrimary: true
+  },
+  {
+    id: 102918,
+    productId: 102918,
+    filename: "sw-nescafe-creamy-white-18g.jpg",
+    path: "/images/products/sw-nescafe-creamy-white-18g.jpg",
+    alt: "Nescafe Creamy White 18G Outer",
+    isPrimary: true
+  },
+  {
+    id: 102919,
+    productId: 102919,
+    filename: "sw-netax-washing-powder-10kg-yellow.jpg",
+    path: "/images/products/sw-netax-washing-powder-10kg-yellow.jpg",
+    alt: "Netax Washing Powder 10KG Yellow Bag",
+    isPrimary: true
+  },
+  {
+    id: 102920,
+    productId: 102920,
+    filename: "sw-netax-washing-powder-500g-orange.jpg",
+    path: "/images/products/sw-netax-washing-powder-500g-orange.jpg",
+    alt: "Netax Washing Powder 500G Orange Piece",
+    isPrimary: true
+  },
+  {
+    id: 102921,
+    productId: 102921,
+    filename: "sw-netax-washing-powder-500g-yellow.jpg",
+    path: "/images/products/sw-netax-washing-powder-500g-yellow.jpg",
+    alt: "Netax Washing Powder 500G Yellow Piece",
+    isPrimary: true
+  },
+  {
+    id: 102922,
+    productId: 102922,
+    filename: "sw-ngano-pendo-1kg.jpg",
+    path: "/images/products/sw-ngano-pendo-1kg.jpg",
+    alt: "Ngano Pendo 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102923,
+    productId: 102923,
+    filename: "sw-ngano-pendo-2kg.jpg",
+    path: "/images/products/sw-ngano-pendo-2kg.jpg",
+    alt: "Ngano Pendo 2KG Half Bale",
+    isPrimary: true
+  },
+  {
+    id: 102924,
+    productId: 102924,
+    filename: "sw-ngano-soko-1kg.jpg",
+    path: "/images/products/sw-ngano-soko-1kg.jpg",
+    alt: "Ngano Soko 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102925,
+    productId: 102925,
+    filename: "sw-ngano-soko-24x500g.jpg",
+    path: "/images/products/sw-ngano-soko-24x500g.jpg",
+    alt: "Ngano Soko 24x500GM Bale",
+    isPrimary: true
+  },
+  {
+    id: 102926,
+    productId: 102926,
+    filename: "sw-ngano-soko-2kg.jpg",
+    path: "/images/products/sw-ngano-soko-2kg.jpg",
+    alt: "Ngano Soko 2KG 1/2bale",
+    isPrimary: true
+  },
+  {
+    id: 102927,
+    productId: 102927,
+    filename: "sw-ngarisha-steel-wool-75g.jpg",
+    path: "/images/products/sw-ngarisha-steel-wool-75g.jpg",
+    alt: "Ngarisha Steel Wool 75GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 102928,
+    productId: 102928,
+    filename: "sw-nia-sanitary-pad-10s.jpg",
+    path: "/images/products/sw-nia-sanitary-pad-10s.jpg",
+    alt: "Nia Sanitary Pad 10'S Outer",
+    isPrimary: true
+  },
+  {
+    id: 102929,
+    productId: 102929,
+    filename: "sw-nia-sanitary-pad-8s.jpg",
+    path: "/images/products/sw-nia-sanitary-pad-8s.jpg",
+    alt: "Nia Sanitary Pad 8'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 102930,
+    productId: 102930,
+    filename: "sw-nice-lovely-baby-bath-wash-300ml-all-in-one.jpg",
+    path: "/images/products/sw-nice-lovely-baby-bath-wash-300ml-all-in-one.jpg",
+    alt: "Nice & Lovely Baby Bath & Wash 300ML (All In One) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102931,
+    productId: 102931,
+    filename: "sw-nice-lovely-baby-jelly-150g-soothing.jpg",
+    path: "/images/products/sw-nice-lovely-baby-jelly-150g-soothing.jpg",
+    alt: "Nice & Lovely Baby Jelly 150G (Soothing) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102932,
+    productId: 102932,
+    filename: "sw-nice-lovely-baby-jelly-250g-soothing.jpg",
+    path: "/images/products/sw-nice-lovely-baby-jelly-250g-soothing.jpg",
+    alt: "Nice & Lovely Baby Jelly 250G (Soothing) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102933,
+    productId: 102933,
+    filename: "sw-nice-lovely-baby-lotion-300ml-nourishing.jpg",
+    path: "/images/products/sw-nice-lovely-baby-lotion-300ml-nourishing.jpg",
+    alt: "Nice & Lovely Baby Lotion 300ML (Nourishing) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102934,
+    productId: 102934,
+    filename: "sw-nice-lovely-baby-oil-100ml-soothing-calming.jpg",
+    path: "/images/products/sw-nice-lovely-baby-oil-100ml-soothing-calming.jpg",
+    alt: "Nice & Lovely Baby Oil 100ML (Soothing & Calming) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102935,
+    productId: 102935,
+    filename: "sw-nice-lovely-body-lotion-360ml-carrot.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-360ml-carrot.jpg",
+    alt: "Nice & Lovely Body Lotion 360ML (Carrot) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102936,
+    productId: 102936,
+    filename: "sw-nice-lovely-body-lotion-360ml-lemon.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-360ml-lemon.jpg",
+    alt: "Nice & Lovely Body Lotion 360ML (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102937,
+    productId: 102937,
+    filename: "sw-nice-lovely-body-lotion-360ml-men-energise-hydrate.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-360ml-men-energise-hydrate.jpg",
+    alt: "Nice & Lovely Body Lotion 360ML (Men) (Energise & Hydrate) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102938,
+    productId: 102938,
+    filename: "sw-nice-lovely-body-lotion-360ml-men-fresh-cool.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-360ml-men-fresh-cool.jpg",
+    alt: "Nice & Lovely Body Lotion 360ML (Men) (Fresh & Cool) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102939,
+    productId: 102939,
+    filename: "sw-nice-lovely-body-lotion-400ml-aloe.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-400ml-aloe.jpg",
+    alt: "Nice & Lovely Body Lotion 400ML (Aloe) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102940,
+    productId: 102940,
+    filename: "sw-nice-lovely-body-lotion-400ml-cocoa-butter.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-400ml-cocoa-butter.jpg",
+    alt: "Nice & Lovely Body Lotion 400ML (Cocoa Butter) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102941,
+    productId: 102941,
+    filename: "sw-nice-lovely-body-lotion-400ml-glycerine.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-400ml-glycerine.jpg",
+    alt: "Nice & Lovely Body Lotion 400ML (Glycerine) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102942,
+    productId: 102942,
+    filename: "sw-nice-lovely-body-lotion-400ml-milk.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-400ml-milk.jpg",
+    alt: "Nice & Lovely Body Lotion 400ML (Milk) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102943,
+    productId: 102943,
+    filename: "sw-nice-lovely-body-lotion-600ml-aloe.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-600ml-aloe.jpg",
+    alt: "Nice & Lovely Body Lotion 600ML (Aloe) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102944,
+    productId: 102944,
+    filename: "sw-nice-lovely-body-lotion-600ml-cocoa-butter.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-600ml-cocoa-butter.jpg",
+    alt: "Nice & Lovely Body Lotion 600ML (Cocoa Butter) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102945,
+    productId: 102945,
+    filename: "sw-nice-lovely-body-lotion-600ml-glycerine.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-600ml-glycerine.jpg",
+    alt: "Nice & Lovely Body Lotion 600ML (Glycerine) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102946,
+    productId: 102946,
+    filename: "sw-nice-lovely-body-lotion-600ml-lemon.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-600ml-lemon.jpg",
+    alt: "Nice & Lovely Body Lotion 600ML (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102947,
+    productId: 102947,
+    filename: "sw-nice-lovely-body-lotion-600ml-milk-cream.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-600ml-milk-cream.jpg",
+    alt: "Nice & Lovely Body Lotion 600ML (Milk Cream) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102948,
+    productId: 102948,
+    filename: "sw-nice-lovely-body-lotion-850ml-aloe.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-850ml-aloe.jpg",
+    alt: "Nice & Lovely Body Lotion 850ML (Aloe) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102949,
+    productId: 102949,
+    filename: "sw-nice-lovely-body-lotion-850ml-cocoa-butter.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-850ml-cocoa-butter.jpg",
+    alt: "Nice & Lovely Body Lotion 850ML (Cocoa Butter) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102950,
+    productId: 102950,
+    filename: "sw-nice-lovely-body-lotion-850ml-glycerine.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-850ml-glycerine.jpg",
+    alt: "Nice & Lovely Body Lotion 850ML (Glycerine) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102951,
+    productId: 102951,
+    filename: "sw-nice-lovely-body-lotion-850ml-milk-cream.jpg",
+    path: "/images/products/sw-nice-lovely-body-lotion-850ml-milk-cream.jpg",
+    alt: "Nice & Lovely Body Lotion 850ML (Milk Cream) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102952,
+    productId: 102952,
+    filename: "sw-nice-lovely-body-oil-200ml-flawless.jpg",
+    path: "/images/products/sw-nice-lovely-body-oil-200ml-flawless.jpg",
+    alt: "Nice & Lovely Body Oil 200ML (Flawless) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102953,
+    productId: 102953,
+    filename: "sw-nice-lovely-hair-food-240ml-almond-oil.jpg",
+    path: "/images/products/sw-nice-lovely-hair-food-240ml-almond-oil.jpg",
+    alt: "Nice & Lovely Hair Food 240ML (Almond Oil) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102954,
+    productId: 102954,
+    filename: "sw-nice-lovely-hair-food-240ml-avocado-oil.jpg",
+    path: "/images/products/sw-nice-lovely-hair-food-240ml-avocado-oil.jpg",
+    alt: "Nice & Lovely Hair Food 240ML (Avocado Oil) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102955,
+    productId: 102955,
+    filename: "sw-nice-lovely-hair-food-240ml-olive-oil.jpg",
+    path: "/images/products/sw-nice-lovely-hair-food-240ml-olive-oil.jpg",
+    alt: "Nice & Lovely Hair Food 240ML (Olive Oil) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102956,
+    productId: 102956,
+    filename: "sw-nice-lovely-jelly-in-cream-302ml-glycerine-coconut.jpg",
+    path: "/images/products/sw-nice-lovely-jelly-in-cream-302ml-glycerine-coconut.jpg",
+    alt: "Nice & Lovely Jelly In Cream 302ML (Glycerine & Coconut) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102957,
+    productId: 102957,
+    filename: "sw-nice-lovely-pure-glycerine-65ml.jpg",
+    path: "/images/products/sw-nice-lovely-pure-glycerine-65ml.jpg",
+    alt: "Nice & Lovely Pure Glycerine 65ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102958,
+    productId: 102958,
+    filename: "sw-nice-lovely-pure-glycerine-72x100ml.jpg",
+    path: "/images/products/sw-nice-lovely-pure-glycerine-72x100ml.jpg",
+    alt: "Nice & Lovely Pure Glycerine 72x100ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102959,
+    productId: 102959,
+    filename: "sw-nice-lovely-styling-gel-48x295g.jpg",
+    path: "/images/products/sw-nice-lovely-styling-gel-48x295g.jpg",
+    alt: "Nice & Lovely Styling Gel 48x295G Piece",
+    isPrimary: true
+  },
+  {
+    id: 102960,
+    productId: 102960,
+    filename: "sw-nice-soft-tissue-10pack-unwrapped.jpg",
+    path: "/images/products/sw-nice-soft-tissue-10pack-unwrapped.jpg",
+    alt: "Nice & Soft Tissue (10 Pack) (Unwrapped) Outer",
+    isPrimary: true
+  },
+  {
+    id: 102961,
+    productId: 102961,
+    filename: "sw-nice-soft-white-serviettes-18s.jpg",
+    path: "/images/products/sw-nice-soft-white-serviettes-18s.jpg",
+    alt: "Nice & Soft White Serviettes (Small Box) 18'S Carton",
+    isPrimary: true
+  },
+  {
+    id: 102962,
+    productId: 102962,
+    filename: "sw-nice-special-long-grain-rice-12x2kg.jpg",
+    path: "/images/products/sw-nice-special-long-grain-rice-12x2kg.jpg",
+    alt: "Nice & Special Long Grain Rice 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 102963,
+    productId: 102963,
+    filename: "sw-nice-one-toilet-tissue.jpg",
+    path: "/images/products/sw-nice-one-toilet-tissue.jpg",
+    alt: "Nice One Toilet Tissue Outer",
+    isPrimary: true
+  },
+  {
+    id: 102964,
+    productId: 102964,
+    filename: "sw-nice-premium-ugali-1kg.jpg",
+    path: "/images/products/sw-nice-premium-ugali-1kg.jpg",
+    alt: "Nice Premium Ugali 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 102965,
+    productId: 102965,
+    filename: "sw-nice-premium-ugali-2kg.jpg",
+    path: "/images/products/sw-nice-premium-ugali-2kg.jpg",
+    alt: "Nice Premium Ugali 2KG Half Bale",
+    isPrimary: true
+  },
+  {
+    id: 102966,
+    productId: 102966,
+    filename: "sw-nip-nap-diaper-hc-midi-42pcs.jpg",
+    path: "/images/products/sw-nip-nap-diaper-hc-midi-42pcs.jpg",
+    alt: "Nip Nap Diaper HC (Midi) 42PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102967,
+    productId: 102967,
+    filename: "sw-nip-nap-diaper-jumbo-midi-64pcs.jpg",
+    path: "/images/products/sw-nip-nap-diaper-jumbo-midi-64pcs.jpg",
+    alt: "Nip Nap Diaper Jumbo (Midi) 64PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 102968,
+    productId: 102968,
+    filename: "sw-nisa-lotion-24x400g-shea-butter.jpg",
+    path: "/images/products/sw-nisa-lotion-24x400g-shea-butter.jpg",
+    alt: "Nisa Lotion 24x400G (Shea Butter) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102969,
+    productId: 102969,
+    filename: "sw-nivea-body-cream-12x400ml-cocoa.jpg",
+    path: "/images/products/sw-nivea-body-cream-12x400ml-cocoa.jpg",
+    alt: "Nivea Body Cream 12x400ML (Cocoa) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102970,
+    productId: 102970,
+    filename: "sw-nivea-body-cream-12x400ml-rich-nourishing.jpg",
+    path: "/images/products/sw-nivea-body-cream-12x400ml-rich-nourishing.jpg",
+    alt: "Nivea Body Cream 12x400ML (Rich Nourishing) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102971,
+    productId: 102971,
+    filename: "sw-nivea-body-cream-12x400ml-shea-smooth.jpg",
+    path: "/images/products/sw-nivea-body-cream-12x400ml-shea-smooth.jpg",
+    alt: "Nivea Body Cream 12x400ML (Shea Smooth) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102972,
+    productId: 102972,
+    filename: "sw-nivea-body-lotion-12x400ml-cocoa.jpg",
+    path: "/images/products/sw-nivea-body-lotion-12x400ml-cocoa.jpg",
+    alt: "Nivea Body Lotion 12x400ML (Cocoa) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102973,
+    productId: 102973,
+    filename: "sw-nivea-body-lotion-12x400ml-cool-kick.jpg",
+    path: "/images/products/sw-nivea-body-lotion-12x400ml-cool-kick.jpg",
+    alt: "Nivea Body Lotion 12x400ML (Cool Kick) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102974,
+    productId: 102974,
+    filename: "sw-nivea-body-lotion-12x400ml-deep.jpg",
+    path: "/images/products/sw-nivea-body-lotion-12x400ml-deep.jpg",
+    alt: "Nivea Body Lotion 12x400ML (Deep) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102975,
+    productId: 102975,
+    filename: "sw-nivea-body-lotion-12x400ml-nourishing.jpg",
+    path: "/images/products/sw-nivea-body-lotion-12x400ml-nourishing.jpg",
+    alt: "Nivea Body Lotion 12x400ML (Nourishing) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102976,
+    productId: 102976,
+    filename: "sw-nivea-body-lotion-12x400ml-radiant-beauty.jpg",
+    path: "/images/products/sw-nivea-body-lotion-12x400ml-radiant-beauty.jpg",
+    alt: "Nivea Body Lotion 12x400ML (Radiant & Beauty) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102977,
+    productId: 102977,
+    filename: "sw-nivea-body-lotion-12x400ml-shea-smooth.jpg",
+    path: "/images/products/sw-nivea-body-lotion-12x400ml-shea-smooth.jpg",
+    alt: "Nivea Body Lotion 12x400ML (Shea Smooth) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102978,
+    productId: 102978,
+    filename: "sw-nivea-deo-stick-dry-comfort-50ml.jpg",
+    path: "/images/products/sw-nivea-deo-stick-dry-comfort-50ml.jpg",
+    alt: "Nivea Deo Stick Dry Comfort 50ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102979,
+    productId: 102979,
+    filename: "sw-nivea-deo-stick-fresh-active-50ml.jpg",
+    path: "/images/products/sw-nivea-deo-stick-fresh-active-50ml.jpg",
+    alt: "Nivea Deo Stick Fresh Active 50ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 102980,
+    productId: 102980,
+    filename: "sw-nivea-lipbalm-12x4.8g-men-active.jpg",
+    path: "/images/products/sw-nivea-lipbalm-12x4.8g-men-active.jpg",
+    alt: "Nivea Lipbalm 12x4.8G (Men Active) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102981,
+    productId: 102981,
+    filename: "sw-nivea-lipbalm-12x4.8g-strawberry.jpg",
+    path: "/images/products/sw-nivea-lipbalm-12x4.8g-strawberry.jpg",
+    alt: "Nivea Lipbalm 12x4.8G (Strawberry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102982,
+    productId: 102982,
+    filename: "sw-nivea-roll-on-50ml-black-white.jpg",
+    path: "/images/products/sw-nivea-roll-on-50ml-black-white.jpg",
+    alt: "Nivea Roll On 50ML (Black & White) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102983,
+    productId: 102983,
+    filename: "sw-nivea-roll-on-50ml-cool-kick.jpg",
+    path: "/images/products/sw-nivea-roll-on-50ml-cool-kick.jpg",
+    alt: "Nivea Roll On 50ML (Cool Kick) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102984,
+    productId: 102984,
+    filename: "sw-nivea-roll-on-50ml-deep.jpg",
+    path: "/images/products/sw-nivea-roll-on-50ml-deep.jpg",
+    alt: "Nivea Roll On 50ML (Deep) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102985,
+    productId: 102985,
+    filename: "sw-nivea-roll-on-50ml-dry-impact.jpg",
+    path: "/images/products/sw-nivea-roll-on-50ml-dry-impact.jpg",
+    alt: "Nivea Roll On 50ML (Dry Impact) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102986,
+    productId: 102986,
+    filename: "sw-nivea-roll-on-50ml-fresh-active.jpg",
+    path: "/images/products/sw-nivea-roll-on-50ml-fresh-active.jpg",
+    alt: "Nivea Roll On 50ML (Fresh Active) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102987,
+    productId: 102987,
+    filename: "sw-nivea-roll-on-50ml-pearl-beauty.jpg",
+    path: "/images/products/sw-nivea-roll-on-50ml-pearl-beauty.jpg",
+    alt: "Nivea Roll On 50ML (Pearl & Beauty) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102988,
+    productId: 102988,
+    filename: "sw-nivea-shower-gel-12x500ml-creme-soft.jpg",
+    path: "/images/products/sw-nivea-shower-gel-12x500ml-creme-soft.jpg",
+    alt: "Nivea Shower Gel 12x500ML (Creme Soft) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102989,
+    productId: 102989,
+    filename: "sw-nivea-shower-gel-12x500ml-diamond.jpg",
+    path: "/images/products/sw-nivea-shower-gel-12x500ml-diamond.jpg",
+    alt: "Nivea Shower Gel 12x500ML (Diamond) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102990,
+    productId: 102990,
+    filename: "sw-nivea-shower-gel-12x500ml-orange.jpg",
+    path: "/images/products/sw-nivea-shower-gel-12x500ml-orange.jpg",
+    alt: "Nivea Shower Gel 12x500ML (Orange) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102991,
+    productId: 102991,
+    filename: "sw-nivea-shower-gel-12x500ml-active-clean.jpg",
+    path: "/images/products/sw-nivea-shower-gel-12x500ml-active-clean.jpg",
+    alt: "Nivea Shower Gel 12x500ML (Active Clean) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102992,
+    productId: 102992,
+    filename: "sw-nivea-shower-gel-12x500ml-cool-kick.jpg",
+    path: "/images/products/sw-nivea-shower-gel-12x500ml-cool-kick.jpg",
+    alt: "Nivea Shower Gel 12x500ML (Cool Kick) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102993,
+    productId: 102993,
+    filename: "sw-nivea-shower-gel-12x500ml-deep.jpg",
+    path: "/images/products/sw-nivea-shower-gel-12x500ml-deep.jpg",
+    alt: "Nivea Shower Gel 12x500ML (Deep) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102994,
+    productId: 102994,
+    filename: "sw-nivea-shower-gel-12x500ml-energy.jpg",
+    path: "/images/products/sw-nivea-shower-gel-12x500ml-energy.jpg",
+    alt: "Nivea Shower Gel 12x500ML (Energy) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102995,
+    productId: 102995,
+    filename: "sw-nivea-soft-cream-24x200ml-moisturizing.jpg",
+    path: "/images/products/sw-nivea-soft-cream-24x200ml-moisturizing.jpg",
+    alt: "Nivea Soft Cream 24x200ML (Moisturizing) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102996,
+    productId: 102996,
+    filename: "sw-nivea-spray-150ml-deep-extreme.jpg",
+    path: "/images/products/sw-nivea-spray-150ml-deep-extreme.jpg",
+    alt: "Nivea Spray 150ML (Deep Extreme) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102997,
+    productId: 102997,
+    filename: "sw-nivea-spray-150ml-fresh-cherry.jpg",
+    path: "/images/products/sw-nivea-spray-150ml-fresh-cherry.jpg",
+    alt: "Nivea Spray 150ML (Fresh Cherry) Piece",
+    isPrimary: true
+  },
+  {
+    id: 102998,
+    productId: 102998,
+    filename: "sw-njahi-beans-22.5kg.jpg",
+    path: "/images/products/sw-njahi-beans-22.5kg.jpg",
+    alt: "Njahi Beans 22.5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 102999,
+    productId: 102999,
+    filename: "sw-njahi-beans-90kg.jpg",
+    path: "/images/products/sw-njahi-beans-90kg.jpg",
+    alt: "Njahi Beans 90KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 103000,
+    productId: 103000,
+    filename: "sw-njugu-karanga-red-25kg.jpg",
+    path: "/images/products/sw-njugu-karanga-red-25kg.jpg",
+    alt: "Njugu Karanga (Red) 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 103001,
+    productId: 103001,
+    filename: "sw-nmg-biryani-rice-25kg.jpg",
+    path: "/images/products/sw-nmg-biryani-rice-25kg.jpg",
+    alt: "NMG Biryani Rice 25KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 103002,
+    productId: 103002,
+    filename: "sw-no1-lollipop-50pcs-mix-max.jpg",
+    path: "/images/products/sw-no1-lollipop-50pcs-mix-max.jpg",
+    alt: "No.1 Lollipop 50PCS (Mix Max) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103003,
+    productId: 103003,
+    filename: "sw-no1-lollipop-50pcs-passion.jpg",
+    path: "/images/products/sw-no1-lollipop-50pcs-passion.jpg",
+    alt: "No.1 Lollipop 50PCS (Passion) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103004,
+    productId: 103004,
+    filename: "sw-no1-lollipop-50pcs-tongue-painter.jpg",
+    path: "/images/products/sw-no1-lollipop-50pcs-tongue-painter.jpg",
+    alt: "No.1 Lollipop 50PCS (Tongue Painter) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103005,
+    productId: 103005,
+    filename: "sw-non-wooven-15.jpg",
+    path: "/images/products/sw-non-wooven-15.jpg",
+    alt: "Non Wooven #15 Outer",
+    isPrimary: true
+  },
+  {
+    id: 103006,
+    productId: 103006,
+    filename: "sw-non-wooven-22.jpg",
+    path: "/images/products/sw-non-wooven-22.jpg",
+    alt: "Non Wooven #22 Outer",
+    isPrimary: true
+  },
+  {
+    id: 103007,
+    productId: 103007,
+    filename: "sw-noodies-beef-120g.jpg",
+    path: "/images/products/sw-noodies-beef-120g.jpg",
+    alt: "Noodies Beef 120G Carton",
+    isPrimary: true
+  },
+  {
+    id: 103008,
+    productId: 103008,
+    filename: "sw-noodies-chicken-120g.jpg",
+    path: "/images/products/sw-noodies-chicken-120g.jpg",
+    alt: "Noodies Chicken 120G Carton",
+    isPrimary: true
+  },
+  {
+    id: 103009,
+    productId: 103009,
+    filename: "sw-noodies-chicken-70g.jpg",
+    path: "/images/products/sw-noodies-chicken-70g.jpg",
+    alt: "Noodies Chicken 70G Outer",
+    isPrimary: true
+  },
+  {
+    id: 103010,
+    productId: 103010,
+    filename: "sw-nootri-baby-400g.jpg",
+    path: "/images/products/sw-nootri-baby-400g.jpg",
+    alt: "Nootri Baby 400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103011,
+    productId: 103011,
+    filename: "sw-nova-star-tissue-10pack-unwrapped.jpg",
+    path: "/images/products/sw-nova-star-tissue-10pack-unwrapped.jpg",
+    alt: "Nova Star Tissue 10 Pack (Unwrapped) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103012,
+    productId: 103012,
+    filename: "sw-nurmaya-yeast-20x450g.jpg",
+    path: "/images/products/sw-nurmaya-yeast-20x450g.jpg",
+    alt: "Nurmaya Yeast 20x450G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103013,
+    productId: 103013,
+    filename: "sw-nuru-dish-washing-liquid-200ml-lemon.jpg",
+    path: "/images/products/sw-nuru-dish-washing-liquid-200ml-lemon.jpg",
+    alt: "Nuru Dish Washing Liquid 200ML (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103014,
+    productId: 103014,
+    filename: "sw-nuru-dish-washing-liquid-200ml-lime.jpg",
+    path: "/images/products/sw-nuru-dish-washing-liquid-200ml-lime.jpg",
+    alt: "Nuru Dish Washing Liquid 200ML (Lime) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103015,
+    productId: 103015,
+    filename: "sw-nuru-dish-washing-liquid-6x750ml-lemon.jpg",
+    path: "/images/products/sw-nuru-dish-washing-liquid-6x750ml-lemon.jpg",
+    alt: "Nuru Dish Washing Liquid 6x750ML (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103016,
+    productId: 103016,
+    filename: "sw-nuru-dish-washing-liquid-6x750ml-lime.jpg",
+    path: "/images/products/sw-nuru-dish-washing-liquid-6x750ml-lime.jpg",
+    alt: "Nuru Dish Washing Liquid 6x750ML (Lime) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103017,
+    productId: 103017,
+    filename: "sw-nuru-dish-washing-paste-6x400ml-lemon.jpg",
+    path: "/images/products/sw-nuru-dish-washing-paste-6x400ml-lemon.jpg",
+    alt: "Nuru Dish Washing Paste 6x400+100ML (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103018,
+    productId: 103018,
+    filename: "sw-nuru-dish-washing-paste-6x400ml-lime.jpg",
+    path: "/images/products/sw-nuru-dish-washing-paste-6x400ml-lime.jpg",
+    alt: "Nuru Dish Washing Paste 6x400+100ML (Lime) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103019,
+    productId: 103019,
+    filename: "sw-nuru-scouring-powder-12x1kg.jpg",
+    path: "/images/products/sw-nuru-scouring-powder-12x1kg.jpg",
+    alt: "Nuru Scouring Powder 12x1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103020,
+    productId: 103020,
+    filename: "sw-nut-gold-peanut-butter-250g.jpg",
+    path: "/images/products/sw-nut-gold-peanut-butter-250g.jpg",
+    alt: "Nut Gold Peanut Butter 250GM Piece",
+    isPrimary: true
+  },
+  {
+    id: 103021,
+    productId: 103021,
+    filename: "sw-nut-gold-peanut-butter-400g.jpg",
+    path: "/images/products/sw-nut-gold-peanut-butter-400g.jpg",
+    alt: "Nut Gold Peanut Butter 400GM Piece",
+    isPrimary: true
+  },
+  {
+    id: 103022,
+    productId: 103022,
+    filename: "sw-nuteez-pbutter-12x250g-smooth-blue.jpg",
+    path: "/images/products/sw-nuteez-pbutter-12x250g-smooth-blue.jpg",
+    alt: "Nuteez P/Butter 12x250G (Smooth - Blue) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103023,
+    productId: 103023,
+    filename: "sw-nuteez-pbutter-400g-crunchy-red.jpg",
+    path: "/images/products/sw-nuteez-pbutter-400g-crunchy-red.jpg",
+    alt: "Nuteez P/Butter 400G (Crunchy - Red) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103024,
+    productId: 103024,
+    filename: "sw-nuteez-pbutter-400g-smooth-blue.jpg",
+    path: "/images/products/sw-nuteez-pbutter-400g-smooth-blue.jpg",
+    alt: "Nuteez P/Butter 400G (Smooth - Blue) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103025,
+    productId: 103025,
+    filename: "sw-nuteez-pbutter-6x800g-smooth-blue.jpg",
+    path: "/images/products/sw-nuteez-pbutter-6x800g-smooth-blue.jpg",
+    alt: "Nuteez P/Butter 6x800G (Smooth - Blue) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103026,
+    productId: 103026,
+    filename: "sw-nuteez-pbutter-800g-crunchy-red.jpg",
+    path: "/images/products/sw-nuteez-pbutter-800g-crunchy-red.jpg",
+    alt: "Nuteez P/Butter 800G (Crunchy - Red) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103027,
+    productId: 103027,
+    filename: "sw-nutella-15x350g.jpg",
+    path: "/images/products/sw-nutella-15x350g.jpg",
+    alt: "Nutella 15x350G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103028,
+    productId: 103028,
+    filename: "sw-nutrameal-atta-mark-12x2kg.jpg",
+    path: "/images/products/sw-nutrameal-atta-mark-12x2kg.jpg",
+    alt: "Nutrameal Atta Mark 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103029,
+    productId: 103029,
+    filename: "sw-nutrameal-kamande-12x2kg.jpg",
+    path: "/images/products/sw-nutrameal-kamande-12x2kg.jpg",
+    alt: "Nutrameal Kamande 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103030,
+    productId: 103030,
+    filename: "sw-nutrameal-ndengu-12x2kg.jpg",
+    path: "/images/products/sw-nutrameal-ndengu-12x2kg.jpg",
+    alt: "Nutrameal Ndengu 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103031,
+    productId: 103031,
+    filename: "sw-nutrameal-ndengu-5x5kg.jpg",
+    path: "/images/products/sw-nutrameal-ndengu-5x5kg.jpg",
+    alt: "Nutrameal Ndengu 5x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103032,
+    productId: 103032,
+    filename: "sw-nutrameal-nyayo-beans-12x2kg.jpg",
+    path: "/images/products/sw-nutrameal-nyayo-beans-12x2kg.jpg",
+    alt: "Nutrameal Nyayo Beans 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103033,
+    productId: 103033,
+    filename: "sw-nutrameal-nyayo-beans-5x5kg.jpg",
+    path: "/images/products/sw-nutrameal-nyayo-beans-5x5kg.jpg",
+    alt: "Nutrameal Nyayo Beans 5x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103034,
+    productId: 103034,
+    filename: "sw-nutrameal-popcorn-12x2kg.jpg",
+    path: "/images/products/sw-nutrameal-popcorn-12x2kg.jpg",
+    alt: "Nutrameal Popcorn 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103035,
+    productId: 103035,
+    filename: "sw-nutrameal-red-kidney-beans-5x5kg.jpg",
+    path: "/images/products/sw-nutrameal-red-kidney-beans-5x5kg.jpg",
+    alt: "Nutrameal Red Kidney Beans 5x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103036,
+    productId: 103036,
+    filename: "sw-nutrameal-sugar-10x2kg.jpg",
+    path: "/images/products/sw-nutrameal-sugar-10x2kg.jpg",
+    alt: "Nutrameal Sugar 10x2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 103037,
+    productId: 103037,
+    filename: "sw-nutrameal-sugar-20x1kg.jpg",
+    path: "/images/products/sw-nutrameal-sugar-20x1kg.jpg",
+    alt: "Nutrameal Sugar 20x1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 103038,
+    productId: 103038,
+    filename: "sw-nutrameal-sugar-20x500gm.jpg",
+    path: "/images/products/sw-nutrameal-sugar-20x500gm.jpg",
+    alt: "Nutrameal Sugar 20x500GM Bale",
+    isPrimary: true
+  },
+  {
+    id: 103039,
+    productId: 103039,
+    filename: "sw-nutrameal-sugar-40x250gm.jpg",
+    path: "/images/products/sw-nutrameal-sugar-40x250gm.jpg",
+    alt: "Nutrameal Sugar 40x250GM Bale",
+    isPrimary: true
+  },
+  {
+    id: 103040,
+    productId: 103040,
+    filename: "sw-nutrameal-sugar-5x5kg.jpg",
+    path: "/images/products/sw-nutrameal-sugar-5x5kg.jpg",
+    alt: "Nutrameal Sugar 5x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103041,
+    productId: 103041,
+    filename: "sw-nutrameal-wairimu-beans-24x1kg.jpg",
+    path: "/images/products/sw-nutrameal-wairimu-beans-24x1kg.jpg",
+    alt: "Nutrameal Wairimu Beans 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103042,
+    productId: 103042,
+    filename: "sw-nutrameal-wairimu-beans-5x5kg.jpg",
+    path: "/images/products/sw-nutrameal-wairimu-beans-5x5kg.jpg",
+    alt: "Nutrameal Wairimu Beans 5x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103043,
+    productId: 103043,
+    filename: "sw-nutrameal-yellow-beans-12x2kg.jpg",
+    path: "/images/products/sw-nutrameal-yellow-beans-12x2kg.jpg",
+    alt: "Nutrameal Yellow Beans 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103044,
+    productId: 103044,
+    filename: "sw-nutrameal-yellow-beans-5x5kg.jpg",
+    path: "/images/products/sw-nutrameal-yellow-beans-5x5kg.jpg",
+    alt: "Nutrameal Yellow Beans 5x5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103045,
+    productId: 103045,
+    filename: "sw-nutri-delights-cookies-100g-original.jpg",
+    path: "/images/products/sw-nutri-delights-cookies-100g-original.jpg",
+    alt: "Nutri Delights Cookies 100G (Original) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103046,
+    productId: 103046,
+    filename: "sw-nutri-delights-cookies-100g-red-velvet.jpg",
+    path: "/images/products/sw-nutri-delights-cookies-100g-red-velvet.jpg",
+    alt: "Nutri Delights Cookies 100G (Red Velvet) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103047,
+    productId: 103047,
+    filename: "sw-nutri-delights-cookies-100g-tripple-choco.jpg",
+    path: "/images/products/sw-nutri-delights-cookies-100g-tripple-choco.jpg",
+    alt: "Nutri Delights Cookies 100G (Tripple Choco) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103048,
+    productId: 103048,
+    filename: "sw-nutri-delights-cookies-30g-assorted.jpg",
+    path: "/images/products/sw-nutri-delights-cookies-30g-assorted.jpg",
+    alt: "Nutri Delights Cookies 30G (Assorted) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103049,
+    productId: 103049,
+    filename: "sw-nutripro-family-porridge-1kg-wimbi.jpg",
+    path: "/images/products/sw-nutripro-family-porridge-1kg-wimbi.jpg",
+    alt: "Nutripro Family Porridge 1KG (Wimbi) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103050,
+    productId: 103050,
+    filename: "sw-nuvita-breaktime-100g.jpg",
+    path: "/images/products/sw-nuvita-breaktime-100g.jpg",
+    alt: "Nuvita Breaktime 100G (Piece) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103051,
+    productId: 103051,
+    filename: "sw-nuvita-breaktime-biscuits-24x100g-coconut.jpg",
+    path: "/images/products/sw-nuvita-breaktime-biscuits-24x100g-coconut.jpg",
+    alt: "Nuvita Breaktime Biscuits 24x100G (Coconut) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103052,
+    productId: 103052,
+    filename: "sw-nuvita-breaktime-biscuits-24x100g-regular.jpg",
+    path: "/images/products/sw-nuvita-breaktime-biscuits-24x100g-regular.jpg",
+    alt: "Nuvita Breaktime Biscuits 24x100G (Regular) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103053,
+    productId: 103053,
+    filename: "sw-nuvita-breaktime-biscuits-48x28-30g-butter-scotch.jpg",
+    path: "/images/products/sw-nuvita-breaktime-biscuits-48x28-30g-butter-scotch.jpg",
+    alt: "Nuvita Breaktime Biscuits 48x28/30G (Butter Scotch) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103054,
+    productId: 103054,
+    filename: "sw-nuvita-breaktime-biscuits-48x28g-coconut.jpg",
+    path: "/images/products/sw-nuvita-breaktime-biscuits-48x28g-coconut.jpg",
+    alt: "Nuvita Breaktime Biscuits 48x28G (Coconut) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103055,
+    productId: 103055,
+    filename: "sw-nuvita-breaktime-biscuits-48x28g-regular.jpg",
+    path: "/images/products/sw-nuvita-breaktime-biscuits-48x28g-regular.jpg",
+    alt: "Nuvita Breaktime Biscuits 48x28G (Regular) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103056,
+    productId: 103056,
+    filename: "sw-nuvita-cereos-oat-meal-375g.jpg",
+    path: "/images/products/sw-nuvita-cereos-oat-meal-375g.jpg",
+    alt: "Nuvita Cereos Oat Meal 375G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103057,
+    productId: 103057,
+    filename: "sw-nuvita-choco-biscuit-72x4.jpg",
+    path: "/images/products/sw-nuvita-choco-biscuit-72x4.jpg",
+    alt: "Nuvita Choco Biscuit 72x4 Carton",
+    isPrimary: true
+  },
+  {
+    id: 103058,
+    productId: 103058,
+    filename: "sw-nuvita-coconut-72x4.jpg",
+    path: "/images/products/sw-nuvita-coconut-72x4.jpg",
+    alt: "Nuvita Coconut 72x4 Carton",
+    isPrimary: true
+  },
+  {
+    id: 103059,
+    productId: 103059,
+    filename: "sw-nuvita-cookies-48x4pcs-butter.jpg",
+    path: "/images/products/sw-nuvita-cookies-48x4pcs-butter.jpg",
+    alt: "Nuvita Cookies 48x4PCS (Butter) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103060,
+    productId: 103060,
+    filename: "sw-nuvita-cookies-48x4pcs-cashew-nuts.jpg",
+    path: "/images/products/sw-nuvita-cookies-48x4pcs-cashew-nuts.jpg",
+    alt: "Nuvita Cookies 48x4PCS (Cashew Nuts) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103061,
+    productId: 103061,
+    filename: "sw-nuvita-cookies-48x4pcs-choco-chips.jpg",
+    path: "/images/products/sw-nuvita-cookies-48x4pcs-choco-chips.jpg",
+    alt: "Nuvita Cookies 48x4PCS (Choco Chips) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103062,
+    productId: 103062,
+    filename: "sw-nuvita-cookies-48x4pcs-coconut.jpg",
+    path: "/images/products/sw-nuvita-cookies-48x4pcs-coconut.jpg",
+    alt: "Nuvita Cookies 48x4PCS (Coconut) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103063,
+    productId: 103063,
+    filename: "sw-nuvita-corn-puffs-30pcs-barbeque.jpg",
+    path: "/images/products/sw-nuvita-corn-puffs-30pcs-barbeque.jpg",
+    alt: "Nuvita Corn Puffs 30PCS (Barbeque) Bag",
+    isPrimary: true
+  },
+  {
+    id: 103064,
+    productId: 103064,
+    filename: "sw-nuvita-corn-puffs-30pcs-cheese.jpg",
+    path: "/images/products/sw-nuvita-corn-puffs-30pcs-cheese.jpg",
+    alt: "Nuvita Corn Puffs 30PCS (Cheese) Bag",
+    isPrimary: true
+  },
+  {
+    id: 103065,
+    productId: 103065,
+    filename: "sw-nuvita-corn-puffs-30pcs-tomato.jpg",
+    path: "/images/products/sw-nuvita-corn-puffs-30pcs-tomato.jpg",
+    alt: "Nuvita Corn Puffs 30PCS (Tomato) Bag",
+    isPrimary: true
+  },
+  {
+    id: 103066,
+    productId: 103066,
+    filename: "sw-nuvita-crakers-sweet-salty-200g.jpg",
+    path: "/images/products/sw-nuvita-crakers-sweet-salty-200g.jpg",
+    alt: "Nuvita Crakers Sweet & Salty 200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103067,
+    productId: 103067,
+    filename: "sw-nuvita-cream-biscuits-48x4pcs-banana.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-48x4pcs-banana.jpg",
+    alt: "Nuvita Cream Biscuits 48x4PCS (Banana) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103068,
+    productId: 103068,
+    filename: "sw-nuvita-cream-biscuits-48x4pcs-chocolate.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-48x4pcs-chocolate.jpg",
+    alt: "Nuvita Cream Biscuits 48x4PCS (Chocolate) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103069,
+    productId: 103069,
+    filename: "sw-nuvita-cream-biscuits-48x4pcs-lemon.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-48x4pcs-lemon.jpg",
+    alt: "Nuvita Cream Biscuits 48x4PCS (Lemon) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103070,
+    productId: 103070,
+    filename: "sw-nuvita-cream-biscuits-48x4pcs-mango.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-48x4pcs-mango.jpg",
+    alt: "Nuvita Cream Biscuits 48x4PCS (Mango) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103071,
+    productId: 103071,
+    filename: "sw-nuvita-cream-biscuits-48x4pcs-orange.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-48x4pcs-orange.jpg",
+    alt: "Nuvita Cream Biscuits 48x4PCS (Orange) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103072,
+    productId: 103072,
+    filename: "sw-nuvita-cream-biscuits-48x4pcs-strawberry.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-48x4pcs-strawberry.jpg",
+    alt: "Nuvita Cream Biscuits 48x4PCS (Strawberry) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103073,
+    productId: 103073,
+    filename: "sw-nuvita-cream-biscuits-48x4pcs-vanilla.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-48x4pcs-vanilla.jpg",
+    alt: "Nuvita Cream Biscuits 48x4PCS (Vanilla) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103074,
+    productId: 103074,
+    filename: "sw-nuvita-cream-biscuits-60x2pcs-banana.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-60x2pcs-banana.jpg",
+    alt: "Nuvita Cream Biscuits 60x2PCS (Banana) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103075,
+    productId: 103075,
+    filename: "sw-nuvita-cream-biscuits-60x2pcs-chocolate.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-60x2pcs-chocolate.jpg",
+    alt: "Nuvita Cream Biscuits 60x2PCS (Chocolate) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103076,
+    productId: 103076,
+    filename: "sw-nuvita-cream-biscuits-60x2pcs-lemon.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-60x2pcs-lemon.jpg",
+    alt: "Nuvita Cream Biscuits 60x2PCS (Lemon) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103077,
+    productId: 103077,
+    filename: "sw-nuvita-cream-biscuits-60x2pcs-mango.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-60x2pcs-mango.jpg",
+    alt: "Nuvita Cream Biscuits 60x2PCS (Mango) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103078,
+    productId: 103078,
+    filename: "sw-nuvita-cream-biscuits-60x2pcs-orange.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-60x2pcs-orange.jpg",
+    alt: "Nuvita Cream Biscuits 60x2PCS (Orange) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103079,
+    productId: 103079,
+    filename: "sw-nuvita-cream-biscuits-60x2pcs-strawberry.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-60x2pcs-strawberry.jpg",
+    alt: "Nuvita Cream Biscuits 60x2PCS (Strawberry) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103080,
+    productId: 103080,
+    filename: "sw-nuvita-cream-biscuits-60x2pcs-vanilla.jpg",
+    path: "/images/products/sw-nuvita-cream-biscuits-60x2pcs-vanilla.jpg",
+    alt: "Nuvita Cream Biscuits 60x2PCS (Vanilla) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103081,
+    productId: 103081,
+    filename: "sw-nuvita-crunchy-ginger-18x200g.jpg",
+    path: "/images/products/sw-nuvita-crunchy-ginger-18x200g.jpg",
+    alt: "Nuvita Crunchy Ginger 18x200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103082,
+    productId: 103082,
+    filename: "sw-nuvita-crunchy-ginger-48x4pcs.jpg",
+    path: "/images/products/sw-nuvita-crunchy-ginger-48x4pcs.jpg",
+    alt: "Nuvita Crunchy Ginger 48x4PCS Carton",
+    isPrimary: true
+  },
+  {
+    id: 103083,
+    productId: 103083,
+    filename: "sw-nuvita-crunchy-ginger-60x3pcs-orange-ctn.jpg",
+    path: "/images/products/sw-nuvita-crunchy-ginger-60x3pcs-orange-ctn.jpg",
+    alt: "Nuvita Crunchy Ginger 60x3PCS (Orange CTN) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103084,
+    productId: 103084,
+    filename: "sw-nuvita-crunchy-lemon-60x3pcs-green-ctn.jpg",
+    path: "/images/products/sw-nuvita-crunchy-lemon-60x3pcs-green-ctn.jpg",
+    alt: "Nuvita Crunchy Lemon 60x3PCS (Green CTN) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103085,
+    productId: 103085,
+    filename: "sw-nuvita-crunchy-pineapple-60x3pcs.jpg",
+    path: "/images/products/sw-nuvita-crunchy-pineapple-60x3pcs.jpg",
+    alt: "Nuvita Crunchy Pineapple 60x3PCS Carton",
+    isPrimary: true
+  },
+  {
+    id: 103086,
+    productId: 103086,
+    filename: "sw-nuvita-digestive-18x200g.jpg",
+    path: "/images/products/sw-nuvita-digestive-18x200g.jpg",
+    alt: "Nuvita Digestive 18x200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103087,
+    productId: 103087,
+    filename: "sw-nuvita-digestive-18x400g.jpg",
+    path: "/images/products/sw-nuvita-digestive-18x400g.jpg",
+    alt: "Nuvita Digestive 18x400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103088,
+    productId: 103088,
+    filename: "sw-nuvita-digestive-vanilla-cream-50g.jpg",
+    path: "/images/products/sw-nuvita-digestive-vanilla-cream-50g.jpg",
+    alt: "Nuvita Digestive Vanilla Cream 50G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103089,
+    productId: 103089,
+    filename: "sw-nuvita-family-36x50g.jpg",
+    path: "/images/products/sw-nuvita-family-36x50g.jpg",
+    alt: "Nuvita Family 36x50G Carton",
+    isPrimary: true
+  },
+  {
+    id: 103090,
+    productId: 103090,
+    filename: "sw-nuvita-family-36x75g.jpg",
+    path: "/images/products/sw-nuvita-family-36x75g.jpg",
+    alt: "Nuvita Family 36x75G Carton",
+    isPrimary: true
+  },
+  {
+    id: 103091,
+    productId: 103091,
+    filename: "sw-nuvita-family-72x4.jpg",
+    path: "/images/products/sw-nuvita-family-72x4.jpg",
+    alt: "Nuvita Family 72x4 Carton",
+    isPrimary: true
+  },
+  {
+    id: 103092,
+    productId: 103092,
+    filename: "sw-nuvita-furahi-creams-36x2pcs-banana.jpg",
+    path: "/images/products/sw-nuvita-furahi-creams-36x2pcs-banana.jpg",
+    alt: "Nuvita Furahi Creams 36x2PCS (Banana) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103093,
+    productId: 103093,
+    filename: "sw-nuvita-furahi-creams-36x2pcs-orange.jpg",
+    path: "/images/products/sw-nuvita-furahi-creams-36x2pcs-orange.jpg",
+    alt: "Nuvita Furahi Creams 36x2PCS (Orange) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103094,
+    productId: 103094,
+    filename: "sw-nuvita-furahi-creams-36x2pcs-strawberry.jpg",
+    path: "/images/products/sw-nuvita-furahi-creams-36x2pcs-strawberry.jpg",
+    alt: "Nuvita Furahi Creams 36x2PCS (Strawberry) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103095,
+    productId: 103095,
+    filename: "sw-nuvita-glucose-300pcs.jpg",
+    path: "/images/products/sw-nuvita-glucose-300pcs.jpg",
+    alt: "Nuvita Glucose 300PCS Carton",
+    isPrimary: true
+  },
+  {
+    id: 103096,
+    productId: 103096,
+    filename: "sw-nuvita-go-cookies-18x100g.jpg",
+    path: "/images/products/sw-nuvita-go-cookies-18x100g.jpg",
+    alt: "Nuvita Go Cookies 18x100G Carton",
+    isPrimary: true
+  },
+  {
+    id: 103097,
+    productId: 103097,
+    filename: "sw-nuvita-malt-milk-30x10pcs.jpg",
+    path: "/images/products/sw-nuvita-malt-milk-30x10pcs.jpg",
+    alt: "Nuvita Malt & Milk 30x10PCS Carton",
+    isPrimary: true
+  },
+  {
+    id: 103098,
+    productId: 103098,
+    filename: "sw-nuvita-malt-milk-72x4.jpg",
+    path: "/images/products/sw-nuvita-malt-milk-72x4.jpg",
+    alt: "Nuvita Malt & Milk 72x4 Carton",
+    isPrimary: true
+  },
+  {
+    id: 103099,
+    productId: 103099,
+    filename: "sw-nuvita-marie-200g.jpg",
+    path: "/images/products/sw-nuvita-marie-200g.jpg",
+    alt: "Nuvita Marie 200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103100,
+    productId: 103100,
+    filename: "sw-nuvita-nice-200g.jpg",
+    path: "/images/products/sw-nuvita-nice-200g.jpg",
+    alt: "Nuvita Nice 200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103101,
+    productId: 103101,
+    filename: "sw-nuvita-nice-30x10pcs.jpg",
+    path: "/images/products/sw-nuvita-nice-30x10pcs.jpg",
+    alt: "Nuvita Nice 30x10PCS Carton",
+    isPrimary: true
+  },
+  {
+    id: 103102,
+    productId: 103102,
+    filename: "sw-nuvita-nice-biscuit-72x4.jpg",
+    path: "/images/products/sw-nuvita-nice-biscuit-72x4.jpg",
+    alt: "Nuvita Nice Biscuit 72x4 Carton",
+    isPrimary: true
+  },
+  {
+    id: 103103,
+    productId: 103103,
+    filename: "sw-nuvita-nice-biscuits-1kg-jar.jpg",
+    path: "/images/products/sw-nuvita-nice-biscuits-1kg-jar.jpg",
+    alt: "Nuvita Nice Biscuits 1KG Jar",
+    isPrimary: true
+  },
+  {
+    id: 103104,
+    productId: 103104,
+    filename: "sw-nuvita-oat-digestive-200g.jpg",
+    path: "/images/products/sw-nuvita-oat-digestive-200g.jpg",
+    alt: "Nuvita Oat Digestive 200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103105,
+    productId: 103105,
+    filename: "sw-nuvita-salty-crakers-200g.jpg",
+    path: "/images/products/sw-nuvita-salty-crakers-200g.jpg",
+    alt: "Nuvita Salty Crakers 200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103106,
+    productId: 103106,
+    filename: "sw-nuvita-secrets-creams-12x30-40gm.jpg",
+    path: "/images/products/sw-nuvita-secrets-creams-12x30-40gm.jpg",
+    alt: "Nuvita Secrets Creams 12x30/40GM Outer",
+    isPrimary: true
+  },
+  {
+    id: 103107,
+    productId: 103107,
+    filename: "sw-nuvita-shortcake-sunbix-200g.jpg",
+    path: "/images/products/sw-nuvita-shortcake-sunbix-200g.jpg",
+    alt: "Nuvita Shortcake (Sunbix) 200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103108,
+    productId: 103108,
+    filename: "sw-nuvita-shortcake-6x900g-jar.jpg",
+    path: "/images/products/sw-nuvita-shortcake-6x900g-jar.jpg",
+    alt: "Nuvita Shortcake 6x900G Jar Packet",
+    isPrimary: true
+  },
+  {
+    id: 103109,
+    productId: 103109,
+    filename: "sw-nuvita-shortcake-biscuits-sunbix-400g.jpg",
+    path: "/images/products/sw-nuvita-shortcake-biscuits-sunbix-400g.jpg",
+    alt: "Nuvita Shortcake Biscuits (Sunbix) 400G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103110,
+    productId: 103110,
+    filename: "sw-nuvita-sponge-cake-orange-18x30gm-big-carton.jpg",
+    path: "/images/products/sw-nuvita-sponge-cake-orange-18x30gm-big-carton.jpg",
+    alt: "Nuvita Sponge Cake (Orange) 18x30GM (Big Carton) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103111,
+    productId: 103111,
+    filename: "sw-nuvita-sponge-cake-orange-36x12.5gm-small-box.jpg",
+    path: "/images/products/sw-nuvita-sponge-cake-orange-36x12.5gm-small-box.jpg",
+    alt: "Nuvita Sponge Cake (Orange) 36x12.5GM (Small Box) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103112,
+    productId: 103112,
+    filename: "sw-nuvita-sponge-cake-strawberry-18x25-30gm-big-carton.jpg",
+    path: "/images/products/sw-nuvita-sponge-cake-strawberry-18x25-30gm-big-carton.jpg",
+    alt: "Nuvita Sponge Cake (Strawberry) 18x25/30GM (Big Carton) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103113,
+    productId: 103113,
+    filename: "sw-nuvita-sponge-cake-strawberry-36x12.5-15gm-small-box.jpg",
+    path: "/images/products/sw-nuvita-sponge-cake-strawberry-36x12.5-15gm-small-box.jpg",
+    alt: "Nuvita Sponge Cake (Strawberry) 36x12.5/15GM (Small Box) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103114,
+    productId: 103114,
+    filename: "sw-nuvita-sponge-cake-vanilla-18x25-30gm-big-carton.jpg",
+    path: "/images/products/sw-nuvita-sponge-cake-vanilla-18x25-30gm-big-carton.jpg",
+    alt: "Nuvita Sponge Cake (Vanilla) 18x25/30GM (Big Carton) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103115,
+    productId: 103115,
+    filename: "sw-nuvita-sponge-cake-vanilla-36x12.5-15gm-small-box.jpg",
+    path: "/images/products/sw-nuvita-sponge-cake-vanilla-36x12.5-15gm-small-box.jpg",
+    alt: "Nuvita Sponge Cake (Vanilla) 36x12.5/15GM (Small Box) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103116,
+    productId: 103116,
+    filename: "sw-nuvita-thins-24x20g-sour-cream-herb.jpg",
+    path: "/images/products/sw-nuvita-thins-24x20g-sour-cream-herb.jpg",
+    alt: "Nuvita Thins 24x20G (Sour Cream & Herb) Bag",
+    isPrimary: true
+  },
+  {
+    id: 103117,
+    productId: 103117,
+    filename: "sw-nuvita-toto-biscuit-48x25g-butter.jpg",
+    path: "/images/products/sw-nuvita-toto-biscuit-48x25g-butter.jpg",
+    alt: "Nuvita Toto Biscuit 48x25G (Butter) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103118,
+    productId: 103118,
+    filename: "sw-nuvita-toto-biscuit-48x25g-vanilla.jpg",
+    path: "/images/products/sw-nuvita-toto-biscuit-48x25g-vanilla.jpg",
+    alt: "Nuvita Toto Biscuit 48x25G (Vanilla) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103119,
+    productId: 103119,
+    filename: "sw-nuvita-vitamilk-200g.jpg",
+    path: "/images/products/sw-nuvita-vitamilk-200g.jpg",
+    alt: "Nuvita Vitamilk 200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103120,
+    productId: 103120,
+    filename: "sw-nuvita-vitamilk-36x75g.jpg",
+    path: "/images/products/sw-nuvita-vitamilk-36x75g.jpg",
+    alt: "Nuvita Vitamilk 36x75G Carton",
+    isPrimary: true
+  },
+  {
+    id: 103121,
+    productId: 103121,
+    filename: "sw-nuvita-vitamilk-375g.jpg",
+    path: "/images/products/sw-nuvita-vitamilk-375g.jpg",
+    alt: "Nuvita Vitamilk 375G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103122,
+    productId: 103122,
+    filename: "sw-nuvita-vitamilk-60x5pcs.jpg",
+    path: "/images/products/sw-nuvita-vitamilk-60x5pcs.jpg",
+    alt: "Nuvita Vitamilk 60x5PCS Carton",
+    isPrimary: true
+  },
+  {
+    id: 103123,
+    productId: 103123,
+    filename: "sw-nuvita-vitamilk-biscuit-30x10-sky-blue.jpg",
+    path: "/images/products/sw-nuvita-vitamilk-biscuit-30x10-sky-blue.jpg",
+    alt: "Nuvita Vitamilk Biscuit 30x10 (Sky Blue) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103124,
+    productId: 103124,
+    filename: "sw-nuvita-wafer-18x50g-chocolate.jpg",
+    path: "/images/products/sw-nuvita-wafer-18x50g-chocolate.jpg",
+    alt: "Nuvita Wafer 18x50G (Chocolate) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103125,
+    productId: 103125,
+    filename: "sw-nuvita-wafer-18x50g-strawberry.jpg",
+    path: "/images/products/sw-nuvita-wafer-18x50g-strawberry.jpg",
+    alt: "Nuvita Wafer 18x50G (Strawberry) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103126,
+    productId: 103126,
+    filename: "sw-nuvita-wafer-biscuits-50g.jpg",
+    path: "/images/products/sw-nuvita-wafer-biscuits-50g.jpg",
+    alt: "Nuvita Wafer Biscuits 50G (Piece) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103127,
+    productId: 103127,
+    filename: "sw-nuvita-wafer-choco-delight-100g.jpg",
+    path: "/images/products/sw-nuvita-wafer-choco-delight-100g.jpg",
+    alt: "Nuvita Wafer Choco Delight 100G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103128,
+    productId: 103128,
+    filename: "sw-nuvita-wafer-chocolate-18x100g.jpg",
+    path: "/images/products/sw-nuvita-wafer-chocolate-18x100g.jpg",
+    alt: "Nuvita Wafer Chocolate 18x100G Carton",
+    isPrimary: true
+  },
+  {
+    id: 103129,
+    productId: 103129,
+    filename: "sw-nuvita-wafer-lemon-100g.jpg",
+    path: "/images/products/sw-nuvita-wafer-lemon-100g.jpg",
+    alt: "Nuvita Wafer Lemon 100G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103130,
+    productId: 103130,
+    filename: "sw-nuvita-wafer-strawberry-100g.jpg",
+    path: "/images/products/sw-nuvita-wafer-strawberry-100g.jpg",
+    alt: "Nuvita Wafer Strawberry 100G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103131,
+    productId: 103131,
+    filename: "sw-nuvita-wafers-72x16.5g.jpg",
+    path: "/images/products/sw-nuvita-wafers-72x16.5g.jpg",
+    alt: "Nuvita Wafers 72x16.5G Carton",
+    isPrimary: true
+  },
+  {
+    id: 103132,
+    productId: 103132,
+    filename: "sw-nuvita-wafers-72x9g.jpg",
+    path: "/images/products/sw-nuvita-wafers-72x9g.jpg",
+    alt: "Nuvita Wafers 72x9G Carton",
+    isPrimary: true
+  },
+  {
+    id: 103133,
+    productId: 103133,
+    filename: "sw-nuvita-westburys-caramel-200g.jpg",
+    path: "/images/products/sw-nuvita-westburys-caramel-200g.jpg",
+    alt: "Nuvita Westburys Caramel 200G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103134,
+    productId: 103134,
+    filename: "sw-nuziwa-soya-milk-1l-chocolate.jpg",
+    path: "/images/products/sw-nuziwa-soya-milk-1l-chocolate.jpg",
+    alt: "Nuziwa Soya Milk 1L (Chocolate) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103135,
+    productId: 103135,
+    filename: "sw-nyayo-beans-22.5kg.jpg",
+    path: "/images/products/sw-nyayo-beans-22.5kg.jpg",
+    alt: "Nyayo Beans 22.5KGS Bag",
+    isPrimary: true
+  },
+  {
+    id: 103136,
+    productId: 103136,
+    filename: "sw-nyayo-beans-90kg.jpg",
+    path: "/images/products/sw-nyayo-beans-90kg.jpg",
+    alt: "Nyayo Beans 90KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 103137,
+    productId: 103137,
+    filename: "sw-nyota-fry-20l.jpg",
+    path: "/images/products/sw-nyota-fry-20l.jpg",
+    alt: "Nyota Fry 20L Jerican",
+    isPrimary: true
+  },
+  {
+    id: 103138,
+    productId: 103138,
+    filename: "sw-nyota-fry-4x5ltr.jpg",
+    path: "/images/products/sw-nyota-fry-4x5ltr.jpg",
+    alt: "Nyota Fry 4x5LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 103139,
+    productId: 103139,
+    filename: "sw-nyota-oil-12x1ltrs.jpg",
+    path: "/images/products/sw-nyota-oil-12x1ltrs.jpg",
+    alt: "Nyota Oil 12x1LTRS Piece",
+    isPrimary: true
+  },
+  {
+    id: 103140,
+    productId: 103140,
+    filename: "sw-nyota-oil-6x2ltrs.jpg",
+    path: "/images/products/sw-nyota-oil-6x2ltrs.jpg",
+    alt: "Nyota Oil 6x2LTRS Jerican",
+    isPrimary: true
+  },
+  {
+    id: 103141,
+    productId: 103141,
+    filename: "sw-nyota-oil-6x3ltrs.jpg",
+    path: "/images/products/sw-nyota-oil-6x3ltrs.jpg",
+    alt: "Nyota Oil 6x3LTRS Jerican",
+    isPrimary: true
+  },
+  {
+    id: 103142,
+    productId: 103142,
+    filename: "sw-nyota-vegetable-oil-72x100ml-pouch.jpg",
+    path: "/images/products/sw-nyota-vegetable-oil-72x100ml-pouch.jpg",
+    alt: "Nyota Vegetable Oil 72x100ML (Pouch) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103143,
+    productId: 103143,
+    filename: "sw-nyota-vegetable-oil-96x50ml-pouch.jpg",
+    path: "/images/products/sw-nyota-vegetable-oil-96x50ml-pouch.jpg",
+    alt: "Nyota Vegetable Oil 96x50ML (Pouch) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103144,
+    productId: 103144,
+    filename: "sw-ocean-spray-juice-1ltr-cranberry-classic.jpg",
+    path: "/images/products/sw-ocean-spray-juice-1ltr-cranberry-classic.jpg",
+    alt: "Ocean Spray Juice 1LTR (Cranberry Classic) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103145,
+    productId: 103145,
+    filename: "sw-odo-smile-air-freshner-block-36x170g.jpg",
+    path: "/images/products/sw-odo-smile-air-freshner-block-36x170g.jpg",
+    alt: "Odo Smile Air Freshner Block 36x170G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103146,
+    productId: 103146,
+    filename: "sw-odo-smile-toilet-balls.jpg",
+    path: "/images/products/sw-odo-smile-toilet-balls.jpg",
+    alt: "Odo Smile Toilet Balls Packet",
+    isPrimary: true
+  },
+  {
+    id: 103147,
+    productId: 103147,
+    filename: "sw-odonil-toilet-balls.jpg",
+    path: "/images/products/sw-odonil-toilet-balls.jpg",
+    alt: "Odonil Toilet Balls Packet",
+    isPrimary: true
+  },
+  {
+    id: 103148,
+    productId: 103148,
+    filename: "sw-oilyssa-extra-virgin-olive-oil-12x500ml.jpg",
+    path: "/images/products/sw-oilyssa-extra-virgin-olive-oil-12x500ml.jpg",
+    alt: "Oilyssa Extra Virgin Olive Oil 12x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103149,
+    productId: 103149,
+    filename: "sw-ola-crunch-12x200g-cheese.jpg",
+    path: "/images/products/sw-ola-crunch-12x200g-cheese.jpg",
+    alt: "Ola Crunch 12x200G (Cheese) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103150,
+    productId: 103150,
+    filename: "sw-ola-crunch-12x200g-cool.jpg",
+    path: "/images/products/sw-ola-crunch-12x200g-cool.jpg",
+    alt: "Ola Crunch 12x200G (Cool) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103151,
+    productId: 103151,
+    filename: "sw-ola-crunch-12x200g-mexican.jpg",
+    path: "/images/products/sw-ola-crunch-12x200g-mexican.jpg",
+    alt: "Ola Crunch 12x200G (Mexican) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103152,
+    productId: 103152,
+    filename: "sw-olepito-sugar-1kg.jpg",
+    path: "/images/products/sw-olepito-sugar-1kg.jpg",
+    alt: "Olepito Sugar 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 103153,
+    productId: 103153,
+    filename: "sw-olepito-sugar-1kg-pkt.jpg",
+    path: "/images/products/sw-olepito-sugar-1kg-pkt.jpg",
+    alt: "Olepito Sugar 1KG (PKT ONLY) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103154,
+    productId: 103154,
+    filename: "sw-olepito-sugar-2kg.jpg",
+    path: "/images/products/sw-olepito-sugar-2kg.jpg",
+    alt: "Olepito Sugar 2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 103155,
+    productId: 103155,
+    filename: "sw-olepito-sugar-2kg-pkt.jpg",
+    path: "/images/products/sw-olepito-sugar-2kg-pkt.jpg",
+    alt: "Olepito Sugar 2KG (PKT ONLY) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103156,
+    productId: 103156,
+    filename: "sw-olive-gold-blend-12x1ltr.jpg",
+    path: "/images/products/sw-olive-gold-blend-12x1ltr.jpg",
+    alt: "Olive Gold (Blend) 12x1LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 103157,
+    productId: 103157,
+    filename: "sw-olive-gold-12x500ml.jpg",
+    path: "/images/products/sw-olive-gold-12x500ml.jpg",
+    alt: "Olive Gold 12x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103158,
+    productId: 103158,
+    filename: "sw-olivia-olive-oil-12x750ml.jpg",
+    path: "/images/products/sw-olivia-olive-oil-12x750ml.jpg",
+    alt: "Olivia Olive Oil 12x750ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103159,
+    productId: 103159,
+    filename: "sw-omo-auto-washing-liquid-2l.jpg",
+    path: "/images/products/sw-omo-auto-washing-liquid-2l.jpg",
+    alt: "Omo Auto Washing Liquid 2L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103160,
+    productId: 103160,
+    filename: "sw-omo-auto-washing-liquid-4x3l.jpg",
+    path: "/images/products/sw-omo-auto-washing-liquid-4x3l.jpg",
+    alt: "Omo Auto Washing Liquid 4x3L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103161,
+    productId: 103161,
+    filename: "sw-omo-autowashing-powder-2kg.jpg",
+    path: "/images/products/sw-omo-autowashing-powder-2kg.jpg",
+    alt: "Omo Autowashing Powder 2KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103162,
+    productId: 103162,
+    filename: "sw-omo-autowashing-powder-3x4.5kg.jpg",
+    path: "/images/products/sw-omo-autowashing-powder-3x4.5kg.jpg",
+    alt: "Omo Autowashing Powder 3x4.5KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103163,
+    productId: 103163,
+    filename: "sw-omo-autowashing-powder-3kg.jpg",
+    path: "/images/products/sw-omo-autowashing-powder-3kg.jpg",
+    alt: "Omo Autowashing Powder 3KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103164,
+    productId: 103164,
+    filename: "sw-omo-autowashing-powder-700g.jpg",
+    path: "/images/products/sw-omo-autowashing-powder-700g.jpg",
+    alt: "Omo Autowashing Powder 700G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103165,
+    productId: 103165,
+    filename: "sw-omo-basin.jpg",
+    path: "/images/products/sw-omo-basin.jpg",
+    alt: "Omo Basin Piece",
+    isPrimary: true
+  },
+  {
+    id: 103166,
+    productId: 103166,
+    filename: "sw-omo-bleach-12x70ml-colours.jpg",
+    path: "/images/products/sw-omo-bleach-12x70ml-colours.jpg",
+    alt: "Omo Bleach 12x70ML (Colours) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103167,
+    productId: 103167,
+    filename: "sw-omo-bleach-12x70ml-lavender.jpg",
+    path: "/images/products/sw-omo-bleach-12x70ml-lavender.jpg",
+    alt: "Omo Bleach 12x70ML (Lavender) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103168,
+    productId: 103168,
+    filename: "sw-omo-bleach-12x70ml-regular.jpg",
+    path: "/images/products/sw-omo-bleach-12x70ml-regular.jpg",
+    alt: "Omo Bleach 12x70ML (Regular) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103169,
+    productId: 103169,
+    filename: "sw-omo-bleach-18x250ml-colours.jpg",
+    path: "/images/products/sw-omo-bleach-18x250ml-colours.jpg",
+    alt: "Omo Bleach 18x250ML (Colours) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103170,
+    productId: 103170,
+    filename: "sw-omo-bleach-18x250ml-lavender.jpg",
+    path: "/images/products/sw-omo-bleach-18x250ml-lavender.jpg",
+    alt: "Omo Bleach 18x250ML (Lavender) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103171,
+    productId: 103171,
+    filename: "sw-omo-bleach-18x250ml-regular.jpg",
+    path: "/images/products/sw-omo-bleach-18x250ml-regular.jpg",
+    alt: "Omo Bleach 18x250ML (Regular) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103172,
+    productId: 103172,
+    filename: "sw-omo-bleach-6x2.25l-lavender.jpg",
+    path: "/images/products/sw-omo-bleach-6x2.25l-lavender.jpg",
+    alt: "Omo Bleach 6x2.25L (Lavender) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103173,
+    productId: 103173,
+    filename: "sw-omo-bleach-6x2.25l-regular.jpg",
+    path: "/images/products/sw-omo-bleach-6x2.25l-regular.jpg",
+    alt: "Omo Bleach 6x2.25L (Regular) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103174,
+    productId: 103174,
+    filename: "sw-omo-bleach-700ml-banded-regular-colours.jpg",
+    path: "/images/products/sw-omo-bleach-700ml-banded-regular-colours.jpg",
+    alt: "Omo Bleach 700ML (Banded Regular + Colours) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103175,
+    productId: 103175,
+    filename: "sw-omo-bleach-700ml-banded-regular-lemon.jpg",
+    path: "/images/products/sw-omo-bleach-700ml-banded-regular-lemon.jpg",
+    alt: "Omo Bleach 700ML (Banded Regular + Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103176,
+    productId: 103176,
+    filename: "sw-omo-bleach-700ml-colour.jpg",
+    path: "/images/products/sw-omo-bleach-700ml-colour.jpg",
+    alt: "Omo Bleach 700ML (Colour) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103177,
+    productId: 103177,
+    filename: "sw-omo-bleach-700ml-lavender.jpg",
+    path: "/images/products/sw-omo-bleach-700ml-lavender.jpg",
+    alt: "Omo Bleach 700ML (Lavender) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103178,
+    productId: 103178,
+    filename: "sw-omo-bleach-700ml-lemon.jpg",
+    path: "/images/products/sw-omo-bleach-700ml-lemon.jpg",
+    alt: "Omo Bleach 700ML (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103179,
+    productId: 103179,
+    filename: "sw-omo-bleach-700ml-regular.jpg",
+    path: "/images/products/sw-omo-bleach-700ml-regular.jpg",
+    alt: "Omo Bleach 700ML (Regular) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103180,
+    productId: 103180,
+    filename: "sw-omo-bleach-regular-5l.jpg",
+    path: "/images/products/sw-omo-bleach-regular-5l.jpg",
+    alt: "Omo Bleach Regular 5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103181,
+    productId: 103181,
+    filename: "sw-omo-bucket.jpg",
+    path: "/images/products/sw-omo-bucket.jpg",
+    alt: "Omo Bucket Piece",
+    isPrimary: true
+  },
+  {
+    id: 103182,
+    productId: 103182,
+    filename: "sw-omo-powder-1kg.jpg",
+    path: "/images/products/sw-omo-powder-1kg.jpg",
+    alt: "Omo Powder 1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103183,
+    productId: 103183,
+    filename: "sw-omo-powder-200g.jpg",
+    path: "/images/products/sw-omo-powder-200g.jpg",
+    alt: "Omo Powder 200G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103184,
+    productId: 103184,
+    filename: "sw-omo-powder-20g.jpg",
+    path: "/images/products/sw-omo-powder-20g.jpg",
+    alt: "Omo Powder 20G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103185,
+    productId: 103185,
+    filename: "sw-omo-powder-2kg.jpg",
+    path: "/images/products/sw-omo-powder-2kg.jpg",
+    alt: "Omo Powder 2KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103186,
+    productId: 103186,
+    filename: "sw-omo-powder-3.5kg.jpg",
+    path: "/images/products/sw-omo-powder-3.5kg.jpg",
+    alt: "Omo Powder 3.5KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103187,
+    productId: 103187,
+    filename: "sw-omo-powder-300g.jpg",
+    path: "/images/products/sw-omo-powder-300g.jpg",
+    alt: "Omo Powder 300G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103188,
+    productId: 103188,
+    filename: "sw-omo-powder-500g.jpg",
+    path: "/images/products/sw-omo-powder-500g.jpg",
+    alt: "Omo Powder 500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103189,
+    productId: 103189,
+    filename: "sw-omo-powder-75g.jpg",
+    path: "/images/products/sw-omo-powder-75g.jpg",
+    alt: "Omo Powder 75G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103190,
+    productId: 103190,
+    filename: "sw-one-stop-cheese-onion-crips-12x150g.jpg",
+    path: "/images/products/sw-one-stop-cheese-onion-crips-12x150g.jpg",
+    alt: "One Stop Cheese & Onion Crips 12x150G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103191,
+    productId: 103191,
+    filename: "sw-one-stop-hot-chevda-crips-12x150g.jpg",
+    path: "/images/products/sw-one-stop-hot-chevda-crips-12x150g.jpg",
+    alt: "One Stop Hot Chevda Crips 12x150G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103192,
+    productId: 103192,
+    filename: "sw-one-stop-original-chevda-crips-12x150g.jpg",
+    path: "/images/products/sw-one-stop-original-chevda-crips-12x150g.jpg",
+    alt: "One Stop Original Chevda Crips 12x150G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103193,
+    productId: 103193,
+    filename: "sw-one-stop-potato-crips-12x150g.jpg",
+    path: "/images/products/sw-one-stop-potato-crips-12x150g.jpg",
+    alt: "One Stop Potato Crips 12x150G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103194,
+    productId: 103194,
+    filename: "sw-one-stop-salt-vinegar-crips-12x150g.jpg",
+    path: "/images/products/sw-one-stop-salt-vinegar-crips-12x150g.jpg",
+    alt: "One Stop Salt & Vinegar Crips 12x150G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103195,
+    productId: 103195,
+    filename: "sw-onga-beef-200g-jar.jpg",
+    path: "/images/products/sw-onga-beef-200g-jar.jpg",
+    alt: "Onga Beef 200G (Jar) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103196,
+    productId: 103196,
+    filename: "sw-onga-beef-mchuzi-7g.jpg",
+    path: "/images/products/sw-onga-beef-mchuzi-7g.jpg",
+    alt: "Onga Beef Mchuzi 7G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103197,
+    productId: 103197,
+    filename: "sw-onga-chicken-200g-jar.jpg",
+    path: "/images/products/sw-onga-chicken-200g-jar.jpg",
+    alt: "Onga Chicken 200G (Jar) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103198,
+    productId: 103198,
+    filename: "sw-onga-chicken-7g.jpg",
+    path: "/images/products/sw-onga-chicken-7g.jpg",
+    alt: "Onga Chicken 7G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103199,
+    productId: 103199,
+    filename: "sw-onga-gog-12x200g-jar.jpg",
+    path: "/images/products/sw-onga-gog-12x200g-jar.jpg",
+    alt: "Onga GOG 12x200G (Jar) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103200,
+    productId: 103200,
+    filename: "sw-onga-tomato-200g-jar.jpg",
+    path: "/images/products/sw-onga-tomato-200g-jar.jpg",
+    alt: "Onga Tomato 200G (Jar) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103201,
+    productId: 103201,
+    filename: "sw-onga-tomato-mchuzi-10g.jpg",
+    path: "/images/products/sw-onga-tomato-mchuzi-10g.jpg",
+    alt: "Onga Tomato Mchuzi 10G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103202,
+    productId: 103202,
+    filename: "sw-onja-margarine-10kg-carton.jpg",
+    path: "/images/products/sw-onja-margarine-10kg-carton.jpg",
+    alt: "Onja Margarine 10KG (Carton) Carton",
+    isPrimary: true
+  },
+  {
+    id: 103203,
+    productId: 103203,
+    filename: "sw-onja-margarine-12x1kg.jpg",
+    path: "/images/products/sw-onja-margarine-12x1kg.jpg",
+    alt: "Onja Margarine 12x1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103204,
+    productId: 103204,
+    filename: "sw-onja-margarine-12x500g.jpg",
+    path: "/images/products/sw-onja-margarine-12x500g.jpg",
+    alt: "Onja Margarine 12x500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103205,
+    productId: 103205,
+    filename: "sw-onja-margarine-24x250g.jpg",
+    path: "/images/products/sw-onja-margarine-24x250g.jpg",
+    alt: "Onja Margarine 24x250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103206,
+    productId: 103206,
+    filename: "sw-oral-b-toothpaste-herbal-mint-130g.jpg",
+    path: "/images/products/sw-oral-b-toothpaste-herbal-mint-130g.jpg",
+    alt: "Oral B Toothpaste Herbal Mint 130G (Family Size) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103207,
+    productId: 103207,
+    filename: "sw-orange-water-24x500ml.jpg",
+    path: "/images/products/sw-orange-water-24x500ml.jpg",
+    alt: "Orange Water 24x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103208,
+    productId: 103208,
+    filename: "sw-orchid-valley-delight-juice-1ltr-apple.jpg",
+    path: "/images/products/sw-orchid-valley-delight-juice-1ltr-apple.jpg",
+    alt: "Orchid Valley Delight Juice 1LTR (Apple) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103209,
+    productId: 103209,
+    filename: "sw-orchid-valley-delight-juice-1ltr-mango.jpg",
+    path: "/images/products/sw-orchid-valley-delight-juice-1ltr-mango.jpg",
+    alt: "Orchid Valley Delight Juice 1LTR (Mango) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103210,
+    productId: 103210,
+    filename: "sw-orchid-valley-delight-juice-1ltr-passion.jpg",
+    path: "/images/products/sw-orchid-valley-delight-juice-1ltr-passion.jpg",
+    alt: "Orchid Valley Delight Juice 1LTR (Passion) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103211,
+    productId: 103211,
+    filename: "sw-oreo-119g-coca-cola.jpg",
+    path: "/images/products/sw-oreo-119g-coca-cola.jpg",
+    alt: "Oreo 119G (Coca Cola) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103212,
+    productId: 103212,
+    filename: "sw-oreo-119g-strawberry.jpg",
+    path: "/images/products/sw-oreo-119g-strawberry.jpg",
+    alt: "Oreo 119G (Strawberry) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103213,
+    productId: 103213,
+    filename: "sw-oreo-128g-choco.jpg",
+    path: "/images/products/sw-oreo-128g-choco.jpg",
+    alt: "Oreo 128G (Choco) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103214,
+    productId: 103214,
+    filename: "sw-oreo-128g-golden.jpg",
+    path: "/images/products/sw-oreo-128g-golden.jpg",
+    alt: "Oreo 128G (Golden) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103215,
+    productId: 103215,
+    filename: "sw-oreo-128g-original.jpg",
+    path: "/images/products/sw-oreo-128g-original.jpg",
+    alt: "Oreo 128G (Original) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103216,
+    productId: 103216,
+    filename: "sw-oreo-18.4g.jpg",
+    path: "/images/products/sw-oreo-18.4g.jpg",
+    alt: "Oreo 18.4G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103217,
+    productId: 103217,
+    filename: "sw-oreo-26.25g.jpg",
+    path: "/images/products/sw-oreo-26.25g.jpg",
+    alt: "Oreo 26.25G Outer",
+    isPrimary: true
+  },
+  {
+    id: 103218,
+    productId: 103218,
+    filename: "sw-oreo-36.8g.jpg",
+    path: "/images/products/sw-oreo-36.8g.jpg",
+    alt: "Oreo 36.8G Outer",
+    isPrimary: true
+  },
+  {
+    id: 103219,
+    productId: 103219,
+    filename: "sw-oreo-52.5g.jpg",
+    path: "/images/products/sw-oreo-52.5g.jpg",
+    alt: "Oreo 52.5G Packet",
+    isPrimary: true
+  },
+  {
+    id: 103220,
+    productId: 103220,
+    filename: "sw-ortum-aaa-rice-10kg.jpg",
+    path: "/images/products/sw-ortum-aaa-rice-10kg.jpg",
+    alt: "Ortum AAA Rice 10KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 103221,
+    productId: 103221,
+    filename: "sw-osffin-powder-insects-killer-200g.jpg",
+    path: "/images/products/sw-osffin-powder-insects-killer-200g.jpg",
+    alt: "Osffin (Powder) Insects Killer 200G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103222,
+    productId: 103222,
+    filename: "sw-ovaltine-malt-drink-150g-satchet.jpg",
+    path: "/images/products/sw-ovaltine-malt-drink-150g-satchet.jpg",
+    alt: "Ovaltine Malt Drink 150G (Satchet) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103223,
+    productId: 103223,
+    filename: "sw-ovaltine-malt-drink-200g-jar.jpg",
+    path: "/images/products/sw-ovaltine-malt-drink-200g-jar.jpg",
+    alt: "Ovaltine Malt Drink 200G (Jar) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103224,
+    productId: 103224,
+    filename: "sw-ovaltine-malt-drink-400g.jpg",
+    path: "/images/products/sw-ovaltine-malt-drink-400g.jpg",
+    alt: "Ovaltine Malt Drink 400G Jar",
+    isPrimary: true
+  },
+  {
+    id: 103225,
+    productId: 103225,
+    filename: "sw-oxyrich-mineral-water-500ml-piece.jpg",
+    path: "/images/products/sw-oxyrich-mineral-water-500ml-piece.jpg",
+    alt: "Oxyrich Mineral Water 500ML (Piece) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103226,
+    productId: 103226,
+    filename: "sw-oxyrich-water-1l.jpg",
+    path: "/images/products/sw-oxyrich-water-1l.jpg",
+    alt: "Oxyrich Water 1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103227,
+    productId: 103227,
+    filename: "sw-oxyrich-water-500ml-case.jpg",
+    path: "/images/products/sw-oxyrich-water-500ml-case.jpg",
+    alt: "Oxyrich Water 500ML Case",
+    isPrimary: true
+  },
+  {
+    id: 103228,
+    productId: 103228,
+    filename: "sw-p-k-small-juicy-fruit-2p.jpg",
+    path: "/images/products/sw-p-k-small-juicy-fruit-2p.jpg",
+    alt: "P K (Small) Juicy Fruit 2P Outer",
+    isPrimary: true
+  },
+  {
+    id: 103229,
+    productId: 103229,
+    filename: "sw-p-k-small-peppermint-2p.jpg",
+    path: "/images/products/sw-p-k-small-peppermint-2p.jpg",
+    alt: "P K (Small) Peppermint 2P Packet",
+    isPrimary: true
+  },
+  {
+    id: 103230,
+    productId: 103230,
+    filename: "sw-p-k-blue-menthol-50s.jpg",
+    path: "/images/products/sw-p-k-blue-menthol-50s.jpg",
+    alt: "P K Blue (Menthol) 50'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 103231,
+    productId: 103231,
+    filename: "sw-pk-green-peppermint-50s.jpg",
+    path: "/images/products/sw-pk-green-peppermint-50s.jpg",
+    alt: "P K Green (Peppermint) 50'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 103232,
+    productId: 103232,
+    filename: "sw-pk-yellow-juicy-fruit-50s.jpg",
+    path: "/images/products/sw-pk-yellow-juicy-fruit-50s.jpg",
+    alt: "P K Yellow (Juicy Fruit) 50'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 103233,
+    productId: 103233,
+    filename: "sw-pk-yellow-new-juicy-fruit-10s.jpg",
+    path: "/images/products/sw-pk-yellow-new-juicy-fruit-10s.jpg",
+    alt: "P K Yellow (New Juicy Fruit) 10'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 103234,
+    productId: 103234,
+    filename: "sw-p-nutty-toffees-12x50pcs.jpg",
+    path: "/images/products/sw-p-nutty-toffees-12x50pcs.jpg",
+    alt: "P-Nutty Toffees 12x50PCS Packet",
+    isPrimary: true
+  },
+  {
+    id: 103235,
+    productId: 103235,
+    filename: "sw-p-nutty-toffees-6x100pcs.jpg",
+    path: "/images/products/sw-p-nutty-toffees-6x100pcs.jpg",
+    alt: "P-Nutty Toffees 6x100PCS Jar",
+    isPrimary: true
+  },
+  {
+    id: 103236,
+    productId: 103236,
+    filename: "sw-packing-bags-no1-eco.jpg",
+    path: "/images/products/sw-packing-bags-no1-eco.jpg",
+    alt: "Packing Bags No.1 (Eco) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103237,
+    productId: 103237,
+    filename: "sw-packing-bags-no1-2-eco.jpg",
+    path: "/images/products/sw-packing-bags-no1-2-eco.jpg",
+    alt: "Packing Bags No.1/2 (Eco) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103238,
+    productId: 103238,
+    filename: "sw-packing-bags-no1-4-eco.jpg",
+    path: "/images/products/sw-packing-bags-no1-4-eco.jpg",
+    alt: "Packing Bags No.1/4 (Eco) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103239,
+    productId: 103239,
+    filename: "sw-packing-bags-no2-eco.jpg",
+    path: "/images/products/sw-packing-bags-no2-eco.jpg",
+    alt: "Packing Bags No.2 (Eco) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103240,
+    productId: 103240,
+    filename: "sw-packing-bags-no5-eco.jpg",
+    path: "/images/products/sw-packing-bags-no5-eco.jpg",
+    alt: "Packing Bags No.5 (Eco) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103241,
+    productId: 103241,
+    filename: "sw-pall-mall-plus-cigarettes-red.jpg",
+    path: "/images/products/sw-pall-mall-plus-cigarettes-red.jpg",
+    alt: "Pall Mall Plus Cigarettes (Red) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103242,
+    productId: 103242,
+    filename: "sw-palmer-lotion-6x400ml.jpg",
+    path: "/images/products/sw-palmer-lotion-6x400ml.jpg",
+    alt: "Palmer Lotion 6x400ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103243,
+    productId: 103243,
+    filename: "sw-pampers-diapers-maxi-jumbo-no4-56pcs.jpg",
+    path: "/images/products/sw-pampers-diapers-maxi-jumbo-no4-56pcs.jpg",
+    alt: "Pampers Diapers (Maxi) Jumbo No.4 (56PCS) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103244,
+    productId: 103244,
+    filename: "sw-pampers-diapers-midi-jumbo-no3-60pcs.jpg",
+    path: "/images/products/sw-pampers-diapers-midi-jumbo-no3-60pcs.jpg",
+    alt: "Pampers Diapers (Midi) Jumbo No.3 (60 PCS) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103245,
+    productId: 103245,
+    filename: "sw-pampers-diapers-junior-hc-no5-48pcs.jpg",
+    path: "/images/products/sw-pampers-diapers-junior-hc-no5-48pcs.jpg",
+    alt: "Pampers Diapers Junior HC (48 PCS) (No.5) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103246,
+    productId: 103246,
+    filename: "sw-pampers-diapers-mini-jumbo-no2-62pcs.jpg",
+    path: "/images/products/sw-pampers-diapers-mini-jumbo-no2-62pcs.jpg",
+    alt: "Pampers Diapers Mini Jumbo No.2 (62PCS) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103247,
+    productId: 103247,
+    filename: "sw-pampers-diapers-mini-lc-no5-8pcs.jpg",
+    path: "/images/products/sw-pampers-diapers-mini-lc-no5-8pcs.jpg",
+    alt: "Pampers Diapers Mini LC (8PCS) (No.5) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103248,
+    productId: 103248,
+    filename: "sw-pampers-pants-junior-jumbo-no5-46pcs.jpg",
+    path: "/images/products/sw-pampers-pants-junior-jumbo-no5-46pcs.jpg",
+    alt: "Pampers Pants Junior Jumbo (46 PCS) No.5 Outer",
+    isPrimary: true
+  },
+  {
+    id: 103249,
+    productId: 103249,
+    filename: "sw-pampers-pants-maxi-jumbo-50pcs.jpg",
+    path: "/images/products/sw-pampers-pants-maxi-jumbo-50pcs.jpg",
+    alt: "Pampers Pants Maxi Jumbo (50 PCS) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103250,
+    productId: 103250,
+    filename: "sw-pampers-pants-maxi-lc-8pcs.jpg",
+    path: "/images/products/sw-pampers-pants-maxi-lc-8pcs.jpg",
+    alt: "Pampers Pants Maxi LC (8PCS) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103251,
+    productId: 103251,
+    filename: "sw-pampers-sensitive-wipes-56s-white.jpg",
+    path: "/images/products/sw-pampers-sensitive-wipes-56s-white.jpg",
+    alt: "Pampers Sensitive Wipes 56'S (White) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103252,
+    productId: 103252,
+    filename: "sw-pampers-wipes-64s-green.jpg",
+    path: "/images/products/sw-pampers-wipes-64s-green.jpg",
+    alt: "Pampers Wipes 64'S (Green) Packet",
+    isPrimary: true
+  },
+  {
+    id: 103253,
+    productId: 103253,
+    filename: "sw-panadol-advance.jpg",
+    path: "/images/products/sw-panadol-advance.jpg",
+    alt: "Panadol Advance Packet",
+    isPrimary: true
+  },
+  {
+    id: 103254,
+    productId: 103254,
+    filename: "sw-panadol-extra.jpg",
+    path: "/images/products/sw-panadol-extra.jpg",
+    alt: "Panadol Extra Packet",
+    isPrimary: true
+  },
+  {
+    id: 103255,
+    productId: 103255,
+    filename: "sw-panda-facial-tissue-green-48pack.jpg",
+    path: "/images/products/sw-panda-facial-tissue-green-48pack.jpg",
+    alt: "Panda Facial Tissue (Green) 48PACK Packet",
+    isPrimary: true
+  },
+  {
+    id: 103256,
+    productId: 103256,
+    filename: "sw-panda-hand-towel.jpg",
+    path: "/images/products/sw-panda-hand-towel.jpg",
+    alt: "Panda Hand Towel Packet",
+    isPrimary: true
+  },
+  {
+    id: 103257,
+    productId: 103257,
+    filename: "sw-panda-jumbo-tissue.jpg",
+    path: "/images/products/sw-panda-jumbo-tissue.jpg",
+    alt: "Panda Jumbo Tissue Bale",
+    isPrimary: true
+  },
+  {
+    id: 103258,
+    productId: 103258,
+    filename: "sw-panda-serviette-60s.jpg",
+    path: "/images/products/sw-panda-serviette-60s.jpg",
+    alt: "Panda Serviette 60'S Packet",
+    isPrimary: true
+  },
+  {
+    id: 103259,
+    productId: 103259,
+    filename: "sw-panda-serviettes-24x100s.jpg",
+    path: "/images/products/sw-panda-serviettes-24x100s.jpg",
+    alt: "Panda Serviettes 24x100'S Piece",
+    isPrimary: true
+  },
+  {
+    id: 103260,
+    productId: 103260,
+    filename: "sw-panda-tissue-10x4-rolls.jpg",
+    path: "/images/products/sw-panda-tissue-10x4-rolls.jpg",
+    alt: "Panda Tissue 10x4 Rolls Outer",
+    isPrimary: true
+  },
+  {
+    id: 103261,
+    productId: 103261,
+    filename: "sw-parachute-coconut-oil-12x1l.jpg",
+    path: "/images/products/sw-parachute-coconut-oil-12x1l.jpg",
+    alt: "Parachute Coconut Oil 12x1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103262,
+    productId: 103262,
+    filename: "sw-parachute-coconut-oil-12x200ml.jpg",
+    path: "/images/products/sw-parachute-coconut-oil-12x200ml.jpg",
+    alt: "Parachute Coconut Oil 12x200ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103263,
+    productId: 103263,
+    filename: "sw-parachute-coconut-oil-12x500ml.jpg",
+    path: "/images/products/sw-parachute-coconut-oil-12x500ml.jpg",
+    alt: "Parachute Coconut Oil 12x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103264,
+    productId: 103264,
+    filename: "sw-paratal-junior.jpg",
+    path: "/images/products/sw-paratal-junior.jpg",
+    alt: "Paratal Junior Packet",
+    isPrimary: true
+  },
+  {
+    id: 103265,
+    productId: 103265,
+    filename: "sw-parle-milk-power-72x4pcs.jpg",
+    path: "/images/products/sw-parle-milk-power-72x4pcs.jpg",
+    alt: "Parle Milk Power 72x4PCS Carton",
+    isPrimary: true
+  },
+  {
+    id: 103266,
+    productId: 103266,
+    filename: "sw-pasafi-mineral-water-500ml.jpg",
+    path: "/images/products/sw-pasafi-mineral-water-500ml.jpg",
+    alt: "Pasafi Mineral Water 500ML Case",
+    isPrimary: true
+  },
+  {
+    id: 103267,
+    productId: 103267,
+    filename: "sw-pawa-heat-muscle-relief-24x150ml.jpg",
+    path: "/images/products/sw-pawa-heat-muscle-relief-24x150ml.jpg",
+    alt: "Pawa Heat Muscle Relief 24x150ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103268,
+    productId: 103268,
+    filename: "sw-pearl-antiseptic-disinfectant-12x750ml.jpg",
+    path: "/images/products/sw-pearl-antiseptic-disinfectant-12x750ml.jpg",
+    alt: "Pearl Antiseptic Disinfectant 12x750ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103269,
+    productId: 103269,
+    filename: "sw-pearl-antiseptic-disinfectant-24x500ml.jpg",
+    path: "/images/products/sw-pearl-antiseptic-disinfectant-24x500ml.jpg",
+    alt: "Pearl Antiseptic Disinfectant 24x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103270,
+    productId: 103270,
+    filename: "sw-pearl-antiseptic-disinfectant-36x250ml.jpg",
+    path: "/images/products/sw-pearl-antiseptic-disinfectant-36x250ml.jpg",
+    alt: "Pearl Antiseptic Disinfectant 36x250ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103271,
+    productId: 103271,
+    filename: "sw-pearl-dish-washing-liquid-12x1l.jpg",
+    path: "/images/products/sw-pearl-dish-washing-liquid-12x1l.jpg",
+    alt: "Pearl Dish Washing Liquid 12x1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103272,
+    productId: 103272,
+    filename: "sw-pearl-fabric-softener-4x1.5l.jpg",
+    path: "/images/products/sw-pearl-fabric-softener-4x1.5l.jpg",
+    alt: "Pearl Fabric Softner 4x1.5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103273,
+    productId: 103273,
+    filename: "sw-pearl-fabric-softener-4x3l.jpg",
+    path: "/images/products/sw-pearl-fabric-softener-4x3l.jpg",
+    alt: "Pearl Fabric Softner 4x3L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103274,
+    productId: 103274,
+    filename: "sw-pearl-fabric-softener-6x1l.jpg",
+    path: "/images/products/sw-pearl-fabric-softener-6x1l.jpg",
+    alt: "Pearl Fabric Softner 6x1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103275,
+    productId: 103275,
+    filename: "sw-pearl-fabric-softener-8x2l.jpg",
+    path: "/images/products/sw-pearl-fabric-softener-8x2l.jpg",
+    alt: "Pearl Fabric Softner 8x2L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103276,
+    productId: 103276,
+    filename: "sw-pearl-m-powder-4x3kg.jpg",
+    path: "/images/products/sw-pearl-m-powder-4x3kg.jpg",
+    alt: "Pearl M/Powder 4x3KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103277,
+    productId: 103277,
+    filename: "sw-pearl-m-powder-8x1.5kg.jpg",
+    path: "/images/products/sw-pearl-m-powder-8x1.5kg.jpg",
+    alt: "Pearl M/Powder 8x1.5KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103278,
+    productId: 103278,
+    filename: "sw-pearl-ndengu-24x1kg.jpg",
+    path: "/images/products/sw-pearl-ndengu-24x1kg.jpg",
+    alt: "Pearl Ndengu 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103279,
+    productId: 103279,
+    filename: "sw-pearl-ndengu-48x500g.jpg",
+    path: "/images/products/sw-pearl-ndengu-48x500g.jpg",
+    alt: "Pearl Ndengu 48x500GM Packet",
+    isPrimary: true
+  },
+  {
+    id: 103280,
+    productId: 103280,
+    filename: "sw-pearl-pishori-rice-10kg.jpg",
+    path: "/images/products/sw-pearl-pishori-rice-10kg.jpg",
+    alt: "Pearl Pishori Rice 10KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 103281,
+    productId: 103281,
+    filename: "sw-pearl-pishori-rice-12x2kg.jpg",
+    path: "/images/products/sw-pearl-pishori-rice-12x2kg.jpg",
+    alt: "Pearl Pishori Rice 12x2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103282,
+    productId: 103282,
+    filename: "sw-pearl-pishori-rice-24x1kg.jpg",
+    path: "/images/products/sw-pearl-pishori-rice-24x1kg.jpg",
+    alt: "Pearl Pishori Rice 24x1KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103283,
+    productId: 103283,
+    filename: "sw-pearl-pishori-rice-5x5kg.jpg",
+    path: "/images/products/sw-pearl-pishori-rice-5x5kg.jpg",
+    alt: "Pearl Pishori Rice 5x5KG Outer",
+    isPrimary: true
+  },
+  {
+    id: 103284,
+    productId: 103284,
+    filename: "sw-pearl-powergel-liquid-12x1l.jpg",
+    path: "/images/products/sw-pearl-powergel-liquid-12x1l.jpg",
+    alt: "Pearl Powergel Liquid 12x1L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103285,
+    productId: 103285,
+    filename: "sw-pearl-powergel-liquid-4x5l.jpg",
+    path: "/images/products/sw-pearl-powergel-liquid-4x5l.jpg",
+    alt: "Pearl Powergel Liquid 4x5L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103286,
+    productId: 103286,
+    filename: "sw-pearl-powergel-liquid-6x3l.jpg",
+    path: "/images/products/sw-pearl-powergel-liquid-6x3l.jpg",
+    alt: "Pearl Powergel Liquid 6x3L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103287,
+    productId: 103287,
+    filename: "sw-pearl-river-bridge-dark-soy-sauce-12x600ml.jpg",
+    path: "/images/products/sw-pearl-river-bridge-dark-soy-sauce-12x600ml.jpg",
+    alt: "Pearl River Bridge Dark Soy Sauce 12x600ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103288,
+    productId: 103288,
+    filename: "sw-pearl-river-bridge-dark-soy-sauce-48x150ml.jpg",
+    path: "/images/products/sw-pearl-river-bridge-dark-soy-sauce-48x150ml.jpg",
+    alt: "Pearl River Bridge Dark Soy Sauce 48x150ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103289,
+    productId: 103289,
+    filename: "sw-pearl-super-basmat-2kg.jpg",
+    path: "/images/products/sw-pearl-super-basmat-2kg.jpg",
+    alt: "Pearl Super Basmat 2KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103290,
+    productId: 103290,
+    filename: "sw-pearl-super-basmat-5kg.jpg",
+    path: "/images/products/sw-pearl-super-basmat-5kg.jpg",
+    alt: "Pearl Super Basmat 5KG Packet",
+    isPrimary: true
+  },
+  {
+    id: 103291,
+    productId: 103291,
+    filename: "sw-pearl-w-powder-12x1kg.jpg",
+    path: "/images/products/sw-pearl-w-powder-12x1kg.jpg",
+    alt: "Pearl W/Powder 12x1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103292,
+    productId: 103292,
+    filename: "sw-pearl-w-powder-24x500g.jpg",
+    path: "/images/products/sw-pearl-w-powder-24x500g.jpg",
+    alt: "Pearl W/Powder 24x500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103293,
+    productId: 103293,
+    filename: "sw-pearl-w-powder-4x3kg.jpg",
+    path: "/images/products/sw-pearl-w-powder-4x3kg.jpg",
+    alt: "Pearl W/Powder 4x3KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103294,
+    productId: 103294,
+    filename: "sw-pearl-w-powder-5kg.jpg",
+    path: "/images/products/sw-pearl-w-powder-5kg.jpg",
+    alt: "Pearl W/Powder 5KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103295,
+    productId: 103295,
+    filename: "sw-pears-soap-48x125g-lemon.jpg",
+    path: "/images/products/sw-pears-soap-48x125g-lemon.jpg",
+    alt: "Pears Soap 48x125G (Lemon) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103296,
+    productId: 103296,
+    filename: "sw-pears-soap-48x125g-mint.jpg",
+    path: "/images/products/sw-pears-soap-48x125g-mint.jpg",
+    alt: "Pears Soap 48x125G (Mint) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103297,
+    productId: 103297,
+    filename: "sw-pears-soap-48x125g-natural-oils.jpg",
+    path: "/images/products/sw-pears-soap-48x125g-natural-oils.jpg",
+    alt: "Pears Soap 48x125G (Natural Oils) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103298,
+    productId: 103298,
+    filename: "sw-pebbles-tube-sweets-25g.jpg",
+    path: "/images/products/sw-pebbles-tube-sweets-25g.jpg",
+    alt: "Pebbles Tube Sweets 25G Outer",
+    isPrimary: true
+  },
+  {
+    id: 103299,
+    productId: 103299,
+    filename: "sw-pekee-tissue-4pack-unwrapped.jpg",
+    path: "/images/products/sw-pekee-tissue-4pack-unwrapped.jpg",
+    alt: "Pekee Tissue (4 Pack) (Unwrapped) Bale",
+    isPrimary: true
+  },
+  {
+    id: 103300,
+    productId: 103300,
+    filename: "sw-pekee-white-tissue.jpg",
+    path: "/images/products/sw-pekee-white-tissue.jpg",
+    alt: "Pekee White Tissue Outer",
+    isPrimary: true
+  },
+  {
+    id: 103301,
+    productId: 103301,
+    filename: "sw-pembe-atta-2kg.jpg",
+    path: "/images/products/sw-pembe-atta-2kg.jpg",
+    alt: "Pembe Atta 2KG 1/2bale",
+    isPrimary: true
+  },
+  {
+    id: 103302,
+    productId: 103302,
+    filename: "sw-pembe-mandazi-2kg.jpg",
+    path: "/images/products/sw-pembe-mandazi-2kg.jpg",
+    alt: "Pembe Mandazi 2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 103303,
+    productId: 103303,
+    filename: "sw-pembe-ngano-1kg.jpg",
+    path: "/images/products/sw-pembe-ngano-1kg.jpg",
+    alt: "Pembe Ngano 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 103304,
+    productId: 103304,
+    filename: "sw-pembe-ngano-2kg.jpg",
+    path: "/images/products/sw-pembe-ngano-2kg.jpg",
+    alt: "Pembe Ngano 2KG 1/2bale",
+    isPrimary: true
+  },
+  {
+    id: 103305,
+    productId: 103305,
+    filename: "sw-pembe-premium-bakers-flour-50kg.jpg",
+    path: "/images/products/sw-pembe-premium-bakers-flour-50kg.jpg",
+    alt: "Pembe Premium Bakers Flour 50KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 103306,
+    productId: 103306,
+    filename: "sw-pembe-self-raising-2kg.jpg",
+    path: "/images/products/sw-pembe-self-raising-2kg.jpg",
+    alt: "Pembe Self Raising 2KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 103307,
+    productId: 103307,
+    filename: "sw-pembe-standard-bakers-flour-50kg.jpg",
+    path: "/images/products/sw-pembe-standard-bakers-flour-50kg.jpg",
+    alt: "Pembe Standard Bakers Flour 50KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 103308,
+    productId: 103308,
+    filename: "sw-pembe-ugali-1kg.jpg",
+    path: "/images/products/sw-pembe-ugali-1kg.jpg",
+    alt: "Pembe Ugali 1KG Bale",
+    isPrimary: true
+  },
+  {
+    id: 103309,
+    productId: 103309,
+    filename: "sw-pembe-ugali-10kg.jpg",
+    path: "/images/products/sw-pembe-ugali-10kg.jpg",
+    alt: "Pembe Ugali 10KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 103310,
+    productId: 103310,
+    filename: "sw-pembe-ugali-2kg.jpg",
+    path: "/images/products/sw-pembe-ugali-2kg.jpg",
+    alt: "Pembe Ugali 2KG 1/2bale",
+    isPrimary: true
+  },
+  {
+    id: 103311,
+    productId: 103311,
+    filename: "sw-pembe-ugali-5kg.jpg",
+    path: "/images/products/sw-pembe-ugali-5kg.jpg",
+    alt: "Pembe Ugali 5KG Bag",
+    isPrimary: true
+  },
+  {
+    id: 103312,
+    productId: 103312,
+    filename: "sw-pendo-jumbo-tissue.jpg",
+    path: "/images/products/sw-pendo-jumbo-tissue.jpg",
+    alt: "Pendo Jumbo Tissue Bale",
+    isPrimary: true
+  },
+  {
+    id: 103313,
+    productId: 103313,
+    filename: "sw-pendo-roll-poa-tissue-unwrapped.jpg",
+    path: "/images/products/sw-pendo-roll-poa-tissue-unwrapped.jpg",
+    alt: "Pendo Roll POA Tissue (Unwrapped) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103314,
+    productId: 103314,
+    filename: "sw-pendo-roll-poa-tissue-wrapped-white.jpg",
+    path: "/images/products/sw-pendo-roll-poa-tissue-wrapped-white.jpg",
+    alt: "Pendo Roll POA Tissue (Wrapped) (White) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103315,
+    productId: 103315,
+    filename: "sw-pentonic-fine-point-pens-3pcs-assorted.jpg",
+    path: "/images/products/sw-pentonic-fine-point-pens-3pcs-assorted.jpg",
+    alt: "Pentonic Fine Point Pens 3PCS Assorted Packet",
+    isPrimary: true
+  },
+  {
+    id: 103316,
+    productId: 103316,
+    filename: "sw-pep-apple-drink-12x500ml.jpg",
+    path: "/images/products/sw-pep-apple-drink-12x500ml.jpg",
+    alt: "Pep Apple Drink 12x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103317,
+    productId: 103317,
+    filename: "sw-pep-cocopine-drink-1ltr.jpg",
+    path: "/images/products/sw-pep-cocopine-drink-1ltr.jpg",
+    alt: "Pep Cocopine Drink 1LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 103318,
+    productId: 103318,
+    filename: "sw-pep-cocopine-drink-3ltr.jpg",
+    path: "/images/products/sw-pep-cocopine-drink-3ltr.jpg",
+    alt: "Pep Cocopine Drink 3LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 103319,
+    productId: 103319,
+    filename: "sw-pep-cocopine-drink-5ltr.jpg",
+    path: "/images/products/sw-pep-cocopine-drink-5ltr.jpg",
+    alt: "Pep Cocopine Drink 5LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 103320,
+    productId: 103320,
+    filename: "sw-pep-dawa-drink-12x500ml.jpg",
+    path: "/images/products/sw-pep-dawa-drink-12x500ml.jpg",
+    alt: "Pep Dawa Drink 12x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103321,
+    productId: 103321,
+    filename: "sw-pep-drink-1ltr-passion.jpg",
+    path: "/images/products/sw-pep-drink-1ltr-passion.jpg",
+    alt: "Pep Drink 1LTR (Passion) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103322,
+    productId: 103322,
+    filename: "sw-pep-lime-juice-1.5ltr.jpg",
+    path: "/images/products/sw-pep-lime-juice-1.5ltr.jpg",
+    alt: "Pep Lime Juice 1.5LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 103323,
+    productId: 103323,
+    filename: "sw-pep-mango-drink-12x500ml.jpg",
+    path: "/images/products/sw-pep-mango-drink-12x500ml.jpg",
+    alt: "Pep Mango Drink 12x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103324,
+    productId: 103324,
+    filename: "sw-pep-mango-drink-3ltr.jpg",
+    path: "/images/products/sw-pep-mango-drink-3ltr.jpg",
+    alt: "Pep Mango Drink 3LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 103325,
+    productId: 103325,
+    filename: "sw-pep-passion-drink-3ltr.jpg",
+    path: "/images/products/sw-pep-passion-drink-3ltr.jpg",
+    alt: "Pep Passion Drink 3LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 103326,
+    productId: 103326,
+    filename: "sw-pep-passion-drink-5ltr.jpg",
+    path: "/images/products/sw-pep-passion-drink-5ltr.jpg",
+    alt: "Pep Passion Drink 5LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 103327,
+    productId: 103327,
+    filename: "sw-pep-pineapple-drink-3ltr.jpg",
+    path: "/images/products/sw-pep-pineapple-drink-3ltr.jpg",
+    alt: "Pep Pineapple Drink 3LTR Piece",
+    isPrimary: true
+  },
+  {
+    id: 103328,
+    productId: 103328,
+    filename: "sw-pep-pineapple-drink-5ltr.jpg",
+    path: "/images/products/sw-pep-pineapple-drink-5ltr.jpg",
+    alt: "Pep Pineapple Drink 5LTR Jerican",
+    isPrimary: true
+  },
+  {
+    id: 103329,
+    productId: 103329,
+    filename: "sw-pepsi-cola-12x330ml.jpg",
+    path: "/images/products/sw-pepsi-cola-12x330ml.jpg",
+    alt: "Pepsi Cola 12x330ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103330,
+    productId: 103330,
+    filename: "sw-pepsi-cola-12x500ml.jpg",
+    path: "/images/products/sw-pepsi-cola-12x500ml.jpg",
+    alt: "Pepsi Cola 12x500ML Piece",
+    isPrimary: true
+  },
+  {
+    id: 103331,
+    productId: 103331,
+    filename: "sw-pepsi-cola-6x2l.jpg",
+    path: "/images/products/sw-pepsi-cola-6x2l.jpg",
+    alt: "Pepsi Cola 6x2L Piece",
+    isPrimary: true
+  },
+  {
+    id: 103332,
+    productId: 103332,
+    filename: "sw-pepsodent-charcoal-toothpaste-72x130g.jpg",
+    path: "/images/products/sw-pepsodent-charcoal-toothpaste-72x130g.jpg",
+    alt: "Pepsodent Charcoal Toothpaste 72x130G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103333,
+    productId: 103333,
+    filename: "sw-pepsodent-toothpaste-charcoal-130g-banded-2s.jpg",
+    path: "/images/products/sw-pepsodent-toothpaste-charcoal-130g-banded-2s.jpg",
+    alt: "Pepsodent Toothpaste Charcoal 130G (Banded Value Pack) (2's) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103334,
+    productId: 103334,
+    filename: "sw-pepsodent-toothbrush-12s-easy-clean.jpg",
+    path: "/images/products/sw-pepsodent-toothbrush-12s-easy-clean.jpg",
+    alt: "Pepsodent Toothbrush 12'S (Easy Clean) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103335,
+    productId: 103335,
+    filename: "sw-pepsodent-toothbrush-12s-smart-clean.jpg",
+    path: "/images/products/sw-pepsodent-toothbrush-12s-smart-clean.jpg",
+    alt: "Pepsodent Toothbrush 12'S (Smart Clean) Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103336,
+    productId: 103336,
+    filename: "sw-pepsodent-toothpaste-herbal-150g-banded-2s.jpg",
+    path: "/images/products/sw-pepsodent-toothpaste-herbal-150g-banded-2s.jpg",
+    alt: "Pepsodent Toothpaste Herbal 150G (Banded Value Pack) (2's) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103337,
+    productId: 103337,
+    filename: "sw-pepsodent-toothpaste-charcoal-30g.jpg",
+    path: "/images/products/sw-pepsodent-toothpaste-charcoal-30g.jpg",
+    alt: "Pepsodent Toothpaste Charcoal 30G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103338,
+    productId: 103338,
+    filename: "sw-pepsodent-toothpaste-cavity-fighter-150g-6s.jpg",
+    path: "/images/products/sw-pepsodent-toothpaste-cavity-fighter-150g-6s.jpg",
+    alt: "Pepsodent Toothpaste Cavity Fighter 150G (6's) Outer",
+    isPrimary: true
+  },
+  {
+    id: 103339,
+    productId: 103339,
+    filename: "sw-pepsodent-toothpaste-cavity-fighter-150g-banded.jpg",
+    path: "/images/products/sw-pepsodent-toothpaste-cavity-fighter-150g-banded.jpg",
+    alt: "Pepsodent Toothpaste Cavity Fighter 150G (Banded Value Pack) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103340,
+    productId: 103340,
+    filename: "sw-pepsodent-toothpaste-cavity-fighter-30g.jpg",
+    path: "/images/products/sw-pepsodent-toothpaste-cavity-fighter-30g.jpg",
+    alt: "Pepsodent Toothpaste Cavity Fighter 30G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103341,
+    productId: 103341,
+    filename: "sw-pepsodent-toothpaste-cavity-fighter-65g.jpg",
+    path: "/images/products/sw-pepsodent-toothpaste-cavity-fighter-65g.jpg",
+    alt: "Pepsodent Toothpaste Cavity Fighter 65G Outer",
+    isPrimary: true
+  },
+  {
+    id: 103342,
+    productId: 103342,
+    filename: "sw-pepsodent-toothpaste-herbal-30g.jpg",
+    path: "/images/products/sw-pepsodent-toothpaste-herbal-30g.jpg",
+    alt: "Pepsodent Toothpaste Herbal 30G Dozen",
+    isPrimary: true
+  },
+  {
+    id: 103343,
+    productId: 103343,
+    filename: "sw-pepsodent-toothpaste-herbal-65g.jpg",
+    path: "/images/products/sw-pepsodent-toothpaste-herbal-65g.jpg",
+    alt: "Pepsodent Toothpaste Herbal 65G Outer",
+    isPrimary: true
+  },
+  {
+    id: 103344,
+    productId: 103344,
+    filename: "sw-peptang-african-honey-12x500g.jpg",
+    path: "/images/products/sw-peptang-african-honey-12x500g.jpg",
+    alt: "Peptang African Honey 12x500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103345,
+    productId: 103345,
+    filename: "sw-peptang-chilli-sauce-24x375g.jpg",
+    path: "/images/products/sw-peptang-chilli-sauce-24x375g.jpg",
+    alt: "Peptang Chilli Sauce 24x375G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103346,
+    productId: 103346,
+    filename: "sw-peptang-choma-sauce-24x400g.jpg",
+    path: "/images/products/sw-peptang-choma-sauce-24x400g.jpg",
+    alt: "Peptang Choma Sauce 24x400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103347,
+    productId: 103347,
+    filename: "sw-peptang-hot-sweet-sauce-12x720g.jpg",
+    path: "/images/products/sw-peptang-hot-sweet-sauce-12x720g.jpg",
+    alt: "Peptang Hot & Sweet Sauce 12x720G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103348,
+    productId: 103348,
+    filename: "sw-peptang-hot-sweet-sauce-24x250g.jpg",
+    path: "/images/products/sw-peptang-hot-sweet-sauce-24x250g.jpg",
+    alt: "Peptang Hot & Sweet Sauce 24x250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103349,
+    productId: 103349,
+    filename: "sw-peptang-hot-sweet-sauce-24x420g.jpg",
+    path: "/images/products/sw-peptang-hot-sweet-sauce-24x420g.jpg",
+    alt: "Peptang Hot & Sweet Sauce 24x420G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103350,
+    productId: 103350,
+    filename: "sw-peptang-mixed-fruit-jam-12x1kg.jpg",
+    path: "/images/products/sw-peptang-mixed-fruit-jam-12x1kg.jpg",
+    alt: "Peptang Mixed Fruit Jam 12x1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103351,
+    productId: 103351,
+    filename: "sw-peptang-mixed-fruit-jam-250g.jpg",
+    path: "/images/products/sw-peptang-mixed-fruit-jam-250g.jpg",
+    alt: "Peptang Mixed Fruit Jam 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103352,
+    productId: 103352,
+    filename: "sw-peptang-mixed-fruit-jam-500g.jpg",
+    path: "/images/products/sw-peptang-mixed-fruit-jam-500g.jpg",
+    alt: "Peptang Mixed Fruit Jam 500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103353,
+    productId: 103353,
+    filename: "sw-peptang-peanut-butter-12x400g-creamy-red.jpg",
+    path: "/images/products/sw-peptang-peanut-butter-12x400g-creamy-red.jpg",
+    alt: "Peptang Peanut Butter 12x400G (Creamy Red) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103354,
+    productId: 103354,
+    filename: "sw-peptang-peanut-butter-12x400g-crunchy-blue.jpg",
+    path: "/images/products/sw-peptang-peanut-butter-12x400g-crunchy-blue.jpg",
+    alt: "Peptang Peanut Butter 12x400G (Crunchy - Blue) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103355,
+    productId: 103355,
+    filename: "sw-peptang-peanut-butter-12x800g-creamy-red.jpg",
+    path: "/images/products/sw-peptang-peanut-butter-12x800g-creamy-red.jpg",
+    alt: "Peptang Peanut Butter 12x800G (Creamy - Red) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103356,
+    productId: 103356,
+    filename: "sw-peptang-peanut-butter-800g-crunchy-blue.jpg",
+    path: "/images/products/sw-peptang-peanut-butter-800g-crunchy-blue.jpg",
+    alt: "Peptang Peanut Butter 800G (Crunchy - Blue) Piece",
+    isPrimary: true
+  },
+  {
+    id: 103357,
+    productId: 103357,
+    filename: "sw-peptang-red-plum-jam-12x500g.jpg",
+    path: "/images/products/sw-peptang-red-plum-jam-12x500g.jpg",
+    alt: "Peptang Red Plum Jam 12x500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103358,
+    productId: 103358,
+    filename: "sw-peptang-red-plum-jam-250g.jpg",
+    path: "/images/products/sw-peptang-red-plum-jam-250g.jpg",
+    alt: "Peptang Red Plum Jam 250G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103359,
+    productId: 103359,
+    filename: "sw-peptang-red-plum-jam-12x1kg.jpg",
+    path: "/images/products/sw-peptang-red-plum-jam-12x1kg.jpg",
+    alt: "Peptang Red Plum Jam 12x1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103360,
+    productId: 103360,
+    filename: "sw-peptang-strawberry-jam-12x500g.jpg",
+    path: "/images/products/sw-peptang-strawberry-jam-12x500g.jpg",
+    alt: "Peptang Strawberry Jam 12x500G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103361,
+    productId: 103361,
+    filename: "sw-peptang-tomato-ketchup-12x700g.jpg",
+    path: "/images/products/sw-peptang-tomato-ketchup-12x700g.jpg",
+    alt: "Peptang Tomato Ketchup 12x700G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103362,
+    productId: 103362,
+    filename: "sw-peptang-tomato-ketchup-24x400g.jpg",
+    path: "/images/products/sw-peptang-tomato-ketchup-24x400g.jpg",
+    alt: "Peptang Tomato Ketchup 24x400G Piece",
+    isPrimary: true
+  },
+  {
+    id: 103363,
+    productId: 103363,
+    filename: "sw-peptang-tomato-ketchup-360x20g.jpg",
+    path: "/images/products/sw-peptang-tomato-ketchup-360x20g.jpg",
+    alt: "Peptang Tomato Ketchup 360x20G Carton",
+    isPrimary: true
+  },
+  {
+    id: 103364,
+    productId: 103364,
+    filename: "sw-peptang-tomato-ketchup-5l.jpg",
+    path: "/images/products/sw-peptang-tomato-ketchup-5l.jpg",
+    alt: "Peptang Tomato Ketchup 5L Jerican",
+    isPrimary: true
+  },
+  {
+    id: 103365,
+    productId: 103365,
+    filename: "sw-peptang-tomato-sauce-12x1kg.jpg",
+    path: "/images/products/sw-peptang-tomato-sauce-12x1kg.jpg",
+    alt: "Peptang Tomato Sauce 12x1KG Piece",
+    isPrimary: true
+  },
+  {
+    id: 103366,
+    productId: 103366,
+    filename: "sw-peptang-tomato-sauce-12x700g.jpg",
+    path: "/images/products/sw-peptang-tomato-sauce-12x700g.jpg",
+    alt: "Peptang Tomato Sauce 12x700G Piece",
+    isPrimary: true
+  },
 ];
 
 // Helper functions for image management
