@@ -72,7 +72,7 @@ export function ChatView({
   setSearchMode,
 }: ChatViewProps) {
   // Original welcome messages restored
-  const welcomeMessages = ["Niaje.", "Twende.", "What do you want to get?", "#Wantam."]
+  const welcomeMessages = ["What do you want to get?", "What are you looking for?", "How can I help you?", "What can I assist you with?", "What do you need?", "How can I assist you today?", "What are you looking for today?", "How can I help you today?", "What can I help you with today?", "What do you need help with today?", "What can I assist you with today?", "How can I help you right now?", "What do you need right now?", "How can I assist you right now?", "What are you looking for right now?"]
   const [randomMessage, setRandomMessage] = useState("")
   const [isLargeScreen, setIsLargeScreen] = useState(false)
   const [typingMessageId, setTypingMessageId] = useState<string | null>(null)
