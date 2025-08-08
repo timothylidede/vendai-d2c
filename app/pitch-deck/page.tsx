@@ -189,6 +189,7 @@ const slides = [
     content: {
         seeking: "$100,000 angel investment",
         valuation: "Pre-money valuation of $500,000",
+        
         useOfFunds: [
         "Legal + Incorporation",
         "GTM Ops",
