@@ -187,7 +187,8 @@ const slides = [
     type: "ask",
     title: "The Ask",
     content: {
-        seeking: "$50,000 angel investment",
+        seeking: "$100,000 angel investment",
+        valuation: "Pre-money valuation of $500,000",
         useOfFunds: [
         "Legal + Incorporation",
         "GTM Ops",
