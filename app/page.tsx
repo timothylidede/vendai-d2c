@@ -184,7 +184,7 @@ export default function Home() {
     }
   }, [searchMode]);
 
-  // Load data from localStorage on initial mount
+  // Load data from localStorage on initial mount (guests: do NOT load chat memory)
   useEffect(() => {
     if (typeof window !== "undefined") {
       try {
@@ -200,24 +200,10 @@ export default function Home() {
           setOrders(JSON.parse(savedOrders));
         }
 
-        // Load chat sessions
-        const savedSessions = localStorage.getItem("vendai-chat-sessions");
-        if (savedSessions) {
-          setChatSessions(JSON.parse(savedSessions));
-        }
+        // Intentionally skip loading chat sessions/messages for guests
+        // Logged-in users will load chat memory in the user data effect below
 
-        // Load current messages and session ID
-        const savedMessages = localStorage.getItem("vendai-current-messages");
-        if (savedMessages) {
-          setMessages(JSON.parse(savedMessages));
-        }
-
-        const savedSessionId = localStorage.getItem("vendai-current-session-id");
-        if (savedSessionId) {
-          setCurrentSessionId(savedSessionId);
-        }
-
-        console.log("[LocalStorage] Data restored from localStorage");
+        console.log("[LocalStorage] Cart and orders restored from localStorage");
       } catch (error) {
         console.error("Error loading data from localStorage:", error);
       }
@@ -297,16 +283,27 @@ export default function Home() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      localStorage.setItem("vendai-chat-sessions", JSON.stringify(chatSessions));
+      if (user?.uid) {
+        localStorage.setItem("vendai-chat-sessions", JSON.stringify(chatSessions));
+      } else {
+        // Do not persist chat sessions for guests
+        localStorage.removeItem("vendai-chat-sessions");
+      }
     }
-  }, [chatSessions]);
+  }, [chatSessions, user?.uid]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      localStorage.setItem("vendai-current-messages", JSON.stringify(messages));
-      localStorage.setItem("vendai-current-session-id", currentSessionId);
+      if (user?.uid) {
+        localStorage.setItem("vendai-current-messages", JSON.stringify(messages));
+        localStorage.setItem("vendai-current-session-id", currentSessionId);
+      } else {
+        // Do not persist chat messages for guests
+        localStorage.removeItem("vendai-current-messages");
+        localStorage.removeItem("vendai-current-session-id");
+      }
     }
-  }, [messages, currentSessionId]);
+  }, [messages, currentSessionId, user?.uid]);
 
   // Cart sync
   useEffect(() => {
@@ -450,6 +447,8 @@ export default function Home() {
 
   // IMPROVED updateChatSession function
   const updateChatSession = (newMessages: Message[]) => {
+    // Do not keep chat memory when not logged in
+    if (!user?.uid) return;
     if (newMessages.length < 2) return;
 
     try {
@@ -689,6 +688,8 @@ export default function Home() {
   const handleBackToChat = () => {
     setCurrentView("chat");
     setShowOrderHistory(false);
+    // Clear messages to show welcome screen
+    setMessages([]);
   };
 
   const handleBackToMain = () => {

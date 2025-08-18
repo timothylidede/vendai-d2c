@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { motion as fm } from "framer-motion"
 import { Plus, Package, Eye, Star, MapPin, Phone, Mail, Award } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
@@ -35,29 +36,35 @@ export function ProductCardResponse({ products, onAddToCart, explanation, distri
           return (
             <motion.div
               key={product.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="glass-effect rounded-xl p-4 hover:bg-white/5 transition-all duration-300 group relative"
+              initial={{ opacity: 0, y: 12, scale: 0.98 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.25, ease: [0.2, 0.8, 0.2, 1], delay: index * 0.06 }}
+              className="relative rounded-2xl p-4 transition-all duration-300 group"
+              style={{ boxShadow: "var(--shadow-card, 0 6px 18px rgba(0,0,0,0.28))", background: "rgba(255,255,255,0.06)", backdropFilter: "blur(8px)" }}
             >
-              <div className="aspect-square bg-gradient-to-br from-white/10 to-white/5 rounded-lg mb-3 flex items-center justify-center group-hover:from-white/15 group-hover:to-white/10 transition-all duration-300 overflow-hidden">
-                {product.image && !product.image.includes("placeholder") ? (
-                  <img
-                    src={product.image || "/placeholder.svg"}
+              <div className="relative" style={{ perspective: 1000 }}>
+                {/* Floating image layer */}
+                {product.image && !product.image.includes("placeholder") && (
+                  <motion.img
+                    src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="absolute -top-10 left-1/2 w-24 h-24 object-contain -translate-x-1/2"
+                    style={{ filter: "drop-shadow(0 12px 28px rgba(0,0,0,0.32))" }}
+                    whileHover={{ y: -4, rotateX: 2, rotateY: -2 }}
+                    transition={{ type: "spring", stiffness: 220, damping: 20 }}
                     onError={(e) => {
                       const target = e.target as HTMLImageElement
                       target.style.display = "none"
-                      target.nextElementSibling?.classList.remove("hidden")
                     }}
                   />
-                ) : null}
-                <Package
-                  className={`h-8 w-8 text-gray-400 group-hover:text-gray-300 transition-colors ${
-                    product.image && !product.image.includes("placeholder") ? "hidden" : ""
-                  }`}
-                />
+                )}
+
+                {/* Base image well as fallback/icon */}
+                <div className="aspect-square bg-gradient-to-br from-white/10 to-white/5 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                  <Package
+                    className={`h-8 w-8 text-gray-400 ${product.image && !product.image.includes("placeholder") ? "opacity-0" : "opacity-100"}`}
+                  />
+                </div>
               </div>
 
               <div className="space-y-3">
@@ -155,7 +162,8 @@ export function ProductCardResponse({ products, onAddToCart, explanation, distri
                     <Button
                       size="sm"
                       onClick={() => onAddToCart(product)}
-                      className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-lg shadow-lg text-xs px-3 py-1.5"
+                      className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-lg shadow-l2 text-xs px-3 py-1.5"
+                      style={{ boxShadow: "0 6px 18px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.10)" }}
                     >
                       <Plus className="h-3 w-3 mr-1" />
                       Add

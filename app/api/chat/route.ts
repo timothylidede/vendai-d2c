@@ -141,6 +141,65 @@ function createErrorResponse(message: string, statusCode = 500, errorCode?: stri
   )
 }
 
+// Helper functions for extracting user context
+function extractBusinessType(messages: any[]): string | undefined {
+  for (const message of messages) {
+    const content = message.content?.toLowerCase() || '';
+    if (content.includes('shop') || content.includes('store') || content.includes('duka')) {
+      return 'retailer';
+    }
+    if (content.includes('wholesale') || content.includes('distributor') || content.includes('supply')) {
+      return 'distributor';
+    }
+  }
+  return undefined;
+}
+
+function extractOrderHistory(messages: any[]): any[] {
+  // Extract order-related information from conversation
+  const orderHistory: any[] = [];
+  for (const message of messages) {
+    const content = message.content?.toLowerCase() || '';
+    if (content.includes('ordered') || content.includes('bought') || content.includes('purchased')) {
+      // This is a simplified extraction - in a real system you'd parse actual order data
+      orderHistory.push({
+        productId: 'unknown',
+        quantity: 1,
+        date: new Date().toISOString()
+      });
+    }
+  }
+  return orderHistory;
+}
+
+function extractUserPreferences(messages: any[]): any {
+  const preferences = {
+    categories: [] as string[],
+    brands: [] as string[],
+    priceRange: { min: 0, max: 10000 },
+    bulkPreference: false
+  };
+
+  for (const message of messages) {
+    const content = message.content?.toLowerCase() || '';
+    
+    // Extract price preferences
+    if (content.includes('cheap') || content.includes('budget') || content.includes('affordable')) {
+      preferences.priceRange.max = 800;
+    }
+    if (content.includes('premium') || content.includes('luxury') || content.includes('expensive')) {
+      preferences.priceRange.min = 1000;
+    }
+    
+    // Extract bulk preferences
+    if (content.includes('bulk') || content.includes('wholesale') || content.includes('many')) {
+      preferences.bulkPreference = true;
+    }
+  }
+
+  return preferences;
+}
+
 function validateSearchRequest(body: any): { valid: boolean; error?: string } {
   try {
     if (!body) {
@@ -233,7 +292,15 @@ export async function POST(req: Request) {
 
     console.log(`🔍 ${searchMode.toUpperCase()} SEARCH: "${query}"`);
 
-    const response = await handle_Search("user", query, searchMode);
+    // Extract user context from messages for agentic behavior
+    const userContext = {
+      businessType: extractBusinessType(messages),
+      orderHistory: extractOrderHistory(messages),
+      preferences: extractUserPreferences(messages),
+      conversationLength: messages.length
+    };
+
+    const response = await handle_Search("user", query, searchMode, userContext);
     console.log("handle_Search response:", {
       productIds: response.productIds,
       vendaiResponse: response.vendaiResponse,

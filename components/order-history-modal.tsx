@@ -166,7 +166,11 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                     const trackingSteps = getTrackingSteps(order.status)
 
                     return (
-                      <div key={order.id} className="glass-effect rounded-lg overflow-hidden bg-black/30">
+                      <div
+                        key={order.id}
+                        className="glass-effect rounded-lg overflow-hidden bg-black/30"
+                        style={{ boxShadow: "0 6px 18px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.06)" }}
+                      >
                         {/* Order Header */}
                         <div
                           className="p-4 cursor-pointer hover:bg-white/5 transition-colors"
@@ -216,7 +220,14 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                               transition={{ duration: 0.3 }}
                               className="border-t border-white/10"
                             >
-                              <div className="p-4 space-y-6 bg-black/20">
+                              <div
+                                className="p-4 space-y-6 bg-black/20"
+                                style={{
+                                  backgroundImage:
+                                    "repeating-linear-gradient(180deg, rgba(255,255,255,0.04) 0px, rgba(255,255,255,0.04) 1px, transparent 1px, transparent 28px)",
+                                  boxShadow: "inset 0 1px 0 rgba(255,255,255,0.04)",
+                                }}
+                              >
                                 {/* Order Progress */}
                                 <div>
                                   <h4 className="font-medium mb-4 flex items-center space-x-2 text-white">
@@ -274,6 +285,7 @@ export function OrderHistoryModal({ show, onClose, orders }: OrderHistoryModalPr
                                       <div
                                         key={item.id}
                                         className="flex items-center justify-between p-3 glass-effect rounded-lg bg-white/5"
+                                        style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.06)" }}
                                       >
                                         <div className="flex items-center space-x-3">
                                           <div className="w-10 h-10 bg-white/10 rounded-lg overflow-hidden">

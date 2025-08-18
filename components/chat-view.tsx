@@ -78,10 +78,63 @@ export function ChatView({
   const [typingMessageId, setTypingMessageId] = useState<string | null>(null)
   const [typedMessages, setTypedMessages] = useState<Set<string>>(new Set())
   const [showTools, setShowTools] = useState(false)
+  const [showAgenticFeatures, setShowAgenticFeatures] = useState(false)
+  const [agenticInsights, setAgenticInsights] = useState<string[]>([])
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const chatContainerRef = useRef<HTMLDivElement>(null)
   const lastProcessedMessageCountRef = useRef(0)
   const toolsRef = useRef<HTMLDivElement>(null)
+
+  // Generate agentic insights based on conversation
+  const generateAgenticInsights = (messages: Message[]): string[] => {
+    const insights: string[] = []
+    
+    if (messages.length === 0) return insights
+
+    // Analyze business context
+    const businessKeywords = messages.some(msg => 
+      msg.content.toLowerCase().includes('shop') || 
+      msg.content.toLowerCase().includes('store') || 
+      msg.content.toLowerCase().includes('duka')
+    )
+    
+    if (businessKeywords) {
+      insights.push("I can see you're running a business. Let me help you optimize your inventory!")
+    }
+
+    // Analyze product preferences
+    const productCategories = new Set<string>()
+    messages.forEach(msg => {
+      if (msg.products && msg.products.length > 0) {
+        msg.products.forEach(product => {
+          productCategories.add(product.category)
+        })
+      }
+    })
+
+    if (productCategories.size > 0) {
+      insights.push(`You're interested in ${Array.from(productCategories).join(', ')}. I can suggest complementary products!`)
+    }
+
+    // Analyze ordering patterns
+    const hasOrdered = messages.some(msg => 
+      msg.content.toLowerCase().includes('order') || 
+      msg.content.toLowerCase().includes('buy') || 
+      msg.content.toLowerCase().includes('purchase')
+    )
+
+    if (hasOrdered) {
+      insights.push("Based on your ordering history, I can suggest bulk deals for better margins!")
+    }
+
+    // Seasonal recommendations
+    const currentMonth = new Date().toLocaleString('en-US', { month: 'long' })
+    if (['December', 'January'].includes(currentMonth)) {
+      insights.push("It's the holiday season! Beverages and snacks are in high demand.")
+    }
+
+    return insights.slice(0, 3) // Limit to 3 insights
+  }
 
   // Enhanced auto-scroll function
   const scrollToBottom = useCallback(() => {
@@ -99,6 +152,14 @@ export function ChatView({
   useEffect(() => {
     scrollToBottom()
   }, [messages, isLoading, scrollToBottom])
+
+  // Generate agentic insights when messages change
+  useEffect(() => {
+    if (showAgenticFeatures && messages.length > 0) {
+      const insights = generateAgenticInsights(messages)
+      setAgenticInsights(insights)
+    }
+  }, [messages, showAgenticFeatures])
 
   // Track new AI messages for typing animation
   useEffect(() => {
@@ -361,6 +422,27 @@ export function ChatView({
                         </div>
                       )}
                     </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setShowAgenticFeatures(!showAgenticFeatures)
+                        setShowTools(false)
+                      }}
+                      className={`w-full px-3 py-2 text-left hover:bg-gray-700/50 transition-colors flex items-center space-x-3 ${
+                        showAgenticFeatures ? "text-pink-400 bg-gray-700/30" : "text-gray-300"
+                      }`}
+                    >
+                      <Zap className="h-4 w-4" />
+                      <div>
+                        <div className="text-sm">AI Insights</div>
+                        <div className="text-xs text-gray-500">Business intelligence</div>
+                      </div>
+                      {showAgenticFeatures && (
+                        <div className="ml-auto">
+                          <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                        </div>
+                      )}
+                    </button>
                   </motion.div>
                 )}
               </div>
@@ -443,6 +525,33 @@ export function ChatView({
             </div>
           )}
         </div>
+
+        {/* Agentic Insights Panel */}
+        {showAgenticFeatures && agenticInsights.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="w-full max-w-4xl mx-auto mb-4 p-4 rounded-xl glass-effect border-l-4 border-gradient-to-r from-purple-500 to-pink-500"
+          >
+            <div className="flex items-center space-x-2 mb-2">
+              <Zap className="h-4 w-4 text-purple-400" />
+              <h3 className="text-sm font-semibold text-purple-400">AI Business Insights</h3>
+            </div>
+            <div className="space-y-2">
+              {agenticInsights.map((insight, index) => (
+                <motion.p
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="text-sm text-gray-300"
+                >
+                  💡 {insight}
+                </motion.p>
+              ))}
+            </div>
+          </motion.div>
+        )}
 
         {/* Chat Messages */}
         <div className="w-full max-w-4xl mx-auto space-y-2 md:space-y-4 pb-4 md:pb-24">

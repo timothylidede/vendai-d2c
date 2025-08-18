@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import { shadows } from "./lib/design-tokens"
 
 const config: Config = {
   content: [
@@ -9,6 +10,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        l0: shadows.l0,
+        l1: shadows.l1,
+        l2: shadows.l2,
+        l3: shadows.l3,
+        l4: shadows.l4,
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

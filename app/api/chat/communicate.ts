@@ -16,6 +16,25 @@ interface SearchCache {
   }
 }
 
+// Agentic conversation memory
+interface ConversationMemory {
+  userId: string
+  businessType?: 'retailer' | 'distributor'
+  preferences: {
+    categories: string[]
+    brands: string[]
+    priceRange: { min: number; max: number }
+    bulkPreference: boolean
+  }
+  orderHistory: {
+    productId: string
+    quantity: number
+    date: string
+  }[]
+  lastInteraction: string
+  seasonalTrends: string[]
+}
+
 // Enhanced search intent with semantic understanding
 interface SearchIntent {
   cleanQuery: string
@@ -26,6 +45,57 @@ interface SearchIntent {
   semanticKeywords: string[]
   category?: string
   brand?: string
+  businessContext?: string
+  seasonalRelevance?: boolean
+}
+
+// Agentic business intelligence
+class BusinessIntelligenceAgent {
+  private static readonly SEASONAL_TRENDS = {
+    'december': ['beverages', 'snacks', 'cleaning-products'],
+    'january': ['cleaning-products', 'personal-care---hygiene'],
+    'february': ['beverages', 'snacks'],
+    'march': ['beverages', 'snacks'],
+    'april': ['beverages', 'snacks'],
+    'may': ['beverages', 'snacks'],
+    'june': ['beverages', 'snacks'],
+    'july': ['beverages', 'snacks'],
+    'august': ['beverages', 'snacks'],
+    'september': ['beverages', 'snacks'],
+    'october': ['beverages', 'snacks'],
+    'november': ['beverages', 'snacks', 'cleaning-products']
+  }
+
+  private static readonly COMPLEMENTARY_PRODUCTS = {
+    'beverages': ['snacks', 'cleaning-products'],
+    'snacks': ['beverages', 'cleaning-products'],
+    'cleaning-products': ['personal-care---hygiene', 'household-items'],
+    'personal-care---hygiene': ['cleaning-products', 'household-items']
+  }
+
+  static getSeasonalRecommendations(): string[] {
+    const currentMonth = new Date().toLocaleString('en-US', { month: 'long' }).toLowerCase()
+    return this.SEASONAL_TRENDS[currentMonth as keyof typeof this.SEASONAL_TRENDS] || []
+  }
+
+  static getComplementaryCategories(category: string): string[] {
+    return this.COMPLEMENTARY_PRODUCTS[category.toLowerCase() as keyof typeof this.COMPLEMENTARY_PRODUCTS] || []
+  }
+
+  static suggestBulkPurchase(product: Product, userHistory: any[]): boolean {
+    // Suggest bulk if user has ordered this product before or if it's a high-demand item
+    const hasOrderedBefore = userHistory.some(order => order.productId === product.id)
+    const isHighDemand = ['beverages', 'snacks', 'cleaning-products'].includes(product.category.toLowerCase())
+    return hasOrderedBefore || isHighDemand
+  }
+
+  static calculateOptimalQuantity(product: Product, userHistory: any[]): number {
+    const previousOrders = userHistory.filter(order => order.productId === product.id)
+    if (previousOrders.length === 0) return 1
+    
+    const avgQuantity = previousOrders.reduce((sum, order) => sum + order.quantity, 0) / previousOrders.length
+    return Math.ceil(avgQuantity * 1.2) // Suggest 20% more than average
+  }
 }
 
 // Search text processor for intent recognition
@@ -60,6 +130,16 @@ class SearchTextProcessor {
     ready: { boost: "in_stock" },
   }
 
+  private static readonly BUSINESS_CONTEXT_KEYWORDS: Record<string, { context: string }> = {
+    shop: { context: "retailer" },
+    store: { context: "retailer" },
+    duka: { context: "retailer" },
+    business: { context: "retailer" },
+    wholesale: { context: "distributor" },
+    distributor: { context: "distributor" },
+    supply: { context: "distributor" },
+  }
+
   // Extract categories and brands from the product data
   private static readonly CATEGORIES = [...new Set(PRODUCTS.map(p => p.category.toLowerCase()))]
   private static readonly BRANDS = [...new Set(PRODUCTS.map(p => p.brand?.toLowerCase()).filter(Boolean))]
@@ -72,6 +152,16 @@ class SearchTextProcessor {
     let requiresInStock = false
     let detectedCategory: string | undefined
     let detectedBrand: string | undefined
+    let businessContext: string | undefined
+    let seasonalRelevance = false
+
+    // Check business context keywords
+    for (const [keyword, config] of Object.entries(this.BUSINESS_CONTEXT_KEYWORDS)) {
+      if (lowerQuery.includes(keyword)) {
+        businessContext = config.context
+        break
+      }
+    }
 
     // Check price keywords
     for (const [keyword, config] of Object.entries(this.PRICE_KEYWORDS)) {
@@ -106,6 +196,8 @@ class SearchTextProcessor {
     for (const category of this.CATEGORIES) {
       if (lowerQuery.includes(category)) {
         detectedCategory = category
+        // Check if category is seasonally relevant
+        seasonalRelevance = BusinessIntelligenceAgent.getSeasonalRecommendations().includes(category)
         break
       }
     }
@@ -122,6 +214,7 @@ class SearchTextProcessor {
       ...Object.keys(this.PRICE_KEYWORDS),
       ...Object.keys(this.QUANTITY_KEYWORDS),
       ...Object.keys(this.AVAILABILITY_KEYWORDS),
+      ...Object.keys(this.BUSINESS_CONTEXT_KEYWORDS),
     ]
 
     const cleanQuery = lowerQuery
@@ -139,6 +232,8 @@ class SearchTextProcessor {
       semanticKeywords: [],
       category: detectedCategory,
       brand: detectedBrand,
+      businessContext,
+      seasonalRelevance,
     }
   }
 
@@ -154,11 +249,18 @@ class SearchTextProcessor {
 // Query cache
 const queryCache: SearchCache = {}
 
-// Enhanced DeepSeek API integration for semantic search
+// DeepSeek → structured params for deterministic tool calls
 async function enhanceQueryWithDeepSeek(query: string): Promise<{
-  keywords: string[];
-  semanticMatches: string[];
-  suggestions: string[];
+  keywords: string[]
+  semanticMatches: string[]
+  suggestions: string[]
+  structured?: {
+    category?: string
+    brand?: string
+    size?: string
+    inStock?: boolean
+    bulk?: boolean
+  }
 }> {
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
@@ -176,20 +278,11 @@ async function enhanceQueryWithDeepSeek(query: string): Promise<{
           messages: [
             {
               role: "system",
-              content: `You are a product search assistant for an e-commerce platform. Your task is to extract and enhance search keywords based on user queries.
-Product Context (sample):
-${PRODUCTS.slice(0, 20)
-  .map(p => `${p.name} - ${p.description} (${p.category}, ${p.brand || 'No brand'})`)
-  .join('\n')}
-Instructions:
-1. Extract relevant search keywords from the user query
-2. Generate semantic matches and synonyms
-3. Suggest related product terms
-4. Focus on product names, categories, brands, and features
-5. Return response as JSON with keywords, semanticMatches, and suggestions arrays
-6. Keep responses concise and relevant`,
+              content: `You translate noisy retail queries into structured product filters.
+Return strict JSON: { keywords: string[], semanticMatches: string[], suggestions: string[], structured?: { category?: string, brand?: string, size?: string, inStock?: boolean, bulk?: boolean } }.
+Consider Kenyan slang and Kiswahili (e.g., "soda kubwa" ≈ 500ml bottle). Do not include text outside JSON.`,
             },
-            { role: "user", content: `Analyze this search query and provide enhanced keywords: "${query}"` },
+            { role: "user", content: `Query: ${query}` },
           ],
           max_tokens: 150,
           temperature: 0.3,
@@ -212,6 +305,7 @@ Instructions:
           keywords: Array.isArray(parsed.keywords) ? parsed.keywords : [],
           semanticMatches: Array.isArray(parsed.semanticMatches) ? parsed.semanticMatches : [],
           suggestions: Array.isArray(parsed.suggestions) ? parsed.suggestions : [],
+          structured: parsed.structured || undefined,
         };
       } catch {
         console.warn(`DeepSeek attempt ${attempt}: Failed to parse JSON, extracting keywords from text`);
@@ -292,7 +386,7 @@ function searchProductsLocally(
       if (b.category.toLowerCase().includes(cleanKeyword)) scoreB += 8
 
       // Brand matches
-      if (a.brand?.toLowerCase().includes(cleanKeyword)) scoreA += 6
+      if (a.brand?.toLowerCase().includes(cleanKeyword)) scoreB += 6
       if (b.brand?.toLowerCase().includes(cleanKeyword)) scoreB += 6
 
       // Description matches
@@ -327,69 +421,49 @@ function searchProductsLocally(
   return results.slice(0, SEARCH_CONFIG.MAX_RESULTS)
 }
 
-// Main search function
-async function searchProducts(
-  query: string,
-  searchMode: "fast" | "deep",
+// Agentic response generator
+function generateAgenticResponse(
+  results: Product[],
   intent: SearchIntent,
-): Promise<Product[]> {
-  const cacheKey = `${searchMode}_${query}_${JSON.stringify(intent)}`
-  const cached = queryCache[cacheKey]
-
-  if (cached && Date.now() - cached.timestamp < SEARCH_CONFIG.CACHE_DURATION) {
-    console.log(`📦 Using cached results for "${query}" (${searchMode})`)
-    return cached.results
-  }
-
-  let keywords: string[]
-  let enhancedData: { semanticMatches: string[]; suggestions: string[] } | undefined
-
-  if (searchMode === "deep") {
-    try {
-      const deepSeekResult = await enhanceQueryWithDeepSeek(intent.cleanQuery)
-      keywords = deepSeekResult.keywords
-      enhancedData = {
-        semanticMatches: deepSeekResult.semanticMatches,
-        suggestions: deepSeekResult.suggestions
-      }
-      console.log(`🤖 DeepSeek enhanced search for "${query}":`, deepSeekResult)
-    } catch (error) {
-      console.warn("DeepSeek enhancement failed, falling back to fast mode:", error)
-      keywords = SearchTextProcessor.normalizeQuery(intent.cleanQuery).split(" ")
-    }
-  } else {
-    // Fast mode: use simple keyword extraction
-    keywords = SearchTextProcessor.normalizeQuery(intent.cleanQuery).split(" ")
-  }
-
-  const results = searchProductsLocally(keywords, intent, enhancedData)
-
-  // Cache results
-  queryCache[cacheKey] = { results, timestamp: Date.now() }
-
-  console.log(`🔍 Found ${results.length} products for "${query}" (${searchMode})`)
-  return results
-}
-
-// Main search handler function
-export async function handle_Search(
-  userId: string,
-  query: string,
   searchMode: "fast" | "deep",
-): Promise<{ productIds: string[]; vendaiResponse: string; products: Product[] }> {
-  try {
-    console.log(`🔍 ${searchMode.toUpperCase()} search for: "${query}"`)
-    const intent = SearchTextProcessor.extractSearchIntent(query)
-    const results = await searchProducts(query, searchMode, intent)
+  userContext?: any
+): string {
+  let responseMessage = ""
 
-    const productIds = results.map((p) => p.id.toString())
-
-    let responseMessage = ""
-
-    if (results.length > 0) {
-      const categories = [...new Set(results.map((p) => p.category))]
-
-      // Build contextual response based on intent
+  if (results.length > 0) {
+    const categories = [...new Set(results.map((p) => p.category))]
+    
+    // Build contextual response based on intent and business context
+    if (intent.businessContext === "retailer") {
+      responseMessage = `Perfect! I found ${results.length} ${intent.cleanQuery || "product"} options for your shop.`
+      
+      // Add business insights
+      if (intent.seasonalRelevance) {
+        responseMessage += ` This is a great time to stock up on ${intent.category} - it's in high demand right now!`
+      }
+      
+      // Suggest bulk purchases for better margins
+      const bulkProducts = results.filter(p => BusinessIntelligenceAgent.suggestBulkPurchase(p, userContext?.orderHistory || []))
+      if (bulkProducts.length > 0) {
+        responseMessage += ` I recommend ordering the ${bulkProducts[0].name} in bulk for better profit margins.`
+      }
+      
+      // Suggest complementary products
+      if (intent.category) {
+        const complementary = BusinessIntelligenceAgent.getComplementaryCategories(intent.category)
+        if (complementary.length > 0) {
+          responseMessage += ` Would you also like to see some ${complementary[0]} options? They pair well with ${intent.category}.`
+        }
+      }
+    } else if (intent.businessContext === "distributor") {
+      responseMessage = `Excellent! Here are ${results.length} ${intent.cleanQuery || "product"} options for your distribution business.`
+      
+      // Add wholesale insights
+      if (intent.requiresWholesale) {
+        responseMessage += ` All these products are available in wholesale quantities.`
+      }
+    } else {
+      // Default response with proactive suggestions
       if (intent.boostFactors.includes("budget") || intent.boostFactors.includes("affordable")) {
         responseMessage = `Here are affordable ${intent.cleanQuery || "product"} options I found:`
       } else if (intent.boostFactors.includes("premium") || intent.boostFactors.includes("luxury")) {
@@ -407,51 +481,156 @@ export async function handle_Search(
       } else {
         responseMessage = `Here are the ${intent.cleanQuery || "product"} options I found:`
       }
+    }
 
-      // Add price range if available
-      if (results.length > 1) {
-        const prices = results.map((p) => p.price)
-        const minPrice = Math.min(...prices)
-        const maxPrice = Math.max(...prices)
-        if (minPrice !== maxPrice) {
-          responseMessage += ` (KES ${minPrice.toLocaleString()} - ${maxPrice.toLocaleString()})`
+    // Add price range if available
+    if (results.length > 1) {
+      const prices = results.map((p) => p.price)
+      const minPrice = Math.min(...prices)
+      const maxPrice = Math.max(...prices)
+      if (minPrice !== maxPrice) {
+        responseMessage += ` (KES ${minPrice.toLocaleString()} - ${maxPrice.toLocaleString()})`
+      }
+    }
+
+    // Add search mode indicator for deep search
+    if (searchMode === "deep") {
+      responseMessage += " ✨"
+    }
+  } else {
+    // No results found with proactive suggestions
+    const suggestions = []
+    if (intent.priceFilter) {
+      suggestions.push("try searching without price filters")
+    }
+    if (intent.requiresInStock) {
+      suggestions.push("try searching without stock requirements")
+    }
+    if (intent.category || intent.brand) {
+      suggestions.push("try a broader search")
+    }
+
+    responseMessage = `Sorry, no products found for "${intent.cleanQuery}".`
+    if (suggestions.length > 0) {
+      responseMessage += ` You could ${suggestions.join(" or ")}.`
+    } else {
+      responseMessage += " Try searching with different keywords or check our categories."
+    }
+    
+    // Add seasonal recommendations
+    const seasonalCategories = BusinessIntelligenceAgent.getSeasonalRecommendations()
+    if (seasonalCategories.length > 0) {
+      responseMessage += ` This month, ${seasonalCategories[0]} and ${seasonalCategories[1]} are trending well.`
+    }
+  }
+
+  // Handle Swahili responses (basic detection)
+  if (intent.cleanQuery.toLowerCase().includes("nataka") || 
+      intent.cleanQuery.toLowerCase().includes("hapa") ||
+      intent.cleanQuery.toLowerCase().includes("nina") ||
+      intent.cleanQuery.toLowerCase().includes("tafuta")) {
+    responseMessage = responseMessage.replace("Here are the", "Hapa ni")
+                                   .replace("Here are", "Hapa ni")
+                                   .replace("Sorry, no products found", "Pole, hakuna bidhaa")
+                                   .replace("Perfect!", "Vizuri!")
+                                   .replace("Excellent!", "Bora!")
+  }
+
+  return responseMessage
+}
+
+// Main search function
+async function searchProducts(
+  query: string,
+  searchMode: "fast" | "deep",
+  intent: SearchIntent,
+): Promise<Product[]> {
+  const cacheKey = `${searchMode}_${query}_${JSON.stringify(intent)}`
+  const cached = queryCache[cacheKey]
+
+  if (cached && Date.now() - cached.timestamp < SEARCH_CONFIG.CACHE_DURATION) {
+    console.log(`📦 Using cached results for "${query}" (${searchMode})`)
+    return cached.results
+  }
+
+  let keywords: string[]
+  let enhancedData: { semanticMatches: string[]; suggestions: string[] } | undefined
+  let structured: { category?: string; brand?: string; size?: string; inStock?: boolean; bulk?: boolean } | undefined
+
+  if (searchMode === "deep") {
+    try {
+      const deepSeekResult = await enhanceQueryWithDeepSeek(intent.cleanQuery)
+      keywords = deepSeekResult.keywords
+      enhancedData = {
+        semanticMatches: deepSeekResult.semanticMatches,
+        suggestions: deepSeekResult.suggestions
+      }
+      structured = deepSeekResult.structured
+      console.log(`🤖 DeepSeek enhanced search for "${query}":`, deepSeekResult)
+    } catch (error) {
+      console.warn("DeepSeek enhancement failed, falling back to fast mode:", error)
+      keywords = SearchTextProcessor.normalizeQuery(intent.cleanQuery).split(" ")
+    }
+  } else {
+    // Fast mode: use simple keyword extraction
+    keywords = SearchTextProcessor.normalizeQuery(intent.cleanQuery).split(" ")
+  }
+
+  // Prefer deterministic tools when we have structured hints (category/brand/inStock)
+  if (structured?.category || structured?.brand || typeof structured?.inStock === "boolean") {
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ""}/api/tools/products/list`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          category: structured?.category,
+          brand: structured?.brand,
+          inStock: structured?.inStock,
+        }),
+      })
+      if (res.ok) {
+        const data = await res.json()
+        const listResults = (data?.products || []) as Product[]
+        if (listResults.length > 0) {
+          // If we also have keywords, filter by them lightly for precision
+          const filtered = keywords && keywords.length > 0
+            ? listResults.filter((p) =>
+                keywords.some((k) => `${p.name} ${p.brand || ""} ${p.description}`.toLowerCase().includes(k.toLowerCase())),
+              )
+            : listResults
+          return filtered.slice(0, SEARCH_CONFIG.MAX_RESULTS)
         }
       }
-
-      // Add search mode indicator for deep search
-      if (searchMode === "deep") {
-        responseMessage += " ✨"
-      }
-    } else {
-      // No results found
-      const suggestions = []
-      if (intent.priceFilter) {
-        suggestions.push("try searching without price filters")
-      }
-      if (intent.requiresInStock) {
-        suggestions.push("try searching without stock requirements")
-      }
-      if (intent.category || intent.brand) {
-        suggestions.push("try a broader search")
-      }
-
-      responseMessage = `Sorry, no products found for "${query}".`
-      if (suggestions.length > 0) {
-        responseMessage += ` You could ${suggestions.join(" or ")}.`
-      } else {
-        responseMessage += " Try searching with different keywords or check our categories."
-      }
+    } catch (e) {
+      console.warn("Tool list call failed, falling back to local search", e)
     }
+  }
 
-    // Handle Swahili responses (basic detection)
-    if (query.toLowerCase().includes("nataka") || 
-        query.toLowerCase().includes("hapa") ||
-        query.toLowerCase().includes("nina") ||
-        query.toLowerCase().includes("tafuta")) {
-      responseMessage = responseMessage.replace("Here are the", "Hapa ni")
-                                     .replace("Here are", "Hapa ni")
-                                     .replace("Sorry, no products found", "Pole, hakuna bidhaa")
-    }
+  const results = searchProductsLocally(keywords, intent, enhancedData)
+
+  // Cache results
+  queryCache[cacheKey] = { results, timestamp: Date.now() }
+
+  console.log(`🔍 Found ${results.length} products for "${query}" (${searchMode})`)
+  return results
+}
+
+// Main search handler function
+export async function handle_Search(
+  userId: string,
+  query: string,
+  searchMode: "fast" | "deep",
+  userContext?: any
+): Promise<{ productIds: string[]; vendaiResponse: string; products: Product[] }> {
+  try {
+    console.log(`🔍 ${searchMode.toUpperCase()} search for: "${query}"`)
+    const intent = SearchTextProcessor.extractSearchIntent(query)
+    const results = await searchProducts(query, searchMode, intent)
+
+    const productIds = results.map((p) => p.id.toString())
+
+    // Generate agentic response
+    const responseMessage = generateAgenticResponse(results, intent, searchMode, userContext)
 
     return {
       productIds,
